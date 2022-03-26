@@ -126,7 +126,7 @@ The General Ledger Setup window also allows you to enable base, local, and Inter
 
     (Financial \>\> Setup \>\> Financial \>\> General Ledger)
 
-    ![Screenshot that shows the General Ledger Setup window.](media/GLAGE009.jpg)
+    ![Screenshot of the General Ledger Setup window.](media/GLAGE009.jpg)
 
 2. Enter the next journal entry and budget journal entry numbers. A new journal entry number is assigned each time you save an entry in the Transaction Entry, Clearing Entry or Quick Journal Entry windows. A new budget journal entry is assigned each time you save an entry in the Budget Transaction Entry window.
 
@@ -1025,7 +1025,7 @@ Be sure to mark the appropriate options in the General Ledger Setup window for m
 
 5. Choose Transactions to open the Transaction Entry window, where you can enter beginning balance transactions.
 
-    ![Screenshot that shows the Transaction Entry window.](media/glage044.jpg)
+    ![Screenshot of the Transaction Entry window.](media/glage044.jpg)
 
 6. Enter a journal entry number and select Standard as the transaction type.
 
@@ -1592,7 +1592,7 @@ You can use Microsoft Dynamics GP to create a new budget in Microsoft Excel. The
 1. Open the Budget Selection window.
     (Financial \>\> Cards \>\> Financial \>\> Budgets)
 
-    ![Screenshot that shows the Budget Selection window.](media/glage061.jpg)
+    ![Screenshot of the Budget Selection window.](media/glage061.jpg)
 
 2. Choose New and select using Budget Wizard for Excel to open the welcome window.
 
