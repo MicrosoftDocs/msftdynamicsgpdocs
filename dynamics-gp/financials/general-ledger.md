@@ -1977,7 +1977,7 @@ Once the budget is exported, you can adjust the layout of the worksheet, as well
 1. Open the Budget Selection window.
     (Financial \>\> Cards \>\> Financial \>\> Budgets)
 
-    ![Screenshot that shows the Budget Selection window.](media/glage061.jpg)
+    ![Screenshot that shows the open Budget Selection window.](media/glage061.jpg)
 
 2. Highlight a budget. Choose Excel and select Export to Excel to open the Export Budget to Excel window.
 
@@ -3310,7 +3310,7 @@ Use the Budget Summary History window to view period balances, net change, and t
 1. Open the Budget Summary Inquiry window.
     (Financial \>\> Inquiry \>\> Financial \>\> Budget Summary)
 
-    ![Screenshot that shows the Budget Summary Inquiry window.](media/glage148.jpg)
+    ![Screenshot of the Budget Summary Inquiry window.](media/glage148.jpg)
 
 2. Enter or select an account.
 
