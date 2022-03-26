@@ -1,6 +1,6 @@
 ---
 title: "Tenant Services"
-description: ""
+description: "Microsoft Dynamics GP Tenant Services are WCF services that help you to host Microsoft Dynamics GP for more than one organization in your data center."
 keywords: "web components"
 author: dapelt
 ms.author: dapelt

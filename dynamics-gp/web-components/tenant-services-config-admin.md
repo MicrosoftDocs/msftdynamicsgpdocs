@@ -1,6 +1,6 @@
 ---
 title: "Tenant Services Configuration and Administration"
-description: Learn about the configuration and maintenance options for Microsoft Dynamics GP Tenant Services.
+description: "Learn about the configuration and maintenance options for Microsoft Dynamics GP Tenant Services."
 keywords: "web components"
 author: dapelt
 ms.author: dapelt
