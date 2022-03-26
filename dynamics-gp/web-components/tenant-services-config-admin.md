@@ -1,6 +1,6 @@
 ---
 title: "Tenant Services Configuration and Administration"
-description: ""
+description: Learn about the configuration and maintenance options for Microsoft Dynamics GP Tenant Services.
 keywords: "web components"
 author: dapelt
 ms.author: dapelt
@@ -582,7 +582,7 @@ application that you specified in the previous section.
     |DexiniLocation | c:\Program Files (x86)\Microsoft Dynamics\GP2015\Data\Dex.ini|
     |HeartbeatTimeout | 0.20:00:00|
     |RuntimeLogEnabled | false|
-    |CustomRuntimeSettings | ScriptLogEnabled=false|TimingLogEnabled=false|SqlLogEnabled=false|
+    |CustomRuntimeSettings | ScriptLogEnabled=false <br> TimingLogEnabled=false <br> SqlLogEnabled=false|
     |SQLUserName | The name for the SQL login that was specified to be used for the web client when the Microsoft Dynamics GP web client runtime was installed.|
     |SQLPassword | The password for the SQL login being used for the web client.|
     |RuntimeProcessUserName | The name of the Windows account that the runtime process will run as when a user logs in using an Organizational Account. You only need to provide a value if you are using Organizational Accounts.|
