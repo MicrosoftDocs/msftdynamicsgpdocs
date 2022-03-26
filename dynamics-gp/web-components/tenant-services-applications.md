@@ -1,6 +1,6 @@
 ---
 title: "Tenant Services Applications"
-description: ""
+description: Learn about the configuration and maintenance options for Microsoft Dynamics GP multitenant applications.
 keywords: "web components"
 author: dapelt
 ms.author: dapelt
