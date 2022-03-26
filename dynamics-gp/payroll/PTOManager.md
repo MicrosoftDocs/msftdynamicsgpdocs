@@ -796,7 +796,7 @@ PTO Transaction Detail Only
 
 Both Balance and Detail 
 
-    - Both Balance and Detail: This option will create a detail transaction as described above and will ALSO create an adjustment to the Vacation Available or Sick Available balance in Employee PTO maintenance (also seen in upper right corner of PTO Inquiry)
+  - Both Balance and Detail: This option will create a detail transaction as described above and will ALSO create an adjustment to the Vacation Available or Sick Available balance in Employee PTO maintenance (also seen in upper right corner of PTO Inquiry)
 
 
 ### Summary

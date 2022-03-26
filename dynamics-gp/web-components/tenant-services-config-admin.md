@@ -110,7 +110,7 @@ delegating user.
     In a browser, open the Web Management Console. To start the Web
     Management Console, you use a URL similar to the following:
         
-        https://<web server name>/WebManagementConsole/
+    `https://<web server name>/WebManagementConsole`/
 
 2. Click Tenant Manager.
 
@@ -153,7 +153,7 @@ The following steps describe how to remove a service administrator or delegating
 
     In a browser, open the Web Management Console. To start the Web Management Console, you use a URL similar to the following:
 
-        https://<web server name>/WebManagementConsole/
+    `https://<web server name>/WebManagementConsole/`
 
 2. Click Tenant Manager.
 
@@ -200,7 +200,7 @@ a tenant.
 
     In a browser, open the Web Management Console. To start the Web Management Console, you use a URL similar to the following:
 
-        https://ServerName:PortNumber/WebManagementConsole/
+    `https://ServerName:PortNumber/WebManagementConsole/`
 
 2. Click Tenant Manager.
 
@@ -259,7 +259,7 @@ existing multitenant application.
     In a browser, open the Web Management Console. To start the Web
     Management Console, you use a URL similar to the following:
 
-        https://ServerName:PortNumber/WebManagementConsole/
+    `https://ServerName:PortNumber/WebManagementConsole/`
 
 2. Click Tenant Manager.
 
@@ -299,7 +299,7 @@ The following steps show how to export an application.
     In a browser, open the Web Management Console. To start the Web
     Management Console, you use a URL similar to the following:
 
-        https://ServerName:PortNumber/WebManagementConsole/
+    `https://ServerName:PortNumber/WebManagementConsole/`
 
 2. Click Tenant Manager.
 
@@ -341,7 +341,7 @@ The following steps show how to import a multitenant application.
     In a browser, open the Web Management Console. To start the Web
     Management Console, you use a URL similar to the following:
 
-        https://ServerName:PortNumber/WebManagementConsole/
+    `https://ServerName:PortNumber/WebManagementConsole/`
 
 2. Click Tenant Manager.
 
@@ -449,7 +449,7 @@ The following steps describe how to add and configure a tenant.
     In a browser, open the Web Management Console. To start the Web
     Management Console, you use a URL similar to the following: 
 
-        https://ServerName:PortNumber/WebManagementConsole/
+    `https://ServerName:PortNumber/WebManagementConsole/`
 
 2. Click Tenant Manager.
 
@@ -610,7 +610,7 @@ The following steps describe how to update existing tenant information.
     In a browser, open the Web Management Console. To start the Web
     Management Console, you use a URL similar to the following:
 
-        https://ServerName:PortNumber/WebManagementConsole/
+    `https://ServerName:PortNumber/WebManagementConsole/`
 
 2. Click Tenant Manager.
 
@@ -644,7 +644,7 @@ The following steps describe how to remove a tenant.
     In a browser, open the Web Management Console. To start the Web
     Management Console, you use a URL similar to the following:
 
-        https://ServerName:PortNumber/WebManagementConsole/
+    `https://ServerName:PortNumber/WebManagementConsole/`
         
 2. Click Tenant Manager.
 
@@ -979,19 +979,21 @@ run.
 You have installed the Microsoft Dynamics GP Web Management Console but you
 see the following error when you open the console in Internet Explorer.
 
-    HTTP Error 500.21 -Internal Server Error
-    Handler “PageHandlerFactory - Integrated” has a bad module
-    “ManagedPipelineHandler” in its module list.
+```
+HTTP Error 500.21 -Internal Server Error
+Handler “PageHandlerFactory - Integrated” has a bad module
+“ManagedPipelineHandler” in its module list.
+```
 
 This error can occur when ASP.NET has not been successfully installed on the
 server. To correct the specified issue, open a command prompt with administrator
 privileges and navigate to the following folder:
 
-    c:\Windows\Microsoft.NET\framework64\v4.0.30319\
-T
-ype the following command and press enter:
+`c:\Windows\Microsoft.NET\framework64\v4.0.30319\`
 
-    aspnet_regiis -i
+Type the following command and press enter:
+
+`aspnet_regiis -i`
 
 The command installs the specified .NET framework and should eliminate the error
 message. After you complete the install, you should run the IIS reset command
@@ -1061,25 +1063,25 @@ environment.
 
 The XML configuration file for the discovery service is named:
 
-    Microsoft.Dynamics.MultitenantServices.Discovery.config
+`Microsoft.Dynamics.MultitenantServices.Discovery.config`
 
 You can find the file in the following location:
 
-    c:\Program Files\Microsoft Dynamics\Tenant Services\DiscoveryService
+`c:\Program Files\Microsoft Dynamics\Tenant Services\DiscoveryService`
 
 The management service has an XML configuration file named
 
-    Microsoft.Dynamics.MultitenantServices.Management.config. 
+`Microsoft.Dynamics.MultitenantServices.Management.config. `
 
 You can find the file in the following location:
 
-    c:\Program Files\Microsoft Dynamics\Tenant Services\ManagementService
+`c:\Program Files\Microsoft Dynamics\Tenant Services\ManagementService`
 
 The public discovery service has an XML configuration file named
 Microsoft.Dynamics.MultitenantServices.Discovery.Public.config. You can find the
 file in the following location:
 
-    c:\Program Files\Microsoft Dynamics\Tenant Services\PublicDiscoveryService
+`c:\Program Files\Microsoft Dynamics\Tenant Services\PublicDiscoveryService`
 
 Be sure to make a copy of the configuration file before you make any changes to the
 file. You can use the saved copy to restore the original configuration settings for the
@@ -1140,7 +1142,7 @@ Users window, the log contains information for the specified tenant user.
 
 After you enable logging, you can find the generated log in the following location:
 
-    %Program Data%\Microsoft Dynamics\GP Sessions\Logs\
+`%Program Data%\Microsoft Dynamics\GP Sessions\Logs\`
 
 When you have completed your analysis, be sure to return the value of the log
 properties to false.
