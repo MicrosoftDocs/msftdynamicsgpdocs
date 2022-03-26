@@ -256,9 +256,9 @@ project costs and billing customers* on page 17 for more information.
 **Microsoft Dynamics GP menu \> Tools \> Setup \> Purchasing \> Vendor Class
 \> select a Class ID \> Project button**
 
-    PACM 4.JPEG
+  PACM 4.JPEG
 
-    ![Screenshot of the PA Vendor Class Options window showing Default PO Format to Use highlighted.](media/051e992556a8e343d2f4096c675d8d78.jpg)
+  ![Screenshot of the PA Vendor Class Options window showing Default PO Format to Use highlighted.](media/051e992556a8e343d2f4096c675d8d78.jpg)
 
 
 1. Select the default purchase order format to use when printing purchase
