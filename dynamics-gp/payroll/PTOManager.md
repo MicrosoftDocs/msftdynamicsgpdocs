@@ -292,7 +292,7 @@ Users can create an unlimited variety of schedules. The schedules are implemente
 
 To open the Accrual Schedule Setup window, click the **HR and Payroll** series button, click **Payroll** on the Setup content pane, click **PTO Manager** and then click **Accrual Schedules**.
 
-![Screenshot that shows the Accrual Schedule Setup window.](media/ASS23.jpg)
+![Screenshot that shows the Accrual Schedule Setup window for viewing accrual schedules.](media/ASS23.jpg)
 
 select * from PTO40100 --PTO Accrual Schedule Header
 select * from PTO40101 --PTO Accrual Schedule Detail
