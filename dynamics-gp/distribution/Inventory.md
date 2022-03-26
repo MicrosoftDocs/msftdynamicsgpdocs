@@ -3878,7 +3878,7 @@ If you're using the purchase order generator to suggest purchase orders, use the
 
     - **Item Standard Cost** The amount of the Standard Cost from the Item Maintenance window will be used for suggested purchase orders.
 
-- **Specified Cost** An amount you specify (in functional currency) will be used for suggested purchase orders, regardless of the vendor selection.
+    - **Specified Cost** An amount you specify (in functional currency) will be used for suggested purchase orders, regardless of the vendor selection.
 
         If the order method is Order to Master Site, the cost selection is not available. The cost selection method will come from the master site.
 
