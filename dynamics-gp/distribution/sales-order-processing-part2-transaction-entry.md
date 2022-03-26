@@ -854,8 +854,8 @@ You can use the Copy button in the Sales Transaction Entry window to copy line i
 
    To remove an item from the fulfillment order or invoice, select the item and choose Edit \>\> Delete Row.
 
-    > [!NOTE]
-    > To change the shipping address for a single line item, select the item, expand to the detail view of the scrolling window, and choose the Ship to Address ID expansion button to open the Sales Ship To Address Entry window. The changes will apply only to the current line item.
+   > [!NOTE]
+   > To change the shipping address for a single line item, select the item, expand to the detail view of the scrolling window, and choose the Ship to Address ID expansion button to open the Sales Ship To Address Entry window. The changes will apply only to the current line item.
 
 Enter the trade discount, freight, miscellaneous, and tax amounts for this fulfillment order or invoice.
 
@@ -1147,8 +1147,8 @@ When a customer returns an item, you must enter the returned item into one or mo
 
 The return quantity types are On Hand, Returned, In Use, In Service, and Damaged. If you enter a return that increases more than one quantity type, separate purchase receipts are created to record the increase for each quantity type. For example, suppose a customer returns five telephones. Three need service before you can resell them and the other two are damaged and can’t be repaired. In this case, you’d return three to the In Service quantity type and two to Damaged. Two purchase receipts are created to track the information. For more information about purchase receipts, see the Inventory Control documentation.
 
-    > [!NOTE]
-    > If you return an item to a return quantity type other than On Hand, you can’t resell the item. You must transfer the item to On Hand before it can be sold again. If the item was returned to the Damaged quantity type and you want to return the item to the vendor, you must transfer the item to On Hand and then enter a decrease adjustment for the item.
+  > [!NOTE]
+  > If you return an item to a return quantity type other than On Hand, you can’t resell the item. You must transfer the item to On Hand before it can be sold again. If the item was returned to the Damaged quantity type and you want to return the item to the vendor, you must transfer the item to On Hand and then enter a decrease adjustment for the item.
 
 If you’re using multiple bins, you must enter a bin quantity and select a bin for each quantity type you enter. For example, if the quantity returned is 10 and you entered 8 with a quantity type of On Hand, and 2 with a quantity type of Damaged, two bin selection records are created: one for 8 on hand at the sales returns default bin, and one for 2 damaged at the sales returns default bin. For serial- and lot-tracked items, you can change bins or split the line’s extended quantity among two or more bins for each site and quantity type.
 
@@ -1663,9 +1663,9 @@ Here are the components of the sales tax calculation if you selected to use an a
 
     To view the shipping method used for a line, expand the Sales Transaction Entry scrolling window and click the Ship To Address ID link to open the Sales Ship To Address Entry window.
 
-        - If the shipping method is a Pickup type, the tax schedule from the Site ID on the line is used.
+      - If the shipping method is a Pickup type, the tax schedule from the Site ID on the line is used.
 
-        - If the shipping method is a Delivery type, the tax schedule from the Ship To Address for the line is used.
+      - If the shipping method is a Delivery type, the tax schedule from the Ship To Address for the line is used.
 
         The system compares the two tax schedules—the tax schedule for the item and either the tax schedule for the ship-to address or the schedule for the site. Any details that are in common will be the tax details used to calculate the sales tax for the item.
 
