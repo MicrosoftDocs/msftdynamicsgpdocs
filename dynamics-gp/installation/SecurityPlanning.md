@@ -1687,7 +1687,7 @@ Microsoft Dynamics GP SQL Server 2008 or 2008 R2 instance or later.
 NOTE: This environment would only be recommended for testing and development purposes.
 
 
-![KERB1.jpg](media/KERB1.jpg)
+![Diagram of scenario 1 showing how credentials are passed with a client work station and a single server.](media/KERB1.jpg)
     
     
 
@@ -1704,7 +1704,7 @@ Microsoft SQL Server Reporting Services 2008 or 2008 R2 or later.
 Server 2:
 Microsoft Dynamics GP SQL Server 2008 or 2008 R2 database instance or later.
 
-![KERB2.jpg](media/KERB2.jpg)
+![Diagram of scenario 2 showing how credentials are passed with a client work station and two servers.](media/KERB2.jpg)
 
 
 This scenario requires Kerberos to be enabled because the user's Windows credentials need to be passed more than once:
@@ -1756,7 +1756,7 @@ Microsoft SQL Server Reporting Services 2008 or 2008 R2 or later.
 Server 3:
 Microsoft Dynamics GP SQL Server 2008 or 2008 R2 database instance or later.
 
-![KERB4.jpg](media/KERB4.jpg)
+![Diagram of scenario 4 showing how credentials are passed with a client work station and three servers.](media/KERB4.jpg)
 
 
 This scenario requires Kerberos to be enabled because the user's Windows credentials need to be passed more than once:
@@ -1856,7 +1856,7 @@ In order to configure Kerberos delegation you need to go through the following s
 
     - Microsoft SQL Server Reporting Services - To find the service account for SQL Server Reporting Services you'll need to log onto the server where SQL Server Reporting Services is installed, then click on Start, then All Programs, then point to Microsoft SQL Server 2008 (or R2). Then Configuration Tools, then click on Reporting Services Configuration Manager.  When this window opens connect to the Reporting Services instance that holds your Microsoft Dynamics GP 2010 R2 reports, then click on the Service Account tab on the left.
 
-    ![KERB5.jpg](media/KERB5.jpg)
+    ![Screenshot that shows the Reporting Services Configuration Manager window.](media/KERB5.jpg)
 
     In this example the SQL Server Reporting Services service is run by the CTS\SSRS domain account.  Please note that you cannot configure Kerberos delegation for a local account, so if this, or any, service is running by a local service account (e.g. NT AUTHORITY\Network Service) you must change them to a domain account.  Review your application documentation for information on changing service accounts.
 
