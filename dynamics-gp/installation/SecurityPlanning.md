@@ -1822,26 +1822,26 @@ To do accomplish this refer to the following steps:
 
   2. SharePoint Integrated Mode
 
-    1. Log onto a server or workstation as a user who has administrative rights to your SharePoint Server and Business Portal sites
-    2. In a browser, navigate to your top-level SharePoint Server or SharePoint Foundation site
-    3. Navigate to the folder where you've deployed the Dynamics GP 2010 R2 or later SQL Server Reporting Services reports to
+      1. Log onto a server or workstation as a user who has administrative rights to your SharePoint Server and Business Portal sites
+      2. In a browser, navigate to your top-level SharePoint Server or SharePoint Foundation site
+      3. Navigate to the folder where you've deployed the Dynamics GP 2010 R2 or later SQL Server Reporting Services reports to
 
-        If you are not sure what SharePoint Server or SharePoint Foundation site you deployed the Microsoft Dynamics GP reports to, log into Microsoft Dynamics GP, and click on Microsoft Dynamics GP, then point to Tools, then Setup, then System and click on Reporting Tools Setup.
+          If you are not sure what SharePoint Server or SharePoint Foundation site you deployed the Microsoft Dynamics GP reports to, log into Microsoft Dynamics GP, and click on Microsoft Dynamics GP, then point to Tools, then Setup, then System and click on Reporting Tools Setup.
 
-    4. Click on the Reporting Services tab and note the values of the SharePoint Site and Report Library fields.  If you put these together you'll have the full URL of your SSRS reports in SharePoint
+      4. Click on the Reporting Services tab and note the values of the SharePoint Site and Report Library fields.  If you put these together you'll have the full URL of your SSRS reports in SharePoint
 
-    5. Click on the Data Sources folder
-    6. Click on the GPDYNAMICS data source
-    7. In the Connection string: section make the following change:
+      5. Click on the Data Sources folder
+      6. Click on the GPDYNAMICS data source
+      7. In the Connection string: section make the following change:
 
           |Old text|New text |
           |---------|---------|
           |Integrated Security=True| Integrated Security=False|
 
-    8. Then, mark Stored credentials
-    9. Provide the user name and password for the SQL Server login you created in Step 1 above
-    10. Click Test Connection to verify your password
-    11. If the test is successful, click OK
+      8. Then, mark Stored credentials
+      9. Provide the user name and password for the SQL Server login you created in Step 1 above
+      10. Click Test Connection to verify your password
+      11. If the test is successful, click OK
 
 12. Repeat steps 4-11 for each Microsoft Dynamics GP company data source as well
 
