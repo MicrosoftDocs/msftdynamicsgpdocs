@@ -961,9 +961,9 @@ The exchange rate options you’ve selected in the Multicurrency Setup window wi
 
 12.  Choose the Revalue button to revalue the currencies you’ve marked. A separate journal entry in General Ledger is created for each currency being revalued.
 
-    -   Unrealized and realized gains and losses for the originating currency are recorded as zero amounts with zeros for the exchange rates.
+  -   Unrealized and realized gains and losses for the originating currency are recorded as zero amounts with zeros for the exchange rates.
 
-    -   Unrealized and realized gains and losses for the company’s functional currency are recorded.
+  -   Unrealized and realized gains and losses for the company’s functional currency are recorded.
 
 The Revaluation Report might be printed, depending on how your system has been set up. This report displays information about the transactions that were revalued. The Revaluation Summary and Detail Breakdown Registers also might be printed. These reports display information about the revaluation transactions posted.
 

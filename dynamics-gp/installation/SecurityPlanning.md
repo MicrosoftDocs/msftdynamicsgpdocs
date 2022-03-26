@@ -1802,23 +1802,23 @@ To do accomplish this refer to the following steps:
 
   1. Native Mode:
 
-    1. Log onto your Microsoft SQL Server Reporting Services server as a user who has administrative rights to the Reporting Services
-    2. Open Internet Explorer and navigate to your Report Manager site
-    3. If you are unsure of the URL for your Report Manager site you can click on Start, then All Program, then Microsoft SQL Server 2008 (or 2008 R2), then Configuration Tools and open the Reporting Services Configuration Manager
-    4. Connect to your SQL Reporting Services instance and select the Report Manager URL link on the left to view a link to this site
-      1. Click on the Data Sources folder
-      2. Click on the GPDYNAMICS data source
-      3. In the `Connection string:` section make the following change:
+      1. Log onto your Microsoft SQL Server Reporting Services server as a user who has administrative rights to the Reporting Services
+      2. Open Internet Explorer and navigate to your Report Manager site
+      3. If you are unsure of the URL for your Report Manager site you can click on Start, then All Program, then Microsoft SQL Server 2008 (or 2008 R2), then Configuration Tools and open the Reporting Services Configuration Manager
+      4. Connect to your SQL Reporting Services instance and select the Report Manager URL link on the left to view a link to this site
+         1. Click on the Data Sources folder
+         2. Click on the GPDYNAMICS data source
+         3. In the `Connection string:` section make the following change:
 
           |Old text|New text |
           |---------|---------|
           |Integrated Security=True| Integrated Security=False|
-      4. Then, mark Credentials stored securely in the report server
-      5. Provide the user name and password for the SQL Server login you created in Step 1 above
-      6. Click Test Connection to verify your password
-      7. If the test is successful, click Apply
+        4. Then, mark Credentials stored securely in the report server
+        5. Provide the user name and password for the SQL Server login you created in Step 1 above
+        6. Click Test Connection to verify your password
+        7. If the test is successful, click Apply
 
-    5. Repeat step 4 for each Dynamics GP company data source as well
+      5. Repeat step 4 for each Dynamics GP company data source as well
 
   2. SharePoint Integrated Mode
 
@@ -1897,19 +1897,21 @@ In order to configure Kerberos delegation you need to go through the following s
 
 3.    The final step is to enable delegation for each of the service account.
 
-    1. On the domain controller click on Start, then Administrative Tools and click on Active Directory Users and Computers.
-    2. Click on the Users folder so you can see your service accounts.
-    3. Right-click on one of your service accounts, e.g. SQL and click on Properties
-    4. Click on the Delegation tab
-    5. Mark Trust this user for delegation to specified service only and Use any authentication protocol
-    6. This will enable the bottom part of this window.  Click Add… 
-    7. In this field you need to enter the services that this account will present data to using delegation.  Use the following rules:
-    8. The IIS Application Pool account must present data to SQL Server Reporting Services in order to see if the user has access to the reports that are displayed on the SharePoint pages
-    9. SQL Server Reporting Services must present data to SQL Server so it can pull data from your Dynamics GP databases into the reports
+      1. On the domain controller click on Start, then Administrative Tools and click on Active Directory Users and Computers.
+      2. Click on the Users folder so you can see your service accounts.
+      3. Right-click on one of your service accounts, e.g. SQL and click on Properties
+      4. Click on the Delegation tab
+      5. Mark Trust this user for delegation to specified service only and Use any authentication protocol
+      6. This will enable the bottom part of this window.  Click Add… 
+      7. In this field you need to enter the services that this account will present data to using delegation.  Use the following rules:
+      8. The IIS Application Pool account must present data to SQL Server Reporting Services in order to see if the user has access to the reports that are displayed on the SharePoint pages
+      9. SQL Server Reporting Services must present data to SQL Server so it can pull data from your Dynamics GP databases into the reports
 
-        Example 1: The CTS\WebAdmin user needs to be setup to present delegated credentials to the SQL Server Reporting Services service:
-        Click Add… and specify the account that is running the SQL Server Reporting Services service:
-        This will pull in the Service Principal Name information that you previously specified.  Just highlight the correct entry and click OK, then click OK again to save the change.
+          Example 1: The CTS\WebAdmin user needs to be setup to present delegated credentials to the SQL Server Reporting Services service:
+          
+          Click Add… and specify the account that is running the SQL Server Reporting Services service:
+          
+          This will pull in the Service Principal Name information that you previously specified.  Just highlight the correct entry and click OK, then click OK again to save the change.
 
         You'll also need to set this up for the account that is running SQL Server Reporting Services so it can present delegated credentials to the service that is running SQL Server.
 
