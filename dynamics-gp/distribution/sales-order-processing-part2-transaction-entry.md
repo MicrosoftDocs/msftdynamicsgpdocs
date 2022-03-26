@@ -1663,9 +1663,9 @@ Here are the components of the sales tax calculation if you selected to use an a
 
     To view the shipping method used for a line, expand the Sales Transaction Entry scrolling window and click the Ship To Address ID link to open the Sales Ship To Address Entry window.
 
-      - If the shipping method is a Pickup type, the tax schedule from the Site ID on the line is used.
+    - If the shipping method is a Pickup type, the tax schedule from the Site ID on the line is used.
 
-      - If the shipping method is a Delivery type, the tax schedule from the Ship To Address for the line is used.
+    s- If the shipping method is a Delivery type, the tax schedule from the Ship To Address for the line is used.
 
         The system compares the two tax schedules—the tax schedule for the item and either the tax schedule for the ship-to address or the schedule for the site. Any details that are in common will be the tax details used to calculate the sales tax for the item.
 
