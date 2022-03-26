@@ -4251,14 +4251,14 @@ The information used to match transactions with General Ledger differs depending
 
 **Bank Reconciliation**
 
-|Transaction Date  | GL Post Date             | Posted Date        | Posting Date       | Date               |   |   |
-|------------------------|--------------------|--------------------|--------------------|--------------------|---|---|
-| **Journal Entry**      | Journal Entry      |                    |                    |                    |   |   |
-| **Orig. Transaction**  | Transaction Source | Transaction Source | Transaction Source | Transaction Source |   |   |
-| **Orig. Control**      | Document Number    | Document Number    | Voucher Number     | Document Number    |   |   |
-| **DR/CR**              | Extended Cost      | On Account Amount  | On Account Amount  | Payment/Deposit    |   |   |
-|                        |                    | Customer Number    | Vendor ID          | Transaction Number |   |   |
-|                        |                    |                    | Document Number    | Type               |   |   |
+|Transaction Date  | GL Post Date             | Posted Date        | Posting Date       | Date               |
+|------------------------|--------------------|--------------------|--------------------|--------------------|
+| **Journal Entry**      | Journal Entry      |                    |                    |                    |
+| **Orig. Transaction**  | Transaction Source | Transaction Source | Transaction Source | Transaction Source |
+| **Orig. Control**      | Document Number    | Document Number    | Voucher Number     | Document Number    |
+| **DR/CR**              | Extended Cost      | On Account Amount  | On Account Amount  | Payment/Deposit    |
+|                        |                    | Customer Number    | Vendor ID          | Transaction Number |
+|                        |                    |                    | Document Number    | Type               |
 
 **Source**
 
