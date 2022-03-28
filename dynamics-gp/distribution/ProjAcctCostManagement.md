@@ -720,8 +720,6 @@ PACM 14.JPEG
 
 A screenshot of a cell phone Description automatically generated
 
-A screenshot of a cell phone Description automatically generated
-
 This window is similar to the Contract Maintenance window. See *Create a
 contract record* on page 62 for more information.
 
@@ -7190,4 +7188,4 @@ A writeoff is deducted from the account total.
 
 [Project Accounting Administrator's Guide](ProjAcctAdministration.md)  
 [Project Accounting Billing Guide](ProjAcct-billing-cycles.md)  
-[Project Accounting - Accounting Control Guide](ProjAcctAccountingControl.md)
+[Project Accounting - Accounting Control Guide](ProjAcctAccountingControl.md)  
