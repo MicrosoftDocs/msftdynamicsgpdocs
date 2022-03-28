@@ -2325,7 +2325,7 @@ background, or remotely by process servers.
 (Microsoft Dynamics GP menu \>\> Process Monitor or drag the Dynamics.set
 file onto the Dps.exe file on the client.)
 
-![Screenshot of the Process Monitor window.](media/sys%20admin%20guide%2044.jpg)
+![Screenshot of the Process Monitor.](media/sys%20admin%20guide%2044.jpg)
 
 The name of the processes will be displayed in the Process list. The
 currently active process will appear at the top of the list. The number of
