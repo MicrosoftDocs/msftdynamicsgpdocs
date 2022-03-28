@@ -345,8 +345,6 @@ PACM 6.JPEG
 
 A screenshot of a cell phone Description automatically generated
 
-A screenshot of a cell phone Description automatically generated
-
 1. Select a class ID.
 
 2. Enter a unit of measure and the corresponding unit cost.
@@ -499,7 +497,7 @@ page 85 for more information.
 
 PACM 10.JPEG
 
-![Screenshot of the PA Employee Rate Table Maintenance window.](PACM%2010.jpg)
+![Screenshot of the PA Employee Rate Table Maintenance window.](media/PACM%2010.jpg)
 
 1. Enter a rate table ID, date, and description. The date is for information
     only.
@@ -716,7 +714,7 @@ in it.
 
 PACM 14.JPEG
 
-![Screenshot of the Contract Template Maintenance window.](PACM%2014.jpg)
+![Screenshot of the Contract Template Maintenance window.](media/PACM%2014.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -781,8 +779,6 @@ Amount** fee calculation method in projects in the template will be copied.
 PACM 16. JPEG
 
 ![Screenshot of the Copy Contract from Template window.](media/PACM%2016.jpg)
-
-A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
@@ -900,8 +896,6 @@ PACM 18.JPEG
 
 A screenshot of a cell phone Description automatically generated
 
-A screenshot of a cell phone Description automatically generated
-
 This window is similar to the Project Billing Settings window. See *Specify
 billing settings for a project* on page 71 for more information.
 
@@ -927,8 +921,6 @@ Multicurrency**).
 PACM 19.JPEG
 
 ![Screenshot of the Add Existing Project to Template window.](media/PACM%2019.jpg)
-
-A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1074,8 +1066,6 @@ PACM 21.JPEG
 
 A screenshot of a cell phone Description automatically generated
 
-A screenshot of a cell phone Description automatically generated
-
 1. Select the number of decimal places to use for quantities and currencies.
 
 2. Select **Use Pay Codes for Unit Cost** to use employee pay codes to
@@ -1217,8 +1207,6 @@ PACM 24.JPEG
 
 A screenshot of a computer Description automatically generated
 
-A screenshot of a computer Description automatically generated
-
 1. In fields **6** through **10**, enter names for contract and project
     statuses.
 
@@ -1241,8 +1229,6 @@ Labels button**
 PACM 25.JPEG
 
 ![Screenshot of the Project Setup – Label Options window.](media/PACM%2025.jpg)
-
-A screenshot of a cell phone Description automatically generated
 
 A screenshot of a cell phone Description automatically generated
 
