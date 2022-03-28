@@ -2472,7 +2472,7 @@ activities are performed by process servers, especially if you have the
 Track Start and End Times option marked in the DPS Setup window, so you may
 need to remove data from the table periodically.
 
-![Screenshot of the Remove Process Server Detail window.](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)
+<!--![Screenshot of the Remove Process Server Detail window.](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
 *Before removing process server detail, back up your company's data.*
 
