@@ -165,7 +165,7 @@ illustration.
 (Administration \>\> Setup \>\> System \>\> Named Printers \>\> Machine ID
 link)
 
-![Screenshot of a generic Named Printer Options screen.](media/sys admin guide10.jpg)
+![Screenshot of a generic Named Printer Options screen.](media/sys%20admin%20guide10.jpg)
 
 1. Mark the Do Not Display System Print Dialog option.
 
