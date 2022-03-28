@@ -407,7 +407,7 @@ page 22 for more information.
 
     **Microsoft Dynamics GP menu \> Tools \> Setup \> Project \> Miscellaneous Class**
 
-![Screenshot of the Miscellaneous Class Setup window.](media/PACM%208.jpg)
+    ![Screenshot of the Miscellaneous Class Setup window.](media/PACM%208 .JPEG)
 
 1. Select a class ID.
 
@@ -499,7 +499,7 @@ page 85 for more information.
 
 PACM 10.JPEG
 
-![Screenshot of the PA Employee Rate Table Maintenance window.](media/PACM%2010.jpg)
+![Screenshot of the PA Employee Rate Table Maintenance window.](PACM 10.jpg)
 
 1. Enter a rate table ID, date, and description. The date is for information
     only.
@@ -716,7 +716,7 @@ in it.
 
 PACM 14.JPEG
 
-![Screenshot of the Contract Template Maintenance window.](media/PACM%2014.jpg)
+![Screenshot of the Contract Template Maintenance window.](PACM 14.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -7190,4 +7190,4 @@ A writeoff is deducted from the account total.
 
 [Project Accounting Administrator's Guide](ProjAcctAdministration.md)  
 [Project Accounting Billing Guide](ProjAcct-billing-cycles.md)  
-[Project Accounting - Accounting Control Guide](ProjAcctAccountingControl.md)  
+[Project Accounting - Accounting Control Guide](ProjAcctAccountingControl.md)
