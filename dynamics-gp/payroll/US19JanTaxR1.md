@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 03/22/2022
+ms.date: 03/31/2022
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -18,9 +18,16 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2022 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-The second tax update for 2022 replaces all previous tax updates. It includes state tax table changes that take effect January 1, 2022. We recommend that you install this update as soon as you can for the year 2022.
+The third tax update for 2022 replaces all previous tax updates. It includes state tax table changes that take effect January 1, 2022. We recommend that you install this update as soon as you can for the year 2022.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
+
+Check out these blogs for detailed documentation on how you calculate payroll taxes in Microsoft Dynamics GP:
+
+[How to calculate Federal Tax with Dependent Claim Aount Field](https://community.dynamics.com/gp/b/dynamicsgp/posts/how-to-calculate-federal-tax-with-dependent-claim-amount)
+
+[Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly)
+
 
 ## Changes in March Round 3 update (Released 3/23/2022)
 
@@ -903,10 +910,6 @@ For support requests that can be handled with email, go to [https://support.micr
 ### Discussion
 
 On the [Dynamics GP community site](https://community.dynamics.com/gp), you can start a tax update discussion with other members of the Microsoft customer community. This database provides you with the opportunity to exchange information with other customers, which is perfect for providing tips and answers to questions about tax updates.
-
-### Microsoft Business Solutions Human Resources/Payroll support team
-
-We have a support team focused 100 percent on providing service and support to our Payroll customers. If you have questions, dial toll free 888-GPS-SUPP (888-477-7877).
 
 ## Preparing for installation
 
