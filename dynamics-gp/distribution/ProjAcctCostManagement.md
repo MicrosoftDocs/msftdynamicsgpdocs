@@ -253,29 +253,27 @@ project costs and billing customers* on page 17 for more information.
 
 1. Open the PA Vendor Class Options window.
 
-**Microsoft Dynamics GP menu \> Tools \> Setup \> Purchasing \> Vendor Class
+  **Microsoft Dynamics GP menu \> Tools \> Setup \> Purchasing \> Vendor Class
 \> select a Class ID \> Project button**
 
-PACM 4.JPEG
 
-![Screenshot of the PA Vendor Class Options window showing Default PO Format to Use highlighted.](media/PACM4.jpg)
+  ![Screenshot of the PA Vendor Class Options window showing Default PO Format to Use highlighted.](media/PACM4.jpg)
 
-1. Select the default purchase order format to use when printing purchase
+2. Select the default purchase order format to use when printing purchase
     orders for vendors in the class.
 
-2. Enter a unit cost and a default unit of measure for vendors in the class.
+3. Enter a unit cost and a default unit of measure for vendors in the class.
 
-3. Select profit types for the vendor class for **Time and Materials**, **Cost
+4. Select profit types for the vendor class for **Time and Materials**, **Cost
     Plus**, and **Fixed Price** projects and enter amounts or percentages in the
-    corresponding fields. See *Profit types for calculating billing amounts* on
-    page 49 for more information.
+    corresponding fields. See *Profit types for calculating billing amounts* for more information.
 
-4. Click **Accounts** to specify posting accounts for the vendor class. See
+5. Click **Accounts** to specify posting accounts for the vendor class. See
     *Specify default posting account numbers for records and classes for cost
     transactions* on page 10 in the Project Accounting Accounting Control Guide
     for more information.
 
-5. Click **OK**.
+6. Click **OK**.
 
 #### Set up a vendor record for tracking project costs and billing customers
 
