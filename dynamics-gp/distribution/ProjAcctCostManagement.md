@@ -256,10 +256,9 @@ project costs and billing customers* on page 17 for more information.
 **Microsoft Dynamics GP menu \> Tools \> Setup \> Purchasing \> Vendor Class
 \> select a Class ID \> Project button**
 
-    PACM 4.JPEG
+PACM 4.JPEG
 
-    ![Screenshot of the PA Vendor Class Options window showing Default PO Format to Use highlighted.](media/051e992556a8e343d2f4096c675d8d78.jpg)
-
+![Screenshot of the PA Vendor Class Options window showing Default PO Format to Use highlighted.](media/PACM4.jpg)
 
 1. Select the default purchase order format to use when printing purchase
     orders for vendors in the class.
@@ -287,7 +286,7 @@ customers.
 
     Cards \> Purchasing \> Vendor \> select a Vendor ID \> Project button
 
-    ![Screenshot of the PA Vendor Class Options window.](media/PACM 5.JPEG)
+![Screenshot of the PA Vendor Class Options window.](media/PACM5.jpg)
 
 1. Select the default purchase order format to use when printing purchase
     orders for the vendor.
@@ -346,8 +345,6 @@ PACM 6.JPEG
 
 A screenshot of a cell phone Description automatically generated
 
-A screenshot of a cell phone Description automatically generated
-
 1. Select a class ID.
 
 2. Enter a unit of measure and the corresponding unit cost.
@@ -375,7 +372,7 @@ view them.
 
 1. Open the Equipment Maintenance window. **Cards \> Project \> Equipment**
 
-![Screenshot of the Equipment Maintenance window.](media/PACM 7.JPEG)
+![Screenshot of the Equipment Maintenance window.](media/PACM%207.jpg)
 
 1. Select an equipment ID.
 
@@ -408,7 +405,7 @@ page 22 for more information.
 
     **Microsoft Dynamics GP menu \> Tools \> Setup \> Project \> Miscellaneous Class**
 
-    ![Screenshot of the Miscellaneous Class Setup window.](media/PACM 8 .JPEG)
+    ![Screenshot of the Miscellaneous Class Setup window.](media/PACM%208.jpg)
 
 1. Select a class ID.
 
@@ -437,7 +434,7 @@ Maintenance \> Miscellaneous) to view them.
 
 1. Open the Miscellaneous Maintenance window. **Cards \> Project \> Miscellaneous**
 
-![Screenshot of the Miscellaneous Maintenance window.](media/PACM 9. JPEG)
+![Screenshot of the Miscellaneous Maintenance window.](media/PACM%209.jpg)
 
 1. Select a miscellaneous ID.
 
@@ -500,7 +497,7 @@ page 85 for more information.
 
 PACM 10.JPEG
 
-![Screenshot of the PA Employee Rate Table Maintenance window.](PACM 10.jpg)
+![Screenshot of the PA Employee Rate Table Maintenance window.](media/PACM%2010.jpg)
 
 1. Enter a rate table ID, date, and description. The date is for information
     only.
@@ -523,8 +520,7 @@ PACM 10.JPEG
 
 > [!NOTE]
 > To update pay rates in an existing employee rate table based on pay codes,
-click the Rate Table ID wizard button. See [Update pay rates in an employee
-rate table based on pay codeS](#update-pay-rates-in-an-employee-rate-table-based-on-pay-codes) for more information.
+click the Rate Table ID wizard button. See [Update pay rates in an employee rate table based on pay codeS](#update-pay-rates-in-an-employee-rate-table-based-on-pay-codes) for more information.
 
 See the U.S. Payroll or Canadian Payroll documentation (**Help \> Printable
 Manuals**) for more information about pay codes and SUTA state and workers'
@@ -569,7 +565,7 @@ based on pay code* on page 27 for more information.
 
 PACM 11. JPEG
 
-![Screenshot of the PA Position Rate Table Maintenance window.](media/PACM 11.jpg)
+![Screenshot of the PA Position Rate Table Maintenance window.](media/PACM%2011.jpg)
 
 The window is similar to the PA Employee Rate Table Maintenance window. See
 *Create an employee rate table* on page 23 for more information.
@@ -591,7 +587,7 @@ Equipment Rate Table**
 
 PACM 12.JPEG
 
-![Screenshot of the PA Equipment Rate Table Maintenance window.](media/PACM 12.jpg)
+![Screenshot of the PA Equipment Rate Table Maintenance window.](media/PACM%2012.jpg)
 
 The window is similar to the PA Employee Rate Table Maintenance window.
 
@@ -616,7 +612,7 @@ The following table lists the windows and how to open them.
 | Position       | Cards \> Project \> Position Rate Table \> Enter a rate table ID \> Rate Table ID wizard button                |
 | Equipment      | Cards \> Project \> Equipment Rate Table \> Enter a rate table ID \> Rate Table ID wizard button PACM 13. JPEG |
 
-![Screenshot of the Employee Rate Table Wizard window.](media/PACM 13.jpg)
+![Screenshot of the Employee Rate Table Wizard window.](media/PACM%2013.jpg)
 
 1. Select **Copy existing entries from this rate table** and select the rate
     table.
@@ -718,9 +714,7 @@ in it.
 
 PACM 14.JPEG
 
-![Screenshot of the Contract Template Maintenance window.](PACM 14.jpg)
-
-A screenshot of a cell phone Description automatically generated
+![Screenshot of the Contract Template Maintenance window.](media/PACM%2014.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -758,7 +752,7 @@ You can specify billing settings for a contract template.
 
 PACM 15. JPEG
 
-![Screenshot of the Contract Template Maintenance window.](media/PACM 15.jpg)
+![Screenshot of the Contract Template Maintenance window.](media/PACM%2015.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -784,9 +778,7 @@ Amount** fee calculation method in projects in the template will be copied.
 
 PACM 16. JPEG
 
-![Screenshot of the Copy Contract from Template window.](media/PACM 16.jpg)
-
-A screenshot of a cell phone Description automatically generated
+![Screenshot of the Copy Contract from Template window.](media/PACM%2016.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -838,7 +830,7 @@ You can create a project template to apply to project records.
 
 PACM 17.JPEG
 
-![Screenshot of the Project Template Maintenance window.](media/PACM 17.jpg)
+![Screenshot of the Project Template Maintenance window.](media/PACM%2017.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -900,9 +892,7 @@ You can specify billing settings for a project template.
 
 PACM 18.JPEG
 
-![Screenshot of the Billing Template Settings window.](media/PACM 18.jpg)
-
-A screenshot of a cell phone Description automatically generated
+![Screenshot of the Billing Template Settings window.](media/PACM%2018.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -930,9 +920,7 @@ Multicurrency**).
 
 PACM 19.JPEG
 
-![Screenshot of the Add Existing Project to Template window.](media/PACM 19.jpg)
-
-A screenshot of a cell phone Description automatically generated
+![Screenshot of the Add Existing Project to Template window.](media/PACM%2019.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -975,7 +963,7 @@ for forecast budget amounts will be used.
 
 **PACM 20.JPEG**
 
-![Screenshot of the Project Maintenance window.](media/PACM 20.jpg)
+![Screenshot of the Project Maintenance window.](media/PACM%2020.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1074,9 +1062,7 @@ project closing requirements isn't complete.
 
 PACM 21.JPEG
 
-![Screenshot of the Project Setup window.](media/PACM 21.jpg)
-
-A screenshot of a cell phone Description automatically generated
+![Screenshot of the Project Setup window.](media/PACM%2021.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1217,9 +1203,7 @@ Status button**
 
 PACM 24.JPEG
 
-![Screenshot of the Project Setup – Status Options window.](media/PACM 24.jpg)
-
-A screenshot of a computer Description automatically generated
+![Screenshot of the Project Setup – Status Options window.](media/PACM%2024.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -1244,9 +1228,7 @@ Labels button**
 
 PACM 25.JPEG
 
-![Screenshot of the Project Setup – Label Options window.](media/PACM 25.jpg)
-
-A screenshot of a cell phone Description automatically generated
+![Screenshot of the Project Setup – Label Options window.](media/PACM%2025.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1433,7 +1415,7 @@ Class**
 
 PACM 26.JPEG
 
-![Screenshot of the Cost Category Class Setup window.](media/PACM 26.jpg)
+![Screenshot of the Cost Category Class Setup window.](media/PACM%2026.jpg)
 
 1. Enter a class ID and description.
 
@@ -1457,7 +1439,7 @@ Category) to view them.*
 
 **PACM 27.JPEG**
 
-![Screenshot of the Cost Category Maintenance window.](media/PACM 27.jpg)
+![Screenshot of the Cost Category Maintenance window.](media/PACM%2027.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -1535,7 +1517,7 @@ Class \> Go To button \> Benefits**
 
 PACM 28.JPEG
 
-![Screenshot of the Benefit Setup window.](media/PACM 28.jpg)
+![Screenshot of the Benefit Setup window.](media/PACM%2028.jpg)
 
 1. Select whether to allocate benefits based on currency amounts or hours
     posted.
@@ -1571,7 +1553,7 @@ Class \> Go To button \> Benefits \> Go To button \> Accounts**
 
 PACM 29.JPEG
 
-![Screenshot of the Benefit Cost Category Accounts window.](media/PACM 29.jpg)
+![Screenshot of the Benefit Cost Category Accounts window.](media/PACM%2029.jpg)
 
 1. Select a benefit code.
 
@@ -1621,7 +1603,7 @@ Allocation**
 
 PACM 30.JPEG
 
-![Screenshot of the Benefit Allocation window.](media/PACM 30.jpg)
+![Screenshot of the Benefit Allocation window.](media/PACM%2030.jpg)
 
 1. Enter or select ranges of projects, employees, check dates, or cost
     categories.
@@ -1696,7 +1678,7 @@ See *Assign fees to a project* on page 89 for more information.
 
 **PACM 31.JPEG**
 
-![Screenshot of the Fee Maintenance window.](media/PACM 31.jpg)
+![Screenshot of the Fee Maintenance window.](media/PACM%2031.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -1876,7 +1858,7 @@ See *Create a contract record* on page 62 for more information.
 
 PACM 32.JPEG
 
-![Screenshot of the Contract Class Setup window.](media/PACM 32.jpg)
+![Screenshot of the Contract Class Setup window.](media/PACM%2032.jpg)
 
 1. Enter a class ID and description.
 
@@ -1923,7 +1905,7 @@ view them.*
 
 **PACM 33.JPEG**
 
-![Screenshot of the Contract Maintenance window.](media/PACM 33.jpg)
+![Screenshot of the Contract Maintenance window.](media/PACM%2033.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -2033,7 +2015,7 @@ settings.*
 
 PACM 34.JPEG
 
-![Screenshot of the Contract Settings window.](media/PACM 34.jpg)
+![Screenshot of the Contract Settings window.](media/PACM%2034.jpg)
 
 A screenshot of a social media post Description automatically generated
 
@@ -2094,7 +2076,7 @@ button \> Customer ID expansion button**
 
 PACM 35.JPEG
 
-![Screenshot of the Third Party Customer List window.](media/PACM 35.jpg)
+![Screenshot of the Third Party Customer List window.](media/PACM%2035.jpg)
 
 1. Select customers to include on the third-party customer list for the
     contract.
@@ -2138,7 +2120,7 @@ See *Create a project record* on page 68 for more information.
 
 PACM 36.JPEG
 
-![Screenshot of the Project Class Setup window.](media/PACM 36.jpg)
+![Screenshot of the Project Class Setup window.](media/PACM%2036.jpg)
 
 1. Enter a class ID and description.
 
@@ -2230,7 +2212,7 @@ Inquiry window (Inquiry \> Project \> Maintenance \> Project) to view them.*
 
 **PACM 37.JPEG**
 
-![Screenshot showing the Project Maintenance window.](media/PACM 37.jpg)
+![Screenshot showing the Project Maintenance window.](media/PACM%2037.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -2373,7 +2355,7 @@ settings.*
 
 PACM 38.JPEG
 
-![Screenshot of the Project Billing Settings window.](media/PACM 38.jpg)
+![Screenshot of the Project Billing Settings window.](media/PACM%2038.jpg)
 
 1. Click the **Customer ID** expansion button to create a third-party customer
     list for the project. See *Create a third-party customer list for billing*
@@ -2478,7 +2460,7 @@ that use the **Fee Amount** fee calculation method will be copied.
 
 **PACM 39.JPEG**
 
-![Screenshot of the Duplicate Existing Project window.](media/PACM 39.jpg)
+![Screenshot of the Duplicate Existing Project window.](media/PACM%2039.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2523,7 +2505,7 @@ Cards \> Project \> Project \> Equip List button
 
 PACM40.JPEG
 
-![Screenshot of the Equipment List window.](media/PACM 40.jpg)
+![Screenshot of the Equipment List window.](media/PACM%2040.jpg)
 
 1. Select the equipment records for the project.
 
@@ -2549,7 +2531,7 @@ Project \> Access List button) to view the assignments.*
 
 PACM 41.JPEG
 
-![Screenshot of the Employee Access List window.](media/PACM 41.jpg)
+![Screenshot of the Employee Access List window.](media/PACM%2041.jpg)
 
 1. Select the employees for the project.
 
@@ -2583,7 +2565,7 @@ You can assign an employee to projects.
 
 **PACM 42.JPEG**
 
-![Screenshot of the Project Access List window.](media/PACM 42.jpg)
+![Screenshot of the Project Access List window.](media/PACM%2042.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -2669,7 +2651,7 @@ Project \> Budget button) to view them.*
 
 PACM 44.JPEG
 
-![Screenshot of the Budget Maintenance window.](media/PACM 44.jpg)
+![Screenshot of the Budget Maintenance window.](media/PACM%2044.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2765,7 +2747,7 @@ expansion button) to view the budget amounts.*
 
 PACM 45.JPEG
 
-![](media/PACM 45.jpg)
+![Screenshot of the Budget Detail window.](media/PACM%2045.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -2873,7 +2855,7 @@ Update**
 
 PACM 446.JPEG
 
-![Screenshot of the Update Budget Lines window.](media/PACM 446.jpg)
+![Screenshot of the Update Budget Lines window.](media/PACM%20446.jpg)
 
 1. Enter or select the cost category to add to the budget lines.
 
@@ -2936,7 +2918,7 @@ expansion button \> Rate Table button) to view the assignment.*
 
 PACM 46. JPEG
 
-![Screenshot of the Budget Rates window.](media/PACM 46.jpg)
+![Screenshot of the Budget Rates window.](media/PACM%2046.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -2978,7 +2960,7 @@ items that have been selected.*
 
 PACM 47.JPEG
 
-![Screenshot of the Budget Detail IV Items window.](media/PACM 47.jpg)
+![Screenshot of the Budget Detail IV Items window.](media/PACM%2047.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -3023,7 +3005,7 @@ amounts.*
 
 PACM 48.JPEG
 
-![Screenshot of the Forecasting window.](media/PACM 48.jpg)
+![Screenshot of the Forecasting window.](media/PACM%2048.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -3063,7 +3045,7 @@ period.*
 
 PACM 49.JPEG
 
-![Screenshot of the Project Periodic Budget window.](media/PACM 49.jpg)
+![Screenshot of the Project Periodic Budget window.](media/PACM%2049.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -3113,7 +3095,7 @@ Cards \> Project \> Project \> Fees button
 
 PACM 50.JPEG
 
-![Screenshot of the Fee Entry window.](media/PACM 50.jpg)
+![Screenshot of the Fee Entry window.](media/PACM%2050.jpg)
 
 1. Select the fees to include in the project. The fees that you can assign
     depend on the project type and project status.You can assign fees to a
@@ -3154,7 +3136,7 @@ Cards \> Project \> Project \> Fees button \> Fee ID expansion button
 
 PACM 51.JPEG
 
-![Screenshot of the Fee Details window.](media/PACM 51.jpg)
+![Screenshot of the Fee Details window.](media/PACM%2051.jpg)
 
 1. The information you can modify depends on the fee type. See *Chapter 11,"Fees,"* for more information.
 
@@ -3200,7 +3182,7 @@ button**
 
 PACM 52.JPEG
 
-![A screenshot of a computer Description automatically generated](media/PACM 52.jpg)
+![A screenshot of a computer Description automatically generated](media/PACM%2052.jpg)
 
 1. Select the fiscal year to display fee amounts for. Modify fee amounts, as
     necessary. 3. Click **OK**.
@@ -3220,7 +3202,7 @@ Cards \> Project \> Project \> Fees button \> Frequency expansion button
 
 PACM 53.JPEG
 
-![Screenshot of the Fee Schedule window.](media/PACM 53.jpg)
+![Screenshot of the Fee Schedule window.](media/PACM%2053.jpg)
 
 1. You can modify the dates to bill the fee, and the amounts to bill.
 
@@ -3282,7 +3264,7 @@ class. See *Grant user permissions* on page 95 for more information.
 
 PACM 54.JPEG
 
-![Screenshot of the User Class Project Accounting Settings window.](media/PACM 54.jpg)
+![Screenshot of the User Class Project Accounting Settings window.](media/PACM%2054.jpg)
 
 The window is similar to the User Project Accounting Settings window. See
 *Grant user permissions* on page 95 for more information.
@@ -3297,7 +3279,7 @@ You can grant individual users permission to various data entry options.
 
 PACM 55.JPEG
 
-![Screenshot of the User Project Accounting Settings window.](media/PACM 55.jpg)
+![Screenshot of the User Project Accounting Settings window.](media/PACM%2055.jpg)
 
 1. Select the user to grant permissions to.
 
@@ -3624,7 +3606,7 @@ button**
 
 PACM 56.JPEG
 
-![Screenshot of the Change Order Contract Information window.](media/PACM 56.jpg)
+![Screenshot of the Change Order Contract Information window.](media/PACM%2056.jpg)
 
 1. Enter the next document number to use for change orders for the contract.
 
@@ -3661,7 +3643,7 @@ button**
 
 PACM 57.JPEG
 
-![Screenshot of the Change Order Project Information window.](media/PACM 57.jpg)
+![Screenshot of the Change Order Project Information window.](media/PACM%2057.jpg)
 
 1. Select **Track Change Orders** to begin using change orders for the project.
     Select **Track Change Orders for new Budget add on the fly** to have change
@@ -3764,7 +3746,7 @@ currency to enter a change order for the contract.
 
 **PACM 58.JPEG**
 
-![Screenshot of the Change Order Entry window.](media/PACM 58.jpg)
+![Screenshot of the Change Order Entry window.](media/PACM%2058.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -3825,7 +3807,7 @@ Cards \> Project \> Change Order Entry \> Budget Changes Button
 
 PACM 59.JPEG
 
-![Screenshot of the Budget Changes Entry window.](media/PACM 59.jpg)
+![Screenshot of the Budget Changes Entry window.](media/PACM%2059.jpg)
 
 1. Select the project and cost category to enter a budget change for.
 
@@ -3883,7 +3865,7 @@ Number expansion button**
 
 PACM 60.JPEG
 
-![Screenshot of the Change Order Budget Information window.](media/PACM 60.jpg)
+![Screenshot of the Change Order Budget Information window.](media/PACM%2060.jpg)
 
 1. You can enter initial and final quote amounts and enter the names of the
     people who prepared and approved the quote. You can click the
@@ -3907,7 +3889,7 @@ in a project budget.
 
 PACM 61.JPEG
 
-![Screenshot of the Change Order Budget Detail Entry window.](media/PACM 61.jpg)
+![Screenshot of the Change Order Budget Detail Entry window.](media/PACM%2061.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -3974,7 +3956,7 @@ You can enter a change order to modify fee assignments for a project.
 
 PACM 62.JPEG
 
-![Screenshot of the Change Order Fee Entry window.](media/PACM 62.jpg)
+![Screenshot of the Change Order Fee Entry window.](media/PACM%2062.jpg)
 
 A screenshot of a social media post Description automatically generated
 
@@ -4019,7 +4001,7 @@ You can view a list of change orders.
 
 **PACM 63.JPEG**
 
-![Screenshot of the Change Order Inquiry window.](media/PACM 63.jpg)
+![Screenshot of the Change Order Inquiry window.](media/PACM%2063.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -4038,7 +4020,7 @@ You can view approval history for a change order.
 
 PACM 64.JPEG
 
-![Screenshot of the Change Order Approval Info window.](media/PACM 64.jpg)
+![Screenshot of the Change Order Approval Info window.](media/PACM%2064.jpg)
 
 1. You can view the employee or customer who approved the change order and when they approved it.
 
@@ -4054,7 +4036,7 @@ Cards \> Project \> Change Order Entry \> Revision History button
 
 PACM 65.JPEG
 
-![Screenshot of the Change Order Revision Info window.](media/PACM 65.jpg)
+![Screenshot of the Change Order Revision Info window.](media/PACM%2065.jpg)
 
 1. You can view the names of the people who revised the change order and when
     and why they revised it.
@@ -4091,7 +4073,7 @@ posted for projects for the customer.
 
 PACM 66.JPEG
 
-![Screenshot of the PA Customer Options window.](media/PACM 66.jpg)
+![Screenshot of the PA Customer Options window.](media/PACM%2066.jpg)
 
 1. Select **Closed to Project Costs**.
 
@@ -4149,7 +4131,7 @@ Transactions \> Project \> Project Closing
 
 PACM 67.JPEG
 
-![Screenshot of the Project Closing window.](media/PACM 67.jpg)
+![Screenshot of the Project Closing window.](media/PACM%2067.jpg)
 
 1. Select a contract number. **Completed** projects for the contract will be
     listed in the scrolling window.
@@ -4183,7 +4165,7 @@ button**) to view the project closing checklist for the project.
 
 PACM 68.JPEG
 
-![Screenshot of the Project Closing More Info window.](media/PACM 68.jpg)
+![Screenshot of the Project Closing More Info window.](media/PACM%2068.jpg)
 
 All options in the **Checklist** area of the window will be selected if all
 requirements for closing the project have been met.
@@ -4368,7 +4350,7 @@ timesheets.
 
 PACM 69.JPEG
 
-![Screenshot of the Timesheet Setup window.](media/PACM 69.jpg)
+![Screenshot of the Timesheet Setup window.](media/PACM%2069.jpg)
 
 1. Enter the next document number to use for timesheets.
 
@@ -4440,7 +4422,7 @@ details.*
 
 PACM 70.JPEG
 
-![Screenshot of the Timesheet Entry window.](media/PACM 70.jpg)
+![Screenshot of the Timesheet Entry window.](media/PACM%2070.jpg)
 
 1. Select the **Standard** transaction type to enter a new timesheet.
 
@@ -4598,7 +4580,7 @@ expense transactions.
 
 PACM 71. JPEG
 
-![Screenshot of the Employee Expense Setup window.](media/PACM 71.jpg)
+![Screenshot of the Employee Expense Setup window.](media/PACM%2071.jpg)
 
 1. Enter the next document number to use for employee expense transactions.
 
@@ -4668,7 +4650,7 @@ Expense-Detail) to view employee expense transaction line item details.*
 
 PACM 72.JPEG
 
-![Screenshot of the Employee Expense Entry window.](media/PACM 72.jpg)
+![Screenshot of the Employee Expense Entry window.](media/PACM%2072.jpg)
 
 1. Select the **Standard** transaction type to enter a new employee expense
     transaction.
@@ -4768,7 +4750,7 @@ You can specify a personal expense on an employee expense transaction.
 
 PACM 73.JPEG
 
-![A screenshot of a social media post Description automatically generated](media/PACM 73.jpg)
+![A screenshot of a social media post Description automatically generated](media/PACM%2073.jpg)
 
 If you're viewing the transaction amounts in their originating currency in
 the Employee Expense Entry window, the Employee Expense Detail Entry window
@@ -4813,7 +4795,7 @@ Transactions \> Project \> Employee Expense \> More Info button
 
 PACM 74.JPEG
 
-![Screenshot of the Employee Expense Entry – More Info window.](media/PACM 74.jpg)
+![Screenshot of the Employee Expense Entry – More Info window.](media/PACM%2074.jpg)
 
 If you're viewing the transaction amounts in their originating currency in
 the Employee Expense Entry window, the Employee Expense Entry - More Info
@@ -4861,7 +4843,7 @@ logs.
 
 PACM 75.JPEG
 
-![Screenshot of the Equipment Log Setup window.](media/PACM 75.jpg)
+![Screenshot of the Equipment Log Setup window.](media/PACM%2075.jpg)
 
 1. Enter the next document number to use for equipment logs.
 
@@ -4915,7 +4897,7 @@ item details.*
 
 PACM 76. JPEG
 
-![Screenshot of the Equipment Log Entry window.](media/PACM 76.jpg)
+![Screenshot of the Equipment Log Entry window.](media/PACM%2076.jpg)
 
 1. Select the **Standard** transaction type to enter a new equipment log.
 
@@ -4997,7 +4979,7 @@ miscellaneous logs.
 
 PACM 77.JPEG
 
-![Screenshot of the Miscellaneous Log Setup window.](media/PACM 77.jpg)
+![Screenshot of the Miscellaneous Log Setup window.](media/PACM%2077.jpg)
 
 This window is similar to the Equipment Log Setup window. See *Set up
 equipment logs for tracking project costs and billing customers* on page 131
@@ -5023,7 +5005,7 @@ Transactions \> Project \> Miscellaneous Log Entry
 
 PACM 78.JPEG
 
-![Screenshot of the Miscellaneous Log Entry window.](media/PACM 78.jpg)
+![Screenshot of the Miscellaneous Log Entry window.](media/PACM%2078.jpg)
 
 1. Select the **Standard** transaction type to enter a new miscellaneous log.
 
@@ -5177,7 +5159,7 @@ Transfer**
 
 PACM 79.JPEG
 
-![Screenshot of the Inventory Transfer Setup window.](media/PACM 79.jpg)
+![Screenshot of the Inventory Transfer Setup window.](media/PACM%2079.jpg)
 
 1. Enter the next document number to use for inventory transfers.
 
@@ -5261,7 +5243,7 @@ Transfer-Detail) to view inventory transfer line item details.*
 
 PACM 80. JPEG
 
-![Screenshot of the Inventory Transfer Entry window.](media/PACM 80.jpg)
+![Screenshot of the Inventory Transfer Entry window.](media/PACM%2080.jpg)
 
 1. Select the **Standard** transaction type to enter an inventory transfer to
     make inventoried items that you've purchased for projects available for
@@ -5365,7 +5347,7 @@ more information.
 
 PACM 81. JPEG
 
-![Screenshot of the PA Item Lot Number Entry window.](media/PACM 81.jpg)
+![Screenshot of the PA Item Lot Number Entry window.](media/PACM%2081.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5407,7 +5389,7 @@ more information.
 
 PACM 82.jpeg
 
-![Screenshot of the PA Item Serial Number Entry window.](media/PACM 82.jpg)
+![Screenshot of the PA Item Serial Number Entry window.](media/PACM%2082.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -5441,7 +5423,7 @@ more information.
 
 PACM83. JPEG
 
-![Screenshot of the PA Bin Quantity Entry window.](media/PACM 83.jpg)
+![Screenshot of the PA Bin Quantity Entry window.](media/PACM%2083.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5526,7 +5508,7 @@ Transfer-Detail) to view return from project line item details.*
 
 PACM 84.JPEG
 
-![Screenshot of the Returns From Project Entry window.](media/PACM 84.jpg)
+![Screenshot of the Returns From Project Entry window.](media/PACM%2084.jpg)
 
 1. Enter a document number and date.
 
@@ -5633,7 +5615,7 @@ categories in project budgets.
 
 **PACM 85. JPEG**
 
-![Screenshot of the Budget-Detail Inquiry window.](media/PACM 85.jpg)
+![Screenshot of the Budget-Detail Inquiry window.](media/PACM%2085.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5654,7 +5636,7 @@ amounts accrued for projects for a list of customers.
 
 **PACM 86.JPEG**
 
-![Screenshot of the Corporate Inquiry window.](media/PACM 86.jpg)
+![Screenshot of the Corporate Inquiry window.](media/PACM%2086.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5679,7 +5661,7 @@ amounts accrued for projects for a list of contracts.
 
 **PACM 87. JPEG**
 
-![Screenshot of the Customer Inquiry window.](media/PACM 87.jpg)
+![Screenshot of the Customer Inquiry window.](media/PACM%2087.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -5704,7 +5686,7 @@ amounts accrued for a list of projects.
 
 **PACM 88. JPEG**
 
-![Screenshot of the Contract Inquiry window.](media/PACM 88.jpg)
+![Screenshot of the Contract Inquiry window.](media/PACM%2088.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -5729,7 +5711,7 @@ amounts accrued for the cost categories in a project budget.
 
 **PACM 89. JPEG**
 
-![Screenshot of the Project Inquiry window.](media/PACM 89.jpg)
+![Screenshot of the Project Inquiry window.](media/PACM%2089.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5760,7 +5742,7 @@ fees that are assigned to a project.
 
 PACM 90. JPEG
 
-![Screenshot of the Project Inquiry-Fees window.](media/PACM 90.jpg)
+![Screenshot of the Project Inquiry-Fees window.](media/PACM%2090.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5794,7 +5776,7 @@ an inventory transfer* on page 142 for more information.
 
 PACM 91.JPEG
 
-![Screenshot of the Committed Cost Detail window.](media/PACM 91.jpg)
+![Screenshot of the Committed Cost Detail window.](media/PACM%2091.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -5809,7 +5791,7 @@ You can view total cost and revenue for a list of projects.
 
 **PACM 92. JPEG**
 
-![](media/PACM 92.jpg)
+![Screenshot of the Project-Detail Inquiry window.](media/PACM%2092.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -5833,7 +5815,7 @@ Combined History**
 
 PACM 94. JPEG
 
-![Screenshot of the Combined History Utility window.](media/PACM 94.jpg)
+![Screenshot of the Combined History Utility window.](media/PACM%2094.jpg)
 
 1. Enter the dates to assemble information for.
 
@@ -5878,7 +5860,7 @@ items by date on page 158 for more information.*
 
 **PACM 95. JPEG**
 
-![Screenshot of the Combined History Inquiry window.](media/PACM 95.jpg)
+![Screenshot of the Combined History Inquiry window.](media/PACM%2095.jpg)
 
 A screenshot of a computer Description automatically generated
 
@@ -5921,7 +5903,7 @@ cost transaction line items by date* on page 159 for more information.
 
 PACM 96.JPEG
 
-![Screenshot of the Combined History Inquiry Filters window.](media/PACM 96.jpg)
+![Screenshot of the Combined History Inquiry Filters window.](media/PACM%2096.jpg)
 
 1. Select the information to limit viewing cost transaction line items by.
 
@@ -5940,7 +5922,7 @@ Inquiry \> Project \> Combined History \> Qty expansion button
 
 PACM 97. JPEG
 
-![Screenshot of the Combined History Detail window.](media/PACM 97.jpg)
+![Screenshot of the Combined History Detail window.](media/PACM%2097.jpg)
 
 1. Click **More Info** to view additional information about the line item.
 
@@ -5969,7 +5951,7 @@ allocations that you have set up in the PA Allocations SmartList.
 
 **PACM 98. JPEG**
 
-![Screenshot of the Project Allocation Maintenance window.](media/PACM 98.jpg)
+![Screenshot of the Project Allocation Maintenance window.](media/PACM%2098.jpg)
 
 A screenshot of a social media post Description automatically generated
 
@@ -6015,7 +5997,7 @@ allocation.
 
 **PACM 99. JPEG**
 
-![Screenshot of the Project Allocation window.](media/PACM 99.jpg)
+![Screenshot of the Project Allocation window.](media/PACM%2099.jpg)
 
 A screenshot of a social media post Description automatically generated
 
