@@ -2296,15 +2296,15 @@ these accounts can be determined only after the invoice is posted.
 
     The Cogs/Inv button will not be available in the following instances:
 
-        - If the COGS and Inventory accounts are not available under the relevant setup, such as Item or Customer or Posting or if these accounts are not linked to an account class.
+    - If the COGS and Inventory accounts are not available under the relevant setup, such as Item or Customer or Posting or if these accounts are not linked to an account class.
+    
+    - If non-inventory items are entered on an invoice.
 
-        - If non-inventory items are entered on an invoice.
+    - If the unit cost for drop-ship items in the Sales Transaction Entry window is zero.
 
-        - If the unit cost for drop-ship items in the Sales Transaction Entry window is zero.
+    - If the item number selected in the Sales Transaction Entry window is marked as is marked as Misc Charges/Services/Flat Fee on Item Maintenance window
 
-        - If the item number selected in the Sales Transaction Entry window is marked as is marked as Misc Charges/Services/Flat Fee on Item Maintenance window
-
-        - If the Document Type of the transaction is Return. In the case of Sales Returns, the COGS and Inventory accounts will form part of the distribution accounts displayed in the Sales Distribution Entry window. You can enter analysis information including assignments for these accounts if required, in the same manner as the other distribution accounts displayed in the Sales Distribution Entry window that are linked to an account class.
+    - If the Document Type of the transaction is Return. In the case of Sales Returns, the COGS and Inventory accounts will form part of the distribution accounts displayed in the Sales Distribution Entry window. You can enter analysis information including assignments for these accounts if required, in the same manner as the other distribution accounts displayed in the Sales Distribution Entry window that are linked to an account class.
 
     If you have entered Kit Items on an invoice, addition or deletion of a component item from the Sales Kit Options window (Transactions \>\> Sales \>\> Sales Transaction Entry \>\> Item Number expansion button \>\> Kits) may increase or decrease the COGS and Inventory Accounts displayed in the Analytical Sales Transaction Entry window, if the accounts concerned are linked to an account class.
 

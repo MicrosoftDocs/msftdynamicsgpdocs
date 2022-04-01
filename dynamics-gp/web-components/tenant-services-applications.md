@@ -1,6 +1,6 @@
 ---
 title: "Tenant Services Applications"
-description: ""
+description: Learn about the configuration and maintenance options for Microsoft Dynamics GP multitenant applications.
 keywords: "web components"
 author: dapelt
 ms.author: dapelt
@@ -156,10 +156,10 @@ The following steps describe how to configure the web client for a tenant:
     |DexiniLocation | Specify the location of the Dex.ini file for the Microsoft Dynamics GP instance that is associated with the tenant. For example: c:\Program Files (x86)\Microsoft Dynamics\GP2013\Data\Dex.ini|
     |HeartbeatTimeout | The amount of time a Web Client session can be in a disconnected state before it is terminated. The default value of 0.00:00:0 means the session is never terminated. You can change the value to specify the length of time before the session terminates. The format is hours.minutes:seconds. For example, the following sets the value to 20 minutes: 00.20:00:00|
     |RuntimeLogEnabled | Specify whether to enable logging for the application. To enable logging, set the property value to true. The default value is: false|
-    |CustomRuntimeSettings | Specify whether enable more detailed logging for the application. To enable logging, set one or more values to true. The default value is: ScriptLogEnabled=false|TimingLogEnabled=false|SqlLogEnabled=false|
+    |CustomRuntimeSettings | Specify whether enable more detailed logging for the application. To enable logging, set one or more values to true. The default value is: ScriptLogEnabled=false<br>TimingLogEnabled=false<br>SqlLogEnabled=false|
     |SQLUserName | The name for the SQL login that was specified to be used for the web client when the web client runtime was installed for the Microsoft Dynamics GP instance.|
     |SQLPassword | The password for the SQL login being used for the web client for the Microsoft Dynamics GP instance.|
-    |RuntimeProcessUserName | The name of the Windows account that the runtime process will run as when a user logs in using an |Organizational Account. You only need to provide a value if you are using Organizational Accounts.|
+    |RuntimeProcessUserName | The name of the Windows account that the runtime process will run as when a user logs in using an Organizational Account. You only need to provide a value if you are using Organizational Accounts.|
     |RuntimeProcessPassword | The password for the Windows account used to run the runtime process.|
 
 8. Click Save.

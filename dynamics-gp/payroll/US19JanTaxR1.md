@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 03/22/2022
+ms.date: 03/31/2022
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -18,9 +18,16 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2022 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-The second tax update for 2022 replaces all previous tax updates. It includes state tax table changes that take effect January 1, 2022. We recommend that you install this update as soon as you can for the year 2022.
+The third tax update for 2022 replaces all previous tax updates. It includes state tax table changes that take effect January 1, 2022. We recommend that you install this update as soon as you can for the year 2022.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
+
+Check out these blogs for detailed documentation on how you calculate payroll taxes in Microsoft Dynamics GP:
+
+[How to calculate Federal Tax with Dependent Claim Aount Field](https://community.dynamics.com/gp/b/dynamicsgp/posts/how-to-calculate-federal-tax-with-dependent-claim-amount)
+
+[Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly)
+
 
 ## Changes in March Round 3 update (Released 3/23/2022)
 
@@ -37,22 +44,24 @@ In January the state of Colorado released a new form for 2022 called [DR-0004](h
 All filing status have the same fixed flat tax of 4.55%
 
 **The following new filing status were added:**
-HOH1J - Head of Household 1 Job - Exemption amount  $16,500
-MAR1J - Married Filing Jointly 1 Job - Exemption amount  $23,000
-SIN1J - Single/Mar filing Single 1 Job - Exemption amount  $10,500
+
+- HOH1J - Head of Household 1 Job - Exemption amount  $16,500  
+- MAR1J - Married Filing Jointly 1 Job - Exemption amount  $23,000  
+- SIN1J - Single/Mar filing Single 1 Job - Exemption amount  $10,500  
 
 **Existing Filing Status remain unchanged:**
-MAR - Married  - Exemption amount  $8,000
-SINGLE - Single  - Exemption amount  $4,000
+
+- MAR - Married  - Exemption amount  $8,000  
+- SINGLE - Single  - Exemption amount  $4,000  
 
 There are 2 other parts to this form that have many different exemption amounts, we cannot accommodate all of them in the tax tables.
-A new “OTHER” filing status was added (OTH1J) with Exemption increments of $500 that will accommodate all the "other" amounts on the form if an employee enters.  
+A new “OTHER” filing status was added (OTH1J) with Exemption increments of $500 that will accommodate all the "other" amounts on the form if an employee enters. 
+
 OTH1J - OTH, +1 Jobs or Child Cr Allow - Exemption amount of $500
 
-As an example, lets say I fill out the form and choose an amount of 2500 – it does not match any of the above filing status so I would pick the OTHER status and put a 5 under Cards | Payroll | State Tax in the Number of Dependents field OR Additional Allowances.
-Which is 2500/500 = 5
+As an example, lets say I fill out the form and choose an amount of 2500 – it does not match any of the above filing status so I would pick the OTHER status and put a 5 under Cards | Payroll | State Tax in the Number of Dependents field OR Additional Allowances. Which is 2500/500 = 5.
 
-Another example, I put 5500 on the form, again does not match the other filing status, so I choose other and put 11.
+Another example, I put 5500 on the form. Again, that does not match the other filing status, so I choose *Other* and put *11*.
 
 
 ## Changes in January Round 2 update (Released 1/20/2022)
@@ -903,10 +912,6 @@ For support requests that can be handled with email, go to [https://support.micr
 ### Discussion
 
 On the [Dynamics GP community site](https://community.dynamics.com/gp), you can start a tax update discussion with other members of the Microsoft customer community. This database provides you with the opportunity to exchange information with other customers, which is perfect for providing tips and answers to questions about tax updates.
-
-### Microsoft Business Solutions Human Resources/Payroll support team
-
-We have a support team focused 100 percent on providing service and support to our Payroll customers. If you have questions, dial toll free 888-GPS-SUPP (888-477-7877).
 
 ## Preparing for installation
 

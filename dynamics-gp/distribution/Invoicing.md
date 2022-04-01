@@ -176,7 +176,7 @@ The following diagrams show how tax details are compared to determine the amount
 
 - For a delivery shipping method
 
-    !(media/INVDSM.jpg)
+    ![Diagram showing details of the delivery shipping method.](media/INVDSM.jpg)
 
     The tax calculated on the line item would be the amount or percentage assigned to tax detail TAX001, the tax calculated on the freight charge will be the amount or percentage assigned to tax detail TAX003, and the tax on the miscellaneous charge will be the amount or percentage assigned to tax details TAX001 and TAX004. These details are used because they appear in both the customer schedule and in the item, freight, or miscellaneous schedule.
 

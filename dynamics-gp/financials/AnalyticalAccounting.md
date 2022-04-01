@@ -418,7 +418,7 @@ You cannot create or delete any column in this window.
 
 8. Choose OK to close the window.
 
-![A screenshot(media/b5a63aac5022ab48480513880201f344.jpg)
+![A screenshot](media/b5a63aac5022ab48480513880201f344.jpg)
 
 ## Defining fiscal years
 
