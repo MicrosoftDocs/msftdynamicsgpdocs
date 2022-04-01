@@ -215,5 +215,5 @@
 #### [Module upgrades from Dynamics GP 2013](upgrade/module-upgrades-from-microsoft-dynamics-gp-2013.md)
 ### [After you upgrade](upgrade/after-you-upgrade.md)
 #### [Company data conversion](upgrade/company-data-conversion.md)
-### Migration to Dynamics 365 Business Central online
-#### [Get from Dynamics GP to Dynamics 365 Business Central](upgrade/migrate-gp-bc.md)
+### Migrate to Dynamics 365 Business Central online
+#### [Compare Work in Dynamics GP to Business Central](upgrade/migrate-gp-bc.md)
