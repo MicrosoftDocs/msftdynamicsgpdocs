@@ -44,22 +44,24 @@ In January the state of Colorado released a new form for 2022 called [DR-0004](h
 All filing status have the same fixed flat tax of 4.55%
 
 **The following new filing status were added:**
-HOH1J - Head of Household 1 Job - Exemption amount  $16,500
-MAR1J - Married Filing Jointly 1 Job - Exemption amount  $23,000
-SIN1J - Single/Mar filing Single 1 Job - Exemption amount  $10,500
+
+- HOH1J - Head of Household 1 Job - Exemption amount  $16,500  
+- MAR1J - Married Filing Jointly 1 Job - Exemption amount  $23,000  
+- SIN1J - Single/Mar filing Single 1 Job - Exemption amount  $10,500  
 
 **Existing Filing Status remain unchanged:**
-MAR - Married  - Exemption amount  $8,000
-SINGLE - Single  - Exemption amount  $4,000
+
+- MAR - Married  - Exemption amount  $8,000  
+- SINGLE - Single  - Exemption amount  $4,000  
 
 There are 2 other parts to this form that have many different exemption amounts, we cannot accommodate all of them in the tax tables.
-A new “OTHER” filing status was added (OTH1J) with Exemption increments of $500 that will accommodate all the "other" amounts on the form if an employee enters.  
+A new “OTHER” filing status was added (OTH1J) with Exemption increments of $500 that will accommodate all the "other" amounts on the form if an employee enters. 
+
 OTH1J - OTH, +1 Jobs or Child Cr Allow - Exemption amount of $500
 
-As an example, lets say I fill out the form and choose an amount of 2500 – it does not match any of the above filing status so I would pick the OTHER status and put a 5 under Cards | Payroll | State Tax in the Number of Dependents field OR Additional Allowances.
-Which is 2500/500 = 5
+As an example, lets say I fill out the form and choose an amount of 2500 – it does not match any of the above filing status so I would pick the OTHER status and put a 5 under Cards | Payroll | State Tax in the Number of Dependents field OR Additional Allowances. Which is 2500/500 = 5.
 
-Another example, I put 5500 on the form, again does not match the other filing status, so I choose other and put 11.
+Another example, I put 5500 on the form. Again, that does not match the other filing status, so I choose *Other* and put *11*.
 
 
 ## Changes in January Round 2 update (Released 1/20/2022)
