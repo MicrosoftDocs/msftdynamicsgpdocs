@@ -67,7 +67,7 @@ Added in Microsoft Dynanmics GP 2010
 Administration >> Reports >> Template Maintenance >> choose the Report Name drop-down list and select More Reports.
 
 Template-enabled reports are Report Writer reports that have a Microsoft Word Template document associated with them. When enabled the option to print becomes available in the Report Destination window.
-  
+![Form](media/enabledtemplates01.png)
 ### Report definition
 Word Templates are based on the Standard report definition in Report Writer. Report definition is needed for:
 •	Defining which tables are used for the report.
