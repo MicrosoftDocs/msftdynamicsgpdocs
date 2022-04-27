@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 3/23/2022
+ms.date: 4/27/2022
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
@@ -8833,6 +8833,9 @@ Recommended to Track ACA Information:
     Deductions In Arrears allows you to track uncollected deductions to ensure they are recovered in a future pay run, vital for ACA coverage.
 •	Add all Employee Dependents
 •	Ensure Benefits and Deductions exist both in Human Resources and Payroll (Integration between HR and PR complete)
+
+[ACA TRAINING VIDEO SETUP](https://www.youtube.com/watch?v=ocx23LFlmyU)
+[ACA Year-End Blog tips](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-year-end-update-2021-affordable-care-act-aca)
 
 **Health Insurance Setup Window**
 The Offer Of Coverage Code (line 14)
