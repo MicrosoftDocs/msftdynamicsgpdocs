@@ -1,6 +1,6 @@
 ---
-title: "Word Templates in Microsoft Dynamics GP"
-description: "Word Templates in Microsoft Dynamics GP."
+title: Introduction to Word Templates in Dynamics GP
+description: Learn how to customize your customer-facing documents with Word templates in Dynamics GP."
 keywords: "Word Template"
 author: theley502
 
@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: nihell
-ms.date: 04/18/2022
+ms.date: 04/28/2022
 
 ---
 
@@ -41,9 +41,12 @@ Install
 2. Under Additional Products click on Microsoft Dynamics GP Add-in for Microsoft Word, then Install.
 3. Click the radio button _I accept the terms in the License Agreement_, click Next.
 4. Select the install location for the Microsoft Dynamics GP Add-in for Microsoft Word, click Install.
-**Note:**__The default location is C:\Program Files (x86)\ Microsoft Dynamics\ Report Templates\
+
+    > [!NOTE]
+    > The default location is C:\Program Files (x86)\ Microsoft Dynamics\ Report Templates\
+
 5. Once the Microsoft Dynamics GP Add-in for Microsoft Word is installed, click Finish.
-6. Open Microsoft Word, select the Developer Tab, verify that the Microsoft Dynamics GP Tempaltes group shows.
+6. Open Microsoft Word, select the Developer Tab, verify that the Microsoft Dynamics GP Templates group shows.
 
 #### Developer Tab missing?
 If you are missing the Developer tab, right click in the black space within the ribbon > click "Customize the Ribbon"
@@ -53,6 +56,7 @@ In the Word Options window check the Developer box, click OK.
 The following settings in Microsoft Word will help you see the layout structure of the Word Template and make editing them easier.
 To open the Microsoft Word Options, click the File menu in Microsoft Word and select Options.
 Check the following options under the Display category:
+
 * Paragraph marks
 * Hidden text
 * Object anchors
@@ -68,97 +72,139 @@ Administration >> Reports >> Template Maintenance >> choose the Report Name drop
 
 Template-enabled reports are Report Writer reports that have a Microsoft Word Template document associated with them. When enabled the option to print becomes available in the Report Destination window.
 ![Form](media/enabledtemplates01.png)
+
 ### Report definition
+
 Word Templates are based on the Standard report definition in Report Writer. Report definition is needed for:
-•	Defining which tables are used for the report.
-•	Specifying how data is sorted.
-•	Determining which section, the report has
-•	Specifying which fields are in each section.
-•	Defining calculated values that appear on the report.
-Microsoft Word does not perform these actions; it simply displays the report that has been rendered.
+
+* Defining which tables are used for the report.  
+* Specifying how data is sorted.  
+* Determining which section, the report has  
+* Specifying which fields are in each section.  
+* Defining calculated values that appear on the report.  
+
+Microsoft Word does not perform these actions; it simply displays the report that has been rendered.  
+
 ### Word template document
-The word template document defines the layout of a report. 
+
+The word template document defines the layout of a report.  
+
 It contains the report definition details such as sections in the report, fields in each section, and any static text values defined for the report. This information is gathered from the report definition, and then embedded into the word template when created.
+
 ### How Word Templates are processed
 When you choose Template as the Report Type, the assigned Microsoft Word document will be used to generate the output of the report.
- 
-1.	The Microsoft Dynamics GP runtime uses the report definition within Microsoft Dynamics GP to generate an XML file that contains both the report definition and the data for the report. 
-2.	The assigned Word Template document is then retrieved. 
-3.	The XML and Word Template are passed to the Template Processing Engine, which combines them to produce the completed Microsoft Word Template for the report.
+
+1.The Microsoft Dynamics GP runtime uses the report definition within Microsoft Dynamics GP to generate an XML file that contains both the report definition and the data for the report. 
+2.The assigned Word Template document is then retrieved. 
+3.The XML and Word Template are passed to the Template Processing Engine, which combines them to produce the completed Microsoft Word Template for the report.
 
 ## Report Template Design
+
 ### Document structure
 The Word Template document is a standard Microsoft Word document.
 When rendered from Microsoft Dynamics GP, the additional information from the report definition is embedded into the document.
-Several tables in the word template document define the overall structure. All content that is displayed in the generated Microsoft Word document is placed inside these tables.
-**NOTE**Any text that is not within one of these tables will not be included in the generated word template.
- 
+Several tables in the word template document define the overall structure. All content that is displayed in the generated Microsoft Word document is placed inside these tables.  
+
+> [!NOTE]
+> Any text that is not within one of these tables will not be included in the generated word template.
  
 ### Page header table
-•	Placed in the Header section of the Microsoft Word document.
-•	Corresponds to the Page Header section on the standard Report Writer report.
-•	Content is displayed at the top of every page of the generated report.
-•	Examples: report date, current user, page number, logo.
+
+* Placed in the Header section of the Microsoft Word document.
+* Corresponds to the Page Header section on the standard Report Writer report.
+* Content is displayed at the top of every page of the generated report.
+* Examples: report date, current user, page number, logo.  
+
 ### Report header table
-•	Located at the beginning of the Microsoft Word document.
-•	Corresponds to the Report Header section on the standard Report Writer report.
-•	Content is displayed only one time at the beginning of the report.
-•	Examples: Company information, customer/vendor information such as address’
+
+* Located at the beginning of the Microsoft Word document.  
+* Corresponds to the Report Header section on the standard Report Writer report.  
+* Content is displayed only one time at the beginning of the report.  
+* Examples: Company information, customer/vendor information such as address  
+
 ### Body table
-•	Located after the Report Header table in the Microsoft Word document.
-•	Corresponds to the Body content and any additional Headers and/or Footers.
-•	Contains main content ‘guts’ of the report.
-•	Has multiple rows. 
-•	One row for the actual report body, then an additional nested row for each additional header/footer. (example: item description, line-item comments)
+
+* Located after the Report Header table in the Microsoft Word document.  
+* Corresponds to the Body content and any additional Headers and/or Footers.  
+* Contains main content ‘guts’ of the report.  
+* Has multiple rows.  
+* One row for the actual report body, then an additional nested row for each additional header/footer.  
+
+  (example: item description, line-item comments)
+
 ### Report footer table
-•	Located at the end of the Microsoft Word document.
-•	Corresponds to the Report Footer section on the standard Report Writer report.
-•	Content is displayed only one time at the end of the report.
-•	Examples. Document totals, document comments, terms/conditions
+
+* Located at the end of the Microsoft Word document.  
+* Corresponds to the Report Footer section on the standard Report Writer report.  
+* Content is displayed only one time at the end of the report.  
+* Examples. Document totals, document comments, terms/conditions  
+
 ### Page footer table
-•	Located in the footer of the Microsoft Word document.
-•	Corresponds to the page footer for the standard Report Writer report.
-•	Content is displayed at the bottom of every page of the generated report.
-•	Examples: report page number, business address, etc.
+
+* Located in the footer of the Microsoft Word document.  
+* Corresponds to the page footer for the standard Report Writer report.  
+* Content is displayed at the bottom of every page of the generated report.  
+* Examples: report page number, business address, etc.  
+
 ### Fields, captions, and legends
+
 The fields, captions, and legends are the specific data points that link the word template to the report definition.
-How to remove a field, caption, or legend from a word template.
-1.	Click on the item within the word template document.
+
+#### How to remove a field, caption, or legend from a word template.
+
+1.Click on the item within the word template document.
 The tag containing the name of the report definition field will be displayed.
-2.	Click on the tag to select it.
-3.	Remove the item by pressing the Delete or Backspace buttons.
+2.Click on the tag to select it.
+3.Remove the item by pressing the Delete or Backspace buttons.
 
 ### Displaying item properties
+
 The item properties will show what section of the report data the item originated from.
 To display the Content Control Properties, select by clicking the item in the word template.
 In the Developer tab, click Properties under the Controls group.
- 
-**NOTE**The tag field in the Content Control Properties window indicates which section of the report definition the value is from.
+
+> [!NOTE]
+> The tag field in the Content Control Properties window indicates which section of the report definition the value is from.
+
 ### Bookmarks
-A bookmark identifies and labels a specific section or location within a document that can be used to identify for future reference.
+
+A bookmark identifies and labels a specific section or location within a document that can be used to identify for future reference.  
+
 In Microsoft Dynamics GP there are 5 default bookmarks. These bookmarks are used in conjunction with the XML on the template to determine where on the Microsoft Word document your report information should be placed.
- 
+
 #### Viewing Bookmarks
- First, you will want to make sure that Bookmarks are visible on the document you are viewing.
-1.	In Microsoft Word, File menu, Advanced tab, Show document content section.
-2.	Check the box next to option “Show bookmarks”.
-           
-Now that we know bookmarks icon is enabled and you can see them on the word template, you can use the following direction to see which bookmarks on your document.
-*Bookmarks appear as a grey capital I or roman numeral 1.
-  
-Open the Microsoft Dynamics GP Word Template via directly opening the .docx file or clicking Modify in Template Maintenance on the specific Word Template.
-1.	In Microsoft Word, click into any of the tables that contain data on the template, go to the Insert menu, Links section, select Bookmark.
+
+First, you will want to make sure that Bookmarks are visible on the document you are viewing.  
+
+1.In Microsoft Word, File menu, Advanced tab, Show document content section.
+2.Check the box next to option “Show bookmarks”.
+
+  Now that we know bookmarks icon is enabled and you can see them on the word template, you can use the following direction to see which bookmarks on your document.
+
+  > [!TIP]
+  > Bookmarks appear as a grey capital I or roman numeral 1.
+
+3. Open the Microsoft Dynamics GP Word Template via directly opening the .docx file or clicking Modify in Template Maintenance on the specific Word Template.  
+
+4.In Microsoft Word, click into any of the tables that contain data on the template, go to the Insert menu, Links section, select Bookmark.
 
 Reference the following “map” of a report template document to see where the bookmarks are located.
  
-**NOTE** *StartTempalteDocumentBookmark and EndTemplateDocumentBookmark are used only for calculating page numbers for report template document. They do not identify tables in the report template document.
-*To be found by the template processing engine in Microsoft Dynamics GP, these bookmarks must not be located within the fields, captions, or legends used for the report.
-*Word Templates that are generated via the Word Template generator may not necessarily have all these bookmarks. This varies based on what is included on the Report Writer report xml file used when generating a template.
+> [!NOTE]
+> StartTemplateDocumentBookmark and EndTemplateDocumentBookmark are used only for calculating page numbers for report template document. They do not identify tables in the report template document.
+>
+> To be found by the template processing engine in Microsoft Dynamics GP, these bookmarks must not be located within the fields, captions, or legends used for the report.
+>
+> Word Templates that are generated via the Word Template generator may not necessarily have all these bookmarks. This varies based on what is included on the Report Writer report xml file used when generating a template.
+
 ### Company Logo
+
 Each company in Microsoft Dynamics GP can have an image assigned that is to be displayed on the Microsoft Word template reports.
 Assigned in the Image Assignment window (Administration >> Reports >> Template Configuration >> Images).
-Typically, this logo is placed in the Page Header table for the word template. 
-To add a company image to the word template, complete the following steps:
+Typically, this logo is placed in the Page Header table for the word template.  
+
+#### To add a company image to the word template
+
 1.	Create a cell to contain the image.
 In the word template, create a table call in the location where you want the image to appear.
 2.	Add a Picture Content Control.
@@ -169,34 +215,37 @@ Use the resize handles on the Picture Content Control to the size required for t
 With the Picture Content Control selected, click Properties in the Controls group. Set the following properties:
 Title: CompanyLogo
 Tag: globals.’Company.Logo’
- 
-**NOTE** You can opt to not have a Content Control field for the company logo and have the image directly on the template.
+
+> [!NOTE]
+> You can opt to not have a Content Control field for the company logo and have the image directly on the template.
+
 ## Template patterns
-### Form 
-#### Characteristics:
-•	The Body table in the layout is a single cell. 
-•	The body table has another nested in that, which contains the rows and columns that define the layout of the data.
-•	Captions and fields for the report are placed in the cells of the nested table.
-•	The StartTemplateSectionRepeating bookmark is placed in a cell of the nested table to indicate that the entire single-cell row of the Body table will be repeated for each record in the report. 
-•	The Body table may have rows for additional headers/footers.
-•	Report Footer and Page Footer tables are option in this pattern.
- 
-### Column
-#### Characteristics:
-•	First row of the Body table is divided into columns that contains the captions for the values in the report. 
-•	Body table can contain rows for additional header/footer data.
-•	Body table has a row that contains a nested table. The nested table is divided into columns, and the fields for the report are placed in these columns. 
-•	StartTemplateSectionRepeating bookmark is placed in a cell of the nested table to indicate that the entire row of the Body table will be repeated for each record in the report. 
-•	Report Footer and Page Rooter tables are optional.
- 
+
+### Form Characteristics
+
+* The Body table in the layout is a single cell.  
+* The body table has another nested in that, which contains the rows and columns that define the layout of the data.  
+* Captions and fields for the report are placed in the cells of the nested table.  
+* The StartTemplateSectionRepeating bookmark is placed in a cell of the nested table to indicate that the entire single-cell row of the Body table will be repeated for each record in the report.  
+* The Body table may have rows for additional headers/footers.  
+* Report Footer and Page Footer tables are option in this pattern.  
+
+### Column Characteristics
+
+* First row of the Body table is divided into columns that contains the captions for the values in the report.  
+* Body table can contain rows for additional header/footer data.  
+* Body table has a row that contains a nested table. The nested table is divided into columns, and the fields for the report are placed in these columns.  
+* StartTemplateSectionRepeating bookmark is placed in a cell of the nested table to indicate that the entire row of the Body table will be repeated for each record in the report.  
+* Report Footer and Page Rooter tables are optional.  
+
 ### Read-Only
+
 1.	Open Report Template Maintenance.
 Administration >> Reports >> Template Maintenance
 2.	Select the template.
 In Report Template Maintenance, select the report template for which you want to make a rea-only version, click Modify.
 3.	In Microsoft Word, in the Review tab, click Protect, then Restrict Editing.
- 
- 
+
 4.	Save the changes made to the word template.
 5.	Close the modified report.
 6.	Import the modified word template document into GP.
@@ -208,25 +257,30 @@ Select the word template document that you had just saved.
 A message will be displayed that indicates you are replacing an existing template. Click Yes to replace the existing word template document with the one you have just modified.
 
 ## Creating Report Templates
+
 1.	Open Report Template Maintenance. 
 Administration >> Reports >> Template Maintenance
 2.	Select the original version of the report. 
 3.	Create a new report template document. 
 4.	Specify the details of the new word template document.
-In the New Template window, specify how the new report template document will be created. 
-For reports that have no existing report template documents, the new report template will be blank (no layout).
-For reports that have existing report template documents, the new template can be created based on the template you select.
+
+    In the New Template window, specify how the new report template document will be created. 
+    For reports that have no existing report template documents, the new report template will be blank (no layout).
+    For reports that have existing report template documents, the new template can be created based on the template you select.
 5.	Supply a name for the word template you are creating, click Create.
 6.	Modify the new report template. 
 7.	Save the new report template.
-**NOTE**
-Always check the box to Maintain compatibility with previous versions of Word before saving. Only available the first time the document is saved. 
+
+    > [!NOTE]
+    > Always check the box to Maintain compatibility with previous versions of Word before saving. Only available the first time the document is saved. 
 8.	Close the new report template.
 9.	Import the new report template. 
 10.	Replace the existing report template document. 
 
 ### Report Templates for Modified Reports
-#### Creating a modified report template document
+
+#### To create a modified report template document
+
 1.	Open Report Template Maintenance. 
 Administration >> Reports >> Template Maintenance
 2.	Select the modified version of the report. 
@@ -240,23 +294,27 @@ For reports that have existing report template documents, the new template can b
 7.	Display the field list for the report. 
 8.	View the additional resources for the report. 
 9.	Make modifications to the report template layout.
-10.	Save the new report template.
-**NOTE**
-Always check the box to Maintain compatibility with previous versions of Word before saving. Only available the first time the document is saved. 
+10.	Save the new report template.  
+
+    > [!NOTE]
+    > Always check the box to Maintain compatibility with previous versions of Word before saving. Only available the first time the document is saved. 
 11.	Close the new report template.
 12.	Import the new modified report template. 
 13.	Replace the existing report template document.
  
-#### Using the modified report template document
+#### To use the modified report template document
+
 1.	Open Report Template Maintenance
 2.	Select the modified version of the report.
 3.	Assign the modified report template.
 4.	Verify Security is to modified report.
 Administration >> Setup >> System >> Alternate/Modified Forms and Reports 
-**NOTE**
-The status field in Template Maintenance correlates to the version of the report selected in Alternate/Modified Forms and Reports.
-   
-#### Updating the data source for a report template.
+
+> [!NOTE]
+> The status field in Template Maintenance correlates to the version of the report selected in Alternate/Modified Forms and Reports.
+
+#### To update the data source for a report template
+
 1.	Update the modified report.
 Update the Report Writer report in Report Writer.
 2.	Run the report for which you made modifications to.
@@ -271,22 +329,29 @@ This can be done via the clicking Modify in the Report Template Maintenance wind
 9.	In the Developer pane, select Add Source from the Microsoft Dynamics GP Templates group. 
 10.	Locate the XML Document file saved in Step 3, click Open. 
 11.	In the Custom XML Mapping pane, you should now see a new XML Resource listed.
-**NOTE** The naming convention should be the same as before. 
+
+    > [!NOTE]
+    > The naming convention should be the same as before. 
 12.	Modify the word template as needed and Save As.
 13.	Re-Import the word template document into Microsoft Dynamics GP.
 
 ## Word Template Generator
-The Microsoft Dynamics GP Word Template Generator is a utility that can be used to help create a Word Template for Microsoft Dynamics GP reports. 
+
+The Microsoft Dynamics GP Word Template Generator is a utility that can be used to help create a Word Template for Microsoft Dynamics GP reports.  
+
 ### Install
+
 1.	Service Packs and Hotfixes for the Word Template Generator for Microsoft Dynamics GP | Microsoft Docs
 2.	In the Downloads section, select MDGP2013_WordTemplateGenerator_FullInstall_R2.zip 
 3.	Click the radio button I accept the terms in the License Agreement, click Next.  
-4.	Select the install location for the Microsoft Dynamics GP 2013 Word Template Generator Tool, click install 
-***The default install location is C:\Program Files (x86)\Microsoft Dynamics\Template Generator\***
+4.	Select the install location for the Microsoft Dynamics GP 2013 Word Template Generator Tool, click install  
+
+    The default install location is C:\Program Files (x86)\Microsoft Dynamics\Template Generator\
 5.	Once the Word Template Generator Tool is installed click Finish
 6.	The following screen capture shows what the Template Generator tool looks once installed.
 
 #### How to use?
+
 1.	Run the report for which you want to create a template.
 2.	Export the report in XML format.
 In the Report Destination Window, export the report as a file in XML format, click OK.
@@ -297,29 +362,41 @@ In the Report Destination Window, export the report as a file in XML format, cli
 7.	Revise the template as needed.
 
 ## Troubleshooting Word Templates
-### Word add-in issues
-•	If you experience issues with the Word add-in, best to uninstall/reinstall.
-Incorrect data in Word document
-•	Verify that the Report Writer report generates as expected first. 
-•	Verify that bookmarks are present and in correct location.
-•	Verify that all sections are available via the Report Definition. 
-Template processing does not complete.
-If you run a report, choose to generate the output in Microsoft Word format, but the processing never completes, try the following: 
-•	Be sure that the SQL Server Browser service is running on the machine. This service is necessary for template processing to complete successfully. 
-•	The Template Processing Engine may have encountered an error and be in an unknown condition. Restart Microsoft Dynamics GP so the Template Processing Engine is re-initialized. 
-•	Remove any non-typical controls that may have been added to the template layout. For example, templates cannot be processed if they contain the “Rich Text Control” that can be added from the Developer ribbon. 
-•	If a specific report is causing problems, try simplifying the report template document to isolate the problem. For example, if a modified report will not generate the output in Microsoft Word format, try running the original version of the report. If the original report can generate the output in Microsoft Word format, the issue can be isolated to changes you made in the modified report template document. 
-•	Add the following settings to the Dex.ini file:
-KeepTemplateFiles=TRUE 
-TPELogging=TRUE 
-When you add these settings, a log file that has a name beginning with TemplateProcessing, as well as the intermediate template documents are stored in the current user’s temporary folder. To access the temporary folder, type the following in the Run command:
-explorer %temp% 
-Sort the contents of the temporary folder by the modified date. Examine to files related to the report that will not process. They will contain information that can be helpful when troubleshooting.
-Press and hold the Alt key when moving table boarders to prevent them from snapping to the grid in Microsoft Word.
-Use the Design Mode which can be activated from the Developer tab to see quickly which sections the items in the word template comes from.
- 
-Make regular backup of your word template as you are working, in case you make a change that you’d like to revert.
 
+### Word add-in issues
+
+* If you experience issues with the Word add-in, best to uninstall/reinstall.  
+* Incorrect data in Word document  
+
+  * Verify that the Report Writer report generates as expected first.  
+  * Verify that bookmarks are present and in correct location.  
+  * Verify that all sections are available via the Report Definition.  
+* Template processing does not complete.  
+
+  If you run a report, choose to generate the output in Microsoft Word format, but the processing never completes, try the following:  
+
+  * Be sure that the SQL Server Browser service is running on the machine. This service is necessary for template processing to complete successfully.  
+  * The Template Processing Engine may have encountered an error and be in an unknown condition. Restart Microsoft Dynamics GP so the Template Processing Engine is re-initialized.  
+  * Remove any non-typical controls that may have been added to the template layout. For example, templates cannot be processed if they contain the “Rich Text Control” that can be added from the Developer ribbon.  
+  * If a specific report is causing problems, try simplifying the report template document to isolate the problem. For example, if a modified report will not generate the output in Microsoft Word format, try running the original version of the report. If the original report can generate the output in Microsoft Word format, the issue can be isolated to changes you made in the modified report template document.  
+  * Add the following settings to the Dex.ini file:  
+
+    ```
+    KeepTemplateFiles=TRUE 
+    TPELogging=TRUE 
+    ```
+
+    When you add these settings, a log file that has a name beginning with TemplateProcessing, as well as the intermediate template documents are stored in the current user’s temporary folder. To access the temporary folder, type the following in the Run command:
+
+    ```explorer %temp%```
+
+    Sort the contents of the temporary folder by the modified date. Examine to files related to the report that will not process. They will contain information that can be helpful when troubleshooting.
+
+    Press and hold the Alt key when moving table boarders to prevent them from snapping to the grid in Microsoft Word.
+
+Use the Design Mode which can be activated from the Developer tab to see quickly which sections the items in the word template comes from.
+
+Make regular backup of your word template as you are working, in case you make a change that you’d like to revert.
 
 ## Create and Assign Word Templates
 
@@ -338,3 +415,8 @@ Remember that the template uses Report Writer to access data. If we ever want to
 Reports \| Template Configuration
 
 In Dynamics GP, the configuration window allows you to enable a specific form(s) to work as a template. Mark the document(s) for which you want to create a template. At the bottom of the window, be sure to mark the ‘Enable Report Templates’ and, if desired, to ‘Allow use of the Standard form’ even though you’re using the template.
+
+## See also
+
+[System Administration Guide](SystemAdminGuide.md)  
+[Understanding the Lifecycle Policies for Dynamics GP](../terms/lifecycle.md)  
