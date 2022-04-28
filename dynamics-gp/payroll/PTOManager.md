@@ -149,7 +149,7 @@ Paid Time Off Manager is set up for each individual company, and Paid Time Off M
 
 To open the PTO Options window, click the **HR and Payroll** series button, click **Payroll** on the Setup content pane, click **PTO Manager** and then click **PTO Options**.
 
-![Screenshot](media/PTOOP.jpg)
+![Screenshot that shows the PTO Options window.](media/PTOOP.jpg)
 
 select * from APR_PTO00100 --PTO_Options
 
@@ -217,7 +217,7 @@ Users must select the appropriate check box on the Employee Pay Code Maintenance
 
 Users must select the appropriate check box on the Pay Code Setup window for PTO Manager to accrue for vacation and/or sick time. This must be done for each pay code that is to accrue time. To open this window, click the **HR and Payroll** series button, click **Payroll** on the Setup content pane and then click **Pay Code**.
 
-![Screenshot](media/PTOPCS.jpg)
+![Screenshot that shows the Pay Code Setup window.](media/PTOPCS.jpg)
 
 ### Employee Class Setup Window
 
@@ -227,7 +227,7 @@ When working with employee classes, users must complete the appropriate check bo
 
 Use the PTO Setup window to create setup data to be inherited at the employee level. The system allows the user to save, recall and update multiple PTO Setup records. To open the PTO Setup window, click the **HR and Payroll** series button, click **Payroll** on the Setup content pane and then click **PTO Setup**.
 
-![Screenshot](media/PTOS.jpg)
+![Screenshot that shows the PTO Setup window.](media/PTOS.jpg)
 
 select * from PTO40400 --PTO Code Setup
 
@@ -292,7 +292,7 @@ Users can create an unlimited variety of schedules. The schedules are implemente
 
 To open the Accrual Schedule Setup window, click the **HR and Payroll** series button, click **Payroll** on the Setup content pane, click **PTO Manager** and then click **Accrual Schedules**.
 
-![Screenshot](media/ASS23.jpg)
+![Screenshot that shows the Accrual Schedule Setup window for viewing accrual schedules.](media/ASS23.jpg)
 
 select * from PTO40100 --PTO Accrual Schedule Header
 select * from PTO40101 --PTO Accrual Schedule Detail
@@ -322,7 +322,7 @@ It is important to understand each Range Based On option and how it is used to s
 
 Using this selection the Range From and Range To columns represent hours worked per pay period. All hours worked that are eligible for vacation and/or sick time calculations within the pay period are used to determine the range that the employee falls into. As shown in the figure, if the employee worked 13 hours during the pay period, then the calculation factor of 0.02910 is used.
 
-![Screenshot](media/ASSe017.jpg)
+![Screenshot that shows the Accrual Schedule Setup window.](media/ASSe017.jpg)
 
 #### Range Based On: Hours Worked/Year
 
@@ -331,7 +331,7 @@ the current year and has worked 80 eligible hours this pay period, the calculati
 
 Calculation factors are determined based on the organization’s pay schedules, standard hours worked for each pay period, and methods of determining earned hours.
 
-![Screenshot](media/ASS24.jpg)
+![Screenshot of the Accrual Schedule Setup window.](media/ASS24.jpg)
 
 #### Range Based On: Hours Worked Life-to-Date
 
@@ -342,7 +342,7 @@ Using this selection the Range From and Range To columns represent Hours Worked 
 
 The following figure shows that if the employee has worked a total of 10,400 eligible hours since he or she was hired (equivalent to 5 years) and has worked 80 eligible hours this pay period, the calculation factor of 0.05769 must be used.
 
-![Screenshot](media/ASS22.jpg)
+![Screenshot that shows the Accrual Schedule Setup window with the eligible hours.](media/ASS22.jpg)
 
 Calculation factors are determined based on the organization’s pay schedules, standard hours worked for each pay period, and methods of determining earned hours.
 
@@ -350,7 +350,7 @@ Calculation factors are determined based on the organization’s pay schedules, 
 
 Using this selection the Range From and Range To columns represent years worked. The years worked are determined by the difference between the current date and hire date (or if it exists, adjusted hire date). The following figure shows that if the employee has worked a total of 11.5 years (based on the employee’s hire date), the calculation factor of 0.07692 will be used. In this example, the years worked are rounded to 11 years.
 
-![Screenshot](media/ASS23.jpg)
+![Screenshot that shows the Accrual Schedule Setup window with the calculation example.](media/ASS23.jpg)
 
 
 #### Maximum Hours Based On
@@ -369,7 +369,7 @@ Make a selection in the **Maximum Hours Based On** field. Options include:
 
 Employees may accrue a maximum number of hours for each pay period based on this calculation range. In the Years Worked example, the first range of years worked allows the employee to earn up to 3.08 hours in an 80 hour pay period (80 Hours \* Calculation Factor of 0.03845 = 3.08). If the employee had worked at the company for ten years, the employee can earn a maximum of 6.15 hours for the pay period.
 
-![Screenshot](media/ASS23.jpg)
+![Screenshot that shows the Accrual Schedule Setup window with the variable pay period example.](media/ASS23.jpg)
 
 #### Maximum Hours Based On: Per Year - Fixed
 
@@ -425,11 +425,11 @@ Enter the **Calculation Factor.** The **Calculation Factor** is always multiplie
 
 Calculation factors are determined based on the organization’s pay schedules, standard hours worked for each pay period, and methods of determining earned hours. In the previous examples, a bi-weekly pay period is used with a standard hours worked for each pay period of 80. In the following window, the calculation factor is determined by simply dividing the Maximum Hours by the To hours worked in the range (0.50 / 19.99= 0.0250). If the employee works 19.99 hours, he or she earns 0.5 hours(19.99 \* 0.025).
 
-![Screenshot](media/ASS32.jpg)
+![Screenshot that shows the Accrual Schedule Setup window and how it determines calculation factors.](media/ASS32.jpg)
 
 The following window shows that the factor is figured by dividing the Maximum Hours per Pay Period by the 2080 (maximum regular time work hours for each year). If an employee consistently works 80 hours each pay period, and he or she has worked a total of 10,400 hours since starting, the factor of 0.05769 is used, and he or she earns 4.62 hours each pay period. Since the employee is paid biweekly, there are a total of 26 pay periods. If the employee earns 4.62 hours every pay period, at the end of the year, he or she has accumulated 120 hours of earned time.
 
-![Screenshot](media/ASS41.jpg)
+![Screenshot that shows the Accrual Schedule Setup window and how the factor is figured.](media/ASS41.jpg)
 
 #### Maximum Hours
 
@@ -485,7 +485,7 @@ The maximum schedule is set up based on Years Worked. When calculating Years Wor
 
 To open the Maximum Schedules Setup window, click the **HR and Payroll Series** button, click **PTO Manager** on the Setup content pane and then click **Maximum Schedules**.
 
-![Screenshot](media/MSS.jpg)
+![Screenshot that shows the Maximum Schedules Setup window.](media/MSS.jpg)
 
 Enter or select a **Schedule Code** and a short **Description**. Enter the **Range From** and **Range To** and **Maximum Hours**.
 
@@ -519,11 +519,11 @@ According to the policies of Fabrikam, Inc., vacation time is subject to a waiti
 To apply this policy, in the Vacation group, under Waiting Period, mark
 Recurring and Based on Anniversary Date.
 
-![Screenshot](media/PTOFTS.jpg)
+![Screenshot of the PTO Setup window.](media/PTOFTS.jpg)
 
 A full-time employee of Fabrikam, Inc. accrues PTO per pay period. The vacation accrual schedule is set to accrue a maximum of 4.62 hours for an employee who has worked 0 to 5 years and 7.69 hours for an employee who has worked 5.01-10 years. This is specified in the Accrual Schedule Setup window (Microsoft Dynamics GP \> Tools \> Setup \> Payroll \> PTO Manager \> Accrual Schedules), as shown in the following illustration.
 
-![Screenshot](media/ASS41.jpg)
+![Screenshot that shows the Accrual Schedule Setup window and how PTO accrues.](media/ASS41.jpg)
 
 To figure the Calculation Factor, calculate the yearly maximum hours divided by the number of hours worked per year. [120 (maximum hours per year) / 2080(hours worked per year) = 0.058)
 
@@ -637,7 +637,7 @@ This chapter discusses how to set up an employee to use PTO Manager for accruing
 
 Use the Employee PTO Maintenance window to configure the accrual options for each employee. To open the Employee PTO Maintenance window, click the **HR and Payroll** series button, click **Payroll** on the Cards content pane and then click **PTO**.
 
-![Screenshot](media/PTOEM.jpg)
+![Screenshot that shows the Employee PTO Maintenance window.](media/PTOEM.jpg)
 
 select * from PTO00100 --PTO Payroll Master
 select * from PTO00101 --PTO Pending Master 
@@ -754,7 +754,7 @@ The PTO Liabilities Report provides administration the opportunity to view any d
 
 To open the PTO Report Options window, click the **HR and Payroll** series button, click **Payroll** on the Reports content pane and then click **PTO**.
 
-![Screenshot](media/PTORE.jpg)
+![Screenshot that shows the PTO Report Options window.](media/PTORE.jpg)
 
 The criteria to set up this report states that employees must be assigned at least one accrual schedule and must have one pay code marked as a Primary Pay Code on the Employee Pay Code Maintenance window. When creating a PTO Report Option, the user has the flexibility to calculate liability (in hour and dollar amounts) for Vacation and/or Sick time. Liabilities can also be calculated by accrual schedule, in other words, only for employees with the selected accrual schedules assigned to them.
 
@@ -769,7 +769,7 @@ After the PTO Report Option is set up and the report is printed, the system will
 
 The PTO Utilities window is used to process the year-end information for the paid-time-off accruals. To open the PTO Utilities window, click the **HR and Payroll** series button, click **Payroll** on the Utilities content pane and then click **PTO Utilities**.
 
-![Screenshot](media/PTOUT.jpg)
+![Screenshot that shows the PTO Utilities window.](media/PTOUT.jpg)
 
 Click the **Process** button. Once Process is selected, the system checks every marked employee to allow carry over and verifies that each employee has hours that are less than or equal to the Maximum Hours Allowed. This process also resets the Year-To-Date Accrued Time fields on the Employee PTO Setup window to zero. This utility allows the company to perform the PTO Year End process at a time consistent with their business requirements.
 
@@ -796,7 +796,7 @@ PTO Transaction Detail Only
 
 Both Balance and Detail 
 
-    - Both Balance and Detail: This option will create a detail transaction as described above and will ALSO create an adjustment to the Vacation Available or Sick Available balance in Employee PTO maintenance (also seen in upper right corner of PTO Inquiry)
+  - Both Balance and Detail: This option will create a detail transaction as described above and will ALSO create an adjustment to the Vacation Available or Sick Available balance in Employee PTO maintenance (also seen in upper right corner of PTO Inquiry)
 
 
 ### Summary

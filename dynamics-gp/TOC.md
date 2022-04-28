@@ -163,6 +163,7 @@
 ### [System Setup](installation/SystemSetup.md)
 ### [System Administration Guide](installation/SystemAdminGuide.md)
 ### [Introduction to Word Templates](installation/word-templates.md)
+### [Workflow Administrator's Guide](installation/Workflow.md)
 
 <!--- web components -->
 ### Web components
@@ -215,3 +216,5 @@
 #### [Module upgrades from Dynamics GP 2013](upgrade/module-upgrades-from-microsoft-dynamics-gp-2013.md)
 ### [After you upgrade](upgrade/after-you-upgrade.md)
 #### [Company data conversion](upgrade/company-data-conversion.md)
+### Migrate to Dynamics 365 Business Central online
+#### [Compare Work in Dynamics GP to Business Central](upgrade/migrate-gp-bc.md)

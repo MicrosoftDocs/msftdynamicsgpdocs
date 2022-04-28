@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 10/31/2021
+ms.date: 3/16/2022
 ---
 # Human Resources in Microsoft Dynamics GP
 
@@ -424,6 +424,875 @@ To modify or delete a supervisor record:
 2.	Enter or select a supervisor description.
 3.	To change the employee that holds the supervisory position, select a different employee ID.
 4.	To delete a supervisor record, choose Delete.
+
+## Attendance Setup
+
+You can accrue benefit time using Payroll or the Human Resources attendance feature. To accrue benefit time using Human Resources, you must set up accrual periods, accruals, accrual schedules, and time codes.
+
+**Setting up attendance**
+
+Use the Attendance Setup window to specify if your company accrues benefit time using U.S. Payroll or the Human Resources attendance system. You can set up attendance transactions to update the vacation calendar, set up default hours per day and default days per week, and set up reasons and types to use when creating attendance transactions.
+
+If you mark the Update Vacation Calendar option, an entry appears in the calendar for each benefit or absent time code transaction. Any absences that are created if this option is marked will appear in the Attendance Transaction Entry window. Absence transactions that are created when this option is not marked will appear in the Absence Entry window.
+
+![the User Setup window 1](media/ATTDSETUP34.jpg)
+
+To set up attendance:
+
+1. Open the Attendance Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Attendance >> Setup)
+2. Select Human Resources, or select Payroll to choose your accrue type if U.S. Payroll is registered.
+3. Mark the Allow entry of attendance type and reason in Payroll option to link attendance type and reason codes to payroll transactions in the Payroll Transaction Entry window. This option is available only when the accrue type is Human Resources and U.S. Payroll is registered.
+4. Enter the current accrual year and the last day that you accrued attendance, and indicate if seniority should be based on months or days.
+These fields are available when U.S. Payroll is not registered, or when U.S. Payroll is registered and the accrue type is Human Resources.
+5. Enter the number of days that equal a week and the number of hours that equal a day to define your organization’s work schedule. For example, a standard 40 hour work week might be Number of days in a week = 5 and Number of hours in a day = 8.
+6. Enter the next transaction number. This number also appears in the Attendance Transaction Entry window and is the number of the next transaction to be posted.
+7. To update the vacation calendar with attendance transactions, mark Update Vacation Calendar.
+8. Choose Options to open the Attendance Setup Options window.
+9. Enter an attendance reason for absence—such as Jury Duty—and choose Insert to add it to the Reason list. Then, enter an attendance type for the reason—such as Miscellaneous—and choose Insert to add it to the Type list.
+
+The reasons and types that you enter will be displayed in the Attendance Transaction Entry window. If you marked the Allow entry of attendance type and reason in Payroll option in the Attendance Setup window and you’re using U.S. Payroll, the reasons and types will be displayed in the Payroll Transaction Entry window.
+To remove an attendance reason or type from a list, select it and choose Remove. Predefined reasons and types cannot be removed.
+10.	Choose OK to close the window. The Attendance Setup window is displayed.   Choose OK again to save your changes
+
+**Setting up accrual periods**
+
+Use the Accrual Period Setup window to set up your company’s accrual period structure. You’ll use the accrual periods when creating transactions and time accruals.
+You should set up your accrual periods for the current year and the next year, and at the end of each year, set up the following year. You must have at least the current year and the following year set up.
+
+To set up accrual periods:
+
+1.	Open the Accrual Period Setup window   (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Attendance >> Accrual Periods)
+2.	Enter the current year and choose the button for the accrual period intervals that your organization uses. The appropriate accrual period setup window will open.
+3.	Enter the starting date of the first accrual period for this year in the Start Date #1 field. Press TAB to display dates in the rest of the fields. If you chose 
+Semimonthly Setup, you also must enter the starting date for the #2 field, or the end date for the #1 field.
+4.	Mark the * check box—for Accrued—next to previous periods to indicate accrued attendance transactions. As you accrue attendance transactions, each accrued transaction will be displayed with an asterisk that is for reference only.
+To mark all accrual periods, choose Mark All. To unmark all accrual periods, choose Unmark All.
+5.	Choose OK to save your changes in the accrual period setup window where you entered accrual period dates.
+6.	Choose OK to save your changes in the Accrual Period Setup window.
+
+> [!TIP]
+> We recommend three years of accrual periods or pay periods are set up: 
+> The previous year
+> The current year
+> The upcoming year
+> This is something you will want to update as you start to Accrue in a new year, example January or after year end close.
+
+**Setting up accruals**
+
+Use the Accrual Setup window to create accruals that determine the rate at which benefit time, such as vacation time or sick time, is earned. An accrual is how an employee earns benefit time. Time codes indicate what is earned and accruals indicate how that time is earned. 
+
+For example, suppose that employees earn 24 hours of vacation time after they work six months. After they work 12 months, they earn another 40 hours of vacation time, and after working two to five years, they earn 80 hours of vacation time. Each of these accruals can be added to an accrual schedule.
+
+To use the Accrual Setup window, you must have marked Human Resources as the accrue type in the Attendance Setup window.
+
+To set up accruals:
+1.	Open the Accrual Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Attendance >> Accruals)
+2.	Enter or select an accrual code and description.
+3.	Select an option in the Accrue By field, such as Pay Period, to accrue benefit time.
+4.	If you selected Post Once, Interval, or Pay Period in the Accrue By field, enter the number of hours to accrue.
+5.	If you selected Interval in the Accrue By field, enter the number of days per interval.
+6.	Enter the maximum accrual hours per year that an employee can earn.
+7.	Enter the maximum hours available that an employee can have at any given time for the accrual you selected.
+8.	If you selected Hour/Yr in the Accrue By field, enter the standard work hours per year an employee works in the Work Hours per Year field. 
+9.	If you selected Pay Period in the Accrue By field, select the frequency that the accrual happens in the Accrual Period field.
+10.	If you selected Hour/Yr in the Accrue By field, select one or more time codes in the Based on Time Codes list to base the accrual on. Transactions for these time codes will be used to calculate benefit hours earned.
+Choose Mark All to mark all the time codes in the list, or choose Unmark All to unmark all the time codes in the list and choose Save.
+
+There are 4 types of Accruals you can set up on HR:   
+(Go to Microsoft Dynamics GP | Tools | Setup | Human Resources | Attendance | Accruals and refer to the ACCRUE BY field.)
+
+1. POST ONCE -  The 'Number of Hours to Accrue' amount will be awarded ONE TIME only and stop.
+
+2. INTERVAL -  The 'Number of Hours to Accrue' amount will be awarded repeatedly for each interval set, defined by the fixed 'Number Of Days per Interval' set.  For monthly, set to 30, for yearly, set to 365, etc. 
+
+3. HOUR/YR - This is the 'Hours Worked' accrual and will be awarded based on transactions keyed (so is typically used for Hourly employees).  With this type, the 'Based on Time Codes' section will become available and you can mark which Time Codes should be accrued on.   The transactions must exist in the HR transaction table (TATX1030) BEFORE the Accrual process is run.  Once the transactions are accrued on, they are marked off in the table so they are not accrued on again.  This type is most common for hourly employees.  For the Hours/Yr accrual type, the amount accrued per hour/unit will equal the YEAR MAX / Hour per Year base (fields in the Accrual Setup window):  
+
+Hours Accrued =  'Maximum Accrual Hours Per Year' / 'Work Hours Per Year'
+
+Example:  If you wanted the employee to earn '4' Accrual hours for every 40 hours worked, and they can only earn a maximum of '80' accrual hours per calendar year, then you would use the equation above to figure out what to enter for the 'Work Hours Per Year' field on the Accrual setup.   In the Accrual Setup, the 'Maximum Accrual Hours per year' would be 80 according to our example, and the 'Work Hours Per Year' would be calculated out to be '800'.  Enter 800 in this field in the Accrual setup window.   So 80/800 = .01 hours per unit, and .01 x 40 total hrs = 4 hours earned.     
+
+Here is how we back into our accrual amount
+If you are going to user Human Resources
+ 
+We need to figure out the accrual rate per hour worked as I think that is how we should accrue this.
+
+Hours worked * Vacation/sick hours per year / 2080 = accrue amount.
+
+For an example, I worked 20 hours you would need to back into it as follows (20 * 48 / 2080 = .46).
+I worked 30 hours you would need to back into it as follows (30 * 48 / 2080 = .69
+I worked 60 hours you would need to back into it as follows (60* 48 / 2080 = 1.39
+
+For example, when you setup the accrual in the Accrual Setup window you would say Accrue by Hours/Yr and select 48 in the Maximum Accrual Hours per Year field and then 2080 in work hours per year
+
+> [!TIP]
+> If you import transactions to payroll, usually that does not update Human Resource information (TATX1030).  Then your hours worked accruals will not work.  This could happen if you are using Integration Manager or eConnect.  Once you have completed the import go to Tool | Utilites | Human Resource and Reconcile to update HR information from the payroll batch.
+
+NOTE:  Keep in mind that salaried employees typically do not have transactions created in the TATX1030 table so the Hrs/Yr type is typically not used for salaried employees.     
+
+4. PAY PERIOD -  The type will simply award a 'fixed amount' per pay period.  This type is most commonly used for salaried employees.
+
+
+**Modifying or deleting an accrual**
+
+Use the Accrual Setup window to modify or delete an accrual. You can modify an accrual to reflect changes, such as an increase in the maximum number of hours that can be earned.
+
+To modify or delete an accrual:
+1.	Open the Accrual Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Attendance >> Accruals)
+2.	Enter or select an accrual.
+3.	To modify the accrual, make your changes and choose Save.
+4.	To delete the accrual, choose Delete.
+
+**Setting up an accrual schedule**
+
+After you’ve defined the benefit times tracked in your organization and how employees can earn those different types of benefit times, you can set up accrual schedules to show how employees can earn benefit times at various rates. For more information, refer to Setting up accruals on page 58.
+Use the Accrual Schedule Setup window to create tiered structures that define how employees earn benefit time based on seniority.
+
+Before you set up accrual schedules, you must indicate whether seniority is based on months or days in the Attendance Setup window. For more information, refer to Setting up attendance on page 55. 
+
+To set up an accrual schedule:
+1.	Open the Accrual Schedule Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Attendance >> Accrual Schedule)
+2.	Enter or select a schedule code and description that identifies the accrual schedule.
+3.	Enter the starting date and ending date for the accrual schedule. If it’s a continuous accrual schedule, leave the End Date field blank.
+4.	In the Attendance Setup window, you selected to base seniority on months or days. In the Seniority column, enter the number of months or days of seniority an employee must have to be eligible for the accrual.
+5.	Enter or select an accrual code in the Accrual column. Press TAB to display information in remaining columns and choose Save
+
+![the User Setup window 2](media/ACCRUASECH45.jpg)
+
+**Modifying or deleting an accrual schedule**
+Use the Accrual Schedule Setup window to modify or delete an accrual schedule. You can modify an accrual schedule to include changes, such as adding an accrual to an existing schedule.
+To modify or delete an accrual schedule:
+1.	Open the Accrual Schedule Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Attendance >> Accrual Schedule)
+2.	Enter or select a schedule.
+3.	To modify the schedule information, make your changes and choose Save.
+4.	To delete schedule information, choose Delete. To delete a row of information, select the line and from the Edit menu, choose Delete Row.
+
+**Setting up a time code**
+You can set up a time code to categorize how employees use their time. For instance, time codes can be used to track vacation time, hourly time, Family and Medical Leave Act (FMLA) time, and sick time.
+
+Use the Time Code Setup window to create time codes and define the various ways that employees in your organization account for their time. You also can link a default accrual schedule to each time code.
+
+If your company employs both hourly workers and salaried workers, you might need to set up separate time codes for each of the different types of time tracked, such as vacation time and sick time. For example, you might set up a vacation time code for salaried employees and a vacation time code for hourly employees. You also might set up a sick time code for salaried employees and a sick time code for hourly employees.
+
+You can select a pay code in the Linked Pay Code field to link an attendance time code to a U.S. or Canadian Payroll pay code. When you create a transaction for a pay code that is linked to a time code, a transaction also will be created for the time code. Then, you don’t have to enter transactions in both Human Resources and U.S. or Canadian Payroll. 
+To link pay codes to time codes, pay codes and pay types must match the corresponding time codes and time types. For example, if the time type is Hourly, you only can link pay codes with a pay type of Hourly. Or, if the time type is Benefit, you only can link pay codes with a pay type of Vacation, Sick Time, or Holiday.
+
+To set up a time code:
+1.	Open the Time Code Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Attendance >> Time Code)
+2.	Enter or select a time code and description to identify the time record.
+3.	Select a time type that the time code is based on and select an accrual period.
+4.	If the time type is Benefit, enter or select a default accrual schedule.
+5.	Enter or select a code in the Linked Pay Code field to link pay codes to time codes. 
+
+If U.S. or Canadian Payroll is registered and you selected Human Resources for the accrue type in the Attendance Setup window, you can link one pay code per time code and vice versa using this option.
+
+Linked pay codes and pay types must match the corresponding time codes and time types. For Canadian Payroll, the following table shows the pay types that correspond to a given time type.
+
+The Time Code pay code relationship is 1 to 1.  Once a time code is linked to a pay code, you cannot link it to another pay code and it will not appear in the looking up to be linked.
+
+Create Time Code that link to the Pay Code in Payroll.  Such as Sick, Vacation, and Holiday.  Select the Time Type and the Accrual Period for how often this code accrues.  If the Time Type is a Benefit, you will select a Default Accrual Schedule that you will setup after this window. Then select the Linked Pay Code.  If you mark Warn When Available Time Falls Below Zero, you will see warnings on your Payroll Batch Build report that states the Pay Code hours are below zero.  Continue to setup codes for all time that to accrue.
+
+Anything you want visible on the employee check/earnings statement with a balance should be a time type of BENEFT which is a 4 in the table TATM1030.  If you set up a code with Absent as an example, you will not be able to accrue with this code or make it visible to the employee.  This cannot be changed once setup, unless you do this is SQL tables.
+
+An example of an absent time type is maying you want to track how many times and employee is Tardy, but keep this as internal reporting in Dynamics GP.
+
+select  * From tatm1030 where TIMECODE_I='XXX' 
+If it is a BENEFIT type it will be a 4 in this table.
+TIMETYPE_I='4' 
+
+Time type	    Pay type
+Absent	        Regular Pay
+Hourly	        Regular Pay or Bonus
+Salary	        Regular Pay or Bonus
+Overtime	    Overtime
+Benefit	        Benefit pay codes (Vacation and Sick)
+Other	        Commission, Advance, or EI Rebate
+
+6.	Mark the Warn When Available Time Falls Below Zero option if warning messages should be displayed when benefit hours are less than zero and click Save.
+
+**Modifying or deleting a time code**
+
+Use the Time Code Setup window to modify or delete a time code. You also can inactivate a time code if the time code is no longer being used. However, if you have Payroll transactions for employees with pay codes linked to time codes, you cannot inactivate these records. An inactive time code cannot be assigned to an employee.
+To modify or delete a time code:
+
+1.	Open the Time Code Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Attendance >> Time Code)
+2.	Enter or select a time code.
+3.	Make your changes in the window as needed, or to inactivate the time code, mark Inactive. Choose Save.
+4.	Choose Delete to delete the time code. If the time code is attached to an employee, this option is not available.
+
+## Benefit Setup
+
+Before you set up the benefits that your company provides for employees, you must define benefit preferences. You will use benefit preferences to define a standard work week and work day for your organization, select a Family and Medical Leave Act (FMLA) year and select a method for tracking FMLA and Consolidated Omnibus Reconciliation Act (COBRA) payments. 
+
+Use the following tips:  
+
+- Human Resources includes deductions as options within the benefit setup windows. Therefore, all types of Human Resources benefits may funded by the employer, the employee, or both. Garnishments, though they are deductions, are set up in Human Resources as a type of miscellaneous benefit. U.S. Payroll, however, uses separate windows to set up benefits and deductions.  
+- Benefits can be taxable, that is, the employee can be taxed on the value of the benefit received. Benefits can be calculated from net or gross pay or a deduction, as an amount per unit or as a fixed amount. Examples of benefits include insurance premiums and 401(k) matching contributions.  
+- A deduction is an amount that is withheld from an employee’s net, unit or gross pay. For example, a donation to a charity, union dues and contributions to retirement plans could be set up as deductions.  
+- You can set up default benefit and deduction cards and use them for setting up employee benefits and deductions. These cards also can be used to apply changes to several employees’ benefit and deduction cards.  
+- If you’re using U.S. Payroll and you choose the Automatically Update Payroll Benefits and Deductions option in the Benefit Preferences window, the benefit modifications you make using Human Resources will automatically update the corresponding information in Payroll.  
+- If you’ve marked the Payroll View for Human Resources option in the User Setup window, a message will appear to indicate that you must set up the corresponding codes in Payroll after you’ve defined the benefit or deduction in Human Resources to complete the integration.  
+- If you didn’t mark the Payroll View for Human Resources option in the User Setup window, or you set up the benefit or deduction in Payroll, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups.  
+
+**Granting Payroll view access to a user**
+
+Use the User Setup window to grant Payroll view access to a Human Resources user, where U.S. Payroll is, or is being, set up. You must mark the Payroll View for Human Resources option to completely set up Human Resources benefit or deduction codes and the corresponding Payroll codes.
+
+If you don’t mark the Payroll View for Human Resources option in the User Setup window, the benefit enrollment will be incomplete. The benefit enrollment also will be incomplete if you set up the benefit or deduction in Payroll. To update benefit setups, use the Reconcile Human Resources window. 
+
+To grant Payroll view access to a user:
+1.	Open the User Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> System >> User >> enter system password)
+2.	Enter or select a User ID.
+3.	Mark the Payroll View for Human Resources option and choose Save.
+Repeat for every user who will enter or update benefit information in Human Resources.
+
+![the benefit setup](media/HRUSERSETUPFILL5.jpg)
+
+**Setting up benefit preferences**
+
+Use the Benefit Preferences window to set up benefit preferences. You can specify FMLA preferences, such as the 12-month period used by your company to calculate FMLA benefits and your company’s down days. You also can determine the prompts that will be available to users for posting specific benefits dates to the To Do list.
+
+To set up benefit preferences: 
+1.	Open the Benefit Preferences window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Benefit Preferences)
+2.	Mark Never, Always, or Ask Each Time to prompt the user for posting the FMLA return date and the payment dates to the To Do List.
+3.	Choose Set FMLA 12-month Period to open the Setting FMLA 12-Month Period window. Mark the method used to calculate the FMLA 12-month period.
+If you change the FMLA 12-month period, you’ll need to delete all of the employees’ previous leave instances and enter them again or the FMLA benefits won’t be calculated correctly.
+4.	Choose Save. The Benefit Preferences window will be displayed.
+5.	Choose FMLA Calendar to open the FMLA Calendar window. Mark None, 
+Sundays Only, or Saturdays and Sundays to indicate your company-wide “down days.”
+6.	Select individual calendar days to designate specific days as down days. Down days include weekends and holidays which are not counted as part of an FMLA leave. A message will appear to indicate that changing this selection will affect all employees’ FMLA leave. Choose Yes to continue.
+7.	Choose OK. The Benefit Preferences window will be displayed.
+8.	Accept the default number of working days in a week or the number of hours in a work day, or choose Override to make changes. The default numbers are defined in the Attendance Setup window. Refer to Setting up attendance on page 55.
+9.	Mark Never, Always, or Ask Each Time to prompt the user for posting the eligibility date and the paperwork deadline dates to the To Do list.
+10.	Mark the Automatically Update Payroll Benefits & Deductions option to update payroll benefit and deduction records without displaying integration messages.
+11.	Choose COBRA Preferences to open the COBRA Preferences window. Mark Never, Always, or Ask Each Time to prompt the user for posting the COBRA payment dates and the coverage end date to the To Do list.
+12.	Choose OK. The Benefit Preferences window will be displayed.  Choose OK to save.
+
+Once benefit preferences are established for FMLA, they should not be changed. If they are, all entries will need to be entered again or FMLA benefits won’t be calculated correctly.
+
+![The Benefit Preferences](media/HRBENSETUP26.jpg)
+
+
+**Setting up miscellaneous benefits and garnishments**
+
+Use the Miscellaneous Benefits Setup window to set up benefits, deductions, and combinations of both. For example, a parking allowance might be a benefit, union dues might be a deduction, and a donation to a charity with matching funds from the employer might be both a benefit and a deduction.
+
+To set up a miscellaneous benefit:
+1.	Open the Miscellaneous Benefits Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Miscellaneous Benefits)
+2.	Enter an account name and description and select a frequency.
+3.	Enter or select a group or agency with which the miscellaneous benefit is affiliated. If a company isn’t listed, select Affiliation and add the benefit carrier’s contact information in the Card Catalog window.
+4.	Enter the beginning date and the ending date for the miscellaneous benefit. If it’s a continuous plan, leave the ending field blank.
+5.	Mark Employee if the employee will contribute to the miscellaneous benefit. Select a method and mark single deduction tier or multiple tiers. If you mark a single amount or percent, enter an amount or percent. If you mark multiple tiers, choose Tiers to open the Tiered Deduction Setup window, where you can enter tiered deductions.
+Enter deduction maximums. You can enter the maximum amount an employee can have deducted each pay period, each calendar year, each fiscal year, and for the entire time the employee works for your company.
+6.	Mark Employer if the employer will contribute to the miscellaneous benefit. Select a method and mark a single deduction tier or multiple tiers. If you mark a single amount or percent, enter an amount or percent. If you mark multiple tiers, choose Tiers to open the Tiered Deduction Setup window, where you can enter tiered deductions.
+Enter benefit maximums. You can enter the maximum amount an employer can have deducted each pay period, each calendar year, each fiscal year, and for the entire time the employee works for your company.
+•	If you’ve entered contribution amounts and you’ve marked the Payroll View for Human Resources option in the User Setup window, you’ll be prompted to set up the corresponding account codes in Payroll. Choose Yes to complete the integration.
+•	If you didn’t enter contribution amounts, you will not be prompted to set up the corresponding account codes in Payroll. However, you will need to set them up before you can enroll an employee in the miscellaneous benefit. To set up in Payroll, re-select the miscellaneous benefit, choose the Benefits button in the upper, right corner of the Miscellaneous Benefits Setup window, and select Payroll.
+
+To set up a miscellaneous benefit as a garnishment:
+1.	Open the Miscellaneous Benefits Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Miscellaneous Benefits)
+2.	Enter an account name and description, and select a frequency.
+3.	Enter or select the garnishment recipient in the Affiliation field. If a recipient is not listed, choose the Affiliation link and add the recipient’s contact information in the Card Catalog window.
+4.	Mark Garnishment.
+5.	Mark Employee.
+6.	Select the method of calculating the garnishment amount. The Amount Per Unit method is not permitted for garnishments.
+
+Setting up a copayment record
+
+Use the CoPay Setup window to define copayment codes for benefits within your company. A copayment is the amount of money that must be paid by an employee. For example, a health insurance benefit might have a $10 copayment.
+To set up a copayment record:
+1.	Open the CoPay Setup window.   (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> CoPay)
+2.	Enter a copayment code and description. 
+3.	Enter the amount of the copayment.
+
+Setting up a health insurance coverage type
+
+Use the Health Coverage Types Entry window to set up health insurance benefits and other insurance coverage types. Health insurance benefits can include medical insurance, dental insurance, and vision insurance. You can define coverage types by the coverage provided, such as health employee, health employee plus one, health employee family, dental employee, and so on.
+To set up a health insurance coverage type:
+1.	Open the Health Coverage Type Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Health Coverage Type)
+2.	Enter a coverage type code and description.
+
+**Setting up a health insurance benefit**
+
+Use the Health Insurance Setup window to enter and maintain health insurance benefit records. The plans set up in this window can be used as default entries for setting up employee benefits. They also can be used to apply changes to employee benefit cards and can be included in employee classes. Health insurance benefits can include medical insurance, dental insurance and vision insurance.
+
+To set up a health insurance benefit:
+1.	Open the Health Insurance Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Health Insurance)
+2.	Enter a benefit code and a description of the benefit.
+3.	Select a frequency and enter or select a benefit carrier, such as the name of the insurance company. If a company isn’t listed, choose Carrier and add the benefit carrier in the Card Catalog window.
+4.	Enter the group number of the plan and the maximum age to enter the plan for an employee and an employee’s dependent.
+5.	Enter the number of days an employee must work for the company before he or she is eligible for health insurance benefits in the Waiting Period field.
+6.	Enter or select a type of coverage.
+7.	Enter the employee and employer amounts, the deductible, COBRA premium and maximum benefit amounts.
+8.	Enter the percentage of the costs that the major medical benefits will cover in the Major Medical Coverage field.
+9.	Enter the maximum out-of-pocket expense the employee must pay in the Maximum Out-of-Pocket field. For example, if the major medical insurance will cover 80 percent of expenses until the employee’s paid $5,000 and then the major medical insurance will cover 100 percent, enter 80% in the Major Medical Coverage field and $5,000 in the Max. Out-of-Pocket field.
+10.	Select a copayment code and enter a copayment amount or accept the default amount.
+•	If you’ve entered amounts for your Employee or Employer fields and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to set up the corresponding codes in Payroll. Choose Yes to complete the integration.
+•	If you didn’t enter amounts for both the Employee and Employer fields, the corresponding codes will not have to be completed in Payroll.
+
+
+**Setting up an age-based life insurance benefit**
+
+Use the Life Insurance Setup window to set up an aged-based life insurance benefit. Premiums for an aged-based benefit change with the employee’s age. 
+For example, an employee whose age is 21-34 might pay $3.00 per $1,000 of life insurance coverage and an employee whose age is 35-44 might pay $4.00 per $1,000 of life insurance coverage.
+
+To set up an age-based life insurance benefit:
+1.	Open the Life Insurance Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Life Insurance)
+2.	Enter a plan name and description of the benefit.
+3.	Select the benefit frequency and enter or select the life insurance benefits carrier. 
+If a company isn’t listed, choose Carrier and add the benefit carrier in the Card Catalog window.
+4.	Enter the group number of the plan and the plan start date.
+5.	Mark Age-Based to indicate the premium method for this benefit is based on age.
+
+> [!TIP]
+> A process runs when the first user of the day logs into a company, everyday.  It is driven from the HR Module and pertains to life insurance.  The process is called HR_Update_Age_Based_Employee.  When this process runs, it will look at all employees to see if there was a birthday and if based on your age base tables, should the employee premium get updated.  Basically the first person who logs for the day, into GP triggers a stored procedure that updates age based life insurance premiums in HR(which is linked to payroll). We do not check to see if this person has HR access or not, so you may see some random user that may have changed the age base life insurance tables as the system does this automatically for you each day at login.  [You can find more details on the Update Age Based Employee Procedure](https://community.dynamics.com/gp/f/microsoft-dynamics-gp-forum/72411/update-age-based-employee-procedure)
+
+
+To set up a fixed amounts life insurance
+
+1. Enter the increment amounts for the employee, employee’s spouse and children, if applicable. For example, if an employee can purchase insurance in $1,000 increments, enter $1,000. The Life Insurance Premiums Table window will display these amounts.
+2. Choose Table to open the Life Insurance Premiums Table window. Enter the minimum age and basic premiums for the employee and the employee’s spouse, if applicable.
+3. Choose the insert button to save your changes. Continue entering premium information and then close the window. The Life Insurance Setup window will be displayed. 
+4. Enter the maximum amount of life insurance coverage that this plan offers.
+5. Enter a multiplication factor to define the employee’s maximum amount of life insurance coverage under this plan. The factor, multiplied by the employee’s annual salary, is the employee’s maximum coverage, up to the plan’s maximum.  
+
+  For example, assume that an employee has an annual income of $25,000. A factor of 2 would mean that the employee’s maximum life insurance coverage under this plan would be $50,000 (or the plan’s maximum coverage, whichever is smaller). Enter 0 to use the value in the Coverage Max Amt. field as the employee’s maximum coverage value.
+6. If you enter a factor other than 0, select a rounding option and to indicate whether the calculated maximum coverage should be rounded up or down to match predetermined life insurance coverage increments.
+
+  For example, assume that an employee has an annual income of $52,000, the factor is set to 2, and coverage increments are set at $10,000. The calculated maximum coverage in this case is $104,000. If you choose to round up, the employee’s maximum coverage would be set to $110,000, which is the nearest higher increment. If you choose to round down, the employee’s maximum coverage would be set to $100,000, which is the nearest lower increment.
+7. Mark Portable Plan if the employee can continue the life insurance plan after leaving the company.
+8. Mark how the employer pays for this benefit.
+
+ - If you marked Increment Employee or Increment Whole Family, enter the employer Increments and Fixed Premium amounts.
+ - If you marked Portion of Employee Premium, enter the employer portion of the employee premium.
+
+    You can enter zero in the fields for employee’s and employer’s contributions. 
+  - If you’ve entered contribution amounts and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to set up the corresponding codes in Payroll. Choose Yes to complete the integration.
+  - If you didn’t enter contribution amounts, the corresponding codes will not have to be completed in Payroll.
+  - If you didn’t mark the Payroll View for Human Resources in the User Setup window, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups. 
+
+**Setting up a fixed-amount life insurance benefit**
+
+Use the Life Insurance Setup window to set up a fixed amount life insurance benefit. You can define the maximum coverage amount and indicate if the plan is portable—if the employee can continue receiving this benefit after leaving the company.
+
+To set up a fixed-amount life insurance benefit:
+
+1. Open the Life Insurance Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Life Insurance)
+2. Enter a plan name and select the benefit frequency.
+3. Enter a description of the benefit and enter or select the life insurance benefits carrier. If a company isn’t listed, choose Carrier and add the benefit carrier in the Card Catalog window.
+4. Enter the group number of the plan and the plan start and end dates. If it’s a continuous plan, leave the end date blank.
+5. Mark Fixed Amounts to indicate the premium method for this benefit.
+6. Enter the premium increments and fixed premium amounts for the employee, employee’s spouse, and employee’s children. For example, if the premium amount is $3.00 per $1,000 of insurance, enter $1,000 in the Increments field and $3.00 in the Fixed Premium field. If the premium for smokers is different, use the Smoker field as applicable.
+
+  Enter the full premium amounts in the Employee, Spouse, and Children fields. Any fixed premium amount contributed by the employer will be subtracted from the full premium amounts, either automatically or manually, according to the Employer Pays selection.
+7. Enter the maximum amount of life insurance coverage that this plan offers.
+8. Enter a multiplication factor to define the employee’s maximum amount of life insurance coverage under this plan. The factor, multiplied by the employee’s annual salary, is the employee’s maximum coverage, up to the plan’s maximum.
+
+  For example, assume that an employee has an annual income of $25,000. A factor of 2 would mean that the employee’s maximum life insurance coverage under this plan would be $50,000 (or the plan’s maximum coverage, whichever is smaller).
+
+  Enter 0 to use the value in the Coverage Max Amt. field as the employee’s maximum coverage value.
+9. If you enter a factor other than 0, select a rounding option and to indicate whether the calculated maximum coverage should be rounded up or down to match predetermined life insurance coverage increments.  
+
+  For example, assume that an employee has an annual income of $52,000, the factor is set to 2, and coverage increments are set at $10,000. The calculated maximum coverage in this case is $104,000. If you choose to round up, the employee’s maximum coverage would be set to $110,000, which is the nearest higher increment. If you choose to round down, the employee’s maximum coverage would be set to $100,000, which is the nearest lower increment.
+10. Mark Portable Plan if the employee can continue the life insurance plan after leaving the company.
+11. Mark how the employer pays for this benefit.  
+
+![The Life Setup](media/HRLIFE0001.jpg)
+
+  - If you marked Increment Employee or Increment Whole Family, specify the portion of the insurance premium that the employer pays for each increment. The employer’s portion of the premium is automatically subtracted from the employee’s total premium (including, if applicable, Spouse, and Children, but not including Smoker) and must be less than or equal to the employee’s total premium.
+  - If you marked Portion of Employee Premium, enter the employer fixed premium, and change the employee total fixed premium entries (including, if applicable, Spouse, and Children, but not including Smoker) so their total is reduced by the amount of the employer fixed premium.
+You can enter zero in the fields for employee’s and employer’s contributions. For information about how this affects Payroll records
+  - If you’ve entered contribution amounts and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to set up the corresponding codes in Payroll. Choose Yes to complete the integration.
+  - If you didn’t enter contribution amounts, the corresponding codes will not have to be completed in Payroll.
+  - If you didn’t mark the Payroll View for Human Resources in the User Setup window, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups. 
+
+**Modifying or deleting a life insurance benefit**
+
+Use the Life Insurance Setup window to modify or delete a life insurance benefit. You can modify a life insurance benefit to reflect changes such as the group number or premium information. You can’t delete a benefit if employees are enrolled in the benefit. Delete the life insurance code or codes from Payroll first, and then follow these instructions.
+
+To modify or delete a life insurance benefit:
+
+1. Open the Life Insurance Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Life Insurance)
+2. Enter or select a plan name.
+3. Make your changes and choose Save.
+
+  - You will have the option to apply the changes to all active benefit records.
+  - If you’ve entered amounts for your Employee or Employer fields and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to update the corresponding codes in Payroll. Choose Yes to complete the integration.
+  - If you didn’t enter amounts for both the Employee and Employer fields, the corresponding codes will not have to be completed in Payroll.
+  - If you marked the Automatically Update Payroll Benefits & Deductions option in the Benefit Preferences window, the corresponding payroll information will be updated automatically. Continue to step 5.
+  - If you didn’t mark the Payroll View for Human Resources in the User Setup window, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups. For more information, refer to Reconciling Human Resources information on page 323.
+4. Choose Delete to delete the benefit.  Close the window.
+
+**Setting up a retirement plan insurance benefit**
+
+Use the Retirement Plans Setup window to set up a retirement plan. You can add funds to a plan to which the employee can contribute, as well as enter the employee match percent and maximum match amounts.
+
+To set up a retirement plan:
+
+1. Open the Retirement Plans Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Retirement Plans)
+2. Enter a benefit code and description. Select a frequency.
+3. Enter or select the retirement plan trustee and enter the retirement plan account number. If a company isn’t listed, choose Trustee and add the trustee in the Card Catalog window.
+4. Mark Fixed or Tiers to indicate the premium structure. 
+5. Mark Amount or Percent to indicate the premium method and enter a premium amount or percentage. Enter the annual maximum contribution the employee can make to the plan during the calendar and fiscal year.
+6. Enter the percentage the employer matches for each employee dollar and enter the maximum percentage of the employee contribution that the employer will match. Enter maximum employer contributions for the calendar and fiscal year.
+7. Mark Bonus Elections Active if employees have the option to contribute a percentage of their bonus pay. Mark Loans Allowed if employees are allowed to withdraw contributions as loans. Mark Hardship Withdrawals OK if employees are allowed to withdraw contributions for hardship cases.
+
+  You can enter zero in the fields for employee’s and employer’s contributions. 
+8. Enter the minimum employee age required to participate in the retirement plan and the number of days the employee must be employed by your company to be eligible for the retirement plan.
+9. Enter a plan entrance date and choose the insert button to save the date.
+10. Choose Add A Fund to activate a row in the scrolling window and enter a fund code and the name of the fund. Mark Active if the fund is active.
+11. Choose Save.
+
+-  If you’ve entered contribution amounts and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to set up the corresponding codes in Payroll. Choose Yes to complete the integration.
+- If you didn’t enter contribution amounts, the corresponding codes will not have to be completed in Payroll.
+- If you didn’t mark the Payroll View for Human Resources in the User Setup window, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups. 
+
+![The Retire Setup](media/HRRETIRE0001.jpg)
+
+**Setting up a benefit tier**
+
+Use the Tiered Benefit Setup window to enter, maintain or delete a benefit tier.
+This benefit tier is for reference only and is not required. If most employee benefits use the same tier structure, setting up this tier will reduce your data entry time.  
+
+To set up a benefit tier:  
+
+1. Open the Miscellaneous Benefit Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions)
+2. Choose Miscellaneous Benefits or Retirement Plans.
+3. Enter or select a benefit code. Mark Employer, select Multiple, and then choose Tiers to open the Tiered Benefit Setup window.
+4. Enter the To amounts for each tier. For example, if the first tier is from zero to $100, you would enter $100 in the To column. The next From amount automatically will be displayed.
+5. Enter the dollar amount or percentage that employees contribute to the plan for each tier.
+6. Choose OK to save your changes. The Miscellaneous Benefit Setup window will be displayed.
+7. Choose Save.
+
+- If you’ve entered contribution amounts and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to set up the corresponding codes in Payroll. Choose Yes to complete the integration.
+- If you didn’t enter contribution amounts, the corresponding codes will not have to be completed in Payroll.
+- If you didn’t mark the Payroll View for Human Resources in the User Setup window, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups. 
+
+**Setting up a deduction tier**
+
+Use the Tiered Deduction Setup window to enter maintain or delete a deduction tier.
+This deduction tier is for reference only and is not required. If most employee deductions use the same tier structure, setting up this tier will reduce your data entry time.
+
+To set up a deduction tier:  
+
+1. Open a deduction setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Miscellaneous Benefits)  
+
+    You can assign a deduction tier to a Miscellaneous Benefit deduction and a Retirement Plan.
+2. Enter or select a deduction code.  
+
+    - In the Miscellaneous Benefit Setup window, mark Employee and Multiple and choose Tiers to open the Tiered Deduction Setup window.  
+    - In the Retirement Plans Setup window, select Tiers for the Premium Structure and choose Tiers to open the Tiered Deduction Setup window.  
+3. Enter the To amounts for each tier. For example, if the first tier is from zero to $100, you would enter $100 in the To column. The next From amount automatically will be displayed.
+4. Enter the dollar amount or percentage that employees contribute to the plan for each tier.
+5. Choose OK to save your changes. The Miscellaneous Benefit Setup or Retirement Plans Setup window will be displayed.
+6. Choose Save.
+
+- If you’ve entered contribution amounts and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to set up the corresponding codes in Payroll. Choose Yes to complete the integration.
+- If you didn’t enter contribution amounts, the corresponding codes will not have to be completed in Payroll.
+- If you didn’t mark the Payroll View for Human Resources in the User Setup window, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups. 
+
+**Modifying or deleting a retirement plan**
+
+Use the Retirement Plans Setup window to modify or delete a retirement plan. You can inactivate certain funds, change the available entry dates, or change any of the other fields in the window. You can’t delete a benefit if employees are enrolled in the benefit. Delete the retirement plan code or codes from Payroll first, and then follow these steps.
+
+To modify or delete a retirement plan:
+
+1. Open the Retirement Plans Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions >> Retirement Plans)
+2. Enter or select a benefit code for the retirement plan.
+3. To inactivate a fund, unmark the Active check box for the fund and choose Save.
+
+  To delete a fund, select the fund, choose Delete a Fund and choose Save.
+4. Make your changes and choose Save.
+
+  - You will have the option to apply the changes to all active benefit records.
+  - If you’ve entered amounts for your Employee or Employer fields and you’ve marked the Payroll View for Human Resources in the User Setup window, you’ll be given the option to update the corresponding codes in Payroll. Choose Yes to complete the integration.
+  - If you didn’t enter amounts for both the Employee and Employer fields, the corresponding codes will not have to be completed in Payroll.
+  - If you marked the Automatically Update Payroll Benefits & Deductions option in the Benefit Preferences window, the corresponding payroll information will be updated automatically. Continue to step 5.
+  - If you didn’t mark the Payroll View for Human Resources in the User Setup window, the benefit enrollment will be incomplete. Use the Reconcile Human Resources window to update the benefit setups. 
+5. Choose Delete to delete the retirement plan. Close the window.
+
+
+**Completing a benefit or deduction setup**
+
+Use the Incomplete Setup Codes window to complete a benefit or deduction setup. A benefit or deduction set up is incomplete when you create a benefit or deduction in Human Resources and the Payroll View for Human Resources check box is not marked in the User Setup window. A benefit or deduction also is incomplete when you create a benefit or deduction in Payroll, but don’t apply the information to Human Resources. 
+
+To complete a benefit or deduction setup:  
+
+1. Open any benefits setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Benefits and Deductions)
+2. Choose Miscellaneous Benefits or Health Insurance or Life Insurance or Retirement Plans.
+3. Choose the benefits button and select Incompletes to open the Incomplete Setup Codes window.
+4. Highlight the code and choose Select.
+
+  - If the code is a benefit, the Benefit Setup window will open. If the code is a deduction, the Deduction Setup window will open.
+  - If a benefit is also a deduction, the Deduction Setup window will open. After you enter and save information in this window, the Benefit Setup window will open.
+5. Enter additional information in the Benefit Setup window and choose Save.
+
+> [!TIP]
+> The main benefit information for Human Resource is stored in the **Benefit Setup BE020230** and **Employee Enrollment BE010130** tables. The column BENEFITKIND_I determins what type of benefit it is:
+>
+> - 1=Health Insurance
+> - 2=Life Insurance
+> - 3=Retirement Plan
+> - 4=Miscellaneous Benefit/Deduction 
+
+
+## Interviews
+
+Different positions require various skills, and therefore, different types of interviews. For instance, a production position might require the ability to perform repetitive tasks and a clerical position might require the ability to perform keyboarding activities. Customizing interview forms for different positions can help the interviewer determine the best candidate for a position.
+
+**Creating an interview form**
+
+Use the Interview Types window to create an interview form. You can enter interview categories and assign a weight to each category. You also can indicate an interview range; for example, suppose you set an interview range at 10. You can then assign a rating for each interview category—between 1 and 10—per applicant interviewed. Usually, the higher the number, the better the rating.
+To create an interview form:
+1.	Open the Interview Types window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Interview)
+2.	Enter a name that identifies the interview type.
+3.	Enter a number from 2-99 for the top interview range.
+4.	Enter a category description and a weight for each category.
+The sequence of your categories is determined by the order you enter them and they are numbered in increments of 10. Choose Save.
+
+**Modifying or deleting an interview form**
+
+Use the Interview Types window to modify interview forms. You can change the category name, the scale on which a category is measured, the weight or the sequence. You also can add or remove categories, change the category order, or copy and delete interview forms.
+
+To modify or delete an interview form:
+1.	Open the Interview Types window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Interview)
+2.	Enter or select the name of the interview type to modify.
+3.	To remove a category, highlight the category and select the remove button.
+4.	To add a category, enter a category name.
+5.	To change the category sequence, enter a unique number in the Sequence field that reflects where you want the item to appear in the list and choose Reorder.
+6.	To copy the interview form, choose Duplicate and enter a name for the new form and choose Save.
+
+## Skills, skill sets and test
+
+Use the Skills Setup window to define applicant and employee skills and link compensation values to specific skills. For example, suppose your company offers an additional $200 a year to an employee who can type 70 or more words per minute. You also can specify which skills are required skills.
+
+After defining skills, you’ll need to group them into skill sets. A skill set should contain skills necessary for a certain task or position. For example, you can set up a skill set called Office Skills and include skills such as keyboarding, communication skills, organization, and telephone operation. Use the Skill Set Setup - Page 1 window to create a skill set.
+Because applicants, and employees have all types of training, education, skills and work experience, standardized testing is a method of measuring competencies. You can use the Tests Setup window to create tests.
+Skills, skill sets, and tests that you set up can be used for both applicants and employees.
+
+Skills are stored across multiple companies.  If you create a Skill in company A you will also see it in Company B.
+This is because when you use the Skills Query window you can search on the best Applicant (stored in Dynamics/System database) across all companies or employees in a company will be searched.  If I want to do a Skills search on who as SQL 2019 skill mastered it will search all areas to bring up the best qualified candidate.
+
+**Defining a skill**
+
+Use the Skills Setup window to define the skills required in your organization. You also can attach a compensation value to each skill. The skills you define can be used for both applicants and employees.
+
+Skills must be included in a skill set to be assigned to an applicant or employee.
+
+To define a skill:
+1.	Open the Skills Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Skills)
+2.	Enter a skill name and choose the insert button to save the skill.
+3.	If your company offers additional compensation for possessing certain skills, enter a compensation value for the skill. The compensation values are for reference only.
+4.	Choose OK.
+
+Deleting a skill
+Use the Skills Setup window to delete a skill. You can delete a skill that is no longer required.
+To delete a skill: 
+1.	Open the Skills Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Skills)
+2.	Highlight the skill and choose the remove button and choose OK.
+
+Creating a skill set
+Use the Skill Set Setup - Page 1 window to create a skill set and include skills. You can indicate which skills are required skills. The skill sets you create can be used for both applicants and employees.
+Skills must be included in a skill set to be assigned to an applicant or employee.
+
+To create a skill set:
+1.	Open the Skill Set Setup - Page 1 window.  Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Skill Sets)
+2.	Enter the name of the skill set you want to create. A message will be displayed and you’ll have the option to add the skill set. Choose Yes.
+3.	Select a skill to include in the skill set and choose the insert button. Continue adding skills to the skill set.
+4.	To view the skills in order of their sequence, select Sequence Number from the Skills in Skill Set dropdown list. To view the skills in alphabetical order, select the Alphabetical Order option. 
+5.	Choose the page turn button to open the Skill Set Setup - Page 2 window.
+6.	Mark Required for each required skill. You can enter additional comments about each skill.
+7.	Close the window to save your changes.
+
+Modifying or deleting a skill set
+Use the Skill Set Setup - Page 1 window to modify or delete a skill set. You can add skills to a skill set or remove skills from a skill set. You also can reorder skills in a skill set or delete the entire skill set.
+
+To modify or delete a skill set:
+1.	Open the Skill Set Setup - Page 1 window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Skill Sets)
+2.	Enter or select a skill set name.
+3.	To add a skill, highlight an available skill and choose the insert button.
+4.	To remove a skill, highlight the skill in the skill set and choose the remove button.
+5.	To reorder skills, choose the page turn button to open the Skill Set Setup - Page 2 window and enter unique sequence numbers to reflect the order in which they should appear. Choose Reorder and close the window.
+6.	To delete an entire skill set, choose Delete.
+
+
+Synchronizing skills and skill sets
+A benefit of the skills feature is the ability to compare the skills in a skill set with the skills that a particular employee has. This information is displayed in the Percent Completed/Required and Percent Completed/Skill Set fields in the Employee Skills window.
+
+To ensure that information is accurate in skills reports, use the Synchronize button to update the skills information. If you make changes to information in a skills window, you can update the skill information by closing the window and opening it again.
+
+If you’re not sure you need to synchronize your skill records, choose Synchronize to be sure all employee skill records are updated. 
+
+To be sure that the sequence of skills is printed accurately on skills reports, you should synchronize skills when you’ve completed any of the following tasks:
+•	Adding skills to a previously-defined skill set
+•	Removing skills from a previously-defined skill set
+•	Marking or unmarking required skills in a skill set
+•	Changing the number of skills assigned to an employee
+
+While the skills synchronization process takes place, you can continue to use Human Resources; however, you can’t exit Human Resources and shouldn’t print any skills reports until the synchronization process is complete. Choose Microsoft Dynamics GP menu >> Process Monitor to see if the synchronization process is complete. Choose Redisplay to refresh the window.
+
+To synchronize skills and skill sets:
+1.	Open the Skill Set Setup - Page 1 window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Skill Sets)
+2.	Choose Synchronize.
+When the progress window closes, the synchronization is complete.
+
+
+**Defining a Company Test**
+
+Defining a company test
+Use the Tests Setup window to enter the kinds of tests you use in your company. The tests can be used for both applicants and employees. 
+
+To define a company test:
+1.	Open the Tests Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Tests)
+2.	Enter a description that identifies the test.
+3.	Enter a code or accept the default code.  Choose Save.
+
+Deleting a company test
+Use the Tests Setup window to delete a company test.
+To delete a company test:
+1.	Open the Tests Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Tests)
+2.	Enter or select a test.	Choose Delete.
+
+## Orientation and termination checklists
+
+An orientation program gives a new employee an opportunity to learn about your organization and makes the transition into a new position smoother for you and the employee.
+Orientation checklists will help you be sure new employees are introduced to your organization’s policies and procedures. You can use the default orientation checklists included with your Human Resources program, or you can modify the checklists to suit your company’s specific needs.
+
+Termination checklists will help you be sure you’ve completed tasks like notifying the payroll department of an employee’s termination and notifying the employee of his or her COBRA rights. You can use the default termination checklists included with your Human Resources program, or you can modify the checklists to suit your company’s specific needs.
+Default orientation checklists
+
+There are three default orientation checklists included with your Human Resources program. You can use these checklists or you can modify them to suit your company’s specific needs.
+Setting up an orientation checklist using default options
+Use the Orientation Setup window to set up an orientation checklist using default setups. There are three default checklists included in your Human Resources program.
+
+To set up an orientation checklist using default options:
+1.	Open the Orientation Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Orientation)
+2.	Enter a name to identify the orientation checklist.
+3.	Choose Default Setups to open the Orientation Default Select window.
+4.	Browse to select the default number of the checklist you want to use and choose Select.
+5.	Choose the hide and show buttons to view all the fields in the scrolling window. 
+You can enter or select a person responsible for each task. 
+
+Setting up an orientation checklist
+Use the Orientation Setup window to set up an orientation checklist. You can select predefined checklist items or create your own items. You also can assign responsibility for each item to other employees.
+To set up an orientation checklist:
+1.	Open the Orientation Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Orientation)
+2.	Enter a name to identify the orientation checklist.
+3.	Mark the User Defined option to enter a unique item. Mark the Predefined option to select a predefined item.
+4.	Enter or select an item to include in the checklist and choose the insert button.
+5.	Choose the hide and show buttons to view all the fields in the scrolling window. You can enter or select a person responsible for each task.
+6.	Enter the date and time the checklist item will start. If there is an end date and time, you can enter those and choose Save.
+
+Modifying or deleting an orientation checklist
+Use the Orientation Setup window to modify or delete an orientation checklist. You can change the order of the checklist items or add and delete checklist items.
+To modify or delete an orientation checklist:
+1.	Open the Orientation Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Orientation)
+2.	Enter or select a checklist name.
+3.	To change the order of the items in the checklist, enter unique sequence numbers to reflect the order in which you want the items to appear and choose Reorder.
+4.	To add an item, mark User Defined or Predefined and enter or select a checklist item. Choose the insert button.
+5.	To delete an item, highlight the item and choose the remove button. Items in the checklist will be renumbered.
+6.	To delete the entire checklist, choose Delete and Save.
+
+**Default termination checklists**
+There are seven default termination checklists included with your Human Resources program. You can use those checklists or you can modify them to suit your company’s specific needs.  
+
+Setting up a termination checklist using default options
+Use the Termination Setup window to set up a termination checklist using default information. There are seven default checklist entries included with your Human Resources program. For more information about the items included in the default checklists, refer to Default termination checklists on page 98.
+
+To set up a termination checklist using default options:
+1.	Open the Termination Setup window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Termination)
+2.	Enter a name that identifies the termination checklist you’re creating.
+3.	Choose Default Setups to open the Termination Default Select window.
+4.	Browse to select the default number of the checklist you want to use and choose Select and choose Save.
+
+Setting up a termination checklist
+Use the Termination Setup window to set up an termination checklist. You can select predefined checklist items or create your own items. You also can assign responsibility for each item to other employees.
+Information entered in the Date Completed field will appear in the Termination Checklist window. You should not enter a date in this field until you’ve completed the checklist. Therefore, you might want to leave that field empty.
+
+To set up a termination checklist:
+1.	Open the Termination Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Termination)
+2.	Enter a name that identifies the termination checklist.
+3.	Mark the User Defined option to enter a unique item. Mark the Predefined option to select a predefined item.
+4.	Enter or select an item to include in the checklist and choose the insert button.
+5.	Choose the hide and show buttons to view all the fields in the scrolling window. You can enter or select a person responsible for each task.
+6.	Enter the date and time the checklist item will start in the scrolling window. If there is an end date and time, you can enter those.
+7.	When you’ve finished adding items, choose Save.
+8.	
+Modifying or deleting a termination checklist
+Use the Termination Setup window to modify or delete a termination checklist. You can change the order of the checklist items or add and delete checklist items. You also can enter the date each item on a termination checklist is completed and the person responsible for the task.
+To modify or delete a termination checklist:
+1.	Open the Termination Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Termination)
+2.	Enter or select a checklist name.
+3.	To change the order of the items in the checklist, enter unique sequence numbers to reflect the order in which you want the items to appear and choose Reorder.
+4.	To add an item, mark User Defined or Predefined and enter or select a termination item. Choose the insert button.
+5.	To delete an item, highlight the item and choose the remove button. Items in the checklist will be renumbered.
+6.	To delete an entire checklist, choose Delete.  Choose Save.
+
+## Training Classes and Courses
+
+To help your employees improve their skills and acquire new skills, your company will probably offer a variety of training classes. Training classes can be one-time classes or part of a more comprehensive course. For instance, your company might offer a cardiopulmonary resuscitation (CPR) class and an injury class as parts of a first aid course. Or, your company might offer a course on the telephone system and set up various times for each class.
+Setting up a training course
+
+Use the Training Course and Class Definition window to set up a training course. 
+You can specify a default instructor and location and assign credits for each course. You also can assign costs to each course, such as tuition costs, supply costs, and instructor fees.
+
+To set up a training course:
+1.	Open the Training Course and Class Definition window.  (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Training)
+2.	Enter a code that identifies the course and enter a description.
+3.	Enter additional information about the course as needed. For example, you can enter the instructor and location, as well as different costs for the course and Save.
+
+Setting up a training class
+Use the Training Course and Class Definition window to set up a training class after you’ve set up a course. You can specify start and end dates for each class and indicate a maximum number of employees that can enroll in a class at a time.
+To set up a training class:
+1.	Open the Training Course and Class Definition window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Training)
+2.	Enter or select a Course ID.
+3.	In the scrolling window, enter a code that identifies the class and a description of the class.
+4.	Enter the start date and start and end times for the class. If the class has an end date, you can enter that.
+5.	Choose the hide and show buttons to enter the instructor name, the maximum number of employees that can sign up for the class and the location of the class.
+After you’ve enrolled employees in the class, the Enrolled field will display the number of employees enrolled using the Training Batch Signup window. Choose Save.
+
+Modifying or deleting a training course
+Use the Training Course and Class Definition window to modify or delete a training course. You can add or delete a class.
+To modify or delete a training course:
+1.	Open the Training Course and Class Definition window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Training)
+2.	Enter or select a Course ID.
+3.	To add a class, enter a code and name that identifies the class in the scrolling window.
+4.	To remove a class, select a class in the scrolling window and choose the remove button and Save
+
+Linking skills to a training class
+Use the Class Skills window to link skills to a training class. When you mark the class as completed for an employee in the Training Batch Signup window or the Employee Training window, the skills that are linked to the class will be added to the employee’s skill record.
+
+To link skills to a training class:
+1.	Open the Training Course and Class Definition window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Training)
+2.	Enter or select a course ID and choose Class Skills to open the Class Skills window. Select a Class ID.
+3.	Select a skill in the Available Skills list and choose the insert button.
+4.	To remove a skill from a class, highlight the skill in the Skills in Class Skill Set list and choose the remove button, close window.
+
+## Extra fields and user defined fields setup
+
+To track additional organizational and employee information that isn’t included in predefined windows, use the Extra Fields Setup windows. The Extra Fields windows help you track information for your company, divisions, departments, positions, employees, and applicants. 
+
+The twenty-five fields for you to use are:
+•	Five fields for storing dates
+•	Five fields for storing numbers
+•	Five fields for storing yes/no information
+•	Five fields for storing currency figures
+•	Five fields for storing words or phrases
+
+Use the Applicant User Defined Setup window and the Employee User Defined Setup window to track additional applicant and employee information in the following 36 additional fields:
+•	Five “string” fields for storing characters and numbers
+•	Five currency fields for storing dollar amounts
+•	Five date fields for storing dates
+•	Five integer fields for storing whole numbers
+•	Ten check box fields for storing yes/no information
+•	Five time fields for storing time information
+•	A notes area for storing longer text entries
+
+Setting up organizational extra fields
+Use the Extra Fields Setup windows to set up company, division, department or position extra fields. Your selection in the Extra Fields Setup menu determines the organizational level at which you create the extra fields. You can enter up to 15 characters or spaces per field. The labels you enter here will appear in the Extra 
+Fields Setup windows, and you can enter information about the label in the field.
+
+To set up organizational extra fields:
+1.	Open the Extra Fields Setup menu. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Extra Fields)
+2.	Choose Company, Division, Department, or Position.
+3.	Enter labels for each field.  Choose OK.
+
+Modifying or deleting organizational extra fields
+Use the Extra Fields Setup window to modify or delete company, division, department or position extra fields.
+To modify or delete organizational extra fields:
+1.	Open the Extra Fields Setup menu. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Extra Fields)
+2.	Choose Company, Division, Department, or Position.
+3.	Make your changes and choose OK.
+To delete all the entries in this window, choose Delete.
+
+Setting up applicant or employee extra fields
+Use the Extra Fields Setup window to set up applicant or employee extra fields. You can enter up to 15 characters or spaces per field.
+You also can use the Applicant User Defined Setup window and Employee User Defined Setup window to create a customized window to store additional information. For more information, refer to
+ 
+To set up applicant or employee extra fields:
+1.	Open the Extra Fields Setup menu. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Extra Fields)
+2.	Choose Applicant or Employee.
+3.	Enter labels for each field you’re creating and choose OK.
+
+Defining the Applicant User Defined window
+Use the Applicant User Defined Setup window and the Applicant User Defined Setup Page - 2 window to create customized windows that you can use to store additional information. You can customize the information to include a combination of string, date, currency, integer, and up to ten check boxes. After you mark Enable for a field, you can enter up to 15 characters or spaces per field. The labels you enter here will appear in the Applicant User Defined window and you can enter information about the label in the fields. You can print reports that include user-defined information.
+
+To define the Applicant User Defined window:
+1.	Open the Applicant User Defined Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Applicant User Defined)
+2.	Enter a name for this window. This name will be displayed in the Applicant User Defined window.
+3.	Mark Multi Record to store multiple records for each applicant.
+4.	Mark Enable for each field you want to use and enter a label for that field.
+5.	Choose the page turn button to open the Applicant User Defined Setup Page - 2 window and create additional fields.
+6.	When you’ve finished, choose the page turn button to return to the Applicant User Defined Setup window and Save.
+
+As you add fields to the window, choose Window Layout to view how the fields will appear in the window. The Applicant User Defined Window Layout window will be displayed.
+7.	Choose Report Setup to open the Applicant User Defined Report Setup window and define a user-defined report. 
+Defining the Employee User Defined window
+
+Use the Employee User Defined Setup window and the Employee User Defined Setup Page - 2 window to create customized windows that you can use to store additional information. You can customize the information to include a combination of string, date, currency, integer, and up to ten check boxes. After you mark Enable for a field, you can enter up to 15 characters or spaces per field. The labels you enter here will appear in the Employee User Defined window and you can enter information about the label in the field. You can print reports that include user-defined information.
+
+To define the Employee User Defined window:
+1.	Open the Employee User Defined Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Employee User Defined)
+2.	Enter a name for this window. This name will be displayed in the Employee User Defined window.
+3.	Mark Multi Record to store multiple records for each employee.
+4.	Mark Enable for each field you want to use and enter a label for that field.
+5.	Choose the page turn button to open the Employee User Defined Setup - 2 window and create additional fields.
+6.	When you’ve finished, choose the page turn button to return to the Employee User Defined Setup window and Save.
+
+As you add fields to the window, choose Window Layout to view how the fields will appear in the Employee User Defined window.
+7.	Choose Report Setup to open the Employee User Defined Report Setup window and define a user-defined report. 
+
+Modifying the Applicant or Employee User Defined windows
+Use the Applicant User Defined Setup window to modify the Applicant User Defined window and use the Employee User Defined Setup window to modify the employee user-defined window.
+To modify the Applicant or Employee User Defined windows:
+1.	Open a User Defined Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources)
+2.	Choose Applicant User Defined or Employee User Defined.
+3.	Mark Enable for each field you want to use and enter a label for that field.
+4.	Unmark Enable for each field you want to remove and Save.
+
+Defining an applicant or employee user-defined report
+Use the Applicant User Defined Report Setup window or the Employee User Defined Report Setup window to create reports for your user-defined information. You can include any of the user-defined fields you’ve created in this report. 
+To define an applicant or employee user-defined report:
+1.	Open a User Defined Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources)
+2.	Choose Applicant User Defined or Employee User Defined. Choose Report 
+Setup to open the Applicant User Defined Report Setup window or the Employee User Defined Report Setup window.
+3.	Select any Field Code lookup button to open the User Defined Field Lookup window. Select a user-defined field. Continue adding user-defined fields to the report.
+4.	Choose Save.
+5.	Choose the print button to print the Applicant User Defined Test Report or the Employee User Defined Test Report.
+
+Modifying an applicant or employee user-defined report
+Use the Applicant User Defined Report Setup window or the Employee User Defined Report Setup window to modify the applicant or employee user-defined report.
+To modify an applicant or employee user-defined report:
+1.	Open a User Defined Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources)
+2.	Choose Applicant User Defined or Employee User Defined and choose Report Setup to open the User Defined Report Setup window for applicants or employees.
+3.	Select the Field Code lookup button to open the User Defined Field Lookup window for applicants or employees. Select a user-defined field to include on the report.
+4.	Choose the clear button by the field code to remove a user-defined field from the report and Save.
+5.	Choose Print to print the Applicant User Defined Test Report or the Employee User Defined Test Report.
+
+Adding a company extra fields record
+Use the Company Extra Fields window to create a company extra field record. You can track any additional information, like a company’s date of incorporation. 
+To add a company extra fields record:
+1.	Open the Company Extra Fields window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Company >> Company >> Extra Fields)
+2.	Enter information in the fields.  Choose OK.
+
+Adding a division extra fields record
+Use the Division Extra Fields window to create a division extra field record. You can track any additional information, like the number of days without injury for a division. 
+To add a division extra fields record:
+1.	Open the Division Extra Fields window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Organization >> Division >> enter or select a division name >> Extra Fields)
+2.	Enter information in the fields. Choose OK.
+
+Adding a department extra fields record
+Use the Department Extra Fields window to create a department extra field record. You can track any additional information, like the location of a department’s Material Safety Data Sheets. 
+To add a department extra fields record:
+1.	Open the Department Extra Fields window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> 
+Organization >> Department >> enter or select a department code >> Extra Fields)
+2.	Enter information in the fields and Choose OK.
+
+Adding a position extra fields record
+Use the Position Extra Fields window to create a position extra field record. You can track any additional information, like a position’s total budget. 
+To add a position extra fields record:
+1.	Open the Position Extra Fields window.
+(Microsoft Dynamics GP menu >> Tools >> Setup >> Human Resources >> Organization >> Position >> enter or select a position code >> Extra Fields)
+2.	Enter information in the fields and choose OK.
 
 
 ## See also

@@ -91,7 +91,7 @@ Management and can be used in any company.
 
 1.  Open the Currency Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Currency)
 
-    ![Image](media/MCCS.jpg)
+    ![Screenshot that shows the Currency Setup window.](media/MCCS.jpg)
 
 2.  Enter a currency ID and a description.
 
@@ -138,7 +138,7 @@ You can remove currency access by unmarking the Access selection for the company
 1.  Open the Multicurrency Access Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Multicurrency Access)
 
     
-    ![Image](media/MCAS.jpg)
+    ![Screenshot that shows the  Multicurrency Access Setup window.](media/MCAS.jpg)
 
 2.  Select a currency ID.
 
@@ -215,7 +215,7 @@ Use the Multicurrency Exchange Rate Table Setup window to set up exchange rate t
 
 1.  Open the Multicurrency Exchange Rate Table Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Exchange Table)
 
-![Image](media/MCERT.jpg)
+![Screenshot that shows the Multicurrency Exchange Rate Table Setup window.](media/MCERT.jpg)
 
 1.  Enter an exchange rate table ID and description.
 
@@ -269,7 +269,7 @@ Use the Multicurrency Exchange Rate Maintenance window to assign individual exch
 
 1.  Open the Multicurrency Exchange Rate Maintenance window. (Cards \>\> System \>\> Exchange Table)
 
-![Image](media/MCERM.jpg)
+![Screenshot that shows the Multicurrency Exchange Rate Maintenance window.](media/MCERM.jpg)
 
 2.  Enter or select an exchange table ID.
 
@@ -369,7 +369,7 @@ You also can select the currencies that the company’s functional amounts can b
 
 1.  Open the Multicurrency Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Financial \>\> Multicurrency)
 
-![Image](media/MCMS.jpg)
+![Screenshot that shows the Multicurrency Setup window.](media/MCMS.jpg)
 
 2.  Enter or select the functional currency ID. The functional currency is the     primary currency that the company uses for maintaining accounting records. Typically, the functional currency is the currency for the country/region where the company is located.
 
@@ -488,7 +488,7 @@ Use the Multicurrency Posting Account Setup window to select posting accounts fo
 
 1.  Open the Multicurrency Posting Account Setup window. (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Financial \>\> Currency Accounts)
 
-![Image](media/MCPAS.jpg)
+![Screenshot that shows the Multicurrency Posting Account Setup window.](media/MCPAS.jpg)
 
 1.  Enter or select a currency ID.
 
@@ -719,7 +719,7 @@ Use the Multicurrency Account Summary window to view open-year balances in a net
 
 1.  Open the Multicurrency Account Summary window. (Cards \>\> Financial \>\> Account \>\> Enter or select an account \>\> Summary \>\> Currency)
 
-![Image](media/MCASU.jpg)
+![Screenshot that shows the Multicurrency Account Summary window.](media/MCASU.jpg)
 
 2.  Select the open year and period for which you want to view information.
 
@@ -785,7 +785,7 @@ When removing history in General Ledger, Receivables Management, Payables Manage
 
 *To print accurate historical aged trial balance reports and aged trial balances with options reports, you should maintain transaction history.*
 
-[Image](media/MCRH.jpg)
+[Screenshot that shows the windows where history was removed.](media/MCRH.jpg)
 
 ~   A screenshot of a cell phone Description automatically generated
 
@@ -862,7 +862,7 @@ A credit document has a document date or posting date that is after the cutoff d
 
 The revaluation posting date is January 31, 2017. The cutoff date is February 1, 2017.
 
-| Credit document (Applied From Document on the exception report) |                       |
+| Credit document (Applied From Document on the exception report) |     Details           |
 |-----------------------------------------------------------------|-----------------------|
 | Document Type:                                                  | Payment               |
 | Document Date:                                                  | **February 5, 2017**  |
@@ -879,7 +879,7 @@ The credit document has a document date or posting date before the cutoff date. 
 
 The revaluation posting date is January 31, 2017. The cutoff date is February 1, 2017.
 
-| Credit document (Applied From Document on the exception report) |                      |
+| Credit document (Applied From Document on the exception report) |     Details          |
 |-----------------------------------------------------------------|----------------------|
 | Document Type:                                                  | Payment              |
 | Document Date:                                                  | January 31, 2017     |
@@ -897,7 +897,7 @@ The credit document and the debit document have document dates and posting dates
 
 The revaluation posting date is December 10, 2017. The cutoff date is December 10, 2017.
 
-| Credit document (Applied From Document on the exception report) |                       |
+| Credit document (Applied From Document on the exception report) |   Details             |
 |-----------------------------------------------------------------|-----------------------|
 | Document Type:                                                  | Payment               |
 | Document Date:                                                  | November 15, 2017     |
@@ -923,7 +923,7 @@ Only one rate type per currency can be identified when revaluing General Ledger 
 
 1.  Open the Multicurrency Revaluation window. Microsoft Dynamics GP menu \>\> Tools \>\> Routines \>\> Financial \>\> Revaluation)
 
-![Image](media/MCREV.jpg)
+![Screenshot that shows the Multicurrency Revaluation window.](media/MCREV.jpg)
 
 2.  Enter a name for the revaluation option.
 
@@ -961,9 +961,9 @@ The exchange rate options you’ve selected in the Multicurrency Setup window wi
 
 12.  Choose the Revalue button to revalue the currencies you’ve marked. A separate journal entry in General Ledger is created for each currency being revalued.
 
-    -   Unrealized and realized gains and losses for the originating currency are recorded as zero amounts with zeros for the exchange rates.
+  -   Unrealized and realized gains and losses for the originating currency are recorded as zero amounts with zeros for the exchange rates.
 
-    -   Unrealized and realized gains and losses for the company’s functional currency are recorded.
+  -   Unrealized and realized gains and losses for the company’s functional currency are recorded.
 
 The Revaluation Report might be printed, depending on how your system has been set up. This report displays information about the transactions that were revalued. The Revaluation Summary and Detail Breakdown Registers also might be printed. These reports display information about the revaluation transactions posted.
 
@@ -997,7 +997,7 @@ Reversing entries will be stored in the same batch as the original revaluation t
 
 1.  Open the Multicurrency Revaluation window. (Microsoft Dynamics GP menu \>\> Tools \>\> Routines \>\> Financial \>\> Revaluation)
 
-![Image](media/MCREV2.jpg)
+![Screenshot of the Multicurrency Revaluation window.](media/MCREV2.jpg)
 
 1.  Enter a name for the revaluation option.
 

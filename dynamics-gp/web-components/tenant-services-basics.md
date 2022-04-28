@@ -1,6 +1,6 @@
 ---
 title: "Tenant Services"
-description: ""
+description: "Microsoft Dynamics GP Tenant Services are WCF services that help you to host Microsoft Dynamics GP for more than one organization in your data center."
 keywords: "web components"
 author: dapelt
 ms.author: dapelt
@@ -170,7 +170,7 @@ If you choose to start a new web client, the Session Central Service uses the Te
 After you choose the tenant, the Session Central Service uses the Tenant Discovery Service to get web client configuration information for that tenant. The configuration information includes how to connect to Microsoft Dynamics GP for the tenant. The Session Central Service uses the configuration information to start another service called a session runtime process.
 The Session Central Service returns the URL for the session runtime process to the browser. The browser uses that URL to connect to the session runtime process and the web client appears. For more information about the web client, see the Web Client Installation and Administration Guide.
 
-    In a single tenant environment where Tenant Services are not installed, you will find a file named TenantConfiguration.xml at the root of the Session Central Service installation folder. The file contains default tenant information that is automatically used when you login to the web client.
+In a single tenant environment where Tenant Services are not installed, you will find a file named TenantConfiguration.xml at the root of the Session Central Service installation folder. The file contains default tenant information that is automatically used when you login to the web client.
 
 #### Tenant Manager and the Web Management Console
 After you install Tenant Services you will want to add tenants, multitenant applications, tenant users, and service administrators. To perform these operations, you have to install the Tenant Manager snap-in for the Microsoft Dynamics GP Web Management Console. For more information about how to install the Web Management Console, see Chapter 6, “Tenant Manager Installation.”

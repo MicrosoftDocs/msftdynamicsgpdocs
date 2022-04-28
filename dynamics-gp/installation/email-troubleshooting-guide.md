@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 2/28/2022
+ms.date: 4/21/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -38,7 +38,7 @@ Review the below blogs for workarounds if you are on an older version of Microso
 [**Other emails intermittently fail**](https://community.dynamics.com/gp/b/dynamicsgp/posts/emails-intermittent-failing-when-sending-out-of-dynamics-gp-not-workflow-emails)
 
 
-All email issues can be safely split up into three sets of issues:
+All email issues can be safely split up into the following set of categories:
 
 * [Issues unique to MAPI](#mapispecificerrors) 
 * [Issues unique to Exchange](#exchangespecificerrors)
@@ -693,7 +693,8 @@ If it is grayed out, then you are tied to Exchange Online, so these should be co
 ## <a name=mfa></a>MFA - Multi-Factor Authentication
 
 - [Set up the application in the Azure Portal](/dynamics-gp/whats-new/multi-factor-authentication)  
-- [Configure MFA in Dynamics GP](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---multi-factor-authentication)  
+- [Configure MFA in Dynamics GP](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---multi-factor-authentication)
+- [MFA VIDEO LEARNING](https://www.youtube.com/watch?v=81YZ8B6bHPk&t=7s)
 
 > When Basic Authentication is deprecated you will need to be on a version of Dynamics GP where you can use Modern Authentication (18.3 or later).
 > You do not actually need MFA turned on for your account to use the MFA window in Microsoft Dyanmics GP, but it does use Modern Authentication.
