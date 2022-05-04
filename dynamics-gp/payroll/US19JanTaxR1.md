@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 03/31/2022
+ms.date: 05/4/2022
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -218,7 +218,8 @@ Tax rate for all filing status is 5.09%
 
 #### Withholding changes for North Dakota
 
-**Per the state of North Dakota, there is no HOH filing status with exemptions. If an employee on the W4 chooses Filing status of HOH and does not mark step 2, you still choose HOH as the filing status in Dynamics GP.**
+**Per the state of North Dakota, there is no HOH filing status with exemptions. If an employee on the W4 chooses Filing status of HOH and does not mark step 2, you still choose HOH as the filing status in Dynamics GP.
+The state relies on the Federal form W-4 to calculate the amount to withhold. Per the state, Step 3 for Dependent Claim amount is not used for ND state tax withholding.**
 
 Withholding rates for taxpayers filing as *MAR* and *MARHR* :
 
