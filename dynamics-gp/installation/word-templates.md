@@ -207,16 +207,16 @@ Typically, this logo is placed in the Page Header table for the word template.
 
 #### To add a company image to the word template
 
-1.Create a cell to contain the image.  
+1. Create a cell to contain the image.  
 
-    In the word template, create a table call in the location where you want the image to appear.
-2.Add a Picture Content Control.  
+    In the word template, create a table call in the location where you want the image to appear.  
+2. Add a Picture Content Control.  
 
-    Display the Developer ribbon in Microsoft Word. In the Controls group, choose to insert a Picture Content Control.
-3.Set the picture size.  
+    Display the Developer ribbon in Microsoft Word. In the Controls group, choose to insert a Picture Content Control.  
+3. Set the picture size.  
 
-    Use the resize handles on the Picture Content Control to the size required for the word template document.
-4.Set the picture properties.  
+    Use the resize handles on the Picture Content Control to the size required for the word template document.  
+4. Set the picture properties.  
 
     With the Picture Content Control selected, click Properties in the Controls group. Set the following properties:  
 
