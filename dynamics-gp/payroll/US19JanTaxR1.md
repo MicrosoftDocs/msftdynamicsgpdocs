@@ -218,8 +218,10 @@ Tax rate for all filing status is 5.09%
 
 #### Withholding changes for North Dakota
 
-**Per the state of North Dakota, there is no HOH filing status with exemptions. If an employee on the W4 chooses Filing status of HOH and does not mark step 2, you still choose HOH as the filing status in Dynamics GP.
-The state relies on the Federal form W-4 to calculate the amount to withhold. Per the state, Step 3 for Dependent Claim amount is not used for ND state tax withholding.**
+> [!NOTE]
+> Per the state of North Dakota, there is no HOH filing status with exemptions. If an employee on the W4 chooses Filing status of HOH and does not mark step 2, you still choose HOH as the filing status in Dynamics GP.
+>
+> The state relies on the Federal form W-4 to calculate the amount to withhold. Per the state, Step 3 for Dependent Claim amount is not used for ND state tax withholding.
 
 Withholding rates for taxpayers filing as *MAR* and *MARHR* :
 
