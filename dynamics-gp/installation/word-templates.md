@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: nihell
-ms.date: 04/28/2022
+ms.date: 05/05/2022
 
 ---
 
@@ -92,15 +92,17 @@ The word template document defines the layout of a report.
 It contains the report definition details such as sections in the report, fields in each section, and any static text values defined for the report. This information is gathered from the report definition, and then embedded into the word template when created.
 
 ### How Word Templates are processed
+
 When you choose Template as the Report Type, the assigned Microsoft Word document will be used to generate the output of the report.
 
-1.The Microsoft Dynamics GP runtime uses the report definition within Microsoft Dynamics GP to generate an XML file that contains both the report definition and the data for the report. 
-2.The assigned Word Template document is then retrieved. 
-3.The XML and Word Template are passed to the Template Processing Engine, which combines them to produce the completed Microsoft Word Template for the report.
+1. The Microsoft Dynamics GP runtime uses the report definition within Microsoft Dynamics GP to generate an XML file that contains both the report definition and the data for the report.  
+2. The assigned Word Template document is then retrieved.  
+3. The XML and Word Template are passed to the Template Processing Engine, which combines them to produce the completed Microsoft Word Template for the report.  
 
 ## Report Template Design
 
 ### Document structure
+
 The Word Template document is a standard Microsoft Word document.
 When rendered from Microsoft Dynamics GP, the additional information from the report definition is embedded into the document.
 Several tables in the word template document define the overall structure. All content that is displayed in the generated Microsoft Word document is placed inside these tables.  
@@ -176,17 +178,17 @@ In Microsoft Dynamics GP there are 5 default bookmarks. These bookmarks are used
 
 First, you will want to make sure that Bookmarks are visible on the document you are viewing.  
 
-1.In Microsoft Word, File menu, Advanced tab, Show document content section.
-2.Check the box next to option “Show bookmarks”.
+1. In Microsoft Word, File menu, Advanced tab, Show document content section.  
+2. Check the box next to option **Show bookmarks**.  
 
-  Now that we know bookmarks icon is enabled and you can see them on the word template, you can use the following direction to see which bookmarks on your document.
+    Now that we know bookmarks icon is enabled and you can see them on the word template, you can use the following direction to see which bookmarks on your document.
 
-  > [!TIP]
-  > Bookmarks appear as a grey capital I or roman numeral 1.
+    > [!TIP]
+    > Bookmarks appear as a grey capital I or roman numeral 1.
 
 3. Open the Microsoft Dynamics GP Word Template via directly opening the .docx file or clicking Modify in Template Maintenance on the specific Word Template.  
 
-4.In Microsoft Word, click into any of the tables that contain data on the template, go to the Insert menu, Links section, select Bookmark.
+4. In Microsoft Word, click into any of the tables that contain data on the template, go to the Insert menu, Links section, select Bookmark.
 
 Reference the following “map” of a report template document to see where the bookmarks are located.
  
@@ -205,16 +207,23 @@ Typically, this logo is placed in the Page Header table for the word template.
 
 #### To add a company image to the word template
 
-1.	Create a cell to contain the image.
-In the word template, create a table call in the location where you want the image to appear.
-2.	Add a Picture Content Control.
-Display the Developer ribbon in Microsoft Word. In the Controls group, choose to insert a Picture Content Control.
-3.	Set the picture size.
-Use the resize handles on the Picture Content Control to the size required for the word template document.
-4.	Set the picture properties.
-With the Picture Content Control selected, click Properties in the Controls group. Set the following properties:
-Title: CompanyLogo
-Tag: globals.’Company.Logo’
+1.Create a cell to contain the image.  
+
+    In the word template, create a table call in the location where you want the image to appear.
+2.Add a Picture Content Control.  
+
+    Display the Developer ribbon in Microsoft Word. In the Controls group, choose to insert a Picture Content Control.
+3.Set the picture size.  
+
+    Use the resize handles on the Picture Content Control to the size required for the word template document.
+4.Set the picture properties.  
+
+    With the Picture Content Control selected, click Properties in the Controls group. Set the following properties:  
+
+    |Property  |Value  |
+    |---------|---------|
+    |Title     |CompanyLogo |
+    |Tag|globals.’Company.Logo’ |
 
 > [!NOTE]
 > You can opt to not have a Content Control field for the company logo and have the image directly on the template.
@@ -341,25 +350,26 @@ The Microsoft Dynamics GP Word Template Generator is a utility that can be used 
 
 ### Install
 
-1.	Service Packs and Hotfixes for the Word Template Generator for Microsoft Dynamics GP | Microsoft Docs
-2.	In the Downloads section, select MDGP2013_WordTemplateGenerator_FullInstall_R2.zip 
-3.	Click the radio button I accept the terms in the License Agreement, click Next.  
-4.	Select the install location for the Microsoft Dynamics GP 2013 Word Template Generator Tool, click install  
+1. Service Packs and Hotfixes for the Word Template Generator for Microsoft Dynamics GP | Microsoft Docs
+2. In the Downloads section, select MDGP2013_WordTemplateGenerator_FullInstall_R2.zip 
+3. Click the radio button I accept the terms in the License Agreement, click Next.  
+4. Select the install location for the Microsoft Dynamics GP 2013 Word Template Generator Tool, click install  
 
     The default install location is C:\Program Files (x86)\Microsoft Dynamics\Template Generator\
-5.	Once the Word Template Generator Tool is installed click Finish
-6.	The following screen capture shows what the Template Generator tool looks once installed.
+5. Once the Word Template Generator Tool is installed click Finish
+6. The following screen capture shows what the Template Generator tool looks once installed.
 
 #### How to use?
 
-1.	Run the report for which you want to create a template.
-2.	Export the report in XML format.
-In the Report Destination Window, export the report as a file in XML format, click OK.
-3.	Drag-and-drop the XML file over the TemplateGenerator.exe file.
-4.	In the location where the XML file was originally saved, a DOCX file will be created with the same name.
-5.	Add the template into Microsoft Dynamics GP.
-6.	Test the template.
-7.	Revise the template as needed.
+1. Run the report for which you want to create a template.
+2. Export the report in XML format.
+
+    In the Report Destination Window, export the report as a file in XML format, click OK.
+3. Drag-and-drop the XML file over the TemplateGenerator.exe file.
+4. In the location where the XML file was originally saved, a DOCX file will be created with the same name.
+5. Add the template into Microsoft Dynamics GP.
+6. Test the template.
+7. Revise the template as needed.
 
 ## Troubleshooting Word Templates
 
