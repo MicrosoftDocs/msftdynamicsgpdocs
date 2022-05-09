@@ -725,9 +725,8 @@ of your SQL Server installation. The following steps will help increase SQL
 Server security:
 
 - Be sure that the latest operating system and SQL Server service packs and
-    updates are installed. For the latest details, see the Microsoft Security &
-    Privacy Web site
-    ([https://www.microsoft.com/security/default.asp)](https://www.microsoft.com/security/default.asp).
+    updates are installed. For the latest details, see the [Microsoft Security &
+    Privacy Web site](https://support.microsoft.com/en-us/topic/about-microsoft-privacy-and-security-policy-e7d87d58-c2c4-4115-8dd8-c771eb36f37d).
 
 - For file system-level security, be sure that all SQL Server data and system
     files are installed on NTFS partitions. You should make the files accessible
@@ -959,9 +958,10 @@ cases, leaves) the organization.
 For more information about viruses and computer security in general, refer
 to the following Microsoft Security Web sites:
 
-- Microsoft Security & Privacy ([https://www.microsoft.com/security/default.asp](https://www.microsoft.com/security/default.asp)).
+- [Microsoft Security & Privacy](
+https://support.microsoft.com/en-us/topic/about-microsoft-privacy-and-security-policy-e7d87d58-c2c4-4115-8dd8-c771eb36f37d).
 
-- Security documentation on Microsoft TechNet ([https://www.microsoft.com/technet/security/Default.mspx](https://www.microsoft.com/technet/security/Default.mspx)).
+- [Security documentation on Microsoft TechNet](https://www.microsoft.com/technet/security/Default.mspx).
 
 ### Types of viruses
 
