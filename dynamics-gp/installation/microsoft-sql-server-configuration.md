@@ -267,7 +267,7 @@ Be sure that the SQL Server Agent service is set up to start automatically with 
 
 Jobs are customizable, and you can select how frequently they should be completed. You may want certain jobs to run every half hour, while others should run once at night. For more information on scheduling jobs, refer to Microsoft SQL Server Books Online.
 
-SQL Server Agent is not available for SQL Server Express. For information about how to schedule backups for SQL Server Express, see the Microsoft Knowledge Base article [How to schedule and automate backups of SQL Server databases in SQL Server Express](https://support.microsoft.com/kb/2019698/en-us).
+SQL Server Agent is not available for SQL Server Express. For information about how to schedule backups for SQL Server Express, see the Microsoft Knowledge Base article [How to schedule and automate backups of SQL Server databases in SQL Server Express](https://support.microsoft.com/kb/2019698/).
 
 <!--Microsoft SQL Server 2008 Express doesn't include SQL Server Agent. Refer to [Support Hot Topic on CustomerSource](https://docs.microsoft.com/dynamics/s-e/) for more information about scheduling a backup.-->
 
