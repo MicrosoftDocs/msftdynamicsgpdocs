@@ -296,7 +296,7 @@ You use the **Payroll R1 Edit** window to make changes to RL records. You use th
 
 ## Chapter 4: Tax updates
 
-This chapter lists changes to federal, provincial, and territorial tax rates for 2022. For detailed information about taxes, refer to the Canada Revenue Agency Web site at [www.cra-arc.gc.ca](https://www.cra-arc.gc.ca/) and Revenue Quebec's Web site at [www.revenu.gouv.qc.ca.](https://www.revenu.gouv.qc.ca/)
+This chapter lists changes to federal, provincial, and territorial tax rates for 2022. For detailed information about taxes, refer to the [Canada Revenue Agency Web site](https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html) and [Revenue Quebec's Web site](https://www.revenu.gouv.qc.ca/).
 
 ### Pension Plan, Employment Insurance, and Parental Insurance changes
 
