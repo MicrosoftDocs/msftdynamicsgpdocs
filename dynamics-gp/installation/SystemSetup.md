@@ -585,11 +585,9 @@ computing environment.
 - Use the Windows Update site to get the latest updates available for your
     computer's operating system, software and hardware.
 
-- Use the Microsoft Office Update site to help keep your Office products
+- Use the [Microsoft Office Update site](https://support.microsoft.com/en-us/office/update-office-with-microsoft-update-f59d3f9d-bd5d-4d3b-a08e-1dd659cf5282?msclkid=e232c84ecfbc11eca1a426994c3d45a2) to help keep your Office products
     up-todate. Office product updates are created by Microsoft to bring you the
     highest levels of security, stability, and critical functionality available.
-    ([https://
-    office.microsoft.com/en-us/officeupdate/default.aspx](https://office.microsoft.com/en-us/officeupdate/default.aspx))
 
 #### Microsoft Dynamics GP security
 
