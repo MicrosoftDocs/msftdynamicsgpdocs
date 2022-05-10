@@ -45,7 +45,7 @@ To sign in to the web client, use the following procedure.
 
     A typical URL to access the Dynamics GP web client looks similar to the following:
 
-    <https://gpuaweb.contoso.com/GP>
+    `https://gpuaweb.contoso.com/GP`
 
 3. View the sign-in page. If the site displays a security certificate error, report the issue to your system administrator, and do not continue the sign on process.
 
