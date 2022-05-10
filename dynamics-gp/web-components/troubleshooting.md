@@ -53,7 +53,7 @@ If the status bar indicates “Initializing” for an extended period of time, b
 
 - Verify that you can access the Runtime service. This is the service that the web client application communicates with on the session host machine. By default, this service is accessed through port 443. The port is secured with a security certificate. If there are any problems with the security certificate, the connection cannot be made. Use a web browser to access the following file on the session host machine:
 
-<https://session_host_machine:443/clientaccesspolicy.xml>
+`https://session_host_machine:443/clientaccesspolicy.xml`
 
 The XML content for the file should be displayed in the web browser. If it is not, then there is an issue with the configuration of the runtime service. Usually the issue involves the security certificate that is used for the port. Use the following command to find the details of the security certificate that is bound to the port:
 

@@ -67,7 +67,7 @@ Add-in for Gmail Multi-factor authentication. This is a paid add-in that we beli
 
 **Solution**
 Compare a clean Outlook add-in list to the client having the issue to make sure there are no extra add-ins.  
-Recommend that they [remove the add-in as it appears like it is no longer needed](https://support.office.com/article/add-a-gmail-account-to-outlook-701916679c52-4581-990e-e30318c2c081)
+Recommend that they [remove the add-in as it appears like it is no longer needed](https://support.microsoft.com/en-us/office/add-a-gmail-account-to-outlook-70191667-9c52-4581-990e-e30318c2c081)
 ### No default mail client, or the current mail client cannot fulfill the message request Please run Microsoft Outlook and set it as the default mail client.  
 
 **Note** Recommend you review Outlook version first – MAPI only works with 32bit!  

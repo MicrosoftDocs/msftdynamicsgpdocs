@@ -719,34 +719,17 @@ information, see [Windows Server Security and Assurance](/windows-server/securit
 
 ### Additional security settings for SQL Server
 
-Whether you are using SQL Server 2012 or SQL Server 2008 with Microsoft
-Dynamics GP, it is important that you take measures to increase the security
-of your SQL Server installation. The following steps will help increase SQL
-Server security:
+Whether you are using SQL Server 2012 or SQL Server 2008 with Microsoft Dynamics GP, it is important that you take measures to increase the security
+of your SQL Server installation. The following steps will help increase SQL Server security:
 
-- Be sure that the latest operating system and SQL Server service packs and
-    updates are installed. For the latest details, see the Microsoft Security &
-    Privacy Web site
-    ([https://www.microsoft.com/security/default.asp)](https://www.microsoft.com/security/default.asp).
+- Be sure that the latest operating system and SQL Server service packs and updates are installed. For the latest details, see the [Microsoft Security & Privacy Web site](https://support.microsoft.com/en-us/topic/about-microsoft-privacy-and-security-policy-e7d87d58-c2c4-4115-8dd8-c771eb36f37d).
 
-- For file system-level security, be sure that all SQL Server data and system
-    files are installed on NTFS partitions. You should make the files accessible
-    only to administrative or system-level users through NTFS permissions. This
-    will safeguard against users accessing those files when the SQL Server
-    service (MSSQLSERVER) is not running.
+- For file system-level security, be sure that all SQL Server data and system files are installed on NTFS partitions. You should make the files accessible
+    only to administrative or system-level users through NTFS permissions. This will safeguard against users accessing those files when the SQL Server service (MSSQLSERVER) is not running.
 
-- Use a low-privilege domain account or the LocalSystem account for SQL Server
-    service (MSSQLSERVER). This account should have minimal rights in the domain
-    and should help contain - but not stop - an attack to the server in case of
-    compromise. In other words, this account should have only local user-level
-    permissions in the domain. If SQL Server is using a domain administrator
-    account to run the services, a compromise of the server will lead to a
-    compromise of the entire domain. To change this setting, use SQL Server
-    Management Studio. The access control lists (ACLs) on files, the registry,
-    and user rights will be changed automatically.
+- Use a low-privilege domain account or the LocalSystem account for SQL Server service (MSSQLSERVER). This account should have minimal rights in the domain and should help contain - but not stop - an attack to the server in case of compromise. In other words, this account should have only local user-level permissions in the domain. If SQL Server is using a domain administrator account to run the services, a compromise of the server will lead to a compromise of the entire domain. To change this setting, use SQL Server Management Studio. The access control lists (ACLs) on files, the registry, and user rights will be changed automatically.
 
-For the most up-to-date SQL Server security information for SQL Server 2008
-or SQL Server 2012, see [https://www.microsoft.com/sqlserver/2008/en/us/
+For the most up-to-date SQL Server security information for SQL Server 2008 or SQL Server 2012, see [https://www.microsoft.com/sqlserver/2008/en/us/
 Security.aspx.](https://www.microsoft.com/sqlserver/2008/en/us/Security.aspx)
 
 ## Chapter 3: Network security
@@ -959,9 +942,9 @@ cases, leaves) the organization.
 For more information about viruses and computer security in general, refer
 to the following Microsoft Security Web sites:
 
-- Microsoft Security & Privacy ([https://www.microsoft.com/security/default.asp](https://www.microsoft.com/security/default.asp)).
+- [Microsoft Security & Privacy](https://support.microsoft.com/en-us/topic/about-microsoft-privacy-and-security-policy-e7d87d58-c2c4-4115-8dd8-c771eb36f37d).
 
-- Security documentation on Microsoft TechNet ([https://www.microsoft.com/technet/security/Default.mspx](https://www.microsoft.com/technet/security/Default.mspx)).
+- [Security documentation on Microsoft TechNet](https://www.microsoft.com/technet/security/Default.mspx).
 
 ### Types of viruses
 
