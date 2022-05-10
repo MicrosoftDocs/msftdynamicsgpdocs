@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 05/4/2022
+ms.date: 05/9/2022
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -18,7 +18,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2022 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-The third tax update for 2022 replaces all previous tax updates. It includes state tax table changes that take effect January 1, 2022. We recommend that you install this update as soon as you can for the year 2022.
+The fourth tax update for 2022 replaces all previous tax updates. It includes state tax table changes that take effect January 1, 2022. We recommend that you install this update as soon as you can for the year 2022.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -28,6 +28,134 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly)
 
+## Changes in May Round 4 update (Released 5/12/2022)
+
+- Alabama
+
+### 2022 state or territorial tax changes
+
+The following tax changes are included in this update:
+
+#### Withholding changes for Alabama
+
+In May the state of Alabama increased the standard deduction for married filing joint taxpayers by $1,000 and increased the standard deduction for single, head of family, and married filing separately taxpayers by $500. The act also changed the qualifying threshold for the $1,000 dependent exemption from gross income of $20,000 or less to gross income of $50,000 or less. The qualifying threshold for the $500 dependent exemption has changed from gross income of $20,000 or more to gross income of $50,000 or more. 
+
+The Income tax table did not change.
+
+Personal Exemption Tax Type rates for HOF filling Status:
+
+| If Over     |     But Not Over | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 26,000           | 5,200          | 0%           | 0                  |
+| 26,000      | 26,500           | 5,065          | 0%           | 0                  |
+| 26,500      | 27,000           | 4,930          | 0%           | 0                  |
+| 27,000      | 27,500           | 4,795          | 0%           | 0                  |
+| 27,500      | 28,000           | 4,660          | 0%           | 0                  |
+| 28,000      | 28,500           | 4,525          | 0%           | 0                  |
+| 28,500      | 29,000           | 4,390          | 0%           | 0                  |
+| 29,000      | 29,500           | 4,255          | 0%           | 0                  |
+| 29,500      | 30,000           | 4,120          | 0%           | 0                  |
+| 30,000      | 30,500           | 3,985          | 0%           | 0                  |
+| 30,500      | 31,000           | 3,850          | 0%           | 0                  |
+| 31,000      | 31,500           | 3,715          | 0%           | 0                  |
+| 31,500      | 32,000           | 3,580          | 0%           | 0                  |
+| 32,000      | 32,500           | 3,445          | 0%           | 0                  |
+| 32,500      | 33,000           | 3,310          | 0%           | 0                  |
+| 33,000      | 33,500           | 3,175          | 0%           | 0                  |
+| 33,500      | 34,000           | 3,040          | 0%           | 0                  |
+| 34,000      | 34,500           | 2,905          | 0%           | 0                  |
+| 34,500      | 35,000           | 2,770          | 0%           | 0                  |
+| 35,000      | 35,500           | 2,635          | 0%           | 0                  |
+| 35,500      | And over         | 2,500          | 0%           | 0                  |
+
+
+Personal Exemption Tax Type rates for MAR filling Status:
+
+| If Over     |     But Not Over | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 26,000           | 8,500          | 0%           | 0                  |
+| 26,000      | 26,500           | 8,325          | 0%           | 0                  |
+| 26,500      | 27,000           | 8,150          | 0%           | 0                  |
+| 27,000      | 27,500           | 7,975          | 0%           | 0                  |
+| 27,500      | 28,000           | 7,800          | 0%           | 0                  |
+| 28,000      | 28,500           | 7,625          | 0%           | 0                  |
+| 28,500      | 29,000           | 7,450          | 0%           | 0                  |
+| 29,000      | 29,500           | 7,275          | 0%           | 0                  |
+| 29,500      | 30,000           | 7,100          | 0%           | 0                  |
+| 30,000      | 30,500           | 6,925          | 0%           | 0                  |
+| 30,500      | 31,000           | 6,750          | 0%           | 0                  |
+| 31,000      | 31,500           | 6,575          | 0%           | 0                  |
+| 31,500      | 32,000           | 6,400          | 0%           | 0                  |
+| 32,000      | 32,500           | 6,225          | 0%           | 0                  |
+| 32,500      | 33,000           | 6,050          | 0%           | 0                  |
+| 33,000      | 33,500           | 5,875          | 0%           | 0                  |
+| 33,500      | 34,000           | 5,700          | 0%           | 0                  |
+| 34,000      | 34,500           | 5,525          | 0%           | 0                  |
+| 34,500      | 35,000           | 5,350          | 0%           | 0                  |
+| 35,000      | 35,500           | 5,175          | 0%           | 0                  |
+| 35,500      | And over         | 5,000          | 0%           | 0                  |
+
+
+Personal Exemption Tax Type rates for MFS filling Status:
+
+| If Over     |     But Not Over | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 13,000           | 4,250          | 0%           | 0                  |
+| 13,000      | 13,250           | 4,162          | 0%           | 0                  |
+| 13,250      | 13,500           | 4,074          | 0%           | 0                  |
+| 13,500      | 13,750           | 3,986          | 0%           | 0                  |
+| 13,750      | 14,000           | 3,898          | 0%           | 0                  |
+| 14,000      | 14,250           | 3,810          | 0%           | 0                  |
+| 14,250      | 14,500           | 3,722          | 0%           | 0                  |
+| 14,500      | 14,750           | 3,634          | 0%           | 0                  |
+| 14,750      | 15,000           | 3,546          | 0%           | 0                  |
+| 15,000      | 15,250           | 3,458          | 0%           | 0                  |
+| 15,250      | 15,500           | 3,370          | 0%           | 0                  |
+| 15,500      | 15,750           | 3,282          | 0%           | 0                  |
+| 15,750      | 16,000           | 3,194          | 0%           | 0                  |
+| 16,000      | 16,250           | 3,106          | 0%           | 0                  |
+| 16,250      | 16,500           | 3,018          | 0%           | 0                  |
+| 16,500      | 16,750           | 2,930          | 0%           | 0                  |
+| 16,750      | 17,000           | 2,842          | 0%           | 0                  |
+| 17,000      | 17,250           | 2,754          | 0%           | 0                  |
+| 17,250      | 17,500           | 2,666          | 0%           | 0                  |
+| 17,500      | 17,750           | 2,578          | 0%           | 0                  |
+| 17,750      | And over         | 2,500          | 0%           | 0                  |
+
+
+Personal Exemption Tax Type rates for SINGLE and ZERO filling Status:
+
+| If Over     |     But Not Over | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 26,000           | 3,000          | 0%           | 0                  |
+| 26,000      | 26,500           | 2,975          | 0%           | 0                  |
+| 26,500      | 27,000           | 2,950          | 0%           | 0                  |
+| 27,000      | 27,500           | 2,925          | 0%           | 0                  |
+| 27,500      | 28,000           | 2,900          | 0%           | 0                  |
+| 28,000      | 28,500           | 2,875          | 0%           | 0                  |
+| 28,500      | 29,000           | 2,850          | 0%           | 0                  |
+| 29,000      | 29,500           | 2,825          | 0%           | 0                  |
+| 29,500      | 30,000           | 2,800          | 0%           | 0                  |
+| 30,000      | 30,500           | 2,775          | 0%           | 0                  |
+| 30,500      | 31,000           | 2,750          | 0%           | 0                  |
+| 31,000      | 31,500           | 2,725          | 0%           | 0                  |
+| 31,500      | 32,000           | 2,700          | 0%           | 0                  |
+| 32,000      | 32,500           | 2,675          | 0%           | 0                  |
+| 32,500      | 33,000           | 2,650          | 0%           | 0                  |
+| 33,000      | 33,500           | 2,625          | 0%           | 0                  |
+| 33,500      | 34,000           | 2,600          | 0%           | 0                  |
+| 34,000      | 34,500           | 2,575          | 0%           | 0                  |
+| 34,500      | 35,000           | 2,550          | 0%           | 0                  |
+| 35,000      | 35,500           | 2,525          | 0%           | 0                  |
+| 35,500      | And over         | 2,500          | 0%           | 0                  |
+
+Special Tax Type rates for HOF, MFS, SINGLE, Zero, and MAR filling Status:
+
+| If Over     |     But Not Over | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 50,000           | 1,000          | 0%           | 0                  |
+| 50,000      | 100,000          | 500            | 0%           | 0                  |
+| 100,000     | And Over         | 300            | 0%           | 0                  |
 
 ## Changes in March Round 3 update (Released 3/23/2022)
 
@@ -829,7 +957,7 @@ Continue withholding at the 8 percent rate until the employee submits a withhold
 
 Special Tax Type rates for MS3 Filing Status:
 
-| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 49,999           | 7,250          | 0%           | 0                  |
 | 49,999      | 249,999          | 7,250          | 0%           | 0                  |
@@ -842,7 +970,7 @@ Special Tax Type rates for MS3 Filing Status:
 
 Special Tax Type rates for S2 and S3 Filing Status:
 
-| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+| If Over     |     But Not Over | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 49,999           | 7,250          | 0%           | 0                  |
 | 49,999      | 124,999          | 7,250          | 0%           | 0                  |
@@ -961,7 +1089,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *3/15/2022*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *5/10/2022*.
 
 ## What's next
 
