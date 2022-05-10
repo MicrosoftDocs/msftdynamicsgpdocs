@@ -942,8 +942,7 @@ cases, leaves) the organization.
 For more information about viruses and computer security in general, refer
 to the following Microsoft Security Web sites:
 
-- [Microsoft Security & Privacy](
-https://support.microsoft.com/en-us/topic/about-microsoft-privacy-and-security-policy-e7d87d58-c2c4-4115-8dd8-c771eb36f37d).
+- [Microsoft Security & Privacy](https://support.microsoft.com/en-us/topic/about-microsoft-privacy-and-security-policy-e7d87d58-c2c4-4115-8dd8-c771eb36f37d).
 
 - [Security documentation on Microsoft TechNet](https://www.microsoft.com/technet/security/Default.mspx).
 
