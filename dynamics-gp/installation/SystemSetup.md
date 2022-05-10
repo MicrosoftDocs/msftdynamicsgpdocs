@@ -1564,7 +1564,7 @@ To set up access for SQL Server Reporting Services reports:
     credentials to be passed to the SQL Server so that users can view SQL
     Reporting Services reports.
 
-Refer to Knowledge Base article 319723: *How to use Kerberos authentication in SQL Server* [(https://support.microsoft.com/kb/319723/en-us)](https://support.microsoft.com/kb/319723/en-us) and complete Step 1: Configure the domain controller and Step 2: Configure the IIS services server to use Kerberos authentication on SQL Server.
+Refer to Knowledge Base article 319723: [*How to use Kerberos authentication in SQL Server*](https://www.betaarchive.com/wiki/index.php/Microsoft_KB_Archive/319723) and complete Step 1: Configure the domain controller and Step 2: Configure the IIS services server to use Kerberos authentication on SQL Server.
 
 #### User security troubleshooting
 
