@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 05/14/2019
+ms.date: 05/10/2022
 ---
 
 # Microsoft Dynamics GP System Setup Guide
@@ -8801,14 +8801,8 @@ for the query— that is, when, how often, and for how long you want Microsoft
 Dynamics GP to check whether the conditions you've defined exist. You also
 can specify the list of people to notify when it does.
 
-Before you set up Business Alerts be sure that Microsoft SQL Server Agent is
-started and that you've set up SQL Mail or Database Mail. SQL Server Agent
-is not available for SQL Server Express. For more information about setting
-up SQL Mail or Database Mail, refer to SQL Server Books Online. You also can
-refer to the following Microsoft Knowledge Base article titled "How to
-configure Microsoft SQL Server for use with Business Alerts"
-([https://mbs.microsoft.com/knowledgebase/
-KBDisplay.aspx?scid=kb;en-us;915097)](https://mbs.microsoft.com/knowledgebase/KBDisplay.aspx?scid=kb;en-us;915097).
+Before you set up Business Alerts be sure that Microsoft SQL Server Agent is started and that you've set up SQL Mail or Database Mail. SQL Server Agent
+is not available for SQL Server Express. For more information about setting up SQL Mail or Database Mail, refer to SQL Server Books Online. 
 
 This information is divided into the following sections:
 
