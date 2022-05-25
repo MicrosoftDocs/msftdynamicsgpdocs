@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 5/10/2022
+ms.date: 5/25/2022
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -27,7 +27,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 - [Microsoft Dynamics GP Docs (Documentation)](index.md)
 
-- [Microsoft Dynamics GP Videos](https://www.youtube.com/playlist?list=PLi9EhCY4z99Xxm2CAPt5pUtebHF3Sj4So) 
+- [Microsoft Dynamics GP YouTube Playlist](https://www.youtube.com/playlist?list=PLi9EhCY4z99Xxm2CAPt5pUtebHF3Sj4So) 
 
 ## Microsoft Dynamics GP
 
