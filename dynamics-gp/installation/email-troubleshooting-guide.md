@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 4/21/2022
+ms.date: 5/26/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -630,7 +630,7 @@ Try turning off Business Analyzer. Also try marking the **Exclude Historic Trans
 
 ### Shared Mailbox for email
 
-As far as what address the email is sent from in Dynamics GP for Templates, there isn’t a field within GP that can be changed. 
+As far as what address the email is sent from in Dynamics GP for Templates, there isn’t a field within Dynamics GP that can be changed. 
 
 GP determines who the email will be sent from depending on the Server Type selected in setup (Tools>>Setup>>System>>System Preferences). 
 
@@ -688,6 +688,16 @@ If it is grayed out, then you are tied to Exchange Online, so these should be co
 
 
 ![Form 6](media/emailjohn6.jpg)
+
+
+### Troubleshooting tips for Workflow E-mail
+
+When approving Requestions as an example thru Workflow email links (which uses web services), notifications may not go to the approver. If you look at the exception errors for System you will see 
+
+**Execution Timeout Expired.  The timeout period elapsed prior to the completion of the operation or the server is not responding.**
+
+When reviewing a SQL Profile trace, you can see calls (qdCreateSQL procedure) that happen for each E-Mail being sent.  There is about a 30 second window for this to complete.  If you have a larger data set and maybe joined more tables to the workflow message, this may not complete and cause the above error and then notifications appear to stop.  To resolve this problem, you may need to look at the workflow, tables that are joined, comments that are printing and see if there is an index that can be put on a specific table to better  sort through the data.  The SQL Display Estimated Execution Plan can be used to help identify your specific data issue.
+
 
 
 ## <a name=mfa></a>MFA - Multi-Factor Authentication
