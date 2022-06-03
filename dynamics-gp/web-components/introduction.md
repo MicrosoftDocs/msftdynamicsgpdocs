@@ -55,13 +55,13 @@ A number of resources are available to help in addition to this document.
 
 ### Knowledge Base
 
-[CustomerSource Knowledge Base](https://docs.microsoft.com/dynamics/s-e/)
+[CustomerSource Knowledge Base](/dynamics/s-e/)
 
 Provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.
 
 ### eSupport
 
-[Dynamics GP Support](https://docs.microsoft.com/dynamics/s-e/)
+[Dynamics GP Support](/dynamics/s-e/)
 
 For support requests that can be handled with e-mail. On average, the response time is nearly twice as fast as telephone support. That's a big benefit during the critical year-end season.
 
