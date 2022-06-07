@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 05/9/2022
+ms.date: 06/7/2022
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -18,7 +18,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2022 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-The fourth tax update for 2022 replaces all previous tax updates. It includes state tax table changes that take effect January 1, 2022. We recommend that you install this update as soon as you can for the year 2022.
+The fifth tax update for 2022 replaces all previous tax updates. It includes state tax table changes that take effect May 1, 2022. We recommend that you install this update as soon as you can for the year 2022.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -27,6 +27,25 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 [How to calculate Federal Tax with Dependent Claim Aount Field](https://community.dynamics.com/gp/b/dynamicsgp/posts/how-to-calculate-federal-tax-with-dependent-claim-amount)
 
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly)
+
+## Changes in May Round 5 update (Released 6/9/2022)
+
+- Utah
+
+### 2022 state or territorial tax changes
+
+The following tax changes are included in this update:
+
+#### Withholding changes for Utah
+
+All filing status have the same fixed flat tax of 4.85% from 4.95%
+
+- MAR - Married  - Base Allowance Exemption amount  $780.00 prior amount $720.00
+- SINGLE - Single  - Base Allowance Exemption amount  $390.00 prior amount $360.00
+
+- MAR - Married  - Tax Rate of 1.3% anything over $15,548 prior amount $14,256 (held in Special tax table)
+- SINGLE - Single  - Tax Rate of 1.3% anything over $7,774.00 prior amount $7128.00 (held in Special tax table)
+
 
 ## Changes in May Round 4 update (Released 5/12/2022)
 
@@ -1089,7 +1108,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *5/10/2022*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *6/3/2022*.
 
 ## What's next
 
