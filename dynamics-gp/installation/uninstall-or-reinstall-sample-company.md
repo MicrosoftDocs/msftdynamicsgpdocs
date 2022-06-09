@@ -48,7 +48,7 @@ This article describes how to uninstall and reinstall the sample company in Dyna
 ## References
 
 For the steps to install the Support Administrator Console, choose the following article number to view the article How to install the Support Administrator Console utility in Microsoft Dynamics GP in the Microsoft Knowledge Base:
-[870052](http://vkbexternal/VKBWebService/ViewContent.aspx?scid=kb%3bEN-US%3b870052&PortalId=1)
+[870052.](http://vkbexternal/VKBWebService/ViewContent.aspx?scid=kb%3bEN-US%3b870052&PortalId=1)
 
 If the option to **Add sample company data** is not available, refer to the following list:
 
