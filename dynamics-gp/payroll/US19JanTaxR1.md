@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 06/7/2022
+ms.date: 06/8/2022
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -28,7 +28,7 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly)
 
-## Changes in May Round 5 update (Released 6/9/2022)
+## Changes in June Round 5 update (Released 6/8/2022)
 
 - Utah
 
@@ -38,13 +38,13 @@ The following tax changes are included in this update:
 
 #### Withholding changes for Utah
 
-All filing status have the same fixed flat tax of 4.85% from 4.95%
+All filing status have a fixed flat tax of 4.85% from 4.95%
 
 - MAR - Married  - Base Allowance Exemption amount  $780.00 prior amount $720.00
 - SINGLE - Single  - Base Allowance Exemption amount  $390.00 prior amount $360.00
 
 - MAR - Married  - Tax Rate of 1.3% anything over $15,548 prior amount $14,256 (held in Special tax table)
-- SINGLE - Single  - Tax Rate of 1.3% anything over $7,774.00 prior amount $7128.00 (held in Special tax table)
+- SINGLE - Single  - Tax Rate of 1.3% anything over $7,774.00 prior amount $7,128.00 (held in Special tax table)
 
 
 ## Changes in May Round 4 update (Released 5/12/2022)
