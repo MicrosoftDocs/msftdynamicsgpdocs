@@ -73,7 +73,7 @@ Review the following known issues before upgrading to Dynamics GP.
 
 If records that aren't valid exist in the Purchase Order Line table (POP10110), or in the Purchase Order Line History table (POP30110), or in both tables, the upgrade can fail.
 
-You can download an upgrade preparation script that will help you determine the disk space requirements from [CustomerSource](https://docs.microsoft.com/dynamics/s-e/).
+You can download an upgrade preparation script that will help you determine the disk space requirements from [CustomerSource](/dynamics/s-e/).
 
 To verify purchase order tables:
 

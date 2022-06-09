@@ -21,7 +21,7 @@ This chapter contains a list of prerequisites and system requirement changes for
 
 ## Releases supported by the upgrade
 
-You can upgrade to Dynamics GP from selected previous releases. To review whether or not you can upgrade your release, see [CustomerSource](https://docs.microsoft.com/dynamics/s-e/).
+You can upgrade to Dynamics GP from selected previous releases. To review whether or not you can upgrade your release, see [CustomerSource](/dynamics/s-e/).
 
 If you are upgrading to Dynamics GP, you must install the latest update or hotfix for Dynamics GP before starting Dynamics GP Utilities. See the [Microsoft Dynamics GP Resource Directory](../resources.md) article for the latest update information.
 
@@ -49,7 +49,7 @@ Microsoft Office 2013, Microsoft Office 2016 and Microsoft Office 2019 are suppo
 
 ## Home page prerequisites
 
-To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server Reporting Services to use with Dynamics GP. The reports and metrics you want to display must be created in SQL Server Reporting Services. For more information about installing and setting up Reporting Services for use with Dynamics GP, go to the [Dynamics GP documentation resource Web site](https://docs.microsoft.com/dynamics/s-e/) for the most current documentation.
+To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server Reporting Services to use with Dynamics GP. The reports and metrics you want to display must be created in SQL Server Reporting Services. For more information about installing and setting up Reporting Services for use with Dynamics GP, go to the [Dynamics GP documentation resource Web site](/dynamics/s-e/) for the most current documentation.
 
 The following versions of SQL Server Reporting Services are supported.
 

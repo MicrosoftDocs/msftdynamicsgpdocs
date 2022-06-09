@@ -158,8 +158,9 @@ If you have selected Native as the report server mode, you can enter the name of
 
 Network share location example:
 
-| Network share              | [\\\\Servername\\sharename](file:///\\Servername\sharename) |  
+| Location             | Example                                  |
 |----------------------------|-------------------------------------------------------------|
+| Network share              | \\&lt;servername&gt;\\&lt;sharename&gt; |  
 | SharePoint Site            | https://&lt;servername&gt;/Reports                           |
 | Data Connections Library   | DataConnections                                             |
 | Report Library             | ReportsLibrary                                              |
@@ -216,8 +217,8 @@ SharePoint Integrated mode location example:
 
 
 
-| Location              | Example                           |
-|-----------------------|-----------------------------------|
+| Location              | Example                            |
+|-----------------------|------------------------------------|
 | SharePoint Site       | https://&lt;servername&gt;/Reports |
 
 > [!NOTE]
@@ -242,14 +243,15 @@ If you have selected Native as the report server mode, you can enter the name of
 
 Network share location example:
 
-| Network Share Location |                                                    |
+| Network Share Location | Example                                                   |
 |---------------|-------------------------------------------------------------|
-| Network share | [\\\\Servername\\sharename](file:///\\Servername\sharename) |  
+| Network share | \\&lt;servername&gt;\\&lt;sharename&gt; |  
 
 SharePoint location example
 
-| SharePoint Site          | https://&lt;servername&gt;/Reports   |
+| Location | Example |
 |--------------------------|-------------------------------------|
+| SharePoint Site          | https://&lt;servername&gt;/Reports   |
 | Data Connections Library | DataConnections                     |
 | Report Library           | ReportsLibrary                      |
 
@@ -334,7 +336,7 @@ After the upgrade or if the upgrade fails, the Update Company Tables window will
 
 If no icon appears between the check box and the name of the company, the company needs to be upgraded.
 
-If errors do occur, download the Failed\_Tables\_List.txt script from <https://docs.microsoft.com/dynamics/s-e/>, and save it to your hard disk. Copy all of the contents of the script and paste the contents them into Microsoft SQL Server Management Studio. Run the script and save the results to a file before you contact Dynamics GP for further assistance.
+If errors do occur, download the `Failed_Tables_List.txt` script from [dynamics-product-downloads](/dynamics/s-e/), and save it to your hard disk. Copy all of the contents of the script and paste the contents them into Microsoft SQL Server Management Studio. Run the script and save the results to a file before you contact Dynamics GP for further assistance.
 
 You also should have the results of the DexSQL.log file ready, as well, if you decided to use the DexSQL.log file. (The DexSQL.log file is located in the same folder as the Dex.ini file.)
 
