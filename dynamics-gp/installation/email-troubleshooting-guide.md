@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 5/26/2022
+ms.date: 6/9/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -710,8 +710,10 @@ When reviewing a SQL Profile trace, you can see calls (qdCreateSQL procedure) th
 > You do not actually need MFA turned on for your account to use the MFA window in Microsoft Dyanmics GP, but it does use Modern Authentication.
 
 By turning MFA on in Microsoft Dynamics GP you are then telling the system to use Modern Authentication vs Basic Authentication(depreciated as of October 2022).  If you recently upgraded and set up MFA, we recommend to be on the latest version if you can of Dynamics GP to encompass all the fixes released around MFA.
-> 
+>
 > MFA is only supported with Exchange.
+> 
+> When you have MFA enabled and you try to use the "SEND TO" option in Microsoft Dynamics GP, it will still prompt for the Exchange login.  MFA is not enabled off the "SEND TO" button/option.  An alternative workaround to this is use the Report Option Windows as MFA is enabled there.  For example if you are printing a Trial Balance,  go to Reports | Financial Trial Balance and create a report option from this window for the report to email and MFA is enabled in all Report Option windows. Many customers use this for posting reports too so it will be a process change to use the Report Options window where MFA is now enabled VS the "SEND TO" option.
 
 ### Dynamics GP, MFA and Third Party Authentication
 
