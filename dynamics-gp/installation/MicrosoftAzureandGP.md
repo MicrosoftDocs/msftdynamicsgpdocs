@@ -69,16 +69,14 @@ The following checklist provides an overview of the steps for deploying Microsof
     If you select the purchase option, you will have the option of buying the Azure services using Pay-as-You-Go, Microsoft Reseller or Enterprise agreement.  
 
 3.	Log in using the Microsoft Account that will be the owner of the Microsoft Azure account. Sign up for a Microsoft Account if needed.  
-4.	Assuming that the Microsoft Account is not already the owner of a Microsoft Azure account, a wizard window will open and walk you through the 
-process of setting up a new account.   
+4.	Assuming that the Microsoft Account is not already the owner of a Microsoft Azure account, a wizard window will open and walk you through the process of setting up a new account.   
 
 ### Creating a Subscription
 
-You will create one or more subscriptions for the Microsoft Azure account. A subscription is a grouping of Microsoft Azure services and applications, including 
-the virtual machines discussed earlier. The subscription provides a way to control the access to and the use of the Microsoft Azure subscribed service. 
-On the account billing, the resource usage of Microsoft Azure services for each subscription is reported separately. In a situation where you will 
-have multiple Microsoft Dynamics GP deployments, you may decide to use a separate subscription for each deployment in order to track expenses 
-related to each deployment. All of the Microsoft Dynamics GP components for a single deployment need to be deployed to the same subscription, however.  
+You will create one or more subscriptions for the Microsoft Azure account. A subscription is a grouping of Microsoft Azure services and applications, including the virtual machines discussed earlier. The subscription provides a way to control the access to and the use of the Microsoft Azure subscribed service.  
+
+On the account billing, the resource usage of Microsoft Azure services for each subscription is reported separately. In a situation where you will have multiple Microsoft Dynamics GP deployments, you may decide to use a separate subscription for each deployment in order to track expenses related to each deployment. All of the Microsoft Dynamics GP components for a single deployment need to be deployed to the same subscription, however.  
+
 You can set up different administrators for each subscription as required. 
 
 For more information, see [Overview of Subscription Management](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions) in the Azure content.
@@ -86,11 +84,11 @@ For more information, see [Overview of Subscription Management](/azure/cloud-ado
 1.	Sign in to the [Azure account management portal](https://portal.azure.com/)  
 2.	In the top search type in subscriptions.  
 
-![Azure sub](media/azuregp001.png)
+![Azure sub image 1](media/azuregp001.png)
 
 3. Click to add a subscription.  
 
-![Azure sub](media/azuregp002.png)
+![Azure sub image 2](media/azuregp002.png)
 
 >[!NOTE]
 > You can rename the subscription after it has been created.  
