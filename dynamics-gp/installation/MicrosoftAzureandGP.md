@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 7/6/2022
+ms.date: 7/7/2022
 ---
 
 # Microsoft Dynamics GP on Microsoft Azure 
@@ -43,7 +43,7 @@ along with the main product documentation for Microsoft Dynamics GP.
 
 The following checklist provides an overview of the steps for deploying Microsoft Dynamics GP on Microsoft Azure.  
  
- 1. [Sign up for a Microsoft Azure account](https://azure.microsoft.com/free/search/?OCID=AID2200277_SEM_ae067f8b5cdd14162ab71d3f9d0ecdcf:G:s&ef_id=ae067f8b5cdd14162ab71d3f9d0ecdcf:G:s&msclkid=ae067f8b5cdd14162ab71d3f9d0ecdcf)
+ 1. [Sign up for a Microsoft Azure account](https://azure.microsoft.com/free/)
  2. Create subscription 
  3. Determine deployment configuration
  4. Create Virtual Network
@@ -61,7 +61,7 @@ The following checklist provides an overview of the steps for deploying Microsof
  
  You will need to sign up for a Microsoft Azure Account before creating any of the service components. Use these steps to create a Microsoft Azure Account.  
 
-1. [Sign up for a Microsoft Azure account](https://azure.microsoft.com/free/search/?OCID=AID2200277_SEM_ae067f8b5cdd14162ab71d3f9d0ecdcf:G:s&ef_id=ae067f8b5cdd14162ab71d3f9d0ecdcf:G:s&msclkid=ae067f8b5cdd14162ab71d3f9d0ecdcf)
+1. [Sign up for a Microsoft Azure account](https://azure.microsoft.com/free/)
 
 2.	Choose to create a new account using either the free trial or purchase option.  
 
@@ -81,7 +81,50 @@ have multiple Microsoft Dynamics GP deployments, you may decide to use a separat
 related to each deployment. All of the Microsoft Dynamics GP components for a single deployment need to be deployed to the same subscription, however.  
 You can set up different administrators for each subscription as required. 
 
-For more information, see [Overview of Subscription Management](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions) in the Azure content.  
+For more information, see [Overview of Subscription Management](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions) in the Azure content.
+
+1.	Sign in to the [Azure account management portal](https://portal.azure.com/)  
+2.	In the top search type in subscriptions.  
+
+![Azure sub](media/azuregp001.png)
+
+3. Click to add a subscription.  
+
+![Azure sub](media/azuregp002.png)
+
+>[!NOTE]
+> You can rename the subscription after it has been created.  
+
+### Sign up for a Microsoft Azure Support Plan
+
+Microsoft Azure support plans provide technical and billing support for Microsoft Azure. The Microsoft Azure support plans offer flexible support options that will allow you to select the right level of support for your Microsoft Azure deployment. The support options range from support services included with your Microsoft Azure Account at no charge to Premier support services. Information on the available support plans and purchasing a plan can be found on the [Microsoft Azure Support](http://www.windowsazure.com/en-us/support/plans/). Technical and billing support for Microsoft Dynamics GP will continue to be offered using the existing programs. Refer to the Microsoft Dynamics GP support section of this document for additional information.     
+
+## Planning
+
+Planning your Microsoft Azure deployment of Microsoft Dynamics GP includes making decisions about which Microsoft Dynamics GP components to deploy, what configuration to use, and what the system requirements are for those components. These are decisions that must be made in all Microsoft Dynamics GP deployments. This part of the document covers the special considerations that impact these decisions when deploying on Microsoft Azure. This part contains the following sections.  
+
+### Licensing
+
+Licensing provides information on licensing Microsoft Dynamics GP and the required software on Microsoft Azure. 
+
+Licensing the various components of the Microsoft Dynamics GP solution is an important consideration in all deployment types. For deployments on Microsoft Azure, you will want to evaluate the special licensing terms specific to Microsoft Azure and the impact that these decisions have on the overall cost of the solution.   
+  
+All Microsoft software installed in the Microsoft Azure Virtual Machine environment must be properly licensed. Microsoft Azure Virtual Machines include by default a license for use of Windows Server in the Microsoft Azure environment. Certain Microsoft Azure Virtual Machine offerings may also include additional Microsoft software on a per-hour or evaluation basis. 
+
+[Additional common FAQs regarding licensing on Microsoft Azure Virtual Machines](https://azure.microsoft.com/en-us/pricing/licensing-faq/)
+
+**Microsoft License Mobility through Software Assurance**
+License Mobility through Software Assurance gives Microsoft Volume Licensing customers the flexibility to deploy eligible server applications with active Software Assurance on Microsoft Azure. With this Software Assurance benefit, there is no need to purchase new licenses and no associated mobility fees, so you can easily deploy existing licenses on the Microsoft Azure cloud platform.   
+  
+With License Mobility through Software Assurance, you can:   
+•	Deploy certain server application licenses purchased under your Volume Licensing agreement in Microsoft Azure data centers.   
+•	Extend the value of your server application licenses by deploying them on-premises or in the cloud.   
+•	Take advantage of the low-cost computing infrastructure for changing business priorities.  More program benefit details and information can be found [HERE](http://www.windowsazure.com/en-us/pricing/license-mobility/).   
+  
+For information about Microsoft’s License Mobility program see:  
+[License Mobility & Software Assurance | Microsoft Volume Licensing](https://www.microsoft.com/en-us/licensing/licensing-programs/software-assurance-license-mobility?rtc=1)
+ 
+
 
 ## See also
 
