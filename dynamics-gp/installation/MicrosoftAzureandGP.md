@@ -97,7 +97,7 @@ For more information, see [Overview of Subscription Management](/azure/cloud-ado
 
 ### Sign up for a Microsoft Azure Support Plan
 
-Microsoft Azure support plans provide technical and billing support for Microsoft Azure. The Microsoft Azure support plans offer flexible support options that will allow you to select the right level of support for your Microsoft Azure deployment. The support options range from support services included with your Microsoft Azure Account at no charge to Premier support services. Information on the available support plans and purchasing a plan can be found on the [Microsoft Azure Support](http://www.windowsazure.com/en-us/support/plans/). Technical and billing support for Microsoft Dynamics GP will continue to be offered using the existing programs. Refer to the Microsoft Dynamics GP support section of this document for additional information.     
+Microsoft Azure support plans provide technical and billing support for Microsoft Azure. The Microsoft Azure support plans offer flexible support options that will allow you to select the right level of support for your Microsoft Azure deployment. The support options range from support services included with your Microsoft Azure Account at no charge to Premier support services. Information on the available support plans and purchasing a plan can be found on the [Microsoft Azure Support](http://www.windowsazure.com/support/plans/). Technical and billing support for Microsoft Dynamics GP will continue to be offered using the existing programs. Refer to the Microsoft Dynamics GP support section of this document for additional information.     
 
 ## Planning
 
@@ -111,7 +111,7 @@ Licensing the various components of the Microsoft Dynamics GP solution is an imp
   
 All Microsoft software installed in the Microsoft Azure Virtual Machine environment must be properly licensed. Microsoft Azure Virtual Machines include by default a license for use of Windows Server in the Microsoft Azure environment. Certain Microsoft Azure Virtual Machine offerings may also include additional Microsoft software on a per-hour or evaluation basis. 
 
-[Additional common FAQs regarding licensing on Microsoft Azure Virtual Machines](https://azure.microsoft.com/en-us/pricing/licensing-faq/)
+[Additional common FAQs regarding licensing on Microsoft Azure Virtual Machines](https://azure.microsoft.com/pricing/licensing-faq/)
 
 **Microsoft License Mobility through Software Assurance**
 License Mobility through Software Assurance gives Microsoft Volume Licensing customers the flexibility to deploy eligible server applications with active Software Assurance on Microsoft Azure. With this Software Assurance benefit, there is no need to purchase new licenses and no associated mobility fees, so you can easily deploy existing licenses on the Microsoft Azure cloud platform.   
@@ -119,10 +119,10 @@ License Mobility through Software Assurance gives Microsoft Volume Licensing cus
 With License Mobility through Software Assurance, you can:   
 •	Deploy certain server application licenses purchased under your Volume Licensing agreement in Microsoft Azure data centers.   
 •	Extend the value of your server application licenses by deploying them on-premises or in the cloud.   
-•	Take advantage of the low-cost computing infrastructure for changing business priorities.  More program benefit details and information can be found [HERE](http://www.windowsazure.com/en-us/pricing/license-mobility/).   
+•	Take advantage of the low-cost computing infrastructure for changing business priorities.  More program benefit details and information can be found [HERE](http://www.windowsazure.com/pricing/license-mobility/).   
   
 For information about Microsoft’s License Mobility program see:  
-[License Mobility & Software Assurance | Microsoft Volume Licensing](https://www.microsoft.com/en-us/licensing/licensing-programs/software-assurance-license-mobility?rtc=1)
+[License Mobility & Software Assurance | Microsoft Volume Licensing](https://www.microsoft.com/licensing/licensing-programs/software-assurance-license-mobility?rtc=1)
  
 
 
