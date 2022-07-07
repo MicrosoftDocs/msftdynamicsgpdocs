@@ -41,9 +41,9 @@ along with the main product documentation for Microsoft Dynamics GP.
 
 ## Checklist
 
- The following checklist provides an overview of the steps for deploying Microsoft Dynamics GP on Microsoft Azure.  
+The following checklist provides an overview of the steps for deploying Microsoft Dynamics GP on Microsoft Azure.  
  
- 1. [Sign up for a Microsoft Azure account](https://azure.microsoft.com/en-us/free/search/?OCID=AID2200277_SEM_ae067f8b5cdd14162ab71d3f9d0ecdcf:G:s&ef_id=ae067f8b5cdd14162ab71d3f9d0ecdcf:G:s&msclkid=ae067f8b5cdd14162ab71d3f9d0ecdcf)
+ 1. [Sign up for a Microsoft Azure account](https://azure.microsoft.com/free/search/?OCID=AID2200277_SEM_ae067f8b5cdd14162ab71d3f9d0ecdcf:G:s&ef_id=ae067f8b5cdd14162ab71d3f9d0ecdcf:G:s&msclkid=ae067f8b5cdd14162ab71d3f9d0ecdcf)
  2. Create subscription 
  3. Determine deployment configuration
  4. Create Virtual Network
@@ -61,11 +61,12 @@ along with the main product documentation for Microsoft Dynamics GP.
  
  You will need to sign up for a Microsoft Azure Account before creating any of the service components. Use these steps to create a Microsoft Azure Account.  
 
-1. [Sign up for a Microsoft Azure account](https://azure.microsoft.com/en-us/free/search/?OCID=AID2200277_SEM_ae067f8b5cdd14162ab71d3f9d0ecdcf:G:s&ef_id=ae067f8b5cdd14162ab71d3f9d0ecdcf:G:s&msclkid=ae067f8b5cdd14162ab71d3f9d0ecdcf)
+1. [Sign up for a Microsoft Azure account](https://azure.microsoft.com/free/search/?OCID=AID2200277_SEM_ae067f8b5cdd14162ab71d3f9d0ecdcf:G:s&ef_id=ae067f8b5cdd14162ab71d3f9d0ecdcf:G:s&msclkid=ae067f8b5cdd14162ab71d3f9d0ecdcf)
 
-2.	Choose to create a new account using either the free trial or purchase option. 
-If you are deploying Microsoft Dynamics GP for development or testing purposes, you can sign up as an MSDN subscriber. 
-If you select the purchase option, you will have the option of buying the Azure services using Pay-as-You-Go, Microsoft Reseller or Enterprise agreement.  
+2.	Choose to create a new account using either the free trial or purchase option.  
+
+  If you are deploying Microsoft Dynamics GP for development or testing purposes, you can sign up as an MSDN subscriber. 
+  If you select the purchase option, you will have the option of buying the Azure services using Pay-as-You-Go, Microsoft Reseller or Enterprise agreement.  
 
 3.	Log in using the Microsoft Account that will be the owner of the Microsoft Azure account. Sign up for a Microsoft Account if needed.  
 4.	Assuming that the Microsoft Account is not already the owner of a Microsoft Azure account, a wizard window will open and walk you through the 
@@ -80,11 +81,10 @@ have multiple Microsoft Dynamics GP deployments, you may decide to use a separat
 related to each deployment. All of the Microsoft Dynamics GP components for a single deployment need to be deployed to the same subscription, however.  
 You can set up different administrators for each subscription as required. 
 
-See [Overview of Subscription Management for additional information](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions)
+For more information, see [Overview of Subscription Management](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions) in the Azure content.  
 
+## See also
 
-
- 
- 
-
-
+[Installation Checklist](installation-checklist.md)  
+[Overview of Subscription Management](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions)  
+[Sign up for Azure account](https://azure.microsoft.com/free/)  
