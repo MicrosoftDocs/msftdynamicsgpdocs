@@ -65,8 +65,8 @@ The following checklist provides an overview of the steps for deploying Microsof
 
 2.	Choose to create a new account using either the free trial or purchase option.  
 
-  If you are deploying Microsoft Dynamics GP for development or testing purposes, you can sign up as an MSDN subscriber. 
-  If you select the purchase option, you will have the option of buying the Azure services using Pay-as-You-Go, Microsoft Reseller or Enterprise agreement.  
+    If you are deploying Microsoft Dynamics GP for development or testing purposes, you can sign up as an MSDN subscriber. 
+    If you select the purchase option, you will have the option of buying the Azure services using Pay-as-You-Go, Microsoft Reseller or Enterprise agreement.  
 
 3.	Log in using the Microsoft Account that will be the owner of the Microsoft Azure account. Sign up for a Microsoft Account if needed.  
 4.	Assuming that the Microsoft Account is not already the owner of a Microsoft Azure account, a wizard window will open and walk you through the 
