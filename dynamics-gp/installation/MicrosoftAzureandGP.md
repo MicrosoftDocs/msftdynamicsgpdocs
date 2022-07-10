@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 7/9/2022
+ms.date: 7/10/2022
 ---
 
 # Microsoft Dynamics GP on Microsoft Azure 
@@ -304,15 +304,171 @@ Refer to the article [Quickstart: Create a virtual network using the Azure porta
 ### Creating Virtual Machiens
 Creating Virtual Machines provides directions for creating a virtual machine instance in Microsoft Azure.    
 
-
+All of the Microsoft Dynamics GP components, along with the required software like Microsoft SQL Server and Microsoft SQL Server Reporting Services, will be installed on Windows Server virtual machine instances in Microsoft Azure. Depending on your deployment needs, you will use one or more virtual machine instances. For example, you may have a SQL Server virtual machine, a Web Server virtual machine and an Active Directory virtual machine.  
+   
+A virtual machine instance can be created from a VHD template image available in the Microsoft Azure platform image gallery or from an image or VHD disk you create and upload. You also have the ability to capture a configured virtual machine instance as a template image for creating additional virtual machine instances. Refer to the article [Virtual Machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/) for additional information.   Follow the steps in the article 
+[QuickStart: Create a Windows virtual machine in the Azure portal to create the virtual machines](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal)
 
 ### Configuring Active Directory
+Configuring Active Directory provides information about configuring Active Directory on a Microsoft Azure Virtual Machine. 
+
+In a Microsoft Dynamics GP deployment on Microsoft Azure, users are typically authenticated as Windows accounts to be granted access to the application. With Microsoft Dynamics GP, you also have the option of signing up using an Organizational Account, aka Azure Active Directory. In this case you would only need to set up an Active Directory domain to facilitate component to component communication across virtual machines in deployment scenarios where there are multiple virtual machines serving different roles.  Using Active Directory to authenticate users across the machines is recommended. The configuration of your virtual network will determine how you configure Active Directory. The requirements for deploying Active Directory on a Microsoft Azure Virtual Machine differ very little from on premise deployments.   
+  
+In an environment where you have connected the Microsoft Azure Virtual Network to your on-premise network, you may choose to configure a virtual machine as an additional Active Directory domain controller for your on premise forest. This can improve the availability and performance of Active Directory.  
+ 
+If you will be using the Active Directory domain controller virtual machine for name resolution (DNS) on the Microsoft Azure Virtual Network that it is deployed on, you will need to modify the configuration of the existing Microsoft Azure Virtual Network after the domain controller is set up.  
 
 ### Configuring Microsoft SQL SErver
+Configuring Microsoft SQL Server provides directions for configuring SQL Server on a Microsoft Azure Virtual Machine for use with Microsoft Dynamics GP.  
 
-### Configuring Microsoft SQL SErver REporting Services 
+**Microsoft Dynamics GP cannot use a managed instance of Azure SQL Database**.  Azure SQL Database is a fully managed platform as a service (PaaS) database engine and cannot be used with Dynamics GP. 
+ 
+All Microsoft Dynamics GP deployments require a Microsoft SQL Server to manage the databases that contain the business data. When deploying on Microsoft Azure, a Microsoft SQL Server installation on a Microsoft Azure Virtual Machine will be used.  
 
-### 
+Refer to the Checklist: 
+[Best practices for SQL Server on Azure VMs for the latest information](https://docs.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist?view=azuresql)
+  
+                                                           
+1.	Create the virtual machine using a Windows Server or SQL Server image. If you choose to create a virtual machine using a SQL Server image, you will have additional steps to perform after the virtual machine is created to configure Microsoft SQL Server for use with Microsoft Dynamics GP. If you choose to create a virtual machine using a Windows Server image, you will need to install SQL Server to the VM using the configuration provided in the GP installation documentation.  
+  
+2.	Attach at least one data disk to the virtual machine. The data disk stores the SQL Server data and log files. Based on the SQL Server performance white paper you may want to add multiple disks for storage and performance reasons. You may also want to create additional data disks for SQL backups. (Repeat the following steps for each disk you want added.) If you are using Geo Redundant Storage (GRS) for the data disks, make sure and place the data and log files for the databases on the same disk. The recommended host cache configuration of the data disk will depend on the total number of concurrent GP users accessing the data disk and the size of the data disk. Setting the “HOST CACHE PREFERENCE” to read only will cache the disk to the local machine’s physical disks and may improve performance in configurations with fewer than approximately 250 concurrent users. The maximum size of the data disk to use the read only cache setting is 640 GB, so if your data disk is larger than this you will need to set the “HOST CACHE PREFERENCE” to none.
+                                            
+a.	In the Microsoft Azure Management Portal, select the virtual machine you created. On the bottom of the screen, click Attach and then click Attach Empty Disk.   
+b.	Provide the size for the data disk.  
+c.	If you will have fewer than approximately 250 concurrent Dynamics GP users accessing the data disk and the data disk is less than 640 GB, it is recommended that you set “HOST CACHE PREFERENCE” to READ ONLY. If you will have more than 250 concurrent GP users or the data disk is larger than 640GB then set “HOST CACHE PREFERENCE” to NONE.  
+
+  
+3.	In the Microsoft Azure Management Portal, select the virtual machine. At the bottom of the screen, click Connect. This will open a remote desktop connection to the virtual machine.  
+
+a.	Open Disk Management to initialize and format the data disks that were attached.  
+b.	Join the virtual machine to the domain.   
+c.	Create the following folder structure at the root of the data disk.  
+  i.  Data – MSSQL\DATA 
+  ii. Log – MSSQL\LOGS  
+d.	Install Microsoft SQL Server using the recommended settings in the Microsoft Dynamics GP installation manual35. (Skip this step if you used a virtual machine image with Microsoft SQL Server already installed.)   
+e.	Open SQL Server Management Studio and make the following changes:  
+  i.	Right-click on the SQL Server and choose to view the properties.  
+      1.	Select the Security page and verify that the Server Authentication is set to SQL Server and Windows Authentication mode. 
+          If it is not, then choose that setting.  
+      2.	Select the Database Settings tab & change the Database default locations to the folder that you created in the data disks you attached to the virtual                   machine.    
+      3.	Click OK to save settings. (Restart SQL Server for the settings to take effect.)  
+  ii.	Create a new SQL Server Login with sysadmin privileges, or as an alternative enable the ‘sa’ account to use when setting up Dynamics GP. If enabling the ‘sa’       account, enter a password for the account. (This step only needs to be done if you didn’t perform it during the SQL Server installation, or if the virtual machine     was created from the Image Gallery.)  
+                                                           
+f.	Verify there is sufficient disk space on the C: drive. There must be at least 1 GB of free space available.  
+g.	Note whether the Reporting Services, Analysis Services, Full-text Search Services, and Integration Services are installed and running on the image. If you won’t be using any of these services on this server, stop the services and change them to manual or disabled.  
+h.	Use Windows Explorer to assign Full Control permissions to the MSSQL\DATA folder for the “NT Service\MSSQLSERVER” account if this permission hasn’t already been granted. Verify security settings to be sure correct permissions are set.   
+i.	Use Windows Explorer to assign Full Control permissions to the MSSQL\LOGS folder for the “NT Service\MSSQLSERVER” account if this permission hasn’t already been granted. Also assign the same permissions as are assigned by SQL Server to the “NT Service\SQLSERVERAGENT” and “NT Service\MSSQLFDLauncher” accounts if they haven’t already been granted.  
+j.	Add an inbound rule to allow access to the SQL Server (default port 1433) to the virtual machine’s firewall.  
+In order to further protect the SQL Server from unauthorized access, you may want to consider removing the endpoint on the host virtual machine for the remote desktop connection. Removing this public endpoint will require that all virtual machine administration for the SQL Server is done from another machine within the virtual network.   
+
+In order to further protect the SQL Server from unauthorized access, you may want to consider removing the endpoint on the host virtual machine for the remote desktop connection. Removing this public endpoint will require that all virtual machine administration for the SQL Server is done from another machine within the virtual network.   
+
+**Installing Microsoft Dynamics GP Desktop Client and Creating Databases**
+When you create the Microsoft Dynamics Dynamics GP databases will depend on whether you are in a single tenant or multitenant deployment environment. In a single tenant deployment, the databases are typically created after Microsoft SQL Server and Microsoft SQL Server Reporting Services have been installed and configured. In a multi-tenant model, the databases are typically created as part of provisioning each new customer. A program called Microsoft Dynamics GP Utilities, which is installed with the Microsoft Dynamics GP Desktop Client, is used to create the databases.   
+  
+The installation of the Microsoft Dynamics GP desktop client used to create the databases can be on the SQL Server virtual machine or another virtual machine depending on your configuration. Use the following steps to install the Microsoft Dynamics GP desktop client, create the databases, and deploy the Business Intelligence Reports.    
+1.	Administration portion in the following link:  
+[Welcome to Dynamics GP - Dynamics GP | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics-gp/)
+
+2.	Use Microsoft Dynamics GP Utilities in the desktop client installation to create the Microsoft Dynamics GP databases. Make sure and select to create the databases on the data disk attached to the SQL Server virtual machine instead of the operating system disk. If you are using Geo Redundant Storage (GRS) for the data disk, make sure and place the data and log files on the same disk.  
+
+3.	Install the Microsoft Dynamics GP Desktop Client using the directions in the Installation, and You can select to deploy the SQL and Excel reports for the database in Microsoft Dynamics GP Utilities or use the Reporting Tools Setup window within Microsoft Dynamics GP. If you plan to allow client computers that are not on the network to access the SQL Reports, make sure and use the public URL to SQL Server Reporting Services during the deployment. 
+
+### Configuring Microsoft SQL Server Reporting Services 
+Configuring Microsoft SQL Server Reporting Services provides direction for configuring SQL Server Reporting Services on a Microsoft Azure Virtual Machine for use with Microsoft Dynamics GP.  
+
+If you will be using SQL Server Reporting Services reports for your Microsoft Dynamics GP deployment on Microsoft Azure, you must install Microsoft SQL Server Reporting Services on a virtual machine instance. How users will be accessing the SQL reports will determine whether you install SQL Server Reporting Services on the same server as the SQL Server database engine or a different server. If users will be accessing reports from client computers that are not connected to the virtual network, it is recommended that you deploy SQL Server Reporting Services to a different virtual server than the SQL Server database engine. Use the following steps to create a Microsoft Azure Virtual Machine to host Microsoft SQL Server Reporting Services. Refer to the [SQL Server Business Intelligence in Azure Virtual Machines](https://github.com/Huachao/azure-content/blob/master/articles/virtual-machines/virtual-machines-sql-server-business-intelligence.md) for the latest information.  
+  
+1.	Create the virtual machine using a Windows Server or SQL Server image. If you choose to create a virtual machine using a SQL Server image, you will have additional steps after the virtual machine is created to configure Microsoft SQL Server Reporting Services for use with Microsoft Dynamics GP. If you choose to create a virtual machine using a Windows Server image, you will need to install SQL Server to the VM using the configuration provided in the GP installation documentation.   
+  
+2.	In the Microsoft Azure Management Portal, select the virtual machine. At the bottom of the screen, click Connect. This will open a remote desktop connection to the virtual machine.  
+a.	Join the virtual machine to the domain.  
+b.	Install Microsoft SQL Server Reporting Services using the recommended settings in the [Microsoft SQL Server configuration](https://docs.microsoft.com/en-us/dynamics-gp/installation/microsoft-sql-server-configuration). (Skip this step if you used an image with Microsoft SQL Server already installed.)   
+c.	Use the Reporting Services Configuration Manager to configure SQL Server Reporting Services. If users are accessing the reports over the internet, it is recommended that you configure reporting services for SSL (Secure Sockets Layer). Refer to article [Configure SSL Connections on a Native Mode Report Server for additional information](http://technet.microsoft.com/en-us/library/ms345223(v=sql.110).aspx)
+d.	Follow the setup instructions in the Microsoft Dynamics GP System Setup Guide on the Microsoft Dynamics GP installation media to configure SQL Server Reporting Services for use with Microsoft Dynamics GP.   
+e. Add an inbound rule to allow access to the SQL Server Reporting Services port to the virtual machines firewall.  
+f. Note whether the Database Engine, Analysis Services, Full-text Search Services, and Integration Services are installed and running on the image. If you won’t be using any of these services on this server, stop the services and change them to manual or disabled.  
+ 
+3.	If users will be accessing the SQL reports from client computers not connected to the virtual network, add a public endpoint for the virtual machine.   
+
+If you will be setting up multiple SQL Server Reporting Services virtual machine instances as load balanced, create additional virtual machine instances using these same steps. When creating the virtual machine, choose to join the cloud service created when setting up the first SQL Server Reporting Services virtual machine.  
+
+### Configuring the Tenant Services Server 
+Configuring the Tenant Services Server provides direction for configuring a Microsoft Azure  Virtual Machine as a host for Tenant Services. Tenant Services is an optional Microsoft Dynamics GP component required only if you are installing Microsoft Dynamics GP for use by multiple customer organizations (tenants).  
+
+If you will be deploying Microsoft Dynamics GP for use by multiple customer organizations (tenants), you will need to install Tenant Services on a virtual machine in Microsoft Azure. The Tenant Services can be installed on a virtual machine that is running other Microsoft Dynamics GP components, or the Tenant Services can be installed on a dedicated virtual machine. Use the following steps when creating a dedicated Microsoft Azure Virtual Machine to host Microsoft Dynamics GP Tenant Services. Refer [Tenant Services Basics](https://docs.microsoft.com/en-us/dynamics-gp/web-components/tenant-services-basics) for information about preparing the server for Tenant Services.  
+   
+1.	Create a virtual machine using a Windows Server image.   
+  
+2.	In the Microsoft Azure Management Portal, select the virtual machine. At the bottom of the screen, click Connect. This will open a remote desktop connection to the virtual machine.  
+a.	Join the virtual machine to the domain.  
+b.	Install the Dynamics GP Tenant Services using the instructions in the following blog.  [Tenant Services Installation](https://docs.microsoft.com/en-us/dynamics-gp/web-components/tenant-services-installation)
+ 
+If you will be setting up multiple Tenant Services virtual machine instances as load balanced, create additional virtual machine instances using these same steps. When creating the additional virtual machine, choose to join the cloud service created when setting up the first Tenant Services virtual machine. Only internal communication from other multitenant GP components installed on the virtual network is required, as a result it is recommended that you use one of the two options described below to configure the internal load balancing.   
+                                                   
+1.	The first option is to use DNS load balancing by adding a new A record in your internal DNS for each of the Tenant Service virtual machines using a load balanced name and the internal IP address of the virtual machine. The Tenant Services URL used by other applications will be the load balanced name you used for the A records added to your DNS. Refer to the [Configuring DNS load balancing](http://technet.microsoft.com/en-us/library/cc787484(v=WS.10).aspx) article for additional information.  
+  
+Example: In this example, two new A records with a FQDN of  
+TenantServicesLB.gpwithazure.com are mapped to the internal IP addresses of the two virtual machines that you installed Tenant Services on are added to DNS. (10.11.0.8 and 10.11.0.9)  
+When you then use an address such as http://TenantServicesLB.gpwithazure.com/... for the  URL to the tenant services, DNS will use a round robin approach to distributing the requests.  
+
+2.	The second option is to use the new Azure Internal Load Balancing (ILB) feature to load balance virtual machines that reside inside of a virtual network. You will create a load balanced set to configure a Virtual IP address (VIP) for the virtual machines hosting Tenant Services. The multitenant applications will then use the VIP address when communicating to Tenant Services and Azure will load balance the requests across the virtual machines. Refer to the [Configure an internal load-balance set](https://msdn.microsoft.com/en-us/library/azure/dn690125.aspx) for additional information and step directions on creating an Azure ILB.   
+  
+Example:  
+1.	Open the Microsoft Azure Powershell console and connect to your Microsoft Azure subscription.  
+2.	Create an ILB instance for the tenant services cloud service.   
+Sample command where GPTS is the cloud service name and GPTSILB is the ILB instance name.  
+Add-AzureInternalLoadBalancer -ServiceName GPTS -InternalLoadBalancerName GPTSILB   
+  
+3.	Add endpoints for both the Tenant Services Management Service port and Tenant Services Discovery Service port. By default, these are 48630 and 48631.   
+Sample commands where GPTS1 is the name of the first virtual machine. Run the commands for each virtual machine replacing the name of the virtual machine.  
+Get-AzureVM –ServiceName GPTS –Name GPTS1 | Add-AzureEndpoint -Name TSDISC - Protocol tcp -LocalPort 48630 -PublicPort 48630 –DefaultProbe -InternalLoadBalancerName GPTSILB | Update-AzureVM   
+  
+Get-AzureVM –ServiceName GPTS –Name GPTS1 | Add-AzureEndpoint -Name TSMGMT Protocol tcp -LocalPort 48631 -PublicPort 48630 –DefaultProbe -InternalLoadBalancerName GPTSILB | Update-AzureVM  
+  
+4.	Create an A record in DNS for the VIP of the ILB instance. The Tenant Services URL used by other applications will be the FQDN name you used for the A record added to your DNS. Example: http://TenantServicesLB.gpwithazure.com/   
+  
+If you didn’t specify an IP address during the creation of the ILB instance, use the following command to get the VIP.  
+Get-AzureService -ServiceName GPTS | Get-AzureInternalLoadBalancer    
+
+
+### Configuring the Web Client Web Server 
+Configuring the Web Client Web Server provides directions for configuring a Web Server on a Microsoft Azure Virtual Machine for use with Microsoft Dynamics GP web client.  
+
+If you will be deploying the Microsoft Dynamics GP Web Components, you will need to create one or more Microsoft Azure virtual machines on your virtual network. The Microsoft Dynamics GP Web Components can be installed in a single machine or scale out deployment configuration. Use the following steps along with the [Web Components installation](https://docs.microsoft.com/en-us/dynamics-gp/web-components/installation-overview) to set up the Microsoft Azure Virtual Machine as a web server.   
+  
+1.	Create a virtual machine using a Windows Server image.  
+  
+2.	In the Microsoft Azure Management Portal, select the virtual machine. At the bottom of the screen, click Connect. This will open a remote desktop connection to the virtual machine.  
+a.	Join the virtual machine to the domain.  
+b.	Import the security certificate to the computer’s personal store.  
+c.	Install Internet Information Services (IIS) and ASP.NET by adding the Web Server  
+(IIS) role. Make sure and select the ASP.NET and Windows Authentication features on Windows Server 2008 R2 and the ASP.NET 4.5, Windows Authentication, and HTTP Activation features on Windows Server 2012.  
+d.	Create a new web site or configure the default web site for SSL.  
+e.	Add an inbound rule for the IIS web site’s port to the virtual machine's Windows firewall.  
+f.	Install Microsoft Dynamics GP Web Client using the instructions in the [Web Client Setup](https://docs.microsoft.com/en-us/dynamics-gp/web-components/installation-overview)
+  
+3.	Add a public endpoint for the web site’s port.   
+a.	In the Microsoft Azure Management Portal, select the virtual machine, and then click the ENDPOINT tab.   
+b.	On the bottom of the screen, click Add.  
+c.	Select to add a standalone endpoint if the virtual machine is not load balanced with another virtual machine. If you want to load balance the same endpoint as another virtual machine in the same cloud service, select to “Add an endpoint to an existing load-balanced set” radio button and select the load balanced set from the drop down.  
+d.	Add an endpoint for the IIS web site’s port (typically 443).  
+e.	If you have installed the Session Server feature on this server, add an endpoint for the runtime service’s port if it is not the same port as the web site.  
+  
+If you will be setting up multiple Web Server virtual machine instances as load balanced, create additional virtual machine instances using these same steps. When creating the virtual machine, choose to join to the cloud service created when setting up the first Web Server virtual machine, selecting to create an availability set.   
+
+
+
+### Configuring the Web Client Session Host Server 
+Configuring the Web Client Session Host Server provides directions for configuring a Microsoft Azure Virtual Machine as a Microsoft Dynamics GP Web Client session host.  
+
+### Configuring Remote Desktop Services 
+Configuring Remote Desktop Services provides directions for configuring Remote Desktop Services on a Microsoft Azure Virtual Machine for use with Microsoft Dynamics GP.  
+
+
+### Configuring a Management Reporter Server 
+Configuring a Management Reporter Server provides directions for configuring a Microsoft Azure Virtual Machine for use with Management Reporter.
+
 
 
 ## See also
