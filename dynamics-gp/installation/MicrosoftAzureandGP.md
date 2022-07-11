@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 7/10/2022
+ms.date: 7/11/2022
 ---
 
 # Microsoft Dynamics GP on Microsoft Azure 
@@ -457,19 +457,258 @@ e.	If you have installed the Session Server feature on this server, add an endpo
   
 If you will be setting up multiple Web Server virtual machine instances as load balanced, create additional virtual machine instances using these same steps. When creating the virtual machine, choose to join to the cloud service created when setting up the first Web Server virtual machine, selecting to create an availability set.   
 
-
-
 ### Configuring the Web Client Session Host Server 
 Configuring the Web Client Session Host Server provides directions for configuring a Microsoft Azure Virtual Machine as a Microsoft Dynamics GP Web Client session host.  
+
+If you will be deploying the Microsoft Dynamics GP web components using a scale out deployment, then you will need to add one or more Microsoft Azure virtual machines as session hosts. In a scale out deployment of the web components, the components installed on the web server will be responsible for load balancing the session host servers. This requires that each session host virtual machine instance be configured as a standalone virtual machine. Use the following steps along with the [Web components installation](https://docs.microsoft.com/en-us/dynamics-gp/web-components/single-machine-installation) to set up the virtual machine as a session host.  
+   
+1.	Create a virtual machine using a Windows Server image.  
+  
+2.	In the Microsoft Azure Management Portal, select the virtual machine. At the bottom of the screen, click Connect. This will open a remote desktop connection to the virtual machine.  
+a.	Join the virtual machine to the domain.  
+b.	Import the security certificate to the computer’s personal store.  
+c.	Install Microsoft Dynamics GP Web Client per the instructions in the [Microsoft Dynamics Web components installation](https://docs.microsoft.com/en-us/dynamics-gp/web-components/introduction). (Note: Make sure and install the GP Web Resource Cache for improved performance.)  
+  
+3.	Add a public endpoint for the runtime service’s port.   
+a.	In the Microsoft Azure Management Portal, select the virtual machine, and then click the ENDPOINT tab.  
+b.	On the bottom of the screen, click Add Endpoint.  
+c.	Add an endpoint for the runtime service’s port. 
 
 ### Configuring Remote Desktop Services 
 Configuring Remote Desktop Services provides directions for configuring Remote Desktop Services on a Microsoft Azure Virtual Machine for use with Microsoft Dynamics GP.  
 
+If you will be deploying any of the Microsoft Dynamics GP components that require Remote Desktop  
+Services (RDS) for user access, you will need to add one or more Microsoft Azure virtual machines as RDS servers. There are many options for the configuration of the RDS servers, it is recommended that the RD Gateway service is used, and the Microsoft Dynamics GP application component is published as a remote app to provide the most secure access.    
+  
+In planning your RDS server configuration, you need to determine the number of virtual machines that will be required. If you require more than one RDS server, you will likely be setting up a load balanced RDS Server farm using two or more virtual machines.  For documentation on remote desktop services refer to Remote Desktop Services. The following are a few examples of a Microsoft Azure virtual machine configuration for RDS Servers.  
+  
+  
+**Single Machine**
+A single machine configuration consists of one virtual machine with all the required RDS role services installed on it. These services would typically consist of RD Connection Broker, RD Session Host, RD Gateway, RD Web Access and RD Licensing. A single machine configuration doesn’t offer any redundancy, the result is that if the virtual machine is unavailable for any reason users will not have access to the application.  
+
+ 
+ ![Azure sub image 1](media/azuregp004.png)
+ 
+ 
+Use the following steps to set up a single Microsoft Azure virtual machine as an RDS server host.   
+  
+1.	Create a virtual machine using a Windows Server image.   
+2.	In the Microsoft Azure Management Portal, select the virtual machine. At the bottom of the screen, click Connect. This will open a remote desktop connection to the virtual machine.  
+a.	Join the virtual machine to the domain.  
+ 
+b.	If you already have a security certificate you will be using for the RD Gateway, then import the security certificate to the computer’s personal store.   
+c.	Open server manager and add the Remote Desktop Services role and role services.  
+d.	Configure Remote Desktop Services. (i.e. Configure certificates, Create Session Collection, etc.)  
+e.	Install the Microsoft Dynamics GP components that require RDS to access by using the directions provided in the [Microsoft Dynamics Setup Guide](https://docs.microsoft.com/en-us/dynamics-gp/installation/systemsetup)
+f.	Configure the Microsoft Dynamics GP application component as a RemoteApp.  
+  
+3.	Add a public endpoint for the RD Gateway and RD Web Access ports.   
+a.	In the management portal, select the virtual machine, and click the ENDPOINT tab.   
+b.	On the bottom of the screen, click Add Endpoint.  
+c.	Add an endpoint for the RD Gateway port and RD Web Access port if used. (Port 443 by default.)  
+  
+**Load Balanced Session Hosts**
+A load balanced session host configuration consists of two or more virtual machines configured as stand-alone cloud services. In this configuration, the RD Gateway, RD Connection Broker, RD Licensing and RD Web Access role services are installed to a single stand-alone virtual machine and are not configured for high availability. The RD Session Host role service is installed on one or more stand-alone virtual machines. The RD Connection Broker on the virtual machines is load balancing user sessions on one or more virtual machines with the RD Session Host role service installed. A load balanced session hosts configuration only offers redundancy for the RD Session Hosts, the result is that if the virtual machine hosting the other role services is unavailable for any reason users will not have access to the application.  
+
+ 
+ ![Azure sub image 1](media/azuregp005.png)
+ 
+    
+Use the following steps to set up two or more Microsoft Azure virtual machines as RDS Server farm hosts.   
+1.	Create virtual machines using a Windows Server image.   
+2.	In the Microsoft Azure Management Portal, select the virtual machine. At the bottom of the screen, click Connect. This will open a remote desktop connection to the virtual machine.  
+a.	Join the virtual machine to the domain.  
+b.	If you already have a security certificate you will be using the RD Gateway, then import the security certificate to the computer’s personal store.   
+c.	Open server manager and add the Remote Desktop Services role and role services.  
+d.	Configure Remote Desktop Services. (i.e. Configure certificates, Create Session  
+Collection, etc.)  
+e.	Additional configuration for the RD Session Host.  
+i.	Install the Microsoft Dynamics GP components that require RDS to access by using the directions provided in the Microsoft Dynamics GP Setup Guide.  
+ii.	Configure the Microsoft Dynamics GP application component as a RemoteApp.  
+3.	Add a public endpoint for the RD Gateway and RD Web Access ports.   
+a.	In the management portal, select the virtual machine hosting the RD Gateway and RD Web Access features, and click the ENDPOINT tab.   
+b.	On the bottom of the screen, click Add Endpoint.  
+c.	Add an endpoint for the RD Gateway port and RD Web Access port if used. (Port 443 by default.)  
+  
+Repeat the steps above for each of the virtual machines.  
+   
+**High Availability Server Farm**
+A high availability server farm configuration consists of multiple virtual machines with the RDS role services configured for high availability. This configuration provides for redundant virtual machines that are load balanced so that users may continue to access the application as long as one of the servers hosting the role service is available. There are a number of possible configurations for this environment, the following are two possible configurations.   
+  
+The first configuration example has all the RDS role services deployed on two or more virtual machines connected together as a load balanced cloud service in Microsoft Azure. This provides a single public virtual IP address for load balanced user access to the RD Gateway and RD Web Access role services. Each machine also has an internal IP address for the RD Connection Broker and RD Session Host communications. In this configuration, all the RDS role services are installed on each of the virtual machines. The RD Connection Broker is configured for high availability and will use a SQL Server database for session information. The RD Connection Broker distributes the user sessions across the RD Session Host virtual machines.  
+
+ 
+  ![Azure sub image 1](media/azuregp006.png)
+  
+
+Use the following steps to set up a high availability RDS server farm on load balanced Microsoft Azure virtual machines.   
+  
+1.	Create virtual machines using a Windows Server image. (When creating the 2nd and all additional virtual machines, choose to join to the cloud service created when setting up the first virtual machine, selecting to create an availability set.)   
+2.	In the Microsoft Azure Management Portal, select the virtual machine. At the bottom of the screen, click Connect. This will open a remote desktop connection to the virtual machine.  
+a.	Join the virtual machine to the domain.  
+b.	If you already have a security certificate you will be using the RD Gateway, then import the security certificate to the computer’s personal store.   
+c.	Open server manager and add the Remote Desktop Services role and role services.  
+d.	Configure Remote Desktop Services. (i.e. Configure certificates, Create Session  
+Collection, Configure RD Connection Broker for high availability, etc.)  
+Note: When configuring the RD Connection Broker for high availability you will provide a load balanced address for the RD Connection Broker, it is suggested you don’t use the same domain name as the load balanced cloud service.  
+e.	Install the Microsoft Dynamics GP components that require RDS to access by using the directions provided in the Microsoft Dynamics GP Setup Guide.  
+f.	Configure the Microsoft Dynamics GP application component as a RemoteApp.  
+3.	Add a public endpoint for the RD Gateway and RD Web Access ports.   
+a.	In the management portal, select the virtual machine, and click the ENDPOINT tab.   
+b.	On the bottom of the screen, click Add Endpoint.  
+c.	Add an endpoint for the RD Gateway port and RD Web Access port if used. (Port 443 by default.)  
+4.	Add an A record on your internal DNS for the RD Connection Broker load balanced address you provided during the setup of RD Connection Broker for high availability and the internal IP address of the virtual machine.   
+Repeat the steps above for each of the virtual machines.  
+The second example has the RDS role services split up between two or more virtual machines connected together as a load balanced cloud service and two or more machines configured as standalone cloud services. This configuration is typically used in a deployment when you have a large number of application users that require many RD Session Hosts. The virtual machines that have the RD Gateway, RD Connection Broker, RD Licensing and RD Web Access role services installed will be connected together as a load balanced cloud service in Microsoft Azure. The RD Session Host role services are installed on virtual machines set up as stand-alone cloud services. The RD Connection Broker distributes the user sessions across the RD Session Host virtual machines.  
+
+  ![Azure sub image 1](media/azuregp007.png)
+  
+
+Use the following steps to set up a high availability RDS server farm on load balanced Microsoft Azure virtual machines.   
+  
+1.	Create virtual machines using a Windows Server image. (When creating the 2nd and all additional virtual machines, choose to join to the cloud service created when setting up the first virtual machine, selecting to create an availability set.)  
+2.	In the Microsoft Azure Management Portal, select the virtual machine. At the bottom of the screen, click Connect. This will open a remote desktop connection to the virtual machine.  
+a.	Join the virtual machine to the domain.  
+b.	If you already have a security certificate you will be using the RD Gateway, then import the security certificate to the computer’s personal store.   
+c.	Open server manager and add the following Remote Desktop Services roles and role services to the server.  
+i.	RD Connection Broker  ii. RD Gateway  iii. RD Web Access   iv. RD Licensing  
+d.	Configure the installed services.   
+i.	Configure certificates for RD Gateway, RD Web Access and RD Connection Broker as needed.  
+ii.	Configure RD Connection Broker for high availability.  
+Note: When configuring the RD Connection Broker for high availability you will provide a load balanced address for the RD Connection Broker, it is suggested you don’t use the same domain name as the load balanced cloud service.  
+3. Add a public endpoint for the RD Gateway and RD Web Access ports.   
+a.	In the management portal, select the virtual machine, and click the ENDPOINT tab.   
+b.	On the bottom of the screen, click Add Endpoint.  
+c.	Add an endpoint for the RD Gateway port and RD Web Access port if used. (Port 443 by default.)   
+4. Add an A record on your internal DNS for the RD Connection Broker load balanced address you provided during the setup of RD Connection Broker for high availability and the internal IP address of the virtual machine.   
+Repeat the steps above for each of the virtual machines that will be configured with the high availability role services.  
+  
+Use the following steps to set up two or more Microsoft Azure virtual machines as stand-alone RD Session Host servers.   
+  
+1.	Create virtual machines using a Windows Server image.   
+2.	In the Microsoft Azure Management Portal, select the virtual machine. At the bottom of the screen, click Connect. This will open a remote desktop connection to the virtual machine.  
+a.	Join the virtual machine to the domain.  
+b.	If you already have a security certificate you will be using the RD Gateway, then import the security certificate to the computer’s personal store.    
+c.	Open server manager and add the RD Session Host role service.  
+d.	Install the Microsoft Dynamics GP components that require RDS to access by using the directions provided in the Microsoft Dynamics GP Setup Guide.  
+e.	Configure the Microsoft Dynamics GP application component as a RemoteApp.  
+  
+Repeat the steps above for each of the virtual machines.  
 
 ### Configuring a Management Reporter Server 
 Configuring a Management Reporter Server provides directions for configuring a Microsoft Azure Virtual Machine for use with Management Reporter.
 
+If you will be deploying Management Reporter for use with Microsoft Dynamics GP, you will need to install Management Reporter on a virtual machine in Microsoft Azure. The Management Reporter server components can be installed on the same machine as other Microsoft Dynamics GP server components or installed on a dedicated virtual machine. The Report Designer and Desktop Viewer client components will need to be installed on an RDS Server so that end-users will be able to access them. If you will be using the Report Designer and Desktop Viewer client only for administrative purposes, they can be installed on the same virtual machine as the server components. Use the following steps when creating the Microsoft Azure virtual machine to host Management Reporter. Refer to the [Management Reporter Installation Guides](http://www.microsoft.com/en-us/download/details.aspx?id=5916) for additional information.   
+  
+1.	Create the virtual machine using a Windows Server image.  
+     
+2.	In the Microsoft Azure Management Portal, select the virtual machine. At the bottom of the screen, click Connect. This will open a remote desktop connection to the virtual machine.  
+a.	Join the virtual machine to the domain.  
+b.	Install and configure the Management Reporter Server.  
+c.	If you will be using the Management Reporter Client components on this server, follow the installation instructions above. If you will be using them on another server, open a remote desktop connection to that virtual machine and perform the installation.  
 
+## Maintenance
+Even though the Microsoft Azure platform is built to provide high availability and fault tolerance, there is still maintenance and backup procedures you will need to put in place for Microsoft Dynamics GP. The maintenance procedures will make sure that your Microsoft Dynamics GP system is at the most recent version, running correctly and with the best performance. The backup procedures will provide periodic backups of mission-critical data. This part contains the following sections.  
+  
+
+### Database Mainteance and Backups
+
+The database maintenance and backup strategy to implement on Microsoft Azure will follow the same recommendations as an on-premise deployment. The recommendations include scheduled database maintenance tasks designed to keep the database running optimally and a database backup routine that allows recovery to a previous point in time, avoiding costly re-work. The frequency of the maintenance and backup procedures is determined based on your database activity and re-work tolerance.  
+
+[Maintenance Plans](https://docs.microsoft.com/en-us/sql/relational-databases/maintenance-plans/maintenance-plans?view=sql-server-ver16) provides recommendations for creating scheduled database maintenance plans and [Back Up and Restore of SQL Server Databases](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver16) provides backup processes.  
+
+The key difference in building your maintenance and backup procedures on Microsoft Azure versus on premise is where the database backups will be stored. The recommended storage location for the database backups for a Microsoft Azure deployment is in Microsoft Azure blob storage. Microsoft Azure blob storage provides a few safeguards for the data. The first is locally redundant storage (LRS). LRS maintains three copies of the account data within the primary data center. The second is geo-redundant storage (GRS), which replicates the account data to a secondary data center in the same region. GRS functionality is implemented through a feature called geo-replication, which is turned on for a storage account by default but can be turned off if you don’t want to use it. Refer to the [Microsoft Azure Storage](http://www.windowsazure.com/en-us/manage/services/storage/) for information on creating and managing storage accounts. There are two options for creating backups in Microsoft Azure blob storage.   
+
+### Data Disk
+
+A new empty data disk can be attached to the Microsoft Azure virtual machine that will be used to store the backup files. The data disk will be visible like any other local disk when setting up your maintenance plan. Select this disk as the backup file location when following the directions in the [Recommended Maintenance of your Databases](https://docs.microsoft.com/en-us/dynamics-gp/installation/database-maintenance-recommendations) article for setting up a Microsoft Dynamics GP maintenance plan using the SQL Server Maintenance Plan Wizard.   
+
+### Back up Directly to Blob Storage
+
+New functionality in Microsoft SQL Server 2012 SP1 CU2 provides the ability to backup directly to blob storage in Microsoft Azure. The number of data disks that can be attached is limited based on the virtual machine instance size, so using this approach will not require the use of a data disk attached to the virtual machine. There are currently a few restrictions on using this option from within SQL Server Management Studio. Refer to the article [SQL Server Backup and restore with Azure Blob Storage](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service?redirectedfrom=MSDN&view=sql-server-ver16) for additional information.   
+
+### Managing Virtual Machines
+
+[Managing Virtual Machines](https://docs.microsoft.com/en-us/azure/virtual-machines/) provides information about changing the size, monitoring and patching the Microsoft Azure virtual machines.
+
+Microsoft Azure monitors the health of the hardware and network that the virtual machine instance is running on. It will automatically move the VHD when there is a failure. Microsoft Azure does not force operating system updates to running virtual machine instances. After the Microsoft Azure virtual machine instances are deployed, you are responsible for patching, configuring, and maintaining the operating system and other software within your virtual machine instance.    
+Because a Microsoft Azure virtual machine instance is a Hyper-V image, you can use the same processes and tools to manage the virtual machine as you would on premise. You are in complete control of the monitoring and patching process and can use familiar tools like Microsoft System Center and Windows Update to keep the operating system and other software running properly.   
+It is recommended that you use published best practices information when determining the approach to take for managing the Microsoft Azure virtual machines. The virtual machines containing the Microsoft Dynamics GP components should be set up to have updates applied during pre-determined maintenance windows to avoid service interruptions for users. By default, the virtual machine instances created from the Microsoft Azure Platform Image Gallery are configured with Windows Update set to automatically install important Windows updates during a maintenance window configured for 3:00 AM on the virtual machine’s clock. It is recommended you evaluate this setting to determine if it fits into your desired maintenance process and adjust accordingly.  
+You may also want to change the virtual machine instance size as usage patterns change. Follow the steps in the documentation to change the size of a virtual machine instance.  
+
+### Updating Microsoft Dynamics GP
+
+[Updating Microsoft Dynamics GP](https://docs.microsoft.com/en-us/dynamics-gp/upgrade/upgrade-checklist) provides information about updating the Microsoft Dynamics GP components to the latest release. 
+
+Updating Microsoft Dynamics GP on Microsoft Azure uses the same process as on premise deployments. The Microsoft Dynamics GP product documentation and download site provides stepby-step instructions for performing the update. The following is a high-level checklist of the update process for Microsoft Dynamics GP.   
+1.	Review the latest upgrade documentation and plan your upgrade.  
+2.	Download the update from [Product Release Downloads for Microsoft Dynamics GP](https://docs.microsoft.com/en-us/dynamics/s-e/gp/mdgp2018_release_download_378).   
+3.	Place the downloaded files in a share accessible by the virtual machines with Microsoft Dynamics GP components installed.  
+4.	Make a backup of the Microsoft Dynamics GP databases.  
+5.	Install the update onto each virtual machine that is running the Microsoft Dynamics GP Desktop Client installation.  
+6.	Run Microsoft Dynamics GP Utilities to upgrade the databases.  
+7.	Install updates to the remaining Microsoft Dynamics GP components.  
+8.	Verify the update for each additional component.  
+
+## Troubleshooting and Technical Support
+This part contains information about troubleshooting and accessing technical support if unexpected application behavior occurs. 
+
+### Troubleshooting
+
+Troubleshooting Microsoft Dynamics GP on Microsoft Azure typically involves the same techniques that you would use for any Microsoft Dynamics GP deployment. The Microsoft Dynamics GP product documentation will serve as a good reference for identifying and resolving application issues. When troubleshooting on Microsoft Azure, you will need to account for unique communication errors that you may not have to consider in an on-premise deployment.     
+  
+Depending on the virtual network configuration and where users will be accessing Microsoft Dynamics GP from, you may see issues related to communications not reaching the intended destination. When Microsoft Dynamics GP is deployed on premise, the name resolution and communication routing from the user’s client computer to the Microsoft Dynamics GP servers is handled by your internal DNS and network configuration. Unless all users will be accessing 
+Microsoft Dynamics GP from an on premise network connected to the Microsoft Azure Virtual  Network, the communication from the user’s client computer to Microsoft Dynamics GP in Microsoft Azure is handled by public DNS records and virtual machine endpoints.   
+
+When you suspect that the error could be a communications issue, you will want to start by verifying that the virtual machine is running and accessible using the Microsoft Azure Management Portal. If the virtual machine is running and accessible, verify the following configuration settings are set correctly.  
+1.	If you are using a custom domain name, verify that an A or CNAME record exists in DNS.  
+2.	Verify that an endpoint has been created for the virtual machine if communication is originating from an external network.   
+3.	If using SSL, verify that the custom domain name being used is covered by the security certificate.  
+4.	Verify that there are appropriate inbound and outbound rules configured on the virtual machine’s Windows firewall for the TCP port that is being used.  
+5.	Verify the TCP port being used is not blocked by a client-side firewall or proxy.  
+
+
+### Contacting Billing and Technical Support
+
+If you need to contact Microsoft Support with technical or licensing (operations) questions, you need to be aware that there is different contact information for Microsoft Dynamics GP and Microsoft Azure. To expedite resolution of the issue you need to identify the type of question or issue you have in order to use the appropriate contact information. Use the information below to best identify which support organization to contact.  
+
+**Microsoft Azure**
+
+The following are examples of Microsoft Azure questions or issues. If you are experiencing any of the following types of issues you will want to contact Microsoft Azure support.  
+  
+1.	Billing questions for Microsoft Azure services.  
+2.	Errors in the Microsoft Azure Management Portal.  
+3.	Errors running Microsoft Azure PowerShell cmdlets.  
+4.	Unable to open a remote desktop connection to a Microsoft Azure Virtual Machine.  
+  
+If you have a billing-related question, open the [Microsoft Azure support option](http://www.windowsazure.com/en-us/support/contact/) and select the technical and billing support option. You will need to log in using your Microsoft Account.  Microsoft Azure billing support is provided at no cost.  
+  
+If your question is about using Microsoft Azure, you have the following options for obtaining technical support. Refer to the [Microsoft Azure Support Plan](http://www.windowsazure.com/en-us/support/plans/) for available plans and pricing information.  
+
+1.	Online Forums – Open the [Forums](http://www.windowsazure.com/en-us/support/forums/) to obtain assistance with your questions from the Microsoft Azure community.  
+                                                           
+2.	Service Dashboard - Open the Microsoft Azure support option above and select the Service dashboard option to get the current health status of the Microsoft Azure platform and services.  
+  
+3.	Assisted Technical Support - Open the Microsoft Azure support option above, If you are an existing Account holder – sign in using your Microsoft Account and create a support ticket.   
+  
+4.	If you have subscriptions that are not active, please contact [Microsoft Support](http://support.microsoft.com/)
+
+**Microsoft Dynamics GP**
+
+The following are examples of Microsoft Dynamics GP questions or issues.  If you are experiencing any of the following types of issues you will want to contact Microsoft Dynamics GP support.  
+
+1.	Microsoft Dynamics GP licensing questions.  
+2.	Errors while using Microsoft Dynamics GP.  
+3.	Errors accessing Microsoft Dynamics GP on a server that is running and accessible using a remote desktop connection. Example: Get an error attempting to access the web client on the Web Server, but are able to open a remote desktop connection to the Web Server.  
+If your question is a licensing related question, contact your Partner if you are a customer. Partners contact the Dynamics Regional Operations Centers (ROCs). The Regional Operations Centers can be contacted on-line using PartnerSource pages.  
+
+If your question or issue is about using Microsoft Dynamics GP, you have the following options for obtaining technical support.  
+1.	Self-help Technical Support – [Dynamics GP KB](https://support.microsoft.com/search/results?query=dynamics+gp&isEnrichedQuery=false), then search Knowledge Base to search for articles on your question or issue.   
+  
+2.	Assisted Technical Support - Log onto [Service Hub](https://serviceshub.microsoft.com/supportforbusiness) to create a request to speak with a support engineer.   
+  
+3.	Partner Network – Access the Get Support page on the [Microsoft Partner Network (MPN)](https://mspartner.microsoft.com/en/us/Pages/Support/get-support.aspx)
+   
 
 ## See also
 
