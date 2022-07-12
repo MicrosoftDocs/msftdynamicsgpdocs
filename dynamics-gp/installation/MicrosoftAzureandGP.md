@@ -95,7 +95,7 @@ For more information, see [Overview of Subscription Management](/azure/cloud-ado
 
 ### Sign up for a Microsoft Azure Support Plan
 
-Microsoft Azure support plans provide technical and billing support for Microsoft Azure. The Microsoft Azure support plans offer flexible support options that will allow you to select the right level of support for your Microsoft Azure deployment. The support options range from support services included with your Microsoft Azure Account at no charge to Premier support services. Information on the available support plans and purchasing a plan can be found on the [Microsoft Azure Support](http://www.windowsazure.com/support/plans/). Technical and billing support for Microsoft Dynamics GP will continue to be offered using the existing programs. Refer to the Microsoft Dynamics GP support section of this document for additional information.     
+Microsoft Azure support plans provide technical and billing support for Microsoft Azure. The Microsoft Azure support plans offer flexible support options that will allow you to select the right level of support for your Microsoft Azure deployment. The support options range from support services included with your Microsoft Azure Account at no charge to Premier support services. Information on the available support plans and purchasing a plan can be found on the [Microsoft Azure Support](https://www.windowsazure.com/support/plans/). Technical and billing support for Microsoft Dynamics GP will continue to be offered using the existing programs. Refer to the Microsoft Dynamics GP support section of this document for additional information.     
 
 ## Planning
 
@@ -117,7 +117,7 @@ License Mobility through Software Assurance gives Microsoft Volume Licensing cus
 With License Mobility through Software Assurance, you can:   
 •	Deploy certain server application licenses purchased under your Volume Licensing agreement in Microsoft Azure data centers.   
 •	Extend the value of your server application licenses by deploying them on-premises or in the cloud.   
-•	Take advantage of the low-cost computing infrastructure for changing business priorities.  More program benefit details and information can be found [HERE](http://www.windowsazure.com/pricing/license-mobility/).   
+•	Take advantage of the low-cost computing infrastructure for changing business priorities.  More program benefit details and information can be found [HERE](https://www.windowsazure.com/pricing/license-mobility/).   
   
 For information about Microsoft’s License Mobility program see:  
 [License Mobility & Software Assurance | Microsoft Volume Licensing](https://www.microsoft.com/licensing/licensing-programs/software-assurance-license-mobility?rtc=1)
@@ -136,8 +136,8 @@ There are two ways to license Remote Desktop Services (RDS), formerly known as T
 
 2.	Volume Licensing customers who have active Software Assurance on their RDS User CALs are entitled to RDS CAL Extended Rights, which allow use of their RDS User CAL with Software Assurance against a Windows Server running on Microsoft Azure or other service providers’ shared server environments.   
   
-To read more about [licensing RDS with Microsoft Azure Virtual Machines](http://www.windowsazure.com/en-us/pricing/licensing-faq/) & 
-[Product Use Rights(PUR) document](http://www.microsoft.com/licensing/about-licensing/product-licensing.aspx)    
+To read more about [licensing RDS with Microsoft Azure Virtual Machines](https://www.windowsazure.com/en-us/pricing/licensing-faq/) & 
+[Product Use Rights(PUR) document](https://www.microsoft.com/licensing/about-licensing/product-licensing.aspx)    
 
 **Microsoft SQL Server**   
 There are three ways to license Microsoft SQL Server in Microsoft Azure Virtual Machines:   
@@ -150,12 +150,12 @@ You will want to carefully evaluate each of these options for Microsoft SQL Serv
 **Other Licensing Considerations – Microsoft Azure Billing / Cost Allocation**
 For many Service Providers offering a hosted solution, determining how to bill Customers for monthly, consumption-based charges from Microsoft Azure will represent a new challenge.   
   
-To learn what billing information is available, you should review the [Understand Your Bill for Microsoft Azure](http://www.windowsazure.com/en-us/support/understand-your-bill/) on the Microsoft Azure Portal. These pages provide an overview of the Microsoft Azure billing process, links to sample invoices and a description of the daily usage data file that can be exported and analyzed.   
+To learn what billing information is available, you should review the [Understand Your Bill for Microsoft Azure](https://www.windowsazure.com/en-us/support/understand-your-bill/) on the Microsoft Azure Portal. These pages provide an overview of the Microsoft Azure billing process, links to sample invoices and a description of the daily usage data file that can be exported and analyzed.   
   
 Microsoft Azure billing is done monthly at the Account level. Charges for various services are grouped and reported at the Subscription level. To simplify the cost allocation exercised, Partners supporting multiple Customer deployments may wish to segregate each Customer’s services to individual subscriptions.  
     
 Note:  
-Please note that this whitepaper does not supersede or replace any of the legal documentation covering use rights for Microsoft products and does not constitute a commitment of licensing program availability.  For current product use rights and licensing program availability for products licensed through [Volume Licensing including SPLA](http://www.microsoft.com/licensing/)
+Please note that this whitepaper does not supersede or replace any of the legal documentation covering use rights for Microsoft products and does not constitute a commitment of licensing program availability.  For current product use rights and licensing program availability for products licensed through [Volume Licensing including SPLA](https://www.microsoft.com/licensing/)
 
 ### Legal
 
@@ -165,13 +165,13 @@ Together with Microsoft, Partners must work together to protect Customer data an
   
 Microsoft runs Microsoft Azure services with common operational practices and features across multiple geographies and jurisdictions. However, it is ultimately up to Partners and Customers to determine if Microsoft services satisfy their regulatory needs.     
   
-To help provide Partners and Customers with up to date information the [Microsoft Azure Trust Center](http://www.windowsazure.com/en-us/support/trust-center/) provides detailed information on security, privacy, and compliance topics for Microsoft Azure customers.  
+To help provide Partners and Customers with up to date information the [Microsoft Azure Trust Center](https://www.windowsazure.com/en-us/support/trust-center/) provides detailed information on security, privacy, and compliance topics for Microsoft Azure customers.  
 
 **Security**
-This topic provides an overview of the provisions Microsoft is taking to provide a secure environment within geographically dispersed datacenters. Among the extensive list of Security-related resources, the [Standard Response to Request for Information:Security and Privacy](http://go.microsoft.com/fwlink/?linkid=293448&clcid=0x409) outlines how Microsoft Azure meets the suggested principals and mapped them to the [International Standards Organization](https://azure.microsoft.com/en-us/blog/microsoft-azure-leads-the-industry-in-iso-certifications/#:~:text=We%20are%20happy%20to%20announce%20that%20Microsoft%20Azure,to%20meet%20a%20wide%20range%20of%20regulatory%20obligations). This standardized response empowers Partners and Customers with in-depth information to evaluate different offerings in the market place today.  
+This topic provides an overview of the provisions Microsoft is taking to provide a secure environment within geographically dispersed datacenters. Among the extensive list of Security-related resources, the [Standard Response to Request for Information:Security and Privacy](https://go.microsoft.com/fwlink/?linkid=293448&clcid=0x409) outlines how Microsoft Azure meets the suggested principals and mapped them to the [International Standards Organization](https://azure.microsoft.com/en-us/blog/microsoft-azure-leads-the-industry-in-iso-certifications/#:~:text=We%20are%20happy%20to%20announce%20that%20Microsoft%20Azure,to%20meet%20a%20wide%20range%20of%20regulatory%20obligations). This standardized response empowers Partners and Customers with in-depth information to evaluate different offerings in the market place today.  
 
 **Privacy**
-Includes links to multiple resources that describe Privacy practices of the Microsoft Azure environment. It includes a link to the [Microsoft Azure Privacy Statement](http://go.microsoft.com/fwlink/p/?linkid=131004&clcid=0x409) an overview of privacy terms and a discussion of the location of Customer data, E.U. Data Protection Directive 
+Includes links to multiple resources that describe Privacy practices of the Microsoft Azure environment. It includes a link to the [Microsoft Azure Privacy Statement](https://go.microsoft.com/fwlink/p/?linkid=131004) an overview of privacy terms and a discussion of the location of Customer data, E.U. Data Protection Directive 
 
 **Compliance**
 This topic provides resources to help Partners and Customers comply with the specific laws and regulations applicable to their unique industry and use scenario.  
@@ -241,9 +241,9 @@ authentication of Microsoft Dynamics GP users. If additional server roles are re
 
 System Requirements provides sizing recommendations for the virtual machine instance sizes that are available in Microsoft Azure.  
 
-The system requirements for deploying Microsoft Azure are the same as deploying Microsoft Dynamics GP on premise or in other data centers. The virtual machines in Microsoft Azure have standard processor and memory configurations that are based on the instance size. The instance sizes range from VMs with 1 core and .75 GB RAM to 16 cores with 112 GB RAM. You can scale the instance size up or down as usage patterns change. You can also add additional instances to scale out as demand increases. Refer to the [Pricing Details](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/) for the latest instance sizes and pricing.   
+The system requirements for deploying Microsoft Azure are the same as deploying Microsoft Dynamics GP on premise or in other data centers. The virtual machines in Microsoft Azure have standard processor and memory configurations that are based on the instance size. The instance sizes range from VMs with 1 core and .75 GB RAM to 16 cores with 112 GB RAM. You can scale the instance size up or down as usage patterns change. You can also add additional instances to scale out as demand increases. Refer to the [Pricing Details](https://azure.microsoft.com/pricing/details/virtual-machines/) for the latest instance sizes and pricing.   
   
-Use the [Dynamics GP System Requirements](https://docs.microsoft.com/en-us/dynamics/s-e/gp/MDGP2018_System_Requirements) when determining the compute instance size required for each of the virtual machine instances in your configuration.  
+Use the [Dynamics GP System Requirements](/dynamics/s-e/gp/MDGP2018_System_Requirements) when determining the compute instance size required for each of the virtual machine instances in your configuration.  
 
 
 ### High Availability and Disaster Recovery (HADR)
@@ -265,7 +265,7 @@ An availability set requires that the application is installed on multiple VMs t
 5.	Tenant Services   
 6.	RDS Servers (GP client, Management Reporter, Integration Manager, eConnect, ISV solutions)  
 
-Refer to the [Manage the High Availability of Virtual Machines](https://docs.microsoft.com/en-us/azure/virtual-machines/availability) for additional information.  
+Refer to the [Manage the High Availability of Virtual Machines](/azure/virtual-machines/availability) for additional information.  
 
 **SQL Server HADR**
 There are several different HADR technologies in the SQL Server product that are supported in Microsoft Azure. These include the following.  
@@ -273,14 +273,14 @@ There are several different HADR technologies in the SQL Server product that are
 •	Database Mirroring  
 •	Log Shipping  
 •	Backup and Restore with Microsoft Azure Blob Storage Service  
-These technologies can be used independently or together to provide the high availability and disaster recovery required. When used with Microsoft Dynamics GP, the AlwaysOn and Database Mirroring technologies provide failover capabilities for the Dynamics GP databases. The Log Shipping and Backup and Restore with Microsoft Azure Blob Storage Service provides recovery capabilities for the Dynamics GP databases. Refer to the article [Business continuity and HADR for SQL server on Azure Virtual Machines](https://docs.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/business-continuity-high-availability-disaster-recovery-hadr-overview?view=azuresql) for additional information.   
+These technologies can be used independently or together to provide the high availability and disaster recovery required. When used with Microsoft Dynamics GP, the AlwaysOn and Database Mirroring technologies provide failover capabilities for the Dynamics GP databases. The Log Shipping and Backup and Restore with Microsoft Azure Blob Storage Service provides recovery capabilities for the Dynamics GP databases. Refer to the article [Business continuity and HADR for SQL server on Azure Virtual Machines](/azure/azure-sql/virtual-machines/windows/business-continuity-high-availability-disaster-recovery-hadr-overview?view=azuresql) for additional information.   
 
 **Redundant Storage**
 The redundant storage mechanism of Microsoft Azure provides for multiple copies of the VM’s VHD files and the data disks that store data such as the Dynamics GP databases. The first redundant storage mechanism is locally redundant storage (LRS), which maintains three copies of the account data within the primary data center. The second mechanism is geo redundant storage (GRS, also known as geo-replication), which replicates the account data to a secondary data center. These redundant copies are done automatically by the platform. You do need to be aware that for the Microsoft Azure data disks used to store the Dynamics GP databases, if GRS is enabled the data and log files for a database need to be placed on the same disk.   
 
 **Host O/S Maintenance**
 Refer to the following article about VM Maintenance 
-[Maintenance for virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/maintenance-and-updates)
+[Maintenance for virtual machines in Azure](/azure/virtual-machines/maintenance-and-updates)
 
 
 ## Deploy Microsoft Dynamics GP 
@@ -292,22 +292,22 @@ Creating a Virtual Network provides directions for setting up a virtual network 
 
 A Microsoft Azure Virtual Network must be created in your subscription so that you can create and run the Microsoft Azure Virtual Machine instances. The Microsoft Azure Virtual Network may be connected to a physical network for site-to-site connectivity, it could also be set up as a dedicated private network in the cloud. The virtual machines serve as the Windows Server hosts for the Microsoft Dynamics GP components deployed on the virtual network you create.   
    
-Before setting up your virtual network, you will need to determine the design that will best meet your deployment scenario. Things to consider include whether you will be joining this network to another network, the address ranges for the network and how domain name resolution (DNS) will be handled. In the current Microsoft Azure release, it may be difficult to make changes to the virtual network after virtual machines have been deployed. Refer to the [Azure Virtual Network concepts and best practices](https://docs.microsoft.com/en-us/azure/virtual-network/concepts-and-best-practices)
+Before setting up your virtual network, you will need to determine the design that will best meet your deployment scenario. Things to consider include whether you will be joining this network to another network, the address ranges for the network and how domain name resolution (DNS) will be handled. In the current Microsoft Azure release, it may be difficult to make changes to the virtual network after virtual machines have been deployed. Refer to the [Azure Virtual Network concepts and best practices](/azure/virtual-network/concepts-and-best-practices)
   
 When deploying Microsoft Dynamics GP on Microsoft Azure, you have two options. You can create a private virtual network that is fully contained within Microsoft Azure, or you can create a virtual network in Microsoft Azure that is connected to your existing physical network. In either case, all of the Microsoft Dynamics GP components will be deployed to virtual machine instances on the Microsoft Azure Virtual Network. You may want to connect to an existing network to leverage on-premise resources. When creating a private virtual network with multiple virtual machines, you will need to create a domain controller for authentication and name resolution (DNS). The virtual network will need to be configured to use the domain controller’s IP address for DNS. This means that you must modify the DNS setting for the virtual network after creating the domain controller virtual machine on the virtual network.   
  
 
 You create a virtual network by using the Microsoft Azure Management Portal or using the Azure CLI. 
-Refer to the article [Quickstart: Create a virtual network using the Azure portal](https://docs.microsoft.com/en-us/azure/virtual-network/quick-create-portal) for information about creating a virtual network using the Microsoft Azure Management Portal. Refer to the article 
-[Quickstart: Create a virtual network using the Azure CLI](https://docs.microsoft.com/en-us/azure/virtual-network/quick-create-cli) for information about using the Azure CLI. 
+Refer to the article [Quickstart: Create a virtual network using the Azure portal](/azure/virtual-network/quick-create-portal) for information about creating a virtual network using the Microsoft Azure Management Portal. Refer to the article 
+[Quickstart: Create a virtual network using the Azure CLI](/azure/virtual-network/quick-create-cli) for information about using the Azure CLI. 
 
 ### Creating Virtual Machiens
 Creating Virtual Machines provides directions for creating a virtual machine instance in Microsoft Azure.    
 
 All of the Microsoft Dynamics GP components, along with the required software like Microsoft SQL Server and Microsoft SQL Server Reporting Services, will be installed on Windows Server virtual machine instances in Microsoft Azure. Depending on your deployment needs, you will use one or more virtual machine instances. For example, you may have a SQL Server virtual machine, a Web Server virtual machine and an Active Directory virtual machine.  
    
-A virtual machine instance can be created from a VHD template image available in the Microsoft Azure platform image gallery or from an image or VHD disk you create and upload. You also have the ability to capture a configured virtual machine instance as a template image for creating additional virtual machine instances. Refer to the article [Virtual Machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/) for additional information.   Follow the steps in the article 
-[QuickStart: Create a Windows virtual machine in the Azure portal to create the virtual machines](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal)
+A virtual machine instance can be created from a VHD template image available in the Microsoft Azure platform image gallery or from an image or VHD disk you create and upload. You also have the ability to capture a configured virtual machine instance as a template image for creating additional virtual machine instances. Refer to the article [Virtual Machines in Azure](/azure/virtual-machines/) for additional information.   Follow the steps in the article 
+[QuickStart: Create a Windows virtual machine in the Azure portal to create the virtual machines](/azure/virtual-machines/windows/quick-create-portal)
 
 ### Configuring Active Directory
 Configuring Active Directory provides information about configuring Active Directory on a Microsoft Azure Virtual Machine. 
@@ -326,7 +326,7 @@ Configuring Microsoft SQL Server provides directions for configuring SQL Server 
 All Microsoft Dynamics GP deployments require a Microsoft SQL Server to manage the databases that contain the business data. When deploying on Microsoft Azure, a Microsoft SQL Server installation on a Microsoft Azure Virtual Machine will be used.  
 
 Refer to the Checklist: 
-[Best practices for SQL Server on Azure VMs for the latest information](https://docs.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist?view=azuresql)
+[Best practices for SQL Server on Azure VMs for the latest information](/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist?view=azuresql)
   
                                                            
 1.	Create the virtual machine using a Windows Server or SQL Server image. If you choose to create a virtual machine using a SQL Server image, you will have additional steps to perform after the virtual machine is created to configure Microsoft SQL Server for use with Microsoft Dynamics GP. If you choose to create a virtual machine using a Windows Server image, you will need to install SQL Server to the VM using the configuration provided in the GP installation documentation.  
@@ -368,7 +368,7 @@ When you create the Microsoft Dynamics Dynamics GP databases will depend on whet
   
 The installation of the Microsoft Dynamics GP desktop client used to create the databases can be on the SQL Server virtual machine or another virtual machine depending on your configuration. Use the following steps to install the Microsoft Dynamics GP desktop client, create the databases, and deploy the Business Intelligence Reports.    
 1.	Administration portion in the following link:  
-[Welcome to Dynamics GP - Dynamics GP | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics-gp/)
+[Welcome to Dynamics GP - Dynamics GP | Microsoft Docs](/dynamics-gp/)
 
 2.	Use Microsoft Dynamics GP Utilities in the desktop client installation to create the Microsoft Dynamics GP databases. Make sure and select to create the databases on the data disk attached to the SQL Server virtual machine instead of the operating system disk. If you are using Geo Redundant Storage (GRS) for the data disk, make sure and place the data and log files on the same disk.  
 
@@ -383,8 +383,8 @@ If you will be using SQL Server Reporting Services reports for your Microsoft Dy
   
 2.	In the Microsoft Azure Management Portal, select the virtual machine. At the bottom of the screen, click Connect. This will open a remote desktop connection to the virtual machine.  
 a.	Join the virtual machine to the domain.  
-b.	Install Microsoft SQL Server Reporting Services using the recommended settings in the [Microsoft SQL Server configuration](https://docs.microsoft.com/en-us/dynamics-gp/installation/microsoft-sql-server-configuration). (Skip this step if you used an image with Microsoft SQL Server already installed.)   
-c.	Use the Reporting Services Configuration Manager to configure SQL Server Reporting Services. If users are accessing the reports over the internet, it is recommended that you configure reporting services for SSL (Secure Sockets Layer). Refer to article [Configure SSL Connections on a Native Mode Report Server for additional information](http://technet.microsoft.com/en-us/library/ms345223(v=sql.110).aspx)
+b.	Install Microsoft SQL Server Reporting Services using the recommended settings in the [Microsoft SQL Server configuration](dynamics-gp/installation/microsoft-sql-server-configuration). (Skip this step if you used an image with Microsoft SQL Server already installed.)   
+c.	Use the Reporting Services Configuration Manager to configure SQL Server Reporting Services. If users are accessing the reports over the internet, it is recommended that you configure reporting services for SSL (Secure Sockets Layer). Refer to article [Configure SSL Connections on a Native Mode Report Server for additional information](https://technet.microsoft.com/en-us/library/ms345223(v=sql.110).aspx)
 d.	Follow the setup instructions in the Microsoft Dynamics GP System Setup Guide on the Microsoft Dynamics GP installation media to configure SQL Server Reporting Services for use with Microsoft Dynamics GP.   
 e. Add an inbound rule to allow access to the SQL Server Reporting Services port to the virtual machines firewall.  
 f. Note whether the Database Engine, Analysis Services, Full-text Search Services, and Integration Services are installed and running on the image. If you won’t be using any of these services on this server, stop the services and change them to manual or disabled.  
@@ -396,46 +396,56 @@ If you will be setting up multiple SQL Server Reporting Services virtual machine
 ### Configuring the Tenant Services Server 
 Configuring the Tenant Services Server provides direction for configuring a Microsoft Azure  Virtual Machine as a host for Tenant Services. Tenant Services is an optional Microsoft Dynamics GP component required only if you are installing Microsoft Dynamics GP for use by multiple customer organizations (tenants).  
 
-If you will be deploying Microsoft Dynamics GP for use by multiple customer organizations (tenants), you will need to install Tenant Services on a virtual machine in Microsoft Azure. The Tenant Services can be installed on a virtual machine that is running other Microsoft Dynamics GP components, or the Tenant Services can be installed on a dedicated virtual machine. Use the following steps when creating a dedicated Microsoft Azure Virtual Machine to host Microsoft Dynamics GP Tenant Services. Refer [Tenant Services Basics](https://docs.microsoft.com/en-us/dynamics-gp/web-components/tenant-services-basics) for information about preparing the server for Tenant Services.  
+If you will be deploying Microsoft Dynamics GP for use by multiple customer organizations (tenants), you will need to install Tenant Services on a virtual machine in Microsoft Azure. The Tenant Services can be installed on a virtual machine that is running other Microsoft Dynamics GP components, or the Tenant Services can be installed on a dedicated virtual machine. Use the following steps when creating a dedicated Microsoft Azure Virtual Machine to host Microsoft Dynamics GP Tenant Services. Refer [Tenant Services Basics](/dynamics-gp/web-components/tenant-services-basics) for information about preparing the server for Tenant Services.  
    
 1.	Create a virtual machine using a Windows Server image.   
   
 2.	In the Microsoft Azure Management Portal, select the virtual machine. At the bottom of the screen, click Connect. This will open a remote desktop connection to the virtual machine.  
 a.	Join the virtual machine to the domain.  
-b.	Install the Dynamics GP Tenant Services using the instructions in the following blog.  [Tenant Services Installation](https://docs.microsoft.com/en-us/dynamics-gp/web-components/tenant-services-installation)
+b.	Install the Dynamics GP Tenant Services using the instructions in the following blog.  [Tenant Services Installation](/dynamics-gp/web-components/tenant-services-installation)
  
 If you will be setting up multiple Tenant Services virtual machine instances as load balanced, create additional virtual machine instances using these same steps. When creating the additional virtual machine, choose to join the cloud service created when setting up the first Tenant Services virtual machine. Only internal communication from other multitenant GP components installed on the virtual network is required, as a result it is recommended that you use one of the two options described below to configure the internal load balancing.   
                                                    
-1.	The first option is to use DNS load balancing by adding a new A record in your internal DNS for each of the Tenant Service virtual machines using a load balanced name and the internal IP address of the virtual machine. The Tenant Services URL used by other applications will be the load balanced name you used for the A records added to your DNS. Refer to the [Configuring DNS load balancing](http://technet.microsoft.com/en-us/library/cc787484(v=WS.10).aspx) article for additional information.  
+1.	The first option is to use DNS load balancing by adding a new A record in your internal DNS for each of the Tenant Service virtual machines using a load balanced name and the internal IP address of the virtual machine. The Tenant Services URL used by other applications will be the load balanced name you used for the A records added to your DNS. Refer to the [Configuring DNS load balancing](https://technet.microsoft.com/en-us/library/cc787484(v=WS.10).aspx) article for additional information.  
   
 Example: In this example, two new A records with a FQDN of  
 TenantServicesLB.gpwithazure.com are mapped to the internal IP addresses of the two virtual machines that you installed Tenant Services on are added to DNS. (10.11.0.8 and 10.11.0.9)  
-When you then use an address such as http://TenantServicesLB.gpwithazure.com/... for the  URL to the tenant services, DNS will use a round robin approach to distributing the requests.  
+When you then use an address such as `http://TenantServicesLB.gpwithazure.com/...` for the  URL to the tenant services, DNS will use a round robin approach to distributing the requests.  
 
 2.	The second option is to use the new Azure Internal Load Balancing (ILB) feature to load balance virtual machines that reside inside of a virtual network. You will create a load balanced set to configure a Virtual IP address (VIP) for the virtual machines hosting Tenant Services. The multitenant applications will then use the VIP address when communicating to Tenant Services and Azure will load balance the requests across the virtual machines. Refer to the [Configure an internal load-balance set](https://msdn.microsoft.com/en-us/library/azure/dn690125.aspx) for additional information and step directions on creating an Azure ILB.   
   
 Example:  
 1.	Open the Microsoft Azure Powershell console and connect to your Microsoft Azure subscription.  
 2.	Create an ILB instance for the tenant services cloud service.   
-Sample command where GPTS is the cloud service name and GPTSILB is the ILB instance name.  
-Add-AzureInternalLoadBalancer -ServiceName GPTS -InternalLoadBalancerName GPTSILB   
-  
+
+    Sample command where GPTS is the cloud service name and GPTSILB is the ILB instance name.  
+
+    ```powershell
+    Add-AzureInternalLoadBalancer -ServiceName GPTS -InternalLoadBalancerName GPTSILB   
+    ```
 3.	Add endpoints for both the Tenant Services Management Service port and Tenant Services Discovery Service port. By default, these are 48630 and 48631.   
-Sample commands where GPTS1 is the name of the first virtual machine. Run the commands for each virtual machine replacing the name of the virtual machine.  
-Get-AzureVM –ServiceName GPTS –Name GPTS1 | Add-AzureEndpoint -Name TSDISC - Protocol tcp -LocalPort 48630 -PublicPort 48630 –DefaultProbe -InternalLoadBalancerName GPTSILB | Update-AzureVM   
+
+   Sample commands where GPTS1 is the name of the first virtual machine. Run the commands for each virtual machine replacing the name of the virtual machine.  
+   
+   
+    ```powershell
+    Get-AzureVM –ServiceName GPTS –Name GPTS1 | Add-AzureEndpoint -Name TSDISC - Protocol tcp -LocalPort 48630 -PublicPort 48630 –DefaultProbe -InternalLoadBalancerName GPTSILB | Update-AzureVM   
   
-Get-AzureVM –ServiceName GPTS –Name GPTS1 | Add-AzureEndpoint -Name TSMGMT Protocol tcp -LocalPort 48631 -PublicPort 48630 –DefaultProbe -InternalLoadBalancerName GPTSILB | Update-AzureVM  
-  
-4.	Create an A record in DNS for the VIP of the ILB instance. The Tenant Services URL used by other applications will be the FQDN name you used for the A record added to your DNS. Example: http://TenantServicesLB.gpwithazure.com/   
+    Get-AzureVM –ServiceName GPTS –Name GPTS1 | Add-AzureEndpoint -Name TSMGMT Protocol tcp -LocalPort 48631 -PublicPort 48630 –DefaultProbe -InternalLoadBalancerName GPTSILB | Update-AzureVM  
+    ```
+
+4.	Create an A record in DNS for the VIP of the ILB instance. The Tenant Services URL used by other applications will be the FQDN name you used for the A record added to your DNS. Example: `http://TenantServicesLB.gpwithazure.com/`   
   
 If you didn’t specify an IP address during the creation of the ILB instance, use the following command to get the VIP.  
-Get-AzureService -ServiceName GPTS | Get-AzureInternalLoadBalancer    
 
+```powershell
+Get-AzureService -ServiceName GPTS | Get-AzureInternalLoadBalancer    
+```
 
 ### Configuring the Web Client Web Server 
 Configuring the Web Client Web Server provides directions for configuring a Web Server on a Microsoft Azure Virtual Machine for use with Microsoft Dynamics GP web client.  
 
-If you will be deploying the Microsoft Dynamics GP Web Components, you will need to create one or more Microsoft Azure virtual machines on your virtual network. The Microsoft Dynamics GP Web Components can be installed in a single machine or scale out deployment configuration. Use the following steps along with the [Web Components installation](https://docs.microsoft.com/en-us/dynamics-gp/web-components/installation-overview) to set up the Microsoft Azure Virtual Machine as a web server.   
+If you will be deploying the Microsoft Dynamics GP Web Components, you will need to create one or more Microsoft Azure virtual machines on your virtual network. The Microsoft Dynamics GP Web Components can be installed in a single machine or scale out deployment configuration. Use the following steps along with the [Web Components installation](/dynamics-gp/web-components/installation-overview) to set up the Microsoft Azure Virtual Machine as a web server.   
   
 1.	Create a virtual machine using a Windows Server image.  
   
@@ -446,7 +456,7 @@ c.	Install Internet Information Services (IIS) and ASP.NET by adding the Web Ser
 (IIS) role. Make sure and select the ASP.NET and Windows Authentication features on Windows Server 2008 R2 and the ASP.NET 4.5, Windows Authentication, and HTTP Activation features on Windows Server 2012.  
 d.	Create a new web site or configure the default web site for SSL.  
 e.	Add an inbound rule for the IIS web site’s port to the virtual machine's Windows firewall.  
-f.	Install Microsoft Dynamics GP Web Client using the instructions in the [Web Client Setup](https://docs.microsoft.com/en-us/dynamics-gp/web-components/installation-overview)
+f.	Install Microsoft Dynamics GP Web Client using the instructions in the [Web Client Setup](/dynamics-gp/web-components/installation-overview)
   
 3.	Add a public endpoint for the web site’s port.   
 a.	In the Microsoft Azure Management Portal, select the virtual machine, and then click the ENDPOINT tab.   
@@ -460,14 +470,14 @@ If you will be setting up multiple Web Server virtual machine instances as load 
 ### Configuring the Web Client Session Host Server 
 Configuring the Web Client Session Host Server provides directions for configuring a Microsoft Azure Virtual Machine as a Microsoft Dynamics GP Web Client session host.  
 
-If you will be deploying the Microsoft Dynamics GP web components using a scale out deployment, then you will need to add one or more Microsoft Azure virtual machines as session hosts. In a scale out deployment of the web components, the components installed on the web server will be responsible for load balancing the session host servers. This requires that each session host virtual machine instance be configured as a standalone virtual machine. Use the following steps along with the [Web components installation](https://docs.microsoft.com/en-us/dynamics-gp/web-components/single-machine-installation) to set up the virtual machine as a session host.  
+If you will be deploying the Microsoft Dynamics GP web components using a scale out deployment, then you will need to add one or more Microsoft Azure virtual machines as session hosts. In a scale out deployment of the web components, the components installed on the web server will be responsible for load balancing the session host servers. This requires that each session host virtual machine instance be configured as a standalone virtual machine. Use the following steps along with the [Web components installation](/dynamics-gp/web-components/single-machine-installation) to set up the virtual machine as a session host.  
    
 1.	Create a virtual machine using a Windows Server image.  
   
 2.	In the Microsoft Azure Management Portal, select the virtual machine. At the bottom of the screen, click Connect. This will open a remote desktop connection to the virtual machine.  
 a.	Join the virtual machine to the domain.  
 b.	Import the security certificate to the computer’s personal store.  
-c.	Install Microsoft Dynamics GP Web Client per the instructions in the [Microsoft Dynamics Web components installation](https://docs.microsoft.com/en-us/dynamics-gp/web-components/introduction). (Note: Make sure and install the GP Web Resource Cache for improved performance.)  
+c.	Install Microsoft Dynamics GP Web Client per the instructions in the [Microsoft Dynamics Web components installation](/dynamics-gp/web-components/introduction). (Note: Make sure and install the GP Web Resource Cache for improved performance.)  
   
 3.	Add a public endpoint for the runtime service’s port.   
 a.	In the Microsoft Azure Management Portal, select the virtual machine, and then click the ENDPOINT tab.  
@@ -499,7 +509,7 @@ a.	Join the virtual machine to the domain.
 b.	If you already have a security certificate you will be using for the RD Gateway, then import the security certificate to the computer’s personal store.   
 c.	Open server manager and add the Remote Desktop Services role and role services.  
 d.	Configure Remote Desktop Services. (i.e. Configure certificates, Create Session Collection, etc.)  
-e.	Install the Microsoft Dynamics GP components that require RDS to access by using the directions provided in the [Microsoft Dynamics Setup Guide](https://docs.microsoft.com/en-us/dynamics-gp/installation/systemsetup)
+e.	Install the Microsoft Dynamics GP components that require RDS to access by using the directions provided in the [Microsoft Dynamics Setup Guide](/dynamics-gp/installation/systemsetup)
 f.	Configure the Microsoft Dynamics GP application component as a RemoteApp.  
   
 3.	Add a public endpoint for the RD Gateway and RD Web Access ports.   
@@ -598,7 +608,7 @@ Repeat the steps above for each of the virtual machines.
 ### Configuring a Management Reporter Server 
 Configuring a Management Reporter Server provides directions for configuring a Microsoft Azure Virtual Machine for use with Management Reporter.
 
-If you will be deploying Management Reporter for use with Microsoft Dynamics GP, you will need to install Management Reporter on a virtual machine in Microsoft Azure. The Management Reporter server components can be installed on the same machine as other Microsoft Dynamics GP server components or installed on a dedicated virtual machine. The Report Designer and Desktop Viewer client components will need to be installed on an RDS Server so that end-users will be able to access them. If you will be using the Report Designer and Desktop Viewer client only for administrative purposes, they can be installed on the same virtual machine as the server components. Use the following steps when creating the Microsoft Azure virtual machine to host Management Reporter. Refer to the [Management Reporter Installation Guides](http://www.microsoft.com/en-us/download/details.aspx?id=5916) for additional information.   
+If you will be deploying Management Reporter for use with Microsoft Dynamics GP, you will need to install Management Reporter on a virtual machine in Microsoft Azure. The Management Reporter server components can be installed on the same machine as other Microsoft Dynamics GP server components or installed on a dedicated virtual machine. The Report Designer and Desktop Viewer client components will need to be installed on an RDS Server so that end-users will be able to access them. If you will be using the Report Designer and Desktop Viewer client only for administrative purposes, they can be installed on the same virtual machine as the server components. Use the following steps when creating the Microsoft Azure virtual machine to host Management Reporter. Refer to the [Management Reporter Installation Guides](https://www.microsoft.com/en-us/download/details.aspx?id=5916) for additional information.   
   
 1.	Create the virtual machine using a Windows Server image.  
      
@@ -615,21 +625,21 @@ Even though the Microsoft Azure platform is built to provide high availability a
 
 The database maintenance and backup strategy to implement on Microsoft Azure will follow the same recommendations as an on-premise deployment. The recommendations include scheduled database maintenance tasks designed to keep the database running optimally and a database backup routine that allows recovery to a previous point in time, avoiding costly re-work. The frequency of the maintenance and backup procedures is determined based on your database activity and re-work tolerance.  
 
-[Maintenance Plans](https://docs.microsoft.com/en-us/sql/relational-databases/maintenance-plans/maintenance-plans?view=sql-server-ver16) provides recommendations for creating scheduled database maintenance plans and [Back Up and Restore of SQL Server Databases](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver16) provides backup processes.  
+[Maintenance Plans](/sql/relational-databases/maintenance-plans/maintenance-plans?view=sql-server-ver16) provides recommendations for creating scheduled database maintenance plans and [Back Up and Restore of SQL Server Databases](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver16) provides backup processes.  
 
-The key difference in building your maintenance and backup procedures on Microsoft Azure versus on premise is where the database backups will be stored. The recommended storage location for the database backups for a Microsoft Azure deployment is in Microsoft Azure blob storage. Microsoft Azure blob storage provides a few safeguards for the data. The first is locally redundant storage (LRS). LRS maintains three copies of the account data within the primary data center. The second is geo-redundant storage (GRS), which replicates the account data to a secondary data center in the same region. GRS functionality is implemented through a feature called geo-replication, which is turned on for a storage account by default but can be turned off if you don’t want to use it. Refer to the [Microsoft Azure Storage](http://www.windowsazure.com/en-us/manage/services/storage/) for information on creating and managing storage accounts. There are two options for creating backups in Microsoft Azure blob storage.   
+The key difference in building your maintenance and backup procedures on Microsoft Azure versus on premise is where the database backups will be stored. The recommended storage location for the database backups for a Microsoft Azure deployment is in Microsoft Azure blob storage. Microsoft Azure blob storage provides a few safeguards for the data. The first is locally redundant storage (LRS). LRS maintains three copies of the account data within the primary data center. The second is geo-redundant storage (GRS), which replicates the account data to a secondary data center in the same region. GRS functionality is implemented through a feature called geo-replication, which is turned on for a storage account by default but can be turned off if you don’t want to use it. Refer to the [Microsoft Azure Storage](https://www.windowsazure.com/en-us/manage/services/storage/) for information on creating and managing storage accounts. There are two options for creating backups in Microsoft Azure blob storage.   
 
 ### Data Disk
 
-A new empty data disk can be attached to the Microsoft Azure virtual machine that will be used to store the backup files. The data disk will be visible like any other local disk when setting up your maintenance plan. Select this disk as the backup file location when following the directions in the [Recommended Maintenance of your Databases](https://docs.microsoft.com/en-us/dynamics-gp/installation/database-maintenance-recommendations) article for setting up a Microsoft Dynamics GP maintenance plan using the SQL Server Maintenance Plan Wizard.   
+A new empty data disk can be attached to the Microsoft Azure virtual machine that will be used to store the backup files. The data disk will be visible like any other local disk when setting up your maintenance plan. Select this disk as the backup file location when following the directions in the [Recommended Maintenance of your Databases](/dynamics-gp/installation/database-maintenance-recommendations) article for setting up a Microsoft Dynamics GP maintenance plan using the SQL Server Maintenance Plan Wizard.   
 
 ### Back up Directly to Blob Storage
 
-New functionality in Microsoft SQL Server 2012 SP1 CU2 provides the ability to backup directly to blob storage in Microsoft Azure. The number of data disks that can be attached is limited based on the virtual machine instance size, so using this approach will not require the use of a data disk attached to the virtual machine. There are currently a few restrictions on using this option from within SQL Server Management Studio. Refer to the article [SQL Server Backup and restore with Azure Blob Storage](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service?redirectedfrom=MSDN&view=sql-server-ver16) for additional information.   
+New functionality in Microsoft SQL Server 2012 SP1 CU2 provides the ability to backup directly to blob storage in Microsoft Azure. The number of data disks that can be attached is limited based on the virtual machine instance size, so using this approach will not require the use of a data disk attached to the virtual machine. There are currently a few restrictions on using this option from within SQL Server Management Studio. Refer to the article [SQL Server Backup and restore with Azure Blob Storage](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service?redirectedfrom=MSDN&view=sql-server-ver16) for additional information.   
 
 ### Managing Virtual Machines
 
-[Managing Virtual Machines](https://docs.microsoft.com/en-us/azure/virtual-machines/) provides information about changing the size, monitoring and patching the Microsoft Azure virtual machines.
+[Managing Virtual Machines](/azure/virtual-machines/) provides information about changing the size, monitoring and patching the Microsoft Azure virtual machines.
 
 Microsoft Azure monitors the health of the hardware and network that the virtual machine instance is running on. It will automatically move the VHD when there is a failure. Microsoft Azure does not force operating system updates to running virtual machine instances. After the Microsoft Azure virtual machine instances are deployed, you are responsible for patching, configuring, and maintaining the operating system and other software within your virtual machine instance.    
 Because a Microsoft Azure virtual machine instance is a Hyper-V image, you can use the same processes and tools to manage the virtual machine as you would on premise. You are in complete control of the monitoring and patching process and can use familiar tools like Microsoft System Center and Windows Update to keep the operating system and other software running properly.   
@@ -638,11 +648,11 @@ You may also want to change the virtual machine instance size as usage patterns 
 
 ### Updating Microsoft Dynamics GP
 
-[Updating Microsoft Dynamics GP](https://docs.microsoft.com/en-us/dynamics-gp/upgrade/upgrade-checklist) provides information about updating the Microsoft Dynamics GP components to the latest release. 
+[Updating Microsoft Dynamics GP](/dynamics-gp/upgrade/upgrade-checklist) provides information about updating the Microsoft Dynamics GP components to the latest release. 
 
 Updating Microsoft Dynamics GP on Microsoft Azure uses the same process as on premise deployments. The Microsoft Dynamics GP product documentation and download site provides stepby-step instructions for performing the update. The following is a high-level checklist of the update process for Microsoft Dynamics GP.   
 1.	Review the latest upgrade documentation and plan your upgrade.  
-2.	Download the update from [Product Release Downloads for Microsoft Dynamics GP](https://docs.microsoft.com/en-us/dynamics/s-e/gp/mdgp2018_release_download_378).   
+2.	Download the update from [Product Release Downloads for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_release_download_378).   
 3.	Place the downloaded files in a share accessible by the virtual machines with Microsoft Dynamics GP components installed.  
 4.	Make a backup of the Microsoft Dynamics GP databases.  
 5.	Install the update onto each virtual machine that is running the Microsoft Dynamics GP Desktop Client installation.  
@@ -681,17 +691,17 @@ The following are examples of Microsoft Azure questions or issues. If you are ex
 3.	Errors running Microsoft Azure PowerShell cmdlets.  
 4.	Unable to open a remote desktop connection to a Microsoft Azure Virtual Machine.  
   
-If you have a billing-related question, open the [Microsoft Azure support option](http://www.windowsazure.com/en-us/support/contact/) and select the technical and billing support option. You will need to log in using your Microsoft Account.  Microsoft Azure billing support is provided at no cost.  
+If you have a billing-related question, open the [Microsoft Azure support option](https://www.windowsazure.com/en-us/support/contact/) and select the technical and billing support option. You will need to log in using your Microsoft Account.  Microsoft Azure billing support is provided at no cost.  
   
-If your question is about using Microsoft Azure, you have the following options for obtaining technical support. Refer to the [Microsoft Azure Support Plan](http://www.windowsazure.com/en-us/support/plans/) for available plans and pricing information.  
+If your question is about using Microsoft Azure, you have the following options for obtaining technical support. Refer to the [Microsoft Azure Support Plan](https://www.windowsazure.com/en-us/support/plans/) for available plans and pricing information.  
 
-1.	Online Forums – Open the [Forums](http://www.windowsazure.com/en-us/support/forums/) to obtain assistance with your questions from the Microsoft Azure community.  
+1.	Online Forums – Open the [Forums](https://www.windowsazure.com/en-us/support/forums/) to obtain assistance with your questions from the Microsoft Azure community.  
                                                            
 2.	Service Dashboard - Open the Microsoft Azure support option above and select the Service dashboard option to get the current health status of the Microsoft Azure platform and services.  
   
 3.	Assisted Technical Support - Open the Microsoft Azure support option above, If you are an existing Account holder – sign in using your Microsoft Account and create a support ticket.   
   
-4.	If you have subscriptions that are not active, please contact [Microsoft Support](http://support.microsoft.com/)
+4.	If you have subscriptions that are not active, please contact [Microsoft Support](https://support.microsoft.com/)
 
 **Microsoft Dynamics GP**
 
