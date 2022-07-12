@@ -1,11 +1,7 @@
-- name: Dynamics 365
-  tocHref: /dynamics365/
-  topicHref: /dynamics365/
-  items:
-  - name: Dynamics GP
-    tocHref: /dynamics-gp/
-    topicHref: /dynamics-gp/index
-    items:
-    - name: What's new in Dynamics GP
-      tocHref: /dynamics-gp/whats-new/
-      topicHref: /dynamics-gp/whats-new/introduction
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items: 
+  - name: Dynamics 365
+    tocHref: /dynamics365/
+    topicHref: /dynamics365/

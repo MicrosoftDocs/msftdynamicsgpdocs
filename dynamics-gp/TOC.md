@@ -164,6 +164,7 @@
 ### [System Administration Guide](installation/SystemAdminGuide.md)
 ### [Introduction to Word Templates](installation/word-templates.md)
 ### [Workflow Administrator's Guide](installation/Workflow.md)
+### [Dynamics GP on Azure](installation/MicrosoftAzureandGP.md)
 
 <!--- web components -->
 ### Web components
