@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 06/8/2022
+ms.date: 07/9/2022
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -18,7 +18,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2022 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-The fifth tax update for 2022 replaces all previous tax updates. It includes state tax table changes that take effect May 1, 2022. We recommend that you install this update as soon as you can for the year 2022.
+This is the sixth tax update for 2022 and replaces all previous tax updates. It includes state tax table changes that take effect July 1, 2022. We recommend that you install this update as soon as you can for the year 2022.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -28,6 +28,49 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly)
 
+## Changes in July Round 6 update (Released 7/15/2022)
+
+- Idaho
+- Maryland
+
+### 2022 state or territorial tax changes
+
+The following tax changes are included in this update:
+
+#### Withholding changes for Idaho
+
+The Personal Exemption amount is \$3,417 for all Filing Status.
+
+Withholding rates for taxpayers filing as *MAR*:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 25,900           | 0              | 0%           | 0                  |
+| 25,900      | 29,224           | 0              | 1.00%        | 25,900             |
+| 29,224      | 35,874           | 33             | 3.00%        | 29,224             |
+| 35,874      | 42,522           | 233            | 4.50%        | 35,874             |
+| 42,522      | And Over         | 532            | 6.00%        | 42,522             |
+
+Withholding rates for taxpayers filing as *SINGLE*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|---------|--------------|------------|----------|----------------|
+| 0       | 12,950       | 0          | 0%       | 0              |
+| 12,950  | 14,612       | 0          | 1.00%    | 12,950         |
+| 14,612  | 17,937       | 17         | 3.00%    | 14,612         |
+| 17,937  | 21,261       | 117        | 4.50%    | 17,937         |
+| 21,261  | And Over     | 267        | 6.00%    | 21,261         |
+
+
+
+#### Withholding changes for Maryland
+
+For each Filing Status of Maryland
+•	Standard Deduction Minimum is $1,600 from $1,550
+•	Standard Deduction Maximum is $2,400 from $2,350
+The Standard Deduction Percent remains at 15 percent.
+
+ 
 ## Changes in June Round 5 update (Released 6/8/2022)
 
 - Utah
@@ -1108,7 +1151,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *6/3/2022*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *7/15/2022*.
 
 ## What's next
 
