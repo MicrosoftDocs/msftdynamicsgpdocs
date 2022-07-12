@@ -81,8 +81,8 @@ You can set up different administrators for each subscription as required.
 
 For more information, see [Overview of Subscription Management](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions) in the Azure content.
 
-1.Sign in to the [Azure account management portal](https://portal.azure.com/)  
-2.In the top search type in subscriptions.  
+1. Sign in to the [Azure account management portal](https://portal.azure.com/)  
+2. In the top search, enter *subscriptions*.  
 
     ![Azure sub image 1 again](media/azuregp001.png)
 
@@ -125,7 +125,7 @@ For information about Microsoft’s License Mobility program see:
 **Microsoft Dynamics GP**
 Use the Microsoft Dynamics GP Pricing and Licensing to learn more about the Perpetual Licensing and Service Provider License agreement (SPLA) licensing programs – both of which are supported for on-Azure deployments.  
   
-Consult the [Licensing Guide](<https://download.microsoft.com/download/E/6/8/E685081D-647F-432A-AFF3-20AA95353798/GP> - English.pdf) to improve your understanding of how to license Microsoft Dynamics GP .  
+Consult the [Licensing Guide](https://download.microsoft.com/download/E/6/8/E685081D-647F-432A-AFF3-20AA95353798/GP) (English.pdf) to improve your understanding of how to license Microsoft Dynamics GP .  
 
 **Remote Desktop Services (RDS)**
 There are two ways to license Remote Desktop Services (RDS), formerly known as Terminal Services in Microsoft Azure Virtual Machines.
@@ -415,29 +415,29 @@ If you will be setting up multiple Tenant Services virtual machine instances as 
     1. Open the Microsoft Azure Powershell console and connect to your Microsoft Azure subscription.  
     2. Create an ILB instance for the tenant services cloud service.
 
-          Sample command where GPTS is the cloud service name and GPTSILB is the ILB instance name.  
+        Sample command where GPTS is the cloud service name and GPTSILB is the ILB instance name.  
 
-            ```powershell
-            Add-AzureInternalLoadBalancer -ServiceName GPTS -InternalLoadBalancerName GPTSILB   
-            ```
+        ```powershell
+        Add-AzureInternalLoadBalancer -ServiceName GPTS -InternalLoadBalancerName GPTSILB   
+        ```
 
     3. Add endpoints for both the Tenant Services Management Service port and Tenant Services Discovery Service port. By default, these are 48630 and 48631.
 
-          Sample commands where GPTS1 is the name of the first virtual machine. Run the commands for each virtual machine replacing the name of the virtual machine.  
+        Sample commands where GPTS1 is the name of the first virtual machine. Run the commands for each virtual machine replacing the name of the virtual machine.  
 
-            ```powershell
-            Get-AzureVM –ServiceName GPTS –Name GPTS1 | Add-AzureEndpoint -Name TSDISC - Protocol tcp -LocalPort 48630 -PublicPort 48630 –DefaultProbe -InternalLoadBalancerName GPTSILB | Update-AzureVM   
+        ```powershell
+        Get-AzureVM –ServiceName GPTS –Name GPTS1 | Add-AzureEndpoint -Name TSDISC - Protocol tcp -LocalPort 48630 -PublicPort 48630 –DefaultProbe -InternalLoadBalancerName GPTSILB | Update-AzureVM   
   
-            Get-AzureVM –ServiceName GPTS –Name GPTS1 | Add-AzureEndpoint -Name TSMGMT Protocol tcp -LocalPort 48631 -PublicPort 48630 –DefaultProbe -InternalLoadBalancerName GPTSILB | Update-AzureVM  
-            ```
+        Get-AzureVM –ServiceName GPTS –Name GPTS1 | Add-AzureEndpoint -Name TSMGMT Protocol tcp -LocalPort 48631 -PublicPort 48630 –DefaultProbe -InternalLoadBalancerName GPTSILB | Update-AzureVM  
+        ```
 
     4. Create an A record in DNS for the VIP of the ILB instance. The Tenant Services URL used by other applications will be the FQDN name you used for the A record added to your DNS. Example: `http://TenantServicesLB.gpwithazure.com/`
   
-          If you didn’t specify an IP address during the creation of the ILB instance, use the following command to get the VIP.  
+        If you didn’t specify an IP address during the creation of the ILB instance, use the following command to get the VIP.  
 
-            ```powershell
-             Get-AzureService -ServiceName GPTS | Get-AzureInternalLoadBalancer    
-            ```
+        ```powershell
+        Get-AzureService -ServiceName GPTS | Get-AzureInternalLoadBalancer    
+        ```
 
 ### Configuring the Web Client Web Server
 
