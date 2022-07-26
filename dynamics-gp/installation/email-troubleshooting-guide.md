@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 6/9/2022
+ms.date: 7/26/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -21,13 +21,13 @@ This document can be leveraged to aid in troubleshooting all areas of emailing o
 
 > [!NOTE]
 > Before Microsoft Dynamics GP's October 2020 (18.3 and later) release, Dynamics GP required that both TLS 1.0 and Basic Authentication (no Modern Authentication) be enabled for Exchange and Workflow emailing in Dynamics GP.
-
+>
 > After Microsoft Dynamics GP's October 2020 (18.3 and later) release, Dynamics GP has added the functionality to use both  TLS 1.2 and/or Multi-Factor Authentication (MFA).
 > You do not actually need MFA turned on for your account to use the MFA window in Microsoft Dynamics GP, but it does use Modern Authentication vs Basic Authentication.
 > 
 > If you are still on an older version of Microsoft Dynamics GP, you must enable TLS on your local Exchange server. For more information, see [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth).
 >
-> When Basic Authentication is deprecated (October 1, 2022) you will need to be on a version of Dynamics GP where you can use Modern Authentication (18.3 or later).
+> When Basic Authentication is deprecated (October 1, 2022), you will need to be on a version of Dynamics GP where you can use Modern Authentication (18.3 or later).
 
 We have seen an increase in cases where emails are beginning to fail from within Dynamics GP.  This is especially true for older versions of GP (18.2 and prior) that do not have Modern Authentication for Dynamics GP.  The Exchange team is temporarily disabling Basic Authentication as a way to remind us that a bigger change is coming.
 
@@ -706,14 +706,20 @@ When reviewing a SQL Profile trace, you can see calls (qdCreateSQL procedure) th
 - [Configure MFA in Dynamics GP](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---multi-factor-authentication)
 - [MFA VIDEO LEARNING](https://www.youtube.com/watch?v=81YZ8B6bHPk&t=7s)
 
-> When Basic Authentication is deprecated you will need to be on a version of Dynamics GP where you can use Modern Authentication (18.3 or later).
+> [!NOTE]
+> When Basic Authentication is deprecated, you will need to be on a version of Dynamics GP where you can use Modern Authentication (18.3 or later).
+>
 > You do not actually need MFA turned on for your account to use the MFA window in Microsoft Dyanmics GP, but it does use Modern Authentication.
 
-By turning MFA on in Microsoft Dynamics GP you are then telling the system to use Modern Authentication vs Basic Authentication(depreciated as of October 2022).  If you recently upgraded and set up MFA, we recommend to be on the latest version if you can of Dynamics GP to encompass all the fixes released around MFA.
->
-> MFA is only supported with Exchange.
-> 
-> When you have MFA enabled and you try to use the "SEND TO" option in Microsoft Dynamics GP, it will still prompt for the Exchange login.  MFA is not enabled off the "SEND TO" button/option.  An alternative workaround to this is use the Report Option Windows as MFA is enabled there.  For example if you are printing a Trial Balance,  go to Reports | Financial Trial Balance and create a report option from this window for the report to email and MFA is enabled in all Report Option windows. Many customers use this for posting reports too so it will be a process change to use the Report Options window where MFA is now enabled VS the "SEND TO" option.
+There have been many quality issues fixed within Dynamics GP around Multi-Factor Authentication, so it is recommended to be on 18.4 or later to not run into an issue that is already fixed in the product.
+
+To use modern authentication with Dynamics GP, the Application (Client ID) is required to be entered in the **Company E-Mail Setup** window in Dynamics GP. Get this ID from Azure, where it is located under Tools, Setup, Company, and the choose **Company E-mail Setup**. MFA enabled on each user's Office 365 account is an additional layer of security for an organization but not required by Dynamics GP.
+
+By turning MFA on in Dynamics GP, you are then telling the system to use Modern Authentication vs Basic Authentication (depreciated as of October 2022). If you recently upgraded and set up MFA, we recommend to be on the latest version if you can of Dynamics GP to encompass all the fixes released around MFA.
+
+MFA is only supported with Exchange.
+ 
+When you have MFA enabled and you try to use the "SEND TO" option in Microsoft Dynamics GP, it will still prompt for the Exchange login.  MFA is not enabled off the "SEND TO" button/option.  An alternative workaround to this is use the Report Option Windows as MFA is enabled there.  For example if you are printing a Trial Balance,  go to Reports | Financial Trial Balance and create a report option from this window for the report to email and MFA is enabled in all Report Option windows. Many customers use this for posting reports too so it will be a process change to use the Report Options window where MFA is now enabled VS the "SEND TO" option.
 
 ### Dynamics GP, MFA and Third Party Authentication
 
