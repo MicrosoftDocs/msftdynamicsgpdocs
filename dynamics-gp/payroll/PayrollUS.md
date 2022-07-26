@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 4/27/2022
+ms.date: 7/18/2022
 ---
 
 # Microsoft Dynamics GP U.S. Payroll
@@ -7383,6 +7383,270 @@ summary of your wages and taxes.
 3. Select the quarter-end reports to print. For information about each type of report, refer to *Chapter 15, "Payroll reports."*
 
 4. Choose Process. The reports you've marked will be printed.
+
+**Detailed information on Quarterly 941 report**
+
+Information on the 941 is generated using information found in the following tables in GP:
+UPR00900	Payroll Employee Summary 
+UPR00901	Payroll Employee Tips Summary 
+UPR30200	Tax Liability File
+UPR30300	Payroll Transaction History (Detail)
+UPR00400	Payroll Pay Code Master
+UPR00500	Payroll Deduction Master
+UPR00600	Payroll Benefit Master
+
+Here is a detailed description of how each line is calculated on 941 Report:
+
+*LINE 1: NUMBER OF EMPLOYEES *
+Line 1 includes both active and inactive employees. Law requires that the 941 report include the total number of employees for all quarters. 
+
+The number of employees is based on the number of employees that are paid during the period for which you are reporting. Because Microsoft Dynamics GP does not maintain a daily count of employees, an approximation is all that can be completed. 
+
+All in all, if the employee has wages in the UPR00900/UPR00901 for the employee during the time frame for which the report is generated: the employee will be included in the employee count.
+
+The count also does not include employees that have a Household Employee tax status. 
+
+*LINE 2: WAGES AND TIPS, AND OTHER COMPENSATION *
+This line shows Total Federal Wages for all employees.
+The calculation for Line 2 is as follows:
+First the amount in the Gross Wages field in the Employee Summary window and the amounts in the Reported Tips and Charged Tips fields in the Employee Tips Summary window are added together.
+
+Next, Taxable Pension Wages (UPR30300) are subtracted and Taxable Benefits (UPR30300) are added.
+
+Finally, Microsoft Dynamics GP reduces the total by any Tax Sheltered Deductions (UPR30300) to come up with the amount you see in Line 2.
+
+Here is an example of the calculation:
+
+Total Federal Wages = Gross Wages + Reported Tips + Charged Tips – Taxable Pension Wages + Taxable Benefits – Tax Sheltered Deductions
+
+
+Fields used to calculate Line 2 on the 941 in GP
+
++	Gross Wages	            |Employee Summary	        | UPR00900  | Cards-Payroll-Summary
++	Reported Tips	        |Employee Tips Summary	    | UPR00901  | Cards-Payroll-Summary-Tips
++	Charged Tips	        |Employee Tips Summary	    | UPR00901  | Cards-Payroll-Summary-Tips
+-	Taxable Pension Wages	|Payroll Transaction Inquiry| UPR00400  | Cards-Payroll-Paycode
+-	                                                    | UPR30300  | Cards-Payroll-Paycode-Summary
++	Taxable Benefits	    |Payroll Transaction Inquiry| UPR00600  | Cards-Payroll-Benefits
++                                                       | UPR30300  | Cards-Payroll-Benefits-Summary
+-	Tax Sheltered Deductions|Payroll Transaction Inquiry| UPR00500  | Cards-Payroll-Deduction
+-	                                                    | UPR30300  | Cards-Payroll-Deduction-Summary
+
+*Important Note: Non-Taxable Pension Wages will be included in line 2 of the 941 in Microsoft Dynamics GP.
+
+If you have an employee with Non-Taxable Pension Wages (PAYTYPE of 11 in the UPR00400), and you do not want them included in line 2 of the 941: You can reduce ‘Gross Wages’ for the employee in the Employee Summary window by the amount of the overstated non-taxable pension wages (Cards >> Payroll >> Summary >> Reduce Gross Wages field) to keep them from being included on line 2.
+
+*LINE 3: TOTAL INCOME TAX WITHHELD FROM WAGES, TIPS, AND OTHER COMPENSATION*
+Microsoft Dynamics GP sums the amount in the Federal Tax Withheld field in the Employee Summary window for all employees for all applicable months.
+
+This amount does not include tax on pension pay types. 
+
+Fields used to calculate Line 3 on the 941 in GP
+
++	Federal Tax Withholding	 | Employee Summary	  | UPR00900  |  Cards-Payroll-Summary
+
+*LINE 4 (TRUE OR FALSE):*
+If wages, tips and other compensation are NOT subject to Social Security or Medicare Tax, an X WILL be displayed on this line. 
+If wages, tips and other compensation ARE subject to Social Security or Medicare Tax, there WILL NOT be an X displayed on this line. 
+
+Microsoft Dynamics GP will look at the UPR00400 (Pay Code Setup) and UPR30300 (Payroll Transaction History) tables to determine whether or not there are wages subject to Social Security or Medicare Tax.
+
+1 = True
+0 = False |	Subject To Federal Tax	Employee Pay Code Maintenance |	UPR00400
+
+*LINE 5: TAXABLE SOCIAL SECURITY AND MEDICARE WAGES AND TIPS *
+*Line 5a: Taxable Social Security Wages *
+
+The calculation for Line 5a is as follows:
+
+The FICA Social Security Wages amounts are summed from the Employee Summary window for each applicable month. 
+
+Next, the total FICA Social Security Wages field for each applicable month is multiplied by 12.4 %. (Employee + Employer share).   
+
+Fields used to Calculate Line 5a on the 941 in GP
+
+	
++	FICA Social Security Wages	 |   Employee Summary 	 |   UPR00900   | Cards-Payroll-Summary
+
+Multiplied by total tax rate Percentage
+
+Currently: 12.4 % 	Employer & Employee FICA SS Tax Rate 
+
+Found in Payroll Tax Tables | Tools | Setup | System | Payroll Tax
+Codes EFICS (Employer) FICAS (Employee)
+
+*Line 5b: Taxable Social Security Tips *
+
+The calculation for Line 5b is as follows:
+
+Microsoft Dynamics GP first sums the FICA Social Security Tips fields for all applicable employees in the Employee Tips Summary Window for each month included on the report. This is the sum of Reported Tips and Charged Tips that are subject to FICA Social Security tax.
+Next, the sum of the FICA Social Security Tips are multiplied by 12.4 %. (Employee + Employer share).   
+
+Fields used to calculate Line 5b on the 941 in GP
+
++	FICA Social Security Tips (array)	 | Employee Tips Summary 	| UPR00901
+
+Multiplied by total tax rate Percentage
+
+*Line 5c: Taxable Medicare Wages and Tips *
+
+The calculation for Line 5c is as follows:
+
+This line reflects the amount in the FICA Medicare Wages field in the Employee Summary window plus the amount in the FICA Medicare Tips fields in the Employee Tips Summary window summed for each employee and each applicable month. 
+
+Next, the summed amount is multiplied by the employee and employer FICA Medicare Tax Rate).   
+
+
+Fields used to Calculate Line 5c on the 941 in GP
+
++	FICA Medicare Wages (array)	        | Employee Summary      | 	UPR00900
++	FICA Medicare Tips Wages (array)	| Employee Tips Summary |   UPR00901
+
+Multiplied by total tax rate Percentage 2.9% up to $200,000.
+
+Found in Payroll Tax Tables | Tools | Setup | System | Payroll Tax
+Codes EFICM (Employer) FICAM (Employee)
+
+*Line 5d: Taxable Wages & Tips subject to Additional Medicare Tax Withholding*
+
+The calculation for Line 5d is as follows:
+
+Microsoft Dynamics GP sums FICA Medicare Wages in the Employee Summary window (UPR00900) and the FICA Medicare Tips fields in the Employee Tips Summary window (UPR00901) for each month of the year for wages over $200,000.
+
+Microsoft Dynamics GP then multiplies that by .9% for the Employee only.
+
+Calculation for Line 5d on the 941 in GP
+
+
++	FICA Medicare Wages (array)	    | Employee Summary       |    	UPR00900
++	FICA Medicare Tips Wages (array)	Employee Tips Summary|  	UPR00901
+Multiplied by total tax rate Percentage
+
+Additional .9% over 200,000
+	Employee FICA Med Tax Rate 
+
+Currently 2.35 (1.45 + .9) for employee wages over 200,000	
+
+*Line 5e: Total Social Security and Medicare Taxes *
+
+Line 5e sums the amounts in Line 5a through Line 5d:
+
+Calculation for Line 5e on the 941 in GP
+
++	Line 5a	Taxable Social Security Wages
++	Line 5b	Taxable Social Security Tips
++	Line 5c	Taxable Medicare Wages and Tips
++	Line 5d	Taxable Wages and Tips subject to Additional Tax Withholding
+
+*LINE 6: TOTAL TAXES BEFORE ADJUSTMENTS *
+Line 6 sums the amounts in Line 3 and Line 5e:
+
+Calculation for Line 6 on the 941 in GP
+
++	Line 3	Total Income Tax Withheld from wages, tips, and other compensation
++	Line 5e	Sum of amounts in Line 5a through 5d
+
+*LINE 7: CURRENT QUARTER’S FRACTIONS OF CENTS *
+The calculation for Line 7 is as follows:
+First Microsoft Dynamics GP finds the Actual Social Security Tax Withheld as follows: 
+
+GP sums the amounts in the FICA Soc Sec Tax Withheld field and the FICA Medicare Tax Withheld field for each employee in each applicable month in the UPR00900 table.  
+
+Next Microsoft Dynamics GP adds the Employer FICA Soc Sec Tax Withheld field and the FICA Medicare Tax Withheld EFIC Soc Sec W/H field for each payroll that is processed in the UPR30200 table.
+
+Finally, the Actual Social Security Tax Withheld is subtracted line 5e (Total Social Security and Medicare Taxes).
+
+Fractions of Cents = Total Social Security and Medicare Taxes – Actual Social Security Tax Withheld
+
+Calculation for Line 7 fractions of cents on the 941 in GP
+
++	FICA Social Security Tax Withheld Liability for quarter	    | Payroll Edit Federal Tax Liabilities	UPR30200
++	FICA Medicare Withheld Tax Liability for quarter	        | Payroll Edit Federal Tax Liabilities	UPR30200
++	Employer FICA Social Security Tax Withheld Liability        | Payroll Edit Federal Tax Liabilities	UPR30200
++	Employer FICA Medicare Withheld Tax Liability for quarter 	| Payroll Edit Federal Tax Liabilities	UPR30200
+Subtracted from	Line 5e	Total Social Security and Medicare Taxes
+
+
+When the amount is a positive: GP is telling you that you withheld more than expected (the amount is amount over and above what should have been withheld).
+
+When the amount is a negative: GP is telling you that you withheld less than expected (not enough was withheld either from the employee or the employer compared to wages).
+
+*LINE 9: CURRENT QUARTER’S ADJUSTMENTS FOR TIPS AND GROUP-TERM LIFE INSURANCE *
+
+Line 9 is the sum of the Uncollected FICA Social Security and Uncollected FICA Medicare fields in the Employee Tips Summary window (UPR00901) for all employees in each applicable month. 
+
+The result is displayed as a negative number.
+
+
+Calculation for Line 9 on the 941 in GP
+
++	Uncollected FICA Social Security (array)	| Employee Tips Summary  |	UPR00901
++	Uncollected FICA Medicare (array)	        | Employee Tips Summary  |	UPR00901
+
+
+*LINE 10 : TOTAL TAXES AFTER ADJUSTMENTS *
+Line 10 sums the amounts in Line 6, Line 7, and line 9:
+
+Calculation for Line 10 on the 941 in GP
+
++	Line 6 – Total taxes before adjustments	Sum of Line 3 and Line 5e
+(Total Income Tax Withheld from wages, tips and other compensation + Total Social Security and Medicare Taxes)
+
++	Line 7	Current quarter’s fraction of cents 
+
++	Line 9	Current quarter’s adjustments for tips and group term life insurance (usually negative)
+
+*LINE 14: SEMIWEEKLY DEPOSITORS: COMPLETE SCHEDULE B*
+Informational for Semiweekly Depositors
+
+*LINE 14: TOTAL LIABILITY MONTH 1*
+The calculation for line 14 total liability for month 1 is as follows:
+
+Sum of the Federal Tax Withheld Liability, the FICA Social Security Tax Withheld Liability, the FICA Medicare Withheld Tax Liability, the Employer FICA Social Security Tax Withheld Liability, and the Employer FICA Medicare Withheld Tax Liability fields from the Payroll Tax Liability Table (UPR30200) for the 1st month of the quarter.
+
+
+Calculation for Line 14 Liability Month 1 on the 941 in GP
+
++	Federal Tax Withheld Liability for 1st month in Quarter	                    | Payroll Edit Federal Tax Liabilities	UPR30200
++	FICA Social Security Tax Withheld Liability for 1st month in Quarter        | Payroll Edit Federal Tax Liabilities	UPR30200
++	FICA Medicare Withheld Tax Liability for 1st month in Quarter	            | Payroll Edit Federal Tax Liabilities	UPR30200
++	Employer FICA Social Security Tax Withheld Liability for 1st month Quarter	| Payroll Edit Federal Tax Liabilities	UPR30200
++	Employer FICA Medicare Withheld Tax Liability for 1st month in Quarter  	| Payroll Edit Federal Tax Liabilities	UPR30200
+
+
+*LINE 14: TOTAL LIABILITY MONTH 2*
+The calculation for line 14 total liability for month 2 is as follows:
+
+Sum of the Federal Tax Withheld Liability, the FICA Social Security Tax Withheld Liability, the FICA Medicare Withheld Tax Liability, the Employer FICA Social Security Tax Withheld Liability, and the Employer FICA Medicare Withheld Tax Liability fields from the Payroll Tax Liability Table (UPR30200) for the second month of the quarter.
+
+Calculation for Line 14 Liability Month 2 on the 941 in GP
+
++	Federal Tax Withheld Liability for 2nd month in Quarter                 	| Payroll Edit Federal Tax Liabilities	UPR30200
++	FICA Social Security Tax Withheld Liability for 2nd month in Quarter	    | Payroll Edit Federal Tax Liabilities	UPR30200
++	FICA Medicare Withheld Tax Liability for 2nd month in Quarter	            | Payroll Edit Federal Tax Liabilities	UPR30200
++	Employer FICA Social Security Tax Withheld Liability for 2nd month Quarter	| Payroll Edit Federal Tax Liabilities	UPR30200
++	Employer FICA Medicare Withheld Tax Liability for 2nd month in Quarter      | Payroll Edit Federal Tax Liabilities	UPR30200
+
+*LINE 14: TOTAL LIABILITY MONTH 3 *
+The calculation for line 14 total liability for month 3 is as follows:
+
+Sum of the Federal Tax Withheld Liability, the FICA Social Security Tax Withheld Liability, the FICA Medicare Withheld Tax Liability, the Employer FICA Social Security Tax Withheld Liability, and the Employer FICA Medicare Withheld Tax Liability fields from the Payroll Tax Liability Table (UPR30200) for the third month of the quarter.
+
++	Federal Tax Withheld Liability for 3rd month in Quarter                 	| Payroll Edit Federal Tax Liabilities	UPR30200
++	FICA Social Security Tax Withheld Liability for 3rd month in Quarter	    | Payroll Edit Federal Tax Liabilities	UPR30200
++	FICA Medicare Withheld Tax Liability for 3rd month in Quarter	            | Payroll Edit Federal Tax Liabilities	UPR30200
++	Employer FICA Social Security Tax Withheld Liability for 3rd month Quarter	| Payroll Edit Federal Tax Liabilities	UPR30200
++	Employer FICA Medicare Withheld Tax Liability for 3rd month in Quarter      | Payroll Edit Federal Tax Liabilities	UPR30200
+
+*LINE 14: TOTAL*
+The calculation for line 14 Total is the sum of Line 14 total liability month 1, Line 14 total liability month 2, and Line 14 total liability month 3:
+
+Calculation for Line 14 Total on the 941 in GP
+
++	Line 14 total liability month 1
++	Line 14 total liability month 2
++	Line 14 total liability month 3
+
 
 #### Closing a year
 
