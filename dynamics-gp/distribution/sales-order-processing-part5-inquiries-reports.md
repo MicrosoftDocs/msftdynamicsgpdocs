@@ -82,7 +82,7 @@ You can view information as it was originally entered by clicking on link fields
 1. Open the Salesperson Inquiry window.
     (Sales \>\> Inquiry \>\> Salesperson)
 
-    ![SOage189.jpg](media/SOage189.jpg)
+    ![Screenshot of window, showing the Sales Order processing model selected in the module dropdown menu.](media/SOage189.jpg)
 
 2. Select the Sales Order Processing module.
 
