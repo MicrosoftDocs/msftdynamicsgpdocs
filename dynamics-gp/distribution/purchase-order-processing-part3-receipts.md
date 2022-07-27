@@ -1184,7 +1184,7 @@ You also can enter a lot split quantity, which is the breakpoint for creating se
 
 3. Choose Lot Numbers from the Track drop-down list, then choose the Track expansion button to open the Item Serial/Lot Number Definition window.
 
-    ![Screenshot of the Item Serial slash Lot Number Definition window.](media/POage141.jpg)
+    ![Screenshot of the Item Serial slash Lot Number Definition window, which shows 0 entered into the lot split quantity.](media/POage141.jpg)
 
     Information for the item you selected, including the last lot number that was generated and any current mask information, will appear.
 
