@@ -962,7 +962,7 @@ The Deposit Totals window displays the number of checks, credit cards, and cash 
 
 You entered a cash receipt total of \$117.65. The amount of \$117.00 appears in the Currency Total Amounts field and \$0.65 appears in the Coin Total Amounts field, as shown in the following table:
 
-|Item      |Number of   | Total amounts       |
+|Item      |Number   | Total amounts       |
 |---------------|---|---------------------|
 | Checks        | 4 | \$28,000.00         |
 | Credit Cards  | 1 | \$52.00             |
@@ -976,7 +976,7 @@ If Multicurrency Management is registered, you can browse through this informati
 
 You entered a cash receipt total of \$117.65. The actual coin amount is \$16.65, and the total for the paper money is \$101.00. If you enter \$101.00 in the Currency Total Amounts field, the coin amount is adjusted to display \$16.65, as shown in the following table.
 
-|Item     | Number of  | Total amounts       |
+|Item     | Number | Total amounts       |
 |---------------|---|---------------------|
 | Checks        | 4 | \$28,000.00         |
 | Credit Cards  | 1 | \$52.00             |
