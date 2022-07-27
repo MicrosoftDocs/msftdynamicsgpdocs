@@ -405,19 +405,19 @@ The sorting option you select determines the order in which objects appear in th
 
 - **PO/Items** Objects in the tree view and scrolling window are sorted first by purchase order number, then by the order items were entered on the purchase orders.
 
-    ![Screenshot of the PO slash Items object sorting window.](media/POage108.jpg)
+    ![Screenshot of the PO/Items object sorting window.](media/POage108.jpg)
 
 - **Item Number/PO** Objects in the tree view and scrolling window are sorted first by item number, then by purchase order number under each item.
 
-    ![Screenshot of the Item Number slash PO object sorting window.](media/POage110.jpg)
+    ![Screenshot of the Item Number/PO object sorting window.](media/POage110.jpg)
 
 - **Site/PO/Item Number** Objects in the tree view and scrolling window are sorted first by site, then by purchase order number under each site, then by item number under each purchase order.
 
-    ![screenshot of the Site slash PO slash Item Number object sorting window.](media/POage112.jpg)
+    ![screenshot of the Site/PO/Item Number object sorting window.](media/POage112.jpg)
 
 - **Site/Item Number/PO** Objects in the tree view and scrolling window are sorted first by site, then by item number under each site, then by purchase order number under each item.
 
-    ![Screenshot of the Site slash Item Number slash PO object sorting window.](media/POage114.jpg)
+    ![Screenshot of the Site/Item Number/PO object sorting window.](media/POage114.jpg)
 
 ### Receiving items from multiple purchase orders
 
@@ -1184,7 +1184,7 @@ You also can enter a lot split quantity, which is the breakpoint for creating se
 
 3. Choose Lot Numbers from the Track drop-down list, then choose the Track expansion button to open the Item Serial/Lot Number Definition window.
 
-    ![Screenshot of the Item Serial slash Lot Number Definition window, which shows 0 entered into the lot split quantity.](media/POage141.jpg)
+    ![Screenshot of the Item Serial/Lot Number Definition window, which shows 0 entered into the lot split quantity.](media/POage141.jpg)
 
     Information for the item you selected, including the last lot number that was generated and any current mask information, will appear.
 
@@ -1347,7 +1347,7 @@ Use the Item Serial/Lot Number Definition window to set up serial number masks f
 
 3. Choose Serial Numbers from the Track drop-down list, then choose the Track expansion button to open the Item Serial/Lot Number Definition window.
 
-    ![Screenshot of the Item Serial slash Lot Number Definition window.](media/POage147.jpg)
+    ![Screenshot of the Item Serial/Lot Number Definition window.](media/POage147.jpg)
 
     Information for the item you selected, including the last serial number that was generated and any current mask information, will appear.
 
@@ -1956,19 +1956,19 @@ The sorting option you select determines the order in which objects appear in th
 
 **PO/Items** Objects in the tree view and scrolling window are sorted first by purchase order number, then by the order items were entered on the purchase orders.
 
-![Screenshot of the PO slash Items sorting option window.](media/POage164.jpg)
+![Screenshot of the PO/Items sorting option window.](media/POage164.jpg)
 
 **Item Number/PO** Objects in the tree view and scrolling window are sorted first by item number, then by purchase order number under each item.
 
-![Screenshot of the Item Number slash PO sorting option window.](media/POage166.jpg)
+![Screenshot of the Item Number/PO sorting option window.](media/POage166.jpg)
 
 **Site/PO/Item Number** Objects in the tree view and scrolling window are sorted first by site, then by purchase order number under each site, then by item number under each purchase order.
 
-![Screenshot of the Site slash PO slash Item Number sorting option window.](media/POage168.jpg)
+![Screenshot of the Site/PO/Item Number sorting option window.](media/POage168.jpg)
 
 **Site/Item Number/PO** Objects in the tree view and scrolling window are sorted first by site, then by item number under each site, then by purchase order number under each item.
 
-![Screenshot of the Site slash Item Number slash PO sorting option window.](media/POage170.jpg)
+![Screenshot of the Site/Item Number/PO sorting option window.](media/POage170.jpg)
 
 ### Invoicing items from multiple purchase orders
 
