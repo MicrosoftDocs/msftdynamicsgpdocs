@@ -168,7 +168,7 @@ Use the Sales Order Processing Setup window to set up preferences, default entri
 1. Open the Sales Order Processing Setup window.
     (Sales \>\> Setup \>\> Sales Order Processing)
 
-    ![screenshot](media/SOage010.jpg)
+    ![Screenshot of window, showing an example set of sales order information.](media/SOage010.jpg)
 
 2. Specify how Sales Order Processing transactions will be tracked and displayed during transaction entry. You can select the following options.
 
@@ -261,7 +261,7 @@ You can change the non-inventoried currency decimal places for a currency at any
 1. Open the Sales Non-Inventoried Currency Decimals Setup window.
     (Sales \>\> Setup \>\> Sales Order Processing \>\> Currency expansion button)
 
-    ![screenshot](media/SOage017.jpg)
+    ![Screenshot of window, showing USA entered as the currency ID, US dollars as the description, and two as the amount of currency decimals.](media/SOage017.jpg)
 
 2. Enter or select the number of decimal places to use when displaying currency amounts for non-inventoried items.
 
@@ -284,7 +284,7 @@ If you're using advanced picking, you can select to sort individual picking tick
 1. Open the Sales Order Processing Setup Options window.
     (Sales \>\> Setup \>\> Sales Order Processing \>\> Options button)
 
-    ![screenshot](media/SOage019.jpg)
+    ![Screenshot of window, showing example tax entry options for a sales order.](media/SOage019.jpg)
 
 2. Mark the type of tax calculation to use on sales documents.
 
@@ -407,7 +407,7 @@ Use the Sales Document Numbers Setup window to enter document numbers, codes, an
 1. Open the Sales Document Numbers Setup window.
     (Sales \>\> Setup \>\> Sales Order Processing \>\> Numbers button)
 
-    ![screenshot](media/SOage022.jpg)
+    ![Screenshot of window, showing example code entries for quote, order, fulfillment order, return, back order, packing slip, and picking ticket.](media/SOage022.jpg)
 
 2. Enter or accept the default document codes, next numbers, and printing formats for quotes, orders, fulfillment orders/invoices, returns, and back orders.
 
@@ -455,7 +455,7 @@ Use the Sales User-Defined Fields Setup window to enter names for up to ten user
 1. Open the Sales User-Defined Fields Setup window.
     (Sales \>\> Setup \>\> Sales Order Processing \>\> User-Defined button)
 
-    ![screenshot](media/SOage026.jpg)
+    ![Screenshot of window, showing one entry in list one, and entries in text field one and text field 2.](media/SOage026.jpg)
 
 2. Enter names for as many as three list fields. Choose the expansion button next to each this window to enter values for each list.
 
@@ -496,7 +496,7 @@ You can set up passwords to further restrict processing. The user must enter the
 1. Open the Sales Process Holds Setup window.
    (Sales \>\> Setup \>\> Process Holds)
 
-    ![screenshot](media/SOage028.jpg)
+    ![Screenshot of sales process holds setup window without any entries.](media/SOage028.jpg)
 
 2. Enter a name and description for a process hold. You can assign a password to remove this process hold.
 
@@ -536,7 +536,7 @@ You can use either standard or extended pricing. You must choose one pricing sys
 1. Open the Enable Extended Pricing window.
     (Sales \>\> Setup \>\> Extended Pricing)
 
-    ![screenshot](media/SOage030.jpg)
+    ![Screenshot of window, showing fabrikram, inc entered as the company name and the enable standard pricing option selected.](media/SOage030.jpg)
 
 2. Select whether to use standard or extended pricing. Standard pricing is the default method.
 
@@ -555,7 +555,7 @@ You also can indicate the character of the bin number to create a page break on.
 1. Open the Advanced Picking Setup window.
     (Sales \>\> Setup \>\> Advanced Picking Setup)
 
-    ![screenshot](media/SOage032.jpg)
+    ![Screenshot of window, showing zero entered in the page break dropdown option.](media/SOage032.jpg)
 
 2. Enter or select a site ID.
 
@@ -617,7 +617,7 @@ You can choose whether to use a quote ID for repeating quotes. A repeating quote
 1. Open the Sales Quote Setup window.
     (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Quote option)
 
-    ![screenshot](media/SOage034.jpg)
+    ![Screenshot of window, showing the allow repeating documents box checked.](media/SOage034.jpg)
 
 2. Enter a Quote ID and, if you want this quote ID to have a unique document numbering system, enter a Quote ID Next Number.
 
@@ -678,7 +678,7 @@ You can choose whether to use an order ID for repeating orders. A repeating orde
 1. Open the Sales Order Setup window.
     (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Order button)
 
-    ![screenshot](media/SOage036.jpg)
+    ![Screenshot of window, showing the allow all back ordered items to print on invoice box checked.](media/SOage036.jpg)
 
 2. Enter an Order ID and, if you want this order ID to have a unique document numbering system, enter an Order ID Next Number.
 
@@ -764,7 +764,7 @@ If you're not using sales fulfillment workflow, the window name will be Sales In
 1. Open the Sales Fulfillment Order/Invoice Setup window.
     (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Fulfillment Order/Invoice option)
 
-    ![screenshot](media/SOage039.jpg)
+    ![Screenshot of sales window, showing empty fulfillment order invoice ID fields.](media/SOage039.jpg)
 
 2. Enter a fulfillment order/invoice ID. If the ID should have a unique document numbering system, enter a Fulfillment Order/Invoice ID Next Number.
 
@@ -837,7 +837,7 @@ Use the Sales Back Order Setup window to set up and customize an unlimited numbe
 1. Open the Sales Back Order Setup window.
     (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Back Order option)
 
-    ![screenshot](media/SOage041.jpg)
+    ![Screenshot of window, with empty back order ID, comment ID, and back order ID next number fields.](media/SOage041.jpg)
 
 2. Enter a Back Order ID and, if you want this order ID to have a unique document numbering system, enter a Back Order ID Next Number.
 
@@ -892,7 +892,7 @@ If you're using sales fulfillment workflow, the window name will be Sales Fulfil
 1. Open the Sales Invoice Setup window.
     (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Invoice option)
 
-    ![screenshot](media/SOage043.jpg)
+    ![Screenshot of Sales Invoice Setup window, showing input options before entries have been made.](media/SOage043.jpg)
 
 2. Enter an Invoice ID and, if you want this invoice ID to have a unique document numbering system, enter an Invoice ID Next Number.
 
@@ -957,7 +957,7 @@ Use the Sales Return Setup window to set up and customize an unlimited number of
 1. Open the Sales Return Setup window.
     (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Return option)
 
-    ![screenshot](media/SOage045.jpg)
+    ![Screenshot of Sales Return Setup window, showing input options before entries have been made.](media/SOage045.jpg)
 
 2. Enter a Return ID and, if you want this return ID to have a unique document numbering system, enter a Return ID Next Number.
 
@@ -1009,7 +1009,7 @@ For more information about assigning a process hold to an individual document, s
 1. Open the Sales Process Holds Assignment window.
     (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Quote, Order, Back Order, Invoice, or Return option \>\> Holds button)
 
-    ![screenshot](media/SOage048.jpg)
+    ![Screenshot of window, showing example processes in the available process holds field. The selected process holds field is empty.](media/SOage048.jpg)
 
 2. Select a hold from the Available Process Holds list and choose Insert.
 
@@ -1084,7 +1084,7 @@ Setup window to activate workflow for sales. Use the Sales Fulfillment Document 
 
 4. Choose Workflow to open the Sales Fulfillment Document Workflow Setup window.
 
-    ![screenshot](media/SOage050.jpg)
+    ![Screenshot of window, showing all status options marked active.](media/SOage050.jpg)
 
 5. To exclude a document status from the workflow process, unmark the Active option for the status. To change the status descriptions, refer to *Changing fulfillment workflow document status descriptions*.
 
@@ -1101,7 +1101,7 @@ The workflow process that's used to move from one document status to another won
 1. Open the Sales Fulfillment Workflow Setup window.
     (Sales \>\> Setup \>\> Fulfillment Workflow Setup)
 
-    ![screenshot](media/SOage052.jpg)
+    ![Screenshot of window, showing the top description selected.](media/SOage052.jpg)
 
 2. You can select the description text and change it.
 
@@ -1117,7 +1117,7 @@ You can assign the instruction IDs to a customer record and item record in the P
 
 1. Open the Picking Instruction Maintenance window. (Sales \>\> Cards \>\> Picking Instructions)
 
-    ![screenshot](media/SOage054.jpg)
+    ![Screenshot of window, showing an instruction that says pick black items for this customer.](media/SOage054.jpg)
 
 2. Enter an ID to describe the picking instructions you're creating.
 
@@ -1161,7 +1161,7 @@ The following table lists the settings that can't be changed if there are unpost
 1. Open the setup window for the document type.
     (Sales\>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Quote, Order, Back Order, Fulfillment Order/Invoice, or Return option)
 
-    ![screenshot](media/SOage036.jpg)
+    ![Screenshot of Sales Order Setup window, showing input options before entries have been made.](media/SOage036.jpg)
 
 2. Select the document ID you want to modify and make changes as needed.
 
@@ -1191,7 +1191,7 @@ For information about setting up process holds, see *Setting up process holds*. 
 1. Open the Sales Process Holds Assignment window.
     (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Quote, Order, Back Order, Fulfillment Order/Invoice, or Return option \>\> Holds button)
 
-    ![screenshot](media/SOage048.jpg)
+    ![Screenshot of window that shows example processes in the available process holds field. The selected process holds field is empty.](media/SOage048.jpg)
 
 2. Select a process hold from the Selected Process Holds list and choose Remove.
 
@@ -1224,7 +1224,7 @@ You also can use this window to set up substitute item numbers to sell an item i
 1. Open the Customer Item Maintenance window.
    (Sales \>\> Cards \>\> Customer Items)
 
-    ![screenshot](media/SOage057.jpg)
+    ![Screenshot of Customer Item Maintenance window, showing input options before entries have been made.](media/SOage057.jpg)
 
 2. Enter or select a customer and an item number.
 
@@ -1249,7 +1249,7 @@ Use the Remove Customer/Item Substitutes window to remove customer/item substitu
 1. Open the Remove Customer/Item Substitutes window.
    (Sales \>\> Utilities \>\> Remove Substitute Items)
 
-    ![screenshot](media/SOage059.jpg)
+    ![Screenshot of window where an ending effective date on or before entry can be made.](media/SOage059.jpg)
 
 2. Enter the date to remove customer/item substitute records that expired on or earlier than the date.
 
