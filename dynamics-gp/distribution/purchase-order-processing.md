@@ -470,7 +470,7 @@ If you are using Project Accounting, you can't generate purchase orders for proj
 1.  Open the Purchase Order Processing Setup Options window.
     (Purchasing \>\> Setup \>\> Purchase Order Processing \>\> Options button)
 
-![Screenshot of the Purchase Order Processing Setup Options window.](media/POage024.jpg)
+![Screenshot of the Purchase Order Processing Setup Options window as it appears by default.](media/POage024.jpg)
 
 2.  Select a default order method for automatically generated purchase orders.
 

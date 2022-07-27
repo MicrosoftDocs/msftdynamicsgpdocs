@@ -158,7 +158,7 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 
 2. In the New group or its overflow menu, choose Shipment and Invoice Receipt to open the Receivings Transaction Entry window.
 
-    ![Screenshot of the Receivings Transaction Entry window.](media/POage102.jpg)
+    ![Screenshot of the Receivings Transaction Entry window as it appears by default.](media/POage102.jpg)
 
 3. Enter a vendor document number.
 
@@ -523,7 +523,7 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 2. In the New group or its overflow menu, choose In-Transit Inventory to open the Receivings Transaction Entry window.
 
-    ![Screenshot of the Receivings Transaction Entry window.](media/POage118.jpg)
+    ![Screenshot of the Receivings Transaction Entry window, which shows the window's default appearance.](media/POage118.jpg)
 
 3. Enter the receipt date.
 
@@ -1184,7 +1184,7 @@ You also can enter a lot split quantity, which is the breakpoint for creating se
 
 3. Choose Lot Numbers from the Track drop-down list, then choose the Track expansion button to open the Item Serial/Lot Number Definition window.
 
-    ![Screenshot of the Receivings Line Item Tax Detail Entry window.](media/POage141.jpg)
+    ![Screenshot of the Item Serial slash Lot Number Definition window.](media/POage141.jpg)
 
     Information for the item you selected, including the last lot number that was generated and any current mask information, will appear.
 
@@ -2201,7 +2201,7 @@ If you want match shipments for blanket purchase orders to an invoice receipt, s
 
 5. Choose Yes and the Match Shipments to Invoice window will open, where you can choose which line items can be matched. (If you choose No, the line items will be matched in shipment receipt number order.)
 
-    ![Screenshot of the Match Shipments to Invoice window.](media/POage174.jpg)
+    ![Screenshot of the Match Shipments to Invoice window, where you can choose which line items can be matched.](media/POage174.jpg)
 
     Currency amounts in this window may be displayed in functional or originating currency, depending on the view selected in the Purchasing Invoice Entry window.
 
@@ -3011,7 +3011,7 @@ If you are using landed costs, you can use the Match Shipments to Invoice window
 
 5. Choose the Match Shipments to Invoice expansion button to open the Match Shipments to Invoice window.
 
-    ![Screenshot of the Match Shipments to Invoice window.](media/POage186.jpg)
+    ![Screenshot of the Match Shipments to Invoice window, which shows the window's default appearance.](media/POage186.jpg)
 
     Currency amounts in this window may be displayed in functional or originating currency, depending on the view selected in the Purchasing Invoice Entry window.
 
