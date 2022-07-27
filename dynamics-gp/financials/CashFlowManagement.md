@@ -323,7 +323,7 @@ and the balance to date is shown in black.
 1. Open the Cash Flow Calendar window. (Inquiry \>\> Financial \>\> Cash Flow
     Calendar)
 
-![A screenshot](media/48da5b4904ef0a78eb1e3da2e1fa1c16.jpg)
+![Screenshot shows the Cash Flow Calendar window.](media/48da5b4904ef0a78eb1e3da2e1fa1c16.jpg)
 
 1. To view the cash flow forecast for a different month, use the Go To button
     on the window toolbar.
@@ -365,7 +365,7 @@ reports and inquiries for supporting or original documents.
 1. Open the Cash Flow Explorer. (Inquiry \>\> Financial \>\> Cash Flow
     Explorer)
 
-    ![screenshot](media/9a5376f5aaa58e0cde3bb0e122bc6bcf.jpg)
+    ![Screenshot shows the Cash Flow Explorer.](media/9a5376f5aaa58e0cde3bb0e122bc6bcf.jpg)
 
 1. Use the controls in the window.
 
