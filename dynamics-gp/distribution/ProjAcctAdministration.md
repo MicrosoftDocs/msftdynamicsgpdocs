@@ -136,7 +136,7 @@ The reconcile utility compares and recalculates data between tables to be sure t
 1. Open the **Reconcile Utility** or the **Reconcile Utility Periodic** window.  
 
     Tools \> Utilities \> Project \> PA Reconcile
-    ![A screenshot ](media/a42ce4bed0f79cb0fa2d01fbdc778c98.jpg)
+    ![Screenshot of the Reconcile Utility window, which shows the Budgets and fees and the Print Report option is selected.](media/a42ce4bed0f79cb0fa2d01fbdc778c98.jpg)
 
     Tools \> Utilities \> Project \> PA Reconcile Periodic
     ![A screenshot](media/14bb78293f2853e4d72ae9e1898d9304.jpg)
@@ -176,7 +176,7 @@ Before reconciling quantities, back up all accounting data for your company. You
 
     Tools \> Utilities \> Project \> PA Reconcile IV
 
-    ![A screenshot ](media/fffbd0e1136b85c71b7c4f982bc6d3ce.jpg)
+    ![Screenshot of the PA Reconcile Inventory Quantities window, which shows the item number range.](media/fffbd0e1136b85c71b7c4f982bc6d3ce.jpg)
 
 2. Enter or select the range of item numbers to reconcile.
 
@@ -192,7 +192,7 @@ You can re-create missing information in a database table. Some of the informati
 
     File \> Maintenance \> PA Check Links
 
-    ![A screenshot ](media/aaf798351a7478cfd2cc97a6aa3faed9.jpg)
+    ![Screenshot of the PA Check Links Window, which shows the Logical Tables and Selected Tables lists.](media/aaf798351a7478cfd2cc97a6aa3faed9.jpg)
 
 2. Specify the database table groups to include in check links by choosing **All** or selecting each table group and choosing **Insert**. This displays the table in the **Selected Tables** list. To delete a table from the list, select it and click **Remove**. The total number of records that exist in the selected tables will be displayed at the bottom of the window. The number is updated as items are selected and deleted from the **Selected Tables** list.
 
