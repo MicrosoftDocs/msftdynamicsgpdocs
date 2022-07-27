@@ -892,7 +892,7 @@ If you're using sales fulfillment workflow, the window name will be Sales Fulfil
 1. Open the Sales Invoice Setup window.
     (Sales \>\> Setup \>\> Sales Order Processing \>\> Sales Document Setup button \>\> select the Invoice option)
 
-    ![Screenshot of Sales Invoice Setup window, showing input options before entries have been made.](media/SOage043.jpg)
+    ![Screenshot of Sales Invoice Setup window, showing enable fulfillment workflow checkbox selected.](media/SOage043.jpg)
 
 2. Enter an Invoice ID and, if you want this invoice ID to have a unique document numbering system, enter an Invoice ID Next Number.
 
@@ -1101,7 +1101,7 @@ The workflow process that's used to move from one document status to another won
 1. Open the Sales Fulfillment Workflow Setup window.
     (Sales \>\> Setup \>\> Fulfillment Workflow Setup)
 
-    ![Screenshot of window, showing the top description selected.](media/SOage052.jpg)
+    ![Screenshot of window, showing the top description of ready to print picking tickets highlighted.](media/SOage052.jpg)
 
 2. You can select the description text and change it.
 
@@ -1249,7 +1249,7 @@ Use the Remove Customer/Item Substitutes window to remove customer/item substitu
 1. Open the Remove Customer/Item Substitutes window.
    (Sales \>\> Utilities \>\> Remove Substitute Items)
 
-    ![Screenshot of window where an ending effective date on or before entry can be made.](media/SOage059.jpg)
+    ![Screenshot of window, showing where an ending effective date on or before entry can be input.](media/SOage059.jpg)
 
 2. Enter the date to remove customer/item substitute records that expired on or earlier than the date.
 

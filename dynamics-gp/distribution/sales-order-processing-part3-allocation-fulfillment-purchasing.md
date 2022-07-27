@@ -191,7 +191,7 @@ When you enter a document in the Sales Transaction Entry window, you select a de
 
 2. Choose Substitute to open the Sales Substitute Item window. Select a substitute item from the drop-down list and choose OK.
 
-    ![Screenshot of Sales Substitute Items window, showing substitute 1 entered in display dropdown box.](media/SOage108.jpg)
+    ![Screenshot of Sales Substitute Items window, showing substitute 1 entered in the display dropdown box.](media/SOage108.jpg)
 
 3. In the Quantities Available section of the Sales Item Quantity Distribution Entry window, check the site to see the quantity available for the substitute item. Enter an amount for the quantity selected. You can also enter a quantity canceled and quantity back ordered.
 
@@ -282,7 +282,7 @@ You also can select to allocate items by customer priority or requested ship dat
 1. Open the Sales Automatic Order Allocation window.
     (Sales \>\> Transactions \>\> Automatic Order Allocation)
 
-    ![Screenshot of window, showing customer priority selected in the allocate docuements by drop down box.](media/SOage112.jpg)
+    ![Screenshot of window, showing customer priority selected in the allocate documents by drop down box.](media/SOage112.jpg)
 
 2. Select to allocate documents or preview back orders. To allocate documents, mark to allocate orders, fulfillment orders, or both.
 
@@ -312,7 +312,7 @@ You also can select to allocate items by customer priority or requested ship dat
 
 Items on orders and invoices must be successfully allocated before they can be fulfilled. The quantity alert icon indicates that the quantity entered for an item is greater than the quantity that was successfully allocated. For example, if a customer ordered 20 answering machines, but only 12 were successfully allocated, the quantity alert icon will appear next to the quantity ordered.
 
-![Screenshot of quantity alert icon, showing item number, quantity ordered, unit price, and extended price.](media/SOage116.jpg)
+![Screenshot of quantity alert icon, showing an example item number, quantity ordered amount, unit price, and extended price.](media/SOage116.jpg)
 
 If a quantity alert appears, choose the quantity alert icon button to allocate the item again. If the allocation is unsuccessful, the Sales Quantity Shortage Options window will open and you can determine how to handle the shortage. For more information about quantity shortages, see [Quantity shortage options](#quantity-shortage-options).
 
@@ -600,7 +600,7 @@ You can add a vendor to the tree using the tree view, regardless of which tab yo
 
 4. A new vendor object will be inserted into the tree view and the vendor ID will be (NO VENDOR). A new purchase order object with no line items will be inserted in the tree view for the new vendor.
 
-    ![Screenshot of Purchase Orders Preview window, showing example order information within the PO tab.](media/SOage138.jpg)
+    ![Screenshot of Purchase Orders Preview window that shows example order information within the PO tab.](media/SOage138.jpg)
 
 5. In the purchase order tab, enter or select a vendor ID for the new vendor object in the tree view.
 
@@ -798,7 +798,7 @@ You can link drop-ship line items to existing drop-ship purchase orders. You can
 
 3. Choose the link purchase order button next to the Quantity Ordered prompt to open the PO Commitment for Sales Document window.
 
-    ![Screenshot of window, showing PO Number box without an entry.](media/SOage146.jpg)
+    ![Screenshot of window, showing example item information and a PO Number box without an entry.](media/SOage146.jpg)
 
 4. Enter or select the existing purchase order to link to the sales line item.
 

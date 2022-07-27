@@ -218,7 +218,7 @@ You can use the Sales Serial-Lot Number Inquiry window to view sold items that a
 1. Open the Sales Serial-Lot Number Inquiry window.
     (Sales \>\> Inquiry \>\> Sales Serial/Lots)
 
-    ![Screenshot of Sales Serial-Lot Number Inquiry window, showing input options before entries have been made.](media/SOage195.jpg)
+    ![Screenshot of Sales Serial Lot Number Inquiry window, showing input options before entries have been made.](media/SOage195.jpg)
 
 2. Enter or select an item number.
 
