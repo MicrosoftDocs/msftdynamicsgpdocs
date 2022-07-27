@@ -536,7 +536,7 @@ You can use either standard or extended pricing. You must choose one pricing sys
 1. Open the Enable Extended Pricing window.
     (Sales \>\> Setup \>\> Extended Pricing)
 
-    ![Screenshot of window, showing fabrikram, inc entered as the company name and the enable standard pricing option selected.](media/SOage030.jpg)
+    ![Screenshot of window, showing Fabrikram, Inc entered as the company name and the enable standard pricing option selected.](media/SOage030.jpg)
 
 2. Select whether to use standard or extended pricing. Standard pricing is the default method.
 
