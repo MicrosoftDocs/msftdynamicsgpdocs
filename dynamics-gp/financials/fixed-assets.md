@@ -2099,7 +2099,7 @@ Asset groups are saved on a user-by-user basis. For example, if user A creates a
 1. Open the Select Assets window.
 (Financial \>\>Transactions \>\> Fixed Assets \>\> Select Assets)
 
-    ![Screenshot of the open Select Assets window.](media/FAage070.jpg)
+    ![Screenshot shows the Select Assets window.](media/FAage070.jpg)
 
 2. To create and build a new group, choose New Group, enter a name to describe the asset group and choose OK.
 
@@ -2107,7 +2107,7 @@ Asset groups are saved on a user-by-user basis. For example, if user A creates a
 
 3. Select the group to build from the Current Group list and choose Search. The Asset Group Search window will open.
 
-    ![Screenshot of the Asset Group Search window.](media/FAage072.jpg)
+    ![Screenshot shows the Asset Group Search window.](media/FAage072.jpg)
 
 4. Select a field name and value, and then enter or select a specific field.
 
@@ -2153,7 +2153,7 @@ Use the Select Assets window to import data to create an asset group. For exampl
 
 3. Choose Import Group to open the Import Group window.
 
-    ![Screenshot of the open Import Group window.](media/FAage074.jpg)
+    ![Screenshot shows the Import Group window.](media/FAage074.jpg)
 
 4. Enter or locate the name of the file to import.
 
@@ -2236,7 +2236,7 @@ Use the Asset General Information window to make changes to information in asset
 
 4. If you change the Class ID in the Asset General Information window, the Reset Asset Class ID window will be displayed when you choose Save.
 
-    ![Screenshot shows te Reset Asset Class ID window.](media/FAage076.jpg)
+    ![Screenshot shows the Reset Asset Class ID window.](media/FAage076.jpg)
 
 5. To update depreciation information in the books that the asset is associated with, mark the Propagate option, select what type of update to perform, and choose OK.
 
@@ -2310,7 +2310,7 @@ If you changed the Asset Class ID using the General tab, you also must make a ma
 1. Open the Fixed Assets Mass Change window.
 (Financial \>\> Transactions \>\> Fixed Assets \>\> Mass Change)
 
-    ![Screenshot of the Fixed Assets Mass Change window.](media/FAage078.jpg)
+    ![Screenshot shows the Fixed Assets Mass Change window.](media/FAage078.jpg)
 
 2. Select an asset group ID and choose a tab—General, Account, Book, User.
 
