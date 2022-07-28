@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 05/10/2022
+ms.date: 07/28/2022
 ---
 
 # Microsoft Dynamics GP System Setup Guide
@@ -10115,3 +10115,224 @@ Dexterity documentation for more information.
 **Continuum API** Use the Continuum application programming interface (API) to
 create integrations for Microsoft Dynamics GP. See the Continuum API Guide for
 more information.
+
+## Part 9: Report Scheduler Setup
+
+The Report Scheduler module enables flexible, secure scheduling and publishing of your Report Writer reports, schedule Check Links and Workflow Automation. Report Scheduler is installed automatically when you install Microsoft Dynamics® GP. Report Scheduler is simple to set up and use, and requires little maintenance.
+
+Report Scheduler works with Microsoft Dynamics GP report options and reports that have been created using Report Writer. 
+
+This section contains information on how to set up Report Scheduler and change report names.
+
+
+### Setting up Report Scheduler
+
+Report Scheduler setup involves defining the default publish location, the value for the Next Report File Name field, and the export file type for reports. Use the Report Scheduler Setup window to define these default settings for published reports.
+
+To set up Report Scheduler:
+1.	Open the Report Scheduler Setup window. (Microsoft Dynamics GP menu >> Tools >> Routines >> Company >> Report Setup)
+ 
+2.	Enter the Universal Naming Convention (UNC) path for the default location to publish reports to. You can either type the UNC path or select the folder icon in the Default Location field to open the Select Pathname window where you can select the default location for published reports. 
+
+Be sure that all users who will be publishing reports have write access to the folder you select.
+
+4.	Enter the next report file name. This file name should allow for incrementing because the Next Report Name field will be incremented every time a report option is published that needs a report file name.
+
+The name in this field is used for reports that do not have a file name stored as part of the report option. This file name will also be used if you choose to keep prior versions of a published report.
+
+*When you define the next report file name, you determine the number of report file names that will be available. For example, if you enter BDR001 in the Next Report File Name field, only 999 unique report file names will be available. *
+
+5.	Select a file type for report output files.
+*The Adobe Acrobat PDF option is available if you have Acrobat Distiller or PDFWriter installed. These items can be purchased from Adobe Systems. You can set the export file type to Adobe Acrobat PDF, even if there are some workstations that do not have Acrobat Distiller or PDFWriter installed. If the report is not set to print to a file, and the default export file type is set to Adobe PDF, workstations that don’t have Acrobat Distiller or PDFWriter installed will publish the report as a text file.*
+
+6.	Choose Save to save your selections and close the Report Scheduler Setup window.
+
+
+**Selecting a publish location**
+
+Because it is possible for users to map different drive letters to the same location, a Universal Naming Convention (UNC) path is required. A UNC path provides a common method for accessing files on a network without using a “mapped” drive letter. The UNC format is //server/shared folder/. Server is the name of the network machine where the files reside. Shared folder is the shared folder where the files reside and are published. There must be two forward slashes before the machine name (//) followed by the shared folder and a final forward slash (/).
+
+You can type the location directly into the Report Scheduler Setup window or you can use the following steps to select a path in the Select Pathname window:
+Before you select the location, you may wish to create a new Report Scheduler folder on the server where you will be saving reports.
+
+To select a publish location:
+1.	To set the default publish location for all reports, open the Report Scheduler Setup window.
+(Microsoft Dynamics GP menu >> Tools >> Routines >> Company >> Report Setup)
+
+To set a publish location for selected reports, open the Report Schedule window. (Microsoft Dynamics GP menu >> Tools >> Routines >> Company >> Report Schedule)
+2.	Choose the folder icon. The Select Pathname window opens.
+ 
+3.	Select My Network Places from the Save in list.
+This path must be selected from My Network Places in order for the share to take effect, even if it is local.
+
+4.	Select the domain where the server is located.
+5.	Select the server you will be saving reports to.
+6.	Select the folder to store reports in and choose Save.
+
+
+**Changing report names**
+
+It is important to be able to change report names in Report Scheduler because several reports in Microsoft Dynamics GP have the same name. For example, an Aged Trial Balance report appears in both Receivables Management and Payables Management. To distinguish between these reports more easily, you can change the report names to Receivables Aged Trial Balance and Payables Aged Trial Balance. Use the following steps to change a report name:
+
+To change report names:
+1.	Open the Report Names window.  (Microsoft Dynamics GP menu >> Tools >> Routines >> Company >> Report Names)
+ 
+2.	Click in the Report Name column next to the report to modify. Remember that many reports have the same name. Check the location of the report in the Report Navigation column to ensure you are modifying the report from the correct module.
+
+3.	Type the new name of the report. This must be a unique name. The default value in the Report Name column is the original name of the report. You can change it to another name, as long as that name doesn't already exist. A blank name is not allowed.
+
+4.	Close the Report Names window to save report name changes.
+
+
+### Scheduling Reports**
+
+After you set up Report Scheduler, you can schedule reports. Scheduling reports includes defining the publish frequency and location.
+Use the Report Schedule window to define the publish location and frequency for each report to publish. 
+
+To schedule a report:
+1.	Open the Report Schedule window. (Microsoft Dynamics GP menu >> Tools >> Routines >> Company >> Report Schedule)
+
+![Form](media/RPTSCH0001.PNG)
+
+2.	Mark the box next to the report(s) to schedule in the scrolling window.
+
+3.	Select the frequency option indicating how often to publish the marked reports then set the scheduling options. Scheduling options in the Report Schedule window change based on the frequency option you select. See online help for descriptions of each frequency option. 
+
+4.	Enter the start date. This field controls when a report is first scheduled to be published.
+
+5.	Choose Calculate Next Date to verify that the report will publish on the desired date.
+
+6.	Select the versions of the report to keep. Select Current Only to remove prior versions of the report output when a new report is published. Select Current & Prior to save the report with the value in the Next Report File Name field in the Report Scheduler Setup window the next time a report is published.
+
+7.	To change the publish location for the marked report(s), select a new location. See Selecting a publish location on page 6 for more information. Be sure all users who will publish the report(s) have write access to the folder you select. 
+
+8.	To view details for a specific report, select the report in the scrolling window, then choose the expansion button next to the Report Name column heading. The Report Schedule Details window opens where you can view or modify the settings for Versions of Report To Keep, Publish To Location, and Frequency. You also can view information about publishers for the report.
+
+9.	To change the Report Option settings for a specific report, select the report in the scrolling window, then choose the Report Option link. 
+
+10.	Choose Publish Now to publish the marked reports now or choose Apply to apply the settings to the marked reports and wait until the scheduled publish date. See Automatic publishing on page 13 for more information. The settings you choose in the Report Schedule window will affect the marked reports once you choose Apply.
+
+*When you choose either Apply or Publish Now, you will be added as a publisher for the marked reports.*
+
+**Report options**
+
+Microsoft Dynamics GP report options provide the ability to save criteria about a report, such as range restrictions, sorting options, and destinations. 
+
+These report options can be used to generate separate versions of a report. 
+
+Since Report Scheduler works with Microsoft Dynamics GP report options, you need to take into account the restrictions, or lack thereof, a report option has when you are publishing it. For reports created with Report Writer, you save criteria about a report using the Restrictions window in Report Writer.
+
+If the people who will have access to the report output should see only certain ranges of the data, then you should create a report option for each grouping, with the appropriate restrictions for each group. For example, you could create a single sales commission report for all salespeople and use report options to publish separate reports for each salesperson
+
+**Frequency examples**
+
+This section contains examples of setting daily, weekly, and monthly frequency. 
+
+These examples show how frequency options and start dates affect the publish date. Use this information as a reference to help you select frequency settings for your report.
+
+Frequency example - Daily
+
+If you use September 6, 2027, as the start date and choose the Daily frequency option combined with the Every Day scheduling option, the selected reports will print every day from September 6, 2027, onwards.
+
+If you combine the Daily option with the Weekdays option, the report would be scheduled to print Monday through Friday with September 8, 2027, being the first scheduled date. Because it is on a weekend, September 6, 2027, is not included as a scheduled date.
+
+If a report was last published on September 5, 2027, with a Daily frequency option and an increment of 5 in the Every ? days field, the next scheduled publishing date would be September 10, 2027. If, however, someone were to publish the report manually on September 7, 2027, the next due date would be September 12, 2027.
+
+*You can use a number between 1 and 999 in the Every ? days field.*
+
+Frequency example - Weekly
+Selecting the Weekly frequency option combined with the Day Of The Week scheduling option makes the check boxes for each week day visible. You must mark at least one of these boxes.
+
+If you mark Monday and Wednesday, the report will be published the next Monday or Wednesday, which ever comes first. If the report option is scheduled to publish on Mondays and Wednesdays, and for some reason it is not published on Monday, when you log on to Microsoft Dynamics GP on Tuesday, this report option would be listed as overdue. If you don’t log on to Microsoft Dynamics GP on Tuesday, and instead log on to Microsoft Dynamics GP on Wednesday, the report option will be published then, but only once. The Monday publishing is skipped.
+
+You also can specify the number of weeks between publishing. For example, if the report was last published on September 6, 2008, and it is set to publish every 2 weeks, the next time it will be due to be published is September 20, 2008. 
+
+Frequency example - Monthly
+
+When you select the Monthly frequency option, you also can specify the day, week, and month(s) to publish a report. As a result, you can define a report option to be published the first Monday of each month, regardless of the number day this happened to be. If a report option is set up to publish on the first Monday of the month in March, June, September, and December, and it is published manually on August 25, 2027, it will be due for publishing on September 1, 2027.
+
+If a report option is scheduled to be published on the 15th day of the month in March, June, September, and December, and it is published manually on September 1, 2027, it will be due for publishing on September 15, 2027.
+
+*You can select any value between 1 and 31 in the Day option when the Frequency is set to Monthly. If you enter day 31 and the month you selected does not have 31 days, the report will be scheduled for the last day of that month.*
+
+### Publishing Reports
+
+Publishing involves creating an output file for a report. Publishing can be done either manually from the Report Schedule window or automatically when users log on to Microsoft Dynamics GP. Before automatic publishing can occur, you will need to set up publishers for the reports.
+
+**Automatic publishing**
+
+When you log on to Microsoft Dynamics GP, Report Scheduler views the information in the Report Publishers window to determine the reports you have been set up to publish. If it finds any reports that are either due that day, or are past due, it displays the Report Scheduler Overdue Reports Message window. 
+
+Choose Yes to publish the reports in the background. If you choose No, the reports remain overdue and the message will reappear next time you log on to Microsoft Dynamics GP. If you unmark Ask Each Time, any reports that are due or overdue will be published automatically the next time you log on to Microsoft Dynamics GP. If you later decide that you don’t want reports to be published automatically, open the Report Publishers window, enter your user ID, then mark Ask Each Time.
+
+Choose Details to open the Report Schedule window where all reports that are due or overdue will be marked. If the list is correct, choose Publish Now to publish the reports. You also can mark additional reports, unmark reports, or make any other changes in the window before you publish the reports.
+
+The following information also applies to automatic publishing:
+•	Because some computers may never be logged off, a check will be made at 00:01 every 24 hours. If the computer is still logged on at that time, any reports due that day will be published automatically.
+
+•	If more than one user is set up to publish a report, the first user to log on will be the one to publish the report. Any other users set up to publish the report will not trigger the report to be published because it no longer has an overdue publishing status.
+
+**Manual publishing**
+
+To publish a report at any time, choose Microsoft Dynamics GP menu >> Tools >> Routines >> Company >> Report Schedule, mark the reports to publish and choose Publish Now. When you choose Publish Now, you will be added as a publisher for the marked reports. After the reports have been published, the last published date and location information for those reports will be updated and all reports will be unmarked.
+
+**Setting up report publishers**
+
+You can define multiple users to publish a report so that if a user is unavailable when the report needs to be published, another user could publish it. It is also a secure way of ensuring users see only those reports they are entitled to view.
+To set up report publishers:
+1.	Open the Report Publishers window. (Microsoft Dynamics GP menu >> Tools >> Routines >> Company >> Report Publishers)
+
+2. Enter or select a user. The scrolling window displays all reports that have a publish frequency other than Not Scheduled, as defined in the Report Schedule window. If the user you selected has already been set up as a publisher, the scrolling window will display all current settings. 
+
+3.	Unmark Ask Each Time if you want overdue scheduled reports to print automatically when the selected user logs on to Microsoft Dynamics GP.
+
+4.	In the Publish column, mark the reports the user will publish, or choose Mark All to mark all reports.
+
+5.	To view the report option settings for a given report, select the report, then choose the Report Option link.
+
+6.	To view details for a specific report, select a report, then choose the expansion button in the top right of the scrolling window. The Report Schedule Details window opens where you can view or modify report settings.
+
+7.	Choose Save to keep all changes made in the Report Publishers window or choose Delete to remove all reports from the user’s publish list. If you close the window without choosing Save, any selections you have made since you opened the window will be retained. This occurs because information about publishers is saved each time you mark or unmark a report.
+
+**Troubleshooting publishing**
+
+Report Scheduler displays a message if there are errors during publishing.
+Choose Yes to view the error log or choose No to close the window. If an error message appears when a report is published, check the following items:
+
+•	Because Report Scheduler supports the printing of custom reports, each user needs the necessary report dictionaries for publishing to occur. If the report to be published does not exist in the report dictionary on the workstation publishing the reports, or if the publisher does not have the product installed, an error log will be created. The Last Published date on the Report Schedule window will not be updated.
+
+•	If the publisher does not have access to the default location for the selected reports due to such issues as network permissions, an error will be written to the Error Log table.
+
+•	If the publisher does not have access to print all the reports a report option prints, an error log will be written, and the report will not be published. The Report Catalog Maintenance window will not be updated.
+
+### Report Catalog Maintenance
+
+Information about published reports is recorded in the Report Catalog. It is important to manage reports to ensure unwanted information is not using memory unnecessarily. This is particularly important if you select to keep current and prior versions of a report in the Report Schedule window. 
+
+Viewing published reports
+
+Use the Report Catalog Maintenance window (Microsoft Dynamics GP menu >> Tools >> Routines >> Company >> Report Catalog Maintenance) to view information about records in the Report Catalog table relating to published reports. To open the output file for a report, select the report and choose the expansion button in the upper right corner of the scrolling window.
+
+Deleting report catalog information
+
+You can use the Report Catalog Maintenance window to delete entries from the Report Catalog. When you delete an entry from the catalog, you also delete the output file for the report. The Publish To Location column in the Report Schedule window displays the location of the output files.
+
+To delete report catalog information:
+1.	Open the Report Catalog Maintenance window. (Microsoft Dynamics GP menu >> Tools >> Routines >> Company >> Report Catalog Maintenance)
+2.	Mark the reports to remove, choose Delete, then choose Yes if you wish to delete the output files associated with the marked reports. 
+
+If any of the marked reports has a publish frequency other than Not Scheduled, you will be asked if you want to remove the schedule for each of those reports. 
+Choose Yes to set the publish frequency to Not Scheduled and clear the last published date, publish location, and list of publishers. Choose No to leave the report schedule information unchanged.
+
+## Schedule Check Links
+
+[With the October 2020 release](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---schedule-check-links), customers are now able to set up a schedule to run Check Links outside of normal business hours.  This will let them run the processes without having to manually select them.  A customer can setup which logical file groups they want to run check links on. This process will utilize the Report Scheduler setup and functionality, so it will require that a Microsoft Dynamics GP is open and logged into the correct company.  Also, this feature is just scheduling the existing Check Links processes, so performance is not expected to be any different than manually running them.
+
+First, in order to set a default location for the Checks Links reports to save you can go to Tools>Routines>Company>
+
+To select which check links you want to schedule you will navigate to the Report Schedule window at Tools>Routines>Company>Report Schedule.
+
+This list will populate depending on what dictionaries you have loaded on the client you have logged into.  The Report Option for the new records will be "Check Links".  You can choose the frequency of Daily, Weekly, or Monthly and you have further options for Every Day, Weekdays or every X number of days.  If you had setup a default publish location in the Report Scheduler Setup window this will default to that location, otherwise you will need to enter a location before you are able to apply your selections.
+
+If you want to remove reports from being scheduled you would use the Report Catalog Maintenance window at Tools>Routines>Company>Report Catalog Maintenance.
+
