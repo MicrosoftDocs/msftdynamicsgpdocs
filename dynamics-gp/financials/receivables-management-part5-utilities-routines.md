@@ -1410,7 +1410,7 @@ have a current backup, you can restore information, if necessary.
 1. Open the Receivables Year-End Closing window. (Sales \>\> Routines \>\>
     Year-End Close)
 
-    ![Screenshot of window, showing the selection all for Year to close. The Print Report box is checked.](media/575bde0d83376ccf27fee01112f9e355.jpg)
+    ![Screenshot of window, showing the selection All for Year to Close. The Print Report box is checked.](media/575bde0d83376ccf27fee01112f9e355.jpg)
 
 1. Mark Calendar or, if the calendar year coincides with your fiscal year, mark
     All. If they don't coincide, close the fiscal year separately. See *Closing
