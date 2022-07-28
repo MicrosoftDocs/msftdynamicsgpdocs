@@ -517,7 +517,7 @@ c. Add an endpoint for the RD Gateway port and RD Web Access port if used. (Port
 **Load Balanced Session Hosts**
 A load balanced session host configuration consists of two or more virtual machines configured as stand-alone cloud services. In this configuration, the RD Gateway, RD Connection Broker, RD Licensing and RD Web Access role services are installed to a single stand-alone virtual machine and are not configured for high availability. The RD Session Host role service is installed on one or more stand-alone virtual machines. The RD Connection Broker on the virtual machines is load balancing user sessions on one or more virtual machines with the RD Session Host role service installed. A load balanced session hosts configuration only offers redundancy for the RD Session Hosts, the result is that if the virtual machine hosting the other role services is unavailable for any reason users will not have access to the application.  
 
- ![Azure sub image 1](media/azuregp005.png)
+ ![Diagram that shows the RDS client is connected to a load balanced host configuration in the Azure Cloud.](media/azuregp005.png)
 
 Use the following steps to set up two or more Microsoft Azure virtual machines as RDS Server farm hosts.
 
@@ -543,7 +543,7 @@ A high availability server farm configuration consists of multiple virtual machi
   
 The first configuration example has all the RDS role services deployed on two or more virtual machines connected together as a load balanced cloud service in Microsoft Azure. This provides a single public virtual IP address for load balanced user access to the RD Gateway and RD Web Access role services. Each machine also has an internal IP address for the RD Connection Broker and RD Session Host communications. In this configuration, all the RDS role services are installed on each of the virtual machines. The RD Connection Broker is configured for high availability and will use a SQL Server database for session information. The RD Connection Broker distributes the user sessions across the RD Session Host virtual machines.  
 
-  ![Azure sub image 1](media/azuregp006.png)
+  ![Diagram that shows the RDS client is connected to a high availability server farm configuration in the Azure Cloud.](media/azuregp006.png)
   
 Use the following steps to set up a high availability RDS server farm on load balanced Microsoft Azure virtual machines.
   
@@ -565,7 +565,7 @@ c. Add an endpoint for the RD Gateway port and RD Web Access port if used. (Port
 Repeat the steps above for each of the virtual machines.  
 The second example has the RDS role services split up between two or more virtual machines connected together as a load balanced cloud service and two or more machines configured as standalone cloud services. This configuration is typically used in a deployment when you have a large number of application users that require many RD Session Hosts. The virtual machines that have the RD Gateway, RD Connection Broker, RD Licensing and RD Web Access role services installed will be connected together as a load balanced cloud service in Microsoft Azure. The RD Session Host role services are installed on virtual machines set up as stand-alone cloud services. The RD Connection Broker distributes the user sessions across the RD Session Host virtual machines.  
 
-  ![Azure sub image 1](media/azuregp007.png)
+  ![Diagram that shows the RDS client is connected to a high availability RDS server farm configuration on load balanced Microsoft Azure virtual machines.](media/azuregp007.png)
   
 Use the following steps to set up a high availability RDS server farm on load balanced Microsoft Azure virtual machines.
   
