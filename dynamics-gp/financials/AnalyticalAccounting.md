@@ -3211,10 +3211,10 @@ Expense will be assigned to the lower nodes as follows:
 
 **Period 1**
 
-| PCTR \>\> PROJ             | Account A | Travel Expenses | \$1250 |   |   |
-|----------------------------|-----------|-----------------|--------|---|---|
-| PCTR \>\> PROJ \>\> PROD A | Account A | Travel Expenses | \$750  |   |   |
-| PCTR \>\> PROJ \>\> PROD B | Account A | Travel Expenses | \$500  |   |   |
+| PCTR \>\> PROJ             | Account A | Travel Expenses | \$1250 |
+|----------------------------|-----------|-----------------|--------|
+| PCTR \>\> PROJ \>\> PROD A | Account A | Travel Expenses | \$750  |
+| PCTR \>\> PROJ \>\> PROD B | Account A | Travel Expenses | \$500  |
 
 **Rolling down opening balances for posting accounts**
 
@@ -3234,9 +3234,9 @@ balance is divided for different calculation methods.
 
 **How the Opening Balance is divided among balance sheet accounts**
 
-| Posting | Equal Split      | Equally split by the number of balance sheet accounts. Refer to *Example 1*                                                                                               |   |
-|---------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| Posting | Percentage Split | Split by calculating the ratio of the percentage assigned to a balance sheet account to the total percentage assigned to all Balance Sheet accounts. Refer to *Example 2* |   |
+| Posting | Equal Split      | Equally split by the number of balance sheet accounts. Refer to *Example 1*                                                                                               |
+|---------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Posting | Percentage Split | Split by calculating the ratio of the percentage assigned to a balance sheet account to the total percentage assigned to all Balance Sheet accounts. Refer to *Example 2* |
 
 The Budget Tree A has the following nodes under it: PCTR \>\> PROJ \>\> PROD
 
@@ -3249,9 +3249,10 @@ The Budget Tree A has the following nodes under it: PCTR \>\> PROJ \>\> PROD
 The following accounts are assigned to the node Budget Tree A \>\> PCTR \>\>
 PROJ:
 
-| Node: Budget Tree A \>\> PCTR \>\> PROJ     |                  |
-|---------------------------------------------|------------------|
+**Node: Budget Tree A \>\> PCTR \>\> PROJ**
+
 | **Account No**                              | **Account Type** |
+|---------------------------------------------|------------------|
 | Account A                                   | Profit and Loss  |
 | Account B                                   | Balance Sheet    |
 | Account C                                   | Balance Sheet    |
