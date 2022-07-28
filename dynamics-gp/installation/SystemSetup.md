@@ -6481,7 +6481,7 @@ Your diagrams should indicate:
 
 For example, your diagram may look similar to the following workflow diagram.
 
-![Diagram of a workflow illustrating the seps that occur once a purchase order has been submitted.](media/34ffe680f9aecfc6c3e3b8d38d641f06.png)
+![Diagram of a workflow illustrating the steps that occur once a purchase order has been submitted.](media/34ffe680f9aecfc6c3e3b8d38d641f06.png)
 
 
 ### Chapter 25: Workflow E-mail Setup
