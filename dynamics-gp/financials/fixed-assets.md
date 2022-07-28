@@ -879,7 +879,7 @@ You can create default values for user-defined fields one through ten in the Exp
 1. Open the Expand User Fields window.
 (Financial \>\> Setup \>\> Fixed Assets \>\> Company \>\> User Fields expansion button)
 
-    ![Screenshot shows the Expand User Fields window.](media/FAage041.jpg)
+    ![Screenshot shows another view of the Expand User Fields window.](media/FAage041.jpg)
 
 2. Enter user-defined field names and select a format for the fields to use.
 
@@ -971,7 +971,7 @@ A default asset ID displays if you marked Auto Generate Next Asset ID and entere
 
     You can enter the acquisition cost in the Asset Purchase window or the Asset  General Information window. If you enter the acquisition cost in the Asset  General Information window, information will be transferred to the Asset Purchase window. You can change the information in the Asset Purchase window.
 
-    ![Screenshot shows the Asset General Information window.](media/FAage049.jpg)
+    ![Screenshot shows another view of the Asset General Information window.](media/FAage049.jpg)
 
     The acquisition cost displayed in the Asset General Information window is the sum of all the acquisition costs in the Asset Purchase window.
 
