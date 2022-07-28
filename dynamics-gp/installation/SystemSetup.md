@@ -772,7 +772,7 @@ To create a user record with a SQL Server Login:
 1. Open the User Setup window. (Administration \>\> Setup \>\> System \>\>
     User)
 
-    ![A screenshot](media/1ba2aca4be46f6e8275927ee7fe189cc.jpg)
+    ![Screenshot of the User Setup window before entries have been made. The User ID and User Name are highlighted in red.](media/1ba2aca4be46f6e8275927ee7fe189cc.jpg)
 
 2. In the User ID field, enter a user ID, which will be used throughout
     Microsoft Dynamics GP to identify this person.
@@ -1181,7 +1181,7 @@ make up a task.
 1. Open the Security Task Setup window (Administration \>\> Setup \>\> System
     \>\> Security Tasks)
 
-    ![A screenshot](media/8f5326312682942a71ec2b2218b0b8b2.jpg)
+    ![Screenshot of the Security Task Setup window before entries have been made.](media/8f5326312682942a71ec2b2218b0b8b2.jpg)
 
 2. Enter a task ID.
 
@@ -1687,7 +1687,7 @@ The Resource Explorer window opens when you choose the lookup button for the
 Product Name field. Use the Resource Explorer to look up forms, fields, and
 tables.
 
-![A screenshot](media/9501a5b0f86e4daf4c4a2ff7c7d537b8.jpg)
+![Screenshot of the Resource Explorer window showing the objects tree in the left pane.](media/9501a5b0f86e4daf4c4a2ff7c7d537b8.jpg)
 
 The objects tree is located in the left pane of the Resource Explorer
 window. Choose the plus sign next to an object to open it in the objects
@@ -2209,7 +2209,7 @@ which you can print on those documents instead.
 1. Open the Company Setup window. (Administration \>\> Setup \>\> Company \>\>
     Company)
 
-    ![A screenshot](media/3e6c25f3ba1177aec9907807195a88cc.jpg)
+    ![Screenshot of the Company Setup window. The fields have been entered for the company Fabrikam, Inc.](media/3e6c25f3ba1177aec9907807195a88cc.jpg)
 
 1. In the Address ID field, enter an ID for the company's main address.
 
@@ -2423,7 +2423,7 @@ employees, customers, salespeople, vendors, and items, as well as companies.
 1. Open the Internet User Defined Setup window. (Administration \>\> Setup \>\>
     Company \>\> Company \>\> Internet User Defined button)
 
-    ![A screenshot](media/ad2424ad5ab75881bffc7ef27b633f1c.jpg)
+    ![Screenshot of the Internet User Defined Setup window showing Label field entries have been made.](media/ad2424ad5ab75881bffc7ef27b633f1c.jpg)
 
 1. In the Label 1 field, enter text to describe the information you'll track in
     the first field in the Internet Information window.
@@ -2633,7 +2633,7 @@ appear as default entries in the Account Format Setup window.
 1. Open the Account Format Setup window. (Administration \>\> Setup \>\>
     Company \>\> Account Format)
 
-    ![A screenshot](media/f5638ab72682907c126d2c65cdf97b23.jpg)
+    ![Screenshot of the Account Format Setup window showing the account length and segment entries have been made.](media/f5638ab72682907c126d2c65cdf97b23.jpg)
 
 1. Enter the account length.
 
@@ -3031,7 +3031,7 @@ that year.)
 1. Open the Fiscal Periods Setup window. (Administration \>\> Setup \>\>
     Company \>\> Fiscal Periods)
 
-    ![A screenshot](media/7b21f6da6c98cffb8e2048315b330911.jpg)
+    ![Screenshot of the Fiscal Periods Setup window showing the fiscal year entries have been made.](media/7b21f6da6c98cffb8e2048315b330911.jpg)
 
 1. Enter the year.
 
@@ -3309,7 +3309,7 @@ where specific transactions were entered.
 1. Open the Audit Trail Codes Setup window. (Administration \>\> Setup \>\>
     Posting \>\> Audit Trail Codes)
 
-    ![A screenshot](media/59090566b140a18fc2c389c5a957a163.jpg)
+    ![Screenshot of the Audit Trail Codes Setup window displaying the Financial series showing codes have been entered.](media/59090566b140a18fc2c389c5a957a163.jpg)
 
 1. Select a series.
 
@@ -3532,7 +3532,7 @@ Dynamics GP series.
 1. Open the Posting Setup window. (Administration \>\> Setup \>\> Posting \>\>
     Posting)
 
-    ![A screenshot](media/4e8a12d13b32c75ecd70bf1d163f9c47.jpg)
+    ![Screenshot of the Posting Setup window displaying the Financial series with transaction path boxes checked.](media/4e8a12d13b32c75ecd70bf1d163f9c47.jpg)
 
 1. From the Series list, select a series.
 
@@ -3982,7 +3982,7 @@ access to it for multiple companies, if needed.
 1. Open the Currency Setup window. (Administration \>\> Setup \>\> System \>\>
     Currency)
 
-    ![A screenshot](media/7bbfc5cb35e754e26e9caf08276c9265.jpg)
+    ![Screenshot of the Currency Setup window showing the Currency Units have been set to Dollars and Cents.](media/7bbfc5cb35e754e26e9caf08276c9265.jpg)
 
 1. In the Currency ID field, enter or select a name for the currency.
 
@@ -4004,7 +4004,7 @@ window, you can set access to it for multiple companies, if needed.
 1. Open the Multicurrency Access Setup window. (Administration \>\> Setup \>\>
     System \>\> Multicurrency Access)
 
-    ![A screenshot](media/49e2ad74f226cca891096833654940c4.jpg)
+    ![Screenshot of the Multicurrency Access Setup window before entries have been made.](media/49e2ad74f226cca891096833654940c4.jpg)
 
 1. From the Currencies list, select the currency to which you want to set access.
 
@@ -4026,7 +4026,7 @@ is the functional currency of the parent company.
 1. Open the Multicurrency Setup window. (Financial \>\> Setup \>\> Financial
     \>\> Multicurrency)
 
-    ![A screenshot](media/0021253e7b7b9e45cf5e9307085e5ff6.jpg)
+    ![Screenshot of the Multicurrency Setup window showing that the Functional and Reporting Currency fields have been entered.](media/0021253e7b7b9e45cf5e9307085e5ff6.jpg)
 
 1. In the Functional Currency field, enter the currency that your business uses
     most often. Typically, this is the currency of the country in which your
@@ -4412,7 +4412,7 @@ templates."*
 
 You can send the following documents in e-mail.
 
-| Documents               |                                  |
+| Documents               |  Documents                                |
 |-------------------------|----------------------------------|
 | Sales quote             | Receivables finance charges      |
 | Sales order             | Receivables service/repair       |
@@ -4512,7 +4512,7 @@ records that were set up to use the DOCX file format.
 1. Open the Company E-mail Setup window. (Administration \>\> Setup \>\>
     Company \>\> E-mail Settings)
 
-    ![A screenshot](media/b8ff60e1acb02c09600193a6ec54898a.jpg)
+    ![Screenshot of the Company E-mail Setup window showing the boxes for Send Documents as Attachments, DOCX, and HTML have been checked.](media/b8ff60e1acb02c09600193a6ec54898a.jpg)
 
 1. Mark whether to embed documents into the body of e-mail messages.
 
@@ -4913,16 +4913,16 @@ order or sales document in email.
 
 You can attach documents to the following master records.
 
-| Master records     |               |
-|--------------------|---------------|
-| Item record        | Vendor record |
-| Customer record    |               |
+| Master records     | Master records  |
+|--------------------|-----------------|
+| Item record        | Vendor record   |
+| Customer record    |                 |
 
 You can attach documents to the following documents and transactions. You
 also can attach documents to the line items assigned to the documents and
 transactions.
 
-| Transactions                     |                               |
+| Transactions                     | Transactions                  |
 |----------------------------------|-------------------------------|
 | Sales quote                      | Purchasing Invoice receipt    |
 | Sales order                      | In-transit transfer receipt   |
@@ -4935,7 +4935,6 @@ transactions.
 | Drop-ship purchase order         | Payables return               |
 | Drop-ship blanket purchase order | Payables miscellaneous charge |
 | Shipment receipt                 | Payables credit memo          |
-| **Transactions**                 |                               |
 | Shipment/Invoice receipt         |                               |
 
 #### Setting up document attachment options
@@ -4948,7 +4947,7 @@ documents.
 1. Open the Document Attachment Setup window. (Administration \>\> Setup \>\>
     Company \>\> Document Attachment Setup)
 
-    ![A screenshot](media/10be6d55ac272c0795d57e8d16f30054.jpg)
+    ![Screenshot of the Document Attachment Setup window showing the Allow Document Attachments box has been selected.](media/10be6d55ac272c0795d57e8d16f30054.jpg)
 
 1. Mark to attach documents to transactions, transaction line items, and master
     records.
@@ -5838,15 +5837,15 @@ customer's. To calculate the taxes, Microsoft Dynamics GP compares the tax
 schedules that are assigned to each item with the tax schedules assigned to
 the store and calculates taxes only for the details that appear for both.
 
-| Item         | Tax details in the tax schedule assigned to the: | Calculated tax |              |                                                                                                  |
-|------------------|------------------------------------------------------|--------------------|--------------|--------------------------------------------------------------------------------------------------|
-|                  | Item                                             | Store          | Customer |                                                                                                  |
-| Shirt (Clothing) |                                                      | 5% State           | 5% State     | US\$0 because the shirt isn't taxable.                                                          |
-|                  |                                                      | 1% City            |              |                                                                                                  |
-| Radio (General)  | 5% State                                             | 5% State           | 5% State     | US\$3.00 because the tax schedules for both the item and the store contain the same tax details. |
-|                  |                                                      | 1% City            |              |                                                                                                  |
-| Milk (Food)      |                                                      | 5% State           | 5% State     | US\$0 because the milk isn't taxable.                                                           |
-|                  |                                                      | 1% City            |              |                                                                                                  |
+| Item | Tax details in the tax schedule assigned to the: | Calculated tax | Calculated tax | Tax paid |
+|-----|-----|-----|-----|-----|
+|     | Item | Store |Customer |     |
+| Shirt (Clothing) |      | 5% State | 5% State | US\$0 because the shirt isn't taxable. |                  
+|     |     | 1% City |     |     |
+| Radio (General)  | 5% State | 5% State | 5% State | US\$3.00 because the tax schedules for both the item and the store contain the same tax details. |
+|    |    | 1% City |     |     |
+| Milk (Food) |     | 5% State | 5% State | US\$0 because the milk isn't taxable. |
+|     |     | 1% City |     |     |
 
 **Different tax rates for different customers**
 
@@ -5869,15 +5868,15 @@ Microsoft Dynamics GP compares the tax schedules that are assigned to each
 item with the tax schedule assigned to the customer and calculates taxes
 only for the details that appear for both.
 
-| **Item**         | **Tax details in the tax schedule assigned to the:** | **Calculated tax** |              |                                                                                |
-|------------------|------------------------------------------------------|--------------------|--------------|--------------------------------------------------------------------------------|
-|                  | **Item**                                             | **Store**          | **Customer** |                                                                                |
-| Shirt (Clothing) |                                                      | 5% State           | 5% State     | US\$0 because the shirt isn't taxable.                                        |
-|                  |                                                      | 1% City            |              |                                                                                |
-| Radio (General)  | 5% State                                             | 5% State           | 5% State     | US\$2.50 because only the state tax applies to both the item and the customer. |
-|                  |                                                      | 1% City            |              |                                                                                |
-| Chocolate (Food) |                                                      | 5% State           | 5% State     | US\$0 because the chocolate isn't taxable.                                    |
-|                  |                                                      | 1% City            |              |                                                                                |
+| Item | Tax details in the tax schedule assigned to the: | Calculated tax | Calculated tax | Tax paid |
+|-----|-----|-----|-----|-----|
+|     | Item | Store | Customer |    |
+| Shirt (Clothing) |     | 5% State | 5% State | US\$0 because the shirt isn't taxable. |
+|     |     | 1% | City |     |     
+| Radio (General)  | 5% State | 5% State | 5% State | US\$2.50 because only the state tax applies to both the item and the customer. |
+|     |    | 1% City |     |       |
+| Chocolate (Food) |    | 5% State | 5% State | US\$0 because the chocolate isn't taxable. |
+|     |     | 1% City |    |    |
 
 If you've marked the Use Shipping Method when Selecting Default Tax Schedule
 option in the Company Setup Options window, Microsoft Dynamics GP uses the
@@ -6114,7 +6113,7 @@ the \$100 minimum and \$500 maximum—\$400—is taxable.
 
 Refer to the following tables for more information.
 
-| Full Amount             |                 |                           |
+| Full Amount             |  Full Amount    |      Full Amount          
 |-------------------------|-----------------|---------------------------|
 | Minimum = \$100         | Maximum = \$500 |                           |
 | Sale amount             | Tax calculated? | Tax calculated on:        |
@@ -6122,7 +6121,7 @@ Refer to the following tables for more information.
 | \$150                   | Yes             | \$150                     |
 | \$400                   | Yes             | \$400                     |
 | \$550                   | Yes             | \$500 (Full amount)       |
-| **Amount within Range** |                 |                           |
+|**Amount within Range**|**Amount within Range**|**Amount within Range**|
 | Minimum = \$100         | Maximum = \$500 |                           |
 | Sale amount             | Tax calculated? | Tax calculated on:        |
 | \$50                    | No              | —                         |
@@ -6139,7 +6138,7 @@ Use the Tax Detail Maintenance window to set up tax details.
 1. Open the Tax Detail Maintenance window.(Administration \>\> Setup \>\>
     Company \>\> Tax Details)
 
-![A screenshot](media/7c6660e7770f81cc9da80d42036d598b.jpg)
+![Screenshot of the Tax Detail Maintenance window showing the Type is set to Sales.](media/7c6660e7770f81cc9da80d42036d598b.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -6482,7 +6481,7 @@ Your diagrams should indicate:
 
 For example, your diagram may look similar to the following workflow diagram.
 
-![A close up of text on a white background Description automatically generated](media/34ffe680f9aecfc6c3e3b8d38d641f06.png)
+![Diagram of a workflow illustrating the seps that occur once a purchase order has been submitted.](media/34ffe680f9aecfc6c3e3b8d38d641f06.png)
 
 
 ### Chapter 25: Workflow E-mail Setup
@@ -6928,7 +6927,7 @@ means that when Sue submits a document for approval, she is removed from the
 list of approvers for the step, and replaced by the alternate final
 approver, or manager if there is no alternate final approver.
 
-![A close up of text on a white background Description automatically generated](media/09d758cba8f353da19c056ecc43cf341.jpg)
+![Diagram showing the workflow when the originator is not allowed to be an approver. Step 1a. and step 3b. are circled with a red outline.](media/09d758cba8f353da19c056ecc43cf341.jpg)
 
 A close up of text on a white background Description automatically generated
 
@@ -8949,7 +8948,7 @@ limit.
 1. Open the Define Alert Formula window. (In the Select Tables window or the
     Joining Tables window, choose Next.)
 
-    ![A screenshot](media/9ba55c82d022e9b00803bfe756533d27.jpg)
+    ![Screenshot of the Define Alert Formula window showing a Vendor Accounts Table is selected and a Business Alert Formula has been entered.](media/9ba55c82d022e9b00803bfe756533d27.jpg)
 
 1. Build the formula by adding columns, constants, and operators to the
     business alert formula.
@@ -9399,9 +9398,8 @@ Native mode location:
 
 SharePoint Integrated mode location:
 
-| SharePoint Integrated     |                                        |
-|---------------------------|----------------------------------------|
-| **Location**              | **Example**                            |
+| **Location**       | **Example**                        |
+|--------------------|------------------------------------|
 | SharePoint Site           | https://\<servername\>/SharePoint site |
 | Report Library            | ReportsLibrary                         |
 
@@ -9591,9 +9589,8 @@ Network Share location:
 
 SharePoint location:
 
-| SharePoint Integrated     |                                          |
-|---------------------------|------------------------------------------|
 | **Location**              | **Example**                              |
+|---------------------------|------------------------------------------|
 | SharePoint Site           | http:\\\\\<servername\>\\SharePoint site |
 | Data Connections Library  | DataConnections                          |
 | Report Library            | ReportsLibrary                           |
