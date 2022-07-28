@@ -249,7 +249,7 @@ Use the Reconcile Receivables Amounts window to compare the aging period amounts
 1. Open the Reconcile Receivables Amounts window. 
 (Sales \>\> Utilities \>\> Reconcile)
 
-![A screenshot of a cell phone Description automatically generated](media/ce91a731d7706f5ec07a80e585ffce6a.jpg)
+![Screenshot of Reconcile Receivables Amounts window, showing default entries and empty input boxes.](media/ce91a731d7706f5ec07a80e585ffce6a.jpg)
 
 2. Mark which information to reconcile. See *Types of information you can reconcile* for more information.
 
@@ -335,7 +335,7 @@ Use the Remove Receivables Transaction History window to remove transaction hist
 2. Open the Remove Receivables Transaction History window. 
 (Sales \>\> Utilities \>\> Remove Transaction History)
 
-    ![A screenshot of a cell phone Description automatically generated](media/44dff2a477eb56b6647eea009ec07665.jpg)
+    ![Screenshot of Remove Receivables Transaction History window, showing default entries and empty input boxes.](media/44dff2a477eb56b6647eea009ec07665.jpg)
 
 3. To limit the historical records to be removed, select a type of range and enter a range restriction.
 
@@ -570,7 +570,7 @@ Unapplied Credit Amounts in the Receivables Management Setup window.
 
 1. Open the Receivables Aging Process window. (Sales \>\> Routines \>\> Aging)
 
-    ![A screenshot of a cell phone Description automatically generated](media/3a9ea125e5a594587a96f67780448078.jpg)
+    ![Screenshot of Receivables Aging Process window, showing default entries and empty input boxes.](media/3a9ea125e5a594587a96f67780448078.jpg)
 
 1. Enter the date to be used for determining the age of a document. This date
     is compared to either the due date or document date, depending on the
@@ -727,7 +727,7 @@ page 82 for more information on individual finance charges.
 1. Open the Assess Finance Charges window. (Sales \>\> Routines \>\> Finance
     Charge)
 
-    ![A screenshot of a cell phone Description automatically generated](media/3b30a34e701e5595e62802b20f6a3f22.jpg)
+    ![Screenshot of Assess Finance Charges window, showing default entries and empty input boxes.](media/3b30a34e701e5595e62802b20f6a3f22.jpg)
 
 1. Select a range of customer cards to assess finance charges for.
 
@@ -876,7 +876,7 @@ statement ID, change the dates if necessary, and begin printing.
 1. Open the Print Receivables Statements window. (Sales \>\> Routines \>\>
     Statements)
 
-    ![A screenshot of a cell phone Description automatically generated](media/a067d13d4cbdffd28515a179b7544686.jpg)
+    ![Screenshot of Print Receivables Statements window, showing default entries and empty input boxes.](media/a067d13d4cbdffd28515a179b7544686.jpg)
 
 1. Enter or select a statement ID and enter a description. For example, if you
     want to print statements for your open item customers, you can enter Open
@@ -931,7 +931,7 @@ also can include individual child statements.
 2. To create a message, choose Messages to open the Sales Statement Message
     Entry window.
 
-    ![A screenshot of a social media post Description automatically generated](media/a549a0d9e2e4a8b1d28d7ecd46ca4cde.jpg)
+    ![Screenshot of window, showing example descriptions, including Finance Charges, NSF Check Charge, and Current. There is one example message that states, finance charges for 1%.](media/a549a0d9e2e4a8b1d28d7ecd46ca4cde.jpg)
 
 Using this window, you can enter your own message. Each of the situations in
 the description column can have its own message and is printed on any
@@ -1131,7 +1131,7 @@ Statements)
 2. Choose E-mail Options to open the E-mail Statements Options or E-mail
     Reprint Statements Options window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/e755fb09b00080dfe7eadc23c24d9075.jpg)
+    ![Screenshot of window, showing selections of send email customer statements and long form.  Statement is entered in the E mail subject line.](media/e755fb09b00080dfe7eadc23c24d9075.jpg)
 
 1. Mark one of the following options:
 
@@ -1252,7 +1252,7 @@ You can save VAT report IDs and reprint reports at a later time.
 1. Open the VAT Return window. (Administration \>\> Routines \>\> Company \>\>
     VAT Return)
 
-    ![A screenshot of a social media post Description automatically generated](media/a3eca87112499476983c71cd6f53a317.jpg)
+    ![Screenshot of VAT Return window, showing default entries and empty input boxes.](media/a3eca87112499476983c71cd6f53a317.jpg)
 
 1. Enter or select a report ID.
 
@@ -1410,7 +1410,7 @@ have a current backup, you can restore information, if necessary.
 1. Open the Receivables Year-End Closing window. (Sales \>\> Routines \>\>
     Year-End Close)
 
-    ![A screenshot of a cell phone Description automatically generated](media/575bde0d83376ccf27fee01112f9e355.jpg)
+    ![Screenshot of window, showing the selection all for Year to close. The Print Report box is checked.](media/575bde0d83376ccf27fee01112f9e355.jpg)
 
 1. Mark Calendar or, if the calendar year coincides with your fiscal year, mark
     All. If they don't coincide, close the fiscal year separately. See *Closing

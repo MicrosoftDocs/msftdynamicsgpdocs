@@ -1,6 +1,6 @@
 ---
 title: "Receivables Management Part 2: Transaction entry"
-description: "Managing receivables in Dynamics GP."
+description: Learn about creating batches and entering various types of transactions, distributions, commissions, and cash receipts.
 keywords: "receivables"
 author: theley502
 ms.prod: dynamics-gp
