@@ -1,6 +1,6 @@
 ---
 title: "Manage the logging for Dynamics GP web components"
-description: "Learn how you can troubleshoot Dynamics GP web components."
+description: "Learn how you can troubleshoot Dynamics GP web components with the logging capability provided by the Dynamics GP web client installation."
 keywords: "web components"
 author: edupont04
 ms.author: edupont

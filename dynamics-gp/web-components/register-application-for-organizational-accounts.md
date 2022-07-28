@@ -40,8 +40,6 @@ Use the following steps to register your Dynamics GP web components installation
 
 4. On the What do you want to do page, click on the link to Add an application my organization is developing.
 
-###
-
 5. On the Tell us about your application page, you must specify a name for your application as well as indicate the type of application you are registering with Azure AD. You will choose the web application and/or web API radio button.
 
 ![shows the tell us about your application page.](media/manage-web-org-accounts-tell.png "Deployment")  
