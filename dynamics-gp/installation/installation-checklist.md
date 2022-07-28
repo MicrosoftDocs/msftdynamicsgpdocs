@@ -71,7 +71,7 @@ You'll find links to Support Hot Topics and Knowledge Base—the best source of 
 
 ### Microsoft SQL Server troubleshooting resources
 
-Go to [the section for SQL here on the Docs.microsoft.com site](/sql/?view=sql-server-2017) and find guidance for troubleshooting SQL error messages and other issues related to SQL. Microsoft's web site, [www.microsoft.com](https://www.microsoft.com), is also a good source of information for issues related to SQL or your operating system. You also can download Microsoft SQL Server Management Studio and SQL Server Books Online for Microsoft SQL Server Express Edition.
+Go to [the section for SQL here on the Docs.microsoft.com site](/sql/?view=sql-server-2017&preserve-view=true) and find guidance for troubleshooting SQL error messages and other issues related to SQL. Microsoft's web site, [www.microsoft.com](https://www.microsoft.com), is also a good source of information for issues related to SQL or your operating system. You also can download Microsoft SQL Server Management Studio and SQL Server Books Online for Microsoft SQL Server Express Edition.
 
 > [!NOTE]
 > SQL-related error messages appear as DBMS errors in Dynamics GP. Always use the SQL Server Books Online to troubleshoot DBMS errors. Choose the Search tab and enter the error number, then choose List Topics.  
