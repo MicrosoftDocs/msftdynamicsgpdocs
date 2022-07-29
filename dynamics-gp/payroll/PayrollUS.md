@@ -7419,17 +7419,18 @@ Here is an example of the calculation:
 
 Total Federal Wages = Gross Wages + Reported Tips + Charged Tips – Taxable Pension Wages + Taxable Benefits – Tax Sheltered Deductions
 
-| Fields used to calculate Line 2 on the 941 in GP|
-|----------------------|
+
+Fields used to calculate Line 2 on the 941 in GP
+
 +	Gross Wages	            |Employee Summary	        | UPR00900  | Cards-Payroll-Summary
 +	Reported Tips	        |Employee Tips Summary	    | UPR00901  | Cards-Payroll-Summary-Tips
 +	Charged Tips	        |Employee Tips Summary	    | UPR00901  | Cards-Payroll-Summary-Tips
 -	Taxable Pension Wages	|Payroll Transaction Inquiry| UPR00400  | Cards-Payroll-Paycode
-| UPR30300  | Cards-Payroll-Paycode-Summary
+-	 UPR30300  | Cards-Payroll-Paycode-Summary
 +	Taxable Benefits	    |Payroll Transaction Inquiry| UPR00600  | Cards-Payroll-Benefits
-| UPR30300  | Cards-Payroll-Benefits-Summary
++   UPR30300  | Cards-Payroll-Benefits-Summary
 -	Tax Sheltered Deductions|Payroll Transaction Inquiry| UPR00500  | Cards-Payroll-Deduction
-| UPR30300  | Cards-Payroll-Deduction-Summary
+-	UPR30300  | Cards-Payroll-Deduction-Summary
 
 *Important Note: Non-Taxable Pension Wages will be included in line 2 of the 941 in Microsoft Dynamics GP.
 
