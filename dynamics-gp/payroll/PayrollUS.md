@@ -573,7 +573,7 @@ Use the Payroll Setup window to set up default entries that appear throughout Pa
 
 1. Open the Payroll Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\> Payroll)
 
-![Screenshot of the Payroll Setup window, showing default entries and empty input boxes.](media/fdf616c9571329cd1dd3c019a76a4b3c.jpg)
+![Screenshot of the Payroll Setup window.](media/fdf616c9571329cd1dd3c019a76a4b3c.jpg)
 
 1. Enter overtime information and passwords for vacation and sick time
     available, if necessary. You will need to enter a password when you create a
@@ -730,7 +730,7 @@ select Setting Up the System. You also should have completed Setting up Payroll 
 
 1. Open the Payroll Posting Accounts Setup window. (Administration \>\> Setup     \>\> Posting \>\> Payroll Accounts)
 
-  ![Screenshot of the Payroll Posting Accounts Setup window, showing a table for the Gross Pay DR Payroll Account Type.](media/de3a8d9af33d89faadcdcef9d7586911.jpg)
+  ![Screenshot of the Payroll Posting Accounts Setup window.](media/de3a8d9af33d89faadcdcef9d7586911.jpg)
 
 2. Select an account type and position for the employee's Payroll code. When
     you select an account type, existing accounts, and an account description
@@ -1074,7 +1074,7 @@ The following are some examples of pay codes you might use:
 
 1. Open the Pay Code Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\> Pay Code)
 
-    ![Screenshot of the Pay Code Setup window, showing default entries and empty input boxes.](media/644032740fb9878dbb856d88ca409271.jpg)
+    ![Screenshot of the Pay Code Setup window.](media/644032740fb9878dbb856d88ca409271.jpg)
 
 1. Enter a pay code and description.
 
@@ -1509,7 +1509,7 @@ The following are some examples of deduction codes you might use:
 
 1. Open the Deduction Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\>    Deduction)
 
-![Screenshot of the Deduction Setup window, showing default entries and empty input boxes.](media/0e0849380c5189db06e9801416ac33a1.jpg)
+![Screenshot of the Deduction Setup window.](media/0e0849380c5189db06e9801416ac33a1.jpg)
 
 1. Enter a deduction code and description.
 
@@ -1629,7 +1629,7 @@ window. See *Setting up maximum garnishment rules* .
 
 1. Open the Earnings Setup window. (HR & Payroll \>\> Setup \>\> Payroll \>\> Earnings Setup)
 
-    ![Screenshot of the Earnings Setup window, showing default entries and empty input boxes.](media/7db8c46cdee43d97038d40b08f7f361a.jpg)
+    ![Screenshot of the Earnings Setup window.](media/7db8c46cdee43d97038d40b08f7f361a.jpg)
 
 1. Enter or select an earnings code.
 
@@ -1808,7 +1808,7 @@ In the **Garnishment Maximum Setup** window:
 | Min Wage Rule Amt	|$0 |
 | Earnings Code |FEDLEVY |
 
-![Screenshot of the Paid Sales Transaction Removal window, showing default entries and empty input boxes.](media/DEDLEVY02.JPG)
+![Screenshot of the Paid Sales Transaction Removal window.](media/DEDLEVY02.JPG)
 
 In the **Earnings Setup** window:
 
@@ -1868,7 +1868,7 @@ In the **Employee Deduction Maintenance** window:
 | Federal | FEDCS |
 | State | AKCSWHLTH |
 
-![Screenshot of the window, showing deduction entries for example child, named CHILD.](media/DEDCHILDSUP1.JPG)
+![Screenshot of the window, showing deduction entries for an example child, named CHILD.](media/DEDCHILDSUP1.JPG)
 
 In the **Garnishment Maximum Setup** window:
 
@@ -1938,11 +1938,11 @@ In the **Employee Deduction Maintenance** window:
 
 In the **Garnishment Maximum Setup** window:
 
-![Screenshot of a table above two Garnishment Maximum Setup windows. The table lists codes, method, and wages information. One window is for Federal credit, and the other is for state credit.](media/CREDITOR1.JPG)
+![Screenshot of a table above two Garnishment Maximum Setup windows. This table lists code, method, and wages information. One window is for Federal credit, and the other is for state credit.](media/CREDITOR1.JPG)
 
 In the  **Earnings Setup** window:
 
-![Screenshot of a table above two Earnings Setup windows. The table lists codes, deductions, and taxes information. One window is for Federal credit, and the other is for state credit.](media/CREDITOR2.JPG)
+![Screenshot of a table above two Earnings Setup windows. This table lists codes, deductions, and tax information. One window is for Federal credit, and the other is for state credit.](media/CREDITOR2.JPG)
 
 Recap of **Calculate Checks** report:
 
@@ -1956,7 +1956,7 @@ Federal Creditor Garnishment Withholding Maximum:  Use the lesser of:
 •	(The amount by which earnings are greater than 30 times the Federal Minimum Wage) (for bi-weekly 60 times the Federal Minimum Wage) 
 60 x $7.25= $435.00		$480.77-$435.00 = $45.77
 
-![Screenshot of a window above a report, showing a net wage of three hundred and three dollars and three cents after deductions and taxes.](media/CREDITOR4.JPG)
+![Screenshot of the earnings setup window.](media/CREDITOR4.JPG)
 
 
 
@@ -2442,7 +2442,7 @@ the tax rate won't be applied when the maximum amount is reached.
 1. Open the Payroll Local Tax Setup window. (HR & Payroll \>\> Setup \>\>
     Payroll \>\> Local Tax)
 
-![Screenshot of window, showing Check Maximum Witholding entered into the Sequence box.](media/18fcb2fe462d9b4e41beb175bc0256f4.jpg)
+![Screenshot of the payroll local tax setup window.](media/18fcb2fe462d9b4e41beb175bc0256f4.jpg)
 
 1. Enter or select a local tax code and a description.
 
@@ -2911,7 +2911,7 @@ tracking tips* for more information.
 1. Open the Employee Maintenance window. (HR & Payroll \>\> Cards \>\> Payroll
     \>\> Employee)
 
-    ![Screenshot of the window, showing the information of an example employee named Pilar Ackerman.](media/6a0e4daae9eb17c33aa058f859855385.jpg)
+    ![Screenshot of the employee maintenance window.](media/6a0e4daae9eb17c33aa058f859855385.jpg)
 
 1. Enter an employee ID. *If you don't enter an employee ID, Payroll retrieves
     the next employee ID for this field if employee IDs were auto-assigned in
@@ -3016,7 +3016,7 @@ hours per year, and posting account information.
 2. Enter or select an employee ID and choose Additional Information to open the
     Employee Additional Information Maintenance window.
 
-![Screenshot of the window, showing example employee Ackerman's birthdate, minimum net pay, and general personal information.](media/0a325f909f1f1ee2d85f5d4a4be08034.jpg)
+![Screenshot of the employee additional information maintenance window.](media/0a325f909f1f1ee2d85f5d4a4be08034.jpg)
 
 1. Enter the employee's birth date, nickname, and alternate name—if applicable—
     and select the employee's gender.
@@ -3136,7 +3136,7 @@ active employees is less than the number your company is registered for.
 1. Open the Employee Maintenance window. (HR & Payroll \>\> Cards \>\> Payroll
     \>\> Employee)
 
-    ![Screenshot of the Reactivate Employee window, showing the name and employee ID of the employee, and the possible records to reactivate.](media/2298b740be1a0de30dd133ef4e2ea527.jpg)
+    ![Screenshot showing the Reactivate Employee dialog showing employee information and records to reactivate.](media/2298b740be1a0de30dd133ef4e2ea527.jpg)
 
 1. Enter or select an employee ID.
 
@@ -3269,7 +3269,7 @@ employee card .*
 1. Open the Employee Pay Code Maintenance window. (HR & Payroll \>\> Cards \>\>
     Payroll \>\> Pay Code)
 
-    ![Screenshot of the window, showing example employee Ackerman's hourly pay rate of forty dollars, with checkboxes marking the types of taxes to which her wages are subject.](media/16760369754082cfedaae50db2ba65c2.jpg)
+    ![Screenshot of the window, showing example employee Ackerman's hourly pay rate of forty dollars, with checkboxes marking the types of taxes to which wages are subject.](media/16760369754082cfedaae50db2ba65c2.jpg)
 
 1. Enter or select an employee ID.
 
@@ -3418,7 +3418,7 @@ for federal taxes.
 1. Open the Employee Tax Maintenance window. (HR & Payroll \>\> Cards \>\>
     Payroll \>\> Tax)
 
-    ![Screenshot of the Employee Tax Maintenance window, showing the Federal Filing Status of the employee to be married.](media/e79f455694461d269bc46933e6331df8.jpg)
+    ![Screenshot of the Employee Tax Maintenance window.](media/e79f455694461d269bc46933e6331df8.jpg)
 
 1. Enter or select an employee ID.
 
@@ -3486,7 +3486,7 @@ employee works in two states, you might need to set up two state tax cards.
 1. Open the Employee State Tax Maintenance window. (HR & Payroll \>\> Cards
     \>\> Payroll \>\> State Tax)
 
-    ![Screenshot of the Employee State Tax Maintenance window, showing default entries and empty input boxes.](media/a1583fd2f8ed71e5937ca3abde794ad9.jpg)
+    ![Screenshot of the Employee State Tax Maintenance window.](media/a1583fd2f8ed71e5937ca3abde794ad9.jpg)
 
 1. Enter or select an employee ID.
 
@@ -3554,7 +3554,7 @@ tax* for more information.
 1. Open the Employee Local Tax Maintenance window. (HR & Payroll \>\> Cards
     \>\> Payroll \>\> Local Tax)
 
-    ![Screenshot of the Employee Local Tax Maintenance window for employee Pilar Ackerman, showing default entries and empty input boxes.](media/097d06aadd22726915ef8a56f7071066.jpg)
+    ![Screenshot of the Employee Local Tax Maintenance window.](media/097d06aadd22726915ef8a56f7071066.jpg)
 
 1. Enter or select an employee ID.
 
@@ -3619,7 +3619,7 @@ If a deduction is not coming out of an employee check review the below:
 
 1. Open the Employee Deduction Maintenance window. (HR & Payroll \>\> Cards\>\> Payroll \>\> Deduction)
 
-![Screenshot of the window, showing employee Ackerman's start date and Deduction Tier amount, with the rest of the input fields left blank.](media/df1d148ead16783b51fde32e790e8c23.jpg)
+![Screenshot of the Employee Eduction Maintenance window.](media/df1d148ead16783b51fde32e790e8c23.jpg)
 
 1. Enter or select an employee ID.
 
@@ -3861,7 +3861,7 @@ information, refer to *Using zero benefit and deduction amounts* .
 1. Open the Employee Benefit Maintenance window. (HR & Payroll \>\> Cards \>\>
     Payroll \>\> Benefit)
 
-![Screenshot of the Employee Benefit Maintenance window that shows default entries and empty input boxes.](media/9d887bb738d8edd54598ee7f8a811071.jpg)
+![Screenshot of the Employee Benefit Maintenance window.](media/9d887bb738d8edd54598ee7f8a811071.jpg)
 
 
 
@@ -3960,7 +3960,7 @@ You have several options when entering beginning balances:
 1. Open the Payroll Manual Check-Adjustment Entry window. (HR & Payroll \>\>
     Transactions \>\> Payroll \>\> Manual Checks)
 
-![Screenshot of the window, showing the Payment Number, Checkbook ID, and Check Number.](media/69fb31b1b0ae79f9bbd2ac0f482184ff.jpg)
+![Screenshot of the Payroll Manual Check Adjustment Entry window.](media/69fb31b1b0ae79f9bbd2ac0f482184ff.jpg)
 
 A screenshot of a cell phone Description automatically generated
 
@@ -4092,7 +4092,7 @@ later time.
 1. Open the Payroll Batch Entry window. (HR & Payroll \>\> Transactions \>\>
     Payroll \>\> Batches)
 
-![Screenshot of the Payroll Batch Entry window, showing default entries and empty input boxes.](media/e0726813288419d658db5276e0a231c7.jpg)
+![Screenshot of the Payroll Batch Entry window.](media/e0726813288419d658db5276e0a231c7.jpg)
 
 A screenshot of a computer screen Description automatically generated
 
@@ -4179,7 +4179,7 @@ backups.
 1. Open the Payroll Batch Entry window. (HR & Payroll \>\> Transactions \>\>
     Payroll \>\> Batches)
 
-![Screenshot of the Payroll Batch Entry window that shows default entries and empty input boxes.](media/e0726813288419d658db5276e0a231c7.jpg)
+![Screenshot of the Payroll Batch Entry window.](media/e0726813288419d658db5276e0a231c7.jpg)
 
 1. Enter or select the batch ID and origin for the batch to post. *Only batches
     with a manual check origin can be posted in this window.*
@@ -4368,7 +4368,7 @@ The first time you open the window, you'll have the option to open the
 Payroll Transaction Entry window or the Payroll Mass Transaction Entry
 window.
 
-![Screenshot of the window, showing a table with a list of Employee IDs with their corresponding names, and pay information.](media/63bbebba6b7563ee72a87709aa3241d4.jpg)
+![Screenshot of the Payroll Transaction Entry window.](media/63bbebba6b7563ee72a87709aa3241d4.jpg)
 
 
 
@@ -4384,7 +4384,7 @@ window.
     default values for the next transaction or automatically creating default
     transactions. Refer to the online help for this window for more information.
 
-![Screenshot of the window, showing the No Options entry selected.](media/275e6287baa73484e323a985e5136dc4.jpg)
+![Screenshot of the Payroll Transaction Entry Options window, showing the No Options entry selected.](media/275e6287baa73484e323a985e5136dc4.jpg)
 
 
 
@@ -4505,7 +4505,7 @@ window that are posted collectively as a single, complete transaction. You can c
 
 1. Open the Payroll Manual Check–Adjustment Entry window. (HR & Payroll \>\>Transactions \>\> Payroll \>\> Manual Checks)
 
-    ![Screenshot of the Payroll Manual Check Adjustment Entry window, showing default entries and empty input boxes.](media/69fb31b1b0ae79f9bbd2ac0f482184ff.jpg)
+    ![Screenshot of the Payroll Manual Check Adjustment Entry window.](media/69fb31b1b0ae79f9bbd2ac0f482184ff.jpg)
 
 
 2. Select a check type.
@@ -4756,7 +4756,7 @@ o    Negative Amount = Decrease in Federal Taxable Wages
 > NO tax calculations will be done for you automatically. You need to know the amount by which both Federal Tax and Federal Taxable Wages need to be adjusted. GP will not calculate Federal Tax for you automatically in this window.
 
 
-![Screenshot of the window, showing transaction type information for example employee Ackerman.](media/MCADD4.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window.](media/MCADD4.jpg)
 
 
 **Federal Tax transaction in Manual Check Transaction Entry Window**
@@ -4790,7 +4790,7 @@ o    Negative Amount = Decrease in Employer owed FICA Social Security Tax
     > [!NOTE]
     > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Social Security Tax, the FICA Social Security Taxable Wages, and the Employer FICA Social Security Taxes need to be adjusted. GP will not calculate FICA Social Security Tax for you automatically in this window.
 
-![A screenshot of a cell phone Description automatically generated](media/MCADD5.jpg)
+![Screenshot showing the Payroll Manual Check Transaction Entry window.](media/MCADD5.jpg)
 
 
 **FICA Social Security Tax transaction in Manual Check Transaction Entry Window**
@@ -4837,7 +4837,7 @@ o    Negative Amount = Decrease in Employer owed FICA Medicare Tax
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tax, the FICA Medicare Taxable Wages, and the Employer FICA Medicare Taxes need to be adjusted. GP will not calculate FICA Medicare Tax for you automatically in this window.
 
 
-![Screenshot of the window, showing the transaction type to be FICA Soc Sec Tax for the amount of six dollars and twenty cents on a one hundred dollar taxable wage.](media/MCADD6.jpg)
+![Screenshot of the window, showing the transaction type to be FICA Soc Sec Tax.](media/MCADD6.jpg)
 
 
 **FICA Medicare Tax transaction in Manual Check Transaction Entry Window**
@@ -4869,7 +4869,7 @@ o    Negative Amount = Decrease in State Taxable Wages
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the State Tax and State Taxable Wages need to be adjusted. GP will not calculate State Tax for you automatically in this window.
 
-![Screenshot of the window, showing the transaction type to be State Tax for the amount of five dollars on a one hundred dollar taxable wage.](media/MCADD7.jpg)
+![Screenshot of the window, showing the transaction type to be State Tax.](media/MCADD7.jpg)
 
 
 **State Tax transaction in Manual Check Transaction Entry Window**
@@ -4899,7 +4899,7 @@ o    Negative Amount = Decrease in Local Taxable Wages
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Local Tax and Local Taxable Wages need to be adjusted. GP will not calculate Local Tax for you automatically in this window.
 
 
-![Screenshot of the window, showing the transaction type to be Local Tax for the amount of five dollars on a one hundred dollar taxable wage.](media/MCADD8.jpg)
+![Screenshot of the window, showing the transaction type to be Local Tax.](media/MCADD8.jpg)
 
 **Local Tax transaction in Manual Check Transaction Entry Window**
 
@@ -4930,7 +4930,7 @@ To enter/adjust an amount for a specific Pay Advance:
 > NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this pay advance, you'll need to do so manually with the appropriate tax in this window.
 
 
-![Screenshot of the window, showing the transaction type to be Pay Advance for the amount of five hundred dollars.](media/MCADD9.jpg)
+![Screenshot of the window, showing the transaction type to be Pay Advance.](media/MCADD9.jpg)
 
 
 **Pay Advance transaction in Manual Check Transaction Entry Window**
@@ -4962,7 +4962,7 @@ To enter/adjust an amount for a specific Pay Advance:
 > NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this withhold advance, you'll need to do so manually with the appropriate tax in this window.
 
 
-![Screenshot of the window, showing the transaction type to be Withold Advance for the amount of five hundred dollars.](media/MCADD10.jpg)
+![Screenshot of the window, showing the transaction type to be Withold Advance.](media/MCADD10.jpg)
 
 
 **Withhold Advance transaction in Manual Check Transaction Entry Window**
@@ -4993,7 +4993,7 @@ o    Negative Amount = Decrease in Employer owed FICA Social Security Tips Tax
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Social Security Tips Tax, the FICA Social Security Tips Taxable Wages, and the Employer FICA Social Security Tips Taxes need to be adjusted. GP will not calculate FICA Social Security Tips Tax for you automatically in this window.
 
-![Screenshot of the window, showing the transaction type to be FICA Soc Sec/Tips for the amount of six dollars and twenty sense on a one hundred dollar Taxable Wage.](media/MCADD11.jpg)
+![Screenshot of the window, showing the transaction type to be FICA Soc Sec/Tips.](media/MCADD11.jpg)
 
 **FICA Social Security/Tips transaction in Manual Check Transaction Entry Window**
 
@@ -5026,7 +5026,7 @@ o    Negative Amount = Decrease in Employer owed FICA Medicare Tips Tax
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tips Tax, the FICA Medicare Tips Taxable Wages, and the Employer FICA Medicare Tips Taxes need to be adjusted. GP will not calculate FICA Medicare Tips Tax for you automatically in this window.
 
-![Screenshot of the window, showing the transaction type to be FICA Medicare/Tips for the amount of one dollar and forty five cents on a one hundred dollar Taxable Wage.](media/MCADD12.jpg)
+![Screenshot of the window, showing the transaction type to be FICA Medicare/Tips.](media/MCADD12.jpg)
 
 **FICA Medicare Tips transaction in Manual Check Transaction Entry Window**
 
@@ -5056,7 +5056,7 @@ o    Negative Amount = Decrease in Federal Taxable Tips Wages
 > NO tax calculations will be done for you automatically. You need to know the amount by which both Federal Tips Tax and Federal Taxable Tips Wages need to be adjusted. GP will not calculate Federal Tips Tax for you automatically in this window.
 
 
-![Screenshot of the window, showing the transaction type to be Federal Tax/Tips for the amount of five dollars on a one hundred dollar Taxable Wage.](media/MCADD13.jpg)
+![Screenshot of the window, showing the transaction type to be Federal Tax/Tips.](media/MCADD13.jpg)
 
 
 **Federal Tax/Tip transaction in Manual Check Transaction Entry Window**
@@ -5081,7 +5081,7 @@ o    Negative Amount = Decrease Uncollected FICA Soc Sec Tax on Tips
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Social Security Tax needs to be adjusted. GP will not calculate Uncollected FICA Social Security Tax for you automatically in this window.
 
-![Screenshot of the window, showing the transaction type to be Uncollected FICA Soc Sec Tax for the amount of five dollars.](media/MCADD14.jpg)
+![Screenshot of the window, showing the transaction type to be Uncollected FICA Soc Sec Tax.](media/MCADD14.jpg)
 
 
 **Uncollected FICA Social Security Tax transaction in Manual Check Transaction Entry Window**
@@ -5105,7 +5105,7 @@ o    Negative Amount = Decrease Uncollected FICA Medicare Tax on Tips
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Medicare Tax needs to be adjusted. GP will not calculate Uncollected FICA Medicare Tax for you automatically in this window.
 
-![Screenshot of the window, showing the transaction type to be Uncollected FICA Medicare Tax for the amount of five hundred dollars.](media/MCADD15.jpg)
+![Screenshot of the window, showing the transaction type to be Uncollected FICA Medicare Tax.](media/MCADD15.jpg)
 
 **Uncollected FICA Medicare Tax transaction in Manual Check Transaction Entry Window**
 
@@ -5136,7 +5136,7 @@ deleted.
 
     (HR & Payroll \>\> Transactions \>\> Payroll \>\> Manual Check \>\> Choose the Distributions button \>\> Choose the Analytical Accounting button)
 
-    ![Screenshot of the window, showing example information for check with the Functional Amount of four thousand and five hundred dollars.](media/3e3fb21a87f45dc6186c5861d8800dd4.jpg)
+    ![Screenshot of the Analytical Payroll Transaction Entry window.](media/3e3fb21a87f45dc6186c5861d8800dd4.jpg)
 2. Depending on how you opened the Analytical Payroll Transaction Entry window, the information displayed will be either for the distribution or transaction that you selected. To view the other distributions or transactions, enter or select a different number in the Distribution or Transaction field.
 
     - **Functional Amount** This field displays the amount in the originating or functional currency based on the option selected in the currency view.
@@ -5216,7 +5216,7 @@ Use the Build Payroll Checks window to process an advance pay run.
 1. Open the Build Payroll Checks window. (HR & Payroll \>\> Transactions \>\>
     Payroll \>\> Build Checks)
 
-    ![Screenshot of the Build Payroll Checks window, showing default entries and empty input boxes.](media/1e36a8512538982953a287380391da87.jpg)
+    ![Screenshot of the Build Payroll Checks window.](media/1e36a8512538982953a287380391da87.jpg)
 1. Enter or select a default ID. You can enter that default ID the next time
     you build an identical or similar pay run.
 
@@ -5335,7 +5335,7 @@ You can build checks again before they're calculated. Before you build checks, y
 1. Open the Build Payroll Checks window. (HR & Payroll \>\> Transactions \>\>
     Payroll \>\> Build Checks)
 
-    ![Screenshot of the Build Payroll Checks window that is showing default entries and empty input boxes.](media/1e36a8512538982953a287380391da87.jpg)
+    ![Screenshot showing the Build Payroll Checks window.](media/1e36a8512538982953a287380391da87.jpg)
 
 
 1. Enter or select a default ID. You can enter that default ID the next time
@@ -5408,7 +5408,7 @@ them. This procedure assumes you've completed *Building Payroll checks* .
 
 1. Open the Calculate Payroll Checks window. (HR & Payroll \>\> Transactions \>\> Payroll \>\> Calculate Checks)
 
-    ![Screenshot of the window, showing that no warnings or errors exist.](media/11423b22f1aceb44551474e40f1043b4.jpg)
+    ![Screenshot of the Calculate Payroll Checks window.](media/11423b22f1aceb44551474e40f1043b4.jpg)
 
 2. Choose OK to begin calculating the checks.
 
@@ -5433,7 +5433,7 @@ Use the Print Payroll Checks window to print computer paychecks after the Calcul
 
 1. Open the Print Payroll Checks window. (HR & Payroll \>\> Transactions \>\> Payroll \>\> Print Checks)
 
-    ![Screenshot of the window, showing print selections of checks, sorted by Employee ID, in the format of Stub on Top and Continuous.](media/529c50bbcba1dc421f58862d95aeb560.jpg)
+    ![Screenshot of the Print Payroll Checks window.](media/529c50bbcba1dc421f58862d95aeb560.jpg)
 
 1. Enter or select a checkbook ID that checks will be posted to.
 
@@ -5993,7 +5993,7 @@ available to a particular employee.
 
 1. Open the Employee Summary Inquiry window. (HR & Payroll \>\> Inquiry \>\> Payroll \>\> Employee Summary)
 
-    ![Screenshot of the window, showing different types of wages for the quarter and for the year.](media/8cfc7d72df637577f9d3c41043a5f280.jpg)
+    ![Screenshot of the Employee Summary Inquiry window.](media/8cfc7d72df637577f9d3c41043a5f280.jpg)
 
 1. Enter or select an employee ID.
 
@@ -6681,7 +6681,7 @@ not apply to employee /pay code combinations assigned to pay step tables.
 1. Open the Employee Mass Update window. (HR & Payroll \>\> Utilities \>\>
     Payroll \>\> Mass Update)
 
-    ![Screenshot of the Employee Mass Update window, showing default entries and empty input boxes.](media/200ffaf9acb4f75939c8b955e19e4998.jpg)
+    ![Screenshot of the Employee Mass Update window.](media/200ffaf9acb4f75939c8b955e19e4998.jpg)
 
 1. Select a record type to update.
 
@@ -7019,7 +7019,7 @@ circumstances:
 1. Open the Payroll Edit Federal Tax Liabilities window. (HR & Payroll \>\>
     Utilities \>\> Payroll \>\> Edit Liabilities)
 
-![Screenshot of the window, showing a table that includes Audit Trail Codes, Federal Tax withheld, and more, on per month basis.](media/869d9e56ec4b80c38c3cd9d704e9b970.jpg)
+![Screenshot of the Payroll Edit Federal Tax Liabilities window.](media/869d9e56ec4b80c38c3cd9d704e9b970.jpg)
 
 1. Move the cursor to the first available line in the scrolling window to enter  information for a missing pay run.
 
@@ -7056,7 +7056,7 @@ federal, state, and local taxes tables, if necessary.
 
 1. Open the Payroll Tax Setup window. (Administration \>\> Setup \>\> System    \>\> Payroll Tax)
 
-    ![Screenshot of the Payroll Tax Setup window that is showing default entries and empty input boxes.](media/1c8fdb05ebc9940b765583ecf2defd65.jpg)
+    ![Screenshot of the Payroll Tax Setup window.](media/1c8fdb05ebc9940b765583ecf2defd65.jpg)
 
 2. Enter or select a tax code. The tax calculations for that code will be displayed in the Sequence list box. For more information, refer to *Tax calculation methods* .
 
@@ -7352,7 +7352,7 @@ liabilities.
 1. Open the Period-End Payroll Reports window. (HR & Payroll \>\> Reports \>\>
     Payroll \>\> Period-End)
 
-    ![Screenshot of the Period-End Payroll Reports window, showing default entries and empty input boxes.](media/8714afc30e1cbb2b04276244c09ec9c4.jpg)
+    ![Screenshot of the Period-End Payroll Reports window.](media/8714afc30e1cbb2b04276244c09ec9c4.jpg)
 
 1. Select the range of information you want to specify. Records within the
     range you specify will be included on the report.
@@ -7422,15 +7422,15 @@ Total Federal Wages = Gross Wages + Reported Tips + Charged Tips – Taxable Pen
 
 Fields used to calculate Line 2 on the 941 in GP
 
-+	Gross Wages	            |Employee Summary	        | UPR00900  | Cards-Payroll-Summary
-+	Reported Tips	        |Employee Tips Summary	    | UPR00901  | Cards-Payroll-Summary-Tips
-+	Charged Tips	        |Employee Tips Summary	    | UPR00901  | Cards-Payroll-Summary-Tips
--	Taxable Pension Wages	|Payroll Transaction Inquiry| UPR00400  | Cards-Payroll-Paycode
--	 UPR30300  | Cards-Payroll-Paycode-Summary
-+	Taxable Benefits	    |Payroll Transaction Inquiry| UPR00600  | Cards-Payroll-Benefits
-+   UPR30300  | Cards-Payroll-Benefits-Summary
--	Tax Sheltered Deductions|Payroll Transaction Inquiry| UPR00500  | Cards-Payroll-Deduction
--	UPR30300  | Cards-Payroll-Deduction-Summary
+- Gross Wages            | Employee Summary        | UPR00900  | Cards-Payroll-Summary
+- Reported Tips        | Employee Tips Summary    | UPR00901  | Cards-Payroll-Summary-Tips
+- Charged Tips        | Employee Tips Summary    | UPR00901  | Cards-Payroll-Summary-Tips
+- Taxable Pension Wages | Payroll Transaction Inquiry| UPR00400  | Cards-Payroll-Paycode
+- | UPR30300  | Cards-Payroll-Paycode-Summary
+- Taxable Benefits    | Payroll Transaction Inquiry| UPR00600  | Cards-Payroll-Benefits
+- | UPR30300  | Cards-Payroll-Benefits-Summary
+- Tax Sheltered Deductions| Payroll Transaction Inquiry| UPR00500  | Cards-Payroll-Deduction
+- | UPR30300  | Cards-Payroll-Deduction-Summary
 
 *Important Note: Non-Taxable Pension Wages will be included in line 2 of the 941 in Microsoft Dynamics GP.
 
@@ -7735,7 +7735,7 @@ You can use the Edit W-2 Information window to verify and make changes to an emp
 
 1. Open the Edit W-2 Information window.(HR & Payroll \>\> Routines \>\> Payroll \>\> Edit W-2s)
 
-    ![Screenshot of the window, showing example employee Ackerman's identifying information and wage breakdown.](media/9e6332cdad1fdc154295311ab32577f1.jpg)
+    ![Screenshot of the Edit W 2 Information window.](media/9e6332cdad1fdc154295311ab32577f1.jpg)
 
 2. Select a sorting option at the bottom of the window. This determines how the employee IDs will be sorted in the lookup window and also the order the records will appear when using the browse buttons.
 
@@ -7781,7 +7781,7 @@ printed on W-2 statements and then print the statements.
 
 1. Open the Print W-2 Forms window. (HR & Payroll \>\> Routines \>\> Payroll\>\> Print W-2s)
 
-    ![Screenshot of the window, showing Fabrikam, Inc. W2 print options.](media/365516adb0b6ca00c79fdf8767c69aab.jpg)
+    ![Screenshot of the Print W 2 Forms window.](media/365516adb0b6ca00c79fdf8767c69aab.jpg)
 
 2. Select a year to print W-2 statements for.
 
@@ -8194,7 +8194,7 @@ use, and the next earnings statement number.
 1. Open the Direct Deposit Setup window. (HR & Payroll \>\> Setup \>\> Payroll
     \>\> Direct Deposit)
 
-    ![Screenshot of the Direct Deposit Setup window, showing default entries and empty input boxes.](media/6cb1e11f305468be8d8102cefb6d1c26.jpg)
+    ![Screenshot of the Direct Deposit Setup window.](media/6cb1e11f305468be8d8102cefb6d1c26.jpg)
 1. Mark Active to turn on Payroll Direct Deposit.
 
     You can mark Inactive to turn off Direct Deposit for a single pay run. However, we recommend that you select No Deposits this Payroll in the Deposit Method drop-down list in the Direct Deposit Print window.
@@ -8351,7 +8351,7 @@ affect the ACH files you generate, you can refer to the following
 illustrations. The information displayed in the following ACH File was
 generated from the ACH Fields Setup window shown.
 
-![Screenshot of an ACH Notepad file that lists employee names and IDS, above an ACH Fields Setup window.](media/482cd47ebf113903f4dca8ac3db9dc29.jpg)
+![Screenshot of an ACH Notepad file and an ACH Fields Setup window.](media/482cd47ebf113903f4dca8ac3db9dc29.jpg)
 
 **To set up the ACH fields:**
 
@@ -8597,7 +8597,7 @@ Use the Employee Direct Deposit Maintenance window to set up direct deposit info
 
 1. Open the Employee Direct Deposit Maintenance window. (HR & Payroll \>\>    Cards \>\> Payroll \>\> Direct Deposit)
 
-    ![Screenshot of the window, showing Direct Deposit information for example employee Ackerman.](media/cdedf76f47afdd0a550d3c6615aa1ae2.jpg)
+    ![Screenshot of the Employee Direct Deposit Maintenance window.](media/cdedf76f47afdd0a550d3c6615aa1ae2.jpg)
 
 1. Select an Employee ID.
 
@@ -8844,7 +8844,7 @@ Payroll Direct Deposit changes the Payroll process for Microsoft Dynamics GP. Af
 
 1. Open the Print Payroll Checks window. (Transaction \>\> Payroll \>\> Print    Checks)
 
-    ![Screenshot of the window, with Calculate Employee Deposits selected as the process and Direct Deposit set to Active.](media/469bdd3fdf092d3a4244d06aa6a9f34e.jpg)
+    ![Screenshot of the Print Payroll Checks window.](media/469bdd3fdf092d3a4244d06aa6a9f34e.jpg)
 
 1. Choose Process to calculate the direct deposit information.
 
@@ -8872,7 +8872,7 @@ can print earnings statements.
 
     If your Deposit Method is Separate from Checks you must print the earnings statements now. You will not be able to print earnings statements after posting.
 
-    ![Screenshot of the Post Payroll Checks window, showing the process set to Print Earnings Statemetns.](media/3f8cd1887e8f823280a01ea05821806e.jpg)
+    ![Screenshot of the Post Payroll Checks window.](media/3f8cd1887e8f823280a01ea05821806e.jpg)
 
 1. Enter a posting date or accept the default date and select Print Earnings Statements in the Process field.
 
