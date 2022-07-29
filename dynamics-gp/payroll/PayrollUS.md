@@ -614,7 +614,7 @@ the queue, and how often the processing request will be retried.
 
 2. Choose Options to open the Payroll Setup Options window and enter additional Payroll default entries.
 
-  ![Screenshot of the window, showing a highlighted example payment with associated adjustment, computer cheque, and Manual cheque numbers.](media/4708ab0e7f6f18ab63be383fd62d7757.jpg)
+  ![Screenshot of the Payroll Setup Options window.](media/4708ab0e7f6f18ab63be383fd62d7757.jpg)
 
 3. Enter the next transaction numbers and select the number of decimal places for pay rates, deductions, and benefits.
 
@@ -763,7 +763,7 @@ Before you can complete the procedure in this section, you must define the Payro
 
 1. Open the Analytical Payroll Default Dimensions window. (Administration \>\> Setup \>\> Posting \>\> Payroll Accounts \>\> Analytical Accounting button)
 
-    ![Screenshot of the window, showing a table with options for Employee ID, Department, Position, Code, Alias, and Percentage.](media/42dc967c9e3c5e9fd56262097bdd695e.jpg)
+    ![Screenshot of the Analytical Payroll Default Dimensions window.](media/42dc967c9e3c5e9fd56262097bdd695e.jpg)
 
 2. Select a payroll posting type.
 
@@ -1165,7 +1165,7 @@ minimum wage balance, charged tips, and reported tips. The first pay code
 would be the normal hourly pay rate and weekly pay period, as shown in the
 following Employee Pay Code Maintenance window.
 
-![Screenshot of the window, showing an example employee named Pilar Ackerman, and forty dollars entered into the Pay Rate field.](media/16760369754082cfedaae50db2ba65c2.jpg)
+![Screenshot of the Employee Pay Code Maintenance window, showing an example employee named Pilar Ackerman, and forty dollars entered into the Pay Rate field.](media/16760369754082cfedaae50db2ba65c2.jpg)
 
 Because her wages are derived primarily from tips, she also needs a charged
 tips and reported tips pay code.
@@ -1176,7 +1176,7 @@ the employee in the paycheck on a regularly scheduled basis, in this case,
 weekly. The following is an example of how you could set up the reported
 tips pay code.
 
-![Screenshot of the window, showing Tips Recieved set to Directly, and Pay Period set to Weekly.](media/5eba24a96b72d29e6640e70082a1f8de.jpg)
+![Screenshot of the Employee Pay Code Maintenance window, showing Tips Recieved set to Directly, and Pay Period set to Weekly.](media/5eba24a96b72d29e6640e70082a1f8de.jpg)
 
 Reported tips are tips the employee receives from patrons in cash. Employees
 need to report this amount to employers on a regular basis so that a
@@ -1190,7 +1190,7 @@ minimum wage balance pay code in addition to the three pay codes already
 assigned to her. The following is an example of how you could set up the
 minimum wage balance pay code.
 
-![Screenshot of the window, showing the Pay Rate set to ten dollars and the Unit of Pay set to Hourly.](media/049e78b866469e8ae7e3a82f53a5b715.jpg)
+![Screenshot of the Employee Pay Code Maintenance window, showing the Pay Rate set to ten dollars and the Unit of Pay set to Hourly.](media/049e78b866469e8ae7e3a82f53a5b715.jpg)
 
 
 > [!NOTE]
@@ -1868,15 +1868,15 @@ In the **Employee Deduction Maintenance** window:
 | Federal | FEDCS |
 | State | AKCSWHLTH |
 
-![Screenshot of the window, showing deduction entries for an example child, named CHILD.](media/DEDCHILDSUP1.JPG)
+![Screenshot of the Employee Deduction Maintenance window, showing deduction entries for an example child, named CHILD.](media/DEDCHILDSUP1.JPG)
 
 In the **Garnishment Maximum Setup** window:
 
-![Screenshot of a table above two Garnishment Maximum setup windows. The table lists codes and withholding information. One window is for Federal child support, and the other is for state child support.](media/DEDCHILDSUP2.JPG)
+![Screenshot showing the garnishment maximum setup and the garnishment setup windows.](media/DEDCHILDSUP2.JPG)
 
 In the  **Earnings Setup** window:
 
-![Screenshot of a table above two Earnings Setup windows. The table lists codes, deductions, and taxes information. One window is for Federal child support, and the other is for state child support.](media/DEDCHILDSUP3.JPG)
+![Screenshot showing earnings setup and the earnings setup windows. Federal child support withholding information displays in one window and state child support in the other.](media/DEDCHILDSUP3.JPG)
 
 Recap of **Calculate Checks** report:
 
@@ -3269,7 +3269,7 @@ employee card .*
 1. Open the Employee Pay Code Maintenance window. (HR & Payroll \>\> Cards \>\>
     Payroll \>\> Pay Code)
 
-    ![Screenshot of the window, showing example employee Ackerman's hourly pay rate of forty dollars, with checkboxes marking the types of taxes to which wages are subject.](media/16760369754082cfedaae50db2ba65c2.jpg)
+    ![Screenshot of the Employee Pay Code Maintenance window showing details for an example employee.](media/16760369754082cfedaae50db2ba65c2.jpg)
 
 1. Enter or select an employee ID.
 
@@ -4837,7 +4837,7 @@ o    Negative Amount = Decrease in Employer owed FICA Medicare Tax
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tax, the FICA Medicare Taxable Wages, and the Employer FICA Medicare Taxes need to be adjusted. GP will not calculate FICA Medicare Tax for you automatically in this window.
 
 
-![Screenshot of the window, showing the transaction type to be FICA Soc Sec Tax.](media/MCADD6.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be FICA Soc Sec Tax.](media/MCADD6.jpg)
 
 
 **FICA Medicare Tax transaction in Manual Check Transaction Entry Window**
@@ -4869,7 +4869,7 @@ o    Negative Amount = Decrease in State Taxable Wages
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the State Tax and State Taxable Wages need to be adjusted. GP will not calculate State Tax for you automatically in this window.
 
-![Screenshot of the window, showing the transaction type to be State Tax.](media/MCADD7.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be State Tax.](media/MCADD7.jpg)
 
 
 **State Tax transaction in Manual Check Transaction Entry Window**
@@ -4899,7 +4899,7 @@ o    Negative Amount = Decrease in Local Taxable Wages
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Local Tax and Local Taxable Wages need to be adjusted. GP will not calculate Local Tax for you automatically in this window.
 
 
-![Screenshot of the window, showing the transaction type to be Local Tax.](media/MCADD8.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be Local Tax.](media/MCADD8.jpg)
 
 **Local Tax transaction in Manual Check Transaction Entry Window**
 
@@ -4930,7 +4930,7 @@ To enter/adjust an amount for a specific Pay Advance:
 > NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this pay advance, you'll need to do so manually with the appropriate tax in this window.
 
 
-![Screenshot of the window, showing the transaction type to be Pay Advance.](media/MCADD9.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be Pay Advance.](media/MCADD9.jpg)
 
 
 **Pay Advance transaction in Manual Check Transaction Entry Window**
@@ -4962,7 +4962,7 @@ To enter/adjust an amount for a specific Pay Advance:
 > NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this withhold advance, you'll need to do so manually with the appropriate tax in this window.
 
 
-![Screenshot of the window, showing the transaction type to be Withold Advance.](media/MCADD10.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be Withold Advance.](media/MCADD10.jpg)
 
 
 **Withhold Advance transaction in Manual Check Transaction Entry Window**
@@ -4993,7 +4993,7 @@ o    Negative Amount = Decrease in Employer owed FICA Social Security Tips Tax
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Social Security Tips Tax, the FICA Social Security Tips Taxable Wages, and the Employer FICA Social Security Tips Taxes need to be adjusted. GP will not calculate FICA Social Security Tips Tax for you automatically in this window.
 
-![Screenshot of the window, showing the transaction type to be FICA Soc Sec/Tips.](media/MCADD11.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be FICA Soc Sec/Tips.](media/MCADD11.jpg)
 
 **FICA Social Security/Tips transaction in Manual Check Transaction Entry Window**
 
@@ -5026,7 +5026,7 @@ o    Negative Amount = Decrease in Employer owed FICA Medicare Tips Tax
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tips Tax, the FICA Medicare Tips Taxable Wages, and the Employer FICA Medicare Tips Taxes need to be adjusted. GP will not calculate FICA Medicare Tips Tax for you automatically in this window.
 
-![Screenshot of the window, showing the transaction type to be FICA Medicare/Tips.](media/MCADD12.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be FICA Medicare/Tips.](media/MCADD12.jpg)
 
 **FICA Medicare Tips transaction in Manual Check Transaction Entry Window**
 
@@ -5056,7 +5056,7 @@ o    Negative Amount = Decrease in Federal Taxable Tips Wages
 > NO tax calculations will be done for you automatically. You need to know the amount by which both Federal Tips Tax and Federal Taxable Tips Wages need to be adjusted. GP will not calculate Federal Tips Tax for you automatically in this window.
 
 
-![Screenshot of the window, showing the transaction type to be Federal Tax/Tips.](media/MCADD13.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be Federal Tax/Tips.](media/MCADD13.jpg)
 
 
 **Federal Tax/Tip transaction in Manual Check Transaction Entry Window**
@@ -5081,7 +5081,7 @@ o    Negative Amount = Decrease Uncollected FICA Soc Sec Tax on Tips
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Social Security Tax needs to be adjusted. GP will not calculate Uncollected FICA Social Security Tax for you automatically in this window.
 
-![Screenshot of the window, showing the transaction type to be Uncollected FICA Soc Sec Tax.](media/MCADD14.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be Uncollected FICA Soc Sec Tax.](media/MCADD14.jpg)
 
 
 **Uncollected FICA Social Security Tax transaction in Manual Check Transaction Entry Window**
@@ -5105,7 +5105,7 @@ o    Negative Amount = Decrease Uncollected FICA Medicare Tax on Tips
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Medicare Tax needs to be adjusted. GP will not calculate Uncollected FICA Medicare Tax for you automatically in this window.
 
-![Screenshot of the window, showing the transaction type to be Uncollected FICA Medicare Tax.](media/MCADD15.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be Uncollected FICA Medicare Tax.](media/MCADD15.jpg)
 
 **Uncollected FICA Medicare Tax transaction in Manual Check Transaction Entry Window**
 
@@ -6727,7 +6727,7 @@ receive \$250.00 after taxes.
 1. Open the Payroll Gross Up window. (HR & Payroll \>\> Utilities \>\> Payroll
     \>\> Gross Up)
 
-    ![Screenshot of the window, showing a list of tax percentages based on the two hundred and fifty dollar Net Amount.](media/b261605dcfe8ac32b37de75036950e81.jpg)
+    ![Screenshot of the Payroll Gross Up window.](media/b261605dcfe8ac32b37de75036950e81.jpg)
 
 1. Enter the net amount to pay your employee. 3. Enter the employee's federal
     tax percentage.
