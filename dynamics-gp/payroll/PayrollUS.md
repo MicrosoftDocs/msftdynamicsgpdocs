@@ -7419,9 +7419,8 @@ Here is an example of the calculation:
 
 Total Federal Wages = Gross Wages + Reported Tips + Charged Tips – Taxable Pension Wages + Taxable Benefits – Tax Sheltered Deductions
 
-
-Fields used to calculate Line 2 on the 941 in GP
-
+| |Fields used to calculate Line 2 on the 941 in GP| |
+|----------|-----------|------------|
 +	Gross Wages	            |Employee Summary	        | UPR00900  | Cards-Payroll-Summary
 +	Reported Tips	        |Employee Tips Summary	    | UPR00901  | Cards-Payroll-Summary-Tips
 +	Charged Tips	        |Employee Tips Summary	    | UPR00901  | Cards-Payroll-Summary-Tips
