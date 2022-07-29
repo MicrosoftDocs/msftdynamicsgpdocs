@@ -4837,7 +4837,7 @@ o    Negative Amount = Decrease in Employer owed FICA Medicare Tax
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tax, the FICA Medicare Taxable Wages, and the Employer FICA Medicare Taxes need to be adjusted. GP will not calculate FICA Medicare Tax for you automatically in this window.
 
 
-![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be FICA Soc Sec Tax.](media/MCADD6.jpg)
+![Screenshot of the manual check transaction entry window showing FICA social security tax selected as transaction type.](media/MCADD6.jpg)
 
 
 **FICA Medicare Tax transaction in Manual Check Transaction Entry Window**
@@ -4869,7 +4869,7 @@ o    Negative Amount = Decrease in State Taxable Wages
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the State Tax and State Taxable Wages need to be adjusted. GP will not calculate State Tax for you automatically in this window.
 
-![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be State Tax.](media/MCADD7.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing State Tax selected as the transaction type.](media/MCADD7.jpg)
 
 
 **State Tax transaction in Manual Check Transaction Entry Window**
@@ -4899,7 +4899,7 @@ o    Negative Amount = Decrease in Local Taxable Wages
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Local Tax and Local Taxable Wages need to be adjusted. GP will not calculate Local Tax for you automatically in this window.
 
 
-![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be Local Tax.](media/MCADD8.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing Local Tax selected as the transaction type.](media/MCADD8.jpg)
 
 **Local Tax transaction in Manual Check Transaction Entry Window**
 
@@ -4930,7 +4930,7 @@ To enter/adjust an amount for a specific Pay Advance:
 > NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this pay advance, you'll need to do so manually with the appropriate tax in this window.
 
 
-![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be Pay Advance.](media/MCADD9.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing Pay Advance selected as the transaction type.](media/MCADD9.jpg)
 
 
 **Pay Advance transaction in Manual Check Transaction Entry Window**
@@ -4962,7 +4962,7 @@ To enter/adjust an amount for a specific Pay Advance:
 > NO tax calculations will be done for you automatically. If you need to increase or decrease taxes in association with this withhold advance, you'll need to do so manually with the appropriate tax in this window.
 
 
-![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be Withold Advance.](media/MCADD10.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing Withold Advance selected as the transaction type.](media/MCADD10.jpg)
 
 
 **Withhold Advance transaction in Manual Check Transaction Entry Window**
@@ -4993,7 +4993,7 @@ o    Negative Amount = Decrease in Employer owed FICA Social Security Tips Tax
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Social Security Tips Tax, the FICA Social Security Tips Taxable Wages, and the Employer FICA Social Security Tips Taxes need to be adjusted. GP will not calculate FICA Social Security Tips Tax for you automatically in this window.
 
-![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be FICA Soc Sec/Tips.](media/MCADD11.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing FICA Soc Sec/Tips selected as the transaction type.](media/MCADD11.jpg)
 
 **FICA Social Security/Tips transaction in Manual Check Transaction Entry Window**
 
@@ -5026,7 +5026,7 @@ o    Negative Amount = Decrease in Employer owed FICA Medicare Tips Tax
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the FICA Medicare Tips Tax, the FICA Medicare Tips Taxable Wages, and the Employer FICA Medicare Tips Taxes need to be adjusted. GP will not calculate FICA Medicare Tips Tax for you automatically in this window.
 
-![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be FICA Medicare/Tips.](media/MCADD12.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing FICA Medicare/Tips selected as the transaction type.](media/MCADD12.jpg)
 
 **FICA Medicare Tips transaction in Manual Check Transaction Entry Window**
 
@@ -5056,7 +5056,7 @@ o    Negative Amount = Decrease in Federal Taxable Tips Wages
 > NO tax calculations will be done for you automatically. You need to know the amount by which both Federal Tips Tax and Federal Taxable Tips Wages need to be adjusted. GP will not calculate Federal Tips Tax for you automatically in this window.
 
 
-![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be Federal Tax/Tips.](media/MCADD13.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing Federal Tax/Tips selected as the transaction type.](media/MCADD13.jpg)
 
 
 **Federal Tax/Tip transaction in Manual Check Transaction Entry Window**
@@ -5081,7 +5081,7 @@ o    Negative Amount = Decrease Uncollected FICA Soc Sec Tax on Tips
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Social Security Tax needs to be adjusted. GP will not calculate Uncollected FICA Social Security Tax for you automatically in this window.
 
-![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be Uncollected FICA Soc Sec Tax.](media/MCADD14.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing Uncollected FICA Soc Sec Tax selected as the transaction type.](media/MCADD14.jpg)
 
 
 **Uncollected FICA Social Security Tax transaction in Manual Check Transaction Entry Window**
@@ -5105,7 +5105,7 @@ o    Negative Amount = Decrease Uncollected FICA Medicare Tax on Tips
 > [!NOTE]
 > NO tax calculations will be done for you automatically. You need to know the amount by which the Uncollected FICA Medicare Tax needs to be adjusted. GP will not calculate Uncollected FICA Medicare Tax for you automatically in this window.
 
-![Screenshot of the Payroll Manual Check Transaction Entry window, showing the transaction type to be Uncollected FICA Medicare Tax.](media/MCADD15.jpg)
+![Screenshot of the Payroll Manual Check Transaction Entry window, showing Uncollected FICA Medicare Tax selected as the transaction type.](media/MCADD15.jpg)
 
 **Uncollected FICA Medicare Tax transaction in Manual Check Transaction Entry Window**
 
@@ -5433,7 +5433,7 @@ Use the Print Payroll Checks window to print computer paychecks after the Calcul
 
 1. Open the Print Payroll Checks window. (HR & Payroll \>\> Transactions \>\> Payroll \>\> Print Checks)
 
-    ![Screenshot of the Print Payroll Checks window.](media/529c50bbcba1dc421f58862d95aeb560.jpg)
+    ![Screenshot of the Print Payroll Checks window. Check details including starting check number, check date and ACH posting date.](media/529c50bbcba1dc421f58862d95aeb560.jpg)
 
 1. Enter or select a checkbook ID that checks will be posted to.
 
@@ -8844,7 +8844,7 @@ Payroll Direct Deposit changes the Payroll process for Microsoft Dynamics GP. Af
 
 1. Open the Print Payroll Checks window. (Transaction \>\> Payroll \>\> Print    Checks)
 
-    ![Screenshot of the Print Payroll Checks window.](media/469bdd3fdf092d3a4244d06aa6a9f34e.jpg)
+    ![Screenshot of the Print Payroll Checks window. The Calculate Employee Deposits process is selected.](media/469bdd3fdf092d3a4244d06aa6a9f34e.jpg)
 
 1. Choose Process to calculate the direct deposit information.
 
@@ -8872,7 +8872,7 @@ can print earnings statements.
 
     If your Deposit Method is Separate from Checks you must print the earnings statements now. You will not be able to print earnings statements after posting.
 
-    ![Screenshot of the Post Payroll Checks window.](media/3f8cd1887e8f823280a01ea05821806e.jpg)
+    ![Screenshot of the Post Payroll Checks window. The Print Earnings Statements process is selected.](media/3f8cd1887e8f823280a01ea05821806e.jpg)
 
 1. Enter a posting date or accept the default date and select Print Earnings Statements in the Process field.
 
