@@ -712,7 +712,7 @@ in it.
 
 PACM 14.JPEG
 
-![Screenshot of the Contract Template Maintenance window.](media/PACM%2014.jpg)
+![Screenshot of the Contract Template Maintenance window, which is similar to the Contract Maintenance window.](media/PACM%2014.jpg)
 
 A screenshot of a cell phone Description automatically generated
 

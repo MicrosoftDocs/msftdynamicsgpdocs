@@ -220,7 +220,7 @@ Use the Payables Management Setup window to set the default entries that appear 
 1. Open the Payables Management Setup window. 
 (Purchasing \>\> Setup \>\> Payables)
 
-    ![A screenshot](media/1fcb1c9315f92b4613fe60b385c4682c.jpg)
+    ![Screenshot shows the Payables Management Setup window.](media/1fcb1c9315f92b4613fe60b385c4682c.jpg)
 
 2. Specify the aging periods to use. See *Aging periods* for more information.
 
@@ -253,7 +253,7 @@ Use the Payables Setup Options window to set up the options that appear througho
 1. Open the Payables Setup Options window. 
 (Purchasing \>\> Setup \>\> Payables \>\> Options button)
 
-    ![A screenshot](media/460a1ef1bca30addce42fb893d5243f7.jpg)
+    ![Screenshot shows the Payables Setup Options window.](media/460a1ef1bca30addce42fb893d5243f7.jpg)
 
 2. Specify default transaction descriptions and codes. The transaction description is displayed on reports. Use the transaction code when there isn’t room for the entire transaction description on reports or in windows.
 
@@ -464,7 +464,7 @@ Once you decide the most appropriate numbering system, be sure that all the IDs 
 1. Open the Vendor Maintenance window. 
 (Purchasing \>\> Cards \>\> Vendor)
 
-    ![A screenshot of a social media post Description automatically generated](media/21348fdcccb7ebee1793a144b7549fe1.jpg)
+    ![Screenshot shows the Vendor Maintenance window.](media/21348fdcccb7ebee1793a144b7549fe1.jpg)
 
     Some fields in the window will have default values. Some default values are the same for all vendor information, but others come from the vendor class information entered in the Vendor Class Setup window and the Vendor Class Accounts Setup window. Refer to the table for more information.
 
@@ -800,7 +800,7 @@ If you’re using Multicurrency Management, amounts in this window are displayed
 1. Open the Vendor Credit Summary window. 
 (Purchasing \>\> Cards \>\> Summary)
 
-    ![A screenshot of a social media post Description automatically generated](media/ff5ad220959626dfb33449db1b6de077.jpg)
+    ![Screenshot shows the Vendor Credit Summary window.](media/ff5ad220959626dfb33449db1b6de077.jpg)
 
 2. Enter or select a vendor ID.
 
@@ -2128,7 +2128,7 @@ If you are using vendor approval workflow, vendors must have the workflow status
 1. Open the Edit Payables Checks Batch window: 
 (Purchasing \>\> Transactions \>\> Select Checks \>\> Edit Check Batch button)
 
-    ![A screenshot of a social media post Description automatically generated](media/ae10e55f7f43a94870f8f573b491600d.jpg)
+    ![Screenshot shows the Edit Payables Checks Batch window.](media/ae10e55f7f43a94870f8f573b491600d.jpg)
 
 2. Mark a vendor in the Vendors list to include a payment to that vendor in the check batch. To remove all the payments for a vendor, unmark the check box for that vendor in the Vendors list.
 
@@ -2947,7 +2947,7 @@ Use the Customer/Vendor Relationships window to link a customer to a vendor or a
 1. Open the Customer/Vendor Relationships window.
 (Purchasing \>\> Cards \>\> Customer/Vendor)
 
-    ![A screenshot of a social media post Description automatically generated](media/3f06bed41c387c8ea549618091fa1dea.jpg)
+    ![Screenshot shows the Customer/Vendor Relationships window.](media/3f06bed41c387c8ea549618091fa1dea.jpg)
 
 2. Enter or select a vendor and a customer. You can create more than one customer/vendor relationship at a time in this window by entering multiple customers and vendors.
 
@@ -3476,7 +3476,7 @@ All the inquiry windows except for the Payables Summary Inquiry window use links
 
 3. Select a transaction in the scrolling window and choose the Unapplied Amount link. The Payables Apply Zoom window opens. Choose OK to close the window when you finish.
 
-    ![screenshot](media/04b75579f86ed98831aafdcf25aac3a1.jpg)
+    ![Screenshot shows the Payables Apply Zoom window.](media/04b75579f86ed98831aafdcf25aac3a1.jpg)
 
 If you receive an error message when going into a Payables Inquiry window such as:
 'Cannot insert the value NULL into column 'DOCTYABR', table 'tempdb.dbo.'
@@ -4336,7 +4336,7 @@ The following table illustrates the change in amounts when the format is changed
 6.	Choose Import/Export to import or export a file format to use in another company.
 7.	Choose Save to save your changes. 
 
- ![screenshot](media/eftfileformat1.jpg)
+ ![Screenshot shows setting up an EFT file format.](media/eftfileformat1.jpg)
  
 OPTIONAL:
 If you want, insert this additional information in-between the existing steps 5 and 6 to add some info about some of the other newer fields in the above window. 

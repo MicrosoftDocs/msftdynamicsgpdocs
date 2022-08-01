@@ -1,6 +1,6 @@
 ---
 title: "Invoicing in Dynamics GP"
-description: "Examine how the Invoicing module works in Microsoft Dynamics GP."
+description: "Learn how the Invoicing module works in Microsoft Dynamics GP with part one of this walkthrough, which covers setup."
 keywords: "invoicing"
 author: theley502
 manager: edupont

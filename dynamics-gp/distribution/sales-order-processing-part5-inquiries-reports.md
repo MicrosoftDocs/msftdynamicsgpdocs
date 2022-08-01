@@ -82,7 +82,7 @@ You can view information as it was originally entered by clicking on link fields
 1. Open the Salesperson Inquiry window.
     (Sales \>\> Inquiry \>\> Salesperson)
 
-    ![SOage189.jpg](media/SOage189.jpg)
+    ![Screenshot of window, showing the Sales Order processing model selected in the module dropdown menu.](media/SOage189.jpg)
 
 2. Select the Sales Order Processing module.
 
@@ -137,7 +137,7 @@ You can set up an inquiry with multiple restrictions, save it, and use this inqu
 1. Open the Sales Inquiry Restrictions window.
     (Sales \>\> Inquiry \>\> Restrict Sales Documents)
 
-    ![SOage191.jpg](media/SOage191.jpg)
+    ![Screenshot of Sales Inquiry Restrictions window, showing input options before entries have been made.](media/SOage191.jpg)
 
 2. Enter or select an Inquiry ID.
 
@@ -188,7 +188,7 @@ Use the Sales Order Processing Item Inquiry window to view all documents entered
 1. Open the Sales Order Processing Item Inquiry window.
     (Sales \>\> Inquiry \>\> Sales Items)
 
-    ![SOage193.jpg](media/SOage193.jpg)
+    ![Screenshot of window, showing sample document types, numbers, dates, customer IDs, and extended pricing amounts.](media/SOage193.jpg)
 
 2. Choose a range of item numbers, document numbers, or document types to view.
 
@@ -218,7 +218,7 @@ You can use the Sales Serial-Lot Number Inquiry window to view sold items that a
 1. Open the Sales Serial-Lot Number Inquiry window.
     (Sales \>\> Inquiry \>\> Sales Serial/Lots)
 
-    ![SOage195.jpg](media/SOage195.jpg)
+    ![Screenshot of Sales Serial Lot Number Inquiry window, showing input options before entries have been made.](media/SOage195.jpg)
 
 2. Enter or select an item number.
 
@@ -243,7 +243,7 @@ Use the Sales Process Holds Inquiry window to view documents that have a process
 1. Open the Sales Process Holds Inquiry window.
     (Sales \>\> Inquiry \>\> Sales Process Holds)
 
-    ![SOage197.jpg](media/SOage197.jpg)
+    ![Screenshot of Sales Process Holds Inquiry window, showing input options before entries have been made.](media/SOage197.jpg)
 
 2. Choose a process hold to view.
 
@@ -269,7 +269,7 @@ If you're using advanced picking, use the Sales Bulk Pick Detail window to view 
 1. Open the Sales Bulk Pick Detail window.
     (Sales \>\> Transactions \>\> Bulk Print \>\> select an available pick \>\> click the Available Pick link)
 
-    ![SOage199.jpg](media/SOage199.jpg)
+    ![Screenshot of window, showing example lists of document numbers, item numbers, req ship dates, and Customer IDs.](media/SOage199.jpg)
 
 2. Choose OK to close the window.
 
@@ -282,7 +282,7 @@ If you're using sales fulfillment workflow, use the Sales Document Status Inquir
 1. Open the Sales Document Status Inquiry window.
     (Sales \>\> Inquiry \>\> Sales Range Inquiry \>\> click the Document Status Link)
 
-    ![SOage201.jpg](media/SOage201.jpg)
+    ![Screenshot of window, showing examples of document status entries, including ready to print picking ticket, unconfirmed pick, and confirm pick/ready to pack.](media/SOage201.jpg)
 
 2. When you've finished, close the window.
 

@@ -1,6 +1,6 @@
 ---
 title: "What's new in Dynamics GP in October 2019"
-description: "Learn about enhancements that were added to the product in this release of Dynamics GP."
+description: "Learn about enhancements that were added to the product in this release of Dynamics GP in October 2019."
 keywords: ""
 author: edupont04
 
@@ -168,35 +168,35 @@ A number of updates have been made to the workflow area in Dynamics GP.
 
 You can now set up a workflow for editing or adding user security.
 
-![Shows the Workflow Maintenance window](media/2019_Workflow_UserSecurity.png)
+![Shows the Workflow Maintenance window for the User Security workflow.](media/2019_Workflow_UserSecurity.png)
 
 ### User Workflow​
 
 You can now set up a workflow for editing or adding users.
 
-![Shows the Workflow Maintenance window](media/2019_Workflow_Users.png)
+![Shows the Workflow Maintenance window for the User workflow.](media/2019_Workflow_Users.png)
 
 ### Security Roles Workflow​
 
 You can now set up a workflow for modifying security roles.
 
-![Shows the Workflow Maintenance window](media/2019_Workflow_SecurityRoles.png)
+![Shows the Workflow Maintenance window for the Security Roles workflow.](media/2019_Workflow_SecurityRoles.png)
 
 ### Security Tasks Workflow​
 
 You can now set up a workflow for modifying security tasks.
 
-![Shows the Workflow Maintenance window](media/2019_Workflow_SecurityTasks.png)
+![Shows the Workflow Maintenance window for the Security Tasks workflow.](media/2019_Workflow_SecurityTasks.png)
 
 ### Export and import workflow​s
 
 You can now export a workflow to a .json file. Then you can copy that to another workflow, or another company.
 
-![Shows the Workflow Maintenance window](media/2019_Workflow_ExportWF.png)
+![Shows the Workflow Maintenance window and how to export a workflow.](media/2019_Workflow_ExportWF.png)
 
 When you import an exported workflow from a .json file, you must specify the name of the new workflow. To import a workflow, the workflow type must match.
 
-![Shows the Workflow Maintenance window](media/2019_Workflow_ImportWF.png)
+![Shows the Workflow Maintenance window and how to import a workflow.](media/2019_Workflow_ImportWF.png)
 
 After import, set up workflow approvers and message options.
 
@@ -212,7 +212,7 @@ Workflow managers can delegate workflow tasks, and the *sa* account can delegate
 
 The vendor approval workflow has changed for you to submit to workflow if the vendor hold status is changed, or when the document attach status is updated for the vendor.  
 
-![Shows the Workflow Maintenance window](media/2019_Workflow_Conditions.png)
+![Shows the Workflow Maintenance window and the vendor approval workflow.](media/2019_Workflow_Conditions.png)
 
 ## System enhancements
 
@@ -242,13 +242,13 @@ In the **User Access​ Setup** window, you can change the sort order of the com
 
 Type to search and find a company by name.
 
-![Shows the User Access Setup window](media/2019_System_UserAccessInactive.png)
+![Shows the User Access Setup window and finding a company by name.](media/2019_System_UserAccessInactive.png)
 
 ### Filter inactive users in User Access Setup​
 
 Specify if you want to include inactive users in the User Access Setup window.
 
-![Shows the User Access Setup window](media/2019_System_UserAccessInactive.png)
+![Shows the User Access Setup window and specifying the inclusion of inactive users.](media/2019_System_UserAccessInactive.png)
 
 ### More than 32 report options in Report Group​
 
@@ -262,7 +262,7 @@ You can add more than 32 report options to a report group.
 
 You can now copy report options from another report to the current report, make changes, and save changes. This is a fast way to set standard values for different reports.
 
-![Shows the report options](media/2019_Features_CopyReportOptions.png)
+![Shows the report options and how to copy report options.](media/2019_Features_CopyReportOptions.png)
 
 ### Filter Item Stock Inquiry by Date​
 
@@ -301,7 +301,7 @@ A new field, **Inactive**, is added to the default Item SmartList. You can add i
 
 Write the User ID to the item record when added or updated. You can add the field as a column in Item SmartList query.
 
-![Shows the SmartList window](media/2019_Features_UserID.png)
+![Shows the SmartList window and writing the User ID to the item record.](media/2019_Features_UserID.png)
 
 ### Paste from Excel in Web Client​
 

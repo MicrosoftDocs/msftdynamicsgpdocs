@@ -128,7 +128,7 @@ Use the transaction type description to distinguish among the transactions you e
 
 For example, suppose you’re entering a withdrawal using the Bank Transaction Entry window. If you set up WDL as the code for withdrawal transactions and 100 as the next number, the number would be WDL000000100 for your first withdrawal transaction. You can change any code or description to match your business. The following table explains where each item appears:
 
-![A screenshot ](media/62d71e8db153bfeef7446d19ed358f20.jpg)
+![Screenshot shows a table of descriptions and locations.](media/62d71e8db153bfeef7446d19ed358f20.jpg)
 
 **History**
 
@@ -166,7 +166,7 @@ Use the Bank Reconciliation Setup window to set up your default entries in Bank 
 1. Open the Bank Reconciliation Setup window. 
 (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Financial \>\> Bank Reconciliation)
 
-    ![A screenshot ](media/61e0e22293445af8ffa8e629d6f9fbb8.jpg)
+    ![Screenshot shows the Bank Reconciliation Setup window.](media/61e0e22293445af8ffa8e629d6f9fbb8.jpg)
 
 2. Enter the next number for bank transactions, receipts, transfers, and reconcile adjustments.
 
@@ -257,7 +257,7 @@ Use the Checkbook Maintenance window to set up checkbooks. You can add checkbook
 1. Open the Checkbook Maintenance window. 
 (Cards \>\> Financial \>\> Checkbook)
 
-     ![A screenshot ](media/5240f5f2d9b9d1cfe4029e8cb1ca7b44.jpg)
+     ![Screenshot shows the Checkbook Maintenance window.](media/5240f5f2d9b9d1cfe4029e8cb1ca7b44.jpg)
 
 2. Enter or select a checkbook ID and enter a checkbook description.
 
@@ -382,7 +382,7 @@ If a checkbook has become obsolete and you’re no longer planning to use it, yo
 7. Open the Remove Bank History window. 
 (Microsoft Dynamics GP menu \>\> Tools \>\> Utilities \>\> Financial \>\> Remove Bank History)
 
-    ![A screenshot](media/4a85e0616726ca6beca8226bc44cf3fb.jpg)
+    ![Screenshot shows the Remove Bank History window.](media/4a85e0616726ca6beca8226bc44cf3fb.jpg)
 
 8. Mark the type of history to remove, and mark any other options. Select a checkbook ID range and choose Insert to insert the range restriction.
 
@@ -520,7 +520,7 @@ When you’re entering a multicurrency transaction, the originating debit and cr
 
 You entered a check to pay for supplies in the euro currency for 30,886.59 EUR, which includes marketing supplies for 15,755.41 EUR, sales supplies for 9,876.89 EUR, and administrative supplies for 5,254.29 EUR. The exchange rate is 1.0922. The distributions are described in the following table:
 
-![A screenshot ](media/e3b1d693c72370b184f2ed74579ede82.jpg)
+![Screenshot shows the distributions between accounts, debits, and credits.](media/e3b1d693c72370b184f2ed74579ede82.jpg)
 
 #### Rounding differences
 
@@ -571,7 +571,7 @@ To transfer funds from one checkbook to another, use the Bank Transfer Entry win
 1. Open the Bank Transaction Entry window. 
 (Transactions \>\> Financial \>\> Bank Transactions)
 
-    ![A screenshot](media/607b3fa85fd76b9ac2606d582187191a.jpg)
+    ![Screenshot shows the Bank Transaction Entry window.](media/607b3fa85fd76b9ac2606d582187191a.jpg)
 
 2. Select Enter Transaction, then select a type.
 
@@ -608,7 +608,7 @@ You can create individual checks to make a one-time payment when you don’t wan
 1. Open the Miscellaneous Check window. 
 (Transactions \>\> Financial \>\> Miscellaneous Check)
 
-    ![A screenshot](media/503c9a4c89bc0b970b34e3099ae5ab0e.jpg)
+    ![Screenshot shows the Miscellaneous Check window.](media/503c9a4c89bc0b970b34e3099ae5ab0e.jpg)
 
 2. Enter or select a checkbook ID.
 
@@ -926,7 +926,7 @@ If you’re doing business in Australia or New Zealand and you’re required to 
 1. Open the Bank Deposit Entry window. 
 (Transactions \>\> Financial \>\> Bank Deposits)
 
-    ![A screenshot](media/e849b400114879af850b1fa0d0d3475c.jpg)
+    ![Screenshot shows the Bank Deposit Entry window.](media/e849b400114879af850b1fa0d0d3475c.jpg)
 
 2. Select Enter/Edit and the Deposit with Receipts type.
 
@@ -962,7 +962,7 @@ The Deposit Totals window displays the number of checks, credit cards, and cash 
 
 You entered a cash receipt total of \$117.65. The amount of \$117.00 appears in the Currency Total Amounts field and \$0.65 appears in the Coin Total Amounts field, as shown in the following table:
 
-|Number of      |   | Total amounts       |
+|Item      |Number   | Total amounts       |
 |---------------|---|---------------------|
 | Checks        | 4 | \$28,000.00         |
 | Credit Cards  | 1 | \$52.00             |
@@ -976,7 +976,7 @@ If Multicurrency Management is registered, you can browse through this informati
 
 You entered a cash receipt total of \$117.65. The actual coin amount is \$16.65, and the total for the paper money is \$101.00. If you enter \$101.00 in the Currency Total Amounts field, the coin amount is adjusted to display \$16.65, as shown in the following table.
 
-|Number of      |   | Total amounts       |
+|Item     | Number | Total amounts       |
 |---------------|---|---------------------|
 | Checks        | 4 | \$28,000.00         |
 | Credit Cards  | 1 | \$52.00             |
@@ -1115,7 +1115,7 @@ To transfer funds, both checkbooks must be assigned the same currency, or one ch
 1. Open the Bank Transfer Entry window. 
 (Transactions \>\> Financial \>\> Bank Transfers)
 
-    ![A screenshot](media/370e903392c878fd60a95aa79d507793.jpg)
+    ![Screenshot shows the Bank Transfer Entry window.](media/370e903392c878fd60a95aa79d507793.jpg)
 
 2. Select Enter Transfer.
 
@@ -1206,7 +1206,7 @@ Use the Reconcile Bank Statements window to reconcile the cash-related transacti
 1. Open the Reconcile Bank Statements window. 
 (Transactions \>\> Financial \>\> Reconcile Bank Statement)
 
-    ![A screenshot](media/0002920b9afe9b744c41579a04467921.jpg)
+    ![Screenshot shows the Reconcile Bank Statements window.](media/0002920b9afe9b744c41579a04467921.jpg)
 
 2. Enter or select a checkbook to reconcile. You can reconcile both active and inactive checkbooks. If you previously saved reconciliation information for this checkbook, that information is displayed and you can edit it.
 
@@ -1218,7 +1218,7 @@ Use the Reconcile Bank Statements window to reconcile the cash-related transacti
 
 5. Choose Transactions to open the Select Bank Transactions window.
 
-    ![A screenshot](media/55f33bfd6b07c61eb4c9aedcce82cfa8.jpg)
+    ![Screenshot shows the Select Bank Transactions window.](media/55f33bfd6b07c61eb4c9aedcce82cfa8.jpg)
 
     If you’re editing saved reconciliation information, the transactions you marked previously remain marked. The totals for the payments and deposits in the cleared transaction section of the Select Bank Transactions window include only payments and deposits. The totals do not include adjustment transactions.
 
@@ -1268,7 +1268,7 @@ Use the Reconcile Bank Adjustments window to enter adjustment transactions—suc
 
 4. Choose Adjustments to open the Reconcile Bank Adjustments window.
 
-    ![A screenshot ](media/1bae8593653e330280591c45c26195d1.jpg)
+    ![Screenshot shows the Reconcile Bank Adjustments window.](media/1bae8593653e330280591c45c26195d1.jpg)
 
 5. Select the transaction type to enter.
 
@@ -1299,7 +1299,7 @@ Sometimes a check might clear the bank for an amount that’s different than the
 
 4. Select the transaction with the differing amount and choose the Payment or Deposit expansion button to open the Cleared Amount Entry window.
 
-    ![A screenshot](media/03d1dc7aac56a7d852ec1a589ec168df.jpg)
+    ![Screenshot shows the Cleared Amount Entry window.](media/03d1dc7aac56a7d852ec1a589ec168df.jpg)
 
 5. Enter the cleared amount for the transaction. For example, suppose a check was recorded for \$17,567.11, but it cleared the bank for \$17,567.13. You would enter \$17,567.13 in the Cleared Amount field, and a \$0.02 difference would appear in the Difference field.
 
@@ -1394,7 +1394,7 @@ Use the Checkbook Register Inquiry window to find out more information about tra
 1. Open the Checkbook Register Inquiry window. 
 (Inquiry \>\> Financial \>\> Checkbook Register)
 
-    ![A screenshot](media/15f918b63ffbb752eae9a78a16049019.jpg)
+    ![Screenshot shows the Checkbox Register Inquiry window.](media/15f918b63ffbb752eae9a78a16049019.jpg)
 
 2. Enter or select a checkbook ID.
 
@@ -1429,7 +1429,7 @@ If you are using reporting ledgers, the amount shown in the Current Cash Account
 1. Open the Checkbook Balance Inquiry window. 
 (Inquiry \>\> Financial \>\> Checkbook Balance)
 
-    ![A screenshot ](media/04e3a48f50b9f1885c9209654b50fff2.jpg)
+    ![Screenshot shows the Checkbook Balance Inquiry window.](media/04e3a48f50b9f1885c9209654b50fff2.jpg)
 
 2. Enter or select a checkbook ID to view balances for. The current checkbook balance will be displayed in the Current Checkbook Balance field. Transactions for the checkbook will appear in the scrolling window.
 
@@ -1471,7 +1471,7 @@ You can print several types of reports using Bank Reconciliation. Some reports a
 
 The following table lists the report types available in Bank Reconciliation and the reports that fall into those categories. Reports printed using General Ledger are printed using many of the same windows. See the General Ledger documentation for information about reports printed in that module.
 
-![A screenshot](media/6026ae8e7144429d2a6aa859c540f304.jpg)
+![Screenshot shows a table with report type, report, and printing method.](media/6026ae8e7144429d2a6aa859c540f304.jpg)
 
 #### Specifying a Bank Reconciliation report option
 

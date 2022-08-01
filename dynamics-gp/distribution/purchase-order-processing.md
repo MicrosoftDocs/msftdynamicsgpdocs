@@ -275,7 +275,7 @@ Changing the decimal place setting for a currency won't change the decimal place
 1.  Open the Purchasing Non-Inventoried Currency Decimals Setup window. 
     (Purchasing \>\> Setup \>\> Purchase Order Processing \>\> Currency expansion button)
 
-![screenshot](media/POage013.jpg)
+![Screenshot of the Purchasing Non-Inventoried Currency Decimals Setup window.](media/POage013.jpg)
 
 2.  In the Currency Decimals column, change the number of currency decimal places to use for non-inventoried items. Amounts will appear in the format defined in this window whenever a non-inventoried item is entered for a specific currency.
 
@@ -294,7 +294,7 @@ Use the Purchase Order Processing Setup Options window to set up the tax calcula
 1.  Open the Purchase Order Processing Setup Options window.
     (Purchasing \>\> Setup \>\> Purchase Order Processing \>\> Options button)
 
-![screenshot](media/POage015.jpg)
+![Screenshot of the Purchase Order Processing Setup Options window.](media/POage015.jpg)
 
 2.  Mark the type of tax calculation to use on documents.
 
@@ -330,7 +330,7 @@ Use the Receivings User-Defined Fields Setup window to enter labels for up to 35
 1.  Open the Receivings User-Defined Fields Setup window.
     (Purchasing \>\> Setup \>\> Purchase Order Processing \>\> Receivings UserDefined button)
 
-![screenshot](media/POage017.jpg)
+![Screenshot of the Receivings User Defined Fields Setup window.](media/POage017.jpg)
 
 2.  Enter as many as five list fields. Choose the expansion button next to each list name you've entered; the Receivings User-Defined List Setup window will appear. Use this window to enter values for each list.
 
@@ -353,7 +353,7 @@ Use the Comment Setup window to define comments for each company. You can use th
 1.  Open the Comment Setup window.
     (Administration \>\> Setup \>\> Company \>\> Comments)
 
-![screenshot](media/POage019.jpg)
+![Screenshot of the Comment Setup window as it appears by default.](media/POage019.jpg)
 
 2.  Enter a short identifier for the comment.
 
@@ -388,7 +388,7 @@ Use the Buyer Maintenance window to add new buyer IDs. For example, a buyer ID c
 1.  Open the Buyer Maintenance window. 
     (Purchasing \>\> Cards \>\> Buyers)
 
-![screenshot](media/POage022.jpg)
+![Screenshot of the Buyer Maintenance window.](media/POage022.jpg)
 
 2.  Enter a buyer ID in the Buyer ID field.
 
@@ -470,7 +470,7 @@ If you are using Project Accounting, you can't generate purchase orders for proj
 1.  Open the Purchase Order Processing Setup Options window.
     (Purchasing \>\> Setup \>\> Purchase Order Processing \>\> Options button)
 
-![screenshot](media/POage024.jpg)
+![Screenshot of the Purchase Order Processing Setup Options window as it appears by default.](media/POage024.jpg)
 
 2.  Select a default order method for automatically generated purchase orders.
 
@@ -537,7 +537,7 @@ If you are using Project Accounting, you can't generate purchase orders for proj
 1.  Open the Purchase Order Generator Map Sites window.
     (Purchasing \>\> Setup \>\> Purchase Order Generator Map Sites)
 
-![screenshot](media/POage026.jpg)
+![Screenshot of the Purchase Order Generator Map Sites window.](media/POage026.jpg)
 
 All inventory site IDs defined for the current company will be displayed.
 
@@ -609,7 +609,7 @@ Use the PA Purchase Order Processing Setup window to set up preferences and defa
 1.  Open the PA Purchase Order Processing Setup Options window.
     (Purchasing\>\> Setup \>\> Purchase Order Processing \>\> Project button)
 
-![screenshot](media/POage028.jpg)
+![Screenshot of the PA Purchase Order Processing Setup Options window.](media/POage028.jpg)
 
 2.  Enter purchase order label descriptions for three purchase order formats that are available when you are using Project Accounting. These labels will be displayed as options in the Purchase Order Format list in the Purchase Order Print Options window and the Print Purchasing Documents window.
 

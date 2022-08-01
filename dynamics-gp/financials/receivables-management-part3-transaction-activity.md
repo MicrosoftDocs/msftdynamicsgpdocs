@@ -460,7 +460,7 @@ Use the Customer/Vendor Relationships window to link a customer to a vendor or a
 
 1. Open the Customer/Vendor Relationships window. (Sales \>\> Cards \>\> Customer/Vendor)
 
-   ![1e7d912d783aeb7fb89d71205efe68a4.jpg](media/1e7d912d783aeb7fb89d71205efe68a4.jpg)
+   ![Screenshot of the Customer/Vender relationships window, before information is input.](media/1e7d912d783aeb7fb89d71205efe68a4.jpg)
 
 2. Enter or select a vendor and a customer. You can create more than one customer/vendor relationship at a time in this window by entering multiple customers and vendors.
 
@@ -496,7 +496,7 @@ Use the Customer/Vendor Consolidations window to create consolidation documents 
 
 1. Open the Customer/Vendor Consolidations window. (Sales \>\> Transactions \>\> Customer/Vendor Trx.)
 
-    ![91622f2488ad897b2334f1007d0d7e36.jpg](media/91622f2488ad897b2334f1007d0d7e36.jpg)
+    ![Screenshot of the Customer/Vendor Consolidations window, showing default entries and empty input boxes.](media/91622f2488ad897b2334f1007d0d7e36.jpg)
 
 2. Mark Customer to display the customer ID first or Vendor to display the vendor ID first.
 
@@ -576,7 +576,7 @@ Use the Refund Checks Setup window to specify your preferences and default entri
 
 1. Open the Refund Checks Setup window. (Sales \>\> Setup \>\> Refund Checks)
 
-   ![efca27cbe1af7aef5c52b7ee89424bfb.jpg](media/efca27cbe1af7aef5c52b7ee89424bfb.jpg)
+   ![Screenshot of the Paid Sales Transaction Removal window, showing default entries and empty input boxes.](media/efca27cbe1af7aef5c52b7ee89424bfb.jpg)
 
 2. Enter or select a default suspense account number, which is an offset account for your Accounts Receivable and Accounts Payable amounts. The account you enter or select must be a posting account, and must be set up to use all the currencies in which you're writing checks.
 
@@ -825,7 +825,7 @@ If you void a multicurrency document, any realized gains or losses that original
 
 4. Choose NSF to open the Auto Post NSF Debit Charge window.
 
-    ![586b43b1da4b84e6722d4f6151174a13.jpg](media/586b43b1da4b84e6722d4f6151174a13.jpg)
+    ![Screenshot of the window, showing entries for an example NSF charge of fifteen dollars.](media/586b43b1da4b84e6722d4f6151174a13.jpg)
 
     The payment is unapplied and distributions are reversed. Using the NSF Debit Charge window, you can change the default charge for the NSF check, and view the document number assigned to the debit memo that's created.
 
@@ -942,7 +942,7 @@ Use the Edit Receivables Transaction window to change the discount date, due dat
 
 1. Open the Edit Receivables Transaction window. (Sales \>\> Transactions \>\> Edit Transaction Information)
 
-   ![da196509e1d0f1b7d4121cacec00db80.jpg](media/da196509e1d0f1b7d4121cacec00db80.jpg)
+   ![Screenshot of the Edit Receivables Transaction window, showing default entries and empty input boxes.](media/da196509e1d0f1b7d4121cacec00db80.jpg)
 
 2. Enter or select a customer ID.
 
@@ -1034,7 +1034,7 @@ Use the Write Off Documents window to write off outstanding document credit or d
 
 1. Open the Write Off Documents window. (Sales \>\> Routines \>\> Write Off Documents)
 
-    ![7e6639d4c44c587c8c3e7a51f73aeb6d.jpg](media/7e6639d4c44c587c8c3e7a51f73aeb6d.jpg)
+    ![Screenshot of the window, showing example entries for an eighty dollar writeoff limit.](media/7e6639d4c44c587c8c3e7a51f73aeb6d.jpg)
 
 2. In the Writeoff Type field, select Overpayments to write off customer document credit balances, or select Underpayments to write off customer document debit balances.
 
