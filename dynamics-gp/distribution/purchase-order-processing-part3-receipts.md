@@ -158,7 +158,7 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 
 2. In the New group or its overflow menu, choose Shipment and Invoice Receipt to open the Receivings Transaction Entry window.
 
-    ![screenshot Receivings Transaction Entry](media/POage102.jpg)
+    ![Screenshot of the Receivings Transaction Entry window as it appears by default.](media/POage102.jpg)
 
 3. Enter a vendor document number.
 
@@ -405,19 +405,19 @@ The sorting option you select determines the order in which objects appear in th
 
 - **PO/Items** Objects in the tree view and scrolling window are sorted first by purchase order number, then by the order items were entered on the purchase orders.
 
-    ![screenshot PO/Items](media/POage108.jpg)
+    ![Screenshot of the PO/Items object sorting window.](media/POage108.jpg)
 
 - **Item Number/PO** Objects in the tree view and scrolling window are sorted first by item number, then by purchase order number under each item.
 
-    ![screenshot Item Number/PO](media/POage110.jpg)
+    ![Screenshot of the Item Number/PO object sorting window.](media/POage110.jpg)
 
 - **Site/PO/Item Number** Objects in the tree view and scrolling window are sorted first by site, then by purchase order number under each site, then by item number under each purchase order.
 
-    ![screenshot Site/PO/Item Number](media/POage112.jpg)
+    ![screenshot of the Site/PO/Item Number object sorting window.](media/POage112.jpg)
 
 - **Site/Item Number/PO** Objects in the tree view and scrolling window are sorted first by site, then by item number under each site, then by purchase order number under each item.
 
-    ![screenshot Site/Item Number/PO](media/POage114.jpg)
+    ![Screenshot of the Site/Item Number/PO object sorting window.](media/POage114.jpg)
 
 ### Receiving items from multiple purchase orders
 
@@ -523,7 +523,7 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 2. In the New group or its overflow menu, choose In-Transit Inventory to open the Receivings Transaction Entry window.
 
-    ![screenshot Receivings Transaction Entry](media/POage118.jpg)
+    ![Screenshot of the Receivings Transaction Entry window, which shows the window's default appearance.](media/POage118.jpg)
 
 3. Enter the receipt date.
 
@@ -657,7 +657,7 @@ You can use the View \>\> Currency menu option or the currency list button to vi
 1. Open the Receivings Transaction Entry window.
     (Purchasing \>\> Transactions \>\> Receivings Transaction Entry)
 
-    ![screenshot Receivings Transaction Entry](media/POage130.jpg)
+    ![Screenshot of the Receivings Transaction Entry window.](media/POage130.jpg)
 
 2. Select Shipment/Invoice as the document type for the transaction.
 
@@ -886,7 +886,7 @@ If you are using Workflow, the purchase order must be approved before you can re
     > [!NOTE]
     > If you entered a vendor ID, the Select Purchase Order Items window will open instead of the Select Purchase Order window.
 
-    ![screenshot Select Purchase Order](media/POage134.jpg)
+    ![Screenshot of the Select Purchase Order Items window.](media/POage134.jpg)
 
 5. Enter or select a purchase order for which you want to receive line items.
 
@@ -1041,7 +1041,7 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 2. Enter or select a receipt number and vendor and open the Receivings Item Detail Entry window by choosing the Vendor Item or Item expansion button.
 
-    ![screenshot Receivings Item Detail Entry](media/POage136.jpg)
+    ![Screenshot of the Receivings Line Item Tax Detail Entry window.](media/POage136.jpg)
 
     Currency amounts in this window may be displayed in the functional or originating currency, depending on the view selected in the Receivings Transaction Entry window.
 
@@ -1184,7 +1184,7 @@ You also can enter a lot split quantity, which is the breakpoint for creating se
 
 3. Choose Lot Numbers from the Track drop-down list, then choose the Track expansion button to open the Item Serial/Lot Number Definition window.
 
-    ![screenshot Item Serial/Lot Number Definition](media/POage141.jpg)
+    ![Screenshot of the Item Serial/Lot Number Definition window, which shows 0 entered into the lot split quantity.](media/POage141.jpg)
 
     Information for the item you selected, including the last lot number that was generated and any current mask information, will appear.
 
@@ -1347,7 +1347,7 @@ Use the Item Serial/Lot Number Definition window to set up serial number masks f
 
 3. Choose Serial Numbers from the Track drop-down list, then choose the Track expansion button to open the Item Serial/Lot Number Definition window.
 
-    ![screenshot Item Serial/Lot Number Definition](media/POage147.jpg)
+    ![Screenshot of the Item Serial/Lot Number Definition window.](media/POage147.jpg)
 
     Information for the item you selected, including the last serial number that was generated and any current mask information, will appear.
 
@@ -1652,7 +1652,7 @@ If Intrastat information was entered for the vendor's ship from address ID, that
 
 3. Choose the EU button to open the Purchasing Intrastat Entry window. You can also open the Purchasing Intrastat Entry window by choosing the EU button in the Receivings Item Detail Entry window.
 
-    ![screenshot Receivings Item Detail Entry](media/POage155.jpg)
+    ![Screenshot of the Purchasing Intrastat Entry window.](media/POage155.jpg)
 
 4. Enter Intrastat information, or change the default entries, if necessary.
 
@@ -1819,7 +1819,7 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
 
 5. Choose Yes and the Match Shipments to Invoice window will open, where you can choose which line items can be matched. (If you choose No, the line items will be matched in shipment receipt number order.)
 
-    ![screenshot Match Shipments to Invoice](media/POage160.jpg)
+    ![Screenshot of the Match Shipments to Invoice window.](media/POage160.jpg)
 
     Currency amounts in this window may be displayed in functional or originating currency, depending on the view selected in the Purchasing Invoice Entry window.
 
@@ -1898,7 +1898,7 @@ If you are using Project Accounting, the Project Number field and the Cost Categ
     > [!NOTE]
     > If you entered a vendor ID, the Select Purchase Order Items window will open instead of the Select Purchase Order window.
 
-    ![screenshot Select Purchase Order](media/POage162.jpg)
+    ![Screenshot of the Select Purchase Order window.](media/POage162.jpg)
 
 4. Enter or select the purchase order for which you want to invoice all line items.
 
@@ -1956,19 +1956,19 @@ The sorting option you select determines the order in which objects appear in th
 
 **PO/Items** Objects in the tree view and scrolling window are sorted first by purchase order number, then by the order items were entered on the purchase orders.
 
-![screenshot PO/Items](media/POage164.jpg)
+![Screenshot of the PO/Items sorting option window.](media/POage164.jpg)
 
 **Item Number/PO** Objects in the tree view and scrolling window are sorted first by item number, then by purchase order number under each item.
 
-![screenshot Item Number/PO](media/POage166.jpg)
+![Screenshot of the Item Number/PO sorting option window.](media/POage166.jpg)
 
 **Site/PO/Item Number** Objects in the tree view and scrolling window are sorted first by site, then by purchase order number under each site, then by item number under each purchase order.
 
-![screenshot Site/PO/Item Number](media/POage168.jpg)
+![Screenshot of the Site/PO/Item Number sorting option window.](media/POage168.jpg)
 
 **Site/Item Number/PO** Objects in the tree view and scrolling window are sorted first by site, then by item number under each site, then by purchase order number under each item.
 
-![screenshot Site/Item Number/PO](media/POage170.jpg)
+![Screenshot of the Site/Item Number/PO sorting option window.](media/POage170.jpg)
 
 ### Invoicing items from multiple purchase orders
 
@@ -2201,7 +2201,7 @@ If you want match shipments for blanket purchase orders to an invoice receipt, s
 
 5. Choose Yes and the Match Shipments to Invoice window will open, where you can choose which line items can be matched. (If you choose No, the line items will be matched in shipment receipt number order.)
 
-    ![screenshot Match Shipments to Invoice](media/POage174.jpg)
+    ![Screenshot of the Match Shipments to Invoice window, where you can choose which line items can be matched.](media/POage174.jpg)
 
     Currency amounts in this window may be displayed in functional or originating currency, depending on the view selected in the Purchasing Invoice Entry window.
 
@@ -2278,7 +2278,7 @@ Use the Select Purchase Order window to select a purchase order to quickly enter
     > [!NOTE]
     > If you entered a vendor ID, the Select Purchase Order Items window will open instead of the Select Purchase Order window.
 
-    ![screenshot Select Purchase Order](media/POage162.jpg)
+    ![Screenshot of the Select Purchase Order window.](media/POage162.jpg)
 
 4. Enter or select the purchase order for which you want to invoice all line items.
 
@@ -3011,7 +3011,7 @@ If you are using landed costs, you can use the Match Shipments to Invoice window
 
 5. Choose the Match Shipments to Invoice expansion button to open the Match Shipments to Invoice window.
 
-    ![screenshot Match Shipments to Invoice](media/POage186.jpg)
+    ![Screenshot of the Match Shipments to Invoice window, which shows the window's default appearance.](media/POage186.jpg)
 
     Currency amounts in this window may be displayed in functional or originating currency, depending on the view selected in the Purchasing Invoice Entry window.
 
