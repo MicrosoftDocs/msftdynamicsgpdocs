@@ -359,7 +359,7 @@ functionality for Payroll Extensions and for Advanced Payroll.
 
 The functionality specific to Advanced Payroll is discussed here.
 
-![A screenshot](media/APPAYCOS.jpg)
+![Screenshot of the Pay Code Options window.](media/APPAYCOS.jpg)
 
 A linked pay code assigned disables the Use Add-On options. Pay Policy Manager also looks at the pay rate of the linked pay code, and it uses the add-ons of the linked pay code. 
 
@@ -532,7 +532,7 @@ In the example shown below, our accounting period is the month of April. All pay
 
 The Pay Frequency of “Biweekly” has been entered indicating that payroll is processed every other week. Any accruals posted to General Ledger in this window will be automatically reversed on 5/2/2017.
 
-![A screenshot ](media/APPA.jpg)
+![Screenshot of the Payroll Accruals window, which shows the pay frequency is set to Biweekly and the reversing date is set to 5/2/2017.](media/APPA.jpg)
 
 Two pay runs are marked in the scrolling window above. When the Calculate button is selected, the Total Gross Wages are equal to sum of the Gross Wages of the two marked pay runs.
 
@@ -646,7 +646,7 @@ Hours, Full-Time Equivalent and Earnings for pay periods and Year to Date.  Tota
 
 To open the Labor Reporting Accounts window, click the **HR and Payroll** series button, click **Payroll** on the Setup content pane, click **Advanced Labor Reporting** and then click **Labor Reporting Accounts**.
 
-![A screenshot](media/APLABA.jpg)
+![Screenshot of the Payroll Account Mapping window.](media/APLABA.jpg)
 
 The Labor Accrual Accounts window displays all General Ledger Unit Accounts currently assigned in the Payroll Posting Accounts Setup window for Gross Pay Posting Account Types.
 
@@ -662,7 +662,7 @@ To open the Area of Responsibility Setup window, click the **HR and**
 
 **Payroll** series button, click **Payroll** on the Setup content pane, click **Advanced Labor Reporting** and then click **Areas of Responsibility**.
 
-![A screenshot](media/APARS.jpg)
+![Screenshot of the Area of Responsibility Setup window.](media/APARS.jpg)
 
 Area of Responsibility Setup is an option available with Advanced Labor Reporting that enables groupings of departments to be created as they relate to specific areas of responsibility. An example of this would be a Vice President that oversees multiple departments or several managers.
 
@@ -864,7 +864,7 @@ Pay Policy Manager specific fields: Linked Pay Code, Pay Percent, Minimum Amount
 
 The existing Employee Maintenance window has been modified to allow the user to specify when an employee is eligible for the Pay Code rate adjustments defined. The Use Add-On checkbox must be selected for an employee’s rate to pay rate adjustments to be calculated.
 
-![A screenshot](media/APEMP.jpg)
+![Screenshot of an Employee Maintenance window, which shows the Use Add-On box is checked.](media/APEMP.jpg)
 
 ### Use Add-On Employee’s
 
@@ -882,7 +882,7 @@ The Employee Pay Policies Exceptions window is used to define exceptions for a s
 
 **Pay Policies**.
 
-![A screenshot ](media/ADPEPPE.jpg)
+![Screenshot of the Employee Pay Policy Exceptions window.](media/ADPEPPE.jpg)
 
 The Employee Pay Policy Exceptions window allows Add-On Rate adjustments to be defined for an individual employee based on a combination of Company ID, Department, Position and Shift Code.
 
