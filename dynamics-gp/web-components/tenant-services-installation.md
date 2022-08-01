@@ -1,6 +1,6 @@
 ---
 title: "Tenant Services Installation"
-description: ""
+description: "Learn about how to install the Microsoft Dynamics GP Tenant Services, including prerequisites, tenant services installation, and tenant manager installation."
 keywords: "web components"
 author: dapelt
 ms.author: dapelt

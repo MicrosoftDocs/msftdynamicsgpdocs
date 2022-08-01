@@ -63,9 +63,9 @@ To install Dynamics GP (additional computers):
 
     | Option | What happens |
     |--|--|
-    | ![component icon1](media/installed-component.png "Component icon") Run from My computer | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.) |  |
-    | ![component icon2](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features. |  |
-    | ![component icon3](media/not-installed-component.png "Component icon") Not available | Will not install the selected feature or sub–features. |  |
+    | ![component icon1](media/installed-component.png "Component icon") Run from My computer | The selected feature will be installed on the local hard disk. (This option installs the feature, but not sub–features.)  |
+    | ![component icon2](media/installed-component.png "Component icon") Run all from My computer | Will install the feature and all of its sub–features.  |
+    | ![component icon3](media/not-installed-component.png "Component icon") Not available | Will not install the selected feature or sub–features.  |
 
     If you've installed a feature in a previous release, use the Select Features window to install that component. See [Dynamics GP features](/dynamics-gp/installation/installing-additional-components#dynamics-gp-features) for a list of Dynamics GP features.
 

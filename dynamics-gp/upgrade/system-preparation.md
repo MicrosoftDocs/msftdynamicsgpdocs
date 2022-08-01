@@ -217,7 +217,7 @@ If the following tables contain incorrect account framework information, the upg
 | GL00201               | Budget Summary Master                   |
 
 > [!NOTE]
-> You can download an upgrade preparation script that will help you determine incorrect account framework information from <https://docs.microsoft.com/dynamics/s-e/>.  
+> You can download an upgrade preparation script that will help you determine incorrect account framework information from [https://docs.microsoft.com/dynamics/s-e/](/dynamics/s-e/).  
 
 ### To verify account framework information in tables:
 
