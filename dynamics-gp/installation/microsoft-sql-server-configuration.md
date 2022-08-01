@@ -14,7 +14,7 @@ ms.reviewer: edupont
 ---
 # Microsoft SQL Server configuration
 
-### 
+### Microsoft SQL Server Installation for Dynamics GP
 
 This chapter guides you through the Microsoft SQL Server 2012 and the Microsoft SQL Server 2012 Express Installation and setup process for Dynamics GP. It's important that you install and set up Microsoft SQL Server according to these instructions.
 
@@ -298,7 +298,7 @@ Management Studio:
 
 Describes the requirements to run Microsoft Dynamics GP with Microsoft SQL Server AlwaysOn Availability Groups.
 
-SQL Server AlwaysOn Availability Groups is a high-availability and disaster-recovery solution introduced in SQL Server 2012. The solution creates a failover environment for a set of application databases. Refer to the [AlwaysOn Availability Group documentation for additional information](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?redirectedfrom=MSDN&view=sql-server-ver15)
+SQL Server AlwaysOn Availability Groups is a high-availability and disaster-recovery solution introduced in SQL Server 2012. The solution creates a failover environment for a set of application databases. Refer to the [AlwaysOn Availability Group documentation for additional information](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?redirectedfrom=MSDN&view=sql-server-ver15&preserve-view=true)
 
 Deploying Microsoft Dynamics GP with SQL Server AlwaysOn Availability Groups to provide a high-availability configuration will include.
 
@@ -311,15 +311,15 @@ a.	Adding the GP system and company databases to the availability group.
 
 ### Configuring SQL Server AlwaysOn Availability Groups
 
-Use the [Creation and Configuration of Availability Groups documentation](/sql/database-engine/availability-groups/windows/creation-and-configuration-of-availability-groups-sql-server?redirectedfrom=MSDN&view=sql-server-ver15) to set up the availability group. Note that in order to complete the setup of the availability group, you will need to have the Microsoft Dynamics GP databases created. You will use Dynamics Utilities to connect to the target primary replica SQL Server instance to create the databases. Make sure when configuring the SQL Server replicas that you select Automatic Failover and Synchronous Commit. Using these options along with an availability group listener will provide you with a single virtual address to the availability group. The availability group listener’s virtual address will then be used as the name of the SQL Server for the Microsoft Dynamics GP components, like the GP runtime ODBC data source. The result is automatic application failover after an availability group fails over. 
+Use the [Creation and Configuration of Availability Groups documentation](/sql/database-engine/availability-groups/windows/creation-and-configuration-of-availability-groups-sql-server?redirectedfrom=MSDN&view=sql-server-ver15&preserve-view=true) to set up the availability group. Note that in order to complete the setup of the availability group, you will need to have the Microsoft Dynamics GP databases created. You will use Dynamics Utilities to connect to the target primary replica SQL Server instance to create the databases. Make sure when configuring the SQL Server replicas that you select Automatic Failover and Synchronous Commit. Using these options along with an availability group listener will provide you with a single virtual address to the availability group. The availability group listener’s virtual address will then be used as the name of the SQL Server for the Microsoft Dynamics GP components, like the GP runtime ODBC data source. The result is automatic application failover after an availability group fails over. 
 
-You will need to put all of the GP system and company databases in a single availability group so they all fail over together. Verify the [Prerequisites, Restrictions, and Recommendations for AlwaysOn Availability Groups](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability?redirectedfrom=MSDN&view=sql-server-ver15) and specifically that the GP databases are using full recovery mode.
+You will need to put all of the GP system and company databases in a single availability group so they all fail over together. Verify the [Prerequisites, Restrictions, and Recommendations for AlwaysOn Availability Groups](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability?redirectedfrom=MSDN&view=sql-server-ver15&preserve-view=true) and specifically that the GP databases are using full recovery mode.
 
 According to the documentation, the synchronous-commit availability mode emphasizes high availability and data protection over performance, resulting in increased transaction latency. Testing has shown a performance impact running Microsoft Dynamics GP in this mode, with certain processes showing a 5-15% degradation. 
 
 ### Creating an availability group listener
 
-Use the [Create or Configure an Availability Group Listener documentation](/sql/database-engine/availability-groups/windows/creation-and-configuration-of-availability-groups-sql-server?redirectedfrom=MSDN&view=sql-server-ver15) to set up the availability group listener. The listener requires a DNS host name that is unique in your domain and the NetBIOS. The DNS host name is the value you will enter for the SQL Server name when setting up the Microsoft Dynamics GP components. 
+Use the [Create or Configure an Availability Group Listener documentation](/sql/database-engine/availability-groups/windows/creation-and-configuration-of-availability-groups-sql-server?redirectedfrom=MSDN&view=sql-server-ver15&preserve-view=true) to set up the availability group listener. The listener requires a DNS host name that is unique in your domain and the NetBIOS. The DNS host name is the value you will enter for the SQL Server name when setting up the Microsoft Dynamics GP components. 
 
 ### Synchronize SQL logins
 

@@ -265,7 +265,7 @@ There are several different HADR technologies in the SQL Server product that are
 • Database Mirroring  
 • Log Shipping  
 • Backup and Restore with Microsoft Azure Blob Storage Service  
-These technologies can be used independently or together to provide the high availability and disaster recovery required. When used with Microsoft Dynamics GP, the AlwaysOn and Database Mirroring technologies provide failover capabilities for the Dynamics GP databases. The Log Shipping and Backup and Restore with Microsoft Azure Blob Storage Service provides recovery capabilities for the Dynamics GP databases. Refer to the article [Business continuity and HADR for SQL server on Azure Virtual Machines](/azure/azure-sql/virtual-machines/windows/business-continuity-high-availability-disaster-recovery-hadr-overview?view=azuresql) for additional information.
+These technologies can be used independently or together to provide the high availability and disaster recovery required. When used with Microsoft Dynamics GP, the AlwaysOn and Database Mirroring technologies provide failover capabilities for the Dynamics GP databases. The Log Shipping and Backup and Restore with Microsoft Azure Blob Storage Service provides recovery capabilities for the Dynamics GP databases. Refer to the article [Business continuity and HADR for SQL server on Azure Virtual Machines](/azure/azure-sql/virtual-machines/windows/business-continuity-high-availability-disaster-recovery-hadr-overview?view=azuresql&preserve-view=true) for additional information.
 
 **Redundant Storage**
 The redundant storage mechanism of Microsoft Azure provides for multiple copies of the VM’s VHD files and the data disks that store data such as the Dynamics GP databases. The first redundant storage mechanism is locally redundant storage (LRS), which maintains three copies of the account data within the primary data center. The second mechanism is geo redundant storage (GRS, also known as geo-replication), which replicates the account data to a secondary data center. These redundant copies are done automatically by the platform. You do need to be aware that for the Microsoft Azure data disks used to store the Dynamics GP databases, if GRS is enabled the data and log files for a database need to be placed on the same disk.
@@ -320,7 +320,7 @@ Configuring Microsoft SQL Server provides directions for configuring SQL Server 
 All Microsoft Dynamics GP deployments require a Microsoft SQL Server to manage the databases that contain the business data. When deploying on Microsoft Azure, a Microsoft SQL Server installation on a Microsoft Azure Virtual Machine will be used.  
 
 Refer to the Checklist:
-[Best practices for SQL Server on Azure VMs for the latest information](/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist?view=azuresql)
+[Best practices for SQL Server on Azure VMs for the latest information](/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist?view=azuresql&preserve-view=true)
   
 1. Create the virtual machine using a Windows Server or SQL Server image. If you choose to create a virtual machine using a SQL Server image, you will have additional steps to perform after the virtual machine is created to configure Microsoft SQL Server for use with Microsoft Dynamics GP. If you choose to create a virtual machine using a Windows Server image, you will need to install SQL Server to the VM using the configuration provided in the GP installation documentation.  
   
@@ -495,7 +495,7 @@ In planning your RDS server configuration, you need to determine the number of v
 **Single Machine**
 A single machine configuration consists of one virtual machine with all the required RDS role services installed on it. These services would typically consist of RD Connection Broker, RD Session Host, RD Gateway, RD Web Access and RD Licensing. A single machine configuration doesn’t offer any redundancy, the result is that if the virtual machine is unavailable for any reason users will not have access to the application.  
 
- ![Azure sub image 1](media/azuregp004.png)
+ ![Diagram that shows the RDS client is connected to the Virtual Machine RDS Server in the Azure Cloud.](media/azuregp004.png)
 
 Use the following steps to set up a single Microsoft Azure virtual machine as an RDS server host.
   
@@ -517,7 +517,7 @@ c. Add an endpoint for the RD Gateway port and RD Web Access port if used. (Port
 **Load Balanced Session Hosts**
 A load balanced session host configuration consists of two or more virtual machines configured as stand-alone cloud services. In this configuration, the RD Gateway, RD Connection Broker, RD Licensing and RD Web Access role services are installed to a single stand-alone virtual machine and are not configured for high availability. The RD Session Host role service is installed on one or more stand-alone virtual machines. The RD Connection Broker on the virtual machines is load balancing user sessions on one or more virtual machines with the RD Session Host role service installed. A load balanced session hosts configuration only offers redundancy for the RD Session Hosts, the result is that if the virtual machine hosting the other role services is unavailable for any reason users will not have access to the application.  
 
- ![Azure sub image 1](media/azuregp005.png)
+ ![Diagram that shows the RDS client is connected to a load balanced host configuration in the Azure Cloud.](media/azuregp005.png)
 
 Use the following steps to set up two or more Microsoft Azure virtual machines as RDS Server farm hosts.
 
@@ -543,7 +543,7 @@ A high availability server farm configuration consists of multiple virtual machi
   
 The first configuration example has all the RDS role services deployed on two or more virtual machines connected together as a load balanced cloud service in Microsoft Azure. This provides a single public virtual IP address for load balanced user access to the RD Gateway and RD Web Access role services. Each machine also has an internal IP address for the RD Connection Broker and RD Session Host communications. In this configuration, all the RDS role services are installed on each of the virtual machines. The RD Connection Broker is configured for high availability and will use a SQL Server database for session information. The RD Connection Broker distributes the user sessions across the RD Session Host virtual machines.  
 
-  ![Azure sub image 1](media/azuregp006.png)
+  ![Diagram that shows the RDS client is connected to a high availability server farm configuration in the Azure Cloud.](media/azuregp006.png)
   
 Use the following steps to set up a high availability RDS server farm on load balanced Microsoft Azure virtual machines.
   
@@ -565,7 +565,7 @@ c. Add an endpoint for the RD Gateway port and RD Web Access port if used. (Port
 Repeat the steps above for each of the virtual machines.  
 The second example has the RDS role services split up between two or more virtual machines connected together as a load balanced cloud service and two or more machines configured as standalone cloud services. This configuration is typically used in a deployment when you have a large number of application users that require many RD Session Hosts. The virtual machines that have the RD Gateway, RD Connection Broker, RD Licensing and RD Web Access role services installed will be connected together as a load balanced cloud service in Microsoft Azure. The RD Session Host role services are installed on virtual machines set up as stand-alone cloud services. The RD Connection Broker distributes the user sessions across the RD Session Host virtual machines.  
 
-  ![Azure sub image 1](media/azuregp007.png)
+  ![Diagram that shows the RDS client is connected to a high availability RDS server farm configuration on load balanced Microsoft Azure virtual machines.](media/azuregp007.png)
   
 Use the following steps to set up a high availability RDS server farm on load balanced Microsoft Azure virtual machines.
   
