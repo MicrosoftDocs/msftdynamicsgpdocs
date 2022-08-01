@@ -1,6 +1,6 @@
 ---
 title: "Receivables Management in Dynamics GP"
-description: "Managing receivables in Dynamics GP."
+description: Learn how to use Receivables Management to set up, enter, and maintain records, salesperson and sales territory information, accounts, and transactions.
 keywords: "receivables"
 author: theley502
 ms.prod: dynamics-gp
@@ -318,7 +318,7 @@ Use the Receivables Management Setup window to set up the aging periods to use, 
 1. Open the Receivables Management Setup window.
     (Sales \>\> Setup \>\> Receivables)
 
-    ![A screenshot of a cell phone Description automatically generated](media/7a5ea1dd33f3297cf5418e678934dfa2.jpg)
+    ![Screenshot of the window, showing aging periods, passwords, options selected, and default pricing information.](media/7a5ea1dd33f3297cf5418e678934dfa2.jpg)
 
 2. Specify the aging periods to use and how to age documents. See *Aging periods* for more information.
 
@@ -380,7 +380,7 @@ Use the Receivables Setup Options window to set up options to appear throughout 
 1. Open the Receivables Setup Options window.
 (Sales \>\> Setup \>\> Receivables \>\> Options button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/ae7cb7069d72add6f2e37c7f940a6c5e.jpg)
+    ![Screenshot of the window, showing input boxes for description, code, date of last, and default tax schedule IDs.](media/ae7cb7069d72add6f2e37c7f940a6c5e.jpg)
 
 2. Specify default transaction descriptions, codes, and next numbers.
 
@@ -426,7 +426,7 @@ You also can enter beginning territory sales amounts. These amounts are updated 
 
 2. In the New group, choose Sales Territory to open the Sales Territory Maintenance window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/eb594930a3c07eb33434f954ad58f1a4.jpg)
+    ![Screenshot of the Sales Territory Maintenance window, showing default and empty input boxes.](media/eb594930a3c07eb33434f954ad58f1a4.jpg)
 
 3. Enter an ID and a description for the territory.
 
@@ -485,7 +485,7 @@ You can assign a salesperson to each customer card. Transactions for the custome
 
 2. In the New group, choose Salesperson to open the Salesperson Maintenance window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/23348071978419672f7680e58b608502.jpg)
+    ![Screenshot of the Salesperson Maintenance window, showing default and empty input boxes.](media/23348071978419672f7680e58b608502.jpg)
 
 3. Enter a salesperson ID and name. If this salesperson is an employee, enter the employee ID; the employee record information appears. The salesperson ID doesn’t have to be the same as the employee ID.
 
@@ -613,7 +613,7 @@ Use the Customer Class Setup window to enter new customer classes. In addition, 
 1. Open the Customer Class Setup window.
 (Sales \>\> Setup \>\> Customer Class)
 
-    ![A screenshot of a cell phone Description automatically generated](media/f8b925deef3e2f31d68ec071be97a4ef.jpg)
+    ![Screenshot of the Customer Class Setup window, showing default selections and empty input boxes.](media/f8b925deef3e2f31d68ec071be97a4ef.jpg)
 
 2. Enter an ID and description for the class.
 
@@ -672,7 +672,7 @@ See the System Setup documentation for information about setting up Intrastat co
 1. Open the Customer Class Intrastat Setup window.
 (Sales \>\> Setup \>\> Customer Class \>\> Select a customer class \>\>Intrastat button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/0a29d884a9262fcdd7051a9d07feb026.jpg)
+    ![Screenshot of the Customer Class Intrastat Setup window, showing default and empty input boxes.](media/0a29d884a9262fcdd7051a9d07feb026.jpg)
 
 2. Enter or select country, transport mode, transaction nature, incoterms, procedure/regime, port, region, and tax commodity codes for the customer class.
 
@@ -696,7 +696,7 @@ You can post other types of distributions either to Inventory or Receivables Man
 1. Open the Customer Class Accounts Setup window.
 (Sales \>\> Setup \>\> Customer Class \>\> Accounts button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/3cd7047b7669f415246f6616cfd69d8a.jpg)
+    ![Screenshot of the window, showing example checkbook account numbers and descriptions.](media/3cd7047b7669f415246f6616cfd69d8a.jpg)
 
 2. If you didn’t specify a class ID using the previous window, enter or select a class ID and enter a description.
 
@@ -754,7 +754,7 @@ Use the Customer Maintenance window to add customer cards to your Receivables Ma
 
 2. In the New group, choose Customer to open the Customer Maintenance window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/b2c1c15b1b4e180e1f911a4f57d5836f.jpg)
+    ![Screenshot of the window, showing example customer ID, Address, phone, and shipping information.](media/b2c1c15b1b4e180e1f911a4f57d5836f.jpg)
 
 3. Enter a customer ID and name information. The short name, such as the company’s initials, can be used in circumstances when the customer name is too long. Short names may appear on reports and can be used as a sorting option for reports. The statement name is the name that is printed on statements.
 
@@ -813,7 +813,7 @@ You can post other types of distributions either to Inventory or Receivables Man
 1. Open the Customer Account Maintenance window.
 (Sales \>\> Cards \>\> Customer \>\> Select a customer ID \>\> Accounts)
 
-    ![A screenshot of a cell phone Description automatically generated](media/e8a98ea488c3534fd46e195c024e30e9.jpg)
+    ![Screenshot of the window, showing example customer account numbers and descriptions.](media/e8a98ea488c3534fd46e195c024e30e9.jpg)
 
 2. Mark whether to use the Cash account from the checkbook you selected using the Receivables Management Setup window, or from the customer card.
 
@@ -907,7 +907,7 @@ If you entered a class ID for this customer, the options you entered using the C
 1. Open the Customer Maintenance Options window.
     (Sales \>\> Cards \>\> Customer \>\> Select a customer ID \>\> Options)
 
-    ![A screenshot of a cell phone Description automatically generated](media/7284ab89ed33f1e7b54bbdeedd175148.jpg)
+    ![Screenshot of the window, showing customer payment and payment type information, with options to send E mail statements at the bottom.](media/7284ab89ed33f1e7b54bbdeedd175148.jpg)
 
 2. Set up the credit options to apply to the customer, such as balance type, finance charge, minimum payment, credit limit, and writeoff.
 
@@ -955,7 +955,7 @@ The options available in this window depend on the selections you made in the Co
 1. Open the Customer E-mail Options window.
     (Sales \>\> Cards \>\> Customer \>\> Select a customer ID \>\> E-mail)
 
-    ![A screenshot of a cell phone Description automatically generated](media/e37074ea483afcfb34c563ed5c450815.jpg)
+    ![Screenshot of the window, showing options for which forms can be sent as E mails and which formats those forms may have.](media/e37074ea483afcfb34c563ed5c450815.jpg)
 
 2. Select to send documents as attachments or embed documents in the message body. The options available depend on the selections in the Company E-mail Setup window.
 
@@ -991,7 +991,7 @@ The options available in this window depend on the selections you made in the Co
 
 3. In the Modify group, click the overflow menu and then select E-mail Settings to open the Mass Customer E-mail Settings window.
 
-    ![A screenshot of a cell phone Description automatically generated](media/8b43d633881e5e9fbfa80346d5a01a9d.jpg)
+    ![Screenshot of the window, showing the option to send documents as attachments is selected.](media/8b43d633881e5e9fbfa80346d5a01a9d.jpg)
 
 4. Select to send documents as attachments or embed documents in the body of email messages.
 
@@ -1168,7 +1168,7 @@ Use the Customer Mass Delete window to delete a range of customer cards.
 1. Open the Customer Mass Delete window. 
 (Sales \>\> Utilities \>\> Mass Delete)
 
-    ![A screenshot of a cell phone Description automatically generated](media/32a89d099e0cb3d12963f05b6f10c8ab.jpg)
+    ![Screenshot of the window, showing the range to be by customer ID and that only inactive customers are to be selected.](media/32a89d099e0cb3d12963f05b6f10c8ab.jpg)
 
 2. Enter or select a range of customer cards to delete.
 
@@ -1226,7 +1226,7 @@ Use the Posting Setup window to change your posting settings so your transaction
 
 1. Open the Posting Setup window. (Administration \>\> Setup \>\> Posting \>\> Posting)
 
-    ![A screenshot of a cell phone Description automatically generated](media/d1514b8a8089495db7193701a1523ab0.jpg)
+    ![Screenshot of the window, showing default selections and example report entries.](media/d1514b8a8089495db7193701a1523ab0.jpg)
 
 2. Select Sales as the series and Receivables Sales Entry as the origin.
 
@@ -1246,7 +1246,7 @@ You can enter transactions in detail or summary form, depending on your company�
 1. Open the Receivables Batch Entry window. 
 (Sales \>\> Transactions \>\> Receivables Batches)
 
-    ![A screenshot of a cell phone Description automatically generated](media/eb6b83b543a3050e727b2eadf496eaba.jpg)
+    ![Screenshot of the Receivables Batch Entry window, showing default entries and empty input boxes.](media/eb6b83b543a3050e727b2eadf496eaba.jpg)
 
 2. Enter a batch ID, such as BBAL, and select Transaction Entry as the batch origin for transactions. See *Chapter 11, “Batches,”* for more information about batches.
 
@@ -1398,7 +1398,7 @@ Use the Paid Sales Transaction Removal window to consolidate period balances and
 1. Open the Paid Sales Transaction Removal window. 
     (Sales \>\> Routines \>\> Paid Transaction Removal)
 
-    ![A screenshot of a cell phone Description automatically generated](media/98eb8bf73693f25fbc44f7d637cc44fc.jpg)
+    ![Screenshot of the Paid Sales Transaction Removal window, showing default entries and empty input boxes.](media/98eb8bf73693f25fbc44f7d637cc44fc.jpg)
 
 2. Mark All for the range of customers or classes.
 
@@ -1487,7 +1487,7 @@ Closing the fiscal year will not affect the information that is displayed in the
 1. Open the Customer Summary window. 
 (Sales \>\> Cards \>\> Summary)
 
-    ![A screenshot of a cell phone Description automatically generated](media/7931fc6c5e37ffead12c50d18e7a08dd.jpg)
+    ![Screenshot of the window, showing an example payment history for sample customer number 1 who has paid one thousand, one hundred and seventy seven dollars.](media/7931fc6c5e37ffead12c50d18e7a08dd.jpg)
 
 2. Enter or select a customer ID.
 
@@ -1516,7 +1516,7 @@ Use the Customer Period Summary window to enter historical amounts per period—
 1. Open the Customer Period Summary window.
     (Sales \>\> Cards \>\> Summary \>\> Select a customer ID \>\> History button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/f91a7db1fc70dcc4b99a206069e00c54.jpg)
+    ![Screenshot of the Customer Period Summary window, showing default and empty input boxes.](media/f91a7db1fc70dcc4b99a206069e00c54.jpg)
 
 2. Mark Calendar or Fiscal, depending on the type of history you’re entering.
 
@@ -1539,7 +1539,7 @@ Use the Customer Finance Charge Summary window to track current and previous fin
 1. Open the Customer Finance Charge Summary window.
     (Sales \>\> Cards \>\> Summary \>\> Select a customer ID \>\> Finance Charges button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/2f644e610b86d6798f47aa6d82684720.jpg)
+    ![Screenshot of the Customer Finance Charge Summary window for customer number one, showing default and empty input boxes.](media/2f644e610b86d6798f47aa6d82684720.jpg)
 
 2. Enter the Last Charge Amount.
 
@@ -1560,7 +1560,7 @@ Use the Customer Credit Summary window to enter information about the average nu
 1. Open the Customer Credit Summary window.
     (Sales \>\> Cards \>\> Summary \>\> Select a customer ID \>\> Credit Summary button)
 
-    ![A screenshot of a cell phone Description automatically generated](media/6c90941fface7a62bbfb379027ad66b7.jpg)
+    ![Screenshot of the window, showing example inputs for customer number one after a one hundred dollar payment on a one thousand and seventy dollar invoice.](media/6c90941fface7a62bbfb379027ad66b7.jpg)
 
 2. Enter the Average Days to Pay for the current year to date and life to date.
 
@@ -1633,7 +1633,7 @@ Use the National Accounts Maintenance window to add new national accounts to you
 1. Open the National Accounts Maintenance window.
     (Sales \>\> Cards \>\> National Accounts)
 
-    ![A screenshot of a cell phone Description automatically generated](media/a3b774fc7e6430ed6c401b679a5fbc51.jpg)
+    ![Screenshot of the National Accounts Maintenance window, showing default and empty input boxes.](media/a3b774fc7e6430ed6c401b679a5fbc51.jpg)
 
 2. Enter or select a parent customer ID.
 
