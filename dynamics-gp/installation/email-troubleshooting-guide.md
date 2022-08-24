@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 8/23/2022
+ms.date: 8/24/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
