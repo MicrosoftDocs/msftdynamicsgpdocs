@@ -271,7 +271,7 @@ For more information, see [this blog post](https://blogs.msdn.microsoft.com/mahe
 > [!NOTE]
 > If you are using Modern Authentication (MFA) in Dynamics GP and receive this error message when you enter the APP ID in the MFA setup window this could be related to a TLS registry issue.  
 > [Dynamics GP TLS Blog](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-and-tls-1-0?pifragment-99718=2)
-> [How to change the TLS registry](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
+> [How to change the TLS registry](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
 
 
 ### Insufficient Memory
