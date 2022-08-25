@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 06/19/2020
+ms.date: 07/20/2022
 ---
 
 # Manufacturing Setup - Part 1: Manufacturing setup
@@ -1517,6 +1517,333 @@ To use the original MRP labels after you’ve changed them, you can restore the 
 3. Choose Restore Original Values.
 
 4. Choose OK.
+
+## Manufacturing MRP Demo Order Policy of Lot for Lot
+
+**Purpose**
+The purpose of this document is to discuss how to setup an MRP Demo using an Order Policy of Lot-for Lot that will demonstrate the impact of the Order Point Quantity, Move-in and Move-out and Cancel functionality, the MFG Fixed Lead Time, the Purchasing Lead Time, the Minimum and Maximum Order Quantities modifiers, and the Planning Time Fence field.
+
+This document can also be used to determine how to setup various MRP functionality on your live database.
+
+**Description of Lot-for-Lot Order Policy**
+If the Order Policy is set to Lot-for-Lot, the quantity ordered for the item will be the exact quantity needed provided that the order quantity is above the minimum order quantity. If the quantity is more than the maximum order quantity, MRP creates additional orders to fill the demand.
+
+MRP relies on the Replenishment Method and Order Policy information from each individual item/site record in the Item Resource Planning window. It does not rely on the default site values or the initial values as it did in previous versions.
+
+The only time it does not use the information from the item/site record is if the item is a buy item and there is a default vendor assigned to the site in question. MRP will recognize the Minimum Order, Maximum Order, and Planning Lead Time from the Item Vendor Maintenance for this Item and Vendor.
+Lot for Lot will use the following fields in Item Resource Planning or from the Primary Vendor.
+•	Minimum Order Quantity
+•	Maximum Order Quantity
+•	Order Point Quantity
+•	Order-Up-To-Level
+•	Purchasing Lead Time
+•	MFG Fixed Lead Time
+•	MFG Variable Lead Time
+•	Planning Time Fence
+•	Move In, Move Out, Cancel
+
+Lot for Lot will not use the Multiples field.
+
+**Setup:**
+You will need to complete the following steps to create the MRP Demo.
+1)	Set up MRP Preferences Defaults
+2)	Set up 12 new items 
+3)	Set up 3 new BOMs 
+4)	Setup either a Sales Forecast or Sales Order to generate demand in MRP
+5)	Add various transactions (Inventory and Purchase Orders) to create desired impacts
+6)	Generate MRP
+7)	Review results in the MRP Workbench Inquiry window
+
+
+1)	Set up MRP Preferences Defaults 
+•	Mark the Move In, Move Out, and Cancel checkboxes. 
+•	Set the Include past Due for prior 60 day. 
+•	Mark the Activate Planning Time Fence Checkbox
+
+
+![Form](media/MPR0001.PNG)
+
+2) Setup New Items  
+Use the direction below to set up 12 new items. Each item will have a purpose or will demonstrate a specific principle.
+
+Item Maintenance
+You will need to add 12 new items in Item Maintenance. Set the Valuation Method to FIFO Periodic and the U of M Schedule ID of EACH for all items.
+1)	Finished good 
+2)	Finished Good Component 1
+3)	Finished Good Component 2
+4)	Finished Good Component 3
+5)	Finished Good Subassembly
+6)	Finished Good Subassembly Item
+7)	Phantom Subassembly
+8)	Phantom Component
+9)	Order Modifier
+10)	Planning Time Fence
+11)	Cancel
+12)	Move Out 2
+
+Item Quantities/Sites Maintenance
+1)	Assign each of the new items to the Warehouse site.
+2)	Set the Primary Vendor for Warehouse to ACETRAVE0001 for the item called Order Modifier
+Item Engineering Data
+1)	Set all items to have a Make/Buy Code to Buy except for Finished Good, Phantom Subassembly, and Finished Good Subassembly. Set these items to be Make.
+Item Vendor Maintenance 
+Order Modifier
+a.	Vendor ID = ACETRAVE0001
+b.	Minimum Order Quantity Modifier = 5
+c.	Maximum Order Quantity Modifier = 50
+
+![Form](media/MPR0002.PNG)
+
+Item Resource Planning
+1)	Finished Good- this item will demonstrate how each item will appear if there are no modifiers or lead times entered on the item.
+•	Site ID = Warehouse
+•	Mark the Calculate MRP checkbox
+•	Order Policy = Lot for Lot
+•	Replenishment Method = Make
+
+
+![Form](media/MPR0003.PNG)
+
+
+2)	Finished Good Component 1- this item will demonstrate the impact of Order Point Quantity
+a.	Site ID = Warehouse
+b.	Mark the Calculate MRP checkbox
+c.	Order Policy = Lot for Lot
+d.	Order Point Qty = 5
+e.	Order Up to Level= 50	
+f.	Replenishment Method = Buy
+
+![Form](media/MPR0004.PNG)
+
+3)	Finished Good Component 2- this item will demonstrate the impact of Move In capabilities
+a.	Change site to Warehouse
+b.	Mark the Calculate MRP checkbox
+c.	Set the Order Policy to Lot for Lot
+d.	Mark the Move In, Move Out, and Cancel checkbox	
+e.	Set the Replenishment Method to Buy
+
+![Form](media/MPR0005.PNG)
+
+
+4)	Finished Good Component 3 – this item will demonstrate the impact of Move Out capabilities
+a.	Site ID= Warehouse
+b.	Mark the Calculate MRP checkbox
+c.	Order Policy = Lot for Lot
+d.	Mark the Move In, Move Out, and Cancel checkbox	
+e.	Replenishment Method = Buy
+
+
+![Form](media/MPR0006.PNG)
+
+
+5)	Finished Good Subassembly – this item will demonstrate the impact of MFG Fixed Lead Time
+a.	Site ID = Warehouse
+b.	Mark the Calculate MRP checkbox
+c.	Order Policy = Lot for Lot
+d.	MFG Lead Time =5 days
+e.	Replenishment Method to Make
+
+
+![Form](media/MPR0007.PNG)
+
+
+6)	Finished Good Subassembly Item- this item will demonstrate the impact of Purchasing Lead Time
+a.	Site ID = Warehouse
+b.	Mark the Calculate MRP checkbox
+c.	Order Policy = Lot for Lot
+d.	Purchasing Lead Time= 5 Days
+e.	Replenishment Method = Buy
+
+
+![Form](media/MPR0008.PNG)
+
+7)	Phantom Subassembly- this item will demonstrate the impact of phantom subassembly
+a.	Site ID = Warehouse
+b.	Mark the Calculate MRP checkbox
+c.	Order Policy = Lot for Lot
+d.	 Replenishment Method = Make
+
+
+![Form](media/MPR0009.PNG)
+
+8)	Phantom Component- this item will demonstrate how the phantom component will display 
+a.	Site ID = Warehouse
+b.	Mark the Calculate MRP checkbox
+c.	Order Policy = Lot for Lot
+d.	Set the Replenishment Method to Buy
+
+![Form](media/MPR00010.PNG)
+
+9)	Order Modifier- this item will demonstrate the impact of having a Primary Vendor
+a.	Site ID = Warehouse
+b.	Mark the Calculate MRP checkbox
+c.	Order Policy = Lot for Lot
+d.	Mark the Move In, Move Out, and Cancel checkbox	
+e.	Set the Replenishment Method to Buy
+
+![Form](media/MPR00011.PNG)
+
+10)	Planning Time Fence- this item will demonstrate the Planning Time Fence 
+a.	Site ID = Warehouse
+b.	Mark the Calculate MRP checkbox
+c.	Order Policy = Lot for Lot
+d.	Mark the Move In, Move Out, and Cancel checkbox
+e.	Set the Replenishment Method to Buy
+f.	Planning Time Fence = 60
+
+![Form](media/MPR00012.PNG)
+
+11)	Cancel-this item will demonstrate the impact of the Order-up-to-Level and the Cancel functionality.
+a.	Site ID = Warehouse
+b.	Mark the Calculate MRP checkbox
+c.	Order Policy = Lot for Lot
+d.	Mark the Move In, Move Out, and Cancel checkbox	
+e.	Set the Replenishment Method to Buy
+f.	Order-up-to-Level=100
+
+![Form](media/MPR00013.PNG)
+
+12)	Move Out 2- this item will display move out capabilities with a move out time fence.
+a.	Site ID = Warehouse
+b.	Mark the Calculate MRP checkbox
+c.	Order Policy = Lot for Lot
+d.	Mark the Move In, Move Out, and Cancel checkbox	
+e.	Set the Replenishment Method to Buy
+f.	Order-up-to-Level=50
+g.	Move Out Fence=30
+
+
+![Form](media/MPR00014.PNG)
+
+**BOM Setup**
+
+Setup 3 new BOM; a phantom subassembly, a regular subassembly, and a regular BOM. The regular BOM will include both the phantom subassembly and the regular subassembly as components.	These will be entered in Bill of Materials Entry
+
+Phantom Subassembly
+1)	BOM Type=MFG BOM
+2)	BOM Category= Phantom
+3)	Add a quantity of 1 of Phantom Component with the Issue From site as Warehouse
+
+![Form](media/MPR00015.PNG)
+
+Finished Good Subassembly
+1.	BOM Type=MFG BOM
+2.	BOM Category= Regular
+3.	Add a quantity of 1 of Finished Good Subassembly Item with the Issue From site as Warehouse
+
+Finished Good
+1)	BOM Type=MFG BOM
+2)	BOM Category= Regular
+3)	Add a quantity of 1 of the following items and set the Issue From site as Warehouse for each line
+a.	Finished Good Subassembly
+b.	Phantom Subassembly
+c.	Finished Good Component 1
+d.	Finished Good Component 2
+e.	Finished Good Component 3
+f.	Order Modifier
+g.	Planning Time Fence
+h.	Cancel
+i.	Move Out 2
+
+![Form](media/MPR00016.PNG)
+
+**Create demand for the finished good BOM**
+
+There are two options for creating demand for the finished good BOM
+1)	Create a sales forecast for the next 6 months
+or
+2)	Create sales orders for the next 6 months
+3)	
+Creating a Sales Forecast.
+You can create a new sales forecast or use an existing one.
+How to use an existing sale forecast
+1)	Pull up plan Q3FY06 forecast in the Sales Forecasting Entry window
+2)	Change the Forecast Start Date to 4/1/2027
+3)	Change the Forecast End Date to 11/30/2027
+4)	Set the Issue to site to Warehouse.
+5)	Enter the item Finished Good in the Item Number column under PRO1
+6)	Add a Forecast Quantity of 100 for each month in the forecast for Finished Good
+7)	Use the GOTO and select Forecast Selections. Press the Insert button to insert Q3FY06 into the table.
+Q3FY06 Sales Forecast 1
+
+How to create a new sales forecast and activate it
+1)	Go to Transactions | Manufacturing | Forecasting | Sales Forecast
+2)	Enter New Projections for the Plan Name
+3)	Enter 1 Month for the Forecast Period
+4)	Set the Issue to site to Warehouse.
+5)	Set the Forecast Start Date to 4/1/2027
+6)	Set the Forecast End Date to 11/30/2027
+7)	Enter Finished Good under the Item Number column 
+8)	Add a Forecast Quantity of 100 for each month in the forecast for Finished Good.
+9)	Add a Forecast Quantity of 1000 for Move Out and 500 Move Out 2 for the 9/1/2027 period.
+10)	Use the GOTO and select Forecast Selections. Press the Insert button to insert New Projections into the table.
+
+![Form](media/MPR00017.PNG)
+
+**How to create Sales Orders to fuel demand**
+Create a sales order for each month in the forecast (4/1/27, 5/1/27, 6/1/27, 7/1/27, 8/1/27, 9/1/27, 10/1/27, 11/1/27). Add Finished Good item for a quantity of 100 for each month. You can backorder the items but do not create manufacturing orders for the item. Drill into each line and verify the Req. Ship date is correct for each month.
+
+Other orders/transactions that need to be entered
+There are several different purchase orders and inventory adjustments that need to be entered for the move in, move out, and cancel capabilities.
+1)	Create a PO for a quantity of 100 of Finished Good Component 2 at the Warehouse site with a date of 6/1/2027. Drill down to the Line Item Detail window and verify the Vendor Promise date is 6/1/2027 also. Save your PO.
+2)	Create an Inventory Adjustment for 300 of Finished Good Component 3 at the Warehouse site with a date of 4/12/27 and post the adjustment.
+3)	Create a PO for a quantity of 100 of Finished Good Component 3 at the Warehouse site with a date of 4/12/27.
+4)	Create one PO for a quantity of 500 of Cancel for the Warehouse site with a date of 4/12/17.
+5)	Create a second PO for a quantity of 500 for Cancel at the Warehouse site with a date of 6/1/27.
+6)	Create a PO for 1000 of Move Out with a date of 4/12/27.
+7)	Create 2 POs for Move Out 2, each for a quantity of 500, and a date of 4/12/27.
+
+Generating MRP
+1)	Go to Transactions | Manufacturing | MRP| MRP Regeneration. 
+2)	In the Run for fields enter 6 months
+3)	Mark the Weeks and Months checkboxes
+4)	Leave the Generation Type to Full Regeneration
+5)	Leave the Past Due Number of Days to 60 
+6)	Press the Process button.
+
+MRP Results
+The results will be displayed in the Months view on the MRP Workbench unless otherwise noted. There is a diagram of the MRP Workbench included for each item. Significant numbers have been high-lighted in red.
+
+Finished Good Item. (General)  
+This item does not have any lead times. You will see the demand (Gross Requirements) are for 4/12 and the Planned Order Receipt and Planned Order Release are also for 4/12. It is lead times that allow MRP to set the Planned Order Release for a different date then the demand for the item.
+
+![Form](media/MPR00018.PNG)
+
+Finished Good Component 1 (Order Point)
+Because there is an order point for 5 the item, the initial planned order quantity is 105 (100 to meet the demand of the finished good and 5 to meet the demand of the order point quantity). All orders after 4/12 are for 100 to meet the demand from the finished good.
+
+Finished Good Component 2 (Move in) 
+MRP will suggest you move in the PO order for 6/1 to meet the demand of the finished good for 4/12.  You will have an MRP suggestion for 100 on 4/12 and an MRP suggestion for -100 on 6/1. This tells you that MRP is suggesting you move the order for 6/1 to 4/12.
+
+Finished Good component 3(Move Out)
+MRP will suggest you move out the PO order for 4/12 to meet the demand of the finished good for 7/1. There is enough on hand to cover the demand for 4/1-6/1. MRP will suggest you move the order out so that you do not have an oversupply of the inventory item. MRP uses the following equation to determine if an order should be moved out or canceled. It compares the Projected Available Balance (PAB) value to the Order-Up-To Level value. If the PAB value is larger than the Order-Up-To Level value, the item/site record has an oversupply. If there is enough demand in the future to consume the PO, then there will be a move out suggestion. If there is not enough demand in the future to consume the PO quantities, there will be a cancel suggestion.
+
+Finished Good Subassembly (MFG Lead Time)
+You will need to display the MRP Workbench in days instead of months. If the subassembly has a MFG Lead Time MRP will suggest you release the Manufacturing Order prior to the Planned Order Receipt data so that you have time to produce the manufacturing order. In this case MRP is suggesting you release the Planned Order 5 days prior (4/26) to when you plan to receive the order (5/1). Without the MFG Lead time MRP would suggest you release the planned order and receive it both on 5/1.
+
+Finished Good Subassembly Component (Purchasing Lead Time)
+View the MRP Workbench for this item in days instead of months. If a component has a purchasing lead time MRP will suggest you release the Planned PO prior to when it is due so that you have time to acquire the item. In this case the subassembly component is due on 4/26 (when the subassembly order needs to be released). MRP suggest you release you planned order on 4/21 so that your parts will be received prior to 4/26 when the Finished Good Subassembly order needs to be released.
+
+Phantom Subassembly
+When the item is set up to be a phantom subassembly MRP will not suggest orders or show demand for the item. However, the phantom subassembly must be included in MRP so that the phantom subassembly components are included in MRP.
+
+Phantom Component
+The component will show both demand and supply based on the demand of the finished good.
+
+Order Modifier
+The primary vendor has a maximum order of 50. The demand for the item is 100 and the Planned Order Receipts for 4/12 will be 100
+
+Double-click on the Planned Order Receipt quantity of 100 on 4/12/2017 to see the detail in the MRP Quantities Query window. MRP will suggest that you create two purchase orders for a quantity of 50 instead of one order for a quantity of 100. MRP cannot exceed the Maximum Order QTY entered on the Item/Vendor Maintenance window, so it suggests 2 orders to meet the demand of 100 items.
+
+Planning Time Fence
+A planning time fence is a period during which you don’t want to adjust manufacturing orders or purchase orders. Orders are not suggested using MRP if their due dates fall within the fence. In the below example there is a 2-month planning time fence. You can see that there are Gross Requirements for both 4/12 and 5/1 but there are no planned orders for this period. On 6/1 there are planned receipts for not only June but also April and May.
+
+Cancel
+In the below example there are two Planned Order Receipts for 4/12 each for 500 units. MRP suggests you cancel one of these orders and then MRP suggests a smaller order (100) on 9/1 to meet the demand the future demand. MRP uses the following equation to determine if an order should be moved out or canceled. It compares the Projected Available Balance (PAB) value to the Order-Up-To Level value. If the PAB value is larger than the Order-Up-To Level value, the item/site record has an oversupply. If there is enough demand in the future to consume the PO, then there will be a move out suggestion. If there is not enough demand in the future to consume the PO quantities, there will be a cancel.
+
+Move Out 2 (Move Out Time Fence)
+A Move out time fence is a period during which you don’t want actual orders to be moved if there is any demand within that time frame. In this case, there are two POs for 500 each. MRP will suggest you move one out one of the PO to 9/1/27 to meet the need on 9/1. It does not suggest you move the other PO because you have demand within your 30-day time fence.
+
 
 ## See also
 
