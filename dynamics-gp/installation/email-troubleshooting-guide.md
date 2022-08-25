@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 7/26/2022
+ms.date: 8/24/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -267,6 +267,12 @@ For more information, see [this blog post](https://blogs.msdn.microsoft.com/mahe
 > [!NOTE]
 > Verify this error **Unknown Error Occurred** is happening for all users that are trying to send emails.  If this error only happens for example on two users, and you are using RDS Server, we have seen where deleting the User Profile on the RDS server and recreating it has fixed this error message and issue for those couple of users.
  
+ 
+> [!NOTE]
+> If you are using Modern Authentication (MFA) in Dynamics GP and receive this error message when you enter the APP ID in the MFA setup window this could be related to a TLS registry issue.  
+> [Dynamics GP TLS Blog](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-and-tls-1-0?pifragment-99718=2)
+> [How to change the TLS registry](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
+
 
 ### Insufficient Memory
 **Solution**
