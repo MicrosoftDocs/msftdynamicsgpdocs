@@ -56,10 +56,10 @@ An email address was available in previous versions to provide an option for con
 
 ## Contributions to the Dynamics GP content
 
-We welcome contributions to the Dynamics GP content. You can find the source files in GitHub at [https://github.com/MicrosoftDocs/msftdynamicsgpdocs/](https://github.com/MicrosoftDocs/msftdynamicsgpdocs), and the ReadMe.md file in the root of the repo contains tips and tricks for working with the content. If you want to add a new article, then the repo contains a template.md file that can help you get started. See also the [Microsoft Docs contributor guide overview](/contribute/).  
+We welcome contributions to the Dynamics GP content. You can find the source files in GitHub at [https://github.com/MicrosoftDocs/msftdynamicsgpdocs/](https://github.com/MicrosoftDocs/msftdynamicsgpdocs), and the README.md file in the root of the repo contains tips and tricks for working with the content. If you want to add a new article, then the repo contains a template.md file that can help you get started. For more information, see the [contributor guide overview](/contribute/).
 
 > [!TIP]
-> At Microsoft, we're gradually working our way through converting the legacy manuals. We believe in the strength of the Dynamics GP community, and we welcome additional contributions. The Dynamics GP content is online because it's easier to maintain, so if you can't wait for us to convert a manual, then help us. For more information, see the [Microsoft Docs contributor guide overview](/contribute/).  
+> At Microsoft, we're gradually working our way through converting the legacy manuals. We believe in the strength of the Dynamics GP community, and we welcome additional contributions. The Dynamics GP content is online because it's easier to maintain, so if you can't wait for us to convert a manual, then help us. For more information, see the [contributor guide overview](/contribute/).
 
 ## See also
 
