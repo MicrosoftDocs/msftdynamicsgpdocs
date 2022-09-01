@@ -12,10 +12,12 @@ ms.date: [Today's date]
 
 # Workflow, feature name, or component name
 
-Describe the new feature, and then give an elevator pitch of the business value for it. Include high-value capabilities that light up something exciting for our customers.  
+Describe the new feature, and then give an elevator pitch of the business value for it. Include high-value capabilities that light up something exciting for our customers.
 
 ## First subheading
-Get into more details. If you use Visual Studio Code, then get the Docs Authoring Pack - for more information, see the [Microsoft Docs Contributor Guide](https://docs.microsoft.com/en-us/contribute/).  
 
-## See Also
-Link to related articles.  
+Get into more details. If you use Visual Studio Code, then get the Docs Authoring Pack. For more information, see the [contributor guide](https://docs.microsoft.com/contribute/).  
+
+## See also
+
+Link to related articles.
