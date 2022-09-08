@@ -169,7 +169,7 @@ You also should refer to the documentation provided by Citrix for more informati
 For the upgrade process, be sure that you have enough disk space before you begin. To determine the disk space required for the upgrade, you need to find the size of the largest table for all Dynamics GP databases. To determine disk space, use Microsoft SQL Server Management Studio for Microsoft SQL Server.
 
 > [!NOTE]
-> You can download an upgrade preparation script that will help you determine the disk space requirements from [https://docs.microsoft.com/dynamics/s-e/](/dynamics/s-e/).  
+> You can download an upgrade preparation script that will help you determine the disk space requirements from [dynamics-product-downloads](/dynamics/s-e/).
 
 To determine disk space for the upgrade process using Microsoft SQL Server Management Studio:
 
