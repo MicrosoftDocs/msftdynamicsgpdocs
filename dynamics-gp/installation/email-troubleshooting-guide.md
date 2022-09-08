@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 8/31/2022
+ms.date: 9/8/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -281,6 +281,8 @@ For more information, see [this blog post](https://blogs.msdn.microsoft.com/mahe
 [Authenticate | Citrix Workspace app for Windows](https://docs.citrix.com/en-us/citrix-workspace-app-for-windows/authentication.html)
 >
 > 4. Can you email (test) from the SQL Server does it work? Compared to the RDS server machine to rule out settings/setup.  How does a Fiddler trace compare between a working and non-working machine?
+> 
+>  5. Modern Auth requires .Net Framework 4.7.2 to be installed on each machine/ server.  If one machine is failing verify this version is installed.
 
 
 ### Insufficient Memory
