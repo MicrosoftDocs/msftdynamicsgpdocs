@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 03/25/2022
+ms.date: 08/30/2022
 ---
 
 # Workflow Administrator's Guide
@@ -145,6 +145,8 @@ A customer credit limit override approval workflow is used to gain approval for 
 After these documents that exceed credit limits are approved, you can process them according to your company’s business practices.
 Before you can use this workflow, you must remove the password from the Exceed Credit 
 Limit field in the Receivables Management Setup window (Sales > Setup > Receivables).
+
+This is not a workflow you will see in workflow maintenance, but something you can set up within the [Sales Transaction Approval workflow](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2018-r2-sales-transaction-workflow-including-credit-limit) as a condition and was added in [Dynamics GP 2018 R2](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2018-r2-new-feature-blog-series-schedule).
 
 ![Exceed Credit Limit field in the Receivables Management Setup window](media/WORKCCL0001.png)
 
