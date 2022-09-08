@@ -726,7 +726,7 @@ From there on out, when a user approves through the workflow email links, to app
 If an email is failing from the email links this could indicate a problem with web services.
 Test approving the email from within Dynamics GP, then we know workflow and emails are working, just not the web services links.
 
-[How to verify if Microsoft Dynamics GP Web Services is functioning correctly](https://docs.microsoft.com/en-US/troubleshoot/dynamics/gp/verify-if-web-service-is-correct)
+[How to verify if Microsoft Dynamics GP Web Services is functioning correctly](/troubleshoot/dynamics/gp/verify-if-web-service-is-correct)
 
 
 ## <a name=mfa></a>MFA - Multi-Factor Authentication
