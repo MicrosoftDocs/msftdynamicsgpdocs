@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 8/24/2022
+ms.date: 8/31/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -269,9 +269,18 @@ For more information, see [this blog post](https://blogs.msdn.microsoft.com/mahe
  
  
 > [!NOTE]
-> If you are using Modern Authentication (MFA) in Dynamics GP and receive this error message when you enter the APP ID in the MFA setup window this could be related to a TLS registry issue.  
+> **Items to Rule out and test with Unknown error occurred and Modern Auth**
+> 
+> 1. If you are using Modern Authentication (MFA) in Dynamics GP and receive this error message when you enter the APP ID in the MFA setup window this could be related to a TLS registry issue.  
 > [Dynamics GP TLS Blog](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-and-tls-1-0?pifragment-99718=2)
 > [How to change the TLS registry](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
+>
+> 2. Verify this error **Unknown Error Occurred** is happening for all users that are trying to send emails.  If this error only happens for example on two users, and you are using RDS Server, we have seen where deleting the User Profile on the RDS server and recreating it has fixed this error message and issue for those couple of users.
+>
+> 3. If you are trying to sign in with Modern Auth over Citrix and use the Citrix Workspace App, please review the information below specific for Citrix
+[Authenticate | Citrix Workspace app for Windows](https://docs.citrix.com/en-us/citrix-workspace-app-for-windows/authentication.html)
+>
+> 4. Can you email (test) from the SQL Server does it work? Compared to the RDS server machine to rule out settings/setup.  How does a Fiddler trace compare between a working and non-working machine?
 
 
 ### Insufficient Memory
@@ -704,6 +713,20 @@ When approving Requestions as an example thru Workflow email links (which uses w
 
 When reviewing a SQL Profile trace, you can see calls (qdCreateSQL procedure) that happen for each E-Mail being sent.  There is about a 30 second window for this to complete.  If you have a larger data set and maybe joined more tables to the workflow message, this may not complete and cause the above error and then notifications appear to stop.  To resolve this problem, you may need to look at the workflow, tables that are joined, comments that are printing and see if there is an index that can be put on a specific table to better  sort through the data.  The SQL Display Estimated Execution Plan can be used to help identify your specific data issue.
 
+
+1. If no workflow emails are sent, verify if it is all workflow or just one specific workflow where this is not working.
+      a. For the user you are testing with, verify in *Active Directory under the General tab* that the E-mail field is populated, if it is blank emails will not send.
+         This needs to be done for all users that are GP Approvers in workflow
+      b. Try to send a Test E-Mail in Workflow Setup does it work?  This process will use the user listed in the SMTP Authentication area of the window.
+      c. The SY04920 table is not used for workflow emails or Modern Auth once setup and becomes non-relevant.            
+      
+2. If we are using templates, we should try a workflow email with no attachments, just to see if the email works.
+3. When a user 1st submits for approval in workflow, that will go through Exchange, usually submitted within Dynamics GP.
+From there on out, when a user approves through the workflow email links, to approve what was submitted, that will use [SMTP](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-workflow-intermittent-emails-failing) for all other approvals from Web Services workflow emails.
+If an email is failing from the email links this could indicate a problem with web services.
+Test approving the email from within Dynamics GP, then we know workflow and emails are working, just not the web services links.
+
+[How to verify if Microsoft Dynamics GP Web Services is functioning correctly](/troubleshoot/dynamics/gp/verify-if-web-service-is-correct)
 
 
 ## <a name=mfa></a>MFA - Multi-Factor Authentication
