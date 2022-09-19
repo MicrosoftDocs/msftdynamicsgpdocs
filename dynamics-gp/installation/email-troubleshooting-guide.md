@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 8/31/2022
+ms.date: 9/19/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -661,7 +661,7 @@ With Exchange, Dynamics GP actually contacts the Exchange server and does it’s
 
 Whatever credentials you log in with, are going to determine what email address is sending the documents. 
 
-With MFA, we are unable to get the true shared mailboxes to work with the MFA feature in Dynamics GP and it is currently considered an unsupported functionality.  
+With modern authentication, we are unable to get the true shared mailboxes to work with the modern authentication (MFA) feature in Dynamics GP.  It is currently considered an unsupported functionality.  
 Please vote on the following [product suggestion](https://experience.dynamics.com/ideas/idea/?ideaid=546251fd-5633-ec11-b76a-0003ff45ac6d)
 
 
@@ -729,10 +729,10 @@ Test approving the email from within Dynamics GP, then we know workflow and emai
 [How to verify if Microsoft Dynamics GP Web Services is functioning correctly](/troubleshoot/dynamics/gp/verify-if-web-service-is-correct)
 
 
-## <a name=mfa></a>MFA - Multi-Factor Authentication
+## <a name=mfa></a>MFA - Multi-Factor Authentication (Modern Authentication)
 
 - [Set up the application in the Azure Portal](/dynamics-gp/whats-new/multi-factor-authentication)  
-- [Configure MFA in Dynamics GP](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---multi-factor-authentication)
+- [Configure Modern Authentication in Dynamics GP](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---multi-factor-authentication)
 - [MFA VIDEO LEARNING](https://www.youtube.com/watch?v=81YZ8B6bHPk&t=7s)
 
 > [!NOTE]
@@ -744,15 +744,15 @@ There have been many quality issues fixed within Dynamics GP around Multi-Factor
 
 To use modern authentication with Dynamics GP, the Application (Client ID) is required to be entered in the **Company E-Mail Setup** window in Dynamics GP. Get this ID from Azure, where it is located under Tools, Setup, Company, and the choose **Company E-mail Setup**. MFA enabled on each user's Office 365 account is an additional layer of security for an organization but not required by Dynamics GP.
 
-By turning MFA on in Dynamics GP, you are then telling the system to use Modern Authentication vs Basic Authentication (depreciated as of October 2022). If you recently upgraded and set up MFA, we recommend to be on the latest version if you can of Dynamics GP to encompass all the fixes released around MFA.
+By turning modern authentication on in Dynamics GP (Application Client ID populated), you are then telling the system to use Modern Authentication vs Basic Authentication (depreciated as of October 2022). If you recently upgraded and set up modern authentication, we recommend to be on the latest version if you can of Dynamics GP to encompass all the fixes released around modern authentication.
 
-MFA is only supported with Exchange.
+Modern Authentication is only supported with Exchange.
  
-When you have MFA enabled and you try to use the "SEND TO" option in Microsoft Dynamics GP, it will still prompt for the Exchange login.  MFA is not enabled off the "SEND TO" button/option.  An alternative workaround to this is use the Report Option Windows as MFA is enabled there.  For example if you are printing a Trial Balance,  go to Reports | Financial Trial Balance and create a report option from this window for the report to email and MFA is enabled in all Report Option windows. Many customers use this for posting reports too so it will be a process change to use the Report Options window where MFA is now enabled VS the "SEND TO" option.
+When you have modern authentication enabled and you try to use the "SEND TO" option in Microsoft Dynamics GP, it will still prompt for the Exchange login.  Modern authentication is not enabled off the "SEND TO" button/option.  An alternative workaround to this is use the Report Option Windows as modern authentication is enabled there.  For example if you are printing a Trial Balance,  go to Reports | Financial Trial Balance and create a report option from this window for the report to email and modern authentication is enabled in all Report Option windows. Many customers use this for posting reports too so it will be a process change to use the Report Options window where modern authentication is now enabled VS the "SEND TO" option.
 
-### Dynamics GP, MFA and Third Party Authentication
+### Dynamics GP, Modern Authentication and Third Party Authentication
 
-As more users start to use MFA a common question that may come up is does GP work or is compatible with a 3rd party authentication provider.  There are many, but a common one that comes up is DUO as an example.
+As more users start to use modern authentication a common question that may come up is does GP work or is compatible with a 3rd party authentication provider.  There are many, but a common one that comes up is DUO as an example.
 
 Microsoft Dynamics GP is not tested with any 3rd party authentication provider, thus they are not supported, but they may work in the environment depending on how it is setup.  Microsoft Dynamics GP support cannot assist with this process but below are recommendations for the setup.
 
@@ -771,8 +771,8 @@ The generic steps to get it to work are as follows:
 
 Some items to watch out for:
 
-1. The new MFA functionality in Dynamics GP MUST be setup for DUO to work. It blocks Basic Auth, and the new functionality is needed to bypass this block
-2. A single user MUST be setup with OAuth MFA to complete the initial MFA setup within Azure and GP (the Email Settings window) This user can be swapped back to DUO after the setup.
+1. The new modern authentication functionality in Dynamics GP MUST be setup for DUO to work. It blocks Basic Auth, and the new functionality is needed to bypass this block
+2. A single user MUST be setup with OAuth MFA to complete the initial modern authentication setup within Azure and GP (the Email Settings window) This user can be swapped back to DUO after the setup.
 3. We cannot guarantee this will work in all environments since it hasn't really been fully tested.
 
 
