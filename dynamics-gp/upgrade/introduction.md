@@ -39,7 +39,7 @@ A number of resources are available to help in addition to this document.
 
 <!--#### Knowledge Base
 
-[https://docs.microsoft.com/dynamics/s-e/](https://docs.microsoft.com/dynamics/s-e/)
+[https://learn.microsoft.com/dynamics/s-e/](https://learn.microsoft.com/dynamics/s-e/)
 
 Provides you with instant access to the same database our support engineers use. You can find answers to common questions, along with technical tips and performance recommendations.-->
 
@@ -58,5 +58,3 @@ Start a year-end discussion with other members of the Microsoft customer communi
 #### Dynamics GP support team
 
 We have specialized support teams focused on providing service and support to our customers. If you have questions, dial toll free 888-GPS-SUPP (888-477-7877). Enter your 10-digit authorization code.
-
-
