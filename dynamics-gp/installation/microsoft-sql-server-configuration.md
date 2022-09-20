@@ -269,7 +269,7 @@ Jobs are customizable, and you can select how frequently they should be complete
 
 SQL Server Agent is not available for SQL Server Express. For information about how to schedule backups for SQL Server Express, see the Microsoft Knowledge Base article [How to schedule and automate backups of SQL Server databases in SQL Server Express](https://support.microsoft.com/kb/2019698/).
 
-<!--Microsoft SQL Server 2008 Express doesn't include SQL Server Agent. Refer to [Support Hot Topic on CustomerSource](https://docs.microsoft.com/dynamics/s-e/) for more information about scheduling a backup.-->
+<!--Microsoft SQL Server 2008 Express doesn't include SQL Server Agent. Refer to [Support Hot Topic on CustomerSource](https://learn.microsoft.com/dynamics/s-e/) for more information about scheduling a backup.-->
 
 ## Enabling Delete PJournal job
 
@@ -326,4 +326,3 @@ Use the [Create or Configure an Availability Group Listener documentation](/sql/
 Since you are not able to configure the SQL Server system databases as part of an availability group, you will need to implement a separate solution in order to synchronize the SQL logins across the replicas of the availability group. It is very important when using SQL identities for Microsoft Dynamics GP that you implement a solution that synchronizes logins in a continuous fashion since SQL logins may be added, removed or changed continually from within Microsoft Dynamics GP. The solution will need to synchronize users from the primary replica to the secondary replicas, but remember that after a fail over the primary replica may be a SQL instance that was previously a secondary replica. The result is that the solution will need to be able to synchronize logins from any replica in the group if it becomes the primary replica after a fail over. The solution will need to synchronize the passwords of the SQL logins so after a failover the GP user is able to log in using their most current user name and password.
 
 There is a [SQL 2012 Always On Login Syncing solution available on CodePlex](https://archive.codeplex.com/?p=sql2012alwaysonlogin) and another [Automatically Transfer and Synchronize SQL Server logins, SIDS, Passwords and Permissions](http://www.msbicoe.com/post/2012/04/06/Automatically-Transfer-and-Synchronize-SQL-Server-logins-SIDs-Passwords-and-Permissions.aspx) solution which could be used as a reference or as a possible solution for synchronizing SQL logins. 
-

@@ -16,7 +16,7 @@ Describe the new feature, and then give an elevator pitch of the business value 
 
 ## First subheading
 
-Get into more details. If you use Visual Studio Code, then get the Docs Authoring Pack. For more information, see the [contributor guide](https://docs.microsoft.com/contribute/).  
+Get into more details. If you use Visual Studio Code, then get the Docs Authoring Pack. For more information, see the [contributor guide](https://learn.microsoft.com/contribute/).  
 
 ## See also
 
