@@ -5,7 +5,7 @@ For more information see the [Code of Conduct FAQ](https://opensource.microsoft.
 
 # msftdynamicsgpdocs
 
-Welcome to the repository for documentation and guides for Microsoft Dynamics GP! The content is available as markdown files (.md), where each file represents an article in the help that publishes to [Dynamics GP documentation](https://docs.microsoft.com/dynamics-gp/). This repo also provides a way for you to actively contribute to the Dynamics GP content, and we welcome your contributions.
+Welcome to the repository for documentation and guides for Microsoft Dynamics GP! The content is available as markdown files (.md), where each file represents an article in the help that publishes to [Dynamics GP documentation](https://learn.microsoft.com/dynamics-gp/). This repo also provides a way for you to actively contribute to the Dynamics GP content, and we welcome your contributions.
 
 The *live* branch has been updated for the latest release of Dynamics GP with most recent tax updates.
 
@@ -64,4 +64,4 @@ For example, to create a pull request to the msftdynamicsgpdocs repo by using Gi
 
 ## Contributor guide
 
-Get tips, tools, and guidance in the [Microsoft Docs contributor guide](https://docs.microsoft.com/contribute/).
+Get tips, tools, and guidance in the [Microsoft Docs contributor guide](https://learn.microsoft.com/contribute/).
