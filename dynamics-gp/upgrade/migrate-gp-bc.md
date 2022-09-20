@@ -64,4 +64,4 @@ This video talks about the in-product search capability in Business Central.
 [Migrate from Dynamics GP](/dynamics365/business-central/dev-itpro/administration/migrate-dynamics-gp)  
 [Business Functionality](/dynamics365/business-central/across-business-functionality)  
 [Accountant Experiences in Dynamics 365 Business Central](/dynamics365/business-central/finance-accounting)  
-[Dynamics 365 Business Central on Microsoft Learn](/learn/dynamics365/business-central)  
+[Dynamics 365 Business Central on Microsoft Learn training](/training/dynamics365/business-central)  
