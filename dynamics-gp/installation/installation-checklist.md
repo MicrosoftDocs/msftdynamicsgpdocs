@@ -63,7 +63,7 @@ To view and download documentation, visit the [Documentation Resources for Dynam
 
 <!--### CustomerSource
 
-CustomerSource is a Web site for registered Dynamics GP customers. CustomerSource is available 24 hours a day. You must have a user name and password to enter the site. You can access [CustomerSource](https://docs.microsoft.com/dynamics/s-e/) with your Internet browser.
+CustomerSource is a Web site for registered Dynamics GP customers. CustomerSource is available 24 hours a day. You must have a user name and password to enter the site. You can access [CustomerSource](https://learn.microsoft.com/dynamics/s-e/) with your Internet browser.
 
 From the CustomerSource start page, select the Support option. From the Support page, you can look for information on your own or you can use e-mail to send a question to the Dynamics GP Technical Support team.
 
