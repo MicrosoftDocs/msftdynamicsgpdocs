@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 09/21/2022
+ms.date: 09/26/2022
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -24,7 +24,7 @@ This document assumes that you are familiar with the Microsoft Dynamics GP U.S. 
 
 Check out these blogs for detailed documentation on how you calculate payroll taxes in Microsoft Dynamics GP:
 
-[How to calculate Federal Tax with Dependent Claim Aount Field](https://community.dynamics.com/gp/b/dynamicsgp/posts/how-to-calculate-federal-tax-with-dependent-claim-amount)
+[How to calculate Federal Tax with Dependent Claim Amount Field](https://community.dynamics.com/gp/b/dynamicsgp/posts/how-to-calculate-federal-tax-with-dependent-claim-amount)
 
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly)
 
