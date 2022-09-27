@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 09/26/2022
+ms.date: 09/27/2022
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -1198,13 +1198,13 @@ If you're not using one of the supported versions, you must upgrade to a support
 
 If your computer is connected to the Internet, the Payroll Update Utility (PUE) automatically can download the tax table update file (TX.cab) from the Internet.
 
-If your computer isn't connected to the Internet, you can obtain the file from [Dynamics GP Downloads](/dynamics/s-e/gp/mdgp2018_release_download_378) or your Microsoft Partner and copy it to your computer before running what's known as a "manual" installation.
+If your computer isn't connected to the Internet, you can obtain the file from [Dynamics GP Downloads](https://learn.microsoft.com/en-us/dynamics/s-e/gp/tugp2018_391) or your Microsoft Partner and copy it to your computer before running what's known as a "manual" installation.
 
 Tax updates are distributed in the form of .CAB files. Copy the .CAB file to a folder that you can readily access, such as the folder that contains Dynamics.exe. Copying the .CAB file to your computer does not complete the installation. Refer to the following section for instructions on how to install the tax update.
 
 ## Installing the tax update
 
-The Round 3 2022 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
+The tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
 
 If you have issues installing the update, review the article on [Tips to install the U.S. Payroll Tax
 Update.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/05/09/tips-to-install-the-u-s-payroll-tax-update)
@@ -1219,7 +1219,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
     ![A screenshot](media/a6b6f3f85d529f49182c1e66d23df8b5.jpg)
 
     - The Automatic option downloads the current tax table update from the Internet to the default location. An Internet connection is required.
-    - The Manual option processes the tax table update from a location you choose. You might choose Manual if you need to update a computer that isn't connected to the Internet. To use this method, you should already have obtained the tax table update file, TX.cab, and copied it to a location your computer can readily access.
+    - The Manual option processes the tax table update from a location you choose. You might choose Manual if you need to update a computer that isn't connected to the Internet. To use this method, you should already have obtained the tax table update file, [TX.cab](https://learn.microsoft.com/en-us/dynamics/s-e/gp/tugp2018_391), and copied it to a location your computer can readily access.
 
 3. If you selected Automatic, enter your 10-digit authorized telephone number. Choose Log in to start the download.
 
