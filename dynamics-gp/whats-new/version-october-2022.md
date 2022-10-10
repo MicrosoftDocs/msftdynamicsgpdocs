@@ -8,7 +8,7 @@ ms.reviewer: edupont
 manager: tfehr
 ms.prod: dynamics-gp
 ms.topic: article
-ms.date: 9/21/2022
+ms.date: 10/10/2022
 ---
 
 # What's New in Dynamics GP in October 2022
