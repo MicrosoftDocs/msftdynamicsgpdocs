@@ -7,7 +7,7 @@ ms.reviewer: edupont
 ms.topic: article
 ms.prod: dynamics-gp
 ms.author: edupont
-ms.date: 07/08/2021
+ms.date: 10/11/2022
 
 ---
 
@@ -36,15 +36,15 @@ Installing any compatible Dynamics GP tax release or hotfix on Dynamics GP 2018 
 
 ## If your Dynamics GP solution is governed by Modern Lifecycle
 
-The current version of Dynamics GP is governed by the Modern Lifecycle Policy. The [Modern Lifecycle Policy](/lifecycle/policies/modern) offers support and servicing, including bug fixes, new features, and latest tax updates. Under this policy, Dynamics GP customers stay current by taking at least one of the three all-inclusive Dynamics GP updates, typically released in June, October, and December each year. The October update typically delivers new capabilities. The two other updates will typically consist of hotfixes, tax updates, and any relevant regulatory updates.
+The current version of Dynamics GP is governed by the Modern Lifecycle Policy. The [Modern Lifecycle Policy](/lifecycle/policies/modern) offers support and servicing, including bug fixes, and latest tax updates. Under this policy, Dynamics GP customers stay current by taking at least one of the three all-inclusive Dynamics GP updates, typically released in June, October, and December each year. The updates will typically consist of hotfixes, tax updates, and any relevant regulatory updates.
 
 The following table outlines the release schedule for the three committed all-inclusive updates of Dynamics GP each year.
 
-|Milestone |Example date  |Description |
-|---------|---------|---------|
-|June update|June 1 | Tax updates, regulatory updates, hotfixes        |
-|October update|October 1 | New capabilities, hotfixes        |
-|December update|December 1 | Tax updates, regulatory updates, hotfixes        |
+|Milestone |Example date  |
+|---------|---------|
+|June update|June 1 |
+|October update|October 1 |
+|December update|December 1 |
 
 For more information, see [Modern Lifecycle Policy for Dynamics GP](/lifecycle/products/dynamics-gp).  
 <!--
