@@ -135,7 +135,7 @@
 ### [Glossary of Terms in Manufacturing](distribution/glossary-manufacturing.md)
 
 ## Installation and administration
-### [Support for Microsoft Dynamics GP](terms/lifecycle.md)
+### [Understand the Lifecycle Policies](terms/lifecycle.md)
 <!--- installation -->
 ### Preparation
 #### [Installation checklist](installation/installation-checklist.md)

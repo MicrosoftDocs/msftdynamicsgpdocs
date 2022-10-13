@@ -11,10 +11,12 @@ ms.author: edupont
 ---
 # Welcome to Dynamics GP!
 
-Dynamics GP is a business management solution for small and mid-sized organizations that automates and streamlines business processes and helps you manage your business. Dynamics GP has a long history, and you can find information about functionality on the installation media for your version of Dynamics GP and on the [Dynamics GP Support and Services Blog](https://community.dynamics.com/gp/b/dynamicsgp). We have started moving some of the existing content to the Docs.microsoft.com site, and we will be adding more content here at the new location in the future.  
+Dynamics GP is a business management solution for small and mid-sized organizations that automates and streamlines business processes and helps you manage your business. Dynamics GP has a long history, and you can find information about functionality here on learn.microsoft.com, on the installation media for your version of Dynamics GP, and on the [Dynamics GP Support and Services Blog](https://community.dynamics.com/gp/b/dynamicsgp).  
 
 > [!TIP]
-> The PDF files that you may have seen for earlier versions of Dynamics GP contains symbols to indicate notes, tips, and warnings, for example. Here on the Docs.microsoft.com site, such visual alerts are provided in other ways. So if you're looking for a lightbulb, then this is now a note, and warning triangles are replaced by warnings.
+> The PDF files that you may have seen for earlier versions of Dynamics GP contains symbols to indicate notes, tips, and warnings, for example. Here on the learn.microsoft.com site, such visual alerts are provided in other ways. So if you're looking for a lightbulb, then this is now a note, and warning triangles are replaced by warnings.
+
+The current version of Dynamics GP, version 18.x, is governed by the Modern Lifecycle Policy. Learn more at [Understand the Lifecycle Policies for Dynamics GP](terms/lifecycle.md).
 
 ## Additional resources
 
