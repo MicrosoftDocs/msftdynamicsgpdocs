@@ -13,7 +13,7 @@ ms.date: 10/13/2022
 
 # Understand the Lifecycle Policies for Dynamics GP
 
-In October 2019, Microsoft introduced the Modern Lifecycle Policy for Microsoft Dynamics GP. Before this date, the solution was governed by the Fixed Lifecycle Policy. The Modern Policy offers continuous support and servicing, including bug fixes, new features and the latest tax updates. Customers may stay current by taking at least one of the three yearly planned Dynamics GP releases.  
+In October 2019, Microsoft introduced the Modern Lifecycle Policy for Microsoft Dynamics GP. Before this date, the solution was governed by the Fixed Lifecycle Policy. The Modern Policy offers continuous support and servicing, including bug fixes and the latest tax updates. Customers stay current by taking at least one of the three yearly planned Dynamics GP releases.  
 
 The following illustration shows the lifecycle of the various versions of Dynamics GP:
 
