@@ -38,7 +38,7 @@ For more information, see [Modern Lifecycle Policy for Dynamics GP](/lifecycle/p
 We recommend that Dynamics GP customers reach out to their Dynamics GP reselling partner with any questions or concerns. Microsoft remains committed to provide updates as described earlier. The Dynamics GP partner ecosystem has always been strong and will continue to release new add-ons that extend Dynamics GP.  
 
 > [!TIP]
-> If you're a Dynamics GP customer and want to migrate to the cloud, reach out to a partner. You can choose to migrate to Dynamics 365 Business Central or Dynamics 365 Finance to take advantage of the cloud, and your partner can help you migrate data.  
+> If you're a Dynamics GP customer and want to migrate to the cloud, reach out to your Dynamics GP partner. You can choose to migrate to Dynamics 365 Business Central or Dynamics 365 Finance to take advantage of the cloud, and your partner can help you migrate data.  
 >
 > If you *don't* want to migrate to the cloud, you can choose to keep up-to-date with the latest version of Dynamics GP or migrate to Dynamics 365 on-premises. The choice is yours, and Microsoft supports both scenarios.
 
@@ -50,10 +50,10 @@ The following older versions of Dynamics GP are governed by the **Fixed Lifecycl
 |--|--|--|-- |
 | Dynamics GP 2013 and GP 2013 R2 | Ended April 4, 2018 | Ends April 11, 2023 |[Dynamics GP 2013](/lifecycle/products/dynamics-gp-2013)/[Dynamics GP 2013 R2](/lifecycle/products/dynamics-gp-2013-r2)|
 | Dynamics GP 2015 and GP 2015 R2 | Ended April 14, 2020 | Ends April 8, 2025 |[Dynamics GP 2015](/lifecycle/products/dynamics-gp-2015)/[Dynamics GP 2015 R2](/lifecycle/products/dynamics-gp-2015-r2)|
-| Dynamics GP 2016 and GP 2016 R2 | Mainstream support ends July 13, 2021 | Ends July 14, 2026 |[Dynamics GP 2016](/lifecycle/products/dynamics-gp-2016)/[Dynamics GP 2016 R2](/lifecycle/products/dynamics-gp-2016-r2)|
+| Dynamics GP 2016 and GP 2016 R2 | Ended July 13, 2021 | Ends July 14, 2026 |[Dynamics GP 2016](/lifecycle/products/dynamics-gp-2016)/[Dynamics GP 2016 R2](/lifecycle/products/dynamics-gp-2016-r2)|
 | Dynamics GP 2018 and GP 2018 R2 | Mainstream support ends January 10, 2023 | Ends January 11, 2028 |[Dynamics GP 2018](/lifecycle/products/dynamics-gp-2018)/[Dynamics GP 2018 R2](/lifecycle/products/dynamics-gp-2018-r2)|
 
-Installing any compatible Dynamics GP tax release or hotfix on Dynamics GP 2018 or Dynamics GP 2018 R2 will bring you to version 18.2 or later, which enacts the Modern Lifecycle Policy. There are no tax releases or hotfixes available for Dynamics GP 2018 or Dynamics GP 2018 R2 that would allow you to stay on the fixed lifecycle.
+Installing any compatible Dynamics GP tax release or hotfix on Dynamics GP 2018 or Dynamics GP 2018 R2 will bring you to version 18.5 or later, which enacts the Modern Lifecycle Policy. There are no tax releases or hotfixes available for Dynamics GP 2018 or Dynamics GP 2018 R2 that would allow you to stay on the fixed lifecycle.
 
 ## See Also
 
