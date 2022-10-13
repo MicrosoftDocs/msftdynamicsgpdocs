@@ -1,5 +1,5 @@
 ---
-title: "Software lifecycle policy"
+title: Understand the Lifecycle Policies
 description: "Learn about the lifecycle and product life of Microsoft Dynamics GP."
 author: edupont04
 ms.custom: na
@@ -7,11 +7,11 @@ ms.reviewer: edupont
 ms.topic: article
 ms.prod: dynamics-gp
 ms.author: edupont
-ms.date: 10/11/2022
+ms.date: 10/13/2022
 
 ---
 
-# Understanding the Lifecycle Policies for Dynamics GP
+# Understand the Lifecycle Policies for Dynamics GP
 
 In October 2019, Microsoft introduced the Modern Lifecycle Policy for Microsoft Dynamics GP. Before this date, the solution was governed by the Fixed Lifecycle Policy. The Modern Policy offers continuous support and servicing, including bug fixes, new features and the latest tax updates. Customers may stay current by taking at least one of the three yearly planned Dynamics GP releases.  
 
@@ -20,6 +20,27 @@ The following illustration shows the lifecycle of the various versions of Dynami
 :::image type="content" source="media/gp_versions_lifecycle.png" alt-text="Overview of lifecycles across GP versions.":::
 
 The [Lifecycle](/lifecycle/products/?terms=Dynamics%20GP) site shows key information about each version of Dynamics GP. The following sections provide direct links for each listed version.  
+
+## If your Dynamics GP solution is governed by Modern Lifecycle
+
+The current version of Dynamics GP, version 18.x, is governed by the Modern Lifecycle Policy. The [Modern Lifecycle Policy](/lifecycle/policies/modern) offers support and servicing, including bug fixes, and latest tax updates. Under this policy, Dynamics GP customers stay current by taking at least one of the three all-inclusive Dynamics GP updates, typically released in June, October, and December each year. The updates will typically consist of hotfixes, tax updates, and any relevant regulatory updates. The updates can also include updates in usability or reliability to address top customer issues, and other areas that are critical in ensuring businesses run successfully on Dynamics GP.  
+
+The following table outlines the release schedule for the three committed all-inclusive updates of Dynamics GP each year.
+
+|Milestone |Example date  |
+|---------|---------|
+|June update|June 1 |
+|October update|October 1 |
+|December update|December 1 |
+
+For more information, see [Modern Lifecycle Policy for Dynamics GP](/lifecycle/products/dynamics-gp).  
+
+We recommend that Dynamics GP customers reach out to their Dynamics GP reselling partner with any questions or concerns. Microsoft remains committed to provide updates as described earlier. The Dynamics GP partner ecosystem has always been strong and will continue to release new add-ons that extend Dynamics GP.  
+
+> [!TIP]
+> If you're a Dynamics GP customer and want to migrate to the cloud, reach out to a partner. You can choose to migrate to Dynamics 365 Business Central or Dynamics 365 Finance to take advantage of the cloud, and your partner can help you migrate data.  
+>
+> If you *don't* want to migrate to the cloud, you can choose to keep up-to-date with the latest version of Dynamics GP or migrate to Dynamics 365 on-premises. The choice is yours, and Microsoft supports both scenarios.
 
 ## If your Dynamics GP solution is governed by Fixed Lifecycle
 
@@ -33,33 +54,6 @@ The following older versions of Dynamics GP are governed by the **Fixed Lifecycl
 | Dynamics GP 2018 and GP 2018 R2 | Mainstream support ends January 10, 2023 | Ends January 11, 2028 |[Dynamics GP 2018](/lifecycle/products/dynamics-gp-2018)/[Dynamics GP 2018 R2](/lifecycle/products/dynamics-gp-2018-r2)|
 
 Installing any compatible Dynamics GP tax release or hotfix on Dynamics GP 2018 or Dynamics GP 2018 R2 will bring you to version 18.2 or later, which enacts the Modern Lifecycle Policy. There are no tax releases or hotfixes available for Dynamics GP 2018 or Dynamics GP 2018 R2 that would allow you to stay on the fixed lifecycle.
-
-## If your Dynamics GP solution is governed by Modern Lifecycle
-
-The current version of Dynamics GP is governed by the Modern Lifecycle Policy. The [Modern Lifecycle Policy](/lifecycle/policies/modern) offers support and servicing, including bug fixes, and latest tax updates. Under this policy, Dynamics GP customers stay current by taking at least one of the three all-inclusive Dynamics GP updates, typically released in June, October, and December each year. The updates will typically consist of hotfixes, tax updates, and any relevant regulatory updates.
-
-The following table outlines the release schedule for the three committed all-inclusive updates of Dynamics GP each year.
-
-|Milestone |Example date  |
-|---------|---------|
-|June update|June 1 |
-|October update|October 1 |
-|December update|December 1 |
-
-For more information, see [Modern Lifecycle Policy for Dynamics GP](/lifecycle/products/dynamics-gp).  
-<!--
-## Microsoft Dynamics GP Servicing
-
-|Year |Feature Update (new features and bug fixes) |Update (tax updates, bug fixes)  |Update (tax updates, bug fixes) |Staying Current|
-|-----|--------------------------------------------|---------------------------------|--------------------------------|---------------|
-|2019 | October 1, 2019    |Past the date     |November/December |To stay current, you must be on one of the 2019 releases. This ensures that you can upgrade to next year's updates.|
-|2020 | October    |June           |November/December  |To stay current, you must be on one of the 2020 releases. This ensures that you can upgrade to next year's updates.|
-|2021 | October   |June            |November/December  |To stay current, you must be on one of the 2021 releases. This ensures that you can upgrade to next year's updates.|
-|2022 | October   |June             |November/December |To stay current, you must be on one of the 2022 releases. This ensures that you can upgrade to next year's updates.|
-|2023 | October   |June             |November/December |To stay current, you must be on one of the 2023 releases. This ensures that you can upgrade to next year's updates.|
-|2024 |TBA        |June            |November/December  |To stay current, you must be on one of the 2024 releases. This ensures that you can upgrade to next year's updates.|
-|TBA  |TBA        |TBA             |TBA                |TBA |
--->
 
 ## See Also
 
