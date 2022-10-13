@@ -23,7 +23,7 @@ The [Lifecycle](/lifecycle/products/?terms=Dynamics%20GP) site shows key informa
 
 ## If your Dynamics GP solution is governed by Modern Lifecycle
 
-The current version of Dynamics GP, version 18.x, is governed by the Modern Lifecycle Policy. The [Modern Lifecycle Policy](/lifecycle/policies/modern) offers support and servicing, including bug fixes, and latest tax updates. Under this policy, Dynamics GP customers stay current by taking at least one of the three all-inclusive Dynamics GP updates, typically released in June, October, and December each year. The updates will typically consist of hotfixes, tax updates, and any relevant regulatory updates. The updates can also include updates in usability or reliability to address top customer issues, and other areas that are critical in ensuring businesses run successfully on Dynamics GP.  
+The current version of Dynamics GP, version 18.x, is governed by the Modern Lifecycle Policy. The [Modern Lifecycle Policy](/lifecycle/policies/modern) offers support and servicing, including bug fixes, and latest tax updates. Under this policy, Dynamics GP customers stay current by taking at least one of the three all-inclusive Dynamics GP updates, typically released in June, October, and December each year. The updates will typically consist of hotfixes, tax updates, and any relevant regulatory updates. The updates can also include changes in usability or reliability to address top customer issues, and other areas that are critical in making sure that businesses run successfully on Dynamics GP.  
 
 The following table outlines the release schedule for the three committed all-inclusive updates of Dynamics GP each year.
 
