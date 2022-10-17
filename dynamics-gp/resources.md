@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 9/27/2022
+ms.date: 10/17/2022
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -75,9 +75,6 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 - [Management Reporter Install and Service Packs](/dynamics/s-e/mr/mroverview_435)
 
 ## Microsoft Dynamics GP 2016 R2 and RTM
-
-- [Top Reasons to Purchase Microsoft Dynamics GP](https://mbs.microsoft.com/files/customer/GP/Learning/Systemreq/MicrosoftDynamicsGP2016TopReasonsToBuy.pdf)
-- [Top Reasons to Upgrade to Microsoft Dynamics GP 2016 R2](https://mbs.microsoft.com/files/customer/GP/Learning/Systemreq/MicrosoftDynamicsGP2016TopReasonsToUpgrade.pdf)
 
 - [GP 2016 R2 - Feature Blog Series](https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/11/11/microsoft-dynamics-gp-2016-r2-new-feature-blog-series-schedule)
 - [GP 2016 RTM - Feature Blog Series](https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/03/30/microsoft-dynamics-gp-2016-new-features-blog-series-schedule)
