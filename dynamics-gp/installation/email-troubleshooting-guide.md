@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 9/23/2022
+ms.date: 10/17/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -244,25 +244,6 @@ If **Email Addresss based on Doc Type** is enabled:
 (Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email address based on document type >> Email Address)
 This issue can occur with all reports, and these can be caused by MessageID issues or Reply To issues. Make sure to remove all MessageIDs and Reply To emails.  
 
-* If you still have issues, you may want to create a Fiddler trace that will be more specific of the problem.
-
-You can run a Fiddler trace, and that will tell us if basic auth is not enabled or a DNS issue may appear, for example. It can also inform us about other problems in your environment.
-
-#### To run Fiddler
-
-1. [Download Classic Fiddler](https://www.telerik.com/download/fiddler)  
-2. Open Fiddler.  
-3. In Tools->Fiddler Options->HTTPS, choose the **Decrypt HTTPS traffic** field.  
-4. Choose **Yes** on the prompt for trust Fiddler Root Certificate.  
-5. Choose **Yes** to install the certificate.  
-6. Choose **Yes** to confirm.  
-7. Choose **OK**, and then choose **OK** to go back.  
-8. Reproduce the issue.  
-9. Stop the Fiddler trace:   
-      1. File->Capture Traffic F12, Save trace: File->Save>All Sessions.   
-      2. Save the trace out as .saz file.  
-
-For more information, see [this blog post](https://blogs.msdn.microsoft.com/maheshk/2016/05/03/easy-way-to-collect-fiddler-log-fiddlercap/).  
 
 > [!NOTE]
 > Verify this error **Unknown Error Occurred** is happening for all users that are trying to send emails.  If this error only happens for example on two users, and you are using RDS Server, we have seen where deleting the User Profile on the RDS server and recreating it has fixed this error message and issue for those couple of users.
@@ -283,6 +264,26 @@ For more information, see [this blog post](https://blogs.msdn.microsoft.com/mahe
 > 4. Can you email (test) from the SQL Server does it work? Compared to the RDS server machine to rule out settings/setup.  How does a Fiddler trace compare between a working and non-working machine?
 > 
 >  5. Modern Auth requires .NET Framework 4.7.2 or later to be installed on each machine/server.  If one machine is failing, [verify if that version is installed](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed).
+
+* If you still have issues, you may want to create a Fiddler trace that will be more specific of the problem.
+
+You can run a Fiddler trace, and that will tell us if basic auth is not enabled or a DNS issue may appear, for example. It can also inform us about other problems in your environment.
+
+#### To run Fiddler
+
+1. [Download Classic Fiddler](https://www.telerik.com/download/fiddler)  
+2. Open Fiddler.  
+3. In Tools->Fiddler Options->HTTPS, choose the **Decrypt HTTPS traffic** field.  
+4. Choose **Yes** on the prompt for trust Fiddler Root Certificate.  
+5. Choose **Yes** to install the certificate.  
+6. Choose **Yes** to confirm.  
+7. Choose **OK**, and then choose **OK** to go back.  
+8. Reproduce the issue.  
+9. Stop the Fiddler trace:   
+      1. File->Capture Traffic F12, Save trace: File->Save>All Sessions.   
+      2. Save the trace out as .saz file.  
+
+For more information, see [this blog post](https://blogs.msdn.microsoft.com/maheshk/2016/05/03/easy-way-to-collect-fiddler-log-fiddlercap/).  
 
 
 ### Insufficient Memory
