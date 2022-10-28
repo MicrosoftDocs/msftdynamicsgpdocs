@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 10/28/2022
+ms.date: 10/29/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -266,6 +266,8 @@ This issue can occur with all reports, and these can be caused by MessageID issu
 >  5. Modern Auth requires .NET Framework 4.7.2 or later to be installed on each machine/server.  If one machine is failing, [verify if that version is installed](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed).
 >  
 >  6. Antivirus/Malware could also cause the problem to not authenticate, try to rule it out as the cause of the problem.
+>  
+>  7. Dynamics GP support [Multi-tenant authentication](https://learn.microsoft.com/en-us/dynamics-gp/whats-new/multi-factor-authentication) in the Azure App Registration. (not Single). If it was setup wrong, it will cause an Unknown Error message.
 
 * If you still have issues, you may want to create a Fiddler trace that will be more specific of the problem.
 
