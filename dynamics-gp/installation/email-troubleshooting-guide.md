@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 10/17/2022
+ms.date: 10/28/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -252,7 +252,7 @@ This issue can occur with all reports, and these can be caused by MessageID issu
 > [!NOTE]
 > **Items to Rule out and test with Unknown error occurred and Modern Auth**
 > 
-> 1. If you are using Modern Authentication (MFA) in Dynamics GP and receive this error message when you enter the APP ID in the MFA setup window this could be related to a TLS registry issue.  
+> 1. If you are using Modern Authentication (MFA) in Dynamics GP and receive this error message when you enter the APP ID in the Modern Auth setup window this could be related to a TLS registry issue.  
 > [Dynamics GP TLS Blog](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-and-tls-1-0?pifragment-99718=2)
 > [How to change the TLS registry](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
 >
@@ -264,6 +264,8 @@ This issue can occur with all reports, and these can be caused by MessageID issu
 > 4. Can you email (test) from the SQL Server does it work? Compared to the RDS server machine to rule out settings/setup.  How does a Fiddler trace compare between a working and non-working machine?
 > 
 >  5. Modern Auth requires .NET Framework 4.7.2 or later to be installed on each machine/server.  If one machine is failing, [verify if that version is installed](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed).
+>  
+>  6. Antivirus/Malware could also cause the problem to not authenticate, try to rule it out as the cause of the problem.
 
 * If you still have issues, you may want to create a Fiddler trace that will be more specific of the problem.
 
