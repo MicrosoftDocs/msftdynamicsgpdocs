@@ -1,5 +1,5 @@
 ---
-title: What's new in Dynamics GP in October 2022
+title: What's new in Microsoft Dynamics GP in October 2022
 description: "Learn about enhancements that were added to the product in the October 2022 release of Dynamics GP."
 author: theley502
 
@@ -8,7 +8,7 @@ ms.reviewer: edupont
 manager: tfehr
 ms.prod: dynamics-gp
 ms.topic: article
-ms.date: 10/10/2022
+ms.date: 10/28/2022
 ---
 
 # What's New in Dynamics GP in October 2022
