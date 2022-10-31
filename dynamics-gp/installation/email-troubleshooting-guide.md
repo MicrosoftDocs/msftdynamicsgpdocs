@@ -176,10 +176,13 @@ To get around this, the users need to follow these steps to update the customer 
 6.	Running the following script should show the EmailDocumentEnabled field has been set to 0 for all customers:
 SELECT * FROM SY04905 WHERE EmailDocumentID = '10'
 7.	Disable the Customer Statement option on the E-Mail Settings window in Sales Setup.
-8.	The statements should generate as a PDF file now for all customers.
+8.	The statements should generate as a PDF file now for all customers.  
+
 Missing Records in either the SY04904 and/or SY04905 table can also generate this issue:
+```sql
 SELECT * FROM RM00101 WHERE CUSTNMBR not in (SELECT EmailCardID FROM SY04904)
 SELECT * FROM RM00101 WHERE CUSTNMBR not in (SELECT EmailCardID FROM SY04905)
+```
 
 ### Unknown Error Occurred
 
@@ -297,20 +300,25 @@ For more information, see [this blog post](https://blogs.msdn.microsoft.com/mahe
 System wide Administration >> Setup >> Company >> E-mail Message Setup Administration >> Setup >> Company >> Workflow >> E-mail Message Setup
 Module specific Sales >> Setup >> E-mail Settings Purchasing >> Setup E-mail Settings
 2. Remove and re-enter all associated email addresses. Make sure that there are no odd characters such as ^ or a Tab. Email Addresses can be found using either pathing: Administration >> Setup >> Company >> Internet Information
-**NOTE** If Email Addresses based on Doc Type is enabled: (Sales >> Cards >> Customer >> select a customer >> E-mail >> enable email address based on document type >> Email Address) (Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email address based on document type >> Email Address) This issue can occur with all reports, and these can be caused by MessageID issues or Reply To issues. Make sure to remove all MessageIDs and Reply To emails.
+**NOTE** If Email Addresses based on Doc Type is enabled: (Sales >> Cards >> Customer >> select a customer >> E-mail >> enable email address based on document type >> Email Address) (Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email address based on document type >> Email Address) This issue can occur with all reports, and these can be caused by MessageID issues or Reply To issues. Make sure to remove all MessageIDs and Reply To emails.  
+
 The following SQL can be used to view the listed Have Replies Sent To email address.
-- SELECT EmailReplyToAddress, * FROM SY04901 WHERE EmailSeriesID = 3 and EmailDocumentID in (10,15)
-- SELECT EmailReplyToAddress, * FROM SY04902 WHERE EmailSeriesID = 3
+
+  ```sql
+  SELECT EmailReplyToAddress, * FROM SY04901 WHERE EmailSeriesID = 3 and EmailDocumentID in (10,15)
+  SELECT EmailReplyToAddress, * FROM SY04902 WHERE EmailSeriesID = 3
+  ```
 
 EmailSeriesID =
-2 – Financial
-3 – Sales
-4 – Purchasing
-5 – Inventory
-6 – Payroll
-7 – Project
-10 – 3rd Party
-99 – All
+
+2 – Financial  
+3 – Sales  
+4 – Purchasing  
+5 – Inventory  
+6 – Payroll  
+7 – Project  
+10 – 3rd Party  
+99 – All  
 
 EmailDocumentID – This is a unique integer indicating each type of document displayed in the window
 
@@ -685,9 +693,9 @@ First, confirm that you are not using MFA on the account used in the SMTP setup.
 Next, make sure that TLS 1.0 is enabled on the SQL server and on the SMTP server.
 
 Then walk through the following articles:
-[Workflow Notification Email Troubleshooting – Microsoft Dynamics GP Community] (https://community.dynamics.com/gp/b/markpolino/posts/workflow-notification-email-troubleshooting-microsoft-dynamics-gp-community)
+[Workflow Notification Email Troubleshooting – Microsoft Dynamics GP Community](https://community.dynamics.com/gp/b/markpolino/posts/workflow-notification-email-troubleshooting-microsoft-dynamics-gp-community)
 
-[Workflow Notification Email Troubleshooting] (https://community.dynamics.com/gp/b/dynamicsgp/posts/workflow-notification-email-troubleshooting)
+[Workflow Notification Email Troubleshooting](https://community.dynamics.com/gp/b/dynamicsgp/posts/workflow-notification-email-troubleshooting)
 
 
 ### My SMTP Test Passed
