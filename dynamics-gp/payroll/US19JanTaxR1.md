@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 07/9/2022
+ms.date: 10/7/2022
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -18,15 +18,115 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2022 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the sixth tax update for 2022 and replaces all previous tax updates. It includes state tax table changes that take effect July 1, 2022. We recommend that you install this update as soon as you can for the year 2022.
+This is the 8th tax update for 2022 and replaces all previous tax updates. It includes state tax table changes that take effect October 1, 2022. We recommend that you install this update as soon as you can for the year 2022.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
 Check out these blogs for detailed documentation on how you calculate payroll taxes in Microsoft Dynamics GP:
 
-[How to calculate Federal Tax with Dependent Claim Aount Field](https://community.dynamics.com/gp/b/dynamicsgp/posts/how-to-calculate-federal-tax-with-dependent-claim-amount)
+[How to calculate Federal Tax with Dependent Claim Amount Field](https://community.dynamics.com/gp/b/dynamicsgp/posts/how-to-calculate-federal-tax-with-dependent-claim-amount)
 
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly)
+
+[Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/gp/b/dynamicsgp/posts/tips-to-install-the-u-s-payroll-tax-update)
+
+## Changes in October Round 8 update (Released 10/10/2022)
+
+- Virginia
+
+### 2022 state or territorial tax changes
+
+The following tax changes are included in this update:
+
+#### Withholding changes for Virginia
+
+The tables include increases in the standard deduction from $4,500 to $8,000 for single filers and $16,000 
+for married filers filing jointly.
+
+Two Filing statues were added for the state of Virginia, SINGLE and MAR to accommodate this change.
+
+The tax table is the same for all filing status:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|---------|--------------|------------|----------|----------------|
+| 0       | 3,000        | 0          | 2.00%    | 0              |
+| 3,000   | 5,000        | 60.00      | 3.00%    | 3,000          |
+| 5,000   | 17,000       | 120.00     | 5.00%    | 5,000          |
+| 17,000  | And Over     | 720.00     | 5.75%    | 17,000         |
+
+
+## Changes in September Round 7 update (Released 9/28/2022)
+
+- Arkansas
+
+### 2022 state or territorial tax changes
+
+The following tax changes are included in this update:
+
+#### Withholding changes for Arkansas
+
+Standard Deduction Amount is $2,270 from $2,200
+Personal Exemption remains at $29.00
+
+Tax Type rates for Filing Status NA
+
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,099            | 0              | 0.0%         | 0                  |
+| 5,099       | 10,299           | -101.98        | 2.0%         | 0                  |
+| 10,299      | 14,699           | -204.97        | 3.0%         | 0                  |
+| 14,699      | 24,299           | -263.77        | 3.4%         | 0                  |
+| 24,299      | 87,000           | -628.25        | 4.9%         | 0                  |
+| 87,000      | 87,100           | -627.20        | 4.9%         | 0                  |
+| 87,100      | 87,200           | -617.20        | 4.9%         | 0                  |
+| 87,200      | 87,300           | -607.20        | 4.9%         | 0                  |
+| 87,300      | 87,400           | -597.20        | 4.9%         | 0                  |
+| 87,400      | 87,600           | -587.20        | 4.9%         | 0                  |
+| 87,600      | 87,700           | -577.20        | 4.9%         | 0                  |
+| 87,700      | 87,800           | -567.20        | 4.9%         | 0                  |
+| 87,800      | 87,900           | -557.20        | 4.9%         | 0                  |
+| 87,900      | 88,000           | -547.20        | 4.9%         | 0                  |
+| 88,000      | 88,100           | -537.20        | 4.9%         | 0                  |
+| 88,100      | 88,200           | -527.20        | 4.9%         | 0                  |
+| 88,200      | 88,300           | -517.20        | 4.9%         | 0                  |
+| 88,300      | 88,400           | -507.20        | 4.9%         | 0                  |
+| 88,400      | 88,500           | -497.20        | 4.9%         | 0                  |
+| 88,500      | 88,600           | -487.20        | 4.9%         | 0                  |
+| 88,600      | 88,700           | -477.20        | 4.9%         | 0                  |
+| 88,700      | 88,800           | -467.20        | 4.9%         | 0                  |
+| 88,800      | 88,900           | -457.20        | 4.9%         | 0                  |
+| 88,900      | 89,000           | -447.20        | 4.9%         | 0                  |
+| 89,000      | 89,100           | -437.20        | 4.9%         | 0                  |
+| 89,100      | 89,200           | -427.20        | 4.9%         | 0                  |
+| 89,200      | 89,300           | -417.20        | 4.9%         | 0                  |
+| 89,300      | 89,400           | -407.20        | 4.9%         | 0                  |
+| 89,400      | 89,500           | -397.20        | 4.9%         | 0                  |
+| 89,500      | 89,600           | -387.20        | 4.9%         | 0                  |
+| 89,600      | 89,700           | -377.20        | 4.9%         | 0                  |
+| 89,700      | 89,800           | -367.20        | 4.9%         | 0                  |
+| 89,800      | 89,900           | -357.20        | 4.9%         | 0                  |
+| 89,900      | 90,000           | -347.20        | 4.9%         | 0                  |
+| 90,000      | 90,100           | -337.20        | 4.9%         | 0                  |
+| 90,100      | 90,200           | -327.20        | 4.9%         | 0                  |
+| 90,200      | 90,300           | -317.20        | 4.9%         | 0                  |
+| 90,300      | 90,400           | -307.20        | 4.9%         | 0                  |
+| 90,400      | 90,500           | -297.20        | 4.9%         | 0                  |
+| 90,500      | 90,600           | -287.20        | 4.9%         | 0                  |
+| 90,600      | 90,700           | -277.20        | 4.9%         | 0                  |
+| 90,700      | 90,800           | -267.20        | 4.9%         | 0                  |
+| 90,800      | 90,900           | -257.20        | 4.9%         | 0                  |
+| 90,900      | 91,100           | -247.20        | 4.9%         | 0                  |
+| 91,100      | 91,200           | -237.20        | 4.9%         | 0                  |
+| 91,200      | 91,300           | -227.20        | 4.9%         | 0                  |
+| 91,300      | 91,400           | -217.20        | 4.9%         | 0                  |
+| 91,400      | 91,500           | -207.20        | 4.9%         | 0                  |
+| 91,500      | 91,600           | -197.20        | 4.9%         | 0                  |
+| 91,600      | 91,700           | -187.20        | 4.9%         | 0                  |
+| 91,700      | 91,800           | -177.20        | 4.9%         | 0                  |
+| 91,800      | And over         | -167.20        | 4.9%         | 0                  
+
+
 
 ## Changes in July Round 6 update (Released 7/15/2022)
 
@@ -1122,13 +1222,13 @@ If you're not using one of the supported versions, you must upgrade to a support
 
 If your computer is connected to the Internet, the Payroll Update Utility (PUE) automatically can download the tax table update file (TX.cab) from the Internet.
 
-If your computer isn't connected to the Internet, you can obtain the file from [Dynamics GP Downloads](/dynamics/s-e/gp/mdgp2018_release_download_378) or your Microsoft Partner and copy it to your computer before running what's known as a "manual" installation.
+If your computer isn't connected to the Internet, you can obtain the file from [Dynamics GP Downloads](/dynamics/s-e/gp/tugp2018_391) or your Microsoft Partner and copy it to your computer before running what's known as a "manual" installation.
 
 Tax updates are distributed in the form of .CAB files. Copy the .CAB file to a folder that you can readily access, such as the folder that contains Dynamics.exe. Copying the .CAB file to your computer does not complete the installation. Refer to the following section for instructions on how to install the tax update.
 
 ## Installing the tax update
 
-The Round 3 2022 tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
+The tax update installation can be run from any workstation. The update installs payroll tax table data on the server computer where your existing Microsoft Dynamics GP application data is located. You need to install the tax table update only once.
 
 If you have issues installing the update, review the article on [Tips to install the U.S. Payroll Tax
 Update.](https://community.dynamics.com/gp/b/dynamicsgp/archive/2017/05/09/tips-to-install-the-u-s-payroll-tax-update)
@@ -1143,7 +1243,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
     ![A screenshot](media/a6b6f3f85d529f49182c1e66d23df8b5.jpg)
 
     - The Automatic option downloads the current tax table update from the Internet to the default location. An Internet connection is required.
-    - The Manual option processes the tax table update from a location you choose. You might choose Manual if you need to update a computer that isn't connected to the Internet. To use this method, you should already have obtained the tax table update file, TX.cab, and copied it to a location your computer can readily access.
+    - The Manual option processes the tax table update from a location you choose. You might choose Manual if you need to update a computer that isn't connected to the Internet. To use this method, you should already have obtained the tax table update file, [TX.cab](/dynamics/s-e/gp/tugp2018_391), and copied it to a location your computer can readily access.
 
 3. If you selected Automatic, enter your 10-digit authorized telephone number. Choose Log in to start the download.
 
@@ -1151,7 +1251,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *7/15/2022*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *10/10/2022*.
 
 ## What's next
 

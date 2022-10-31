@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 5/25/2022
+ms.date: 10/17/2022
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -25,13 +25,15 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 - [Microsoft Dynamics GP Product Ideas](https://experience.dynamics.com/ideas/categories/?forum=771cc5ac-c117-e811-8105-3863bb2e0320&forumName=Dynamics%20GP)
 
-- [Microsoft Dynamics GP Docs (Documentation)](index.md)
+- [Microsoft Dynamics GP (Documentation)](index.md)
 
 - [Microsoft Dynamics GP YouTube Playlist](https://www.youtube.com/playlist?list=PLi9EhCY4z99Xxm2CAPt5pUtebHF3Sj4So) 
 
 ## Microsoft Dynamics GP
 
   Includes What's New and documentation of all features for this release. 
+  
+- [Dynamics GP October 2022- Feature Blog Series - 18.5](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2022---feature-blog-series-schedule)
 
 - [Dynamics GP October 2021- Feature Blog Series - 18.4](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2021-new-feature-blog-series-schedule)
 
@@ -73,9 +75,6 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 - [Management Reporter Install and Service Packs](/dynamics/s-e/mr/mroverview_435)
 
 ## Microsoft Dynamics GP 2016 R2 and RTM
-
-- [Top Reasons to Purchase Microsoft Dynamics GP](https://mbs.microsoft.com/files/customer/GP/Learning/Systemreq/MicrosoftDynamicsGP2016TopReasonsToBuy.pdf)
-- [Top Reasons to Upgrade to Microsoft Dynamics GP 2016 R2](https://mbs.microsoft.com/files/customer/GP/Learning/Systemreq/MicrosoftDynamicsGP2016TopReasonsToUpgrade.pdf)
 
 - [GP 2016 R2 - Feature Blog Series](https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/11/11/microsoft-dynamics-gp-2016-r2-new-feature-blog-series-schedule)
 - [GP 2016 RTM - Feature Blog Series](https://community.dynamics.com/gp/b/dynamicsgp/archive/2016/03/30/microsoft-dynamics-gp-2016-new-features-blog-series-schedule)

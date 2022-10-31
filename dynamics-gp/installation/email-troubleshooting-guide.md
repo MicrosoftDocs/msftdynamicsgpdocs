@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 9/19/2022
+ms.date: 10/28/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -244,6 +244,29 @@ If **Email Addresss based on Doc Type** is enabled:
 (Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email address based on document type >> Email Address)
 This issue can occur with all reports, and these can be caused by MessageID issues or Reply To issues. Make sure to remove all MessageIDs and Reply To emails.  
 
+
+> [!NOTE]
+> Verify this error **Unknown Error Occurred** is happening for all users that are trying to send emails.  If this error only happens for example on two users, and you are using RDS Server, we have seen where deleting the User Profile on the RDS server and recreating it has fixed this error message and issue for those couple of users.
+ 
+ 
+> [!NOTE]
+> **Items to Rule out and test with Unknown error occurred and Modern Auth**
+> 
+> 1. If you are using Modern Authentication (MFA) in Dynamics GP and receive this error message when you enter the APP ID in the Modern Auth setup window this could be related to a TLS registry issue.  
+> [Dynamics GP TLS Blog](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-and-tls-1-0?pifragment-99718=2)
+> [How to change the TLS registry](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
+>
+> 2. Verify this error **Unknown Error Occurred** is happening for all users that are trying to send emails.  If this error only happens for example on two users, and you are using RDS Server, we have seen where deleting the User Profile on the RDS server and recreating it has fixed this error message and issue for those couple of users.
+>
+> 3. If you are trying to sign in with Modern Auth over Citrix and use the Citrix Workspace App, please review the information below specific for Citrix
+[Authenticate | Citrix Workspace app for Windows](https://docs.citrix.com/en-us/citrix-workspace-app-for-windows/authentication.html)
+>
+> 4. Can you email (test) from the SQL Server does it work? Compared to the RDS server machine to rule out settings/setup.  How does a Fiddler trace compare between a working and non-working machine?
+> 
+>  5. Modern Auth requires .NET Framework 4.7.2 or later to be installed on each machine/server.  If one machine is failing, [verify if that version is installed](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed).
+>  
+>  6. Antivirus/Malware could also cause the problem to not authenticate, try to rule it out as the cause of the problem.
+
 * If you still have issues, you may want to create a Fiddler trace that will be more specific of the problem.
 
 You can run a Fiddler trace, and that will tell us if basic auth is not enabled or a DNS issue may appear, for example. It can also inform us about other problems in your environment.
@@ -263,26 +286,6 @@ You can run a Fiddler trace, and that will tell us if basic auth is not enabled 
       2. Save the trace out as .saz file.  
 
 For more information, see [this blog post](https://blogs.msdn.microsoft.com/maheshk/2016/05/03/easy-way-to-collect-fiddler-log-fiddlercap/).  
-
-> [!NOTE]
-> Verify this error **Unknown Error Occurred** is happening for all users that are trying to send emails.  If this error only happens for example on two users, and you are using RDS Server, we have seen where deleting the User Profile on the RDS server and recreating it has fixed this error message and issue for those couple of users.
- 
- 
-> [!NOTE]
-> **Items to Rule out and test with Unknown error occurred and Modern Auth**
-> 
-> 1. If you are using Modern Authentication (MFA) in Dynamics GP and receive this error message when you enter the APP ID in the MFA setup window this could be related to a TLS registry issue.  
-> [Dynamics GP TLS Blog](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-and-tls-1-0?pifragment-99718=2)
-> [How to change the TLS registry](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
->
-> 2. Verify this error **Unknown Error Occurred** is happening for all users that are trying to send emails.  If this error only happens for example on two users, and you are using RDS Server, we have seen where deleting the User Profile on the RDS server and recreating it has fixed this error message and issue for those couple of users.
->
-> 3. If you are trying to sign in with Modern Auth over Citrix and use the Citrix Workspace App, please review the information below specific for Citrix
-[Authenticate | Citrix Workspace app for Windows](https://docs.citrix.com/en-us/citrix-workspace-app-for-windows/authentication.html)
->
-> 4. Can you email (test) from the SQL Server does it work? Compared to the RDS server machine to rule out settings/setup.  How does a Fiddler trace compare between a working and non-working machine?
-> 
->  5. Modern Auth requires .Net Framework 4.7.2 to be installed on each machine/ server.  If one machine is failing verify this version is installed.
 
 
 ### Insufficient Memory

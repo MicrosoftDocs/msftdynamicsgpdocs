@@ -1,5 +1,5 @@
 ---
-title: What's new in Microsoft Dynamics GP in October 2022
+title: What's new in Dynamics GP in October 2022
 description: "Learn about enhancements that were added to the product in the October 2022 release of Dynamics GP."
 author: theley502
 
@@ -183,4 +183,3 @@ Now, when the Workflow task is approved from an e-mail and it completes the Work
 
 We have enabled Multifactor authentication in Dynamics GP Web Client. Included with this is the capability of using the reply to e-mail address when setup with MFA. 
 
--->
