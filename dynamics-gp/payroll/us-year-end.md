@@ -391,7 +391,7 @@ You will need to install the year-end update on every workstation that runs Dyna
 
 **To install the year-end update:**
 
-1. Download the update from [Dynamics GP Downloads](https://learn.microsoft.com/en-us/dynamics/s-e/gp/usgpye2018_396).
+1. Download the update from [Dynamics GP Downloads](/dynamics/s-e/gp/usgpye2018_396).
     Save the relevant file to a folder on the local disk drive of the server workstation that runs Dynamics GP.
 
     > [!NOTE]
