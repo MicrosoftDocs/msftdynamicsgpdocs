@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 11/1/2022
+ms.date: 11/9/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -750,6 +750,7 @@ Test approving the email from within Dynamics GP, then we know workflow and emai
 
 - [Set up the application in the Azure Portal](/dynamics-gp/whats-new/multi-factor-authentication)  
 - [Configure Modern Authentication in Dynamics GP](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---multi-factor-authentication)
+- [Configure Modern Authentication in Web Client](https://community.dynamics.com/gp/b/dynamicsgp/posts/modern-authentication-in-web-client)
 - [MFA VIDEO LEARNING](https://www.youtube.com/watch?v=81YZ8B6bHPk&t=7s)
 
 > [!NOTE]
