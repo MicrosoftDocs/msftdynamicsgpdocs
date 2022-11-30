@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 10/26/2021
+ms.date: 11/30/2022
 ---
 
 # W-2 Wage and tax statement data source guide
