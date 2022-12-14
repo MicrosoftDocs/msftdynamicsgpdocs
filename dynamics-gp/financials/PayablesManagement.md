@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/8/2021
+ms.date: 11/30/2022
 ---
 
 # Microsoft Dynamics GP Payables Management
@@ -4691,6 +4691,8 @@ The footer transmission record type contains information concerning the total nu
 *Different banks use different names to refer to the record type of each line, (for example, “footer transmission” may be called “trailer record”). To find out which record type to use, compare the preceding record type descriptions to the specification provided by your bank.*
 
 NOTE: Safe Pay will not pick up a payroll check if the check number is the same as a Voucher number that has been processed through Payables Management as an EFT Payment
+
+NOTE: If you include EFT transactions in the Safe Pay file, the system will add the text '(EFT)' after the payment number.  (Typically EFT transactions are not included in the Safe Pay file since they were uploaded in an electronic file already.  The option to include EFT transactions is not marked by default in the Safe Pay Upload Maintenance window.)  
 
 ### Fields per line
 When creating a bank format you need to know the number of fields per record line. Determining how many fields are on each line depends on the file format, as follows:
