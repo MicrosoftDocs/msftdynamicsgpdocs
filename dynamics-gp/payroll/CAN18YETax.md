@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/12/2022
+ms.date: 12/17/2022
 ---
 
 # Canadian Payroll 2022 Year-end Update & 2023 Tax Update
@@ -315,25 +315,23 @@ Contribution rates for both employers and employees for 2023 is 5.95%. The follo
 
 #### EI for Quebec employees
 
-- The EI maximum annual insurable earnings amount increases to \$60,300 from \$56,300.
+- The EI maximum annual insurable earnings amount increases to \$61,500 from \$60,300.
 
-- The EI (Quebec) Premium Rate amount increases to 1.20%, from 1.18%.
+- The EI (Quebec) Premium Rate amount increases to 1.27%, from 1.20%.
 
-- The maximum annual premium amount is \$723.60, from \$664.34.
+- The maximum annual premium amount is \$781.05, from \$723.60.
 
 
 > [!NOTE]
 > To make it easier to determine CPP and EI maximums between running a payroll in a new year (2022 maximums) and printing T4's from prior years (2021 maximum), two constants are created each with the year maximum in place.
 >
 > Example:
-> Constant 1 2022 Maximum
-> Constant 2 2021 Maximum
+> Constant 1 2023 Maximum
+> Constant 2 2022 Maximum
 
 
-To determine when you run a 2022 payroll what maximum to use, the system looks to the Federal Basic Personal Amount in the Tax Credit Control window (Tools > Setup > Payroll Canada > Control > Tax Credits).
-The system expects the amount of $14,398 for Federal Basic personal Amount in the control and then it will pull the 2022 maximum.
-
-If you notice when you run payroll that the CPP is off compared to PDOC and is not calculating the correct amount based on yearly rate.  Verify the Payroll Control Frequency window (Tools \>\> Setup \>\> Payroll-Canada \>\> Control click Frequency button)and make sure the pay periods are setup for the per year option.  For example in year 2020 you may have set it to 26 pay periods, but this did not get changed and it should be 26/27 pay periods for year 2021 this will cause CPP to calculate incorrectly until you update it for the new year.
+To determine when you run a 2023 payroll what maximum to use, the system looks to the Federal Basic Personal Amount in the Tax Credit Control window (Tools > Setup > Payroll Canada > Control > Tax Credits).
+The system expects the amount of $15,000 for Federal Basic personal Amount in the control and then it will pull the 2023 maximum.
 
 [The CRA accepts different tax calculation methods, and these are outlined on their website](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/t4127-payroll-deductions-formulas-computer-programs.html)
 
@@ -360,13 +358,13 @@ See our notation in this blog below
 
 #### QPIP
 
-- The QPIP Maximum Annual Insurable Earnings amount increases to \$88,000, from \$83,500.
+- The QPIP Maximum Annual Insurable Earnings amount increases to \$91,000, from \$88,000.
 
 - The Premium Rate amount remains at 0.494%.
 
-- The Max Premium is \$434.72 from \$412.49.
+- The Max Premium is \$449.54 from \$434.72.
 
-- The Employer Premium Rate remains at 0.692%. The maximum employer amount will change to \$608.96 from \$577.82.
+- The Employer Premium Rate remains at 0.692%. The maximum employer amount will change to \$629.72 from \$608.96.
 
 ### Federal tax rates and income thresholds
 
@@ -378,7 +376,7 @@ Effective January 1, 2023 the federal tax rate noted below. The federal index fa
 
 Federal personal amounts have been increased by fixed amounts as shown in the following table.
 
-The Basic Personal amount is updated to \$15,000 (formerly \$14,398.
+The Basic Personal amount is updated to \$15,000 (formerly \$14,398).
 
 The Spouse Common Law Partner amount increases by the index factor to \$15,000  (formerly \$14,398), if the original amount was not zero.
 
@@ -499,7 +497,7 @@ The deduction for Employment income has been increased to \$1,235, formerly \$1,
 
 - The spouse or common-law partner amount increases by the index factor and is usually revised to BPAYT formula \$15,000 (formerly \$14,398), provided the original amount was not zero.
 
-![Yukon tax changes](media/YT2022.JPG)
+![Yukon tax changes](media/YT2023.JPG)
 
 ### Updating basic personal amounts
 
@@ -513,7 +511,7 @@ The personal tax credit amounts specified in the P_CPY_Control table will be upd
 
 - The federal Basic Personal amount = \$15,000
 
-- Quebec TP-105.3-V Base amount = \$16,143
+- Quebec TP-105.3-V Base amount = \$17,183
 
 - Alberta basic personal amount = \$21,003
 
@@ -548,19 +546,19 @@ The following table shows how Index Factors as specified in the Tax Credit Index
 > [!NOTE]
 > An amount listed as 1.009 means that the index factor is 9%.
 
-| **Taxing authority**      | **2021 index factor** | **2022 index factor** |
+| **Taxing authority**      | **2023 index factor** | **2022 index factor** |
 |---------------------------|-----------------------|-----------------------|
-| Federal                   | 1.010                 | 1.024                 |
-| Alberta                   | 1.000                 | 1.000                 |
-| British Columbia          | 1.011                 | 1.021                 |
-| Manitoba                  | 1.010                 | 1.021                 |
-| New Brunswick             | 1.010                 | 1.024                 |
-| Newfoundland and Labrador | 1.004                 | 1.028                 |
-| Northwest Territories     | 1.010                 | 1.024                 |
+| Federal                   | 1.063                 | 1.024                 |
+| Alberta                   | 1.060                 | 1.000                 |
+| British Columbia          | 1.060                 | 1.021                 |
+| Manitoba                  | 1.070                 | 1.021                 |
+| New Brunswick             | 1.063                 | 1.024                 |
+| Newfoundland and Labrador | 1.059                 | 1.028                 |
+| Northwest Territories     | 1.063                 | 1.024                 |
 | Nova Scotia               | 1.000                 | 1.000                 |
-| Nunavut                   | 1.010                 | 1.024                 |
-| Ontario                   | 1.009                 | 1.024                 |
+| Nunavut                   | 1.063                 | 1.024                 |
+| Ontario                   | 1.065                 | 1.024                 |
 | Prince Edward Island      | 1.000                 | 1.000                 |
-| Quebec                    | 1.0126                | 1.0264                |
-| Saskatchewan              | 1.010                 | 1.024                 |
-| Yukon                     | 1.010                 | 1.024                 |
+| Quebec                    | 1.0644                | 1.0264                |
+| Saskatchewan              | 1.063                 | 1.024                 |
+| Yukon                     | 1.063                 | 1.024                 |
