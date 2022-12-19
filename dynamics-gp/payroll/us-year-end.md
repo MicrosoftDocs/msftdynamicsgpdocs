@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 11/1/2022
+ms.date: 12/18/2022
 ---
 
 # U.S. Year-end Update in Dynamics GP
@@ -448,7 +448,7 @@ You will need to install the year-end update on every workstation that runs Dyna
 
 18. To confirm that the update is installed, open the Payroll Setup window. (Dynamics GP menu \>\> Tools \>\> Setup \>\> Payroll \>\> Payroll). Check the Last Year-end Update date. It should be 11/18/2022.
 
-If the date does not appear changed, verify the version under Help | About Microsoft Dynamics GP or search the [Microsoft Dynamics Knowledge Base](https://mbs.microsoft.com/knowledgebase/search.aspx) and view article number 981312.
+If the date does not appear changed, verify the version under Help | About Microsoft Dynamics GP is 18.5.1596 or later, and [review why the date may not have changed](https://learn.microsoft.com/en-us/troubleshoot/dynamics/gp/last-year-end-update-field-is-not-updated).
 
 #### Installing with UAC activated
 
