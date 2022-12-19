@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 11/9/2022
+ms.date: 12/18/2022
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -27,9 +27,9 @@ This document can be leveraged to aid in troubleshooting all areas of emailing o
 > 
 > If you are still on an older version of Microsoft Dynamics GP, you must enable TLS on your local Exchange server. For more information, see [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth).
 >
-> When Basic Authentication is deprecated (October 1, 2022), you will need to be on a version of Dynamics GP where you can use Modern Authentication (18.3 or later).
+> When Basic Authentication is deprecated (October 1, 2022), you will need to be on a version of Dynamics GP where you can use Modern Authentication (18.3 or later). There have been many quality issues fixed with Dynamics GP and Julti-Factor Authentication, so it is recommended to be on 18.4.1461 or later to have many issues fixed.
 
-We have seen an increase in cases where emails are beginning to fail from within Dynamics GP.  This is especially true for older versions of GP (18.2 and prior) that do not have Modern Authentication for Dynamics GP.  The Exchange team is temporarily disabling Basic Authentication as a way to remind us that a bigger change is coming.
+We have seen an increase in cases where emails are beginning to fail from within Dynamics GP.  This is especially true for older versions of GP (18.2 and prior) that do not have Modern Authentication for Dynamics GP.  
 
 Review the below blogs for workarounds if you are on an older version of Microsoft Dyanmics GP:
 
@@ -247,11 +247,6 @@ If **Email Addresss based on Doc Type** is enabled:
 (Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email address based on document type >> Email Address)
 This issue can occur with all reports, and these can be caused by MessageID issues or Reply To issues. Make sure to remove all MessageIDs and Reply To emails.  
 
-
-> [!NOTE]
-> Verify this error **Unknown Error Occurred** is happening for all users that are trying to send emails.  If this error only happens for example on two users, and you are using RDS Server, we have seen where deleting the User Profile on the RDS server and recreating it has fixed this error message and issue for those couple of users.
- 
- 
 > [!NOTE]
 > **Items to Rule out and test with Unknown error occurred and Modern Auth**
 > 
@@ -732,12 +727,16 @@ When reviewing a SQL Profile trace, you can see calls (qdCreateSQL procedure) th
 
 
 1. If no workflow emails are sent, verify if it is all workflow or just one specific workflow where this is not working.
-      a. For the user you are testing with, verify in *Active Directory under the General tab* that the E-mail field is populated, if it is blank emails will not send.
+
+a. For the user you are testing with, verify in *Active Directory under the General tab* that the E-mail field is populated, if it is blank emails will not send.
          This needs to be done for all users that are GP Approvers in workflow
-      b. Try to send a Test E-Mail in Workflow Setup does it work?  This process will use the user listed in the SMTP Authentication area of the window.
-      c. The SY04920 table is not used for workflow emails or Modern Auth once setup and becomes non-relevant.            
+
+b. Try to send a Test E-Mail in Workflow Setup does it work?  This process will use the user listed in the SMTP Authentication area of the window.
+
+c. The SY04920 table is not used for workflow emails or Modern Auth once setup and becomes non-relevant.            
       
 2. If we are using templates, we should try a workflow email with no attachments, just to see if the email works.
+
 3. When a user 1st submits for approval in workflow, that will go through Exchange, usually submitted within Dynamics GP.
 From there on out, when a user approves through the workflow email links, to approve what was submitted, that will use [SMTP](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-workflow-intermittent-emails-failing) for all other approvals from Web Services workflow emails.
 If an email is failing from the email links this could indicate a problem with web services.
