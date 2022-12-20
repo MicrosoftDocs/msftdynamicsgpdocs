@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/19/2022
+ms.date: 12/20/2022
 ---
 # U.S. 2022 Payroll Tax Update
 
@@ -36,7 +36,6 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 - Federal tax tables added 12/30/2021
 - Arizona
 - California
-- Iowa
 - Kentucky
 - 
 - Maine
@@ -243,57 +242,44 @@ Withholding rates for taxpayers filing as *SINGLE*:
 | 1,000,000   | And Over         | 116,083.76     | 14.63%       | 1,000,000          |
 
 
-#### Withholding changes for Iowa
-
 #### Withholding changes for Kentucky
 
 The Standard Deduction Amount is $2,980 from $2,770
 The Tax Rate decreases to 4.5% formerly 5%
 
+#### Withholding changes for Maine
 
-#### Withholding changes for Maryland
+- Personal Exemption is $4,700 was $4,450
 
-For each Filing Status of Maryland
-•	Standard Deduction Minimum is $1,600 from $1,550
-•	Standard Deduction Maximum is $2,400 from $2,350
-The Standard Deduction Percent remains at 15 percent.
+Withholding rates for taxpayers filing as *SINGLE*, Tax table type
 
- 
-#### Withholding changes for Utah
-
-All filing status have a fixed flat tax of 4.85% from 4.95%
-
-- MAR - Married  - Base Allowance Exemption amount  $780.00 prior amount $720.00
-- SINGLE - Single  - Base Allowance Exemption amount  $390.00 prior amount $360.00
-
-- MAR - Married  - Tax Rate of 1.3% anything over $15,548 prior amount $14,256 (held in Special tax table)
-- SINGLE - Single  - Tax Rate of 1.3% anything over $7,774.00 prior amount $7,128.00 (held in Special tax table)
-
-
-
-#### Withholding changes for Illinois
-
-The Dependent Exemptions is $2,425
-The Flat tax rate remains at 4.95 and allowances at 1,000
-
-#### Withholding changes for Louisiana
-
-The Flat tax rate for all filing status is 1.85 from 2.2
-
-Special Type rates for EXEMPT and SM1 Filing Status:
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over |
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 50,000           | 0              | 1.65%        | 12,500             |
-| 50,000      | And Over         | 0              | .075%        | 50,000             |
+|  0          | 24,500           | 0              | 5.8%         | 0                  |
+| 24,500      | 58,050           | 1,421          | 6.75%        | 24,500             |
+| 58,050      | And over         | 3,686          | 7.15%        | 58,050             |
 
+Special table type
 
-Special Type rates for M2 Filing Status:
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over |
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 1000,000         | 0              | 1.65%        | 25,000             |
-| 100,000     | And Over         | 0              | .075%        | 100,000            |
+| 0           | 91,500           | 0              | 0            | 11,000             |
+| 91,500      | 166,500          | 75,000         | 0            | 0                  |
+
+Withholding rates for taxpayers filing as MAR, Tax table type
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 49,050           |                | 5.80%        | 0                  |
+| 49,050      | 116,100          | 2,845          | 6.75%        | 49,050             |
+| 116,100     | And Over         | 7,371          | 7.15%        | 108,900            |
+
+Special table type
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 183,050          | 0              | 0            | 24,850             |
+| 183,050     | 333,050          | 150,000        | 0            | 0                  |
 
 
 #### Withholding changes for Minnesota
