@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/17/2022
+ms.date: 12/20/2022
 ---
 
 # Canadian Payroll 2022 Year-end Update & 2023 Tax Update
@@ -46,6 +46,14 @@ The 2022 Year-End Update/2023 Tax Update contains changes in the information tha
 #### Tax changes
 
 See [Chapter 4: Tax updates](#chapter-4-tax-updates) for a description of the 2023 federal, provincial, and territorial tax changes.
+
+> [!NOTE]
+> Tax calculations for Federal, Nova Scotia and Yukon use the BPAYT forumula in the 2022 year.  
+> Per the T4127 document, it indicates:
+> If the BPAYT formula was previously implemented on your payroll system, you can continue to use it. 
+> (which we are doing for the 2023 year)
+> Because of this, our system may not tie directly to the Payroll Deductions Online Calculator (PDOC), as PDOC is using a different method for calculation.
+
 
 #### General application changes
 
