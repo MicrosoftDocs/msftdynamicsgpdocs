@@ -3826,12 +3826,12 @@ This information is divided into the following sections:
   >
   > 2. This may also cause the issue if you have not done it.  The DYNAMICS.DIC getting out of sync with the account framework in the DYNAMICS database.
 You can do the syncronize process local vs a shared location.
-
-    1. Open the DEX.ini on the workstation with the issue.
-    2. Set SYNCRONIZE and INITIAL to “TRUE”.
-    3. Save the changes to the dex.ini.
-    4. Launch GP Utilities as “sa”.
-    5. When you get to additional tasks, select the option SYNCRONIZE FORMS and reports.  It will ask you to select the launch file, locate the DYNAMICS.SET. Process the change. Note, if it asks you to update dynamics or a company, do not proceed and instead close GP utilities and set synchronize and initial back to false to prevent accidentally upgrading a database\ installing a module that is not intended.
+  >
+  >   1. Open the DEX.ini on the workstation with the issue.
+  >   2. Set SYNCRONIZE and INITIAL to “TRUE”.
+  >   3. Save the changes to the dex.ini.
+  >   4. Launch GP Utilities as “sa”.
+  >   5. When you get to additional tasks, select the option SYNCRONIZE FORMS and reports.  It will ask you to select the launch file, locate the DYNAMICS.SET. Process the change. Note, if it asks you to update dynamics or a company, do not proceed and instead close GP utilities and set synchronize and initial back to false to prevent accidentally upgrading a database\ installing a module that is not intended.
   > 3. If none of the above work, there could be an issue with the GL00100 table/ stored procedure and we would recommend you to log a support case.
 
 #### General Ledger report summary
