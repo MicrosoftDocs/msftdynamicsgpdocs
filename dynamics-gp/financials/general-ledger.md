@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 06/16/2020
+ms.date: 12/20/2022
 
 ---
 # Dynamics GP General Ledger
@@ -3818,6 +3818,32 @@ This information is divided into the following sections:
 - *Specifying a General Ledger report option*
 
 - *General Ledger Microsoft SQL Server® Reporting Services reports*
+
+ > [!NOTE]
+    > If your General Ledger reports are printing with accounts cut off or weird characters after applying an update, check the following items:
+    > 
+    > 1. Typically when we see this happen, it means one of your reports is corrupting and then causing a problem with your dictionary/ corrupts it.
+    >Thus it does not print out correctly.
+    >I would rename your report.dic and form.dic, do not import then see if it works, try to print a few times, etc.
+    >If all seems to work, then import them in 1 by 1 or all at time, see what is causing the problem.
+    >[How to update form and report dictionary files](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-2022-upgrade-blog-series-schedule)
+    >
+    >2. This may also cause the issue if you have not done it.  The DYNAMICS.DIC getting out of sync with the account framework in the DYNAMICS database.
+    You can do the syncronize process local vs a shared location.
+ 
+        1.	Open the DEX.ini on the workstation with the issue.
+        2.	Set SYNCRONIZE and INITIAL to “TRUE”.
+        3.	Save the changes to the dex.ini.
+        4.	Launch GP Utilities as “sa”.
+        5.	When you get to additional tasks, select the option SYNCRONIZE FORMS and reports 
+        	It will ask you to select the launch file, locate the DYNAMICS.SET.
+            Process the change.
+        Note, if it asks you to update dynamics or a company, do not proceed and instead close GP utilities and set synchronize and initial back to false to prevent accidentally upgrading a database\ installing a module that is not intended.
+        
+    >3. If none of the above work, there could be an issue with the GL00100 table/ stored procedure and we would recommend you to log a support case.
+
+
+
 
 #### General Ledger report summary
 
