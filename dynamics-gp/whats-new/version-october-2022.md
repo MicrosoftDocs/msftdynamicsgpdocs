@@ -105,7 +105,7 @@ It will now be enabled if Workflow is being used and a reversing journal entry i
 
 ![image 10 11](https://user-images.githubusercontent.com/28811495/197578348-bb9a7563-7cd6-444a-bc0e-f9699dc7938a.png)
 
-### Transaction Level Pot through GL without Printing GL Posting Journal
+### Transaction Level Post through GL without Printing GL Posting Journal
 
 Previously, there was the ability to setup Payables Transaction Entry posting to Post Through GL, this required the GL Posting Journal to be marked in the Posting Setup for General Journal Entry.  With the October 2022 release of Microsoft Dynamics GP, we have removed this requirement. 
 
