@@ -173,13 +173,13 @@ The following tax changes are included in this update:
 
 Decrease in flat tax rates for all filing status.
 
-FS01A -  .5% Flat Tax Rate from .8%
-FS02  - 1.0% Flat Tax Rate from 1.3%
-FS03  - 1.5% Flat Tax Rate from 1.8%
-FS04  - 2.0% Flat Tax Rate from 2.7%
-FS05  - 2.5% Flat Tax Rate from 3.6%
-FS06  - 3.0% Flat Tax Rate from 4.2%
-FS07  - 3.5% Flat Tax Rate from 5.1%
+- FS01A -  .5% Flat Tax Rate from .8%
+- FS02  - 1.0% Flat Tax Rate from 1.3%
+- FS03  - 1.5% Flat Tax Rate from 1.8%
+- FS04  - 2.0% Flat Tax Rate from 2.7%
+- FS05  - 2.5% Flat Tax Rate from 3.6%
+- FS06  - 3.0% Flat Tax Rate from 4.2%
+- FS07  - 3.5% Flat Tax Rate from 5.1%
 
 #### Withholding changes for California
 
