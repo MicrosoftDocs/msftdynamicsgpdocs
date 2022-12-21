@@ -1,6 +1,6 @@
 ---
 title: "US payroll tax update"
-description: "US 2022 January payroll tax update for Microsoft Dynamics GP."
+description: "US 2023 January payroll tax update for Microsoft Dynamics GP."
 keywords: "payroll"
 author: theley502
 manager: edupont
@@ -8,9 +8,9 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/20/2022
+ms.date: 12/21/2022
 ---
-# U.S. 2022 Payroll Tax Update
+# U.S. 2023 Payroll Tax Update
 
 This tax update applies to:
 
