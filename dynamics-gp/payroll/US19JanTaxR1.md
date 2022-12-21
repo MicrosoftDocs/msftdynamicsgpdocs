@@ -308,16 +308,19 @@ Withholding rates for taxpayers filing as *SINGLE*:
 
 #### Withholding changes for Mississippi
 
-Dependent Exemption: 1,500 For All Filing Status
+- Dependent Exemption: 1,500 For All Filing Status
 
-Standard Deduction: 4,600 for MAR1 & MAR2
-Personal Exemption: 12,000  for MAR1 & MAR2
+- Standard Deduction: 4,600 for MAR1
+- Personal Exemption: 12,000  for MAR1
 
-Standard Deduction: 3,400 for HOH
-Personal Exemption: 9,500  for HOH
+- Standard Deduction: 2,300 for MAR2 
+- Personal Exemption: 6,000  for MAR2
 
-Standard Deduction: 2,300 for SINGLE
-Personal Exemption: 6,000  for SINGLE
+- Standard Deduction: 3,400 for HOH
+- Personal Exemption: 9,500  for HOH
+
+- Standard Deduction: 2,300 for SINGLE
+- Personal Exemption: 6,000  for SINGLE
 
 Withholding rates for all taxpayers filing status
 
