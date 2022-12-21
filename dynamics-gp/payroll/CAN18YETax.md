@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/20/2022
+ms.date: 12/21/2022
 ---
 
 # Canadian Payroll 2022 Year-end Update & 2023 Tax Update
@@ -550,9 +550,6 @@ You can view these amounts in the Tax Credits window by going to: Tools \>\> Set
 ### Index factors for 2023
 
 The following table shows how Index Factors as specified in the Tax Credit Indexation Factors window (Payroll Reset Files window (Tools\>\>Routines\>\>PayrollCanada\>\>Year End File Reset\>\>Tax Credit Indexation Factors) have been updated.
-
-> [!NOTE]
-> An amount listed as 1.009 means that the index factor is 9%.
 
 | **Taxing authority**      | **2023 index factor** | **2022 index factor** |
 |---------------------------|-----------------------|-----------------------|
