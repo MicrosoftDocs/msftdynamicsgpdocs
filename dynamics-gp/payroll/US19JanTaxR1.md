@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/21/2022
+ms.date: 12/29/2022
 ---
 # U.S. 2023 Payroll Tax Update
 
@@ -271,7 +271,7 @@ Withholding rates for taxpayers filing as MAR, Tax table type
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 49,050           |                | 5.80%        | 0                  |
 | 49,050      | 116,100          | 2,845          | 6.75%        | 49,050             |
-| 116,100     | And Over         | 7,371          | 7.15%        | 108,900            |
+| 116,100     | And Over         | 7,371          | 7.15%        | 116,100            |
 
 Special table type
 
