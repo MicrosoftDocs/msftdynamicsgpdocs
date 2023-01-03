@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/21/2022
+ms.date: 12/29/2022
 ---
 
 # Canadian Payroll 2022 Year-end Update & 2023 Tax Update
@@ -489,7 +489,7 @@ The TP-1015.3-V Basic amount increases by the index factor and is usually revise
 
 #### Variable H – Deduction for employment income
 
-The deduction for Employment income has been increased to \$1,235, formerly \$1,190. 
+The deduction for Employment income has been increased to \$1,315 formerly \$1,235. 
 
 #### Saskatchewan 
 
