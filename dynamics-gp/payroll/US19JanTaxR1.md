@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 1/5/2023
+ms.date: 1/6/2023
 ---
 # U.S. 2023 Payroll Tax Update
 
@@ -43,6 +43,9 @@ The following tax changes are included in this update:
 - Michigan
 - North Carolina
 - North Dakota
+- Oregon
+- Rhode Island
+- Vermont
 - Arkansas - code changes
 
 #### Withholding changes for Colorado
@@ -84,6 +87,54 @@ The Flat tax is 3.15% previously 3.23%
 
 New for 2023 Iowa withholding calculations, federal withholding is no longer subtracted from taxable wages.  
 
+The Standard Deduction Amount for Filing Status:
+
+- EXP1 is $13,850 previously \$2,210
+- EXP2 is $27,700 previously \$5,450
+
+Withholding rates for taxpayers filing as EXP1 and EXP2 are as follows:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 4,800            | 0              | 4.40%        |                    |
+| 4,800       | 24,000           | 211.20         | 2.82%        | 4,800              |
+| 24,000      | 50,000           | 1,136.64       | 5.70%        | 24,000             |
+| 50,000      | And over         | 2,618.64       | 6.00%        | 50,000             |
+
+#### Withholding changes for Maryland
+
+For each Filing Status of Maryland
+•             Standard Deduction Minimum is $1,700 from $1,600
+•             Standard Deduction Maximum is $2,550 from $2,400
+The Standard Deduction Percent remains at 15 percent.
+
+For Filing Status of AAMAR (Anne Arundel MFJ/HOH).
+
+Withholding rates for taxpayer:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | 0%           | 0                  |
+| 5,000       | 50,000           | 0              | 7.50%        | 0                  |
+| 50,000      | 150,000          | 0              | 7.60%        | 0                  |
+| 150,000     | 175,000          | 11,400         | 7.85%        | 150,000            |
+| 175,000     | 225,000          | 13,362.50      | 8.10%        | 175,000            |
+| 225,000     | 300,000          | 17,412.50      | 8.35%        | 225,000            |
+| 300,000     | And over         | 23,675         | 8.60%        | 300,000            |
+
+For Filing Status of ARNDEL (Anne Arundel SGL/DEP/MFS).
+
+Withholding rates for taxpayer:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | 0%           | 0                  |
+| 5,000       | 50,000           | 0              | 7.50%        | 0                  |
+| 50,000      | 100,000          | 0              | 7.60%        | 0                  |
+| 100,000     | 125,000          | 7,600          | 7.85%        | 100,000            |
+| 125,000     | 150,000          | 9,562.50       | 8.10%        | 125,000            |
+| 150,000     | 250,000          | 11,587.50      | 8.35%        | 150,000            |
+| 250,000     | And over         | 19,937.50      | 8.60%        | 250,000            |
 
 
 ## Changes in January Round 1 update (Released: 12/21/2022)
