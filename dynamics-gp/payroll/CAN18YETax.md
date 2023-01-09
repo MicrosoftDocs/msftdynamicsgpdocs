@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/29/2022
+ms.date: 1/3/2023
 ---
 
 # Canadian Payroll 2022 Year-end Update & 2023 Tax Update
@@ -485,7 +485,7 @@ The following provinces and territories have tax changes for 2023.
 
 #### Quebec
 
-The TP-1015.3-V Basic amount increases by the index factor and is usually revised to \$16,143 (formerly \$15,728). The system rounds this calculation to the nearest \$5.00
+The TP-1015.3-V Basic amount increases by the index factor and is usually revised to \$17,183 (formerly \$16,143). The system rounds this calculation to the nearest \$5.00
 
 #### Variable H – Deduction for employment income
 

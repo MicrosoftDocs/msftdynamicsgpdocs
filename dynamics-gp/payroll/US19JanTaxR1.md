@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/29/2022
+ms.date: 1/6/2023
 ---
 # U.S. 2023 Payroll Tax Update
 
@@ -18,7 +18,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2023 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the first tax update for 2023 and replaces all previous tax updates. It includes Federal and State tax table changes that take effect January 1, 2023. We recommend that you install this update as soon as you can for the year 2023.
+This is the second tax update for 2023 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2023. We recommend that you install this update as soon as you can for the year 2023.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -30,7 +30,114 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/gp/b/dynamicsgp/posts/tips-to-install-the-u-s-payroll-tax-update)
 
-## Changes in January Round 1 update (Released: )
+## Changes in January Round 2 update (Target Release: 1/26/2023)
+
+### 2023 state or territorial tax changes
+The following tax changes are included in this update:
+
+- Colorado
+- Illinois
+- Indiana
+- Iowa
+- Maryland
+- Michigan
+- North Carolina
+- North Dakota
+- Oregon
+- Rhode Island
+- Vermont
+- Arkansas - code changes
+
+#### Withholding changes for Colorado
+
+In January 2022 the state of Colorado released a new form called [DR-0004](https://tax.colorado.gov/withholding-forms) this is optional for an employee to complete.  
+
+All filing status have the same fixed flat tax of 4.40% was 4.55%(2022)
+
+**The following new filing status were added in 2022:**
+
+- HOH1J - Head of Household 1 Job - Exemption amount is $18,500 previously $16,500  
+- MAR1J - Married Filing Jointly 1 Job - Exemption amount is $25,500 previously $23,000  
+- SIN1J - Single/Mar filing Single 1 Job - Exemption amount is $11,500 previously  $10,500  
+
+**Existing Filing Status:**
+
+- MAR - Married  - Exemption amount is $9,000 previously $8,000  
+- SINGLE - Single  - Exemption amount is $4,500 previously $4,000  
+
+There are 2 other parts to this form that have many different exemption amounts, we cannot accommodate all of them in the tax tables.
+A new “OTHER” filing status was added (OTH1J) with Exemption increments of $500 that will accommodate all the "other" amounts on the form if an employee enters. 
+
+OTH1J - OTH, +1 Jobs or Child Cr Allow - Exemption amount of $500
+
+As an example, lets say I fill out the form and choose an amount of 2500 – it does not match any of the above filing status so I would pick the OTHER status and put a 5 under Cards | Payroll | State Tax in the Number of Dependents field OR Additional Allowances. Which is 2500/500 = 5.
+
+Another example, I put 5500 on the form. Again, that does not match the other filing status, so I choose *Other* and put *11*.
+
+#### Withholding changes for Illinois
+
+The Dependent Exemptions is $2,625 formerly $2,425
+The Flat tax rate remains at 4.95 and allowances at 1,000
+
+#### Withholding changes for Indiana
+
+The Flat tax is 3.15% previously 3.23%
+
+#### Withholding changes for Iowa
+
+New for 2023 Iowa withholding calculations, federal withholding is no longer subtracted from taxable wages.  
+
+The Standard Deduction Amount for Filing Status:
+
+- EXP1 is $13,850 previously \$2,210
+- EXP2 is $27,700 previously \$5,450
+
+Withholding rates for taxpayers filing as EXP1 and EXP2 are as follows:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 4,800            | 0              | 4.40%        |                    |
+| 4,800       | 24,000           | 211.20         | 2.82%        | 4,800              |
+| 24,000      | 50,000           | 1,136.64       | 5.70%        | 24,000             |
+| 50,000      | And over         | 2,618.64       | 6.00%        | 50,000             |
+
+#### Withholding changes for Maryland
+
+For each Filing Status of Maryland
+•             Standard Deduction Minimum is $1,700 from $1,600
+•             Standard Deduction Maximum is $2,550 from $2,400
+The Standard Deduction Percent remains at 15 percent.
+
+For Filing Status of AAMAR (Anne Arundel MFJ/HOH).
+
+Withholding rates for taxpayer:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | 0%           | 0                  |
+| 5,000       | 50,000           | 0              | 7.50%        | 0                  |
+| 50,000      | 150,000          | 0              | 7.60%        | 0                  |
+| 150,000     | 175,000          | 11,400         | 7.85%        | 150,000            |
+| 175,000     | 225,000          | 13,362.50      | 8.10%        | 175,000            |
+| 225,000     | 300,000          | 17,412.50      | 8.35%        | 225,000            |
+| 300,000     | And over         | 23,675         | 8.60%        | 300,000            |
+
+For Filing Status of ARNDEL (Anne Arundel SGL/DEP/MFS).
+
+Withholding rates for taxpayer:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | 0%           | 0                  |
+| 5,000       | 50,000           | 0              | 7.50%        | 0                  |
+| 50,000      | 100,000          | 0              | 7.60%        | 0                  |
+| 100,000     | 125,000          | 7,600          | 7.85%        | 100,000            |
+| 125,000     | 150,000          | 9,562.50       | 8.10%        | 125,000            |
+| 150,000     | 250,000          | 11,587.50      | 8.35%        | 150,000            |
+| 250,000     | And over         | 19,937.50      | 8.60%        | 250,000            |
+
+
+## Changes in January Round 1 update (Released: 12/21/2022)
 
 - FICA Social Security Limit $160,200
 - Federal tax tables added 12/30/2021
