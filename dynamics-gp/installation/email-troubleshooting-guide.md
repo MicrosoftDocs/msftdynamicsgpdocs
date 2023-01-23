@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 12/18/2022
+ms.date: 1/17/2023
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -27,7 +27,7 @@ This document can be leveraged to aid in troubleshooting all areas of emailing o
 > 
 > If you are still on an older version of Microsoft Dynamics GP, you must enable TLS on your local Exchange server. For more information, see [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth).
 >
-> When Basic Authentication is deprecated (October 1, 2022), you will need to be on a version of Dynamics GP where you can use Modern Authentication (18.3 or later). There have been many quality issues fixed with Dynamics GP and Julti-Factor Authentication, so it is recommended to be on 18.4.1461 or later to have many issues fixed.
+> When Basic Authentication is deprecated (October 1, 2022), you will need to be on a version of Dynamics GP where you can use Modern Authentication (18.3 or later). There have been many quality issues fixed with Dynamics GP and Multi-Factor Authentication, so it is recommended to be on 18.4.1461 or later to have many issues fixed.
 
 We have seen an increase in cases where emails are beginning to fail from within Dynamics GP.  This is especially true for older versions of GP (18.2 and prior) that do not have Modern Authentication for Dynamics GP.  
 
