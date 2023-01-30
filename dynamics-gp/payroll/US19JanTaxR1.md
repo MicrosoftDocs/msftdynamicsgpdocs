@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/26/2023
+ms.date: 1/30/2023
 ---
 # U.S. 2023 Payroll Tax Update
 
@@ -29,7 +29,7 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/gp/b/dynamicsgp/posts/tips-to-install-the-u-s-payroll-tax-update)
 
-## Changes in January Round 2 update (Target Release: 1/26/2023)
+## Changes in January Round 2 update (Released: 1/24/2023)
 
 ### 2023 state or territorial tax changes
 The following tax changes are included in this update:
@@ -49,20 +49,18 @@ The following tax changes are included in this update:
 
 #### Withholding changes for Colorado
 
-In January 2022 the state of Colorado released a new form called [DR-0004](https://tax.colorado.gov/withholding-forms) this is optional for an employee to complete.  
-
 All filing status have the same fixed flat tax of 4.40% was 4.55%(2022)
 
-**The following new filing status were added in 2022:**
+The Personal Exemption amount is $9,000 for MAR
+The Personal Exemption amount is $4,500 For SINGLE
 
-- HOH1J - Head of Household 1 Job - Exemption amount is $18,500 previously $16,500  
-- MAR1J - Married Filing Jointly 1 Job - Exemption amount is $25,500 previously $23,000  
-- SIN1J - Single/Mar filing Single 1 Job - Exemption amount is $11,500 previously  $10,500  
+**The following new filing status were added January 2022:**
 
-**Existing Filing Status:**
+- HOH1J - Head of Household 1 Job - Exemption amount  $18,500  
+- MAR1J - Married Filing Jointly 1 Job - Exemption amount  $25,500  
+- SIN1J - Single/Mar filing Single 1 Job - Exemption amount  $11,500  
 
-- MAR - Married  - Exemption amount is $9,000 previously $8,000  
-- SINGLE - Single  - Exemption amount is $4,500 previously $4,000  
+In January 2022 the state of Colorado released a new form called [DR-0004](https://tax.colorado.gov/withholding-forms) this is optional for an employee to complete.  
 
 There are 2 other parts to this form that have many different exemption amounts, we cannot accommodate all of them in the tax tables.
 A new “OTHER” filing status was added (OTH1J) with Exemption increments of $500 that will accommodate all the "other" amounts on the form if an employee enters. 
@@ -324,6 +322,80 @@ Withholding rates for taxpayers filing as *SINGLE*
 | 48,900      | 113,550          | 1,520.90       | 6.60%        | 48,900             |
 | 113,550     | 233,050          | 5,787.80       | 7.60%        | 113,550            |
 | 233,050     | And Over         | 14,869.80      | 8.75%        | 233,050            |
+
+
+#### Withholding changes for Arkansas
+
+> [!NOTE]
+> If you have employees set up to withhold Arkansas state tax, then, when you apply this update, you must also apply the [January 2023 Hotfix (code) for the Arkansas state](/dynamics/s-e/gp/mdgp2018_patchreleases_377) taxes to be correct for the year 2023. This change is for the Midrange Income look up part of the tax calculation.
+
+
+Standard Deduction Amount is $2,270 from $2,200
+Personal Exemption remains at $29.00
+
+Tax Type rates for Filing Status NA
+
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,099            | 0              | 0.0%         | 0                  |
+| 5,099       | 10,299           | -101.98        | 2.0%         | 0                  |
+| 10,299      | 14,699           | -204.97        | 3.0%         | 0                  |
+| 14,699      | 24,299           | -263.77        | 3.4%         | 0                  |
+| 24,299      | 87,000           | -628.25        | 4.9%         | 0                  |
+| 87,000      | 87,100           | -627.20        | 4.9%         | 0                  |
+| 87,100      | 87,200           | -617.20        | 4.9%         | 0                  |
+| 87,200      | 87,300           | -607.20        | 4.9%         | 0                  |
+| 87,300      | 87,400           | -597.20        | 4.9%         | 0                  |
+| 87,400      | 87,600           | -587.20        | 4.9%         | 0                  |
+| 87,600      | 87,700           | -577.20        | 4.9%         | 0                  |
+| 87,700      | 87,800           | -567.20        | 4.9%         | 0                  |
+| 87,800      | 87,900           | -557.20        | 4.9%         | 0                  |
+| 87,900      | 88,000           | -547.20        | 4.9%         | 0                  |
+| 88,000      | 88,100           | -537.20        | 4.9%         | 0                  |
+| 88,100      | 88,200           | -527.20        | 4.9%         | 0                  |
+| 88,200      | 88,300           | -517.20        | 4.9%         | 0                  |
+| 88,300      | 88,400           | -507.20        | 4.9%         | 0                  |
+| 88,400      | 88,500           | -497.20        | 4.9%         | 0                  |
+| 88,500      | 88,600           | -487.20        | 4.9%         | 0                  |
+| 88,600      | 88,700           | -477.20        | 4.9%         | 0                  |
+| 88,700      | 88,800           | -467.20        | 4.9%         | 0                  |
+| 88,800      | 88,900           | -457.20        | 4.9%         | 0                  |
+| 88,900      | 89,000           | -447.20        | 4.9%         | 0                  |
+| 89,000      | 89,100           | -437.20        | 4.9%         | 0                  |
+| 89,100      | 89,200           | -427.20        | 4.9%         | 0                  |
+| 89,200      | 89,300           | -417.20        | 4.9%         | 0                  |
+| 89,300      | 89,400           | -407.20        | 4.9%         | 0                  |
+| 89,400      | 89,500           | -397.20        | 4.9%         | 0                  |
+| 89,500      | 89,600           | -387.20        | 4.9%         | 0                  |
+| 89,600      | 89,700           | -377.20        | 4.9%         | 0                  |
+| 89,700      | 89,800           | -367.20        | 4.9%         | 0                  |
+| 89,800      | 89,900           | -357.20        | 4.9%         | 0                  |
+| 89,900      | 90,000           | -347.20        | 4.9%         | 0                  |
+| 90,000      | 90,100           | -337.20        | 4.9%         | 0                  |
+| 90,100      | 90,200           | -327.20        | 4.9%         | 0                  |
+| 90,200      | 90,300           | -317.20        | 4.9%         | 0                  |
+| 90,300      | 90,400           | -307.20        | 4.9%         | 0                  |
+| 90,400      | 90,500           | -297.20        | 4.9%         | 0                  |
+| 90,500      | 90,600           | -287.20        | 4.9%         | 0                  |
+| 90,600      | 90,700           | -277.20        | 4.9%         | 0                  |
+| 90,700      | 90,800           | -267.20        | 4.9%         | 0                  |
+| 90,800      | 90,900           | -257.20        | 4.9%         | 0                  |
+| 90,900      | 91,100           | -247.20        | 4.9%         | 0                  |
+| 91,100      | 91,200           | -237.20        | 4.9%         | 0                  |
+| 91,200      | 91,300           | -227.20        | 4.9%         | 0                  |
+| 91,300      | 91,400           | -217.20        | 4.9%         | 0                  |
+| 91,400      | 91,500           | -207.20        | 4.9%         | 0                  |
+| 91,500      | 91,600           | -197.20        | 4.9%         | 0                  |
+| 91,600      | 91,700           | -187.20        | 4.9%         | 0                  |
+| 91,700      | 91,800           | -177.20        | 4.9%         | 0                  |
+| 91,800      | And over         | -167.20        | 4.9%         | 0                  
+
+Tax Type Special for Filing Status NA added
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 91,801           | 0              | 0%           | 50,000             |
 
 
 ## Changes in January Round 1 update (Released: 12/21/2022)
