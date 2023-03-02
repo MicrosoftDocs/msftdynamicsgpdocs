@@ -6,7 +6,7 @@ author: edupont04
 ms.author: edupont
 manager: edupont
 applies_to: 
-ms.date: 01/06/2021
+ms.date: 03/1/2023
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 3509e92e-d825-4947-8ea2-7e57b7c2a9e0
@@ -21,43 +21,17 @@ This chapter contains a list of prerequisites and system requirement changes for
 
 ## Releases supported by the upgrade
 
-You can upgrade to Dynamics GP from selected previous releases. To review whether or not you can upgrade your release, see [CustomerSource](/dynamics/s-e/).
+You can upgrade to Dynamics GP from selected previous releases. To review whether or not you can upgrade your release, see [Upgrade Hot Topic]([/dynamics/s-e/](https://learn.microsoft.com/en-us/dynamics/s-e/gp/hot_topic_mdgpupgrade_415)).
 
 If you are upgrading to Dynamics GP, you must install the latest update or hotfix for Dynamics GP before starting Dynamics GP Utilities. See the [Microsoft Dynamics GP Resource Directory](../resources.md) article for the latest update information.
 
 ## System requirement changes
 
-The following changes are new with Dynamics GP. You may want to consider upgrading your hardware for improved performance.
-
-<!--### Operating system requirement changes
-
-For the latest updates of supported client operating system changes, see [Core System Requirements for Microsoft Dynamics GP](../installation/system-requirements-core.md).-->
-
-### Database configuration changes
-
-Microsoft SQL Server 2012, 2014, 2016 and 2019 Express, Standard, and Enterprise Editions are supported.
-
-Previous versions of SQL Server are no longer supported.
-
-### Internet Explorer change
-
-Internet Explorer 11 and Edge are the only supported. IE browsers.
-
-### Microsoft Office change
-
-Microsoft Office 2013, Microsoft Office 2016 and Microsoft Office 2019 are supported. All previous versions are no longer supported.
+[System Requirements for Microsoft Dynamics GP](https://learn.microsoft.com/en-us/dynamics/s-e/gp/mdgp2018_system_requirements).
 
 ## Home page prerequisites
 
 To display metrics and reports in the Business Analyzer area on your home page, install and set up Microsoft SQL Server Reporting Services to use with Dynamics GP. The reports and metrics you want to display must be created in SQL Server Reporting Services. For more information about installing and setting up Reporting Services for use with Dynamics GP, go to the [Dynamics GP documentation resource Web site](/dynamics/s-e/) for the most current documentation.
-
-The following versions of SQL Server Reporting Services are supported.
-
-- SQL Server 2012 Reporting Services
-
-- SQL Server 2014 Reporting Services
-
-- SQ" Server 2016 Reporting Services
 
 ## Word templates prerequisites
 
@@ -83,10 +57,6 @@ By using the email functionality in Dynamics GP, you can embed documents into th
 
 Review the following requirements:
 
-- You can send documents by email if you're using a MAPI-compliant e-mail service or Exchange 2007 Service Pack 1 or greater with Exchange Web Services.
-
-- If you are using Exchange 2007 Service Pack 1 or greater with Exchange Web Services, the Autodiscover service must be enabled to connect to the Exchange server.
-
 - The email functionality in Dynamics GP supports the following document types. Depending on the document type and the email service, Microsoft Word 2010 or later and Word templates for Dynamics GP are required.
 
     | File format | Word 2013 | Word templates | Web Client |
@@ -100,10 +70,6 @@ Review the following requirements:
 
 - Before you can send documents as DOCX, PDF, or XPS attachments, the Word template for the document must be enabled in the Template Configuration Manager window.
 
-- The email functionality is supported on the 32-bit edition of Microsoft Office2013.
-
-- The email functionality is supported on the 64-bit edition of Microsoft Office2013 if you are using Exchange 2007 Service Pack 1 or greater with Exchange Web Services and Exchange is your server type in the System Preferences window.
-
 - Depending on the file format you choose to send your documents in e-mail, your customers and vendors must be using the following components to view their documents.
 
     | File format | Component |
@@ -114,6 +80,8 @@ Review the following requirements:
     | HTML\* | Internet Explorer 11 and Edge |
 
     \*If you are using Dynamics GP Web Client only for your customers and vendors must be using HTML to view their documents.  
+
+For all email documentation on workflow, Modern Authentication and Exchange reiew the [Email Troubleshooting Guide](https://learn.microsoft.com/en-us/dynamics-gp/installation/email-troubleshooting-guide).
 
 ## SQL Server Reporting Services requirements
 
@@ -147,14 +115,6 @@ To modify the Report Server Web config file:
     ```
 5. Save and close the Report Server web.config file.
 
-## Dynamics GP CRM requirements
-
-You must be using SQL Server 2012 R2 Reporting Services or later and Microsoft Dynamics CRM 2011 or later to deploy SQL Server Reporting Services reports and metrics that includes CRM data. Microsoft Dynamics CRM supports only the native mode of deployment of SQL Server Reporting Services.
-
-If Microsoft Dynamics CRM and Dynamics GP are using different report servers, you must install the Microsoft Dynamics CRM Reporting Extensions on the Dynamics GP report server to render reports.
-
-> [!TIP]
-> Before you render a SQL Server Reporting Services report with CRM data, make sure you start the Microsoft Dynamics CRM application to initialize data.
 
 ## About remote access
 
