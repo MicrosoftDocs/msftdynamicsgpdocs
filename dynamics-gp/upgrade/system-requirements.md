@@ -81,7 +81,7 @@ Review the following requirements:
 
     \*If you are using Dynamics GP Web Client only for your customers and vendors must be using HTML to view their documents.  
 
-For all email documentation on workflow, Modern Authentication and Exchange reiew the [Email Troubleshooting Guide](https://learn.microsoft.com/en-us/dynamics-gp/installation/email-troubleshooting-guide).
+For all email documentation on workflow, Modern Authentication and Exchange reiew the [Email Troubleshooting Guide](/dynamics-gp/installation/email-troubleshooting-guide).
 
 ## SQL Server Reporting Services requirements
 
