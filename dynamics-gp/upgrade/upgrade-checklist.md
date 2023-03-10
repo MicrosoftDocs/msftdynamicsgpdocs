@@ -29,8 +29,8 @@ Use this checklist as your guide to upgrading to Dynamics GP.
 | 1. Verify the security of your system.   | Download the [Security Planning](../installation/securityplanning.md) |
 | 2. Refer to these Web sites for new or updated information relating to the upgrade.  | [Core System Requirements for Microsoft Dynamics GP](../upgrade/system-requirements.md)  |
 | 3. Ensure that you have the latest version of the Upgrade Guide.   | [Microsoft Dynamics GP Resource Directory](../resources.md)   |
-| 4. Obtain your new registration keys for Dynamics GP.     | Contact your Dynamics GP partner or the [Business Center](businesscenter.mbs.microsoft.com)   |
-| 5. Verify [system requirements](https://learn.microsoft.com/en-us/dynamics/s-e/gp/mdgp2018_system_requirements) and expand your SQL database size, if necessary. | 
+| 4. Obtain your new registration keys for Dynamics GP.     | Contact your Dynamics GP partner or the [Business Center](https://businesscenter.mbs.microsoft.com)   |
+| 5. Verify [system requirements](/dynamics/s-e/gp/mdgp2018_system_requirements) and expand your SQL database size, if necessary. | 
 | 6. Identify all integrating products and customizations and ensure that they are compatible with Dynamics GP.     | Contact the provider of the integrating products and customizations.       |
 | 7. Complete pre-upgrade procedures in the release of Dynamics GP that you are currently using and review known issues. | [Microsoft Dynamics GP Resource Directory](../resources.md)      |
 | 8. Install Dynamics GP on the server and upgrade your accounting data.       | [Installing Dynamics GP (first computer)](installing-on-first-computer.md) |  
