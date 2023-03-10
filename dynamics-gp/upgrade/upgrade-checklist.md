@@ -26,7 +26,7 @@ Use this checklist as your guide to upgrading to Dynamics GP.
 
 | Step    | For more information  |
 |----------|--------------|
-| 1. Verify the security of your system.   | Download the [Security Planning](https://learn.microsoft.com/en-us/dynamics-gp/installation/securityplanning) |
+| 1. Verify the security of your system.   | Download the [Security Planning](../installation/securityplanning.md) |
 | 2. Refer to these Web sites for new or updated information relating to the upgrade.  | [Core System Requirements for Microsoft Dynamics GP](../upgrade/system-requirements.md)  |
 | 3. Ensure that you have the latest version of the Upgrade Guide.   | [Microsoft Dynamics GP Resource Directory](../resources.md)   |
 | 4. Obtain your new registration keys for Dynamics GP.     | Contact your Dynamics GP partner or the [Business Center](businesscenter.mbs.microsoft.com)   |
