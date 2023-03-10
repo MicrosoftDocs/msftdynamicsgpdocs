@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: jchrist
-ms.date: 10/18/2021
+ms.date: 3/1/2023
 ---
 
 # VAT in the UK Version of Microsoft Dynamics GP
@@ -40,6 +40,8 @@ HMRC maintains a list of VAT obligations for companies, which are the periods fo
 * Automatically enter start and end dates when you create VAT returns.  
 
 In order to use the Making Tax Digital service, you must connect to the service from the **VAT Return** window.
+(Tools -> Routines -> Company -> Vat Return)
+The window information  and verbiage will changed based on if you mark Use UK VAT Making Tax Digital in the above step. 
 
 ![VAT Return window 1](media/uk-tax-vat-return.png)
 

@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 10/30/2021
+ms.date: 3/1/2023
 
 ---
 # Inventory Control in Dynamics GP - Parts 4-6
@@ -3758,6 +3758,73 @@ A process used to move current year figures to last year, remove discontinued it
 
 In the United States, the postal code assigned to all addresses. In other countries or regions, it may be referred to as post code or postal code.
 
+
+
+## Inventory Troubleshooting
+
+### How to manually correct a failed In-transit document in GP
+
+If you are unable to complete an In-transit PO receipt, follow the steps below to manually correct it. This will give you the ability to move items that are stuck at your Via site to your final To site through a manual inventory transfer.
+
+Note: This will remove the in-transit document from GP, no further transactions can be entered against it. If you do not want to lose history for your in-transit document, do not follow these steps.
+
+Try these steps in a test system prior to running them in your live database. Before running any scripts, back-up of your database is recommended.
+
+1. Verify there is not a current unposted In-transit PO receipt.
+
+   Check the POP10300 to see if there is an unposted shipment receipt.
+
+   SELECT * from POP10300 where POPRCTNM in (SELECT POPRCTNM from POP10500 where PONUMBER = 'Enter your in-transit doc number')
+
+   - If there are no results from this script, go to the Clean Up section.
+   - If there is an unposted in-transit PO receipt, either delete it from within GP or post it.
+   - If you are using SQL to delete it, delete the records out of POP10500, POP10300, and POP10310.
+   - If you delete it, try to enter a new in-transit receipt.
+   - If you are unable to create a new POP in-transit receipt, go to the Clean Up section.
+
+2. Complete all items that you can complete in the In- transit document before going to the Clean Up Section.
+
+3. Clean Up Section
+
+   Steps to clean up the in-transit tables so that you can do a normal inventory transfer to transfer the items from the in-transit Via site to the To site.
+
+   1. Run the below scripts to ‘clean’ up the Inventory tables:
+
+      update IV10200 set RCPTSOLD='0', QTYRESERVED='0' where RCPTNMBR='Enter your intransit number'
+
+      update IV00300 set LTNUMSLD='0', ATYALLOC='0' from IV10200 b, IV00300 a where a. ITEMNMBR=b.ITEMNMBR and a. RCTSEQNM=b.RCTSEQNM and b. RCPTNMBR='Enter your intransit number'
+
+      update IV00200 set SERLNSLD ='0' from IV10200 b, IV00200 a where a. ITEMNMBR=b.ITEMNMBR and a. RCTSEQNM=b.RCTSEQNM and b. RCPTNMBR='Enter your intransit number'
+
+      Delete SVC00700 where ORDDOCID='enter your in-transit document number'
+
+      Delete SVC00701 where ORDDOCID='enter your in-transit document number'
+
+      Delete SVC00702 where ORDDOCID='enter your in-transit document number'
+
+   2. Run an Inventory Reconcile to update the allocated quantities. Do not skip this step.
+
+   3. You should now be able to transfer any quantities from the Via site to the To site that have not already been transferred. 
+
+      To determine the remaining quantity that can be transferred run the below script.
+
+      select ITEMNMBR, RCTSEQNM, QTYRECVD, QTYSOLD, qtyrecvd-qtysold as 'Remaining Quantity', QTYRESERVED from IV10200 where RCPTNMBR='enter your in-transit document number'
+
+      Remaining Lot quantities:
+
+      SELECT  a.ITEMNMBR , a.locncode as 'IV00300 VIA SITE', a.LOTNUMBR, a. QTYRECVD, a. QTYSOLD, a.QTYRECVD-a.qtysold as 'REMAINING', a. ATYALLOC, a.RCTSEQNM, a. LTNUMSLD from IV10200 b, IV00300 a where a. ITEMNMBR=b.ITEMNMBR and a. RCTSEQNM=b.RCTSEQNM and b. RCPTNMBR='enter your in-transit document number'
+
+      Remaining Serial numbers:
+
+      Remaining Serial quantities:
+
+      Select count (serlnmbr)  from IV10200 b, IV00200 a where a. ITEMNMBR=b.ITEMNMBR and a. RCTSEQNM=b.RCTSEQNM and b. RCPTNMBR='enter your in-transit document number'
+
+      The amount remaining in the IV10200 should match the amount remaining in the IV00200 if the item is a serial number or the IV00300 if the item is a lot tracked item.
+
+   4. You should now be able to create Inventory transfers (Transactions | Inventory | Transfer) to transfer the remaining quantities from the Via site to the To site.
+
 ## See also
 
 [Inventory Control in Dynamics GP - Parts 1-3](Inventory.md)  
+

@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 1/17/2023
+ms.date: 2/28/2023
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -17,12 +17,12 @@ This document is meant to walk through most of the errors you may run into when 
 
 The goal is to make everyone an emailing expert!  
 
-This document can be leveraged to aid in troubleshooting all areas of emailing out of Microsoft Dynamics GP from the legacy Standard Report Writer Statements to Word Templates, or Workflow.
+This document can be leveraged to aid in troubleshooting all areas of emailing out of Microsoft Dynamics GP from the legacy Standard Report Writer Statements to Word Templates, Workflow or Modern Authentication.
 
 > [!NOTE]
 > Before Microsoft Dynamics GP's October 2020 (18.3 and later) release, Dynamics GP required that both TLS 1.0 and Basic Authentication (no Modern Authentication) be enabled for Exchange and Workflow emailing in Dynamics GP.
 >
-> After Microsoft Dynamics GP's October 2020 (18.3 and later) release, Dynamics GP has added the functionality to use both  [TLS 1.2](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---tls-1-2) and/or [[Multi-Factor Authentication](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---multi-factor-authentication) (MFA).
+> After Microsoft Dynamics GP's October 2020 (18.3 or later) release, Dynamics GP has added the functionality to use both  [TLS 1.2](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---tls-1-2) and/or [[Multi-Factor Authentication](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---multi-factor-authentication) (MFA).
 > You do not actually need MFA turned on for your account to use the Modern Auth window in Microsoft Dynamics GP, but it does use Modern Authentication vs Basic Authentication.
 > 
 > If you are still on an older version of Microsoft Dynamics GP, you must enable TLS on your local Exchange server. For more information, see [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth).
@@ -381,9 +381,11 @@ If the default email sends out successfully, then we can deduce that the issue l
 * Missing Bookmarks [Verify all bookmarks are present](https://community.dynamics.com/gp/b/dynamicsgp/posts/what-are-bookmarks-and-how-are-they-used-in-microsoft-dynamics-gp-s-word-templates)
 * Text Boxes will cause the template to fail; text boxes should not be used as it can cause an error that is not seen within Microsoft Dynamics GP.
 * Remove Have Replies Sent to on both the Message ID and E-mail setup. The Message Setup window can be found using either path: 
+
 ### System wide 
 * Administration >> Setup >> Company >> E-mail Message Setup
 * Administration >> Setup >> Company >> Workflow >> E-mail Message Setup
+
 ### Module specific
 * Purchasing >> Setup >> E-mail Settings Purchasing >> Setup E-mail Settings
 * Sales >> Setup >> E-mail Settings >> Setup E-mail Settings
@@ -408,6 +410,10 @@ Test a default report in GP, we recommend the User Report:
 10.	Click OK
 11.	Bring up the TEST report and click Email
 
+> [!NOTE]
+> **Items to Rule out and test with EFT Check Remittance**
+> 
+>There are several items to check when EFT Check Remittance does not email.  In each of these cases the cause could be different.  Please review the [complete list of why the EFT Check Remittance emails are not sending out](https://community.dynamics.com/gp/b/dynamicsgp/posts/eft-check-remittances-are-not-e-mailing-1316703384).
       
 ### Send Documents in email check box is grayed out when trying to send a Remittance
 
@@ -764,6 +770,10 @@ To use modern authentication with Dynamics GP, the Application (Client ID) is re
 By turning modern authentication on in Dynamics GP (Application Client ID populated), you are then telling the system to use Modern Authentication vs Basic Authentication (depreciated as of October 2022). If you recently upgraded and set up modern authentication, we recommend to be on the latest version if you can of Dynamics GP to encompass all the fixes released around modern authentication.
 
 Modern Authentication is only supported with Exchange.
+
+> [!NOTE]
+> **If you recently upgraded to 18.5 and had Modern Authentication working in a prior release, but now emails are not sending**
+> With the 18.5 upgrade we are seeing where emails are no longer sending with Modern Authentication enabled.  The finding is your [Azure AD needs to be upgraded](https://community.dynamics.com/gp/b/dynamicsgp/posts/modern-authentication-and-upgrading-to-microsoft-dynamics-gp-18-5)
  
 When you have modern authentication enabled and you try to use the "SEND TO" option in Microsoft Dynamics GP, it will still prompt for the Exchange login.  Modern authentication is not enabled off the "SEND TO" button/option.  An alternative workaround to this is use the Report Option Windows as modern authentication is enabled there.  For example if you are printing a Trial Balance,  go to Reports | Financial Trial Balance and create a report option from this window for the report to email and modern authentication is enabled in all Report Option windows. Many customers use this for posting reports too so it will be a process change to use the Report Options window where modern authentication is now enabled VS the "SEND TO" option.
 
