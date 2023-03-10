@@ -21,13 +21,13 @@ This chapter contains a list of prerequisites and system requirement changes for
 
 ## Releases supported by the upgrade
 
-You can upgrade to Dynamics GP from selected previous releases. To review whether or not you can upgrade your release, see [Upgrade Hot Topic]([/dynamics/s-e/](https://learn.microsoft.com/en-us/dynamics/s-e/gp/hot_topic_mdgpupgrade_415)).
+You can upgrade to Dynamics GP from selected previous releases. To review whether or not you can upgrade your release, see [Upgrade Hot Topic](/dynamics/s-e/gp/hot_topic_mdgpupgrade_415).
 
 If you are upgrading to Dynamics GP, you must install the latest update or hotfix for Dynamics GP before starting Dynamics GP Utilities. See the [Microsoft Dynamics GP Resource Directory](../resources.md) article for the latest update information.
 
 ## System requirement changes
 
-[System Requirements for Microsoft Dynamics GP](https://learn.microsoft.com/en-us/dynamics/s-e/gp/mdgp2018_system_requirements).
+[System Requirements for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_system_requirements).
 
 ## Home page prerequisites
 
