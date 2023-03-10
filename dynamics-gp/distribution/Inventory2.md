@@ -3758,14 +3758,11 @@ A process used to move current year figures to last year, remove discontinued it
 
 In the United States, the postal code assigned to all addresses. In other countries or regions, it may be referred to as post code or postal code.
 
-## See also
-
-[Inventory Control in Dynamics GP - Parts 1-3](Inventory.md)  
 
 
-# Inventory Troubleshooting
+## Inventory Troubleshooting
 
-## How to manually correct a failed In-transit document in GP
+### How to manually correct a failed In-transit document in GP
 
 If you are unable to complete an In-transit PO receipt, follow the steps below to manually correct it. This will give you the ability to move items that are stuck at your Via site to your final To site through a manual inventory transfer.
 
@@ -3821,3 +3818,8 @@ Select count (serlnmbr)  from IV10200 b, IV00200 a where a. ITEMNMBR=b.ITEMNMBR 
 The amount remaining in the IV10200 should match the amount remaining in the IV00200 if the item is a serial number or the IV00300 if the item is a lot tracked item.
 
 d.	You should now be able to create Inventory transfers (Transactions | Inventory | Transfer) to transfer the remaining quantities from the Via site to the To site.
+
+## See also
+
+[Inventory Control in Dynamics GP - Parts 1-3](Inventory.md)  
+
