@@ -54,6 +54,30 @@ Withholding rates for taxpayers for all filing status are as follows:
 | 500,000     | 1,000,000        | 42,775         | 9.75%    | 500,000            |
 | 1,000,000   | and over         | 91,525         | 10.75%   | 1,000,000          |
 
+#### Withholding changes for West Virginia
+
+The Personal Exemption amount is $2,000 For all filing status.
+
+Withholding rates for taxpayers filing as PM (Percentage Method) are as follows:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|------------------|----------------|----------|--------------------|
+| 0           | 10,000           | 0              | 2.36%    | 0                  |
+| 10,000      | 25,000           | 236.00         | 3.15%    | 10,000             |
+| 25,000      | 40,000           | 708.50         | 3.54%    | 25,000             |
+| 40,000      | 60,000           | 1,239.50       | 4.72%    | 40,000             |
+| 60,000      | and over         | 2,183.50       | 5.12%    | 60,000             |
+
+Withholding rates for taxpayers filing as TE (Two Earner Option) are as follows:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|------------------|----------------|----------|--------------------|
+| 0           | 7,500            | 0              | 2.36%    | 0                  |
+| 7,500       | 18,750           | 177.00         | 3.15%    | 7,500              |
+| 18,750      | 30,000           | 531.38         | 3.54%    | 18,700             |
+| 30,000      | 45,000           | 929.63         | 4.72%    | 30,000             |
+| 45,000      | and over         | 1,637.63       | 5.12%    | 45,000             |
+
 
 ## Changes in January Round 2 update (Released: 1/24/2023)
 
@@ -954,7 +978,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *1/24/2023*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *3/31/2023*.
 
 ## What's next
 
