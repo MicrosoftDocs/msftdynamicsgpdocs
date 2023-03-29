@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 2/28/2023
+ms.date: 3/29/2023
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -266,8 +266,10 @@ This issue can occur with all reports, and these can be caused by MessageID issu
 >  6. Antivirus/Malware could also cause the problem to not authenticate, try to rule it out as the cause of the problem.
 >  
 >  7. Dynamics GP support [Multi-tenant authentication](/dynamics-gp/whats-new/multi-factor-authentication) in the Azure App Registration. (not Single). If you set this up incorrectly, you'll see the message *Unknown Error*.
+>   
+>  8. If the Application ID is not saving or issues, test by launching GP as Administrator, Right click your GP Icon and choose Run as Administrator.
 >  
->  8. Rule out [3rd party authentication providers](/dynamics-gp/installation/email-troubleshooting-guide#dynamics-gp-modern-authentication-and-third-party-authentication)
+>  9. Rule out [3rd party authentication providers](/dynamics-gp/installation/email-troubleshooting-guide#dynamics-gp-modern-authentication-and-third-party-authentication)
 
 * If you still have issues, you may want to create a Fiddler trace that will be more specific of the problem.
 
