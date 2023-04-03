@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/30/2023
+ms.date: 3/27/2023
 ---
 # U.S. 2023 Payroll Tax Update
 
@@ -17,7 +17,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2023 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the second tax update for 2023 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2023. We recommend that you install this update as soon as you can for the year 2023.
+This is the third tax update for 2023 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2023. We recommend that you install this update as soon as you can for the year 2023.
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -28,6 +28,56 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly)
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/gp/b/dynamicsgp/posts/tips-to-install-the-u-s-payroll-tax-update)
+
+
+## Changes in April Round 3 update (Target Release 4/7/2023)
+
+### 2023 state or territorial tax changes
+The following tax changes are included in this update:
+
+- District of Columbia
+- West Virginia
+
+#### Withholding changes for District of Columbia
+
+The Personal Exemption amount is $4,300 For all filing status.
+
+Withholding rates for taxpayers for all filing status are as follows:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|------------------|----------------|----------|--------------------|
+| 0           | 10,000           | 0              | 4%       | 0                  |
+| 10,000      | 40,000           | 400            | 6%       | 10,000             |
+| 40,000      | 60,000           | 2,200          | 6.5%     | 40,000             |
+| 60,000      | 250,000          | 3,500          | 8.5%     | 60,000             |
+| 250,000     | 500,000          | 19,650         | 9.25%    | 250,000            |
+| 500,000     | 1,000,000        | 42,775         | 9.75%    | 500,000            |
+| 1,000,000   | and over         | 91,525         | 10.75%   | 1,000,000          |
+
+#### Withholding changes for West Virginia
+
+The Personal Exemption amount is $2,000 For all filing status.
+
+Withholding rates for taxpayers filing as PM (Percentage Method) are as follows:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|------------------|----------------|----------|--------------------|
+| 0           | 10,000           | 0              | 2.36%    | 0                  |
+| 10,000      | 25,000           | 236.00         | 3.15%    | 10,000             |
+| 25,000      | 40,000           | 708.50         | 3.54%    | 25,000             |
+| 40,000      | 60,000           | 1,239.50       | 4.72%    | 40,000             |
+| 60,000      | and over         | 2,183.50       | 5.12%    | 60,000             |
+
+Withholding rates for taxpayers filing as TE (Two Earner Option) are as follows:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|------------------|----------------|----------|--------------------|
+| 0           | 7,500            | 0              | 2.36%    | 0                  |
+| 7,500       | 18,750           | 177.00         | 3.15%    | 7,500              |
+| 18,750      | 30,000           | 531.38         | 3.54%    | 18,700             |
+| 30,000      | 45,000           | 929.63         | 4.72%    | 30,000             |
+| 45,000      | and over         | 1,637.63       | 5.12%    | 45,000             |
+
 
 ## Changes in January Round 2 update (Released: 1/24/2023)
 
@@ -928,7 +978,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *1/24/2023*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *3/31/2023*.
 
 ## What's next
 
