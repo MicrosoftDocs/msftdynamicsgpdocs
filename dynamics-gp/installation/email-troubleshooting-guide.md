@@ -267,7 +267,7 @@ This issue can occur with all reports, and these can be caused by MessageID issu
 >  
 >  7. Dynamics GP support [Multi-tenant authentication](/dynamics-gp/whats-new/multi-factor-authentication) in the Azure App Registration. (not Single). If you set this up incorrectly, you'll see the message *Unknown Error*.
 >   
->  8. If the Application ID is not saving or issues, test by launching GP as Administrator, Right click your GP Icon and choose Run as Administrator.
+>  8. If the Application ID is not saving or has issues, test by launching GP as Administrator, right-click your GP icon and choose Run as Administrator.
 >  
 >  9. Rule out [3rd party authentication providers](/dynamics-gp/installation/email-troubleshooting-guide#dynamics-gp-modern-authentication-and-third-party-authentication)
 
