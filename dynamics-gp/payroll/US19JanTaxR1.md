@@ -30,7 +30,7 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/gp/b/dynamicsgp/posts/tips-to-install-the-u-s-payroll-tax-update)
 
 
-## Changes in April Round 3 update (Target Release 4/7/2023)
+## Changes in April Round 3 update (Released: 4/5/2023)
 
 ### 2023 state or territorial tax changes
 The following tax changes are included in this update:
