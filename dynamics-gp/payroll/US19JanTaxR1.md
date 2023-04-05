@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 3/27/2023
+ms.date: 4/5/2023
 ---
 # U.S. 2023 Payroll Tax Update
 
@@ -36,6 +36,8 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 The following tax changes are included in this update:
 
 - District of Columbia
+- Michigan
+- Utah
 - West Virginia
 
 #### Withholding changes for District of Columbia
@@ -53,6 +55,15 @@ Withholding rates for taxpayers for all filing status are as follows:
 | 250,000     | 500,000          | 19,650         | 9.25%    | 250,000            |
 | 500,000     | 1,000,000        | 42,775         | 9.75%    | 500,000            |
 | 1,000,000   | and over         | 91,525         | 10.75%   | 1,000,000          |
+
+#### Withholding changes for Michigan
+
+All filing status have the same fixed flat tax of 4.05%.
+Personal Exemption amount is $5,400.00
+
+#### Withholding changes for Utah
+
+All filing status have the same fixed flat tax of 4.65%.
 
 #### Withholding changes for West Virginia
 
