@@ -93,6 +93,7 @@ Withholding rates for taxpayers filing as TE (Two Earner Option) are as follows:
 ## Changes in January Round 2 update (Released: 1/24/2023)
 
 ### 2023 state or territorial tax changes
+
 The following tax changes are included in this update:
 
 - Colorado
