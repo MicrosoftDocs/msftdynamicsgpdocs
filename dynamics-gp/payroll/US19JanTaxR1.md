@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 3/27/2023
+ms.date: 4/5/2023
 ---
 # U.S. 2023 Payroll Tax Update
 
@@ -30,12 +30,14 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/gp/b/dynamicsgp/posts/tips-to-install-the-u-s-payroll-tax-update)
 
 
-## Changes in April Round 3 update (Target Release 4/7/2023)
+## Changes in April Round 3 update (Released: 4/5/2023)
 
 ### 2023 state or territorial tax changes
 The following tax changes are included in this update:
 
 - District of Columbia
+- Michigan
+- Utah
 - West Virginia
 
 #### Withholding changes for District of Columbia
@@ -53,6 +55,15 @@ Withholding rates for taxpayers for all filing status are as follows:
 | 250,000     | 500,000          | 19,650         | 9.25%    | 250,000            |
 | 500,000     | 1,000,000        | 42,775         | 9.75%    | 500,000            |
 | 1,000,000   | and over         | 91,525         | 10.75%   | 1,000,000          |
+
+#### Withholding changes for Michigan
+
+All filing status have the same fixed flat tax of 4.05%.
+Personal Exemption amount is $5,400.00
+
+#### Withholding changes for Utah
+
+All filing status have the same fixed flat tax of 4.65%.
 
 #### Withholding changes for West Virginia
 
@@ -978,7 +989,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *3/31/2023*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *4/9/2023*.
 
 ## What's next
 
