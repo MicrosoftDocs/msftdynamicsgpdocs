@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 3/29/2023
+ms.date: 4/25/2023
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -749,6 +749,8 @@ c. The SY04920 table is not used for workflow emails or Modern Auth once setup a
 From there on out, when a user approves through the workflow email links, to approve what was submitted, that will use [SMTP](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-workflow-intermittent-emails-failing) for all other approvals from Web Services workflow emails.
 If an email is failing from the email links this could indicate a problem with web services.
 Test approving the email from within Dynamics GP, then we know workflow and emails are working, just not the web services links.
+
+4. [What is the email flow of workflow and what user is the email coming from?](https://community.dynamics.com/gp/b/dynamicsgp/posts/how-does-gp-behave-when-modern-authentication-is-enabled)
 
 [How to verify if Microsoft Dynamics GP Web Services is functioning correctly](/troubleshoot/dynamics/gp/verify-if-web-service-is-correct)
 
