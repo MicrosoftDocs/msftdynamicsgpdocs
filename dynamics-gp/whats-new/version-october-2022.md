@@ -183,6 +183,6 @@ Now, when the Workflow task is approved from an e-mail and it completes the Work
 
 We have enabled multifactor authentication (MFA) in Dynamics GP Web Client. Included with this is the capability of using the reply to e-mail address when MFA is set up.
 [Detailed setup for MFA in Web Client](https://community.dynamics.com/gp/b/dynamicsgp/posts/modern-authentication-in-web-client)
-[Email Troublesheeting Guide](https://learn.microsoft.com/en-us/dynamics-gp/installation/email-troubleshooting-guide#mfa---multi-factor-authentication-modern-authentication)
+[Email Troublesheeting Guide](../installation/email-troubleshooting-guide.md#mfa---multi-factor-authentication-modern-authentication)
 
 
