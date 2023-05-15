@@ -795,11 +795,12 @@ Modern Authentication is only supported with Exchange.
 When you have modern authentication enabled and you try to use the **"SEND TO"** option in Microsoft Dynamics GP, it will still prompt for the Exchange login.  Modern authentication is not enabled off the "SEND TO" button/option.  An alternative workaround to this is use the Report Option Windows as modern authentication is enabled there.  For example if you are printing a Trial Balance,  go to Reports | Financial Trial Balance and create a report option from this window for the report to email and modern authentication is enabled in all Report Option windows. Many customers use this for posting reports too so it will be a process change to use the Report Options window where modern authentication is now enabled VS the "SEND TO" option.
 
 > [!NOTE]
->**The "To" button in the E-mail Addresses section of the Internet Information window changed fuctionality**. 
->Typically, this window will open up a list of e-mail contacts.  When you have MFA (Modern Auth) enabled and you are on 18.4.1461 or later, the "Workflow User Selection" window will appear instead.
->This is due to how MFA works and MSGraph does not have methods for interacting with the address book.  
->The workaround/solution is to just type in the email in the box.
+> **The "To" button in the E-mail Addresses section of the Internet Information window changed fuctionality**. 
+> 
+> Typically, this window will open up a list of e-mail contacts. When you have MFA (Modern Auth) enabled and you are on 18.4.1461 or later, the "Workflow User Selection" window will appear instead.
+> This is due to how MFA works and MSGraph does not have methods for interacting with the address book.  
 >
+> The workaround/solution is to just type in the email in the box.
 
 ### Dynamics GP, Modern Authentication and Third Party Authentication
 
