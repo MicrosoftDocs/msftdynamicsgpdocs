@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: edupont
 ms.author: theley
-ms.date: 4/25/2023
+ms.date: 5/1/2023
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -778,8 +778,21 @@ Modern Authentication is only supported with Exchange.
 > [!NOTE]
 > **If you recently upgraded to 18.5 and had Modern Authentication working in a prior release, but now emails are not sending**
 > With the 18.5 upgrade we are seeing where emails are no longer sending with Modern Authentication enabled.  The finding is your [Azure AD needs to be upgraded](https://community.dynamics.com/gp/b/dynamicsgp/posts/modern-authentication-and-upgrading-to-microsoft-dynamics-gp-18-5)
- 
-When you have modern authentication enabled and you try to use the "SEND TO" option in Microsoft Dynamics GP, it will still prompt for the Exchange login.  Modern authentication is not enabled off the "SEND TO" button/option.  An alternative workaround to this is use the Report Option Windows as modern authentication is enabled there.  For example if you are printing a Trial Balance,  go to Reports | Financial Trial Balance and create a report option from this window for the report to email and modern authentication is enabled in all Report Option windows. Many customers use this for posting reports too so it will be a process change to use the Report Options window where modern authentication is now enabled VS the "SEND TO" option.
+
+
+> [!NOTE]
+> **Modern Auth and Web Client**
+> You may find you need to change what account that is emailing from Web Client or Web Client emails have stopped working.  Follow these steps to "reset" your Web Client Modern Auth (MFA):
+> 1. Log into the Dynamics GP desktop client on the Web Client server.
+> 2. Navigate to the Company Email Setup window and note what you have entered for both the Desktop and Web Client Properties
+> 3. Clear out those 4 fields, then close that window and log out of GP
+> 4. Sign back in to the desktop client on the web client server. You should right click and launch GP as Admin when we do this. Go back to the Company Email Setup window and enter the Application (Client) ID for the Desktop Properties section only.
+> 5. Select OK on that window to get the sign in prompt. Sign in to save the setting.
+> 6. Now sign in to the Web Client, go to Company Email Setup and enter the 3 Web Client Properties fields. 
+> 7. Select OK to get the sign-in prompt. Sign in as the user you want to send all email from the Web Client going forward.
+> 8. If that sign-in passes, test emailing out of the Web Client.
+
+When you have modern authentication enabled and you try to use the **"SEND TO"** option in Microsoft Dynamics GP, it will still prompt for the Exchange login.  Modern authentication is not enabled off the "SEND TO" button/option.  An alternative workaround to this is use the Report Option Windows as modern authentication is enabled there.  For example if you are printing a Trial Balance,  go to Reports | Financial Trial Balance and create a report option from this window for the report to email and modern authentication is enabled in all Report Option windows. Many customers use this for posting reports too so it will be a process change to use the Report Options window where modern authentication is now enabled VS the "SEND TO" option.
 
 ### Dynamics GP, Modern Authentication and Third Party Authentication
 
