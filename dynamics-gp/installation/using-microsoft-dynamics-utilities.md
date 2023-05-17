@@ -2,14 +2,14 @@
 title: "Utilities for Dynamics GP"
 description: "Set up the synchronization with the Dynamics GP data, create companies, and apply default settings using the Dynamics GP Utilities."
 keywords: ""
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/07/2018
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 # Using Microsoft Dynamics Utilities
 

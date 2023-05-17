@@ -2,14 +2,14 @@
 title: "What's new in Dynamics GP 2018 R2"
 description: "Learn about enhancements that were added to the product since the release of Dynamics GP. "
 keywords: ""
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 10/12/2018
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 
 # What’s New in Dynamics GP 2018 R2

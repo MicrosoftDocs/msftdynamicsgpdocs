@@ -3,10 +3,10 @@ title: "Invoicing in Dynamics GP - Part 4"
 description: "Learn how the Invoicing module works in Microsoft Dynamics GP with part four of this walkthrough, which covers inquiries, reports, and utilities."
 keywords: "invoicing"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 07/13/2020
 ---

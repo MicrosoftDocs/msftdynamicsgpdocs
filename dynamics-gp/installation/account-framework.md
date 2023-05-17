@@ -2,15 +2,15 @@
 title: "Requirements for accounts"
 description: "Set up maximum values for the accounts in your Dynamics GP application."
 keywords: ""
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 01/26/2022
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: d8f8ba40-5a92-47ee-9e2d-4a052c3d7acf
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 # Account framework
 

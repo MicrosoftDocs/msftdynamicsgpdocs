@@ -3,11 +3,11 @@ title: "Fixed Asset Management in Dynamics GP"
 description: "Fixed Asset Management in Dynamics GP"
 keywords: "financials"
 author: tnistler
-manager: edupont
+manager: jswymer
 
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 06/16/2020
 

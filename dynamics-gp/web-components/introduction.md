@@ -2,8 +2,8 @@
 title: "Web components overview"
 description: "Landing page for content about Dynamics GP web components."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 10/14/2019

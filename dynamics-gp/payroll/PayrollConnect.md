@@ -3,11 +3,11 @@ title: "Payroll Connect for Dynamics GP"
 description: "Payroll Connect for Dynamics GP"
 keywords: "payroll"
 author: tnistler
-manager: edupont
+manager: jswymer
 
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 01/07/2019
 

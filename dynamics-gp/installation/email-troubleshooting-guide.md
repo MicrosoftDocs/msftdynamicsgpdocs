@@ -3,10 +3,10 @@ title: Dynamics GP Email Troubleshooting Guide
 description: Get tips and tricks about some of the errors you may run into when emailing out of Microsoft Dynamics GP.
 keywords: "email"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 5/4/2023
 ---

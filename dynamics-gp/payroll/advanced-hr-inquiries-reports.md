@@ -3,10 +3,10 @@ title: "Advanced Human Resources Inquiries and Reports"
 description: "Examine the inquiries and reports in the advanced human resources functionality for Dynamics GP."
 keywords: "HR"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 04/23/2019
 ---

@@ -3,10 +3,10 @@ title: "Multicurrency Management"
 description: "Examine how multicurrency works in Dynamics GP."
 keywords: "Multicurrency Management"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 04/23/2019
 ---

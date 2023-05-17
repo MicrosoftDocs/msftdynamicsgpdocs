@@ -2,15 +2,15 @@
 title: "Creating an installation package"
 description: "Prepare the Dynamics GP installation by building an installation package."
 keywords: "install"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 08/23/2018
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 410091e2-9125-45b8-b1fc-69577eab61d9
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 
 # Creating an installation package

@@ -3,10 +3,10 @@ title: "Manufacturing Setup Part 2"
 description: "Examine how to get users set up for the Manufacturing module in Dynamics GP."
 keywords: "manufaturing"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 03/03/2021
 ---

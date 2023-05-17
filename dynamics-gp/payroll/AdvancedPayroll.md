@@ -3,10 +3,10 @@ title: "Advanced Payroll"
 description: "Examine how advanced payroll works in Dynamics GP."
 keywords: "payroll"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 03/01/2019
 ---

@@ -2,8 +2,8 @@
 title: "Back office server"
 description: "Learn about the steps for making your Dynamics GP web deployment more secure."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018

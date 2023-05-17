@@ -2,8 +2,8 @@
 title: "Working with the Dynamics GP web client"
 description: "Get tips and tricks for finding your way around the Dynamics GP Home page in the web client."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018

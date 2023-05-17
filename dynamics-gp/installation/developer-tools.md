@@ -3,10 +3,10 @@ title: "Developer Tools"
 description: "Information around eConnect, Integration Manager and Web Services in Microsoft Dynamics GP."
 keywords: "import"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 3/30/2023
 ---

@@ -3,10 +3,10 @@ title: "Paid Time Off Manager in Dynamics GP"
 description: "Examine how Paid Time Off Manager works with Microsoft Dynamics GP Payroll."
 keywords: "payroll"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 12/27/2021
 ---

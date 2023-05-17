@@ -2,9 +2,9 @@
 title: "Additional features and components upgrade"
 description: "Learn about upgrading additional features or components that you may have purchased to bring specialized functionality to your Dynamics GP."
 keywords: "upgrade"
-author: edupont04
-ms.author: edupont
-manager: edupont
+author: jswymer
+ms.author: jswymer
+manager: jswymer
 applies_to: 
 ms.date: 08/24/2018
 ms.prod: dynamics-gp

@@ -2,8 +2,8 @@
 title: "Web client runtime"
 description: "Learn how all of the components of the Dynamics GP web client installation work together as a user logs in, performs standard operations, and logs out of the web client."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018

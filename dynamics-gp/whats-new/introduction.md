@@ -2,11 +2,11 @@
 title: "Overview to the what's new section"
 description: "Learn about updates and enhancements in Dynamics GP across releases from GP 2015 and forward."
 keywords: ""
-author: edupont04
+author: jswymer
 
-ms.author: edupont
+ms.author: jswymer
 manager: annbe
-ms.reviewer: edupont
+ms.reviewer: jswymer
 applies_to:
 ms.prod: dynamics-gp
 ms.topic: article

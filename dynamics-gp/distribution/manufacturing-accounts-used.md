@@ -3,10 +3,10 @@ title: "Accounts used in Manufacturing"
 description: "Get an overview of the accounts that are used in the Manufacturing module in Dynamics GP."
 keywords: "manufaturing"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 06/19/2020
 ---

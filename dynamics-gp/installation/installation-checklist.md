@@ -2,15 +2,15 @@
 title: "Checklist for installation process"
 description: "Quick run-through of the installation process."
 keywords: "install"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 08/23/2018
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 46580577-d8e4-4b25-ab9f-8538bcbb84f7
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 # Installation checklist
 

@@ -6,7 +6,7 @@ author: theley502
 
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: nihell
 ms.date: 05/05/2022
 

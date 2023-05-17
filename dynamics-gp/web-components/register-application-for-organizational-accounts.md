@@ -2,8 +2,8 @@
 title: "Access for organizational accounts"
 description: "Learn how to give access to Dynamics GP for organizational accounts by adding the applicaiton to their Azure Active Directory."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018

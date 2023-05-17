@@ -2,9 +2,9 @@
 title: "Upgrade from Dynamcis GP 2013"
 description: "See the module upgrade information to verify the upgrade from Dynamics GP Release 2013."
 keywords: "upgrade"
-author: edupont04
-ms.author: edupont
-manager: edupont
+author: jswymer
+ms.author: jswymer
+manager: jswymer
 applies_to: 
 ms.date: 08/24/2018
 ms.prod: dynamics-gp

@@ -3,10 +3,10 @@ title: "Project accounting cost management"
 description: "Examine how project accounting cost management works in Dynamics GP."
 keywords: "payroll"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 03/04/2021
 ---

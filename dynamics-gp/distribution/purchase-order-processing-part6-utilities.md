@@ -3,11 +3,11 @@ title: "Purchase Order Processing part 6"
 description: "Learn about Purchasing for Dynamics GP, more specifically the utilities available."
 keywords: "purchase order"
 author: tnistler
-manager: edupont
+manager: jswymer
 
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 01/23/2019
 

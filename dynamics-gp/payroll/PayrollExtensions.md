@@ -3,10 +3,10 @@ title: "Payroll extensions in Dynamics GP"
 description: "Examine how the Payroll module in Microsoft Dynamics GP is extended with integration to payables."
 keywords: "payroll"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 05/17/2021
 ---

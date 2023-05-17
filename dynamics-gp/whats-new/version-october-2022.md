@@ -4,7 +4,7 @@ description: "Learn about enhancements that were added to the product in the Oct
 author: theley502
 
 ms.author: theley
-ms.reviewer: edupont
+ms.reviewer: jswymer
 manager: tfehr
 ms.prod: dynamics-gp
 ms.topic: article

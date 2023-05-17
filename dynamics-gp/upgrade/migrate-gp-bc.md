@@ -1,10 +1,10 @@
 ---
 title: Compare Work in Dynamics GP to Business Central
 description: Get tips and links to videos to compare how you do things in Dynamics GP to how things work in Dynamics 365 Business Central.
-author: edupont04
+author: jswymer
 
-ms.author: edupont
-ms.reviewer: edupont
+ms.author: jswymer
+ms.reviewer: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
 ms.date: 04/01/2022
