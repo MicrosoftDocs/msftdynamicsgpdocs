@@ -3,11 +3,11 @@ title: "Canadian Payroll Year-end Update & Tax Update"
 description: "Learn about the Canadian payroll year-end updates & tax updates. The article is updated every year when new requirements are published."
 keywords: "year-end"
 author: theley502
-manager: edupont
+manager: jswymer
 
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 1/3/2023
 ---

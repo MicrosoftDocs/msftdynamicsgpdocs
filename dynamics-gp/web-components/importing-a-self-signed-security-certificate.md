@@ -2,8 +2,8 @@
 title: "Importing certificates"
 description: "Learn how you can import a self-signed security certificate for Dynamics GP for test reasons."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 11/11/2019

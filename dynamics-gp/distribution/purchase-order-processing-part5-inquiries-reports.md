@@ -3,11 +3,11 @@ title: "Purchase Order Processing Part 5"
 description: "Learn about Purchasing for Dynamics GP, more specifically inquiries and reports."
 keywords: "purchase order"
 author: tnistler
-manager: edupont
+manager: jswymer
 
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 01/23/2019
 

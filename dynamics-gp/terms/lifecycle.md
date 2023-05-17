@@ -1,12 +1,12 @@
 ---
 title: Understand the Lifecycle Policies
 description: "Learn about the lifecycle and product life of Microsoft Dynamics GP."
-author: edupont04
+author: jswymer
 ms.custom: na
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.topic: article
 ms.prod: dynamics-gp
-ms.author: edupont
+ms.author: jswymer
 ms.date: 10/13/2022
 
 ---

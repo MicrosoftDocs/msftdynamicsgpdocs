@@ -3,10 +3,10 @@ title: "Workflow Administrator's Guide"
 description: "Learn about setting up workflows in Microsoft Dynamics GP."
 keywords: "payroll"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 08/30/2022
 ---

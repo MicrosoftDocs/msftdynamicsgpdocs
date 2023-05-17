@@ -1,10 +1,10 @@
 ---
 title: "What's new in Dynamics GP in October 2020"
 description: "Learn about enhancements that were added to the product in this release of Dynamics GP."
-author: edupont04
+author: jswymer
 
-ms.author: edupont
-ms.reviewer: edupont
+ms.author: jswymer
+ms.reviewer: jswymer
 manager: annbe
 ms.prod: dynamics-gp
 ms.topic: article

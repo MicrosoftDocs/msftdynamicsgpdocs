@@ -2,9 +2,9 @@
 title: "System preparation"
 description: "Prepare your system, including client computers before you upgrade to the latest version of Dynamics GP."
 keywords: "upgrade"
-author: edupont04
-ms.author: edupont
-manager: edupont
+author: jswymer
+ms.author: jswymer
+manager: jswymer
 applies_to: 
 ms.date: 08/24/2018
 ms.prod: dynamics-gp

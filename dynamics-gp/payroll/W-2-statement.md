@@ -3,10 +3,10 @@ title: "W-2 Wage and tax statement data source guide"
 description: "W-2 Wage and tax statement data source guide."
 keywords: "year-end"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 11/30/2022
 ---

@@ -5,7 +5,7 @@ keywords: "receivables"
 author: theley502
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 07/04/2019
 ---

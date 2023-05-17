@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: dynamics-gp
 author: theley502
 ms.author: theley
-manager: edupont
+manager: jswymer
 ---
 
 # Automate Financial Full Reconcile

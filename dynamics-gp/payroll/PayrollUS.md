@@ -3,10 +3,10 @@ title: "Dynamics GP U.S. Payroll"
 description: "Examine how Microsoft Dynamics GP Payroll works in the US."
 keywords: "payroll"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 7/18/2022
 ---

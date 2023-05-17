@@ -2,8 +2,8 @@
 title: "Glossary of terms"
 description: "See a list of special terms used in the Dynamics GP content for web deployment."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018

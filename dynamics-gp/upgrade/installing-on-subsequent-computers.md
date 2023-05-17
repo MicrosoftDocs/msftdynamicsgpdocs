@@ -2,9 +2,9 @@
 title: "CInstall the Dynamics GP client on subsequent computers"
 description: "Get the Dynamics GP client on each user's computer and synchronize data with the server."
 keywords: "upgrade"
-author: edupont04
-ms.author: edupont
-manager: edupont
+author: jswymer
+ms.author: jswymer
+manager: jswymer
 applies_to: 
 ms.date: 08/24/2018
 ms.prod: dynamics-gp

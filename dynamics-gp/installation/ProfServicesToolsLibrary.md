@@ -3,10 +3,10 @@ title: "Professional Services Tools Library"
 description: "Examine how the Professional Services Tools Library works for Microsoft Dynamics GP."
 keywords: "payroll"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 5/27/2021
 ---

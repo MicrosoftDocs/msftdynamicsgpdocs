@@ -5,7 +5,7 @@ keywords: "GL"
 author: tnistler
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 12/20/2022
 

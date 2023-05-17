@@ -2,8 +2,8 @@
 title: "Security certificates"
 description: "Learn about the security certificates that you use for your Dynamics GP web components deployment."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018

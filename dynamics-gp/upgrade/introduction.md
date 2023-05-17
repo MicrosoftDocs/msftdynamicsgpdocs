@@ -2,9 +2,9 @@
 title: "Introduction"
 description: "Get started with upgrading to the latest version of Dynamics GP."
 keywords: "upgrade"
-author: edupont04
-ms.author: edupont
-manager: edupont
+author: jswymer
+ms.author: jswymer
+manager: jswymer
 applies_to: 
 ms.date: 03/20/2019
 ms.prod: dynamics-gp

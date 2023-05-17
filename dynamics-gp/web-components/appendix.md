@@ -2,15 +2,15 @@
 title: "Appendix"
 description: "Get additional information about deploying Dynamics GP web components."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 
 ms.date: 09/05/2018
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: da026061-69b2-4ac0-9c24-af40c0aa141f
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 
 # Appendix

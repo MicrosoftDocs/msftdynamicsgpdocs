@@ -3,10 +3,10 @@ title: "Analytical Accounting in Microsoft Dynamics GP"
 description: "Examine how analytical accounting works in Dynamics GP."
 keywords: "payroll"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 05/14/2019
 ---

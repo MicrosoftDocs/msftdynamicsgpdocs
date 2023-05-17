@@ -3,10 +3,10 @@ title: "Glossary of  Manufacturing Terms"
 description: "Get an overview of terms used in the Manufacturing module in Dynamics GP."
 keywords: "manufaturing"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 06/18/2020
 ---

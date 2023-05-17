@@ -3,11 +3,11 @@ title: "Inventory Control - Parts 1-3"
 description: "Learn about Inventory for Dynamics GP, more specifically setup, cards, and transactions."
 keywords: "items"
 author: tnistler
-manager: edupont
+manager: jswymer
 
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 02/10/2019
 

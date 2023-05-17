@@ -3,10 +3,10 @@ title: "Transactions"
 description: Part 2 of analytical accounting in Dynamics GP with content on how to enter information for different types of transactions."
 keywords: "accounting"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 07/05/2019
 ---

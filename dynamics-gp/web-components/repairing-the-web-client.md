@@ -2,8 +2,8 @@
 title: "Repearing the Dynamics GP web components"
 description: "Learn how you can repair a deployment of the Dynamics GP web components."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018

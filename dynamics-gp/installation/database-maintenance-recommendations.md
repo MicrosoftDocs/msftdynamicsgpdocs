@@ -4,8 +4,8 @@ description: Read some recommendations for how you can keep your database for Dy
 ms.date: 10/23/2020
 ms.topic: article
 ms.prod: dynamics-gp
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 ---
 
 # Recommended Maintenance of Your Databases

@@ -3,11 +3,11 @@ title: "Returns Management"
 description: "Returns Management source guide."
 keywords: "Returns-Management"
 author: theley502
-manager: edupont
+manager: jswymer
 
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 12/01/2019
 ---

@@ -3,10 +3,10 @@ title: "Human Resources - Position Control Setup"
 description: "Learn about setting up the position control for the Human Resources functionality in Microsoft Dynamics GP."
 keywords: "payroll"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 10/31/2021
 ---

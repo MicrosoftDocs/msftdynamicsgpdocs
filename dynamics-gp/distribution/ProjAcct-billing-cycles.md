@@ -3,10 +3,10 @@ title: "Project Accounting Billing Guide"
 description: "Examine how billing cycles work in Dynamics GP's project accounting module."
 keywords: "payroll"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 03/05/2021
 ---

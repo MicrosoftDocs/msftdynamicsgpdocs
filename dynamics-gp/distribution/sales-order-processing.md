@@ -5,7 +5,7 @@ author: tnistler
 
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.date: 01/22/2019
 ms.author: theley
 

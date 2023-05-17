@@ -3,11 +3,11 @@ title: "Inventory Control - Parts 4-6"
 description: "Learn about Inventory for Dynamics GP, more specifically inquiries and reports, utilities, and routines."
 keywords: "items"
 author: tnistler
-manager: edupont
+manager: jswymer
 
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 3/1/2023
 
