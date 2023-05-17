@@ -2,9 +2,9 @@
 title: "Data preparation"
 description: "Prepare your data before you upgrade your database to the latest version of Dynamics GP."
 keywords: "upgrade"
-author: edupont04
-ms.author: edupont
-manager: edupont
+author: jswymer
+ms.author: jswymer
+manager: jswymer
 applies_to: 
 ms.date: 09/21/2021
 ms.prod: dynamics-gp

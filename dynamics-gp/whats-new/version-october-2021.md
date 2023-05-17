@@ -1,10 +1,10 @@
 ---
 title: "What's new in Dynamics GP in October 2021"
 description: "Learn about enhancements that were added to the product in the October 2021 release of Dynamics GP."
-author: edupont04
+author: jswymer
 
-ms.author: edupont
-ms.reviewer: edupont
+ms.author: jswymer
+ms.reviewer: jswymer
 manager: margoc
 ms.prod: dynamics-gp
 ms.topic: article

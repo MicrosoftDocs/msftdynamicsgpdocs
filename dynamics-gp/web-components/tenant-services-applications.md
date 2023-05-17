@@ -10,7 +10,7 @@ ms.date: 10/14/2019
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 
 # Multitenant Applications

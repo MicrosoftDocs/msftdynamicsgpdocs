@@ -5,7 +5,7 @@ keywords: "intercompany"
 author: theley502
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 01/17/2019
 ---

@@ -2,8 +2,8 @@
 title: "GP Web Resource Cache"
 description: "Learn how the GP Resource Web Cache tool can help you monitor deployments."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018

@@ -2,8 +2,8 @@
 title: "Installation overview for web components"
 description: "Get an introduction to the Dynamics GP web components and introduces the major parts of the installation."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018

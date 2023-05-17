@@ -1,12 +1,12 @@
 ﻿---
 title: Multi-Factor Authentication 
 description: New in October 2020 - Multi-Factor Authentication
-ms.date: 10/01/2020
+ms.date: 05/01/2023
 ms.topic: article
 ms.prod: dynamics-gp
 author: theley502
 ms.author: theley
-manager: edupont
+manager: jswymer
 ---
 
 # Multi-Factor Authentication
@@ -75,7 +75,8 @@ Starting with the Dynamics GP October 2020 release, you will have the ability to
 17. Save the changes for the application.
 
     > [!NOTE]
-    > As of now, Multi-Factor Authentication is not supported in Web Client. Once the Web Client changes are implemented, Default client type must be set to "Yes" as shown in the screen shot.
+    > Multi-Factor (Modern Auth) Authentication is supported in Web Client with 18.5 release or later. 
+    > [Refer to Web Client setup with Modern Auth](https://community.dynamics.com/gp/b/dynamicsgp/posts/modern-authentication-in-web-client)
 
     <img src="media/image69.png" alt="Default Client Type" width="599" height="362" />
 

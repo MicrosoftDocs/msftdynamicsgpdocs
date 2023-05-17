@@ -3,10 +3,10 @@ title: "Glossary for Analytical Accounting in Microsoft Dynamics GP"
 description: "Words used in analytical accounting in Dynamics GP."
 keywords: "accounting"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 07/05/2019
 ---

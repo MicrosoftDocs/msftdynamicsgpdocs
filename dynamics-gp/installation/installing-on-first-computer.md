@@ -2,15 +2,15 @@
 title: "Install Dynamics GP on the first computer"
 description: "Get Dynamics GP on the first client computer and synchronize data with the server."
 keywords: "install"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 03/17/2021
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 12e47cac-e147-466f-93f5-c09251cbc7a9
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 
 # Install Dynamics GP on the first client computer

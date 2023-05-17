@@ -3,10 +3,10 @@ title: "System Setup Guide"
 description: "Learn how to set up Microsoft Dynamics GP."
 keywords: "payroll"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 07/28/2022
 ---

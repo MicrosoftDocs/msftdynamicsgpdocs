@@ -3,11 +3,11 @@ title: "Payment Document Management "
 description: "Payment Document Management "
 keywords: "year-end"
 author: theley502
-manager: edupont
+manager: jswymer
 
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 12/1/2019
 

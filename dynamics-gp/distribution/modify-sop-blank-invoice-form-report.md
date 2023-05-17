@@ -4,8 +4,8 @@ description: Learn how to customize the SOP Blank Invoice Form report in Sales O
 ms.date: 10/23/2020
 ms.topic: article
 ms.prod: dynamics-gp
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 ---
 
 # Modify the SOP Blank Invoice Form Report

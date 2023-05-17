@@ -4,11 +4,11 @@ description: "Learn about enhancements that were added to the product in the Oct
 author: theley502
 
 ms.author: theley
-ms.reviewer: edupont
+ms.reviewer: jswymer
 manager: tfehr
 ms.prod: dynamics-gp
 ms.topic: article
-ms.date: 10/28/2022
+ms.date: 5/18/2023
 ---
 
 # What's New in Dynamics GP in October 2022
@@ -181,5 +181,8 @@ Now, when the Workflow task is approved from an e-mail and it completes the Work
 
 ### MultiFactor Authentication in Dynamics GP Web Client
 
-We have enabled Multifactor authentication in Dynamics GP Web Client. Included with this is the capability of using the reply to e-mail address when setup with MFA. 
+We have enabled multifactor authentication (MFA) in Dynamics GP Web Client. Included with this is the capability of using the reply to e-mail address when MFA is set up.
+[Detailed setup for MFA in Web Client](https://community.dynamics.com/gp/b/dynamicsgp/posts/modern-authentication-in-web-client)
+[Email Troublesheeting Guide](../installation/email-troubleshooting-guide.md#mfa---multi-factor-authentication-modern-authentication)
+
 

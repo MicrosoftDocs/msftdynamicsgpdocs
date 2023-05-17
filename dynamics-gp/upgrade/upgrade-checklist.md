@@ -2,9 +2,9 @@
 title: "Upgrade checklist"
 description: "Quick run-through of the process for upgrading to Dynamics GP."
 keywords: "upgrade"
-author: edupont04
-ms.author: edupont
-manager: edupont
+author: jswymer
+ms.author: jswymer
+manager: jswymer
 applies_to: 
 ms.date: 3/1/2023
 ms.prod: dynamics-gp

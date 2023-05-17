@@ -2,15 +2,15 @@
 title: "Add or remove features"
 description: "Customize Dynamics GP by adding or removing functionality."
 keywords: "install"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 08/23/2018
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 3f1d0bb8-4967-4a30-814b-b07c5ea58959
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 
 # Installing additional components

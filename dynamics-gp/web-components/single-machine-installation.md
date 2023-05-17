@@ -2,8 +2,8 @@
 title: "Installing on a single computer"
 description: "Learn how to install the Dynamics GP web components on a single computer."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018

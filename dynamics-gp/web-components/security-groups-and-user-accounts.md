@@ -2,8 +2,8 @@
 title: "Security groups and user accounts"
 description: "Learn which security groups you must set up for users who need access to the web client."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018

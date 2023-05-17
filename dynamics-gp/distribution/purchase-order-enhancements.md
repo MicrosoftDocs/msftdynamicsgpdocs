@@ -3,11 +3,11 @@ title: "Purchase Order Enhancements"
 description: "Purchasing for Dynamics GP"
 keywords: "purchase order"
 author: tnistler
-manager: edupont
+manager: jswymer
 
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 01/08/2019
 

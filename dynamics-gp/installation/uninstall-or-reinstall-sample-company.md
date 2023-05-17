@@ -4,8 +4,8 @@ description: Learn how to uninstall and reinstall the sample company in Dynamics
 ms.date: 10/23/2020
 ms.topic: article
 ms.prod: dynamics-gp
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 ---
 
 # Uninstall or Reinstall the Sample Company

@@ -2,15 +2,15 @@
 title: "Dynamics GP network requirements"
 description: "Learn about network configuration that must be in place before installing Dynamics GP."
 keywords: ""
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 08/23/2018
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 40e41526-13c6-4111-b472-d78f9f1d7099
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 # Network configuration
 

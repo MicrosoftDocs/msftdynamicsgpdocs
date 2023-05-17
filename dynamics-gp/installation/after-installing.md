@@ -2,15 +2,15 @@
 title: "Start using Dynamics GP"
 description: "Get up and running with Dynamics GP."
 keywords: "install"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 08/23/2018
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: ec79456b-f8e6-402c-acfa-daaca48c059b
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 
 # After installing Dynamics GP

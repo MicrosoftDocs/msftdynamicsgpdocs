@@ -2,8 +2,8 @@
 title: "Deployment topologies"
 description: "Get an overview of deployment options for Dynamics GP."
 keywords: "web components"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018

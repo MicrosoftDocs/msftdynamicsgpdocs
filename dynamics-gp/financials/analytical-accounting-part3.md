@@ -3,10 +3,10 @@ title: "Routines, Inquiries and Reports"
 description: Part 3 of analytical accounting in Dynamics GP with year-end closing processes, creating analytical accounting queries, and reports explained."
 keywords: "accounting"
 author: theley502
-manager: edupont
+manager: jswymer
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 07/05/2019
 ---

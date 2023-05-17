@@ -6,7 +6,7 @@ author: theley502
 manager: annbe
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 2/1/2023
 ---

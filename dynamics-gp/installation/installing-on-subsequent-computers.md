@@ -2,15 +2,15 @@
 title: "Installing Dynamics GP on subsequent computers"
 description: "Get Dynamics GP on each user's computer and synchronize data with the server."
 keywords: "install"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 08/23/2018
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: 7b191c03-4d6c-490e-8257-33888b08f16d
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 # Installing Dynamics GP on subsequent computers
 

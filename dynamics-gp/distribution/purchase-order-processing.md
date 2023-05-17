@@ -3,11 +3,11 @@ title: "Purchase Order Processing"
 description: "Learn about the Purchasing module for Dynamics GP."
 keywords: "purchase order"
 author: tnistler
-manager: edupont
+manager: jswymer
 
 ms.prod: dynamics-gp
 ms.topic: article
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: theley
 ms.date: 01/23/2019
 
