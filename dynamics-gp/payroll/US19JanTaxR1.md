@@ -31,9 +31,6 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 
 ## Changes in June Round 4 update (Released: 6/2/2023)
 
-
-## Changes in April Round 3 update (Released: 4/5/2023)
-
 ### 2023 state or territorial tax changes
 The following tax changes are included in this update:
 
@@ -63,7 +60,10 @@ Withholding rates for taxpayers filing as *SINGLE*:
 
 Exemption amount changed.
 
+## Changes in April Round 3 update (Released: 4/5/2023)
+
 ### 2023 state or territorial tax changes
+
 The following tax changes are included in this update:
 
 - District of Columbia
