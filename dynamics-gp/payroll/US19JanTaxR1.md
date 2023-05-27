@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 5/23/2023
+ms.date: 5/27/2023
 ---
 # U.S. 2023 Payroll Tax Update
 
@@ -59,6 +59,20 @@ Withholding rates for taxpayers filing as *SINGLE*:
 #### Withholding changes for Utah
 
 Exemption amount changed.
+All filing status have the same fixed flat tax of 4.65%
+
+Personal Exemption table type filing as *MAR*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over     |
+|-------------|------- --|----------------|------|--------------------|
+| 0           | 0        | 1.00           | 0    | 830.00             |
+
+Personal Exemption table type filing as *SINGLE*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over     |
+|-------------|------- --|----------------|------|--------------------|
+| 0           | 0        | 1.00           | 0    | 415.00             |
+
 
 ## Changes in April Round 3 update (Released: 4/5/2023)
 
@@ -1021,7 +1035,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *4/9/2023*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *6/1/2023*.
 
 ## What's next
 
