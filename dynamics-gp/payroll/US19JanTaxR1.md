@@ -58,8 +58,7 @@ Withholding rates for taxpayers filing as *SINGLE*:
 
 #### Withholding changes for Utah
 
-Exemption amount changed.
-All filing status have the same fixed flat tax of 4.65%
+Exemption amount changed. All filing statuses have the same fixed flat tax of 4.65%
 
 Personal Exemption table type filing as *MAR*:
 
