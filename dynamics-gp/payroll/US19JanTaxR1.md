@@ -63,13 +63,13 @@ Exemption amount changed. All filing statuses have the same fixed flat tax of 4.
 Personal Exemption table type filing as *MAR*:
 
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over     |
-|-------------|------- --|----------------|------|--------------------|
+|-------------|---------|----------------|------|--------------------|
 | 0           | 0        | 1.00           | 0    | 830.00             |
 
 Personal Exemption table type filing as *SINGLE*:
 
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over     |
-|-------------|------- --|----------------|------|--------------------|
+|-------------|---------|----------------|------|--------------------|
 | 0           | 0        | 1.00           | 0    | 415.00             |
 
 
