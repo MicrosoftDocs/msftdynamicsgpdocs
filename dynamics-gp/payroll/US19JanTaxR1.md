@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 5/27/2023
+ms.date: 6/13/2023
 ---
 # U.S. 2023 Payroll Tax Update
 
@@ -17,7 +17,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2023 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the Fourth tax update for 2023 and replaces all previous tax updates. It includes State tax table changes that take effect June 1, 2023. 
+This is the Fifth tax update for 2023 and replaces all previous tax updates. It includes State tax table changes that take effect June 1, 2023. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -28,6 +28,80 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly)
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/gp/b/dynamicsgp/posts/tips-to-install-the-u-s-payroll-tax-update)
+
+## Changes in June Round 5 update (Released: 6/19/2023)
+
+### 2023 state or territorial tax changes
+The following tax changes are included in this update:
+
+- Arkansas
+
+#### Withholding changes for Arkansas
+
+Standard Deduction Amount is $2,270 from $2,200
+Personal Exemption remains at $29.00
+
+Tax Type rates for Filing Status NA
+
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,099            | 0              | 0.0%         | 0                  |
+| 5,099       | 10,299           | -101.98        | 2.0%         | 0                  |
+| 10,299      | 14,699           | -204.97        | 3.0%         | 0                  |
+| 14,699      | 24,299           | -263.77        | 3.4%         | 0                  |
+| 24,299      | 87,000           | -579.65        | 4.7%         | 0                  |
+| 87,000      | 87,100           | -579.60        | 4.7%         | 0                  |
+| 87,100      | 87,200           | -569.60        | 4.7%         | 0                  |
+| 87,200      | 87,300           | -559.60        | 4.7%         | 0                  |
+| 87,300      | 87,400           | -549.60        | 4.7%         | 0                  |
+| 87,400      | 87,500           | -539.60        | 4.7%         | 0                  |
+| 87,500      | 87,600           | -529.60        | 4.7%         | 0                  |
+| 87,600      | 87,700           | -519.60        | 4.7%         | 0                  |
+| 87,700      | 87,800           | -509.60        | 4.7%         | 0                  |
+| 87,800      | 87,900           | -499.60        | 4.7%         | 0                  |
+| 87,900      | 88,000           | -489.60        | 4.7%         | 0                  |
+| 88,000      | 88,100           | -479.60        | 4.7%         | 0                  |
+| 88,100      | 88,200           | -469.60        | 4.7%         | 0                  |
+| 88,200      | 88,300           | -459.60        | 4.7%         | 0                  |
+| 88,300      | 88,400           | -449.60        | 4.7%         | 0                  |
+| 88,400      | 88,500           | -439.60        | 4.7%         | 0                  |
+| 88,500      | 88,600           | -429.60        | 4.7%         | 0                  |
+| 88,600      | 88,700           | -419.60        | 4.7%         | 0                  |
+| 88,700      | 88,800           | -409.60        | 4.7%         | 0                  |
+| 88,800      | 88,900           | -399.60        | 4.7%         | 0                  |
+| 88,900      | 89,000           | -389.60        | 4.7%         | 0                  |
+| 88,900      | 89,000           | -379.60        | 4.7%         | 0                  |
+| 89,000      | 89,100           | -369.60        | 4.7%         | 0                  |
+| 89,100      | 89,200           | -359.60        | 4.7%         | 0                  |
+| 89,200      | 89,300           | -349.60        | 4.7%         | 0                  |
+| 89,300      | 89,400           | -339.60        | 4.7%         | 0                  |
+| 89,400      | 89,500           | -329.60        | 4.7%         | 0                  |
+| 89,500      | 89,600           | -319.60        | 4.7%         | 0                  |
+| 89,600      | 89,700           | -309.60        | 4.7%         | 0                  |
+| 89,700      | 89,800           | -299.60        | 4.7%         | 0                  |
+| 89,800      | 89,900           | -289.60        | 4.7%         | 0                  |
+| 89,900      | 90,000           | -279.60        | 4.7%         | 0                  |
+| 90,000      | 90,100           | -269.60        | 4.7%         | 0                  |
+| 90,100      | 90,200           | -259.60        | 4.7%         | 0                  |
+| 90,200      | 90,300           | -249.60        | 4.7%         | 0                  |
+| 90,300      | 90,400           | -239.60        | 4.7%         | 0                  |
+| 90,400      | 90,500           | -229.60        | 4.7%         | 0                  |
+| 90,500      | 90,600           | -219.60        | 4.7%         | 0                  |
+| 90,600      | 90,700           | -209.60        | 4.7%         | 0                  |
+| 90,700      | 90,800           | -199.60        | 4.7%         | 0                  |
+| 90,800      | 90,900           | -189.60        | 4.7%         | 0                  |
+| 90,900      | 91,100           | -179.60        | 4.7%         | 0                  |
+| 91,100      | 91,200           | -169.60        | 4.7%         | 0                  |
+| 91,200      | 91,300           | -159.60        | 4.7%         | 0                  |
+| 91,300      | And Over         | -149.60        | 4.7%         | 0                  |
+
+Tax Type Special for Filing Status NA added
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over                     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 91,301           | 0              | 0%           | 50                 |
+
 
 ## Changes in June Round 4 update (Released: 6/2/2023)
 
@@ -499,9 +573,9 @@ Tax Type rates for Filing Status NA
 
 Tax Type Special for Filing Status NA added
 
-| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over                     |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 91,801           | 0              | 0%           | 50,000             |
+| 0           | 91,801           | 0              | 0%           | 50                 |
 
 
 ## Changes in January Round 1 update (Released: 12/21/2022)
@@ -1034,7 +1108,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *6/1/2023*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *6/15/2023*.
 
 ## What's next
 
