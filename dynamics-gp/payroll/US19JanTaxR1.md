@@ -17,7 +17,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2023 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the Fifth tax update for 2023 and replaces all previous tax updates. It includes State tax table changes that take effect June 1, 2023. 
+This is the fifth tax update for 2023 and replaces all previous tax updates. It includes State tax table changes that take effect June 1, 2023. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
