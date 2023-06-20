@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 6/13/2023
+ms.date: 6/20/2023
 ---
 # U.S. 2023 Payroll Tax Update
 
@@ -29,12 +29,13 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/gp/b/dynamicsgp/posts/tips-to-install-the-u-s-payroll-tax-update)
 
-## Changes in June Round 5 update (Released: 6/19/2023)
+## Changes in June Round 5 update (Released: 6/20/2023)
 
 ### 2023 state or territorial tax changes
 The following tax changes are included in this update:
 
 - Arkansas
+- North Dakota
 
 #### Withholding changes for Arkansas
 
@@ -102,6 +103,38 @@ Tax Type Special for Filing Status NA added
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 91,301           | 0              | 0%           | 50                 |
 
+
+#### Withholding changes for North Dakota
+
+> [!NOTE]
+> Per the state of North Dakota, there is no HOH filing status with exemptions. If an employee on the W4 chooses Filing status of HOH and does not mark step 2, you still choose HOH as the filing status in Dynamics GP.
+>
+> The state relies on the Federal form W-4 to calculate the amount to withhold. Per the state, Step 3 for Dependent Claim amount is not used for ND state tax withholding.
+
+Withholding rates for taxpayers filing as *MAR* and *MARHR* :
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over    |
+|-------------|------------------|----------------|--------------|-------------------|
+| 0           | 51,225           | 0               | 0%          | 0                 |
+| 51,225      | 151,400          | 0               | 1.95%       | 51,225            |
+| 151,400     | And Over         | 1,953.41        | 2.50%       | 151,400           |
+
+Withholding rates for taxpayers filing as *SINGLE* and *SINGHR*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|---------|--------------|------------|----------|----------------|
+| 0       | 51,650       | 0          | 0%       | 0             |
+| 51,650  | 232,900      | 0          | 1.95%    | 51,650         |
+| 232,900 | And Over     | 3,534.38   | 2.50%    | 232,900        |
+
+
+Withholding rates for taxpayers filing as *HOHHR*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|---------|--------------|------------|----------|----------------|
+| 0       | 70,350       | 0          | 0%       | 0              |
+| 70,350  | 260,950      | 0          | 1.95%    | 70,350         |
+| 260,950 | And Over     | 2,593.37   | 2.50%    | 260,950        |
 
 ## Changes in June Round 4 update (Released: 6/2/2023)
 
