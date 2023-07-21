@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 6/20/2023
+ms.date: 7/21/2023
 ---
 # U.S. 2023 Payroll Tax Update
 
@@ -17,7 +17,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2023 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the fifth tax update for 2023 and replaces all previous tax updates. It includes State tax table changes that take effect June 1, 2023. 
+This is the sixth tax update for 2023 and replaces all previous tax updates. It includes State tax table changes that take effect June 1, 2023. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -28,6 +28,16 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly)
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/gp/b/dynamicsgp/posts/tips-to-install-the-u-s-payroll-tax-update)
+
+## Changes in July Round 6 update (Released: 7/21/2023)
+
+### 2023 state or territorial tax changes
+The following tax changes are included in this update:
+
+- Illinois
+
+#### Withholding changes for Illinois
+Dependent Exemption decreased from $2,625 to $2,425.  Tax rate remained the same.
 
 ## Changes in June Round 5 update (Released: 6/20/2023)
 
