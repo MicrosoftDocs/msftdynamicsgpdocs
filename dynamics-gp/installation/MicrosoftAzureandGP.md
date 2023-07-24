@@ -292,7 +292,7 @@ You create a virtual network by using the Microsoft Azure Management Portal or u
 Refer to the article [Quickstart: Create a virtual network using the Azure portal](/azure/virtual-network/quick-create-portal) for information about creating a virtual network using the Microsoft Azure Management Portal. Refer to the article
 [Quickstart: Create a virtual network using the Azure CLI](/azure/virtual-network/quick-create-cli) for information about using the Azure CLI.
 
-### Creating Virtual Machiens
+### Creating Virtual Machines
 
 Creating Virtual Machines provides directions for creating a virtual machine instance in Microsoft Azure.
 
@@ -311,7 +311,7 @@ In an environment where you have connected the Microsoft Azure Virtual Network t
 
 If you will be using the Active Directory domain controller virtual machine for name resolution (DNS) on the Microsoft Azure Virtual Network that it is deployed on, you will need to modify the configuration of the existing Microsoft Azure Virtual Network after the domain controller is set up.  
 
-### Configuring Microsoft SQL SErver
+### Configuring Microsoft SQL Server
 
 Configuring Microsoft SQL Server provides directions for configuring SQL Server on a Microsoft Azure Virtual Machine for use with Microsoft Dynamics GP.  
 
@@ -615,7 +615,7 @@ c. If you will be using the Management Reporter Client components on this server
 
 Even though the Microsoft Azure platform is built to provide high availability and fault tolerance, there is still maintenance and backup procedures you will need to put in place for Microsoft Dynamics GP. The maintenance procedures will make sure that your Microsoft Dynamics GP system is at the most recent version, running correctly and with the best performance. The backup procedures will provide periodic backups of mission-critical data. This part contains the following sections.  
   
-### Database Mainteance and Backups
+### Database Maintenance and Backups
 
 The database maintenance and backup strategy to implement on Microsoft Azure will follow the same recommendations as an on-premise deployment. The recommendations include scheduled database maintenance tasks designed to keep the database running optimally and a database backup routine that allows recovery to a previous point in time, avoiding costly re-work. The frequency of the maintenance and backup procedures is determined based on your database activity and re-work tolerance.  
 
