@@ -4575,7 +4575,7 @@ You also can reconcile account balances for a historical year, if you’re keepi
 
 5. Choose Posting Numbers to open the Reconcile Posting Numbers window, where you can reconcile posting numbers so that no gaps in the posting number sequence exist.
 
-    The Posting Numbers buttons appears only if you have marked the Enable Posting Numbers in General Ledger option in the Company Setup Options window. Sequential posting numbers are a legal requirement in some European countries.
+    The Posting Numbers buttons appears only if you have marked the Enable Posting Numbers in General Ledger option in the Company Setup Options window. Sequential posting numbers are a legal requirement in some European countries/regions.
 
 6. Choose Reconcile to reconcile account totals, batch information, or both.
 

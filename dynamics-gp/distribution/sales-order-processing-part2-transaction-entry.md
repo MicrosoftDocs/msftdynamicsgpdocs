@@ -1442,11 +1442,11 @@ If Dynamics GP is not set up to merge trade discount and markdown distributions,
 
 Use the Sales Intrastat Entry window to enter the information required to create the Intrastat Trade Report you submit to your government, and the EC Sales List, which displays cumulative goods value totals by each vendor or customer Tax Registration number. You can enter Intrastat statistics for each line item.
 
-Intrastat is the system for collecting statistics on the trade of goods between European Union (EU) countries. Intrastat data is required for all items either bought from EU vendors or sold to EU customers, and must be provided on a monthly basis. Requirements for Intrastat are similar in all EU countries. The government uses these statistics as an economic indicator.
+Intrastat is the system for collecting statistics on the trade of goods between European Union (EU) countries/regions. Intrastat data is required for all items either bought from EU vendors or sold to EU customers, and must be provided on a monthly basis. Requirements for Intrastat are similar in all EU countries/regions. The government uses these statistics as an economic indicator.
 
 If Intrastat information was entered for the customer’s ship-to address ID, that information appears in this window. You can use the Sales Intrastat Entry window to change Intrastat information for an individual transaction, or to enter Intrastat information if none was entered for the customer.
 
-Be sure the EU Transaction option is marked in the Sales Customer Detail Entry window. If the country code assigned to the customer’s shipping address is designated an EU country, this option is marked automatically.
+Be sure the EU Transaction option is marked in the Sales Customer Detail Entry window. If the country code assigned to the customer’s shipping address is designated an EU country/region, this option is marked automatically.
 
 > [!NOTE]
 > You can enter Intrastat statistics only if Intrastat tracking is enabled in the Company Setup Options window.

@@ -30,7 +30,7 @@ By default, this was added to the following reporting:
 
 <img src="media/image26.png" alt="Screen output for 1099" width="624" height="268" />
 
-A column (Char, 65 in length) was added to the PM00200 table, VENDDBA This new field will be in all country installs for Dynamics GP.  
+A column (Char, 65 in length) was added to the PM00200 table, VENDDBA This new field will be in all country/region installs for Dynamics GP.  
 No changes were made for this new field in eConnect or Integration Manager
 
 
