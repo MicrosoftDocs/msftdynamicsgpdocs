@@ -262,10 +262,10 @@ You can't delete an invoice or return if:
 ### Entering Intrastat statistics
 
 Intrastat is the system for collecting statistics on the trade of goods
-between European Union (EU) countries. Intrastat data is required for all
+between European Union (EU) countries/regions. Intrastat data is required for all
 items either bought from EU vendors or sold to EU customers, and must be
 provided on a monthly basis. Requirements for Intrastat are similar in all
-EU countries. The government uses these statistics as an economic indicator.
+EU countries/regions. The government uses these statistics as an economic indicator.
 
 For information on setting up Intrastat codes, see the System Setup Guide
 (Help \>\> Contents \>\> select Setting up the System).
@@ -295,7 +295,7 @@ marked in the Company Setup Options window.*
     button to open the Invoice Customer Detail Entry window and mark EU
     Transaction.
 
-    If the country/region code assigned to the customer's shipping address is designated an EU country, this is marked automatically.
+    If the country/region code assigned to the customer's shipping address is designated an EU country/region, this is marked automatically.
 
     ![Screenshot of the Invoice Intrastat Entry window](media/INVINE.jpg)
 

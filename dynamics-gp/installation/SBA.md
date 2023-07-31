@@ -47,7 +47,7 @@ The following actions can be done with SBA:
 Here is what is exposed to SBA with Dynamics GP 2015 RTM:
 
 - Administration
-  - Countries
+  - Countries/Regions
   - Currencies
   - Payment Terms
 - Companies

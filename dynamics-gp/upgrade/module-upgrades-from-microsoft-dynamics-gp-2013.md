@@ -94,11 +94,11 @@ Additional 1099 boxes and fields have been added for the 1099 tax types in the f
 | Dividend            | 10 Exempt Interest Dividends                          | 0.00           |
 |                     | 11 Specified Private Activity Bond Interest Dividends | 0.00           |
 |                     | 14 State Tax Withheld                                 | 0.00           |
-|                     | Foreign Country or U.S. Possession                    |                |
+|                     | Foreign Country/Region or U.S. Possession                    |                |
 |                     | State Code                                            |                |
 |                     | State Identification No.                              | 0.00           |
 | Individual          | 13 State Tax Withheld                                 |                |
-|                     | Foreign Country or U.S. Possession                    |                |
+|                     | Foreign Country/Region or U.S. Possession                    |                |
 |                     | Tax Exempt Bond CUSIP No.                             |                |
 |                     | State Code                                            |                |
 |                     | State Identification No.                              |                |
