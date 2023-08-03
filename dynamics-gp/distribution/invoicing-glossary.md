@@ -76,7 +76,7 @@ The following table explains the terminology used in the Distribution area in Dy
 | Inactive customer record | A user with whom business isn't being conducted any longer. Typically, records for these users can't be deleted because historical records are being maintained. |
 | Inquiry | A feature that allows users to view open-year and historical information. |
 | Integrate | To join two or more accounting modules to form a system in which data is shared among modules. All Microsoft Dynamics GP modules are automatically integrated. |
-| Intrastat | The system for collecting statistics on the trade of goods between European Union (EU) countries. Intrastat data is required for all items either bought from EU vendors or sold to EU customers, and must be provided on a monthly basis. Requirements for Intrastat are similar in all EU countries. The government uses these statistics as an economic indicator. |
+| Intrastat | The system for collecting statistics on the trade of goods between European Union (EU) countries/regions. Intrastat data is required for all items either bought from EU vendors or sold to EU customers, and must be provided on a monthly basis. Requirements for Intrastat are similar in all EU countries/regions. The government uses these statistics as an economic indicator. |
 | Invoice | A document that records the prices and other details of goods and services sold or supplied. |
 | Link | A feature in some windows that displays information as it was originally entered. |
 | Lookup window | A window that displays a list of accounts, users, jobs, or other items in the Microsoft Dynamics GP system. Lookup windows for a specific field are displayed by choosing the lookup button next to the field. |

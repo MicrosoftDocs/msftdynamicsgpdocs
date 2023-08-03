@@ -149,7 +149,7 @@ It is possible to use Microsoft Dynamics GP in a Multilingual Installation envir
 
 A Multilingual Installation is an environment in which multiple language release installations (unique language code folders) share the same DYNAMICS database, and potentially the same company databases.
 
-Each unique release contains specific words and phrases to match the language of that country. 
+Each unique release contains specific words and phrases to match the language of that country/region. 
 
 As an example, the United Kingdom installation uses "cheque" instead of "check." 
 
@@ -237,7 +237,7 @@ Important: Every new Company database should be created/installed via GP Utiliti
 1.	Decide what the primary language will be (there are 27 to choose from). This is the code folder from which you will install/create ALL DYNAMICS and Company databases. This is important, so make note of this and keep a record of it. You’ll need this information when it’s time to upgrade.
 
 2.	Install the Primary language code folder.  The United States code folder is my primary code folder in this example.
-*Note: We recommend you label the country associated with each code folder appropriately (so you can tell which language is associated with each folder easily).
+*Note: We recommend you label the country/region associated with each code folder appropriately (so you can tell which language is associated with each folder easily).
 
 3.	Run GP Utilities with the Primary language code folder to create:
 

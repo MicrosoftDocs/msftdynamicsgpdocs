@@ -2004,7 +2004,7 @@ The following information is discussed:
 
 - *Chapter 18, "Intrastat setup,"* explains how to set up your system to track
     statistics for Intrastat, the method for collecting statistics on the trade
-    of goods between European Union (EU) countries.
+    of goods between European Union (EU) countries or regions.
 
 ### Chapter 10: Companies
 
@@ -2295,7 +2295,7 @@ for a transaction with a terms discount.
 transaction a unique sequence number during posting, in addition to the
 journal entry number. Use this option if you want solid numbering of
 transactions, without gaps. Solid numbering is a legal requirement in some
-countries, for auditing purposes.
+countries or regions, for auditing purposes.
 
 **Enable GST for Australia** Mark this option to set up information used to
 generate Goods and Services Tax (GST) calculations, designate default
@@ -4029,7 +4029,7 @@ is the functional currency of the parent company.
     ![Screenshot of the Multicurrency Setup window showing that the Functional and Reporting Currency fields have been entered.](media/0021253e7b7b9e45cf5e9307085e5ff6.jpg)
 
 1. In the Functional Currency field, enter the currency that your business uses
-    most often. Typically, this is the currency of the country in which your
+    most often. Typically, this is the currency of the country or region in which your
     organization is located.
 
 2. In the Reporting Currency field, enter the currency that your organization
@@ -5012,10 +5012,10 @@ You can select a default attribute label.
 ### Chapter 18: Intrastat setup
 
 Intrastat is the system for collecting statistics on the trade of goods
-between European Union (EU) countries. Intrastat data is required for all
+between European Union (EU) countries or regions. Intrastat data is required for all
 items either bought from EU vendors or sold to EU customers, and must be
 provided on a monthly basis. Requirements for Intrastat are similar in all
-EU countries. The government uses these statistics as an economic indicator.
+EU countries or regions. The government uses these statistics as an economic indicator.
 
 The entries you make will be used to create the Intrastat Trade Report you
 submit to your government, and the EC Sales List, which displays cumulative
@@ -5378,7 +5378,7 @@ sale or purchase.
 This information provides an overview of some features and special setup
 information for different areas of the world.
 
-Review the sections listed below that apply to countries in which you do
+Review the sections listed below that apply to countries or region in which you do
 business and complete any preliminary setup tasks that are necessary. Then,
 continue to *Chapter 21, "Tax overview,"* to set up taxes.
 
@@ -5562,11 +5562,11 @@ purchases tax schedules for the company.*
 #### Setting up taxes for Europe and the United Kingdom
 
 Value-Added Tax (VAT) is a general tax used throughout Europe and elsewhere
-in the world. Each country that uses VAT has its own rate of taxation and
+in the world. Each country or region that uses VAT has its own rate of taxation and
 often has different rates for various goods or special zones within the
-country. VAT is collected on sales, and any credit for tax paid on purchases
+country or region. VAT is collected on sales, and any credit for tax paid on purchases
 is also tracked. The difference is remitted to the taxation authority in
-each country. See *Chapter 20, "Value-added tax,"* for more information on
+each country or region. See *Chapter 20, "Value-added tax,"* for more information on
 VAT.
 
 - Set up company VAT information using the Company Setup window.
@@ -5608,16 +5608,16 @@ This information is divided into the following sections:
 #### Value-added tax overview
 
 Microsoft Dynamics GP accommodates the different tax rates on goods and
-services sold in cities, states, provinces, regions, and countries in many
+services sold in cities, states, provinces, regions, and countries or regions in many
 areas of the world. These taxation methods include VAT. VAT is an input tax
 due on purchases and an output tax due on sales. It is used throughout
 Europe and elsewhere in the world.
 
-Each country that uses VAT has its own rate of taxation and often has
-different rates for various goods or special zones within the country. VAT
+Each country or region that uses VAT has its own rate of taxation and often has
+different rates for various goods or special zones within the country or region. VAT
 is collected on sales, and any credit for tax paid on purchases also is
 tracked. The difference is remitted to the taxation authority in each
-country.
+country or region.
 
 VAT entries will be used to compile the Detail Tax Report or the Summary Tax
 Report, which displays the total sale or purchase amount, the total tax
@@ -6159,7 +6159,7 @@ VAT07 and VAT16 to make them sort correctly.
 1. In the Type list, select either Sales or Purchases.
 
 2. In the Tax ID Number field, enter your tax registration code for this tax,
-    if your country requires it.
+    if your country or region requires it.
 
 3. In the Account field, enter an account to track taxes paid or received. For
     example, you might select a Sales Tax Payable account for sales type details
