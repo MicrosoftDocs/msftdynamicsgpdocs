@@ -165,7 +165,7 @@ Chile
 China	
 France	
 Germany	
-Hong Kong	
+Hong Kong SAR	
 Indonesia	
 Japan	
 Latin America
