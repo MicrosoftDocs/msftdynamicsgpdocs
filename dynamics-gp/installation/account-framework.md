@@ -6,7 +6,7 @@ author: jswymer
 ms.author: jswymer
 manager: annbe
 applies_to: 
-ms.date: 01/26/2022
+ms.date: 08/13/2023
 ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: d8f8ba40-5a92-47ee-9e2d-4a052c3d7acf
@@ -155,33 +155,33 @@ As an example, the United Kingdom installation uses "cheque" instead of "check."
 
 There are 27 unique languages to choose from when you install Microsoft Dynamics GP:
 
-Andean	
-Argentina	
-Australia	
-Austria	
-Belgium	
-Canada	
-Chile
-China	
-France	
-Germany	
-Hong Kong SAR	
-Indonesia	
-Japan	
-Latin America
-Luxembourg	
-Malaysia	
-Middle East	
-Netherlands	
-New Zealand	
-Philippines	
-Singapore
-South Africa	
-Spain	
-Taiwan	
-Thailand	
-United Kingdom and Ireland	
-United States	
+- Andean	
+- Argentina	
+- Australia	
+- Austria	
+- Belgium	
+- Canada	
+- Chile
+- China	
+- France	
+- Germany	
+- Hong Kong SAR	
+- Indonesia	
+- Japan	
+- Latin America
+- Luxembourg	
+- Malaysia	
+- Middle East	
+- Netherlands	
+- New Zealand	
+- Philippines	
+- Singapore
+- South Africa	
+- Spain	
+- Taiwan	
+- Thailand	
+- United Kingdom and Ireland	
+- United States	
 
 The DYNAMICS (system) database, and all company databases should be created/installed/upgraded using one PRIMARY language code folder only.
 
