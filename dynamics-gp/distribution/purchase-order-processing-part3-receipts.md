@@ -1637,7 +1637,7 @@ Currency amounts in the Purchasing Distribution Entry window are displayed in bo
 
 Use the Purchasing Intrastat Entry window to enter the information required to create the Intrastat Trade Report you submit to your government. You can enter Intrastat statistics for each line item. For information about setting up Intrastat codes, refer to your System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
-Intrastat is the system for collecting statistics on the trade of goods between European Union (EU) countries. Intrastat data is required for all items either bought from EU vendors or sold to EU customers, and must be provided on a monthly basis. Requirements for Intrastat are similar in all EU countries. The government uses these statistics as an economic indicator.
+Intrastat is the system for collecting statistics on the trade of goods between European Union (EU) countries/regions. Intrastat data is required for all items either bought from EU vendors or sold to EU customers, and must be provided on a monthly basis. Requirements for Intrastat are similar in all EU countries/regions. The government uses these statistics as an economic indicator.
 
 If Intrastat information was entered for the vendor's ship from address ID, that information appears in this window. Each time you enter a new line item, the Intrastat statistics from the previous line item will be the default Intrastat entry for the new line item. You can use the Purchasing Intrastat Entry window to change Intrastat information for an individual transaction, or to enter Intrastat information if none was entered for the vendor.
 
@@ -2663,7 +2663,7 @@ Choose OK to close the window and return to the Purchasing Invoice Entry window.
 
 Use the Purchasing Intrastat Entry window to enter the information required to create the Intrastat Trade Report you submit to your government. You can enter Intrastat statistics for each line item. For information about setting up Intrastat codes, refer to your System Setup instructions (Help \>\> Contents \>\> select Setting Up the System).
 
-Intrastat is the system for collecting statistics on the trade of goods between European Union (EU) countries. Intrastat data is required for all items either bought from EU vendors or sold to EU customers, and must be provided on a monthly basis. Requirements for Intrastat are similar in all EU countries. The government uses these statistics as an economic indicator.
+Intrastat is the system for collecting statistics on the trade of goods between European Union (EU) countries/regions. Intrastat data is required for all items either bought from EU vendors or sold to EU customers, and must be provided on a monthly basis. Requirements for Intrastat are similar in all EU countries/regions. The government uses these statistics as an economic indicator.
 
 If Intrastat information was entered for the vendor's ship from address ID, that information appears in this window. Each time you enter a new line item, the Intrastat statistics from the previous line item will be the default Intrastat entry for the new line item.You can use the Purchasing Intrastat Entry window to change Intrastat information for an individual transaction, or to enter Intrastat information if none was entered for the vendor.
 

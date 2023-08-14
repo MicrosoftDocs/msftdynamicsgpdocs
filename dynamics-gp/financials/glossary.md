@@ -95,7 +95,7 @@ The following table explains the terminology used in the Financials area in Dyna
 | Fiscal year| An accounting cycle composed of up to 54 consecutive periods. In Australia and New Zealand, this is referred to as a financial year.|
 | Fiscal-year history| A record of sales, commission amounts, and other transactions organized by fiscal periods.|
 | Functional amount| The equivalent transaction amount in the functional currency for a transaction amount that was entered using an originating currency. This amount sometimes is referred to as the functional equivalent of the originating amount.|
-| Functional currency| The primary currency a company keeps its financial records in. Typically, the functional currency is the currency for the country/ region where the company is located.|
+| Functional currency| The primary currency a company keeps its financial records in. Typically, the functional currency is the currency for the country/region where the company is located.|
 | Functional equivalent| See *Functional amount*.|
 | Grace period| A period of days added to end-of-month (EOM) terms to prolong the payment due date for purchases made during the last few days of the month. For example, with a grace period of five days, a purchase made on December 28 or later would not be due until the end of January.|
 | Group printing| Saving and printing reports in groups. For example, you can create a report group used to print the Salesperson Commission Summary and Sales Territory Commission Summary before closing a fiscal year. You can create groups of reports within the same series and groups of series report groups, such as to print the Checkbook Register Report and the Undeposited Receipts Report.|

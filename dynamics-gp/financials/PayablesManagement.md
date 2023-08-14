@@ -4183,7 +4183,7 @@ Choose the Receivables Options button to open the Checkbook EFT Receivables Opti
 
 #### Checkbook setup for Direct Debits and Refunds
 
-If you’re using Direct Debits and Refunds, be sure to set up the company checkbook for direct debits and refunds by choosing Cards >> Financial >> Checkbook. All the refunds will be debited from this checkbook. You can collect funds only if the country format for the company checkbook and the debtor’s bank account is same.
+If you’re using Direct Debits and Refunds, be sure to set up the company checkbook for direct debits and refunds by choosing Cards >> Financial >> Checkbook. All the refunds will be debited from this checkbook. You can collect funds only if the country/region format for the company checkbook and the debtor’s bank account is same.
 
 
 ### EFT file format setup

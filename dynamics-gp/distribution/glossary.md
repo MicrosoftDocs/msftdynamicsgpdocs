@@ -89,14 +89,14 @@ The following table explains the terminology used in the Distribution area in Dy
 |Fulfillment order| A type of sales document that uses document statuses to provide additional structure and control over typical sales processes, such as printing the picking ticket, picking the goods, printing the packing slip, packing and shipping the goods, and sending the invoice to the customer. You can create a fulfillment order from a quote, a back order, or an order. You can create an invoice from a fulfillment order.|
 |Functional currency| The primary currency in which a company maintains its financial records. Typically, the functional currency is the currency for the country or region where the company is located.|
 |Group printing| Creating and printing report options in groups. For example, a report group could be used to print all the financial statements and the Trial Balance before closing a month, quarter or fiscal year.|
-|GST (Goods and Services Tax)|A federal tax on the consumption of goods and services used in Canada, New Zealand and other countries.|
+|GST (Goods and Services Tax)|A federal tax on the consumption of goods and services used in Canada, New Zealand and other countries/regions.|
 |History| A record of completed transactions or account balances. In Sales Order Processing, once a document has been transferred, voided or posted, it is automatically moved to history.|
 |Hold|See *Process hold*.|
 |Inactive customer|A customer with whom you no longer conduct business. Typically, records for these customers can't be deleted because historical records are being maintained.|
 |Inactive vendor|A vendor with whom business isn't being conducted. Typically, these vendors can't be deleted because historical records are being maintained.|
 |In-transit inventory receipt|A document used to record the receipt of the material into the final destination site.|
-|Intrastat| The system for collecting statistics on the trade of goods between European Union countries.|
-|Intrastat statistics|The system for collecting statistics on the trade of goods between European Union countries.|
+|Intrastat| The system for collecting statistics on the trade of goods between European Union countries/regions.|
+|Intrastat statistics|The system for collecting statistics on the trade of goods between European Union countries/regions.|
 |Invoice| A document that records the prices and other details of goods and services sold or supplied. Invoices also are used to serve as part of the audit trail.|
 |Item print option| Determines which items that are printed on bulk picking tickets, individual picking tickets, or both.|
 |Kit| An item type that is assigned to items made up of components (other inventory items). Kits are not tracked in inventory. They are assembled at the time of sales and are sold as an individual item.|
