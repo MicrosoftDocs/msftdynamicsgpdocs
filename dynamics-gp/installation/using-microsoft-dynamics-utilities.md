@@ -104,7 +104,7 @@ To prepare Dynamics GP for use with default settings:
 
     ![screen to specify authentication type for gp users](media/gp-utilities-5.png "Authentication setup")  
 
-    When selecting Organizational Account, additional settings will be required complete the setup. Provide the Azure AD domain name for the user accounts. An example is *contoso.onmicrosoft.com*. Provide the name of the SQL Server where the web components database is stored and the name of the web components database.
+    When selecting Organizational Account, additional settings will be required complete the setup. Provide the Microsoft Entra domain name for the user accounts. An example is *contoso.onmicrosoft.com*. Provide the name of the SQL Server where the web components database is stored and the name of the web components database.
 
 8. In the Confirmation window, click Finish.
 
@@ -258,7 +258,7 @@ A report file called Acctfram.txt is created in the Data folder inside of the GP
 
     ![screen to specify authentication type for gp users](media/gp-utilities-5.png "Authentication setup")  
 
-    When selecting Organizational Account, additional settings will be required complete the setup. Provide the Azure AD domain name for the user accounts. An example is contoso.onmicrosoft.com. Provide the name of the SQL Server where the web components database is stored and the name of the web components database.
+    When selecting Organizational Account, additional settings will be required complete the setup. Provide the Microsoft Entra domain name for the user accounts. An example is contoso.onmicrosoft.com. Provide the name of the SQL Server where the web components database is stored and the name of the web components database.
 
 14. In the Enter System Password window, enter the password to use to access Dynamics GP system windows, reports, and utilities. This password is case-sensitive and will be used for control functions, such as user security.
 
@@ -576,6 +576,6 @@ To manage the user authentication
 
 3. If you have selected Organizational Account, provide the required configuration information for using Organizational Accounts.
 
-Provide the Azure AD domain name for the user accounts. An example is *contoso.onmicrosoft.com*. Provide the name of the SQL Server instance where the web components database is stored and the name of the web components database.
+Provide the Microsoft Entra domain name for the user accounts. An example is *contoso.onmicrosoft.com*. Provide the name of the SQL Server instance where the web components database is stored and the name of the web components database.
 
 4. Click OK. The Additional Tasks window reappears.

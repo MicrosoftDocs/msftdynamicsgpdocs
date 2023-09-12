@@ -172,7 +172,7 @@ The installation of Service Based Architecture is done from the Dynamics GP medi
 4. On the Select Features window, the following items must be selected at a minimum. Select the Next >> button to continue.
 
   *Note*
-  Web Client components can be deployed if desired. If its components are not installed, authentication with Organizational Accounts from a Windows Azure Domain cannot be done.
+  Web Client components can be deployed if desired. If its components are not installed, authentication with Organizational Accounts from a Microsoft Entra Domain cannot be done.
 
 5. On the Web Components Database window, enter in the name of the SQL Server that will house the GPCONFIGURATION database for Service Based Architecture. You must supply credentials that have rights in SQL to create a database and its objects. Once entered, select the Next >> button to continue.
 

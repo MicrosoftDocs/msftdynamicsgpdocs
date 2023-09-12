@@ -777,7 +777,7 @@ Modern Authentication is only supported with Exchange.
 
 > [!NOTE]
 > **If you recently upgraded to 18.5 and had Modern Authentication working in a prior release, but now emails are not sending**
-> With the 18.5 upgrade we are seeing where emails are no longer sending with Modern Authentication enabled.  The finding is your [Azure AD needs to be upgraded](https://community.dynamics.com/gp/b/dynamicsgp/posts/modern-authentication-and-upgrading-to-microsoft-dynamics-gp-18-5)
+> With the 18.5 upgrade we are seeing where emails are no longer sending with Modern Authentication enabled.  The finding is your [Microsoft Entra ID needs to be upgraded](https://community.dynamics.com/gp/b/dynamicsgp/posts/modern-authentication-and-upgrading-to-microsoft-dynamics-gp-18-5)
 
 
 > [!NOTE]

@@ -310,7 +310,7 @@ After you have verified that the session host machines are working, verify that 
 
 After the Dynamics GP service based architecture installation is complete, verify that you can access service based architecture.
 
-These verification steps are for Windows and Mixed Mode authentication types only. An Organizational Account only deployment will require an application or tool that will obtain an Organizational Account user token from Azure Active Directory.
+These verification steps are for Windows and Mixed Mode authentication types only. An Organizational Account only deployment will require an application or tool that will obtain an Organizational Account user token from Microsoft Entra ID.
 
 1. Open a browser.
 

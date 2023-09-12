@@ -124,7 +124,7 @@ Set up a schedule to run **Check Links** outside of normal business hours​. Fo
 
 ### Multi-Factor Authentication​
 
-Use Multi-Factor Authentication for e-mail​ authentication. This new feature relies on an Azure Active Director App registration​ - register an app in the[Azure portal](https://portal.azure.com/) & copy the value of Application (client) ID​. For more information, see [Azure portal app registration experience](/azure/active-directory/develop/app-registration-portal-training-guide).  
+Use Multi-Factor Authentication for e-mail​ authentication. This new feature relies on an Microsoft Entra App registration​ - register an app in the[Azure portal](https://portal.azure.com/) & copy the value of Application (client) ID​. For more information, see [Azure portal app registration experience](/azure/active-directory/develop/app-registration-portal-training-guide).  
 
 In Dynamics GP, you must then add this Application (client) ID​ to the **Company E-mail Setup** window​. For more information, see [Multi-Factor Authentication](multi-factor-authentication.md).  
 
