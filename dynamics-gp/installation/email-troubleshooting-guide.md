@@ -265,7 +265,7 @@ This issue can occur with all reports, and these can be caused by MessageID issu
 >  
 >  6. Antivirus/Malware could also cause the problem to not authenticate, try to rule it out as the cause of the problem.
 >  
->  7. Dynamics GP support [Multi-tenant authentication](/dynamics-gp/whats-new/multi-factor-authentication) in the Azure App Registration. (not Single). If you set this up incorrectly, you'll see the message *Unknown Error*.
+>  7. Dynamics GP support [Multi-tenant authentication](/dynamics-gp/whats-new/multi-factor-authentication) in the Microsoft Entra app Registration. (not Single). If you set this up incorrectly, you'll see the message *Unknown Error*.
 >   
 >  8. If the Application ID is not saving or has issues, test by launching GP as Administrator, right-click your GP icon and choose Run as Administrator.
 >  
