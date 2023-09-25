@@ -4,7 +4,7 @@ description: Dynamics GP is a business management solution for small and mid-siz
 author: jswymer
 
 ms.prod: dynamics-gp
-ms.topic: get-started-article
+ms.topic: get-started
 ms.date: 07/13/2020
 ms.author: jswymer
 
