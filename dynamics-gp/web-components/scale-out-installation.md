@@ -15,6 +15,8 @@ ms.reviewer:
 
 # Scale out installation
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This chapter contains the procedures you need to follow to install and verify the Dynamics GP web components in the scale out configuration.
 
 ## Install the web server
