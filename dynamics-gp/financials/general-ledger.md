@@ -12,7 +12,7 @@ ms.date: 12/20/2022
 ---
 # Dynamics GP General Ledger
 
-[!INCLUDE [prodshort](~/../shared-conent/shared/azure-ad-to-microsoft-entra-id.md)]
+[!INCLUDE [prodshort](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 
 
