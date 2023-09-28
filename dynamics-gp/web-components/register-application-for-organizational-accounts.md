@@ -14,6 +14,8 @@ ms.reviewer:
 ---
 # Register application for organizational accounts
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 To set up the Dynamics GP web components for user access using Organizational Accounts, you must register the application in your Microsoft Entra ID. This information is divided into the following sections:
 
 - [Add application](#add-application)  
