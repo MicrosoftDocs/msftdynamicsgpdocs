@@ -13,6 +13,8 @@ ms.date: 5/4/2023
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This document is meant to walk through most of the errors you may run into when emailing out of Microsoft Dynamics GP.  
 
 The goal is to make everyone an emailing expert!  
