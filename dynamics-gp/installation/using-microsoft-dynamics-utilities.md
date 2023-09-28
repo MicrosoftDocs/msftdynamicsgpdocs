@@ -13,6 +13,8 @@ ms.reviewer: jswymer
 ---
 # Using Microsoft Dynamics Utilities
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 After you've installed Dynamics GP, you need to complete a number of additional configuration procedures. To do this, you'll use an application called [!INCLUDE[gputilities](../includes/gputilities.md)].
 
 > [!NOTE]  
