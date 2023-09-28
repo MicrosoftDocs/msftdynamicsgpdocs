@@ -12,6 +12,8 @@ ms.date: 12/20/2022
 ---
 # Dynamics GP General Ledger
 
+[!INCLUDE [prodshort](../includes/prodshort.md)]
+
 You can use General Ledger to enter a chart of accounts and post beginning balances. You can set up budgets in Dynamics GP or use Microsoft Excel to set them up. You can export budgets from Microsoft Dynamics GP to Excel, modify them, or distribute worksheets to budget managers for review and input, then import the modified budgets back into Microsoft Dynamics GP. If you use a predefined chart of accounts, you can quickly print financial statements or modify them using Advanced Financial Analysis or Management Reporter for Microsoft Dynamics ERP.
 
 You also can use General Ledger to complete the following tasks:
