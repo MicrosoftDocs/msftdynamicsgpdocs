@@ -13,6 +13,8 @@ ms.date: 07/12/2022
 
 # Microsoft Dynamics GP on Microsoft Azure
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This guide provides information for deploying Microsoft Dynamics GP on Microsoft Azure. Microsoft Azure provides the infrastructure you need to run
 Microsoft Dynamics GP on a dependable, secure, and scalable cloud platform.
   
