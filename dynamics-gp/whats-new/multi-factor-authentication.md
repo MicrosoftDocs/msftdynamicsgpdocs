@@ -11,6 +11,8 @@ manager: jswymer
 
 # Multi-Factor Authentication
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Starting with the Dynamics GP October 2020 release, you will have the ability to use Multi-Factor Authentication for e-mail functionality. This new feature relies on a Microsoft Entra App Registration. In this first section we will go over how to perform the Azure side the of the configuration.
 
 ## Register the app
