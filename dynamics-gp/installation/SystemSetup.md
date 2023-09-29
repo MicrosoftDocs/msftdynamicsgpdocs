@@ -5093,7 +5093,7 @@ member state. The following are examples of country codes:
 | LU               | Luxembourg     |
 | NL               | Netherlands    |
 | PT               | Portugal       |
-| TK               | Turkey         |
+| TK               | Türkiye        |
 
 **To set up country codes:**
 
