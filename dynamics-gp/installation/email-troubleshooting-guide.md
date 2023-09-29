@@ -13,6 +13,8 @@ ms.date: 5/4/2023
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This document is meant to walk through most of the errors you may run into when emailing out of Microsoft Dynamics GP.  
 
 The goal is to make everyone an emailing expert!  
@@ -265,7 +267,7 @@ This issue can occur with all reports, and these can be caused by MessageID issu
 >  
 >  6. Antivirus/Malware could also cause the problem to not authenticate, try to rule it out as the cause of the problem.
 >  
->  7. Dynamics GP support [Multi-tenant authentication](/dynamics-gp/whats-new/multi-factor-authentication) in the Azure App Registration. (not Single). If you set this up incorrectly, you'll see the message *Unknown Error*.
+>  7. Dynamics GP support [Multi-tenant authentication](/dynamics-gp/whats-new/multi-factor-authentication) in the Microsoft Entra app Registration. (not Single). If you set this up incorrectly, you'll see the message *Unknown Error*.
 >   
 >  8. If the Application ID is not saving or has issues, test by launching GP as Administrator, right-click your GP icon and choose Run as Administrator.
 >  
@@ -777,7 +779,7 @@ Modern Authentication is only supported with Exchange.
 
 > [!NOTE]
 > **If you recently upgraded to 18.5 and had Modern Authentication working in a prior release, but now emails are not sending**
-> With the 18.5 upgrade we are seeing where emails are no longer sending with Modern Authentication enabled.  The finding is your [Azure AD needs to be upgraded](https://community.dynamics.com/gp/b/dynamicsgp/posts/modern-authentication-and-upgrading-to-microsoft-dynamics-gp-18-5)
+> With the 18.5 upgrade we are seeing where emails are no longer sending with Modern Authentication enabled.  The finding is your [Microsoft Entra ID needs to be upgraded](https://community.dynamics.com/gp/b/dynamicsgp/posts/modern-authentication-and-upgrading-to-microsoft-dynamics-gp-18-5)
 
 
 > [!NOTE]
