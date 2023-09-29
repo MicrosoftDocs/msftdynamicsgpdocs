@@ -24,16 +24,5 @@ Functionality has been added across the core modules of Microsoft Dynamics GP.
 
 Description
 
-![image 1](https://user-images.githubusercontent.com/28811495/197573350-927bf6ad-9c34-4b42-98ad-c9b1a7a12b1b.png)
-
-## Customer Requests
-
-We consistently review customer suggestions. These are highly voted on and discussed feature asks that are included in the October 2023 Dynamics GP release.
-
-### Feature name
-
-Description
-
-![image 6](https://user-images.githubusercontent.com/28811495/197577077-dfb41d28-2ca1-4fd2-95af-8a112504f851.png)
 
 
