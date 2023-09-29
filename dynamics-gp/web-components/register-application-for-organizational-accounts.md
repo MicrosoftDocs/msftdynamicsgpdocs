@@ -1,6 +1,6 @@
 ---
 title: "Access for organizational accounts"
-description: "Learn how to give access to Dynamics GP for organizational accounts by adding the applicaiton to their Azure Active Directory."
+description: "Learn how to give access to Dynamics GP for organizational accounts by adding the applicaiton to their Microsoft Entra ID."
 keywords: "web components"
 author: jswymer
 ms.author: jswymer
@@ -14,7 +14,9 @@ ms.reviewer:
 ---
 # Register application for organizational accounts
 
-To set up the Dynamics GP web components for user access using Organizational Accounts, you must register the application in your Microsoft Azure Active Directory. This information is divided into the following sections:
+[!INCLUDE [azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
+To set up the Dynamics GP web components for user access using Organizational Accounts, you must register the application in your Microsoft Entra ID. This information is divided into the following sections:
 
 - [Add application](#add-application)  
 
@@ -24,13 +26,13 @@ To set up the Dynamics GP web components for user access using Organizational Ac
 
 ## Add application
 
-For an application to use Azure AD for sign in and authorization you must first register it with Azure AD by providing information about that application.
+For an application to use Microsoft Entra ID for sign in and authorization you must first register it with Microsoft Entra ID by providing information about that application.
 
-To successfully register the application with Azure AD, you will need to know the URL that you will be using when you deploy the Dynamics GP web components. A typical URL to access the Dynamics GP web client looks similar to the following:
+To successfully register the application with Microsoft Entra ID, you will need to know the URL that you will be using when you deploy the Dynamics GP web components. A typical URL to access the Dynamics GP web client looks similar to the following:
 
 https://gpuaweb.contoso.com/GP
 
-Use the following steps to register your Dynamics GP web components installation with Azure AD.
+Use the following steps to register your Dynamics GP web components installation with Microsoft Entra ID.
 
 1. Sign on to the Azure Management Portal.
 
@@ -40,7 +42,7 @@ Use the following steps to register your Dynamics GP web components installation
 
 4. On the What do you want to do page, click on the link to Add an application my organization is developing.
 
-5. On the Tell us about your application page, you must specify a name for your application as well as indicate the type of application you are registering with Azure AD. You will choose the web application and/or web API radio button.
+5. On the Tell us about your application page, you must specify a name for your application as well as indicate the type of application you are registering with Microsoft Entra ID. You will choose the web application and/or web API radio button.
 
 ![shows the tell us about your application page.](media/manage-web-org-accounts-tell.png "Deployment")  
 
@@ -54,7 +56,7 @@ When finished, click the arrow icon on the bottom-right corner of the page.
 
 ## Configure for sign on
 
-Once the application has been added to Azure Active Directory, you will need to configure the application to support sign on to Dynamics GP. You will need to capture the configuration information for use when deploying the Dynamics GP web components.
+Once the application has been added to Microsoft Entra ID, you will need to configure the application to support sign on to Dynamics GP. You will need to capture the configuration information for use when deploying the Dynamics GP web components.
 
 Use the following steps in order to configure the application for sign on.
 
@@ -62,7 +64,7 @@ Use the following steps in order to configure the application for sign on.
 
 ![shows the keys section in the azure management portal.](media/manage-web-org-accounts-key.png "Deployment")  
 
-2. In the permissions to other application section, select the Read directory data checkbox for the Application Permissions drop-down for the Microsoft Azure Active Directory row. This allows Dynamics GP to look up user accounts in the Azure Active Directory when setting up GP users.
+2. In the permissions to other application section, select the Read directory data checkbox for the Application Permissions drop-down for the Microsoft Entra ID row. This allows Dynamics GP to look up user accounts in the Microsoft Entra ID when setting up GP users.
 
 ![shows the permissions to other applications section in the azure management portal.](media/manage-web-org-accounts-permissions.png "Deployment")  
 
@@ -72,7 +74,7 @@ Use the following steps in order to configure the application for sign on.
 
 ## Configure for multiple tenants
 
-If you want to allow users from multiple Azure Active Directory tenants to access a multitenant web components deployment, you will configure the application as multitenant. A multitenant application will need to be provisioned in each tenant's directory, which requires user or administrator consent to register them in their directory.
+If you want to allow users from multiple Microsoft Entra ID tenants to access a multitenant web components deployment, you will configure the application as multitenant. A multitenant application will need to be provisioned in each tenant's directory, which requires user or administrator consent to register them in their directory.
 
 In order to configure the application as multitenant, the domain name in the APP ID URI must be from a verified domain within your organization's directory. Use these steps to add the domain if you haven't already.
 
@@ -88,6 +90,6 @@ For an administrator to enable their organization's users to use the application
 
 https://gpuaweb.contoso.com/GP/tenant
 
-The administrator will select the sign-up button, which will prompt them for their Azure Active Directory credentials if they are not already signed in. Once the administrator has signed up, the application has been registered in their Azure Active Directory and users from that directory can be assigned to GP users.
+The administrator will select the sign-up button, which will prompt them for their Microsoft Entra ID credentials if they are not already signed in. Once the administrator has signed up, the application has been registered in their Microsoft Entra ID and users from that directory can be assigned to GP users.
 
-![shows the page for the adminsitator to sign up for using dynamics gp after adding the application to their azure active directory.](media/manage-web-org-accounts-signup.png "Deployment")  
+![shows the page for the adminsitator to sign up for using dynamics gp after adding the application to their Microsoft Entra ID.](media/manage-web-org-accounts-signup.png "Deployment")  

@@ -13,6 +13,8 @@ ms.date: 07/12/2022
 
 # Microsoft Dynamics GP on Microsoft Azure
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This guide provides information for deploying Microsoft Dynamics GP on Microsoft Azure. Microsoft Azure provides the infrastructure you need to run
 Microsoft Dynamics GP on a dependable, secure, and scalable cloud platform.
   
@@ -305,7 +307,7 @@ A virtual machine instance can be created from a VHD template image available in
 
 Configuring Active Directory provides information about configuring Active Directory on a Microsoft Azure Virtual Machine.
 
-In a Microsoft Dynamics GP deployment on Microsoft Azure, users are typically authenticated as Windows accounts to be granted access to the application. With Microsoft Dynamics GP, you also have the option of signing up using an Organizational Account, aka Azure Active Directory. In this case you would only need to set up an Active Directory domain to facilitate component to component communication across virtual machines in deployment scenarios where there are multiple virtual machines serving different roles.  Using Active Directory to authenticate users across the machines is recommended. The configuration of your virtual network will determine how you configure Active Directory. The requirements for deploying Active Directory on a Microsoft Azure Virtual Machine differ very little from on premise deployments.
+In a Microsoft Dynamics GP deployment on Microsoft Azure, users are typically authenticated as Windows accounts to be granted access to the application. With Microsoft Dynamics GP, you also have the option of signing up using an Organizational Account, aka Microsoft Entra ID. In this case you would only need to set up an Active Directory domain to facilitate component to component communication across virtual machines in deployment scenarios where there are multiple virtual machines serving different roles.  Using Active Directory to authenticate users across the machines is recommended. The configuration of your virtual network will determine how you configure Active Directory. The requirements for deploying Active Directory on a Microsoft Azure Virtual Machine differ very little from on premise deployments.
   
 In an environment where you have connected the Microsoft Azure Virtual Network to your on-premise network, you may choose to configure a virtual machine as an additional Active Directory domain controller for your on premise forest. This can improve the availability and performance of Active Directory.  
 
