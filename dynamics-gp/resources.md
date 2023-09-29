@@ -8,15 +8,13 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 2/1/2023
+ms.date: 9/1/2023
 ---
 # Microsoft Dynamics GP Resource Directory
 
 This page offers easy access to Microsoft Dynamics GP resources. This page is intended to provide a consolidated view of relevant documentation, videos, solutions to known issues, links to related resources, as well as community sites for implementing Microsoft Dynamics GP. These resources compliment the content here on the Docs.microsoft.com site.
 
 ## Microsoft sites that you should follow
-
-- [Product Management & Marketing Blog](https://community.dynamics.com/gp/b/gpteamblog)
 
 - [Dynamics GP Support and Services Blog](https://community.dynamics.com/gp/b/dynamicsgp)  
 
