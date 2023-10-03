@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 9/1/2023
+ms.date: 9/13/2023
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -30,6 +30,8 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 ## Microsoft Dynamics GP
 
   Includes What's New and documentation of all features for this release. 
+
+- Dynamics GP October 2023 - Feature Blog Series - 18.6 Releasing October 2, 2023!
   
 - [Dynamics GP October 2022- Feature Blog Series - 18.5](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2022---feature-blog-series-schedule)
 

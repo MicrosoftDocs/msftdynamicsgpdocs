@@ -15,6 +15,8 @@ ms.reviewer:
 
 # Scale out installation
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
 This chapter contains the procedures you need to follow to install and verify the Dynamics GP web components in the scale out configuration.
 
 ## Install the web server
@@ -310,7 +312,7 @@ After you have verified that the session host machines are working, verify that 
 
 After the Dynamics GP service based architecture installation is complete, verify that you can access service based architecture.
 
-These verification steps are for Windows and Mixed Mode authentication types only. An Organizational Account only deployment will require an application or tool that will obtain an Organizational Account user token from Azure Active Directory.
+These verification steps are for Windows and Mixed Mode authentication types only. An Organizational Account only deployment will require an application or tool that will obtain an Organizational Account user token from Microsoft Entra ID.
 
 1. Open a browser.
 

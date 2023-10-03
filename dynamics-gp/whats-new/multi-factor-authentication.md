@@ -11,7 +11,9 @@ manager: jswymer
 
 # Multi-Factor Authentication
 
-Starting with the Dynamics GP October 2020 release, you will have the ability to use Multi-Factor Authentication for e-mail functionality. This new feature relies on an Azure Active Director App Registration. In this first section we will go over how to perform the Azure side the of the configuration.
+[!INCLUDE [azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+
+Starting with the Dynamics GP October 2020 release, you will have the ability to use Multi-Factor Authentication for e-mail functionality. This new feature relies on a Microsoft Entra App Registration. In this first section we will go over how to perform the Azure side the of the configuration.
 
 ## Register the app
 
@@ -27,7 +29,7 @@ Starting with the Dynamics GP October 2020 release, you will have the ability to
 
 4. You will then choose settings for your new application.
     a. Enter a display name for the application (e.g. GPMFAApp)
-    b. For **Supported account types** select the second option (**Account in any organizational directory (Any azure AD account – Multitenant)**) for most all configurations.             Choosing the wrong option can lead to an Unknown Error when using MFA in Dynamics GP.
+    b. For **Supported account types** select the second option (**Account in any organizational directory (Any Microsoft Entra ID account – Multitenant)**) for most all configurations.             Choosing the wrong option can lead to an Unknown Error when using MFA in Dynamics GP.
 
 
     <img src="media/image51.png" alt="Account types in wizard for registering an app" width="437" height="320" />
