@@ -124,7 +124,7 @@ The following table lists the additional components.
 | GP PowerShell  | PowerShell cmdlets that perform various configuration tasks for a Dynamics GP web client installation.    |
 | OData Services     |     |
 
-There are some additional components that are released only in the [Microsoft Dynamics GP Resource Directory](../resources.md#GP2018) article.
+There are some additional components that are released only in the [Microsoft Dynamics GP Resource Directory](../resources.md) article.
 
 ## Installing an additional component
 
