@@ -71,7 +71,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 - [Microsoft Dynamics Database Maintenance Utility](https://mbs2.microsoft.com/fileexchange/?fileID=cde6687d-abb6-46bf-ae0f-6588838cb174)
 
-- Downloads for[Microsoft Dynamics GP 2018, 2016, 2015, 2013, 2010 & 10.0](https://mbs2.microsoft.com/fileexchange/?fileID=7b89589c-da4b-4efd-bb2f-994605af7d67).
+- Downloads for [Microsoft Dynamics GP 2018, 2016, 2015, 2013, 2010 & 10.0](https://mbs2.microsoft.com/fileexchange/?fileID=7b89589c-da4b-4efd-bb2f-994605af7d67)
 
 ## Documentation and Resources
 
