@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 5/4/2023
+ms.date: 10/6/2023
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -29,9 +29,7 @@ This document can be leveraged to aid in troubleshooting all areas of emailing o
 > 
 > If you are still on an older version of Microsoft Dynamics GP, you must enable TLS on your local Exchange server. For more information, see [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth).
 >
-> When Basic Authentication is deprecated (October 1, 2022), you will need to be on a version of Dynamics GP where you can use Modern Authentication (18.3 or later). There have been many quality issues fixed with Dynamics GP and Multi-Factor Authentication, so it is recommended to be on 18.4.1461 or later to have many issues fixed.
-
-We have seen an increase in cases where emails are beginning to fail from within Dynamics GP.  This is especially true for older versions of GP (18.2 and prior) that do not have Modern Authentication for Dynamics GP.  
+> When Basic Authentication is deprecated (October 1, 2022), you will need to be on a version of Dynamics GP where you can use Modern Authentication (18.3 or later). There have been many quality issues fixed with Dynamics GP and Multi-Factor Authentication, so it is recommended to be on 18.5.1635 or later.
 
 Review the below blogs for workarounds if you are on an older version of Microsoft Dyanmics GP:
 
@@ -683,8 +681,7 @@ With Exchange, Dynamics GP actually contacts the Exchange server and does it’s
 
 Whatever credentials you log in with, are going to determine what email address is sending the documents. 
 
-With modern authentication, we are unable to get the true shared mailboxes to work with the modern authentication (MFA) feature in Dynamics GP.  It is currently considered an unsupported functionality.  
-Please vote on the following [product suggestion](https://experience.dynamics.com/ideas/idea/?ideaid=546251fd-5633-ec11-b76a-0003ff45ac6d)
+With modern authentication, changes were made in 18.6 to allow [Shared Mailbox with MFA](https://community.dynamics.com/blogs/post/?postid=50cc4ae5-d25e-ee11-a81c-00224852432e).  
 
 
 ## <a name=workflow></a>Workflow
@@ -769,7 +766,7 @@ Test approving the email from within Dynamics GP, then we know workflow and emai
 >
 > You do not actually need MFA turned on for your account to use the MFA window in Microsoft Dyanmics GP, but it does use Modern Authentication.
 
-There have been many quality issues fixed within Dynamics GP around Multi-Factor Authentication, so it is recommended to be on 18.4 or later to not run into an issue that is already fixed in the product.
+There have been many quality issues fixed within Dynamics GP around Multi-Factor Authentication, so it is recommended to be on 18.5 or later to not run into an issue that is already fixed in the product.
 
 To use modern authentication with Dynamics GP, the Application (Client ID) is required to be entered in the **Company E-Mail Setup** window in Dynamics GP. Get this ID from Azure, where it is located under Tools, Setup, Company, and the choose **Company E-mail Setup**. MFA enabled on each user's Office 365 account is an additional layer of security for an organization but not required by Dynamics GP.
 
