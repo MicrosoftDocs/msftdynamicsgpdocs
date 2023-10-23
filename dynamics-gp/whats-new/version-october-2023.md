@@ -41,7 +41,7 @@ There is an option added to the Print For selection in Print Receivables Stateme
 
 ### Print/Email Cash Receipts Enhancements
 
-More features has been added the Email Cash receipts functionality. The email detail icon displays on Cash Receipts Entry and on Cash Receipts Inquiry.  When selected, the Email Detail Entry will display.  This form shows the default email address selected from the customer’s bill-to address and the default message ID. By displaying on this form, the user can edit the email address to be used or the message that will be included on the email. 
+More features have been added the Email Cash receipts functionality. The email detail icon displays on Cash Receipts Entry and on Cash Receipts Inquiry.  When selected, the Email Detail Entry will display.  This form shows the default email address selected from the customer’s bill-to address and the default message ID. By displaying on this form, the user can edit the email address to be used or the message that will be included on the email. 
 With this release you can mass update the customer email settings from the Customers navigation list, as well as mass assign the cash receipt email to customers in Report Template Maintenance.
 
 ![Shows the cash receipts entry window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/99630f32-0d2e-47d3-a8f4-f61cae119c2e)
