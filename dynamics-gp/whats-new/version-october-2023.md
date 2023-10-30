@@ -7,7 +7,7 @@ ms.reviewer: jswymer
 manager: tfehr
 ms.prod: dynamics-gp
 ms.topic: article
-ms.date: 08/31/2023
+ms.date: 10/30/2023
 ---
 
 # What's New in Dynamics GP in October 2023
@@ -20,18 +20,18 @@ For an overview and additional details for key enhancements, see the [Dynamics G
 
 Functionality has been added across the core modules of Microsoft Dynamics GP.
 
-### Add Display action for Financial Summary Inquiry
+### [Add Display action for Financial Summary Inquiry](https://community.dynamics.com/blogs/post/?postid=102180cc-5c62-ee11-a81c-00224852432e)
 
 There is a redisplay action added to the ribbon on the Financial Summary Inquiry window. This action allows you to refresh the information displayed without needing to close Summary Inquiry and reopen it. 
 
 
 ![Shows the summary inquiry window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/8e9943a8-dc2b-40b6-9382-05604a8636ba)
 
-### Reverse Fiscal Year End Close by Company
+### [Reverse Fiscal Year End Close by Company](https://community.dynamics.com/blogs/post/?postid=18ada931-ee62-ee11-a81c-00224852432e)
 
 Previously, to run the Reverse Fiscal Year End Close process, all users had to be out of all companies.  Now, we only require all users to be out of the company you want to process the Reverse Fiscal Year End Close.
 
-### Display Open Transactions only for Customer Statements
+### [Display Open Transactions only for Customer Statements](https://community.dynamics.com/blogs/post/?postid=6f8bdf93-c963-ee11-a81c-00224852432e)
 
 There is an option added to the Print For selection in Print Receivables Statement.  This option allows you to remove any payments, credits, debits, or invoices that have been fully applied from the statement.  Now, you can restrict the amount of detail displayed on the statement by this new selection.
 
@@ -39,7 +39,7 @@ There is an option added to the Print For selection in Print Receivables Stateme
 
 ![Shows a printed receivables statement](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/65fd92b2-3b99-4f43-a274-fe6622f8c368)
 
-### Print/Email Cash Receipts Enhancements
+### [Print/Email Cash Receipts Enhancements](https://community.dynamics.com/blogs/post/?postid=0705bcf3-1469-ee11-a81c-000d3adadbcd)
 
 More features have been added the Email Cash receipts functionality. The email detail icon displays on Cash Receipts Entry and on Cash Receipts Inquiry.  When selected, the Email Detail Entry will display.  This form shows the default email address selected from the customer’s bill-to address and the default message ID. By displaying on this form, the user can edit the email address to be used or the message that will be included on the email. 
 With this release you can mass update the customer email settings from the Customers navigation list, as well as mass assign the cash receipt email to customers in Report Template Maintenance.
