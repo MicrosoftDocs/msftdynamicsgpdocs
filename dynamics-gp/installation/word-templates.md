@@ -467,14 +467,18 @@ This error can be cause by a few of things:
     > https://community.dynamics.com/gp/b/dynamicsgp/archive/2012/03/13/error-message-when-printing-or-emailing-multiple-word-templates.aspx
 
 2.	Hyperlinks on the template can cause these errors.
-a.	Remove any hyperlinks on the template. The hyperlinks affect the XML file that GP uses to generate the final word template causing it to error. 
+
+   Remove any hyperlinks on the template. The hyperlinks affect the XML file that GP uses to generate the final word template causing it to error. 
  
 3.	Extra Header and footer shading inserted onto the template. 
-a.	Remove header and footer shading from the template, then see if the error persists.
+
+   Remove header and footer shading from the template, then see if the error persists.
 
 5.	Anchored images
-Example: image of dotted line to symbolize cutting statement to attach in mail.
-^Use boarders vs. embedded anchored image of line
+
+   Example: Image of dotted line to symbolize cutting statement to attach in mail.
+
+   ^Use boarders vs. embedded anchored image of line
  
 If the above doesn't lead to a solution, it may be a corrupted field that will cause this, the error could say location header, as an example, so you would remove all header content controlled items and re-added them. 
 
