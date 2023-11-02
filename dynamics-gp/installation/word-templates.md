@@ -71,6 +71,7 @@ Added in Microsoft Dynanmics GP 2010
 Administration >> Reports >> Template Maintenance >> choose the Report Name drop-down list and select More Reports.
 
 Template-enabled reports are Report Writer reports that have a Microsoft Word Template document associated with them. When enabled the option to print becomes available in the Report Destination window.
+
 ![Form](media/enabledtemplates01.png)
 
 ### Report definition
@@ -474,11 +475,11 @@ This error can be cause by a few of things:
 
    Remove header and footer shading from the template, then see if the error persists.
 
-5.	Anchored images
+4.	Anchored images
 
    Example: Image of dotted line to symbolize cutting statement to attach in mail.
 
-   ^Use boarders vs. embedded anchored image of line
+   Use boarders vs. embedded anchored image of line
  
 If the above doesn't lead to a solution, it may be a corrupted field that will cause this, the error could say location header, as an example, so you would remove all header content controlled items and re-added them. 
 
