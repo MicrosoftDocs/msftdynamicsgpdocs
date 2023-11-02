@@ -1,5 +1,5 @@
 ---
-title: Introduction to Word Templates in Dynamics GP
+title: Word Templates in Dynamics GP
 description: Learn how to customize your customer-facing documents with Word templates in Dynamics GP."
 keywords: "Word Template"
 author: theley502
@@ -7,12 +7,12 @@ author: theley502
 ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
-ms.author: nihell
-ms.date: 05/05/2022
+ms.author: jswymer
+ms.date: 10/30/2023
 
 ---
 
-# Introduction to Word Templates in Dynamics GP
+# Word Templates in Dynamics GP
 
 Would you like to update the look and feel of your customer facing documents from the drab report writer formats?
 
@@ -42,8 +42,8 @@ Install
 3. Click the radio button _I accept the terms in the License Agreement_, click Next.
 4. Select the install location for the Microsoft Dynamics GP Add-in for Microsoft Word, click Install.
 
-    > [!NOTE]
-    > The default location is C:\Program Files (x86)\ Microsoft Dynamics\ Report Templates\
+   > [!NOTE]
+   > The default location is C:\Program Files (x86)\ Microsoft Dynamics\ Report Templates\
 
 5. Once the Microsoft Dynamics GP Add-in for Microsoft Word is installed, click Finish.
 6. Open Microsoft Word, select the Developer Tab, verify that the Microsoft Dynamics GP Templates group shows.
@@ -71,6 +71,7 @@ Added in Microsoft Dynanmics GP 2010
 Administration >> Reports >> Template Maintenance >> choose the Report Name drop-down list and select More Reports.
 
 Template-enabled reports are Report Writer reports that have a Microsoft Word Template document associated with them. When enabled the option to print becomes available in the Report Destination window.
+
 ![Form](media/enabledtemplates01.png)
 
 ### Report definition
@@ -425,6 +426,62 @@ Remember that the template uses Report Writer to access data. If we ever want to
 Reports \| Template Configuration
 
 In Dynamics GP, the configuration window allows you to enable a specific form(s) to work as a template. Mark the document(s) for which you want to create a template. At the bottom of the window, be sure to mark the ‘Enable Report Templates’ and, if desired, to ‘Allow use of the Standard form’ even though you’re using the template.
+
+### Word found unreadable content when printing Word Template in Microsoft Dynamics GP
+
+- We're sorry. We can't open ….docx because we found a problem with its contents.
+- Details: Unspecified error
+- Location: Part: /word/footer5.xml, Line:0, Column:0
+
+- Word found unreadable content in "….docx".
+- Do you want to recover the contents of this document?
+- If you trust the source of this document, click Yes.
+ 
+**This issue can also cause the e-mail to fail**
+
+## If the issue is happening for ALL Word Template Reports:
+
+In 2020 there was an Office security update that changed how XML files are read in Microsoft Word.  Since Word Templates in Microsoft Dynamics GP rely on passing Report Writer fields to Microsoft Word via XML, this caused Word Templates to fail when printing with Unreadable Content errors.  There is a history recorded on this issue in the following post. 
+ 
+[Word Templates will not Email/Print after Office Update](https://community.dynamics.com/blogs/post/?postid=1981a7ea-2d02-4ec9-be17-02620c23d6d9)
+
+Changes were made in Microsoft Dynamics GP to produce an XML file that conformed to this new Office update for security reasons.   
+We released this fixed in both GP 2016 and 18.3 on the 2020 Year End Update. 
+ 
+[The 2020 U.S. Year-end Update has released and has the template fix for GP 2016 included](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp---2020-u-s-year-end-update-released)
+
+If you are not on versions 16.00.0814 and higher, OR 18.3.1200 and higher, you will continue to receive these errors when printing Word Templates and there is no workaround other than to upgrade to a version with the fix that is compatible with Microsoft Office’s security updates. 
+ 
+If you on a version higher than that that already has the fix, then I would make sure that your Office is up to date, and test changing your user security for the report and template to our default reports to verify whether it is an environmental  issue or if it’s an issue with your modified reports/templates. 
+
+## If the issue is isolated to a specific Report Word Template and not ALL word Template Reports:
+
+This error can be cause by a few of things:
+
+1. Failing to select "Maintain Compatibility with previous versions of Word" when initially saving the template or the file is corrupt and cannot be opened.
+
+   This error is normally encountered when trying to generate more than one template.  
+   The user needs to make sure they always have this option checked when saving "Maintain compatibility with previous versions of Word"
+   
+    > [!NOTE]
+    > Word only gives you the option to mark Maintain Compatibility the first time you save the template, so you have to use the steps from this blog to re-enable it. 
+    > https://community.dynamics.com/gp/b/dynamicsgp/archive/2012/03/13/error-message-when-printing-or-emailing-multiple-word-templates.aspx
+
+2.	Hyperlinks on the template can cause these errors.
+
+   Remove any hyperlinks on the template. The hyperlinks affect the XML file that GP uses to generate the final word template causing it to error. 
+ 
+3.	Extra Header and footer shading inserted onto the template. 
+
+   Remove header and footer shading from the template, then see if the error persists.
+
+4.	Anchored images
+
+   Example: Image of dotted line to symbolize cutting statement to attach in mail.
+
+   Use boarders vs. embedded anchored image of line
+ 
+If the above doesn't lead to a solution, it may be a corrupted field that will cause this, the error could say location header, as an example, so you would remove all header content controlled items and re-added them. 
 
 ## See also
 

@@ -7,8 +7,8 @@ ms.reviewer: jswymer
 manager: tfehr
 ms.prod: dynamics-gp
 ms.topic: article
-ms.date: 08/31/2023
----
+
+ms.date: 10/30/2023
 
 # What's New in Dynamics GP in October 2023
 
@@ -20,18 +20,18 @@ For an overview and additional details for key enhancements, see the [Dynamics G
 
 Functionality has been added across the core modules of Microsoft Dynamics GP.
 
-### Add Display action for Financial Summary Inquiry
+### [Add Display action for Financial Summary Inquiry](https://community.dynamics.com/blogs/post/?postid=102180cc-5c62-ee11-a81c-00224852432e)
 
 There is a redisplay action added to the ribbon on the Financial Summary Inquiry window. This action allows you to refresh the information displayed without needing to close Summary Inquiry and reopen it. 
 
 
 ![Shows the summary inquiry window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/8e9943a8-dc2b-40b6-9382-05604a8636ba)
 
-### Reverse Fiscal Year End Close by Company
+### [Reverse Fiscal Year End Close by Company](https://community.dynamics.com/blogs/post/?postid=18ada931-ee62-ee11-a81c-00224852432e)
 
 Previously, to run the Reverse Fiscal Year End Close process, all users had to be out of all companies.  Now, we only require all users to be out of the company you want to process the Reverse Fiscal Year End Close.
 
-### Display Open Transactions only for Customer Statements
+### [Display Open Transactions only for Customer Statements](https://community.dynamics.com/blogs/post/?postid=6f8bdf93-c963-ee11-a81c-00224852432e)
 
 There is an option added to the Print For selection in Print Receivables Statement.  This option allows you to remove any payments, credits, debits, or invoices that have been fully applied from the statement.  Now, you can restrict the amount of detail displayed on the statement by this new selection.
 
@@ -39,7 +39,7 @@ There is an option added to the Print For selection in Print Receivables Stateme
 
 ![Shows a printed receivables statement](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/65fd92b2-3b99-4f43-a274-fe6622f8c368)
 
-### Print/Email Cash Receipts Enhancements
+### [Print/Email Cash Receipts Enhancements](https://community.dynamics.com/blogs/post/?postid=0705bcf3-1469-ee11-a81c-000d3adadbcd)
 
 More features have been added the Email Cash receipts functionality. The email detail icon displays on Cash Receipts Entry and on Cash Receipts Inquiry.  When selected, the Email Detail Entry will display.  This form shows the default email address selected from the customer’s bill-to address and the default message ID. By displaying on this form, the user can edit the email address to be used or the message that will be included on the email. 
 With this release you can mass update the customer email settings from the Customers navigation list, as well as mass assign the cash receipt email to customers in Report Template Maintenance.
@@ -102,21 +102,21 @@ With the new release, workflow email messages now format item detail fields to u
 
 ![Shows the email message with new format](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/4dee6599-0176-4953-92a2-a75a48c0637a)
 
-### Payroll Time and Expense My Expenses Navigation List
+### Project Time and Expense My Expenses Navigation List
 
-We've added a My Expenses navigation list for Payroll Time and Expense. This list will display for the user who is logged in, and it displays any expenses they've entered as well as any expenses entered on their behalf.
+We've added a My Expenses navigation list for Project Time and Expense. This list will display for the user who is logged in, and it displays any expenses they've entered as well as any expenses entered on their behalf.
 
 ![Shows the expenses window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/94da5db5-dc61-48bd-99ff-7b8211ec5cc8)
 
-### Payroll Time and Expense My Team Expenses Navigation List
+### Project Time and Expense My Team Expenses Navigation List
 
-Now, there is a My Team Expenses navigation list for Payroll Time and Expense. This list displays expenses for the user who is logged in and any users this user is a delegate for.
+Now, there is a My Team Expenses navigation list for Project Time and Expense. This list displays expenses for the user who is logged in and any users this user is a delegate for.
 
 ![Shows the teams expenses window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/68713ca5-947a-42e6-9df1-0d4207b290bf)
 
-### Payroll Time and Expense My Timesheets Navigation List
+### Project Time and Expense My Timesheets Navigation List
 
-We've added a My Timesheets navigation list for Payroll Time and Expense. This list will display for the user who is logged in, and it displays any timesheets they've entered as well as any entered on their behalf.
+We've added a My Timesheets navigation list for Project Time and Expense. This list will display for the user who is logged in, and it displays any timesheets they've entered as well as any entered on their behalf.
 
 ![Shows the timesheets window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/cc08598d-eb7a-4235-a083-a14cdcd74f34)
 
