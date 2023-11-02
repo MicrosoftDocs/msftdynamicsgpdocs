@@ -7,8 +7,8 @@ ms.reviewer: jswymer
 manager: tfehr
 ms.prod: dynamics-gp
 ms.topic: article
+
 ms.date: 10/30/2023
----
 
 # What's New in Dynamics GP in October 2023
 
@@ -102,21 +102,21 @@ With the new release, workflow email messages now format item detail fields to u
 
 ![Shows the email message with new format](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/4dee6599-0176-4953-92a2-a75a48c0637a)
 
-### Payroll Time and Expense My Expenses Navigation List
+### Project Time and Expense My Expenses Navigation List
 
-We've added a My Expenses navigation list for Payroll Time and Expense. This list will display for the user who is logged in, and it displays any expenses they've entered as well as any expenses entered on their behalf.
+We've added a My Expenses navigation list for Project Time and Expense. This list will display for the user who is logged in, and it displays any expenses they've entered as well as any expenses entered on their behalf.
 
 ![Shows the expenses window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/94da5db5-dc61-48bd-99ff-7b8211ec5cc8)
 
-### Payroll Time and Expense My Team Expenses Navigation List
+### Project Time and Expense My Team Expenses Navigation List
 
-Now, there is a My Team Expenses navigation list for Payroll Time and Expense. This list displays expenses for the user who is logged in and any users this user is a delegate for.
+Now, there is a My Team Expenses navigation list for Project Time and Expense. This list displays expenses for the user who is logged in and any users this user is a delegate for.
 
 ![Shows the teams expenses window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/68713ca5-947a-42e6-9df1-0d4207b290bf)
 
-### Payroll Time and Expense My Timesheets Navigation List
+### Project Time and Expense My Timesheets Navigation List
 
-We've added a My Timesheets navigation list for Payroll Time and Expense. This list will display for the user who is logged in, and it displays any timesheets they've entered as well as any entered on their behalf.
+We've added a My Timesheets navigation list for Project Time and Expense. This list will display for the user who is logged in, and it displays any timesheets they've entered as well as any entered on their behalf.
 
 ![Shows the timesheets window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/cc08598d-eb7a-4235-a083-a14cdcd74f34)
 
