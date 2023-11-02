@@ -22,7 +22,7 @@ Flexibility and familiarity make the infrastructure services in Microsoft Azure 
 
 The Microsoft Dynamics GP you deploy in Microsoft Azure is the same one that you would deploy in your own office or data center. Since Microsoft Azure
 infrastructure services (MAIS) is a virtual machine environment, the process of deploying and managing Microsoft Dynamics GP on MAIS should be very
-familiar to you already. Your knowledge and previous experience deploying Microsoft Dynamics GP on premise or as a hosted service will be beneficial
+familiar to you already. Your knowledge and previous experience deploying Microsoft Dynamics GP on-premises or as a hosted service will be beneficial
 when deploying on MAIS. You have flexibility with respect to the license model you choose to use when deploying Microsoft Dynamics GP on Microsoft Azure.
 And because the product is constant, you can be reassured that you can move your deployment into or out of Microsoft Azure seamlessly.  
   
@@ -36,7 +36,7 @@ How you configure the infrastructure services features will be depend on the nee
 For example, how many virtual machines are required, the network configuration for cross-machine communication, and disk configuration for storing data
 must be configured in Microsoft Azure to support the Microsoft Dynamics GP installation. After the Microsoft Azure environment is set up and configured,
 the Microsoft Dynamics GP components and required prerequisite software can be installed on the virtual machines in much the same way as they would be on
-virtual machines in an on premise or hosted environment.  
+virtual machines in an on-premises or hosted environment.  
 
 This document provides guidelines for deploying Microsoft Dynamics GP on Microsoft Azure.  The information contained in this guide is intended to be used
 along with the main product documentation for Microsoft Dynamics GP.
@@ -220,12 +220,12 @@ The Management Reporter report designer and desktop viewer can be used for end-u
 
 Deployment Models describes the two common configurations that are used when deploying Microsoft Dynamics GP on Microsoft Azure.
 
-The deployment models for Microsoft Dynamics GP on Microsoft Azure are the same models available for on premise and hosted environments. The models range from a single-machine deployment joined to your corporate network, to a scale out multitenant public cloud deployment using a private virtual network in Microsoft Azure. The difference in these models on Microsoft Azure when comparing with an on premise installation is the setup of the environment, (machines, network configuration, etc.).
-The machine configurations, like single-machine and scale-out, available for deploying Microsoft Dynamics GP on premise are also available for deploying in Microsoft Azure. The network configuration model for all of the Microsoft Dynamics GP components, with the exception of some ISV products that integrate using Web Services for Microsoft Dynamics GP, are installed to one or more virtual machines in Microsoft Azure. For performance reasons you will want to avoid installing some of the Microsoft Dynamics GP components to your on premise network and some to virtual machines in Microsoft Azure.
+The deployment models for Microsoft Dynamics GP on Microsoft Azure are the same models available for on-premises and hosted environments. The models range from a single-machine deployment joined to your corporate network, to a scale out multitenant public cloud deployment using a private virtual network in Microsoft Azure. The difference in these models on Microsoft Azure when comparing with an on-premises installation is the setup of the environment, (machines, network configuration, etc.).
+The machine configurations, like single-machine and scale-out, available for deploying Microsoft Dynamics GP on-premises are also available for deploying in Microsoft Azure. The network configuration model for all of the Microsoft Dynamics GP components, with the exception of some ISV products that integrate using Web Services for Microsoft Dynamics GP, are installed to one or more virtual machines in Microsoft Azure. For performance reasons you will want to avoid installing some of the Microsoft Dynamics GP components to your on-premises network and some to virtual machines in Microsoft Azure.
 
 **Dedicated Private Virtual Network**
 
-This is the only model tested with Dynamics GP.  A Microsoft Azure Virtual Network is created that is fully contained within Microsoft Azure. It is not connected to an on premise network. All of the Microsoft Dynamics GP and required infrastructure components are installed on virtual machines on the virtual network. Unless a single machine configuration is being used, you will need to add an Active Directory domain controller with DNS to the virtual network. The virtual network will be configured to use the domain’s DNS system for name resolution of machines on the virtual network. The quantity and configuration of the virtual machines is based on your deployment needs, much like deploying to computers on your corporate network. The following diagram shows a simple Microsoft Dynamics GP Web Client deployment on a dedicated private Microsoft Azure Virtual Network.  
+This is the only model tested with Dynamics GP.  A Microsoft Azure Virtual Network is created that is fully contained within Microsoft Azure. It is not connected to an on-premises network. All of the Microsoft Dynamics GP and required infrastructure components are installed on virtual machines on the virtual network. Unless a single machine configuration is being used, you will need to add an Active Directory domain controller with DNS to the virtual network. The virtual network will be configured to use the domain’s DNS system for name resolution of machines on the virtual network. The quantity and configuration of the virtual machines is based on your deployment needs, much like deploying to computers on your corporate network. The following diagram shows a simple Microsoft Dynamics GP Web Client deployment on a dedicated private Microsoft Azure Virtual Network.  
 
 ![Azure sub image 3](media/azuregp003.png)
 
@@ -236,7 +236,7 @@ authentication of Microsoft Dynamics GP users. If additional server roles are re
 
 System Requirements provides sizing recommendations for the virtual machine instance sizes that are available in Microsoft Azure.  
 
-The system requirements for deploying Microsoft Azure are the same as deploying Microsoft Dynamics GP on premise or in other data centers. The virtual machines in Microsoft Azure have standard processor and memory configurations that are based on the instance size. The instance sizes range from VMs with 1 core and .75 GB RAM to 16 cores with 112 GB RAM. You can scale the instance size up or down as usage patterns change. You can also add additional instances to scale out as demand increases. Refer to the [Pricing Details](https://azure.microsoft.com/pricing/details/virtual-machines/) for the latest instance sizes and pricing.
+The system requirements for deploying Microsoft Azure are the same as deploying Microsoft Dynamics GP on-premises or in other data centers. The virtual machines in Microsoft Azure have standard processor and memory configurations that are based on the instance size. The instance sizes range from VMs with 1 core and .75 GB RAM to 16 cores with 112 GB RAM. You can scale the instance size up or down as usage patterns change. You can also add additional instances to scale out as demand increases. Refer to the [Pricing Details](https://azure.microsoft.com/pricing/details/virtual-machines/) for the latest instance sizes and pricing.
   
 Use the [Dynamics GP System Requirements](/dynamics/s-e/gp/MDGP2018_System_Requirements) when determining the compute instance size required for each of the virtual machine instances in your configuration.  
 
@@ -278,7 +278,7 @@ Refer to the following article about VM Maintenance
 
 ## Deploy Microsoft Dynamics GP
 
-The deployment of Microsoft Dynamics GP on Microsoft Azure is very similar to an on-premise deployment. The setup of the network and virtual machines in Microsoft Azure is where the deployment of Microsoft Dynamics GP on Microsoft Azure is the most different from on premise deployments. You will use the Microsoft Azure Management Portal or PowerShell for most of the setup actions. These include setting up a virtual network, creating virtual machines, and configuring the virtual machines through Remote Desktop for Administration. After setting up the environment, you will install the Microsoft Dynamics GP components on the virtual machines that are acting as the SQL Server, Web Server, Session Host machines, and so on. This part contains the following sections.  
+The deployment of Microsoft Dynamics GP on Microsoft Azure is very similar to an on-premise deployment. The setup of the network and virtual machines in Microsoft Azure is where the deployment of Microsoft Dynamics GP on Microsoft Azure is the most different from on-premises deployments. You will use the Microsoft Azure Management Portal or PowerShell for most of the setup actions. These include setting up a virtual network, creating virtual machines, and configuring the virtual machines through Remote Desktop for Administration. After setting up the environment, you will install the Microsoft Dynamics GP components on the virtual machines that are acting as the SQL Server, Web Server, Session Host machines, and so on. This part contains the following sections.  
 
 ### Creating a Virtual Network
 
@@ -294,11 +294,11 @@ You create a virtual network by using the Microsoft Azure Management Portal or u
 Refer to the article [Quickstart: Create a virtual network using the Azure portal](/azure/virtual-network/quick-create-portal) for information about creating a virtual network using the Microsoft Azure Management Portal. Refer to the article
 [Quickstart: Create a virtual network using the Azure CLI](/azure/virtual-network/quick-create-cli) for information about using the Azure CLI.
 
-### Creating Virtual Machiens
+### Creating Virtual Machines
 
 Creating Virtual Machines provides directions for creating a virtual machine instance in Microsoft Azure.
 
-All of the Microsoft Dynamics GP components, along with the required software like Microsoft SQL Server and Microsoft SQL Server Reporting Services, will be installed on Windows Server virtual machine instances in Microsoft Azure. Depending on your deployment needs, you will use one or more virtual machine instances. For example, you may have a SQL Server virtual machine, a Web Server virtual machine and an Active Directory virtual machine.  
+All of the Microsoft Dynamics GP components, along with the required software like Microsoft SQL Server and Microsoft SQL Server Reporting Services, will be installed on Windows Server virtual machine instances in Microsoft Azure. Depending on your deployment needs, you will use one or more virtual machine instances. For example, you may have a SQL Server virtual machine, a Web Server virtual machine, and an Active Directory virtual machine.  
 
 A virtual machine instance can be created from a VHD template image available in the Microsoft Azure platform image gallery or from an image or VHD disk you create and upload. You also have the ability to capture a configured virtual machine instance as a template image for creating additional virtual machine instances. Refer to the article [Virtual Machines in Azure](/azure/virtual-machines/) for additional information.   Follow the steps in the article
 [QuickStart: Create a Windows virtual machine in the Azure portal to create the virtual machines](/azure/virtual-machines/windows/quick-create-portal)
@@ -307,13 +307,13 @@ A virtual machine instance can be created from a VHD template image available in
 
 Configuring Active Directory provides information about configuring Active Directory on a Microsoft Azure Virtual Machine.
 
-In a Microsoft Dynamics GP deployment on Microsoft Azure, users are typically authenticated as Windows accounts to be granted access to the application. With Microsoft Dynamics GP, you also have the option of signing up using an Organizational Account, aka Microsoft Entra ID. In this case you would only need to set up an Active Directory domain to facilitate component to component communication across virtual machines in deployment scenarios where there are multiple virtual machines serving different roles.  Using Active Directory to authenticate users across the machines is recommended. The configuration of your virtual network will determine how you configure Active Directory. The requirements for deploying Active Directory on a Microsoft Azure Virtual Machine differ very little from on premise deployments.
+In a Microsoft Dynamics GP deployment on Microsoft Azure, users are typically authenticated as Windows accounts to be granted access to the application. With Microsoft Dynamics GP, you also have the option of signing up using an Organizational Account, aka Microsoft Entra ID. In this case you would only need to set up an Active Directory domain to facilitate component to component communication across virtual machines in deployment scenarios where there are multiple virtual machines serving different roles.  Using Active Directory to authenticate users across the machines is recommended. The configuration of your virtual network will determine how you configure Active Directory. The requirements for deploying Active Directory on a Microsoft Azure Virtual Machine differ very little from on-premises deployments.
   
-In an environment where you have connected the Microsoft Azure Virtual Network to your on-premise network, you may choose to configure a virtual machine as an additional Active Directory domain controller for your on premise forest. This can improve the availability and performance of Active Directory.  
+In an environment where you have connected the Microsoft Azure Virtual Network to your on-premise network, you may choose to configure a virtual machine as an additional Active Directory domain controller for your on-premises forest. This can improve the availability and performance of Active Directory.  
 
 If you will be using the Active Directory domain controller virtual machine for name resolution (DNS) on the Microsoft Azure Virtual Network that it is deployed on, you will need to modify the configuration of the existing Microsoft Azure Virtual Network after the domain controller is set up.  
 
-### Configuring Microsoft SQL SErver
+### Configuring Microsoft SQL Server
 
 Configuring Microsoft SQL Server provides directions for configuring SQL Server on a Microsoft Azure Virtual Machine for use with Microsoft Dynamics GP.  
 
@@ -623,7 +623,7 @@ The database maintenance and backup strategy to implement on Microsoft Azure wil
 
 [Maintenance Plans](/sql/relational-databases/maintenance-plans/maintenance-plans) provides recommendations for creating scheduled database maintenance plans and [Back Up and Restore of SQL Server Databases](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases) provides backup processes.  
 
-The key difference in building your maintenance and backup procedures on Microsoft Azure versus on premise is where the database backups will be stored. The recommended storage location for the database backups for a Microsoft Azure deployment is in Microsoft Azure blob storage. Microsoft Azure blob storage provides a few safeguards for the data. The first is locally redundant storage (LRS). LRS maintains three copies of the account data within the primary data center. The second is geo-redundant storage (GRS), which replicates the account data to a secondary data center in the same region. GRS functionality is implemented through a feature called geo-replication, which is turned on for a storage account by default but can be turned off if you don’t want to use it. Refer to the [Microsoft Azure Storage](https://www.windowsazure.com/manage/services/storage/) for information on creating and managing storage accounts. There are two options for creating backups in Microsoft Azure blob storage.
+The key difference in building your maintenance and backup procedures on Microsoft Azure versus on-premises is where the database backups will be stored. The recommended storage location for the database backups for a Microsoft Azure deployment is in Microsoft Azure blob storage. Microsoft Azure blob storage provides a few safeguards for the data. The first is locally redundant storage (LRS). LRS maintains three copies of the account data within the primary data center. The second is geo-redundant storage (GRS), which replicates the account data to a secondary data center in the same region. GRS functionality is implemented through a feature called geo-replication, which is turned on for a storage account by default but can be turned off if you don’t want to use it. Refer to the [Microsoft Azure Storage](https://www.windowsazure.com/manage/services/storage/) for information on creating and managing storage accounts. There are two options for creating backups in Microsoft Azure blob storage.
 
 ### Data Disk
 
@@ -638,7 +638,7 @@ New functionality in Microsoft SQL Server 2012 SP1 CU2 provides the ability to b
 [Managing Virtual Machines](/azure/virtual-machines/) provides information about changing the size, monitoring and patching the Microsoft Azure virtual machines.
 
 Microsoft Azure monitors the health of the hardware and network that the virtual machine instance is running on. It will automatically move the VHD when there is a failure. Microsoft Azure does not force operating system updates to running virtual machine instances. After the Microsoft Azure virtual machine instances are deployed, you are responsible for patching, configuring, and maintaining the operating system and other software within your virtual machine instance.
-Because a Microsoft Azure virtual machine instance is a Hyper-V image, you can use the same processes and tools to manage the virtual machine as you would on premise. You are in complete control of the monitoring and patching process and can use familiar tools like Microsoft System Center and Windows Update to keep the operating system and other software running properly.
+Because a Microsoft Azure virtual machine instance is a Hyper-V image, you can use the same processes and tools to manage the virtual machine as you would on-premises. You are in complete control of the monitoring and patching process and can use familiar tools like Microsoft System Center and Windows Update to keep the operating system and other software running properly.
 It is recommended that you use published best practices information when determining the approach to take for managing the Microsoft Azure virtual machines. The virtual machines containing the Microsoft Dynamics GP components should be set up to have updates applied during pre-determined maintenance windows to avoid service interruptions for users. By default, the virtual machine instances created from the Microsoft Azure Platform Image Gallery are configured with Windows Update set to automatically install important Windows updates during a maintenance window configured for 3:00 AM on the virtual machine’s clock. It is recommended you evaluate this setting to determine if it fits into your desired maintenance process and adjust accordingly.  
 You may also want to change the virtual machine instance size as usage patterns change. Follow the steps in the documentation to change the size of a virtual machine instance.  
 
@@ -646,7 +646,7 @@ You may also want to change the virtual machine instance size as usage patterns 
 
 [Updating Microsoft Dynamics GP](/dynamics-gp/upgrade/upgrade-checklist) provides information about updating the Microsoft Dynamics GP components to the latest release.
 
-Updating Microsoft Dynamics GP on Microsoft Azure uses the same process as on premise deployments. The Microsoft Dynamics GP product documentation and download site provides stepby-step instructions for performing the update. The following is a high-level checklist of the update process for Microsoft Dynamics GP.
+Updating Microsoft Dynamics GP on Microsoft Azure uses the same process as on-premises deployments. The Microsoft Dynamics GP product documentation and download site provides stepby-step instructions for performing the update. The following is a high-level checklist of the update process for Microsoft Dynamics GP.
 
 1. Review the latest upgrade documentation and plan your upgrade.  
 2. Download the update from [Product Release Downloads for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_release_download_378).
@@ -665,8 +665,8 @@ This part contains information about troubleshooting and accessing technical sup
 
 Troubleshooting Microsoft Dynamics GP on Microsoft Azure typically involves the same techniques that you would use for any Microsoft Dynamics GP deployment. The Microsoft Dynamics GP product documentation will serve as a good reference for identifying and resolving application issues. When troubleshooting on Microsoft Azure, you will need to account for unique communication errors that you may not have to consider in an on-premise deployment.
   
-Depending on the virtual network configuration and where users will be accessing Microsoft Dynamics GP from, you may see issues related to communications not reaching the intended destination. When Microsoft Dynamics GP is deployed on premise, the name resolution and communication routing from the user’s client computer to the Microsoft Dynamics GP servers is handled by your internal DNS and network configuration. Unless all users will be accessing
-Microsoft Dynamics GP from an on premise network connected to the Microsoft Azure Virtual  Network, the communication from the user’s client computer to Microsoft Dynamics GP in Microsoft Azure is handled by public DNS records and virtual machine endpoints.
+Depending on the virtual network configuration and where users will be accessing Microsoft Dynamics GP from, you may see issues related to communications not reaching the intended destination. When Microsoft Dynamics GP is deployed on-premises, the name resolution and communication routing from the user’s client computer to the Microsoft Dynamics GP servers is handled by your internal DNS and network configuration. Unless all users will be accessing
+Microsoft Dynamics GP from an on-premises network connected to the Microsoft Azure Virtual  Network, the communication from the user’s client computer to Microsoft Dynamics GP in Microsoft Azure is handled by public DNS records and virtual machine endpoints.
 
 When you suspect that the error could be a communications issue, you will want to start by verifying that the virtual machine is running and accessible using the Microsoft Azure Management Portal. If the virtual machine is running and accessible, verify the following configuration settings are set correctly.  
 
