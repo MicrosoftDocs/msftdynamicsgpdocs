@@ -42,8 +42,8 @@ Install
 3. Click the radio button _I accept the terms in the License Agreement_, click Next.
 4. Select the install location for the Microsoft Dynamics GP Add-in for Microsoft Word, click Install.
 
-    > [!NOTE]
-    > The default location is C:\Program Files (x86)\ Microsoft Dynamics\ Report Templates\
+   > [!NOTE]
+   > The default location is C:\Program Files (x86)\ Microsoft Dynamics\ Report Templates\
 
 5. Once the Microsoft Dynamics GP Add-in for Microsoft Word is installed, click Finish.
 6. Open Microsoft Word, select the Developer Tab, verify that the Microsoft Dynamics GP Templates group shows.
@@ -462,7 +462,7 @@ This error can be cause by a few of things:
    This error is normally encountered when trying to generate more than one template.  
    The user needs to make sure they always have this option checked when saving "Maintain compatibility with previous versions of Word"
    
-> [!NOTE]
+    > [!NOTE]
     > Word only gives you the option to mark Maintain Compatibility the first time you save the template, so you have to use the steps from this blog to re-enable it. 
     > https://community.dynamics.com/gp/b/dynamicsgp/archive/2012/03/13/error-message-when-printing-or-emailing-multiple-word-templates.aspx
 
