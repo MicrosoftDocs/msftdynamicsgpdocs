@@ -44,7 +44,7 @@ Starting with the Dynamics GP October 2020 release, you will have the ability to
 
     <img src="media/image55.png" alt="Add permission button highlighted" width="557" height="250" />
 
-8. Microsoft Graph – By default, Microsoft Graph application will have read permission for the user profile. To allow graph application to send an email, we need to add "Mail.Send" permission.
+8. Microsoft Graph – By default, Microsoft Graph application will have read permission for the user profile. To allow a Graph application to send an email, we need to add some specific permissions.
 
     <img src="media/image57.png" alt="Graph selected" width="481" height="237" />
 
@@ -54,11 +54,11 @@ Starting with the Dynamics GP October 2020 release, you will have the ability to
 
 11. Mark the "Mail.Send" and "Mail.Send.Shared" checkboxes and click on Add permissions.
 
-    <img src="media/API Permissions_Select.png" alt="Permissions for request API" width="423" height="238" />
+    <img src="media/image94.png" alt="Permissions for request API" width="557" height="566" />
 
 12. Mail.Send and Mail.Send.Shared permissions will be added under Microsoft Graph.
 
-    <img src="media/API Permissions_Result.png" alt="Configured permissions" width="403" height="196" />
+    <img src="media/image93.png" alt="Configured permissions" width="403" height="196" />
 
 13. Click on "Authentication" on the left panel under Manage option.
 
@@ -88,7 +88,7 @@ Starting with the Dynamics GP October 2020 release, you will have the ability to
 
 From the setup that was done in Azure, now launch Microsoft Dynamics GP 18.3 or later and go to Tools, Select Setup, choose Company and click Company E-mail Setup.  Enter the Application (Client) ID into this Desktop Properties section of this window.  
 
-<img src="media/Company Email Settings.png" alt="Company E-mail Setup in GP" width="406" height="409" />
+<img src="media/image95.png" alt="Company E-mail Setup in GP" width="406" height="409" />
 
 If you're using a Single tenant app registration you will also need to pull the Directory (Tenant) ID from the aboeve Overview window and enter that into the Tenant ID field.
 
