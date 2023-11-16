@@ -8,7 +8,7 @@ manager: tfehr
 ms.prod: dynamics-gp
 ms.topic: article
 
-ms.date: 10/30/2023
+ms.date: 11/10/2023
 
 # What's New in Dynamics GP in October 2023
 
@@ -48,13 +48,13 @@ With this release you can mass update the customer email settings from the Custo
 
 ![Shows the receivables ee-mail entry detail entry window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/b8ffa9dc-b3e0-42a3-acb1-3daa68a907d9)
 
-### Email/Reprint Vendor Remittance with Message Fields
+### [Email/Reprint Vendor Remittance with Message Fields](https://community.dynamics.com/blogs/post/?postid=ccfbf0e8-7067-ee11-a81c-000d3a7bb192)
 
 When you choose to email or reprint the vendor remittance, we've extended the functionality to include any customized message fields.  Now, when you edit the Vendor email message, this same message will be used prior to posting the Vendor remittance as well as when you reprint it.
 
 ![Shows the vendor remittance window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/ebf5b587-328a-4ad6-a9a3-8c888506fb65)
 
-### Print 1099-DIV with Lines and Boxes
+### [Print 1099-DIV with Lines and Boxes](https://community.dynamics.com/blogs/post/?postid=7449371a-6268-ee11-a81c-000d3adadbcd)
 
 In the October 2023 Microsoft Dynamics GP release, we have added the capability to print the 1099-DIV with lines and boxes, similarly to the 1099-NEC. When you select 1099-DIV, the Form Type DDL displays an option for One Wide with Box. When printed, this option will display the 1099-DIV with the lines, boxes, and text to visually represent the 1099-DIV.
 
@@ -62,19 +62,19 @@ In the October 2023 Microsoft Dynamics GP release, we have added the capability 
 
 ![Shows a printed 1099](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/173fae10-086e-4a14-a0ad-d9c231c24980)
 
-### Print 1099-INT with Lines and Boxes
+### [Print 1099-INT with Lines and Boxes](https://community.dynamics.com/blogs/post/?postid=7449371a-6268-ee11-a81c-000d3adadbcd)
 
 Now, you can print the 1099-INT with lines and boxes similarly to the 1099-NEC. The Form Type DDL displays an option for One Wide with Box. When printed, this option displays the 1099-INT with the lines, boxes, and text.
 
 ![image](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/00bfb027-bd95-492c-814d-6de83621ef3b)
 
-### Print 1099-Misc with Lines and Boxes
+### [Print 1099-Misc with Lines and Boxes](https://community.dynamics.com/blogs/post/?postid=7449371a-6268-ee11-a81c-000d3adadbcd)
 
 In this release of Microsoft Dynamics GP, we have added the capability to print the 1099-MISC with lines and boxes. When you select 1099-MISC, the Form Type DDL will display an option for One Wide with Box. The printed form will display the 1099-MISC with the lines, boxes and text. 
 
 ![Shows the print 1099 INT](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/5bfd39e7-e3dc-4778-ae06-6127d4058367)
 
-### SOP Blank Picking Ticket/Packing Slip Bin Sequence Template
+### [SOP Blank Picking Ticket/Packing Slip Bin Sequence Template](https://community.dynamics.com/blogs/post/?postid=b536c60e-176e-ee11-a81c-000d3a7ca97a)
 
 When either the Print Separate Picking Ticket per site or Print Separate Packing Slip is marked, you can now print the Template form directly to the printer. This functionality will be consistent for both the Picking Ticket and Packing Slip. The system prints a document for each site and an additional document that includes all sites combined.
 
@@ -82,7 +82,7 @@ When either the Print Separate Picking Ticket per site or Print Separate Packing
 
 ![Shows the report destinations window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/10dd006d-d27a-4674-abf7-40483c250147)
 
-### Allow U of M from Requisition to default on Purchase Order
+### [Allow U of M from Requisition to default on Purchase Order](https://community.dynamics.com/blogs/post/?postid=ac2a10ee-a16e-ee11-a81c-000d3a7ca97a)
 
 A setup option has been added for Purchase Order Requisition U of M functionality. This option allows you to use the U of M from the PO Requisition line item when generating the Purchase Order. This will default to the Item’s Default Purchasing U of M during the upgrade.
 
@@ -90,37 +90,37 @@ A setup option has been added for Purchase Order Requisition U of M functionalit
 
 ![Shows the purchase orders preview window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/6d24b6ce-09ce-46d1-a71f-5eef18f3a4b6)
  
-### Format Numbers on Payroll Year End Wage Report
+### [Format Numbers on Payroll Year End Wage Report](https://community.dynamics.com/blogs/post/?postid=ce560b88-e877-ee11-a81c-000d3a7cfcea)
 
 There is additional formatting of numbers and amounts on the Payroll Year End Wage Report.
 
 ![Shows the printed payroll year end wage report](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/b933ebb1-695c-49e0-aaac-5d78200adfd6)
 
-### Display Item Decimals on Workflow Email messages
+### [Display Item Decimals on Workflow Email messages](https://community.dynamics.com/blogs/post/?postid=ad1399a5-6d72-ee11-a81c-000d3a7db624)
 
 With the new release, workflow email messages now format item detail fields to use the decimals assigned to the items.
 
 ![Shows the email message with new format](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/4dee6599-0176-4953-92a2-a75a48c0637a)
 
-### Project Time and Expense My Expenses Navigation List
+### [Project Time and Expense My Expenses Navigation List](https://community.dynamics.com/blogs/post/?postid=45a3178d-3477-ee11-a81c-000d3a7cfcea)
 
 We've added a My Expenses navigation list for Project Time and Expense. This list will display for the user who is logged in, and it displays any expenses they've entered as well as any expenses entered on their behalf.
 
 ![Shows the expenses window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/94da5db5-dc61-48bd-99ff-7b8211ec5cc8)
 
-### Project Time and Expense My Team Expenses Navigation List
+### [Project Time and Expense My Team Expenses Navigation List](https://community.dynamics.com/blogs/post/?postid=af8192fb-7173-ee11-a81c-000d3a7cfcea)
 
 Now, there is a My Team Expenses navigation list for Project Time and Expense. This list displays expenses for the user who is logged in and any users this user is a delegate for.
 
 ![Shows the teams expenses window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/68713ca5-947a-42e6-9df1-0d4207b290bf)
 
-### Project Time and Expense My Timesheets Navigation List
+### [Project Time and Expense My Timesheets Navigation List](https://community.dynamics.com/blogs/post/?postid=45a3178d-3477-ee11-a81c-000d3a7cfcea)
 
 We've added a My Timesheets navigation list for Project Time and Expense. This list will display for the user who is logged in, and it displays any timesheets they've entered as well as any entered on their behalf.
 
 ![Shows the timesheets window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/cc08598d-eb7a-4235-a083-a14cdcd74f34)
 
-### Navigations Lists Filter by Batch Source display Drop Down List selection
+### [Navigations Lists Filter by Batch Source display Drop Down List selection](https://community.dynamics.com/blogs/post/?postid=844422f8-e26c-ee11-a81c-000d3adadbcd)
 
 On any batch navigation list, there is a filter for the Batch Source field.  Now, there is a drop down list that will display the available batch sources based on the navigation lis type. 
 
@@ -128,7 +128,7 @@ On any batch navigation list, there is a filter for the Batch Source field.  Now
 
 ![Shows the purchasing transactions window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/677597e1-647c-4ddf-8707-feba530bbb5f)
 
-### Shared Mailbox with MultiFactor Authentication
+### [Shared Mailbox with MultiFactor Authentication](https://community.dynamics.com/blogs/post/?postid=8fe2be13-687e-ee11-a81c-6045bdb9e0af)
 
 Now, you can select to use a Shared Mailbox when using MultiFactor Authentication. This option is available for both Sales and Purchasing Email setup. It allows you to use a different mailbox for each. When using a shared mailbox, only a single mailbox can be entered. The Shared mailbox will be used as the Send from Address as well as when replies are sent for any email documents in the series.
 
@@ -136,7 +136,7 @@ Now, you can select to use a Shared Mailbox when using MultiFactor Authenticatio
 
 ![Shows the purchasing e-mail setup window](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/7d5b11cf-f6e5-45c0-9219-07a90cd92487)
 
-### Fully Delete Document Attachment
+### [Fully Delete Document Attachment](https://community.dynamics.com/blogs/post/?postid=4e6ba0e5-c67d-ee11-a81c-6045bdb9e0af)
 
 We've added the ability to fully delete document attachment. This process will remove the attachment completely from the document attachment blob file storage. This is available for all document attachment management windows and appears as a new ribbon action on the Document Attachment Management window.
 
@@ -144,7 +144,7 @@ We've added the ability to fully delete document attachment. This process will r
 
 ![Shows the document attachment management card](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/38ac0cf0-c01f-40e8-8cda-f936871137c5)
 
-### Letter Writing Assistant Human Resources Letters
+### [Letter Writing Assistant Human Resources Letters](https://community.dynamics.com/blogs/post/?postid=cb29ec8a-c378-ee11-a81c-00224854935a)
 
 We've added new letter templates for Human Resources: All Skills and Tests, Expiring Skills and Tests, Expiring Skills and Expiring Tests. Each of these letter options will display the tests or skills in a table format.
 
@@ -152,7 +152,7 @@ We've added new letter templates for Human Resources: All Skills and Tests, Expi
 
 ![Shows the printed letter](https://github.com/MicrosoftDocs/msftdynamicsgpdocs/assets/28811495/9c375e5a-5209-46b8-9459-c4ec4644cb1e)
 
-### Letter Writing Assistant Collection Final Notice Letter
+### [Letter Writing Assistant Collection Final Notice Letter](https://community.dynamics.com/blogs/post/?postid=5c95155a-8479-ee11-a81c-00224854935a)
 
 The Final Notice letter template for Letter Writing Assistant will display the invoice information in a table format.
 
