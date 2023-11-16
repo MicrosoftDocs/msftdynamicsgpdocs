@@ -166,9 +166,10 @@
 ### [Security Planning](installation/SecurityPlanning.md)
 ### [System Setup](installation/SystemSetup.md)
 ### [System Administration Guide](installation/SystemAdminGuide.md)
-### [Introduction to Word Templates](installation/word-templates.md)
+### [Word Templates](installation/word-templates.md)
 ### [Workflow Administrator's Guide](installation/Workflow.md)
 ### [Dynamics GP on Azure](installation/MicrosoftAzureandGP.md)
+### [Developer Tools](installation/developer-tools.md)
 
 <!--- web components -->
 ### Web components
