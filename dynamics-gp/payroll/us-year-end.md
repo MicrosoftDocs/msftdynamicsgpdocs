@@ -204,13 +204,10 @@ Telephone: (888) 255-3815
 E-mail: *sales\@greenshades.com*  
 Web site: [www.greenshades.com](https://www.greenshades.com/)
 
-**For the 2023 year, it is imperative you file electronically.**
-The Taxpayer First Act mandates electronic filing of IRS forms including W-2s
-Beginning in 2022, if you send 100 or more W-2s / 1099’s you must send them electronically.
-In 2023 that limit is lowered to 10!!!!
-The IRS is pushing for a business to file electronically, W-2, 1099, etc. Dynamics GP does not file Payables 1099's electronically. 
-Review this blog to help you prepare for 2023 year-end and electronic filing!
-[1099 Changes to expect -Get ready for Year-end 2023](https://community.dynamics.com/blogs/post/?postid=2246f6af-3f2a-4faf-9da5-544613326c20)
+> [!IMPORTANT
+> For the 2023 year, it is imperative you file electronically. The Taxpayer First Act mandates electronic filing of IRS forms including W-2s.
+Beginning in 2022, if you send 100 or more W-2s/1099's, you must send them electronically. In 2023, the limit is lowered to 10. The IRS is pushing for businesses to file electronically, W-2, 1099, and so on. Dynamics GP does not file Payables 1099's electronically. 
+Review this blog to help you prepare for 2023 year-end and electronic filing: [1099 Changes to expect -Get ready for Year-end 2023](https://community.dynamics.com/blogs/post/?postid=2246f6af-3f2a-4faf-9da5-544613326c20).
 
 
 ### Frequently asked questions
