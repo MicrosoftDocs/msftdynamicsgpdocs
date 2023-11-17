@@ -28,8 +28,8 @@ Starting with the Dynamics GP October 2020 release, you will have the ability to
     <img src="media/image49.png" alt="App registration form in Azure portal" width="673" height="276" />
 
 4. You will then choose settings for your new application.
-    a. Enter a display name for the application (e.g. GPMFAApp)
-    b. For **Supported account types** prior to the Fall 2023 (18.6) release you were limited to the second option (**Account in any organizational directory (Any Microsoft Entra ID account – Multitenant)**).  If you are on 18.6 or later you can also use the (**Account in this organizational directory only (%domain% only - Single tenant)**) option. Choosing the wrong option can lead to an Unknown Error when using MFA in Dynamics GP.
+    1. Enter a display name for the application (e.g. GPMFAApp)
+    2 For **Supported account types** prior to the Fall 2023 (18.6) release, you were limited to the second option (**Account in any organizational directory (Any Microsoft Entra ID account – Multitenant)**).  If you are on 18.6 or later, you can also use the (**Account in this organizational directory only (%domain% only - Single tenant)**) option. Choosing the wrong option can lead to an Unknown Error when using MFA in Dynamics GP.
 
 
     <img src="media/image51.png" alt="Account types in wizard for registering an app" width="437" height="320" />
