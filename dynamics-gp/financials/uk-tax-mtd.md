@@ -117,6 +117,6 @@ When the submission is complete you will see the **VAT Response** window.
 
 > [!NOTE]
 > The above Making Tax Digital process of submitting to the HMRC also works for the VAT Daybook module in Dynamics GP. VAT Daybook does not allow you to edit the amounts prior to submission like you can in the VAT 100 (return) window.
->
-> > [!NOTE]
+
+> [!NOTE]
 > The VAT Return is mainly pulling from the TX30000 table.  The VAT Return also uses the DOCDATE, not the Tax_Date.  We typically do not see users changing the Tax_Date to be something different than the document date.  If yours appear different, this may cause your summary and detail reports to be off/different.
