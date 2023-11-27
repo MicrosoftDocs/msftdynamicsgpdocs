@@ -13,7 +13,7 @@ If you have any questions, you can submit feedback as an Issue or a pull request
 
 ## Getting started
 
-1. Fork this repo
+1. Fork this repo.
 
     You cannot work directly in the msftdynamicsgpdocs repo, so the first thing you need to do is create a fork of the repo under your GitHub account. A fork basically is copy of this repo that lets you work freely on the content without affecting the msftdynamicsgpdocs repo. For more information, see [Fork a Repo](https://help.github.com/articles/fork-a-repo/).
 
