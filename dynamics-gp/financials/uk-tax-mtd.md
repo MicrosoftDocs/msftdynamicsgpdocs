@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: jchrist
-ms.date: 11/20/2023
+ms.date: 11/27/2023
 ---
 
 # VAT in the UK Version of Microsoft Dynamics GP
