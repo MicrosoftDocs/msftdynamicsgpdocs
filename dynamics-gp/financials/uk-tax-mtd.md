@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: jchrist
-ms.date: 10/9/2023
+ms.date: 11/20/2023
 ---
 
 # VAT in the UK Version of Microsoft Dynamics GP
@@ -116,4 +116,7 @@ When the submission is complete you will see the **VAT Response** window.
 > After submitting the return, if the progress window does not start and there is no response window, it could be a proxy server issue. For more information, see [https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide#network-access](https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide#network-access)  
 
 > [!NOTE]
-> The above Making Tax Digital process of submitting to the HMRC also works for the VAT Daybook module in Dynamics GP.  VAT Daybook does not allow you to edit the amounts prior to submission like you can in the VAT 100 (return) window. 
+> The above Making Tax Digital process of submitting to the HMRC also works for the VAT Daybook module in Dynamics GP. VAT Daybook does not allow you to edit the amounts prior to submission like you can in the VAT 100 (return) window.
+
+> [!NOTE]
+> The VAT Return is mainly pulling from the TX30000 table.  The VAT Return also uses the DOCDATE, not the Tax_Date.  We typically do not see users changing the Tax_Date to be something different than the document date.  If yours appear different, this may cause your summary and detail reports to be off/different.
