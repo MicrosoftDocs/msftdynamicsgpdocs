@@ -9,12 +9,12 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/3/2023
+ms.date: 12/12/2023
 ---
 
-# Canadian Payroll 2022 Year-end Update & 2023 Tax Update
+# Canadian Payroll 2023 Year-end Update & 2024 Tax Update
 
-This document contains instructions for updating the Canadian Payroll module for Microsoft Dynamics GP for 2022 filing requirements. This update also includes Round 1 tax updates for 2023 federal, provincial, and territorial taxes.
+This document contains instructions for updating the Canadian Payroll module for Microsoft Dynamics GP for 2023 filing requirements. This update also includes Round 1 tax updates for 2024 federal, provincial, and territorial taxes.
 
 These instructions assume that you are already familiar with Microsoft Dynamics GP Canadian Payroll.
 
@@ -38,34 +38,28 @@ This document contains the following chapters:
 
 ### What's changed
 
-The 2022 Year-End Update/2023 Tax Update contains changes in the information that's submitted to the Canada Revenue Agency (CRA) and Ministère du Revenu du Québec.
+The 2023 Year-End Update/2024 Tax Update contains changes in the information that's submitted to the Canada Revenue Agency (CRA) and Ministère du Revenu du Québec.
 
 > [!NOTE]
-> For more information, see the [updated blog of recent changes for Canadian Payroll](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-year-end-update-2022-canadian-payroll).
+> For more information, see the [updated blog of recent changes for Canadian Payroll](https://community.dynamics.com/blogs/post/?postid=38c5b23d-5e98-ee11-a81c-000d3a024b24).
 
 #### Tax changes
 
-See [Chapter 4: Tax updates](#chapter-4-tax-updates) for a description of the 2023 federal, provincial, and territorial tax changes.
-
-> [!NOTE]
-> Tax calculations for Federal, Nova Scotia and Yukon use the BPAYT forumula in the 2022 year.  
-> Per the T4127 document, it indicates:
-> If the BPAYT formula was previously implemented on your payroll system, you can continue to use it. 
-> (which we are doing for the 2023 year)
-> Because of this, our system may not tie directly to the Payroll Deductions Online Calculator (PDOC), as PDOC is using a different method for calculation.
+See [Chapter 4: Tax updates](#chapter-4-tax-updates) for a description of the 2024 federal, provincial, and territorial tax changes.
 
 
 #### General application changes
 
-The 2022 Year-End Update/2023 Tax Update contains application bug fixes and functionality updates to comply with regulatory changes.
+The 2023 Year-End Update/2024 Tax Update contains application bug fixes and functionality updates to comply with regulatory changes.
 
 #### XML and form changes
 
-RL-1 XML and form changes
-No T4 or T4A form and XML changes  
+RL-1 -XML and form changes
+T4  - XML and form changes
+T4A - XML and form changes 
 
-- Software Development Number for XML - RQ-22-01-072
-- RL-1 Slip Authorization number -  FS2201091 (enter this in the Payroll T4/R1 Print window)  
+- Software Development Number for XML - RQ-23-01-112
+- RL-1 Slip Authorization number -  COMING SOON (enter this in the Payroll T4/R1 Print window)  
 
 #### Installation notes
 
@@ -81,11 +75,11 @@ Save backup copies of your Reports.dic, R7131.dic, F7131.dic, Forms.dic, and Dyn
 
 If you have questions about Canadian Payroll year-end closing procedures and your Microsoft Business Solutions Partner isn't available, there are several resources, in addition to this document, to assist in answering your year-end questions.
 
-#### 2022 year-end information
+#### 2023 year-end information
 
 Look at [Dynamics GP Downloads](/dynamics/s-e/gp/cagptuye2018_285) to find out what year-end maintenance and tax changes are included in each update and to download the update. All instructions for downloading and installing the tax updates also will be provided there.
 
-Look for "2022 Canadian Payroll Year End Update for Microsoft Dynamics GP".
+Look for "2023 Canadian Payroll Year End Update for Microsoft Dynamics GP".
 
 ## Chapter 1: Canadian Payroll year-end checklist
 
@@ -95,14 +89,14 @@ Use the following checklist for Canadian Payroll year-end processing. For detail
 
 |**Step**|**Description** |
 |----------|--------------|
-| 1.       | Complete all 2022 pay runs. |
-| 2.       | Note: Any batch with a cheque date of 2023 should be processed after the Year End File Reset. For example, if the cheque date of your final pay period for 2022 is January 1, 2023, the 2023 tax tables must be used for that pay run. |
-| 3.       | Complete any necessary 2022 payroll reports.        |
-| 4.       | Install the 2022 Canadian Payroll Year-End Update. See [Installing the update](#installing-the-update).      |
+| 1.       | Complete all 2023 pay runs. |
+| 2.       | Note: Any batch with a cheque date of 2024 should be processed after the Year End File Reset. For example, if the cheque date of your final pay period for 2023 is January 1, 2024, the 2024 tax tables must be used for that pay run. |
+| 3.       | Complete any necessary 2023 payroll reports.        |
+| 4.       | Install the 2023 Canadian Payroll Year-End Update. See [Installing the update](#installing-the-update).      |
 | 5.       | Note: Do not restart Microsoft Dynamics GP on any workstation until the update has been installed on all workstations that run the application.       |
 | 6.       | Complete the Year End File Reset.                                       |
 | 7.       | Note: To ensure that all tables are available for resetting, make sure that the Year End File Reset window is the only window open in Microsoft Dynamics GP.|
-| 8.       | Make a backup of your data titled "Post 2022 Year-End Update."\*|
+| 8.       | Make a backup of your data titled "Post Year-End Update."\*|
 | 9.       | Note: The following steps can be done any time after the Year End File Reset has been completed.|
 | 10.      | Create T4, T4A, and RL-1 statements, and print the T4, T4A, and RL-1 reports.  |
 | 11.      | Edit the T4, T4A, and RL-1 records, as necessary. You can print an edit list from the Payroll Routines - Canada window. |
@@ -111,24 +105,24 @@ Use the following checklist for Canadian Payroll year-end processing. For detail
 > [!NOTE]
 > By law, you must be able to reproduce original or amended T4, T4A, and RL-1 slips for a predefined (agency assigned) number of years after the original filing. To meet this requirement, be sure to keep backups of all your Canadian Payroll data files, as well as copies of reports, tax forms, and filings. Canadian Payroll will only allow you to re-create a prior year filing if you save backup copies of the prior reporting year data.  
 
-To make it easier to determine CPP and EI maximums between running a payroll in a new year (2023 maximums) and printing T4's from prior years (2022 maximum), two constants are created each with the year maximum in place.
+To make it easier to determine CPP and EI maximums between running a payroll in a new year (2024 maximums) and printing T4's from prior years (2023 maximum), two constants are created each with the year maximum in place.
 
 Example:
-Constant 1 2022 Maximum
-Constant 2 2023 Maximum
+Constant 1 2023 Maximum
+Constant 2 2024 Maximum
 
 To determine when you run a 2023 payroll what maximum to use, the system looks to the **Federal Basic Personal Amount** in the Tax Credit Control window.
 Tools | Setup | Payroll Canada | Control | Tax Credits.
-The system expects the amount of $15,000 for Federal Basic personal Amount in the control and then it will pull the 2023 maximum.
+The system expects the amount of $15,705 for Federal Basic personal Amount in the control and then it will pull the 2024 maximum.
 
 
 ## Chapter 2: Preparation and installation
 
-This portion of the documentation specifies the requirements for installing the 2022 Year-End Update / 2023 Tax Update.
+This portion of the documentation specifies the requirements for installing the 2023 Year-End Update / 2024 Tax Update.
 
 ### Supported versions
 
-The 2022 Year-End Update / 2023 Tax Update supports Microsoft Dynamics GP (18.5). To identify the Microsoft Dynamics GP release you're using, start the application and choose Help \>\> About Microsoft Dynamics GP.
+The 2023 Year-End Update / 2024 Tax Update supports Microsoft Dynamics GP (18.6). To identify the Microsoft Dynamics GP release you're using, start the application and choose Help \>\> About Microsoft Dynamics GP.
 
 To identify the Canadian Payroll release you're using, start Microsoft Dynamics GP, then open the Payroll Control Setup – Canada window (Microsoft Dynamics GP menu \>\>Tools \>\> Setup \>\> Payroll – Canada \>\> Control). You should see the release number in the upper left corner of the window.
 
@@ -167,17 +161,17 @@ The update must be installed on each client workstation where Microsoft Dynamics
 
 #### To install the update
 
-1. Download the update from [Dynamics GP Downloads](/dynamics/s-e/gp/mdgp2018_release_download_378).
+1. Download the update from [Dynamics GP Downloads](https://learn.microsoft.com/en-us/dynamics/s-e/gp/cagptuye2018_285).
 
     | **Language** | **Microsoft Dynamics GP**                  | 
     |--------------|--------------------------------------------|
-    | English      | MicrosoftDynamicsGP18- KB4602595-ENU.msp   | 
-    | French       | MicrosoftDynamicsGP18- KB4602596-FRCA.msp  | 
+    | English      | MicrosoftDynamicsGP18- KB4602612-ENU.msp   | 
+    | French       | MicrosoftDynamicsGP18- KB4602609-FRCA.msp  | 
 
     Save the .msp file to a folder on the local disk drive of the server  workstation that runs Microsoft Dynamics GP.
 
     > [!NOTE]
-    > The year-end update file also includes all prior Microsoft Dynamics GP updates. See also [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_patchreleases_377). This update is inclusive of the Fall / October 2022 release for Microsoft Dynamics GP.
+    > The year-end update file also includes all prior Microsoft Dynamics GP updates. See also [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_patchreleases_377). This update is inclusive of the Fall / October 2023 release for Microsoft Dynamics GP.
 
 2. Double-click the file that you just downloaded. Progress windows appear as space requirements are verified and files are installed.
 
@@ -228,7 +222,7 @@ The update must be installed on each client workstation where Microsoft Dynamics
 
 To verify that you've installed the latest year-end update and tax update, check the **Last Year-End Update** field in the **Payroll Reset Files – Canada** window (Microsoft Dynamics GP menu \>\> Tools \>\> Routines \>\> Payroll – Canada \>\> Year End File Reset). It should be 12/20/2022 or later.
 
-For the tax update, check the Last Tax Update field in the Payroll Control Setup – Canada window (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Payroll – Canada \>\> Control). It should be 12/20/2022 or later.
+For the tax update, check the Last Tax Update field in the Payroll Control Setup – Canada window (Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> Payroll – Canada \>\> Control). It should be 12/20/2023 or later.
 
 ### Installing with UAC activated
 
@@ -241,7 +235,7 @@ User Account Control (UAC) is an enhanced security feature in Windows. UAC is ac
 Example, for Microsoft Dynamics GP 2018 (English), enter the following command.
 
 ```cmd
-Msiexec /p MicrosoftDynamicsGP18-KB4602595-ENU.msp /l\*v C:\\MSPErrorlog.txt
+Msiexec /p MicrosoftDynamicsGP18-KB4602612-ENU.msp /l\*v C:\\MSPErrorlog.txt
 ```
 
 If you want the user to install updates and service packs without having administrative privileges on the local computer, you can change permissions for the folder where Microsoft Dynamics GP is installed. Be aware that doing this makes your computer less secure.
@@ -284,12 +278,12 @@ By using the XML format, Revenue Quebec will validate the file as soon as you su
 
 **Data entry validation** As you enter data during the tax year, entries throughout Canadian Payroll that will be reflected in electronic files will be verified, and messages will advise you of any non-valid entries. RL-1 information is drawn from the following locations in Microsoft Dynamics GP.
 
-| **Type of data**        | **Source**    |
-|-------------------------|-----------|
+| **Type of data**        | **Source**                                   |
+|-------------------------|----------------------------------------------|
 | Employer information    | **Payroll R1 Summary Edit - Canada** window  |
-| Employee information    | **Payroll R1 Edit - Canada** window  |
+| Employee information    | **Payroll R1 Edit - Canada** window          |
 | Withholding amount      | Cumulative totals, gathered during payroll process, which are displayed on the **Payroll R1 Edit - Canada** window |
-| Transmitter information | **Payroll Electronic Transfer R1** window  |
+| Transmitter information | **Payroll Electronic Transfer R1** window    |
 
 ### Filing an amended or cancelled RL-1 in XML format
 
@@ -305,7 +299,7 @@ This chapter lists changes to federal, provincial, and territorial tax rates for
 
 #### CPP
 
-Contribution rates for both employers and employees for 2023 is 5.95%. The following changes are in effect for CPP for 2023:
+Contribution rates for both employers and employees for 2024 is 5.95%. The following changes are in effect for CPP for 2023:
 
 - The maximum pensionable earnings amount will be updated to \$66,600, from \$64,900.
 
