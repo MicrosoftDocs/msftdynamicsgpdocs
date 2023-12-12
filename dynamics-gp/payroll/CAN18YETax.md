@@ -299,41 +299,47 @@ This chapter lists changes to federal, provincial, and territorial tax rates for
 
 #### CPP
 
-Contribution rates for both employers and employees for 2024 is 5.95%. The following changes are in effect for CPP for 2023:
+Contribution rates for both employers and employees for 2024 is 5.95%. The following changes are in effect for CPP for 2024:
 
-- The maximum pensionable earnings amount will be updated to \$66,600, from \$64,900.
+- The maximum pensionable earnings amount will be updated to \$68,500, from \$66,600.
 
 - The basic exemption remains unchanged at \$3,500.
 
-- The maximum contribution amount for the year increases to \$3,754.45, from \$3,499.80.
+- The maximum contribution amount for the year increases to \$3,867.50, from \$3,754.45.
+
+> [!NOTE]
+    >Changes to CPP/QPP effective Jan 1, 2024
+    >Effectively, there is an additional CPP/QPP tax calculation (CPP2/QPP2 is an additional calculation once the initial Annual maximum is reached. It then has a separate maximum to end any CPP/QPP calculation)  
+    >As part of this, we need to track the additional tax withholding and display it in the same places as the original CPP/QPP.
+    > **No new codes needs to be set up for this**
+
 
 #### EI for non-Quebec employees
 
-- The EI Maximum Annual Insurable Earnings amount increases to \$61,500, from \$60,300
+- The EI Maximum Annual Insurable Earnings amount increases to \$63,200, from \$61,500
 
-- The EI premium amount is 1.63%. The EI maximum annual premium amount will be \$1,002.45 from \$952.74 
+- The EI premium amount is 1.66%. The EI maximum annual premium amount will be \$1,049.12 from \$1,002.45 
 
-- The EI Employer Premium Rate amount will change to 2.282%. The employer EI premium is set using the Employer EI Factor field in the Payroll Employer Number Setup – Canada window (Tools \>\> Setup \>\> Payroll-Canada \>\> Employer). This factor must be set to 1.4 to meet the official EI Employer Premium.
+- The EI Employer Premium Rate amount is 2.282%. The employer EI premium is set using the Employer EI Factor field in the Payroll Employer Number Setup – Canada window (Tools \>\> Setup \>\> Payroll-Canada \>\> Employer). This factor must be set to 1.4 to meet the official EI Employer Premium.
 
 #### EI for Quebec employees
 
-- The EI maximum annual insurable earnings amount increases to \$61,500 from \$60,300.
+- The EI maximum annual insurable earnings amount increases to \$63,200 from \$61,500.
 
-- The EI (Quebec) Premium Rate amount increases to 1.27%, from 1.20%.
+- The EI (Quebec) Premium Rate amount increases to 1.32%, from 1.27%.
 
-- The maximum annual premium amount is \$781.05, from \$723.60.
+- The maximum annual premium amount is \$834.24, from \$781.05.
 
 
 > [!NOTE]
-> To make it easier to determine CPP and EI maximums between running a payroll in a new year (2022 maximums) and printing T4's from prior years (2021 maximum), two constants are created each with the year maximum in place.
+> To make it easier to determine CPP and EI maximums between running a payroll in a new year (2023 maximums) and printing T4's from prior years (2023 maximum), two constants are created each with the year maximum in place.
 >
 > Example:
 > Constant 1 2023 Maximum
-> Constant 2 2022 Maximum
+> Constant 2 2024 Maximum
 
-
-To determine when you run a 2023 payroll what maximum to use, the system looks to the Federal Basic Personal Amount in the Tax Credit Control window (Tools > Setup > Payroll Canada > Control > Tax Credits).
-The system expects the amount of $15,000 for Federal Basic personal Amount in the control and then it will pull the 2023 maximum.
+To determine when you run a 2024 payroll what maximum to use, the system looks to the Federal Basic Personal Amount in the Tax Credit Control window (Tools > Setup > Payroll Canada > Control > Tax Credits).
+The system expects the amount of $15,705 for Federal Basic personal Amount in the control and then it will pull the 2024 maximum.
 
 [The CRA accepts different tax calculation methods, and these are outlined on their website](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/t4127-payroll-deductions-formulas-computer-programs.html)
 
@@ -354,98 +360,96 @@ The explanation of the Cumulative Averaging convention is the best resource.
 
 [The above information is published in this article](https://support.microsoft.com/en-us/help/2773319/income-tax-calculations-or-discrepancies-with-the-cra-in-canadian-payr)
  
-Really only the 1st payroll of the year will tie with the calculator as we use the average method
-See our notation in this blog below
-
+**Only the 1st payroll of the year will tie with the calculator as we use the average method**
 
 #### QPIP
 
-- The QPIP Maximum Annual Insurable Earnings amount increases to \$91,000, from \$88,000.
+- The QPIP Maximum Annual Insurable Earnings amount increases to \$94,000, from \$91,000.
 
 - The Premium Rate amount remains at 0.494%.
 
-- The Max Premium is \$449.54 from \$434.72.
+- The Max Premium is \$464.36 from \$449.54.
 
-- The Employer Premium Rate remains at 0.692%. The maximum employer amount will change to \$629.72 from \$608.96.
+- The Employer Premium Rate remains at 0.692%. The maximum employer amount will change to \$650.48 from \$629.72.
 
 ### Federal tax rates and income thresholds
 
-Effective January 1, 2023 the federal tax rate noted below. The federal index factor is 1.024. The income thresholds are revised as follows.
+Effective January 1, 2024 the federal tax rate noted below. The federal index factor is 1.047. The income thresholds are revised as follows.
 
-![income thresholds](media/FED2023.JPG)
+![income thresholds](media/FED2024.JPG)
 
 ### Federal personal amounts
 
 Federal personal amounts have been increased by fixed amounts as shown in the following table.
 
-The Basic Personal amount is updated to \$15,000 (formerly \$14,398).
+The Basic Personal amount is updated to \$15,500 (formerly \$15,000).
 
-The Spouse Common Law Partner amount increases by the index factor to \$15,000  (formerly \$14,398), if the original amount was not zero.
+The Spouse Common Law Partner amount increases by the index factor to \$15,500  (formerly \$15,000), if the original amount was not zero.
 
-The Eligible Dependent amount increases by the index factor to \$15,000 (formerly \$14,398), if the original amount was not zero.
+The Eligible Dependent amount increases by the index factor to \$15,500 (formerly \$15,0008), if the original amount was not zero.
 
 Canada Employment Credit
 
-The Canada Employment credit has been increased to \$1,368 at the lowest rate of 15.0%. The employment credit has been updated so that the Canada employment credit (factor K4) is the lesser of:
+The Canada Employment credit has been increased to \$1,049.12 at the lowest rate of 15.0%. The employment credit has been updated so that the Canada employment credit (factor K4) is the lesser of:
 
 - 0.15 X A; or
 
-- 0.15 X \$1,368
+- 0.15 X \$1,049.12
 
 ### Provincial and territorial tax changes
 
-The following provinces and territories have tax changes for 2023.
+The following provinces and territories have tax changes for 2024.
 
 > [!NOTE]
 > The figures in the following tables are those supplied by the relevant revenue agencies. The actual figures calculated by Canadian Payroll may differ slightly due to rounding. This issue is recognized by the CRA and the  differences will not subject you to penalties for over- or under-withholding.
 
 #### Alberta 
 
-- The Alberta basic personal amount is \$21,003.  
+- The Alberta basic personal amount is \$21,885 (formerly \$21,003).  
 
-- The Alberta spouse or common-law partner amount is \$21,003.
+- The Alberta spouse or common-law partner amount is \$21,885 (formerly \$21,003).
 
-![Alberta tax changes](media/AB2023.JPG)
+![Alberta tax changes](media/AB2024.JPG)
 
 #### British Columbia
 
-- The British Columbia basic personal amount increases by the index factor to  \$11,981 (formerly \$11,302).
+- The British Columbia basic personal amount increases by the index factor to  \$12,580 (formerly \$11,981).
 
-- The British Columbia spouse or common-law partner amount (and eligible dependent) increases by the index factor and is revised to \$11,981  (formerly \$11,302).
+- The British Columbia spouse or common-law partner amount (and eligible dependent) increases by the index factor and is revised to \$12,580  (formerly \$11,981).
 
-![British Columbia tax changes](media/BC2023.JPG)
+![British Columbia tax changes](media/BC2024.JPG)
 
 #### Manitoba
 
-- The Manitoba Basic Personal amount increases by the index factor to \$10,855 (formerly \$10,145).
+- The Manitoba Basic Personal amount increases by the index factor to \$15,780 (formerly \$15,000).
 
-- The Manitoba spouse or common-law partner amount shall increase to \$10,855 (formerly \$10,145).
+- The Manitoba spouse or common-law partner amount shall increase to \$15,780 (formerly \$15,000).
 
-![Manitoba tax changes](media/MB2023.JPG)
+![Manitoba tax changes](media/MB2024.JPG)
 
 #### New Brunswick
 
-- The New Brunswick Basic Personal amount increases by the index factor and is usually revised to \$12,458 (formerly \$10,817).
+- The New Brunswick Basic Personal amount increases by the index factor and is usually revised to \$13,044 (formerly \$12,458).
 
-- The spouse or common-law partner amount increases by the index factor and is revised to \$12,458 (formerly \$10,817),
+- The spouse or common-law partner amount increases by the index factor and is revised to \$13,044 (formerly \$12,458),
 
-![New Brunswick tax changes](media/NB2023.JPG)
+![New Brunswick tax changes](media/NB2024.JPG)
 
 #### Newfoundland and Labrador
 
-- The Newfoundland Basic Personal amount increases by the index factor and is updated to \$10,382 (formerly \$9,803).
+- The Newfoundland Basic Personal amount increases by the index factor and is updated to \$10,818 (formerly \$10,382).
 
-- The spouse or common-law partner amount increases by the index factor and is revised to \$10,382 (formerly \$9,803), if the original amount wasn't zero.
+- The spouse or common-law partner amount increases by the index factor and is revised to \$10,818 (formerly \$10,382), if the original amount wasn't zero.
 
-![Newfoundland tax changes](media/NL2023.JPG)
+![Newfoundland tax changes](media/NL2024.JPG)
 
 #### Northwest Territories
 
-- The Northwest Territories basic personal amount increases by the index factor, and is revised to \$16,593 (formerly \$15,609).
+- The Northwest Territories basic personal amount increases by the index factor, and is revised to \$17,373 (formerly \$16,593).
 
-- The spouse or common-law partner amount increases by the index factor and is revised to \$16,593 (formerly \$15,609), if the original amount wasn't zero.
+- The spouse or common-law partner amount increases by the index factor and is revised to \$17,373 (formerly \$16,593), if the original amount wasn't zero.
 
-![Northwest tax changes](media/NT2023.JPG)
+![Northwest tax changes](media/NT2024.JPG)
 
 #### Nova Scotia - no change
 
@@ -457,49 +461,49 @@ The following provinces and territories have tax changes for 2023.
 
 #### Nunavut
 
-- The Nunavut basic personal amount increases by the index factor and is usually revised to \$17,925 (formerly \$16,862).
+- The Nunavut basic personal amount increases by the index factor and is usually revised to \$18,767 (formerly \$17,925).
 
-- The spouse or common-law partner amount increases by the index factor and is usually revised to \$17,925 (formerly \$16,862, if the original amount was not zero.
+- The spouse or common-law partner amount increases by the index factor and is usually revised to \$18,767 (formerly \$17,925, if the original amount was not zero.
 
-![Nunavut tax changes](media/NU2023.JPG)
+![Nunavut tax changes](media/NU2024.JPG)
 
 #### Ontario
 
-- The Ontario Basic Personal amount increases by the index factor and is usually revised to \$11,865 (formerly \$11,141).
+- The Ontario Basic Personal amount increases by the index factor and is usually revised to \$12,399 (formerly \$11,865).
 
-- The Ontario Spouse or Common-law Partner amount increases by the index factor and is usually revised to \$11,865 (formerly \$11,141).
+- The Ontario Spouse or Common-law Partner amount increases by the index factor and is usually revised to \$12,399 (formerly \$11,865).
 
-![Ontario tax changes](media/ON2023.JPG)
+![Ontario tax changes](media/ON2024.JPG)
 
-#### Prince Edward Island - no change
+#### Prince Edward Island 
 
-- There is no index factor in PEI, but the personal amount is changed to \$12,000 from \$11,250.  
+- The legislated Prince Edward Island basic personal amount increased from \$12,750 to \$13,500 
 
-![Prince Edward island tax changes](media/PE2021.JPG)
+![Prince Edward island tax changes](media/PE2024.JPG)
 
 #### Quebec
 
-The TP-1015.3-V Basic amount increases by the index factor and is usually revised to \$17,183 (formerly \$16,143). The system rounds this calculation to the nearest \$5.00
+The TP-1015.3-V Basic amount increases by the index factor and is usually revised to \$18,056 (formerly \$17,183). The system rounds this calculation to the nearest \$5.00
 
 #### Variable H – Deduction for employment income
 
-The deduction for Employment income has been increased to \$1,315 formerly \$1,235. 
+The deduction for Employment income has been increased to \$1,380 formerly \$1,315. 
 
 #### Saskatchewan 
 
-- The Saskatchewan Basic Personal amount increases by the index factor, so it is usually revised to \$17,661 (formerly \$16,615).
+- The Saskatchewan Basic Personal amount increases by the index factor, so it is usually revised to \$18,491 (formerly \$17,661).
 
-- The Spouse Common Law Partner amount increases by the index factor, so it is  usually revised to \$17,661 (formerly \$16,615).
+- The Spouse Common Law Partner amount increases by the index factor, so it is  usually revised to \$18,491 (formerly \$17,661).
 
-![Saskatchewan tax changes](media/SK2023.JPG)
+![Saskatchewan tax changes](media/SK2024.JPG)
 
 #### Yukon
 
-- The Yukon basic personal amount increases by the index factor and is usually revised to BPAYT formula \$15,000 (formerly \$14,398).
+- The Yukon basic personal amount increases by the index factor and is usually revised to BPAYT formula \$15,705 (formerly \$15,000).
 
-- The spouse or common-law partner amount increases by the index factor and is usually revised to BPAYT formula \$15,000 (formerly \$14,398), provided the original amount was not zero.
+- The spouse or common-law partner amount increases by the index factor and is usually revised to BPAYT formula \$15,705 (formerly \$15,000), provided the original amount was not zero.
 
-![Yukon tax changes](media/YT2023.JPG)
+![Yukon tax changes](media/YT2024.JPG)
 
 ### Updating basic personal amounts
 
@@ -511,53 +515,52 @@ To update the Basic Personal amounts go to: Tools\>\> Routines\>\> PayrollCanada
 
 The personal tax credit amounts specified in the P_CPY_Control table will be updated to:
 
-- The federal Basic Personal amount = \$15,000
+- The federal Basic Personal amount = \$15,705
 
-- Quebec TP-105.3-V Base amount = \$17,183
+- Quebec TP-105.3-V Base amount = \$18,056
 
-- Alberta basic personal amount = \$21,003
+- Alberta basic personal amount = \$21,885
 
-- British Columbia basic personal amount = \$11,981
+- British Columbia basic personal amount = \$12,580
 
-- Manitoba Basic Personal amount =  \$10,855
+- Manitoba Basic Personal amount =  \$15,780
 
-- New Brunswick Basic Personal amount = \$12,458
+- New Brunswick Basic Personal amount = \$13,044
 
-- Newfoundland Basic Personal amount = \$10,382
+- Newfoundland Basic Personal amount = \$10,818
 
-- Northwest Territories basic personal amount = \$16,593
+- Northwest Territories basic personal amount = \$17,373
 
 - Nova Scotia basic personal amount BPANS formula  \$11,481
 
-- Nunavut basic personal amount = \$17,925
+- Nunavut basic personal amount = \$18,767
 
-- Ontario Basic Personal amount = \$11,865
+- Ontario Basic Personal amount = \$12,399
 
-- Prince Edward Island basic personal amount = \$12,000
+- Prince Edward Island basic personal amount = \$13,500
 
-- Saskatchewan Basic Personal amount = \$17,661
+- Saskatchewan Basic Personal amount = \$18,491
 
-- Yukon basic personal amount = \$15,000 BPAYT formula
+- Yukon basic personal amount = \$15,705 BPAYT formula
 
 You can view these amounts in the Tax Credits window by going to: Tools \>\> Setup \>\> Payroll-Canada \>\> Control \>\> Tax Credits
 
-### Index factors for 2023
+### Index factors
 
 The following table shows how Index Factors as specified in the Tax Credit Indexation Factors window (Payroll Reset Files window (Tools\>\>Routines\>\>PayrollCanada\>\>Year End File Reset\>\>Tax Credit Indexation Factors) have been updated.
 
-| **Taxing authority**      | **2023 index factor** | **2022 index factor** |
+| **Taxing authority**      | **2024 index factor** | **2023 index factor** |
 |---------------------------|-----------------------|-----------------------|
-| Federal                   | 1.063                 | 1.024                 |
-| Alberta                   | 1.060                 | 1.000                 |
-| British Columbia          | 1.060                 | 1.021                 |
-| Manitoba                  | 1.070                 | 1.021                 |
-| New Brunswick             | 1.063                 | 1.024                 |
-| Newfoundland and Labrador | 1.059                 | 1.028                 |
-| Northwest Territories     | 1.063                 | 1.024                 |
+| Federal                   | 1.047                 | 1.063                 |
+| Alberta                   | 1.042                 | 1.060                 |
+| British Columbia          | 1.050                 | 1.060                 |
+| Manitoba                  | 1.052                 | 1.070                 |
+| New Brunswick             | 1.047                 | 1.063                 |
+| Newfoundland and Labrador | 1.042                 | 1.059                 |
+| Northwest Territories     | 1.047                 | 1.063                 |
 | Nova Scotia               | 1.000                 | 1.000                 |
-| Nunavut                   | 1.063                 | 1.024                 |
-| Ontario                   | 1.065                 | 1.024                 |
+| Nunavut                   | 1.047                 | 1.063                 |
+| Ontario                   | 1.045                 | 1.065                 |
 | Prince Edward Island      | 1.000                 | 1.000                 |
-| Quebec                    | 1.0644                | 1.0264                |
-| Saskatchewan              | 1.063                 | 1.024                 |
-| Yukon                     | 1.063                 | 1.024                 |
+| Saskatchewan              | 1.047                 | 1.063                 |
+| Yukon                     | 1.047                 | 1.063                 |
