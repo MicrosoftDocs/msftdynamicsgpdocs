@@ -9,7 +9,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 12/11/2023
+ms.date: 12/12/2023
 ---
 
 # Canadian Payroll 2023 Year-end Update & 2024 Tax Update
