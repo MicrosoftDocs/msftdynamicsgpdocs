@@ -65,7 +65,7 @@ Starting with the Dynamics GP October 2020 release, you will have the ability to
 
     <img src="media/image63.png" alt="Authentication menu item highlighted" width="403" height="252" />
 
-15. Click on Add Platform.
+15. Click on "+Add Platform" and select "Mobile and desktop applications".
 
     <img src="media/image65.png" alt="highlighted tile" width="255" height="275" />
 
