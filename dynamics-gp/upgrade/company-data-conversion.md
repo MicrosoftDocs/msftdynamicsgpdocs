@@ -336,7 +336,26 @@ After the upgrade or if the upgrade fails, the Update Company Tables window will
 
 If no icon appears between the check box and the name of the company, the company needs to be upgraded.
 
-If errors do occur, download the `Failed_Tables_List.txt` script from [dynamics-product-downloads](/dynamics/s-e/), and save it to your hard disk. Copy all of the contents of the script and paste the contents them into Microsoft SQL Server Management Studio. Run the script and save the results to a file before you contact Dynamics GP for further assistance.
+If errors do occur,
+Run the following script
+1. Select CMPANYID,CMPNYNAM,INTERID from Dynamics..SY01500
+ 
+2. Select * from Dynamics..DB_Upgrade
+ 
+3. Select * from Dynamics..DU000020 order by companyID
+ 
+4. SELECT b.fileOSName, a.fileNumber, a.PRODID, a.Status, a.errornum, a.errordes, c.CMPANYID, c.INTERID
+  FROM DYNAMICS.dbo.DU000030 a
+  JOIN
+  DYNAMICS.dbo.DU000010 b
+  ON a.fileNumber = b.fileNumber
+  AND a.PRODID = b.PRODID
+  JOIN
+  DYNAMICS.dbo.SY01500 c
+  ON a.companyID = c.CMPANYID
+  WHERE (a.Status <> 0 or a.errornum <> 0) and a.Status <>15
+
+Copy all of the contents of the script and paste the contents them into Microsoft SQL Server Management Studio. Run the script and save the results to a file before you contact Dynamics GP for further assistance.
 
 You also should have the results of the DexSQL.log file ready, as well, if you decided to use the DexSQL.log file. (The DexSQL.log file is located in the same folder as the Dex.ini file.)
 
