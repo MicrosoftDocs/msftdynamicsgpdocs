@@ -182,7 +182,7 @@ Withholding rates for taxpayers filing as *SINGLE*:
 | 698,271     | 1,000,000        | 74,644.13      | 13.53%       | 698,271            |
 | 1,000,000   | And Over         | 115,488.06     | 14.63%       | 1,000,000          |
 
-#### Withholding changes for Colorado
+### Withholding changes for Colorado
 
 All filing status have the same fixed flat tax of 4.40% was 4.55%(2022)
 
@@ -205,6 +205,206 @@ OTH1J - OTH, +1 Jobs or Child Cr Allow - Exemption amount of $500
 As an example, lets say I fill out the form and choose an amount of 2500 – it does not match any of the above filing status so I would pick the OTHER status and put a 5 under Cards | Payroll | State Tax in the Number of Dependents field OR Additional Allowances. Which is 2500/500 = 5.
 
 Another example, I put 5500 on the form. Again, that does not match the other filing status, so I choose *Other* and put *11*.
+
+### Withholding changes for Connecticut
+
+Withholding rates for taxpayers filing as *A*, *D*, and *F*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 10,000           | 0              | 2%           | 0                  |
+| 10,000      | 50,000           | 200            | 4.5%         | 10,000             |
+| 50,000      | 50,250           | 2,000          | 5.5%         | 50,000             |
+| 50,250      | 52,750           | 2,025          | 5.5%         | 50,000             |
+| 52,750      | 55,250           | 2,050          | 5.5%         | 50,000             |
+| 55,250      | 57,750           | 2,075          | 5.5%         | 50,000             |
+| 57,750      | 60,250           | 2,100          | 5.5%         | 50,000             |
+| 60,250      | 62,750           | 2,125          | 5.5%         | 50,000             |
+| 62,750      | 65,250           | 2,150          | 5.5%         | 50,000             |
+| 65,250      | 67,750           | 2,175          | 5.5%         | 50,000             |
+| 67,750      | 70,250           | 2,200          | 5.5%         | 50,000             |
+| 70,250      | 72,750           | 2,225          | 5.5%         | 50,000             |
+| 72,750      | 100,000          | 2,250          | 5.5%         | 50,000             |
+| 100,000     | 200,000          | 4,750          | 6.0%         | 100,000            |
+| 200,000     | 250,000          | 10,750         | 6.5%         | 200,000            |
+| 250,000     | 500,000          | 14,000         | 6.9%         | 250,000            |
+| 500,000     | and over         | 31,250         | 6.99%        | 500,000            |
+
+
+Withholding rates for taxpayers filing as *B*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 16,000           | 0              | 2%           | 0                  |
+| 16,000      | 78,500           | 320            | 4.5%         | 16,000             |
+| 78,500      | 78,500           | 360            | 4.5%         | 16,000             |
+| 78,500      | 82,500           | 3,240          | 5.5%         | 80,000             |
+| 82,500      | 86,500           | 3,280          | 5.5%         | 80,000             |
+| 86,500      | 90,500           | 3,320          | 5.5%         | 80,000             |
+| 90,500      | 94,500           | 3,360          | 5.5%         | 80,000             |
+| 94,500      | 98,500           | 3,400          | 5.5%         | 80,000             |
+| 98,500      | 102,500          | 3,440          | 5.5%         | 80,000             |
+| 102,500     | 106,500          | 3,480          | 5.5%         | 80,000             |
+| 106,500     | 110,500          | 3,520          | 5.5%         | 80,000             |
+| 110,500     | 114,500          | 3,560          | 5.5%         | 80,000             |
+| 114,500     | 160,000          | 3,600          | 5.5%         | 80,000             |
+| 160,000     | 320,000          | 7,600          | 6.0%         | 160,000            |
+| 320,000     | 400,000          | 17,200         | 6.5%         | 320,000            |
+| 400,000     | 800,000          | 22,400         | 6.9%         | 400,000            |
+| 800,000     | and over         | 50,000         | 6.99%        | 800,000            |
+
+Withholding rates for taxpayers filing as *C*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 20,000           | 0              | 2%           | 0                  |
+| 20,000      | 100,000          | 400            | 4.5%         | 20,000             |
+| 100,000     | 100,500          | 4,000          | 5.5%         | 100,000            |
+| 100,500     | 105,500          | 4,050          | 5.5%         | 100,000             |
+| 105,500     | 110,500          | 4,100          | 5.5%         | 100,000             |
+| 110,500     | 115,500          | 4,150          | 5.5%         | 100,000             |
+| 115,500     | 120,500          | 4,200          | 5.5%         | 100,000             |
+| 120,500     | 125,500          | 4,250          | 5.5%         | 100,000             |
+| 125,500     | 130,500          | 4,300          | 5.5%         | 100,000             |
+| 130,500     | 135,500          | 4,350          | 5.5%         | 100,000             |
+| 135,500     | 140,500          | 4,400          | 5.5%         | 100,000             |
+| 140,500     | 145,500          | 4,450          | 5.5%         | 100,000             |
+| 145,500     | 200,000          | 4,500          | 5.5%         | 100,000             |
+| 200,000     | 400,000          | 9,500          | 6.0%         | 200,000             |
+| 400,000     | 500,000          | 21,500         | 6.5%         | 400,000             |
+| 500,000     | 1,000,000        | 28,000         | 6.9%         | 500,000             |
+| 1,000,000   | and over         | 62,500         | 6.99%        | 1,000,000           |
+
+### Withholding changes for Iowa
+
+New for 2023 Iowa withholding calculations, federal withholding is no longer subtracted from taxable wages.  
+
+The Standard Deduction Amount for Filing Status:
+
+- EXP1 is $14,600 previously \$13,850
+- EXP2 is $29,200 previously \$27,700
+
+Withholding rates for taxpayers filing as EXP1 and EXP2 are as follows:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 4,896            | 0              | 4.40%        |                    |
+| 4,896       | 24,480           | 215.42         | 4.82%        | 4,896              |
+| 24,480      | And over         | 1,159.37       | 5.70%        | 24,480             |
+
+
+### Withholding changes for Kentucky
+
+The Standard Deduction Amount is $3,160 from $2,980
+The Tax Rate decreases to 4.0% formerly 4.5%
+
+
+### Withholding changes for Maine
+
+- Personal Exemption is $5,000 was $4,700
+
+Withholding rates for taxpayers filing as *SINGLE*, Tax table type
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+|  0          | 26,050           | 0              | 5.8%         | 0                  |
+| 26,050      | 61,600           | 1,511          | 6.75%        | 26,050             |
+| 61,600      | And over         | 3,911          | 7.15%        | 61,600             |
+
+Special table type
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 95,150           | 0              | 0            | 11,750             |
+| 97,150      | 172,150          | 75,000         | 0            | 0                  |
+
+Withholding rates for taxpayers filing as MAR, Tax table type
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 52,100           |                | 5.80%        | 0                  |
+| 52,100      | 123,250          | 3,022          | 6.75%        | 52,100             |
+| 123,250     | And Over         | 7,875          | 7.15%        | 123,250            |
+
+Special table type
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 194,300          | 0              | 0            | 26,350             |
+| 194,300     | 344,300          | 150,000        | 0            | 0                  |
+
+### Withholding changes for Michigan
+
+The Personal Exemption Amount is $5,600 from $5,000
+The Tax Rate remains at 4.25%
+
+#### Withholding changes for Missouri
+
+The Standard Deduction is $21,900 prior \$20,800 for filing status HOH
+The Standard Deduction is $29,200 prior \$27,700 for filing status MAR1
+The Standard Deduction is $14,600 prior \$13,850 for filing status MAR2 and SINGLE
+
+Withholding rates for all filing status
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 1,273            | 0              | 0%           | 0                  |
+| 1,273       | 2,546            | 0              | 2.0%         | 1,273              |
+| 2,546       | 3,819            | 25             | 2.5%         | 2,546              |
+| 3,819       | 5,092            | 57             | 3.0%         | 3,819              |
+| 5,092       | 6,365            | 95             | 3.5%         | 5,092              |
+| 6,0365      | 7,638            | 140            | 4.0%         | 6,365              |
+| 7,638       | 8,911            | 191            | 4.5%         | 7,638              |
+| 8,911       | And over         | 248            | 4.8%         | 8,911              |
+
+### Withholding changes for Montana
+
+The Personal Exemption amount is $0 formerly $2,070 
+
+Tax Type rates for MAR Filing Status:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 29,200           | 0              | 0%           | 0                  |
+| 29,200      | 70,200           | 0              | 4.70%        | 29,200             |
+| 70,200      | And Over         | 1,927          | 5.9%         | 70,200             |
+
+Tax Type rates for SINGLE Filing Status:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 14,600           | 0              | 0%           | 0                  |
+| 14,600      | 35,100           | 0              | 4.70%        | 14,600             |
+| 35,100      | And Over         | 964            | 5.9%         | 35,100             |
+
+
+### Withholding changes for Nebraska
+
+The Personal Exemption amount is $2,250 formerly \$2,140 for Filing Status MAR and SINGLE.
+
+Withholding rates for taxpayers filing as *MAR*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 7,530            | 0              | 0            | 0                  |
+| 7,530       | 11,610           | 0              | 2.26%        | 7,530              |
+| 11,610      | 28,910           | 92.21          | 3.22%        | 11,610             |
+| 28,910      | 44,980           | 649.27         | 4.91%        | 28,910             |
+| 44,980      | 55,810           | 1,438.31       | 6.20%        | 44,980             |
+| 55,810      | 74,010           | 2,109.77       | 6.39%        | 55,810             |
+| 74,010      | And over         | 3,272.75       | 6.75%        | 74,010             |
+
+Withholding rates for taxpayers filing as *SINGLE*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 3,060            | 0              | 0            | 0                  |
+| 3,060       | 5,990            | 0              | 2.26%        | 3,060              |
+| 5,990       | 19,470           | 66.22          | 3.22%        | 5,990              |
+| 19,470      | 28,210           | 500.28         | 4.91%        | 19,470             |
+| 28,210      | 35,820           | 929.41         | 6.20%        | 28,210             |
+| 35,820      | 67,270           | 1,401.23       | 6.39%        | 35,820             |
+| 67,270      | And over         | 3,410.89       | 6.75%        | 67,270             |
 
 
 ## Resources to assist you
