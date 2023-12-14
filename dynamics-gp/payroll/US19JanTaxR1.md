@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 12/13/2023
+ms.date: 12/14/2023
 ---
 # U.S. 2024 Payroll Tax Update
 
@@ -36,17 +36,20 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 - Federal tax
 - Arkansas
 - California
+- Colorado
+- Connecticut
+- Iowa
 - Kentucky
 - Maine
-- Minnesota
-- Mississippi
+- Michigan
 - Missouri
 - Montana
 - Nebraska
 - New Mexico
-- New York
+- North Carolina
+- Oregon
+- Rhode Island
 - South Carolina
-- Yonkers
 
 ### Withholding changes for Arkansas
 
@@ -139,12 +142,12 @@ Withholding rates for taxpayers filing as *HOH*:
 | If Over | But Not Over  | Tax Amount  | Tax Rate  | On Excess Over                  |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 20,839           | 0              | 1.1%         | 0                  |
-| 20,839      | 49,371           | 229.23         | 2.2%         | 20,839              |
+| 20,839      | 49,371           | 229.23         | 2.2%         | 20,839             |
 | 49,371      | 63,644           | 856.93         | 4.4%         | 49,371             |
 | 63,644      | 78,765           | 1,484.94       | 6.6%         | 63,644             |
 | 78,765      | 93,037           | 2,482.93       | 8.8%         | 78,765             |
 | 93,037      | 474,824          | 3,738.87       | 10.23%       | 93,037             |
-| 474,824     | 569,790          | 42,795.68      | 11.33%       | 474,824             |
+| 474,824     | 569,790          | 42,795.68      | 11.33%       | 474,824            |
 | 569,790     | 949,649          | 53,555.33      | 13.53%       | 569,790            |
 | 949,649     | 1,000,000        | 100,771.80     | 13.53%       | 949,649            |
 | 1,000,000   | And Over         | 107,583.29     | 14.63%       | 1,000,000          |
@@ -153,32 +156,55 @@ Withholding rates for taxpayers filing as *MAR1* and *MAR2*
 
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over  |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 20,198           | 0              | 1.1%         | 0                  |
-| 20,198      | 47,884           | 222.18         | 2.2%         | 20,198             |
-| 47,884      | 75,576           | 831.27         | 4.4%         | 47,884             |
-| 75,576      | 104,910          | 2,049.72       | 6.6%         | 75,576             |
-| 104,910     | 132,590          | 3,985.76       | 8.8%         | 104,910            |
-| 132,590     | 677,278          | 6,421.60       | 10.23%       | 132,590            |
-| 677,278     | 812,728          | 62,143.18      | 11.33%       | 677,278            |
-| 812,728     | 1,000,000        | 77,489.67      | 12.43%       | 812,728            |
-| 1,000,000   | 1,354,550        | 100,767.58     | 13.53%       | 1,000,000          |
-| 1,354,550   | And Over         | 148,738.20     | 14.63%       | 1,354,550          |
+| 0           | 20,824           | 0              | 1.1%         | 0                  |
+| 20,824      | 49,368           | 229.06         | 2.2%         | 20,824             |
+| 49,368      | 77,918           | 857.03         | 4.4%         | 49,368             |
+| 77,918      | 108,162          | 2,113.23       | 6.6%         | 77,918             |
+| 108,162     | 136,700          | 4,109.33       | 8.8%         | 108,162            |
+| 136,700     | 698,274          | 6,620.67       | 10.23%       | 136,700            |
+| 698,274     | 837,922          | 64,069.69      | 11.33%       | 698,274            |
+| 837,922     | 1,000,000        | 79,891.81      | 12.43%       | 837,922            |
+| 1,000,000   | 1,396,542        | 100,038.11     | 13.53%       | 1,000,000          |
+| 1,396,542   | And Over         | 153,690.24     | 14.63%       | 1,396,542          |
 
 Withholding rates for taxpayers filing as *SINGLE*:
 
-| If Over  | But Not Over  | Tax Amount  | Tax Rate  | On Excess Over  |
+| If Over  | But Not Over  | Tax Amount  | Tax Rate  | On Excess Over                 |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 10,099           | 0              | 1.1%         | 0                  |
-| 10,099      | 23,942           | 111.09         | 2.2%         | 10,099             |
-| 23,942      | 37,788           | 415.64         | 4.4%         | 23,942             |
-| 37,788      | 52,455           | 1,024.86       | 6.6%         | 37,788             |
-| 52,455      | 66,295           | 1,992.88       | 8.8%         | 52,455             |
-| 66,295      | 338,639          | 3,210.80       | 10.23%       | 66,295             |
-| 338,639     | 406,364          | 31,071.59      | 11.33%       | 338,639            |
-| 406,364     | 677,275          | 38,744.83      | 12.43%       | 406,364            |
-| 677,275     | 1,000,000        | 72,419.07      | 13.53%       | 677,275            |
-| 1,000,000   | And Over         | 116,083.76     | 14.63%       | 1,000,000          |
+| 0           | 10,412           | 0              | 1.1%         | 0                  |
+| 10,412      | 24,684           | 114.53         | 2.2%         | 10,412             |
+| 24,684      | 38,959           | 428.51         | 4.4%         | 24,684             |
+| 38,959      | 54,081           | 1,056.61       | 6.6%         | 38,959             |
+| 54,081      | 68,350           | 2,054.66       | 8.8%         | 54,081             |
+| 68,350      | 349,137          | 3,310.33       | 10.23%       | 68,350             |
+| 349,137     | 418,961          | 32,034.84      | 11.33%       | 349,137            |
+| 418,961     | 698,271          | 39,945.90      | 12.43%       | 418,961            |
+| 698,271     | 1,000,000        | 74,644.13      | 13.53%       | 698,271            |
+| 1,000,000   | And Over         | 115,488.06     | 14.63%       | 1,000,000          |
 
+#### Withholding changes for Colorado
+
+All filing status have the same fixed flat tax of 4.40% was 4.55%(2022)
+
+The Personal Exemption amount is $9,000 for MAR
+The Personal Exemption amount is $4,500 For SINGLE
+
+**The following new filing status were added January 2022:**
+
+- HOH1J - Head of Household 1 Job - Exemption amount  $19,500  
+- MAR1J - Married Filing Jointly 1 Job - Exemption amount  $27,000  
+- SIN1J - Single/Mar filing Single 1 Job - Exemption amount  $12,500  
+
+In January 2022 the state of Colorado released a new form called [DR-0004](https://tax.colorado.gov/withholding-forms) this is optional for an employee to complete.  
+
+There are 2 other parts to this form that have many different exemption amounts, we cannot accommodate all of them in the tax tables.
+A new “OTHER” filing status was added (OTH1J) with Exemption increments of $500 that will accommodate all the "other" amounts on the form if an employee enters. 
+
+OTH1J - OTH, +1 Jobs or Child Cr Allow - Exemption amount of $500
+
+As an example, lets say I fill out the form and choose an amount of 2500 – it does not match any of the above filing status so I would pick the OTHER status and put a 5 under Cards | Payroll | State Tax in the Number of Dependents field OR Additional Allowances. Which is 2500/500 = 5.
+
+Another example, I put 5500 on the form. Again, that does not match the other filing status, so I choose *Other* and put *11*.
 
 
 ## Resources to assist you
