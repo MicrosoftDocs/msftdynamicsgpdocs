@@ -485,60 +485,60 @@ If the above doesn't lead to a solution, it may be a corrupted field that will c
 
 ## Templates do not seem to be working after an upgrade of Dynamics GP
 
-1.  If your report is modified, try to print the orginal.
+1.  If your report is modified, try to print the original.
 Set Template to Default Original/Canned Report for Testing.
 
 Please follow the steps below to test using the default (canned) template. This also involves switching your Report Writer security to the default report rather than Modified.
 
 NOTE: If your user is assigned to an Alternate/Modified Forms and Report ID that is also used by other users, they will be affected by this change. Either create a new Alt/Mod ID, for your testing and assign it to your user, or make sure that other users in the system are not printing/emailing this report during your testing.
 
-1. Microsoft Dynamics GP menu >> Tools >> Setup >> System >> User Security
-2. Select the username and company
-3. Click on the ‘Alternate/Modified Forms and Reports ID:’ link at the bottom of the window.
-4. In the Alternate/Modified Forms and Reports window select the following:
-a) Product: Microsoft Dynamics GP
-b) Type: Reports
-c) Series – All
-d) Click the plus button to expand the Sales folder.
-e) Click the plus button to expand the SOP Blank Invoice Form.
-(If the report is not on the list at all then you do not have a modified option, please move to step 5)
-f) Select the default/canned ‘Microsoft Dynamics GP’ option. (Do NOT select modified here)
-g) Click Save, Save, and Close
-5. Go to Reports>>Template Maintenance
-6. In the Report Template Maintenance Window, Click the bar at the top that says ‘Click here to select a report’
-7. Select the option for ‘More Reports’ on the Drop Down list.
-a) Product: Microsoft Dynamics GP, Series: Sales
-b) Status: Original
-c) Select ‘*SOP Blank Invoice Form’ from the list and Click ‘Select’.  Example
-8. In the Report Template maintenance window, highlight the ‘SOP Blank Invoice Form*’
-9. Click on the Assign>>Company button on the menu bar.
-10. Check the company that you are testing the process in.
-11. Highlight a company and click ‘Set Default’
-12. Check the box next to the ‘SOP Blank Invoice Form*’  Click Save and close.
+   1. Microsoft Dynamics GP menu >> Tools >> Setup >> System >> User Security
+   2. Select the username and company
+   3. Click on the ‘Alternate/Modified Forms and Reports ID:’ link at the bottom of the window.
+   4. In the Alternate/Modified Forms and Reports window select the following:
+      a) Product: Microsoft Dynamics GP
+      b) Type: Reports
+      c) Series – All
+      d) Click the plus button to expand the Sales folder.
+      e) Click the plus button to expand the SOP Blank Invoice Form.
+      (If the report is not on the list at all then you do not have a modified option, please move to step 5)
+      f) Select the default/canned ‘Microsoft Dynamics GP’ option. (Do NOT select modified here)
+      g) Click Save, Save, and Close
+   5. Go to Reports>>Template Maintenance
+   6. In the Report Template Maintenance Window, Click the bar at the top that says ‘Click here to select a report’
+   7. Select the option for ‘More Reports’ on the Drop Down list.
+      a) Product: Microsoft Dynamics GP, Series: Sales
+      b) Status: Original
+      c) Select ‘*SOP Blank Invoice Form’ from the list and Click ‘Select’.  Example
+   8. In the Report Template maintenance window, highlight the ‘SOP Blank Invoice Form*’
+   9. Click on the Assign>>Company button on the menu bar.
+   10. Check the company that you are testing the process in.
+   11. Highlight a company and click ‘Set Default’
+   12. Check the box next to the ‘SOP Blank Invoice Form*’  Click Save and close.
 
 The report you selected will now be default and you can test your process
 
-3.  Error message One or more templates could not be processed.  View the exception log for more details.
+2.  Error message One or more templates could not be processed.  View the exception log for more details.
 This could mean there are XML Format errors for the template.  If you have a back up of the template try to reimport it and see if this works.
 
-4. If anything else changed with the upgrade, such as moved servers, a potential issue with your logo file and where it is located.
+3. If anything else changed with the upgrade, such as moved servers, a potential issue with your logo file and where it is located.
 If you are logged into GP and go to Report > Template Configuration, then click the Images button do you have path names specified for the company in question?  Is that a valid path name?
 
-5. Are you testing this directly on a new SQL Server?  We have seen some issues where ports are closed or blocked between the GP client and the SQL Server.  
+4. Are you testing this directly on a new SQL Server?  We have seen some issues where ports are closed or blocked between the GP client and the SQL Server.  
 These ports (TCP ports 1433 and 1434 and UDP port 1434) are used to populate the temp file(s) needed when generating a Word template report
 
-6. Another thing you can look at is the ODBC connection that is being used.  If the server name is using an IP address instead of a server name it can cause issues with template processing.  
+5. Another thing you can look at is the ODBC connection that is being used.  If the server name is using an IP address instead of a server name it can cause issues with template processing.  
 
-7. There is a template processing DLL in the GP client folder that could potentially have a problem.  I would recommend renaming your GP client folder (e.g. C:\Program Files (x86)\Microsoft Dynamics\GP), then go to Control Panel > Programs and Features and run a Repair against GP.  This will lay down a new, clean GP client folder without any customization or 3rd parties.  Launch GP from that install and try to repro the issue.
+6. There is a template processing DLL in the GP client folder that could potentially have a problem.  I would recommend renaming your GP client folder (e.g. C:\Program Files (x86)\Microsoft Dynamics\GP), then go to Control Panel > Programs and Features and run a Repair against GP.  This will lay down a new, clean GP client folder without any customization or 3rd parties.  Launch GP from that install and try to repro the issue.
 
-8. The template processing also relies on the Dexterity Shared Components.  Can you uninstall that from Programs and Features, then run the GP 18.6 installation media to reinstall it.  It should see that it is missing and prompt you to include it via the bootstrapper.
+7. The template processing also relies on the Dexterity Shared Components.  Can you uninstall that from Programs and Features, then run the GP 18.6 installation media to reinstall it.  It should see that it is missing and prompt you to include it via the bootstrapper.
    
-9. Also in Programs and Features look for the Open XML SDK for Office.  Dynamics GP will install version 2.0 of this as a prerequisite, but there is a version 2.5 out there.  The problem is that when version 2.5 is installed the Word template and copy/paste functionality in GP will not work.  If you see 2.5 installed you’ll want to remove that, let the GP install media bootstrapper install the correct version again, then test the printing process.
+8. Also in Programs and Features look for the Open XML SDK for Office.  Dynamics GP will install version 2.0 of this as a prerequisite, but there is a version 2.5 out there.  The problem is that when version 2.5 is installed the Word template and copy/paste functionality in GP will not work.  If you see 2.5 installed you’ll want to remove that, let the GP install media bootstrapper install the correct version again, then test the printing process.
 
-10. Errors such as:
+9. Errors such as:
 "The File POP Purchase Order Blank Form~18.docx cannot be opened because there are problems with the contents"
 “Word found unreadable content in "POP Purchase Order Blank Form~18.docx" 
-'Word found unreadable contend in 'TWOBlank Invoice'.docx. Fo you want to recover the contenst of this document, click Yes.'
+'Word found unreadable contend in 'TWOBlank Invoice'.docx. If you want to recover the contents of this document, click Yes.'
 The usual cause of this error in Dynamics GP template use is that 'Maintain Compatibility' mode was not selected when the Template was saved initially in Word.
 The reason that it would happen on the workstation but not the sever is usually because when Maintain Compatibility is not marked the Template will not be compatible with all versions of Microsoft Word. Most likely the versions of Word do not match between the server and the user's workstation.
 
