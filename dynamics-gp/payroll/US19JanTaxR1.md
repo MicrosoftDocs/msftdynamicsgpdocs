@@ -332,7 +332,7 @@ Special table type
 The Personal Exemption Amount is $5,600 from $5,000
 The Tax Rate remains at 4.25%
 
-#### Withholding changes for Missouri
+### Withholding changes for Missouri
 
 The Standard Deduction is $21,900 prior \$20,800 for filing status HOH
 The Standard Deduction is $29,200 prior \$27,700 for filing status MAR1
