@@ -504,11 +504,9 @@ If the above doesn't lead to a solution, it may be a corrupted field that will c
       2. Type: Reports
       3. Series – All
       4. Click the plus button to expand the Sales folder.
-      5. Click the plus button to expand the SOP Blank Invoice Form.
-      
-         If the report is not on the list at all, then you do not have a modified option, so move to step 5.
-      f) Select the default/canned ‘Microsoft Dynamics GP’ option. (Do not select modified here.)
-      g) Click Save, Save, and Close.
+      5. Click the plus button to expand the SOP Blank Invoice Form. If the report is not on the list at all, then you do not have a modified option, so move to step 5.
+      6. Select the default/canned ‘Microsoft Dynamics GP’ option. (Do not select modified here.)
+      7. Click Save, Save, and Close.
    5. Go to Reports >> Template Maintenance
    6. In the Report Template Maintenance Window, click the bar at the top that says ‘Click here to select a report’.
    7. Select the option for ‘More Reports’ on the Drop Down list.
