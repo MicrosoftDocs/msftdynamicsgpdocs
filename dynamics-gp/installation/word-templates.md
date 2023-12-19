@@ -493,7 +493,7 @@ If the above doesn't lead to a solution, it may be a corrupted field that will c
 
    Please follow the steps below to test using the default (canned) template. This also involves switching your Report Writer security to the default report rather than Modified.
 
-   > [!NOTE)
+   > [!NOTE]
    > If your user is assigned to an Alternate/Modified Forms and Report ID that is also used by other users, they will be affected by this change. Either create a new Alt/Mod ID, for your testing and assign it to your user, or make sure that other users in the system are not printing/emailing this report during your testing.
 
    1. Microsoft Dynamics GP menu >> Tools >> Setup >> System >> User Security.
@@ -529,7 +529,7 @@ This could mean there are XML Format errors for the template.  If you have a bac
    - “Word found unreadable content in "POP Purchase Order Blank Form~18.docx" 
    - "Word found unreadable contend in 'TWOBlank Invoice'.docx. If you want to recover the contents of this document, click Yes."
 
-    The usual cause of this error in Dynamics GP template use is that 'Maintain Compatibility' mode was not selected when the Template was saved initially in Word.
+    The usual cause of these errors in Dynamics GP template use is that 'Maintain Compatibility' mode was not selected when the Template was saved initially in Word.
     The reason that it would happen on the workstation but not the sever is usually because when Maintain Compatibility is not marked the Template will not be compatible with all versions of Microsoft Word. Most likely the versions of Word do not match between the server and the user's workstation.
 
 Word only gives you the option to mark Maintain Compatibility the first time you save the template, [you have to use the steps from this blog to re-enable it](https://community.dynamics.com/gp/b/dynamicsgp/archive/2012/03/13/error-message-when-printing-or-emailing-multiple-word-templates.aspx)
