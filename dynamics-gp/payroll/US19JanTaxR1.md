@@ -54,13 +54,12 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 ### Withholding changes for Arkansas
 
 > [!NOTE]
-> If you have employees set up to withhold Arkansas state tax, you need to be on version 18.5.1635 or later, for taxes to be correct for the year 2024. 
-This change is for the Midrange Income look up part of the tax calculation.
-> 
-Standard Deduction Amount is $2,340 from $2,270
-Personal Exemption remains at $29.00
+> If you have employees set up to withhold Arkansas state tax, you need to be on version 18.5.1635 or later, for taxes to be correct for the year 2024. This change is for the Midrange Income look up part of the tax calculation.
 
-Tax Type rates for Filing Status NA
+- Standard Deduction Amount is $2,340 from $2,270
+- Personal Exemption remains at $29.00
+
+Tax Type rates for Filing Status NA:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -110,7 +109,7 @@ Tax Type rates for Filing Status NA
 | 93,600      | 100,000          | -126.40        | 4.4%         | 0                  |
 | 100,000     | And Over         | -126.40        | 4.4%         | 0                  |
 
-Tax Type Special for Filing Status NA added
+Tax Type Special for Filing Status NA added:
 
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over                     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -146,7 +145,7 @@ Withholding rates for taxpayers filing as *HOH*:
 | 949,649     | 1,000,000        | 100,771.80     | 13.53%       | 949,649            |
 | 1,000,000   | And Over         | 107,584.29     | 14.63%       | 1,000,000          |
 
-Withholding rates for taxpayers filing as *MAR1* and *MAR2*
+Withholding rates for taxpayers filing as *MAR1* and *MAR2*:
 
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over  |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -178,10 +177,10 @@ Withholding rates for taxpayers filing as *SINGLE*:
 
 ### Withholding changes for Colorado
 
-All filing status have the same fixed flat tax of 4.40% was 4.55%(2022)
+All filing status have the same fixed flat tax of 4.40% was 4.55% (2022).
 
-The Personal Exemption amount is $9,000 for MAR
-The Personal Exemption amount is $4,500 For SINGLE
+- The Personal Exemption amount is $9,000 for MAR
+- The Personal Exemption amount is $4,500 For SINGLE
 
 **The following new filing status were added January 2022:**
 
@@ -192,13 +191,14 @@ The Personal Exemption amount is $4,500 For SINGLE
 In January 2022 the state of Colorado released a new form called [DR-0004](https://tax.colorado.gov/withholding-forms) this is optional for an employee to complete.  
 
 There are 2 other parts to this form that have many different exemption amounts, we cannot accommodate all of them in the tax tables.
+
 A new “OTHER” filing status was added (OTH1J) with Exemption increments of $500 that will accommodate all the "other" amounts on the form if an employee enters. 
 
 OTH1J - OTH, +1 Jobs or Child Cr Allow - Exemption amount of $500
 
-As an example, lets say I fill out the form and choose an amount of 2500 – it does not match any of the above filing status so I would pick the OTHER status and put a 5 under Cards | Payroll | State Tax in the Number of Dependents field OR Additional Allowances. Which is 2500/500 = 5.
+As an example, lets say I fill out the form and choose an amount of 2500. It does not match any of the above filing status so I would pick the OTHER status and put a 5 under Cards | Payroll | State Tax in the Number of Dependents field OR Additional Allowances. Which is 2500/500 = 5.
 
-Another example, I put 5500 on the form. Again, that does not match the other filing status, so I choose *Other* and put *11*.
+Another example, I put 5500 on the form. Again, it does not match the other filing status, so I choose *Other* and put *11*.
 
 ### Withholding changes for Connecticut
 
