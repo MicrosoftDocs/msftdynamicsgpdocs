@@ -289,15 +289,14 @@ Withholding rates for taxpayers filing as EXP1 and EXP2 are as follows:
 
 ### Withholding changes for Kentucky
 
-The Standard Deduction Amount is $3,160 from $2,980
-The Tax Rate decreases to 4.0% formerly 4.5%
-
+- The Standard Deduction Amount is $3,160 from $2,980
+- The Tax Rate decreases to 4.0% formerly 4.5%
 
 ### Withholding changes for Maine
 
 - Personal Exemption is $5,000 was $4,700
 
-Withholding rates for taxpayers filing as *SINGLE*, Tax table type
+Withholding rates for taxpayers filing as *SINGLE*, Tax table type:
 
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -312,7 +311,7 @@ Special table type
 | 0           | 95,150           | 0              | 0            | 11,750             |
 | 97,150      | 172,150          | 75,000         | 0            | 0                  |
 
-Withholding rates for taxpayers filing as MAR, Tax table type
+Withholding rates for taxpayers filing as MAR, Tax table type:
 
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -320,7 +319,7 @@ Withholding rates for taxpayers filing as MAR, Tax table type
 | 52,100      | 123,250          | 3,022          | 6.75%        | 52,100             |
 | 123,250     | And Over         | 7,875          | 7.15%        | 123,250            |
 
-Special table type
+Special table type:
 
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -329,16 +328,16 @@ Special table type
 
 ### Withholding changes for Michigan
 
-The Personal Exemption Amount is $5,600 from $5,000
-The Tax Rate remains at 4.25%
+- The Personal Exemption Amount is $5,600 from $5,000
+- The Tax Rate remains at 4.25%
 
 ### Withholding changes for Missouri
 
-The Standard Deduction is $21,900 prior \$20,800 for filing status HOH
-The Standard Deduction is $29,200 prior \$27,700 for filing status MAR1
-The Standard Deduction is $14,600 prior \$13,850 for filing status MAR2 and SINGLE
+- The Standard Deduction is $21,900 prior \$20,800 for filing status HOH
+- The Standard Deduction is $29,200 prior \$27,700 for filing status MAR1
+- The Standard Deduction is $14,600 prior \$13,850 for filing status MAR2 and SINGLE
 
-Withholding rates for all filing status
+Withholding rates for all filing status:
 
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
