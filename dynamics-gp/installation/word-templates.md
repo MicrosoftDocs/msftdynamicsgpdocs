@@ -487,7 +487,7 @@ If the above doesn't lead to a solution, it may be a corrupted field that will c
 
 ## Word Templates stuck processing after an upgrade of Dynamics GP
 
-**Issue is isolated to one specific template report**
+### Issue is isolated to one specific template report
 
 1. If your report is modified, try to print the original. Set Template to Default Original/Canned Report for Testing.
 
@@ -534,7 +534,7 @@ This could mean there are XML Format errors for the template.  If you have a bac
 
 Word only gives you the option to mark Maintain Compatibility the first time you save the template, [you have to use the steps from this blog to re-enable it](https://community.dynamics.com/gp/b/dynamicsgp/archive/2012/03/13/error-message-when-printing-or-emailing-multiple-word-templates.aspx)
 
-**Issue happening for all template reports**
+### Issue happening for all template reports
 
 1. If anything else changed with the upgrade, such as moved servers, a potential issue with your logo file and where it is located.
 If you are logged into GP and go to Report > Template Configuration, then click the Images button do you have path names specified for the company in question?  Is that a valid path name?
