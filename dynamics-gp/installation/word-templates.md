@@ -550,17 +550,18 @@ These ports (TCP ports 1433 and 1434 and UDP port 1434) are used to populate the
    
 6. Also in Programs and Features look for the Open XML SDK for Office.  Dynamics GP will install version 2.0 of this as a prerequisite, but there is a version 2.5 out there.  The problem is that when version 2.5 is installed the Word template and copy/paste functionality in GP will not work.  If you see 2.5 installed you’ll want to remove that, let the GP install media bootstrapper install the correct version again, then test the printing process.
 
-
- > [!NOTE]
-   > In the Report Template Maintenance window, only reports that have a * in front of their name have a default template available in Microsoft Dynamics GP for printing.
-   > Any other report would require that the user creates their own from scratch or using template generator.
-   >
-   > Word Templates are stored in the DYNAMICS database as a SQL Blob in the syReportTemplates table. They link the SY20000 table by the RELID and in this table you can see the actual name of the template that is stored as the blob.
-   >  Templates are not stored in any folders on the machine. 
-   > select * from syReportTemplates where RELID = '9966' 
-   > select * from SY20000 where TemplateID = '9966'
-   >
-   > The only way that a template would disappear would be if it was deleted from the DYNAMICS database or by the user in Dynamics GP.
+> [!NOTE]
+> In the Report Template Maintenance window, only reports that have a * in front of their name have a default template available in Microsoft Dynamics GP for printing.
+> Any other report would require that the user creates their own from scratch or using template generator.
+>
+> Word Templates are stored in the DYNAMICS database as a SQL Blob in the syReportTemplates table. They link the SY20000 table by the RELID and in this table you can see the actual name of the template that is stored as the blob.
+> Templates are not stored in any folders on the machine. 
+>
+> select * from syReportTemplates where RELID = '9966' 
+>
+> select * from SY20000 where TemplateID = '9966'
+>
+> The only way that a template would disappear would be if it was deleted from the DYNAMICS database or by the user in Dynamics GP.
 
 
 ## See also
