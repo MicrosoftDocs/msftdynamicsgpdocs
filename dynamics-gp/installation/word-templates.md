@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: jswymer
-ms.date: 10/30/2023
+ms.date: 12/17/2023
 
 ---
 
@@ -329,21 +329,23 @@ Administration >> Setup >> System >> Alternate/Modified Forms and Reports
 Update the Report Writer report in Report Writer.
 2.	Run the report for which you made modifications to.
 3.	Export the report in XML format.
-In the Report Destination Window, export the report as a file in XML format, click OK. 
-4.	Open the report template document.
-This can be done via the clicking Modify in the Report Template Maintenance window (Administration >> Reports >> Template Maintenance) or opening the report template document .docx file directly.
-5.	In the Developer pane, select Field List from Microsoft Dynamics GP Templates group. 
-6.	Select the XML Resource containing the report definition in the Custom XML Mapping pane. 
-7.	In the Developer pane, select Remove Source from the Microsoft Dynamics GP templates group. 
-8.	Click OK to Removing a data source may cause missing data on the template. 
-9.	In the Developer pane, select Add Source from the Microsoft Dynamics GP Templates group. 
-10.	Locate the XML Document file saved in Step 3, click Open. 
-11.	In the Custom XML Mapping pane, you should now see a new XML Resource listed.
+
+  	In the Report Destination Window, export the report as a file in XML format, click OK. 
+5.	Open the report template document.
+
+  	This can be done via the clicking Modify in the Report Template Maintenance window (Administration >> Reports >> Template Maintenance) or opening the report template document .docx file directly.
+7.	In the Developer pane, select Field List from Microsoft Dynamics GP Templates group. 
+8.	Select the XML Resource containing the report definition in the Custom XML Mapping pane. 
+9.	In the Developer pane, select Remove Source from the Microsoft Dynamics GP templates group.
+10. Click OK to Removing a data source may cause missing data on the template. 
+11. In the Developer pane, select Add Source from the Microsoft Dynamics GP Templates group. 
+12. Locate the XML Document file saved in Step 3, click Open. 
+13. In the Custom XML Mapping pane, you should now see a new XML Resource listed.
 
     > [!NOTE]
     > The naming convention should be the same as before. 
-12.	Modify the word template as needed and Save As.
-13.	Re-Import the word template document into Microsoft Dynamics GP.
+14. Modify the word template as needed and Save As.
+15. Re-Import the word template document into Microsoft Dynamics GP.
 
 ## Word Template Generator
 
@@ -482,6 +484,85 @@ This error can be cause by a few of things:
    Use boarders vs. embedded anchored image of line
  
 If the above doesn't lead to a solution, it may be a corrupted field that will cause this, the error could say location header, as an example, so you would remove all header content controlled items and re-added them. 
+
+## Word Templates stuck processing after an upgrade of Dynamics GP
+
+### Issue is isolated to one specific template report
+
+1. If your report is modified, try to print the original. Set Template to Default Original/Canned Report for Testing.
+
+   Please follow the steps below to test using the default (canned) template. This also involves switching your Report Writer security to the default report rather than Modified.
+
+   > [!NOTE]
+   > If your user is assigned to an Alternate/Modified Forms and Report ID that is also used by other users, they will be affected by this change. Either create a new Alt/Mod ID, for your testing and assign it to your user, or make sure that other users in the system are not printing/emailing this report during your testing.
+
+   1. Microsoft Dynamics GP menu >> Tools >> Setup >> System >> User Security.
+   2. Select the username and company.
+   3. Click the ‘Alternate/Modified Forms and Reports ID:’ link at the bottom of the window.
+   4. In the Alternate/Modified Forms and Reports window, select the following:
+      1. Product: Microsoft Dynamics GP
+      2. Type: Reports
+      3. Series – All
+      4. Click the plus button to expand the Sales folder.
+      5. Click the plus button to expand the SOP Blank Invoice Form. If the report is not on the list at all, then you do not have a modified option, so move to step 5.
+      6. Select the default/canned ‘Microsoft Dynamics GP’ option. (Do not select modified here.)
+      7. Click Save, Save, and Close.
+   5. Go to Reports >> Template Maintenance
+   6. In the Report Template Maintenance Window, click the bar at the top that says ‘Click here to select a report’.
+   7. Select the option for ‘More Reports’ on the Drop Down list.
+      1. Product: Microsoft Dynamics GP, Series: Sales
+      2. Status: Original
+      3. Select ‘*SOP Blank Invoice Form’ from the list and click ‘Select’.
+   8. In the Report Template maintenance window, highlight the ‘SOP Blank Invoice Form*’.
+   9. Click on the Assign >> Company button on the menu bar.
+   10. Check the company that you are testing the process in.
+   11. Highlight a company and click ‘Set Default’.
+   12. Check the box next to the ‘SOP Blank Invoice Form*’, then click Save and Close.
+   13. The report you selected will now be default and you can test your process
+
+2. Error message One or more templates could not be processed.  View the exception log for more details.
+This could mean there are XML Format errors for the template.  If you have a back up of the template try to reimport it and see if this works.
+
+3. Errors such as:
+
+   - "The File POP Purchase Order Blank Form~18.docx cannot be opened because there are problems with the contents"
+   - “Word found unreadable content in "POP Purchase Order Blank Form~18.docx" 
+   - "Word found unreadable contend in 'TWOBlank Invoice'.docx. If you want to recover the contents of this document, click Yes."
+
+    The usual cause of these errors in Dynamics GP template use is that 'Maintain Compatibility' mode was not selected when the Template was saved initially in Word.
+    The reason that it would happen on the workstation but not the sever is usually because when Maintain Compatibility is not marked the Template will not be compatible with all versions of Microsoft Word. Most likely the versions of Word do not match between the server and the user's workstation.
+
+Word only gives you the option to mark Maintain Compatibility the first time you save the template, [you have to use the steps from this blog to re-enable it](https://community.dynamics.com/gp/b/dynamicsgp/archive/2012/03/13/error-message-when-printing-or-emailing-multiple-word-templates.aspx)
+
+### Issue happening for all template reports
+
+1. If anything else changed with the upgrade, such as moved servers, a potential issue with your logo file and where it is located.
+If you are logged into GP and go to Report > Template Configuration, then click the Images button do you have path names specified for the company in question?  Is that a valid path name?
+
+2. Are you testing this directly on a new SQL Server?  We have seen some issues where ports are closed or blocked between the GP client and the SQL Server.  
+These ports (TCP ports 1433 and 1434 and UDP port 1434) are used to populate the temp file(s) needed when generating a Word template report
+
+3. Another item you can look at is the ODBC connection that is being used.  If the server name is using an IP address instead of a server name it can cause issues with template processing.  
+
+4. There is a template processing DLL in the GP client folder that could potentially have a problem.  I would recommend renaming your GP client folder (e.g. C:\Program Files (x86)\Microsoft Dynamics\GP), then go to Control Panel > Programs and Features and run a Repair against GP.  This will lay down a new, clean GP client folder without any customization or 3rd parties.  Launch GP from that install and try to repro the issue.
+
+5. The template processing also relies on the Dexterity Shared Components.  Can you uninstall that from Programs and Features, then run the GP 18.6 installation media to reinstall it.  It should see that it is missing and prompt you to include it via the bootstrapper.
+   
+6. Also in Programs and Features look for the Open XML SDK for Office.  Dynamics GP will install version 2.0 of this as a prerequisite, but there is a version 2.5 out there.  The problem is that when version 2.5 is installed the Word template and copy/paste functionality in GP will not work.  If you see 2.5 installed you’ll want to remove that, let the GP install media bootstrapper install the correct version again, then test the printing process.
+
+> [!NOTE]
+> In the Report Template Maintenance window, only reports that have a * in front of their name have a default template available in Microsoft Dynamics GP for printing.
+> Any other report would require that the user creates their own from scratch or using template generator.
+>
+> Word Templates are stored in the DYNAMICS database as a SQL Blob in the syReportTemplates table. They link the SY20000 table by the RELID and in this table you can see the actual name of the template that is stored as the blob.
+> Templates are not stored in any folders on the machine. 
+>
+> select * from syReportTemplates where RELID = '9966' 
+>
+> select * from SY20000 where TemplateID = '9966'
+>
+> The only way that a template would disappear would be if it was deleted from the DYNAMICS database or by the user in Dynamics GP.
+
 
 ## See also
 
