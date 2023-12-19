@@ -328,9 +328,7 @@ After the upgrade or if the upgrade fails, the Update Company Tables window will
 | Icon | Status |
 |--|--|
 | ![shows green checkmark.](media/upgrade-conversion-success.png "Success") | Company tables were upgraded successfully. |
-| ![shows read x](media/upgrade-conversion-notsuccess.png "Failure") | Some company tables were not upgraded successfully. Contact Microsoft |
-|
-| Dynamics GP Technical Support for further assistance. |
+| ![shows read x](media/upgrade-conversion-notsuccess.png "Failure") | Some company tables were not upgraded successfully. Contact Microsoft Dynamics GP Technical Support for further assistance. |
 | ![shows read yellow exclamation point.](media/upgrade-conversion-warnings.png "Warning") | Some company tables have warnings associated with them. |
 | ![shows padlock.](media/upgrade-conversion-locked.png "Locked") | Not converted; someone at another client computer is currently upgrading this company. |
 
