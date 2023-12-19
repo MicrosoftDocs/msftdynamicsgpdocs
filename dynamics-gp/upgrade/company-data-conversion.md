@@ -336,14 +336,11 @@ After the upgrade or if the upgrade fails, the Update Company Tables window will
 
 If no icon appears between the check box and the name of the company, the company needs to be upgraded.
 
-If errors do occur,
-Run the following script
+If errors do occur, run the following script:
+
 1. Select CMPANYID,CMPNYNAM,INTERID from Dynamics..SY01500
- 
 2. Select * from Dynamics..DB_Upgrade
- 
 3. Select * from Dynamics..DU000020 order by companyID
- 
 4. SELECT b.fileOSName, a.fileNumber, a.PRODID, a.Status, a.errornum, a.errordes, c.CMPANYID, c.INTERID
   FROM DYNAMICS.dbo.DU000030 a
   JOIN
