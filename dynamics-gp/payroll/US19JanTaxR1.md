@@ -59,7 +59,7 @@ The maximum taxable earnings for Social Security increase in 2024 to \$168,600 f
 
 The Personal Exemption is $4,300 for SINGLE, MAR, HOH, NRA
 
-Withholding rates for taxpayers filing as *NRA*
+Withholding rates for taxpayers filing as *NRA*:
 
 > [!NOTE]
 > For non-resident aliens, if the employee filled out a W-4 after 01/01/2020, the filing status *Non Resident Alien HR (NRAHR)* must always be used.
@@ -75,7 +75,7 @@ Withholding rates for taxpayers filing as *NRA*
 | 260,025    | 625,650         | 55,678.50     | 35%         | 260,025           |
 | 625,650    | And Over        | 183,647.25    | 37%         | 625,650           |
 
-Withholding rates for taxpayers filing as *NRAHR*
+Withholding rates for taxpayers filing as *NRAHR*:
 
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -89,7 +89,7 @@ Withholding rates for taxpayers filing as *NRAHR*
 | 326,575     | And Over         | 91,823.63      | 37%          | 326,575            |
 
 
-Withholding rates for taxpayers filing as *MAR*
+Withholding rates for taxpayers filing as *MAR*:
 
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over|
 |------------|-----------------|---------------|-------------|-------------------|
@@ -319,7 +319,7 @@ Another example, I put 5500 on the form. Again, it does not match the other fili
 
 ### Withholding changes for Connecticut
 
-Withholding rates for taxpayers filing as *A*, *D*
+Withholding rates for taxpayers filing as *A*, *D*:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -342,7 +342,7 @@ Withholding rates for taxpayers filing as *A*, *D*
 | 500,000     | and over         | 31,250         | 6.99%        | 500,000            |
 
 
-Withholding rates for taxpayers filing as *B*
+Withholding rates for taxpayers filing as *B*:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -364,7 +364,7 @@ Withholding rates for taxpayers filing as *B*
 | 400,000     | 800,000          | 22,400         | 6.9%         | 400,000            |
 | 800,000     | and over         | 50,000         | 6.99%        | 800,000            |
 
-Withholding rates for taxpayers filing as *C*
+Withholding rates for taxpayers filing as *C*:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -386,7 +386,7 @@ Withholding rates for taxpayers filing as *C*
 | 500,000     | 1,000,000        | 28,000         | 6.9%         | 500,000             |
 | 1,000,000   | and over         | 62,500         | 6.99%        | 1,000,000           |
 
-Withholding rates for taxpayers filing as *F*
+Withholding rates for taxpayers filing as *F*:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -443,7 +443,7 @@ Withholding rates for taxpayers filing as *SINGLE*, Tax table type:
 | 26,050      | 61,600           | 1,511          | 6.75%        | 26,050             |
 | 61,600      | And over         | 3,911          | 7.15%        | 61,600             |
 
-Special table type
+Special table type:
 
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -587,22 +587,17 @@ Withholding rates for taxpayers filing as *HOH*:
 
 ### Withholding changes for North Carolina
 
-Standard Deduction for HOH remains at $19,125
-Standard Deduction for MAR and SINGLE remains at $12,750
-
-Tax rate for all filing status is 4.6%
+- Standard Deduction for HOH remains at $19,125
+- Standard Deduction for MAR and SINGLE remains at $12,750
+- Tax rate for all filing status is 4.6%
 
 ### Withholding changes for Oregon
 
-The Standard Deduction Amount is \$5,495 for MS3 and S3 Filing Status.
-
-The Standard Deduction Amount is \$2,745 for S2 Filing Status.
-
-The Personal Exemption amount is \$249 for all Filing Status.
-
-New Filing status for 2020 *NOWH* (No Withholding Provided) Flat tax rate of 8% (remains for 2024 year)
-HB2119 requires employers to withhold income tax at a rate of 8 percent of employee wages if they employee has not provided a withholding statement or exemption certificate.  
-Continue withholding at the 8 percent rate until the employee submits a withholding statement and exemption certificate.
+- The Standard Deduction Amount is \$5,495 for MS3 and S3 Filing Status.
+- The Standard Deduction Amount is \$2,745 for S2 Filing Status.
+- The Personal Exemption amount is \$249 for all Filing Status.
+- New Filing status for 2020 *NOWH* (No Withholding Provided) Flat tax rate of 8% (remains for 2024 year)
+- HB2119 requires employers to withhold income tax at a rate of 8 percent of employee wages if they employee has not provided a withholding statement or exemption certificate. Continue withholding at the 8 percent rate until the employee submits a withholding statement and exemption certificate.
 
 Special Tax Type rates for MS3 Filing Status:
 
@@ -666,7 +661,7 @@ Low Income Type rates for S2 Filing Status:
 
 For all Filing Status the Personal Exemption ($1,000) wage limit increased to $274,650
 
-Withholding rates for taxpayers filing as *MAR* and *SINGLE*
+Withholding rates for taxpayers filing as *MAR* and *SINGLE*:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -676,8 +671,8 @@ Withholding rates for taxpayers filing as *MAR* and *SINGLE*
 
 ### Withholding changes for South Carolina
 
-The Personal Exemption is $4,610 for Filing Status ONE.
-The Standard Deduction Maximum is $6,925 for ONE Filing Status.
+- The Personal Exemption is $4,610 for Filing Status ONE.
+- The Standard Deduction Maximum is $6,925 for ONE Filing Status.
 
 Tax Type rates for all Filing Status:
 
