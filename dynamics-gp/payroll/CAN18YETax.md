@@ -308,10 +308,10 @@ Contribution rates for both employers and employees for 2024 is 5.95%. The follo
 - The maximum contribution amount for the year increases to \$3,867.50, from \$3,754.45.
 
 > [!NOTE]
-    >Changes to CPP/QPP effective Jan 1, 2024
-    >Effectively, there is an additional CPP/QPP tax calculation (CPP2/QPP2 is an additional calculation once the initial Annual maximum is reached. It then has a separate maximum to end any CPP/QPP calculation)  
-    >As part of this, we need to track the additional tax withholding and display it in the same places as the original CPP/QPP.
-    > **No new codes needs to be set up for this**
+> - Changes to CPP/QPP effective Jan 1, 2024
+> - Effectively, there is an additional CPP/QPP tax calculation (CPP2/QPP2 is an additional calculation once the initial Annual maximum is reached. It then has a separate maximum to end any CPP/QPP calculation)  
+> - As part of this, we need to track the additional tax withholding and display it in the same places as the original CPP/QPP.
+> - **No new codes need to be set up for this**
 
 
 #### EI for non-Quebec employees
