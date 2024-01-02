@@ -548,7 +548,7 @@ These ports (TCP ports 1433 and 1434 and UDP port 1434) are used to populate the
    
 5. Try the process on a different machine or the server to see if it works. If it works on another machine, then reboot the non-working machine rebooted; it does not hurt to reboot the machine and try again. 
 
-6. The template processing also relies on the Dexterity Shared Components.  Can you uninstall that from Programs and Features, then run the GP 18.6 installation media to reinstall it.  It should see that it is missing and prompt you to include it via the bootstrapper.
+6. The template processing also relies on the Dexterity Shared Components. You can you uninstall this from Programs and Features, then run the GP 18.6 installation media to reinstall it. It should see that it is missing and prompt you to include it via the bootstrapper.
    
 7. Also in Programs and Features look for the Open XML SDK for Office.  Dynamics GP will install version 2.0 of this as a prerequisite, but there is a version 2.5 out there.  The problem is that when version 2.5 is installed the Word template and copy/paste functionality in GP will not work.  If you see 2.5 installed you’ll want to remove that, let the GP install media bootstrapper install the correct version again, then test the printing process.
 
