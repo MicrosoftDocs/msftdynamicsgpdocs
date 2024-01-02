@@ -546,7 +546,7 @@ These ports (TCP ports 1433 and 1434 and UDP port 1434) are used to populate the
 
 4. There is a template processing DLL in the GP client folder that could potentially have a problem.  I would recommend renaming your GP client folder (e.g. C:\Program Files (x86)\Microsoft Dynamics\GP), then go to Control Panel > Programs and Features and run a Repair against GP.  This will lay down a new, clean GP client folder without any customization or 3rd parties.  Launch GP from that install and try to repro the issue.
    
-5. Try the process on a different machine or the server to see if it works, if it works on another machine, have the non-working machine rebooted, it does not hurt to reboot the machine and try again. 
+5. Try the process on a different machine or the server to see if it works. If it works on another machine, then reboot the non-working machine rebooted; it does not hurt to reboot the machine and try again. 
 
 6. The template processing also relies on the Dexterity Shared Components.  Can you uninstall that from Programs and Features, then run the GP 18.6 installation media to reinstall it.  It should see that it is missing and prompt you to include it via the bootstrapper.
    
