@@ -21,7 +21,7 @@ This documentation contains detailed information about the operations, classes, 
 
 The Microsoft eConnect procedures are encrypted to preserve the Microsoft intellectual property.
 
-Business Logic Modification: eConnect provides both Pre and Post procedures for modifying business logic before passing a transaction through eConnect to Microsoft Dynamics GP. If these procedures were not encrypted, unauthorized modifications could be made, potentially leading to incorrect business logic application and data corruption4.
+Business Logic Modification: eConnect provides both Pre and Post procedures for modifying business logic before passing a transaction through eConnect to Microsoft Dynamics GP. If these procedures were not encrypted, unauthorized modifications could be made, potentially leading to incorrect business logic application and data corruption.
 
 Therefore, keeping Dynamics eConnect procedures encrypted is essential for data security, compliance with standards, and maintaining the integrity of business logic. It’s advised against modifying any Dynamics GP stored procedures as it may cause problems with your Microsoft Dynamics GP data.
 
