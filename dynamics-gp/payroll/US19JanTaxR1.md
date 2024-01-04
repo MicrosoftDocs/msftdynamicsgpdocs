@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/1/2024
+ms.date: 1/3/2024
 ---
 # U.S. 2024 Payroll Tax Update
 
@@ -29,8 +29,17 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/gp/b/dynamicsgp/posts/tips-to-install-the-u-s-payroll-tax-update)
 
+## Changes in January Round 2 update (Target release 1/23/2024)
 
-## Changes in January Round 1 update (Target Release: 12/21/2023)
+- Georgia
+- Illinois
+- Indiana
+- Minnesota
+- Mississippi
+- North Dakota
+- Vermont
+
+## Changes in January Round 1 update (Released 12/20/2023)
 
 - FICA Social Security Limit 168,600 (Previously $160,200)
 - Federal tax
