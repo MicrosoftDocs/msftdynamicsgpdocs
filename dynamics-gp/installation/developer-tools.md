@@ -29,9 +29,9 @@ However, over the years, we have found some issues with a few of the eConnect pr
 
 These modified procedures are use at your own risk and should be tested by your company before using in your production system.  When you upgrade Microsoft Dynamics GP, these modified procedures may be lost.
 
-taPOPCreateDistributions - December 2023
-taCalcDueDatePM - December 2023
-taCalcDueDateRM - December 2023
+- taPOPCreateDistributions - December 2023
+- taCalcDueDatePM - December 2023
+- taCalcDueDateRM - December 2023
 
 ## Web Services
 
