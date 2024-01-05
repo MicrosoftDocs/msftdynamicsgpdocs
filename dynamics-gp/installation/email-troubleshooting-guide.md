@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 10/6/2023
+ms.date: 1/2/2024
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -54,6 +54,14 @@ To determine whether MAPI or Exchange is being used check the System Preference 
 
 ## <a name=mapispecificerrors></a>MAPI Specific Errors
 Dynamics GP uses MAPI to open Outlook to send emails directly from the Outlook client.
+
+> [!IMPORTANT]
+> MAPI only works with 32-bit Outlook Client installed.  The newOutlook operates based on the principles of the Outlook Web version.
+>
+> Not all features are currently supported, and the installation of the 32-bit version is not supported on the newOutlook, due to the transition from Classic Outlook.
+>
+> It is highly recommended to implement Modern Auth (MFA) instead of MAPI when at all possible with Dynamics GP.
+
 
 ### Emails Stuck in Outbox within Outlook. 
 
@@ -775,8 +783,8 @@ By turning modern authentication on in Dynamics GP (Application Client ID popula
 Modern Authentication is only supported with Exchange.
 
 > [!NOTE]
-> **If you recently upgraded to 18.5 and had Modern Authentication working in a prior release, but now emails are not sending**
-> With the 18.5 upgrade we are seeing where emails are no longer sending with Modern Authentication enabled.  The finding is your [Microsoft Entra ID needs to be upgraded](https://community.dynamics.com/gp/b/dynamicsgp/posts/modern-authentication-and-upgrading-to-microsoft-dynamics-gp-18-5)
+> **If you recently upgraded to 18.5/18.6 and had Modern Authentication working in a prior release, but now emails are not sending**
+> With the upgrade we are seeing where emails are no longer sending with Modern Authentication enabled.  The finding is your [Microsoft Entra ID needs to be upgraded](https://community.dynamics.com/gp/b/dynamicsgp/posts/modern-authentication-and-upgrading-to-microsoft-dynamics-gp-18-5)
 
 
 > [!NOTE]
