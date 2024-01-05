@@ -56,10 +56,12 @@ To determine whether MAPI or Exchange is being used check the System Preference 
 Dynamics GP uses MAPI to open Outlook to send emails directly from the Outlook client.
 
 > [!IMPORTANT]
-> MAPI only works on 32bit Outlook Client installed.  The newOutlook operates based on the principles of the Outlook Web version.
+> MAPI only works with 32-bit Outlook Client installed.  The newOutlook operates based on the principles of the Outlook Web version.
+>
 > Not all features are currently supported, and the installation of the 32-bit version is not supported on the newOutlook, due to the transition from Classic Outlook.
-> It is highly recommended to implement Modern Auth(MFA) vs using MAPI when at all possible with Dynamics GP.
-> 
+>
+> It is highly recommended to implement Modern Auth (MFA) instead of MAPI when at all possible with Dynamics GP.
+
 
 ### Emails Stuck in Outbox within Outlook. 
 
