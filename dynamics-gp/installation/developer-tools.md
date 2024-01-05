@@ -25,7 +25,7 @@ Business Logic Modification: eConnect provides both Pre and Post procedures for 
 
 Therefore, keeping Dynamics eConnect procedures encrypted is essential for data security, compliance with standards, and maintaining the integrity of business logic. It’s advised against modifying any Dynamics GP stored procedures as it may cause problems with your Microsoft Dynamics GP data.
 
-However, over the years, we have found some issues with a few of the eConnect procedures based on business practices for a specific company.  Microsoft is not actively fixing these issues in the eConnect shipping product, due to the life cycle of the product.  The below published procedures are modified eConnect procedures with fixes around areas a large majority of customers have run into.
+However, over the years, we have found some issues with a few of the eConnect procedures based on business practices for a specific company. Microsoft is not actively fixing these issues in the eConnect shipping product, due to the life cycle of the product. The below published procedures are modified eConnect procedures with fixes around areas a large majority of customers have run into.
 
 These modified procedures are use at your own risk and should be tested by your company before using in your production system.  When you upgrade Microsoft Dynamics GP, these modified procedures may be lost.
 
