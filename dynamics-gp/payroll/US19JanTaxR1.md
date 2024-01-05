@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 12/21/2023
+ms.date: 1/3/2024
 ---
 # U.S. 2024 Payroll Tax Update
 
@@ -29,8 +29,17 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/gp/b/dynamicsgp/posts/tips-to-install-the-u-s-payroll-tax-update)
 
+## Changes in January Round 2 update (Target release 1/23/2024)
 
-## Changes in January Round 1 update (Target Release: 12/21/2023)
+- Georgia
+- Illinois
+- Indiana
+- Minnesota
+- Mississippi
+- North Dakota
+- Vermont
+
+## Changes in January Round 1 update (Released 12/20/2023)
 
 - FICA Social Security Limit 168,600 (Previously $160,200)
 - Federal tax
@@ -520,12 +529,13 @@ Low Income Tax Type rates for *B* Filing Status:
 
 ### Withholding changes for Iowa
 
-New for 2023 Iowa withholding calculations, federal withholding is no longer subtracted from taxable wages.  
+Iowa withholding calculations, federal withholding is no longer subtracted from taxable wages.  
 
-The Standard Deduction Amount for Filing Status:
+> [!NOTE]
+> Iowa W4 changed in the year 2023 and the tax tables support the amounts, they are held in the Personal Exemption table below.
 
-- EXP1 is $14,600 previously \$13,850
-- EXP2 is $29,200 previously \$27,700
+- Standard Deduction for EXP1 is $14,600 previously \$13,850
+- Standard Deduction for EXP2 is $29,200 previously \$27,700
 
 Withholding rates for taxpayers filing as EXP1 and EXP2 are as follows:
 
@@ -534,6 +544,32 @@ Withholding rates for taxpayers filing as EXP1 and EXP2 are as follows:
 | 0           | 4,896            | 0              | 4.40%        |                    |
 | 4,896       | 24,480           | 215.42         | 4.82%        | 4,896              |
 | 24,480      | And over         | 1,159.37       | 5.70%        | 24,480             |
+
+Personal Exemption Tax Type rates for ALL filling Status:
+
+| If Over  |But Not Over | Tax Amoun   | Tax Rate     | On Excess Over     |
+|----------|-------------|-------------|--------------|--------------------|
+| 0        | 1           | 40          | 0%           | 0                  |
+| 1        | 2           | 80          | 0%           | 0                  |
+| 2        | 3           | 120         | 0%           | 0                  |
+| 3        | 4           | 160         | 0%           | 0                  |
+| 4        | 5           | 200         | 0%           | 0                  |
+| 5        | 6           | 240         | 0%           | 0                  |
+| 6        | 7           | 280         | 0%           | 0                  |
+| 7        | 8           | 320         | 0%           | 0                  |
+| 8        | 9           | 360         | 0%           | 0                  |
+| 9        | 10          | 400         | 0%           | 0                  |
+| 10       | 11          | 440         | 0%           | 0                  |
+| 11       | 12          | 480         | 0%           | 0                  |
+| 12       | 13          | 520         | 0%           | 0                  |
+| 13       | 14          | 560         | 0%           | 0                  |
+| 14       | 15          | 600         | 0%           | 0                  |
+| 15       | 16          | 640         | 0%           | 0                  |
+| 16       | 17          | 680         | 0%           | 0                  |
+| 17       | 18          | 720         | 0%           | 0                  |
+| 18       | 19          | 760         | 0%           | 0                  |
+| 19       | 20          | 800         | 0%           | 0                  |
+| 20       | 21          | 840         | 0%           | 0                  |
 
 
 ### Withholding changes for Kentucky

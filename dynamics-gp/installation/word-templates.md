@@ -8,7 +8,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: jswymer
-ms.date: 12/17/2023
+ms.date: 12/22/2023
 
 ---
 
@@ -545,10 +545,12 @@ These ports (TCP ports 1433 and 1434 and UDP port 1434) are used to populate the
 3. Another item you can look at is the ODBC connection that is being used.  If the server name is using an IP address instead of a server name it can cause issues with template processing.  
 
 4. There is a template processing DLL in the GP client folder that could potentially have a problem.  I would recommend renaming your GP client folder (e.g. C:\Program Files (x86)\Microsoft Dynamics\GP), then go to Control Panel > Programs and Features and run a Repair against GP.  This will lay down a new, clean GP client folder without any customization or 3rd parties.  Launch GP from that install and try to repro the issue.
-
-5. The template processing also relies on the Dexterity Shared Components.  Can you uninstall that from Programs and Features, then run the GP 18.6 installation media to reinstall it.  It should see that it is missing and prompt you to include it via the bootstrapper.
    
-6. Also in Programs and Features look for the Open XML SDK for Office.  Dynamics GP will install version 2.0 of this as a prerequisite, but there is a version 2.5 out there.  The problem is that when version 2.5 is installed the Word template and copy/paste functionality in GP will not work.  If you see 2.5 installed you’ll want to remove that, let the GP install media bootstrapper install the correct version again, then test the printing process.
+5. Try the process on a different machine or the server to see if it works. If it works on another machine, then reboot the non-working machine rebooted; it does not hurt to reboot the machine and try again. 
+
+6. The template processing also relies on the Dexterity Shared Components. You can you uninstall this from Programs and Features, then run the GP 18.6 installation media to reinstall it. It should see that it is missing and prompt you to include it via the bootstrapper.
+   
+7. Also in Programs and Features look for the Open XML SDK for Office.  Dynamics GP will install version 2.0 of this as a prerequisite, but there is a version 2.5 out there.  The problem is that when version 2.5 is installed the Word template and copy/paste functionality in GP will not work.  If you see 2.5 installed you’ll want to remove that, let the GP install media bootstrapper install the correct version again, then test the printing process.
 
 > [!NOTE]
 > In the Report Template Maintenance window, only reports that have a * in front of their name have a default template available in Microsoft Dynamics GP for printing.
