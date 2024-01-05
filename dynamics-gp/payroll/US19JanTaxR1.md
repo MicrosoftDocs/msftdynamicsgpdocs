@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/3/2024
+ms.date: 1/5/2024
 ---
 # U.S. 2024 Payroll Tax Update
 
@@ -34,10 +34,77 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 - Georgia
 - Illinois
 - Indiana
+- Massachusetts
 - Minnesota
 - Mississippi
 - North Dakota
 - Vermont
+
+### Withholding changes for Georgia
+
+The Standard Deduction Amount for Filing Status:
+
+- HOH, SINGLE, MFJ2I and MFS        is \$12,000
+- MFJ1I                             is \$24,000
+
+Subtract Personal Exemptions was removed from the calculation.
+
+All filing status have a fixed flat tax of 5.49% 
+
+### Withholding changes for Illinois
+
+The Dependent Exemptions is $2,775 from $2,425
+The Flat tax rate remains at 4.95% and allowances at 1,000
+
+### Withholding changes for Indiana
+
+The Flat tax rate is reduced to 3.05% from 3.15%
+
+### Withholding changes for Massachusetts
+
+Flat tax rate of 5% for all filing status
+
+The Millionaires Tax (Surtax of 4% on employees that make over 1,000,000) which begin in January 1, 2023 is not supported by the Microsoft Dynamics GP tables.  
+
+### Withholding changes for Minnesota
+
+The Personal Exemption amount is \$5,050 for all Filing Status.
+
+Withholding rates for taxpayers filing as *MAR*:
+
+| If Over  | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 14,000           | 0              | 0%           | 0                  |
+| 14,000      | 60,330           | 0              | 5.35         | 14,000             |
+| 60,330      | 198,040          | 2,478.66       | 6.80%        | 60,330             |
+| 198,040     | 335,450          | 11,842.94      | 7.85%        | 198,040            |
+| 335,450     | And Over         | 22,629.63      | 9.85%        | 297,260            |
+
+Withholding rates for taxpayers filing as *SINGLE*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|---------|--------------|------------|----------|----------------|
+| 0       | 4,475        | 0          | 0%       | 0              |
+| 4,475   | 36,165       | 0          | 5.35%    | 4,475          |
+| 36,165  | 108,565      | 1,502.28   | 6.80%    | 36,165         |
+| 108,565 | 197,715      | 5,864.48   | 7.85%    | 108,565        |
+| 197,715 | And Over     | 12,065.20  | 9.85%    | 197,715        |
+
+
+### Withholding changes for Mississippi
+
+Withholding rates for all Filing Status
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 10,000           | 0              | 0            | 0                  |
+| 10,000      | And over         | 0              | 4.7%         | 0                  |
+
+
+### Withholding changes for North Dakota
+
+### Withholding changes for Vermont
+
 
 ## Changes in January Round 1 update (Released 12/20/2023)
 
@@ -532,7 +599,7 @@ Low Income Tax Type rates for *B* Filing Status:
 Iowa withholding calculations, federal withholding is no longer subtracted from taxable wages.  
 
 > [!NOTE]
-> Iowa W4 changed in the year 2023 and the tax tables support the amounts, they are held in the Personal Exemption table below.
+> Iowa W4 changed in the year 2024 and the tax tables support the amounts, they are held in the Personal Exemption table below.
 
 - Standard Deduction for EXP1 is $14,600 previously \$13,850
 - Standard Deduction for EXP2 is $29,200 previously \$27,700
