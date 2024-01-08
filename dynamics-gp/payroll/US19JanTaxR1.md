@@ -53,8 +53,8 @@ All filing status have a fixed flat tax of 5.49%
 
 ### Withholding changes for Illinois
 
-The Dependent Exemptions is $2,775 from $2,425
-The Flat tax rate remains at 4.95% and allowances at 1,000
+- The Dependent Exemptions is $2,775 from $2,425
+- The Flat tax rate remains at 4.95% and allowances at 1,000
 
 ### Withholding changes for Indiana
 
@@ -62,9 +62,8 @@ The Flat tax rate is reduced to 3.05% from 3.15%
 
 ### Withholding changes for Massachusetts
 
-Flat tax rate of 5% for all filing status
-
-The Millionaires Tax (Surtax of 4% on employees that make over 1,000,000) which begin in January 1, 2023 is not supported by the Microsoft Dynamics GP tables.  
+- Flat tax rate of 5% for all filing status
+- The Millionaires Tax (Surtax of 4% on employees that make over 1,000,000) which begin in January 1, 2023 is not supported by the Microsoft Dynamics GP tables.  
 
 ### Withholding changes for Minnesota
 
@@ -93,7 +92,7 @@ Withholding rates for taxpayers filing as *SINGLE*:
 
 ### Withholding changes for Mississippi
 
-Withholding rates for all Filing Status
+Withholding rates for all Filing Status:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
