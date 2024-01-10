@@ -7,7 +7,7 @@ ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/5/2024
+ms.date: 1/10/2024
 ---
 # U.S. 2024 Payroll Tax Update
 
@@ -34,6 +34,7 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 - Georgia
 - Illinois
 - Indiana
+- Maryland
 - Massachusetts
 - Minnesota
 - Mississippi
@@ -101,6 +102,55 @@ Withholding rates for all Filing Status:
 
 
 ### Withholding changes for North Dakota
+
+The Personal Exemption amount is \$4,300 for Filing Status MAR and SINGLE 
+
+> [!NOTE]
+> Per the state of North Dakota, there is no HOH filing status with exemptions. If an employee on the W4 chooses filing status of HOH and does not mark step 2, you still choose HOH as the filing status in Dynamics GP.
+>
+> The state relies on the federal form W-4 to calculate the amount to withhold. Per the state, step 3 for dependent claim amount is not used for ND state tax withholding.
+
+Withholding rates for taxpayers filing as *MAR*:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over    |
+|-------------|------------------|----------------|--------------|-------------------|
+| 0           | 53,988           | 0               | 0%          | 0                 |
+| 53,988      | 159,588          | 0               | 1.95%       | 53,988            |
+| 159,588     | And Over         | 2,059.20        | 2.50%       | 159,588           |
+
+Withholding rates for taxpayers filing as *MARHR*:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over    |
+|-------------|------------------|----------------|--------------|-------------------|
+| 0           | 51,975           | 0               | 0%          | 0                 |
+| 51,975      | 152,150          | 0               | 1.95%       | 51,975            |
+| 152,150     | And Over         | 1,953.41        | 2.50%       | 152,150           |
+
+Withholding rates for taxpayers filing as *SINGLE*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|---------|--------------|------------|----------|----------------|
+| 0       | 54,450       | 0          | 0%       | 0              |
+| 54,450  | 245,500      | 0          | 1.95%    | 54,450         |
+| 245,500 | And Over     | 3,725.48   | 2.50%    | 245,500        |
+
+Withholding rates for taxpayers filing as *SINGHR*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|---------|--------------|------------|----------|----------------|
+| 0       | 52,025       | 0          | 0%       | 0              |
+| 52,025  | 233,275      | 0          | 1.95%    | 52,025         |
+| 233,275 | And Over     | 3,534.38   | 2.50%    | 233,275        |
+
+Withholding rates for taxpayers filing as *HOHHR*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|---------|--------------|------------|----------|----------------|
+| 0       | 70,900       | 0          | 0%       | 0              |
+| 70,900  | 261,500      | 0          | 1.95%    | 70,900         |
+| 261,500 | And Over     | 3,716.70   | 2.50%    | 261,500        |
+
+
 
 ### Withholding changes for Vermont
 
@@ -242,6 +292,9 @@ Withholding rates for taxpayers filing as *HOHHR*:
 | 132,800     | 315,625          | 26,988.50      | 35%      | 132,800            |
 | 315,625     | And Over         | 90,977.25      | 37%      | 315,625            |
 
+
+### Withholding changes for Alabama
+Effective 1/1/2024 the state of Alabama has temporarily exempted all overtime wages from state tax. This will not be part of the Dynamics GP 2024 payroll tax tables. If you need this functionality in the product, you could set up a new pay code not subject to state tax, more manually tracked, or reach out to Greenshades for a more automated solution.
 
 ### Withholding changes for Arkansas
 
