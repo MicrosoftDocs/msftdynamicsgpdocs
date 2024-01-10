@@ -150,9 +150,29 @@ Withholding rates for taxpayers filing as *HOHHR*:
 | 70,900  | 261,500      | 0          | 1.95%    | 70,900         |
 | 261,500 | And Over     | 3,716.70   | 2.50%    | 261,500        |
 
-
-
 ### Withholding changes for Vermont
+
+The Personal Exemption amount is $5,100
+
+Withholding rates for taxpayers filing as *MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 11,138           | 0              | 0%           | 0                  |
+| 11,138      | 91,088           | 0              | 3.35%        | 11,138             |
+| 91,088      | 204,488          | 2,678.33       | 6.60%        | 91,088             |
+| 204,488     | 305,788          | 10,162.73      | 7.60%        | 204,488            |
+| 305,788     | And Over         | 17,861.53      | 8.75%        | 305,788            |
+
+Withholding rates for taxpayers filing as *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 3,700            | 0              | 0%           | 0                  |
+| 3,700       | 51,600           | 0              | 3.35%        | 3,700              |
+| 51,600      | 119,700          | 1,604.65       | 6.60%        | 51,600             |
+| 119,700     | 245,700          | 6,099.25       | 7.60%        | 119,700            |
+| 245,700     | And Over         | 15,675.25      | 8.75%        | 245,700            |
 
 
 ## Changes in January Round 1 update (Released 12/20/2023)
