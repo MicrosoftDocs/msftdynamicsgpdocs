@@ -1,9 +1,8 @@
-﻿---
+---
 title: Form 1099 NEC 
 description: New in October 2020 - Form 1099 Non-Employee Compensation
 ms.date: 10/01/2020
 ms.topic: article
-ms.prod: dynamics-gp
 author: theley502
 ms.author: theley
 manager: jswymer

@@ -1,9 +1,8 @@
-﻿---
+---
 title: Multi-Factor Authentication 
 description: New in October 2020 - Multi-Factor Authentication
 ms.date: 05/01/2023
 ms.topic: article
-ms.prod: dynamics-gp
 author: theley502
 ms.author: theley
 manager: jswymer

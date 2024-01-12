@@ -3,7 +3,6 @@ title: "Glossary"
 description: "Terminology used in the Financials area in Dynamics GP."
 keywords: "banking, bank reconciliation"
 author: theley502
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

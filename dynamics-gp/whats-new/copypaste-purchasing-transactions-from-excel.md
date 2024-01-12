@@ -1,9 +1,8 @@
-﻿---
+---
 title: Copy/Paste Purchasing transactions from Excel 
 description: New in October 2020 - Copy/Paste Purchasing transactions from Excel
 ms.date: 10/28/2020
 ms.topic: article
-ms.prod: dynamics-gp
 author: theley502
 ms.author: theley
 manager: jswymer

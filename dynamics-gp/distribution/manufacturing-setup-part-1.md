@@ -4,7 +4,6 @@ description: "Examine how to get the Manufacturing module set up in Dynamics GP.
 keywords: "manufaturing"
 author: theley502
 manager: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

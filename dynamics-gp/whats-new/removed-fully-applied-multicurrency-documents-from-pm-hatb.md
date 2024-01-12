@@ -1,9 +1,8 @@
-﻿---
+---
 title: Removed Fully Applied Multicurrency Documents from PM HATB 
 description: New in October 2020 - Removed Fully Applied Multicurrency Documents from PM HATB
 ms.date: 10/01/2020
 ms.topic: article
-ms.prod: dynamics-gp
 author: theley502
 ms.author: theley
 manager: jswymer

@@ -1,9 +1,8 @@
-﻿---
+---
 title: Additional User-Defined Fields
 description: New in october 2020 - Additional User Defined Fields
 ms.date: 10/01/2020
 ms.topic: article
-ms.prod: dynamics-gp
 author: theley502
 ms.author: theley
 manager: jswymer

@@ -5,7 +5,6 @@ keywords: "items"
 author: tnistler
 manager: jswymer
 
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

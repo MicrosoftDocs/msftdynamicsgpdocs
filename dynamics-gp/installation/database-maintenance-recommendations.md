@@ -1,9 +1,8 @@
-﻿---
+---
 title: Recommended Maintenance of Your Databases
 description: Read some recommendations for how you can keep your database for Dynamics GP in good shape.
 ms.date: 10/23/2020
 ms.topic: article
-ms.prod: dynamics-gp
 author: jswymer
 ms.author: jswymer
 ---

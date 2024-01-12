@@ -4,7 +4,6 @@ description: "Examine how the Professional Services Tools Library works for Micr
 keywords: "payroll"
 author: theley502
 manager: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

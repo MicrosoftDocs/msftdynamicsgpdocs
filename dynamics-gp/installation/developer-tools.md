@@ -4,7 +4,6 @@ description: "Information around eConnect, Integration Manager and Web Services 
 keywords: "import"
 author: theley502
 manager: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

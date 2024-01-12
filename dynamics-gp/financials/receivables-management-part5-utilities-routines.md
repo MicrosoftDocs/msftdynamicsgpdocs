@@ -3,7 +3,6 @@ title: "Receivables Management Part 5: Utilities and routines"
 description: "Part 5 of Managing receivables in Dynamics GP."
 keywords: "receivables"
 author: theley502
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

@@ -4,7 +4,6 @@ description: "Examine how project accounting cost management works in Dynamics G
 keywords: "payroll"
 author: theley502
 manager: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

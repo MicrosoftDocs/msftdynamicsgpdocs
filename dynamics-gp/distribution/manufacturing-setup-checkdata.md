@@ -4,7 +4,6 @@ description: "Learn how to identify problems with the se4tup of the Manufacturin
 keywords: "manufaturing"
 author: theley502
 manager: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

@@ -4,7 +4,6 @@ description: "Learn about setting up the position control for the Human Resource
 keywords: "payroll"
 author: theley502
 manager: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

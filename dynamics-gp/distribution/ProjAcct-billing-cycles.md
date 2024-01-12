@@ -4,7 +4,6 @@ description: "Examine how billing cycles work in Dynamics GP's project accountin
 keywords: "payroll"
 author: theley502
 manager: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

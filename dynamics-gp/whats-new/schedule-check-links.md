@@ -1,9 +1,8 @@
-﻿---
+---
 title: Schedule Check Links 
 description: New in October 2020 - Schedule Check Links
 ms.date: 10/01/2020
 ms.topic: article
-ms.prod: dynamics-gp
 author: theley502
 ms.author: theley
 manager: jswymer

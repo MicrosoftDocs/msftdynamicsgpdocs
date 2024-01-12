@@ -3,7 +3,6 @@ title: Sales order processing part 3| Microsoft Docs
 description: Learn about allocation, fulfillment, and purchasing in the sales order processing module in Dynamics GP.
 author: tnistler
 
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.date: 01/22/2019

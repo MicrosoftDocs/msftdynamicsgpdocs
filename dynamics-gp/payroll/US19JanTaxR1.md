@@ -3,7 +3,6 @@ title: "US payroll tax update"
 description: "US 2023 Payroll Tax update for Microsoft Dynamics GP."
 keywords: "payroll"
 author: theley502
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

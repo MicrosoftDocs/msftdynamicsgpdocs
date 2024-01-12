@@ -3,7 +3,6 @@ title: "Receivables Management in Dynamics GP"
 description: Learn how to use Receivables Management to set up, enter, and maintain records, salesperson and sales territory information, accounts, and transactions.
 keywords: "receivables"
 author: theley502
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

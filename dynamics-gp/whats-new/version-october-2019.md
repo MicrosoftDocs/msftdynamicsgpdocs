@@ -8,7 +8,6 @@ ms.author: jswymer
 ms.reviewer: jswymer
 manager: annbe
 applies_to: 
-ms.prod: dynamics-gp
 ms.topic: article
 ms.date: 10/01/2019
 ---

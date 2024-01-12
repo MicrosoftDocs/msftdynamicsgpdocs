@@ -3,7 +3,6 @@ title: Sales order processing | Microsoft Docs
 description: Learn about selling to customers in Dynamics GP.
 author: tnistler
 
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.date: 01/22/2019

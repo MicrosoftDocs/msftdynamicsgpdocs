@@ -4,7 +4,6 @@ description: Part 3 of analytical accounting in Dynamics GP with year-end closin
 keywords: "accounting"
 author: theley502
 manager: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
