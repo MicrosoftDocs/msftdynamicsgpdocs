@@ -4,7 +4,6 @@ description: "Learn about setting up the company information for the Human Resou
 keywords: "payroll"
 author: theley502
 manager: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

@@ -1,9 +1,8 @@
-﻿---
+---
 title: Uninstall or Reinstall the Sample Company
 description: Learn how to uninstall and reinstall the sample company in Dynamics GP when you are using SQL Server or MSDE.
 ms.date: 10/23/2020
 ms.topic: article
-ms.prod: dynamics-gp
 author: jswymer
 ms.author: jswymer
 ---

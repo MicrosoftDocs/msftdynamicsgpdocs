@@ -3,7 +3,6 @@ title: Welcome to Dynamics GP
 description: Dynamics GP is a business management solution for small and mid-sized organizations that automates and streamlines business processes and helps you manage your business.
 author: jswymer
 
-ms.prod: dynamics-gp
 ms.topic: get-started
 ms.date: 07/13/2020
 ms.author: jswymer

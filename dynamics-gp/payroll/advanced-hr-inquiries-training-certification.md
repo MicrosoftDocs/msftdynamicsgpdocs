@@ -4,7 +4,6 @@ description: "Examine the Training and Certification for Employee Self Service f
 keywords: "HR"
 author: theley502
 manager: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

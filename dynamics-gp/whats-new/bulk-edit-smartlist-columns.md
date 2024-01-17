@@ -1,9 +1,8 @@
-﻿---
+---
 title: Bulk-edit SmartList Columns 
 description: new in october 2020 - Bulk-edit SmartList Columns
 ms.date: 10/01/2020
 ms.topic: article
-ms.prod: dynamics-gp
 author: theley502
 ms.author: theley
 manager: jswymer

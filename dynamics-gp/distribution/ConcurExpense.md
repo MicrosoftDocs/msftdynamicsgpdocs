@@ -4,7 +4,6 @@ description: "Examine how Concur Expense Integrator works in Dynamics GP."
 keywords: "expense"
 author: theley502
 manager: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

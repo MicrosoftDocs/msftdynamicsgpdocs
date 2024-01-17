@@ -1,9 +1,8 @@
-﻿---
+---
 title: 1099 MISC Form Updates 
 description: New in october 2020 - 1099 MISC Form Updates
 ms.date: 10/01/2020
 ms.topic: article
-ms.prod: dynamics-gp
 author: theley502
 ms.author: theley
 manager: jswymer

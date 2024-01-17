@@ -3,7 +3,6 @@ title: Print All Sales Documents
 description: New in October 2020 - Print All Sales Documents
 ms.date: 10/13/2020
 ms.topic: article
-ms.prod: dynamics-gp
 author: theley502
 ms.author: theley
 manager: jswymer

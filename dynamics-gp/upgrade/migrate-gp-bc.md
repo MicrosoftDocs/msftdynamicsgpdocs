@@ -5,7 +5,6 @@ author: jswymer
 
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.date: 04/01/2022
 ---

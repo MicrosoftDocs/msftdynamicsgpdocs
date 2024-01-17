@@ -4,7 +4,6 @@ description: "Examine the inquiries and reports in the advanced human resources 
 keywords: "HR"
 author: theley502
 manager: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

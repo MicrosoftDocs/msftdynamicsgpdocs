@@ -3,7 +3,6 @@ title: "Receivables Management Part 4: Inquiries and reports"
 description: Learn how to analyze information entered into the system, customer activity and transaction information, and display the information on a screen or a report.
 keywords: "receivables"
 author: theley502
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

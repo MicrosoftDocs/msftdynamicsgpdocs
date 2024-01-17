@@ -4,7 +4,6 @@ description: Learn how to customize your customer-facing documents with Word tem
 keywords: "Word Template"
 author: theley502
 
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: jswymer

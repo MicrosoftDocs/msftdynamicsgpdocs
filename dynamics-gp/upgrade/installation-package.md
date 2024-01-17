@@ -7,7 +7,6 @@ ms.author: jswymer
 manager: jswymer
 applies_to: 
 ms.date: 08/24/2018
-ms.prod: dynamics-gp
 ms.topic: article
 ms.assetid: e21af4d9-a4ad-4d55-a002-fd13f15e8f89
 ms.reviewer: 

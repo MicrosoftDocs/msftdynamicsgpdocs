@@ -4,7 +4,6 @@ description: "W-2 Wage and tax statement data source guide."
 keywords: "year-end"
 author: theley502
 manager: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

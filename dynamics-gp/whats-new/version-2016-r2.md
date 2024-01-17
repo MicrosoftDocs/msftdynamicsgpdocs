@@ -6,7 +6,6 @@ author: jswymer
 ms.author: jswymer
 manager: annbe
 applies_to: 
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: 
 ms.date: 10/12/2018
