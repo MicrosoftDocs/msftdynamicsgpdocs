@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/4/2024
+ms.date: 1/8/2024
 ---
 
 # Developer Tools
@@ -28,9 +28,10 @@ However, over the years, we have found some issues with a few of the eConnect pr
 
 These modified procedures are use at your own risk and should be tested by your company before using in your production system.  When you upgrade Microsoft Dynamics GP, these modified procedures may be lost.
 
-- taPOPCreateDistributions - December 2023
-- taCalcDueDatePM - December 2023
-- taCalcDueDateRM - December 2023
+- [taPOPCreateDistributions](https://mbs2.microsoft.com/fileexchange/?fileID=e004756e-9413-4fed-9b4a-82306d2763b2) - December 2023
+- [taCalcDueDatePM](https://mbs2.microsoft.com/fileexchange/?fileID=400b0ad2-3452-470f-bc99-e690c12dab60) - December 2023
+- [taCalcDueDateRM](https://mbs2.microsoft.com/fileexchange/?fileID=6f1f21fb-8eec-4527-b163-578e4e55b06f) - December 2023
+- taSOPLot - May 2021
 
 ## Web Services
 
