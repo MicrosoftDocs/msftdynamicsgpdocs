@@ -50,21 +50,21 @@ The Standard Deduction Amount for Filing Status:
 
 Subtract Personal Exemptions was removed from the calculation.
 
-All filing status have a fixed flat tax of 5.49% 
+All filing status have a fixed flat tax of 5.49%.
 
 ### Withholding changes for Illinois
 
-- The Dependent Exemptions is $2,775 from $2,425
-- The Flat tax rate remains at 4.95% and allowances at 1,000
+- The Dependent Exemptions is $2,775 from $2,425.
+- The Flat tax rate remains at 4.95% and allowances at 1,000.
 
 ### Withholding changes for Indiana
 
-The Flat tax rate is reduced to 3.05% from 3.15%
+The Flat tax rate is reduced to 3.05% from 3.15%.
 
 ### Withholding changes for Massachusetts
 
-- Flat tax rate of 5% for all filing status
-- The Millionaires Tax (Surtax of 4% on employees that make over 1,000,000) which begin in January 1, 2023 is not supported by the Microsoft Dynamics GP tables.  
+- Flat tax rate of 5% for all filing status.
+- The Millionaires Tax (Surtax of 4% on employees that make over 1,000,000), which begin in January 1, 2023, is not supported by the Microsoft Dynamics GP tables.  
 
 ### Withholding changes for Minnesota
 
@@ -103,7 +103,7 @@ Withholding rates for all Filing Status:
 
 ### Withholding changes for North Dakota
 
-The Personal Exemption amount is \$4,300 for Filing Status MAR and SINGLE 
+The Personal Exemption amount is \$4,300 for Filing Status MAR and SINGLE. 
 
 > [!NOTE]
 > Per the state of North Dakota, there is no HOH filing status with exemptions. If an employee on the W4 chooses filing status of HOH and does not mark step 2, you still choose HOH as the filing status in Dynamics GP.
