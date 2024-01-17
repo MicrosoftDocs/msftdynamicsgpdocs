@@ -5,7 +5,6 @@ author: theley502
 ms.author: theley
 ms.reviewer: jswymer
 manager: tfehr
-ms.prod: dynamics-gp
 ms.topic: article
 ms.date: 11/10/2023
 ---

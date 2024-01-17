@@ -3,7 +3,6 @@ title: Sales order processing part 4
 description: Learn about transaction activity in the sales order processing module in Dynamics GP.
 author: tnistler
 
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.date: 10/12/2019

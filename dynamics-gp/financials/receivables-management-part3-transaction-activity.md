@@ -3,7 +3,6 @@ title: "Receivables Management Part 3: Transaction activity"
 description: "Managing receivables in Dynamics GP Part 3: Transaction activity."
 keywords: "receivables"
 author: theley502
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

@@ -4,7 +4,6 @@ description: A guide to planning, deploying and managing Microsoft Dynamics GP o
 keywords: "Azure"
 author: theley502
 manager: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

@@ -3,7 +3,6 @@ title: Sales order processing part 5 inquiries and reports
 description: Learn about inquiries and reports in the sales order processing module in Dynamics GP.
 author: tnistler
 
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.date: 01/22/2019

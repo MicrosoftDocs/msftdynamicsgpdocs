@@ -1,9 +1,8 @@
-﻿---
+---
 title: Automate Financial Full Reconcile 
 description: new in October 2020 - Automate Financial Full Reconcile
 ms.date: 10/01/2020
 ms.topic: article
-ms.prod: dynamics-gp
 author: theley502
 ms.author: theley
 manager: jswymer

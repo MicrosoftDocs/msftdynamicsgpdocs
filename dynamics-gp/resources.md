@@ -4,7 +4,6 @@ description: View the recommended resources for you who administer or manage Dyn
 keywords: "install"
 author: theley502
 manager: annbe
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

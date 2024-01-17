@@ -4,7 +4,6 @@ description: "Examine how to get users set up for the Manufacturing module in Dy
 keywords: "manufaturing"
 author: theley502
 manager: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

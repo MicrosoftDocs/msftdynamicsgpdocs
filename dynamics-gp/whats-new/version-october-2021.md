@@ -6,7 +6,6 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 manager: margoc
-ms.prod: dynamics-gp
 ms.topic: article
 ms.date: 10/12/2021
 ---

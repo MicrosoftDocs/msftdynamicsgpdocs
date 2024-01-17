@@ -3,11 +3,10 @@ title: "US payroll tax update"
 description: "US 2023 Payroll Tax update for Microsoft Dynamics GP."
 keywords: "payroll"
 author: theley502
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/3/2024
+ms.date: 1/10/2024
 ---
 # U.S. 2024 Payroll Tax Update
 
@@ -34,10 +33,146 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 - Georgia
 - Illinois
 - Indiana
+- Maryland
+- Massachusetts
 - Minnesota
 - Mississippi
 - North Dakota
 - Vermont
+
+### Withholding changes for Georgia
+
+The Standard Deduction Amount for Filing Status:
+
+- HOH, SINGLE, MFJ2I and MFS        is \$12,000
+- MFJ1I                             is \$24,000
+
+Subtract Personal Exemptions was removed from the calculation.
+
+All filing status have a fixed flat tax of 5.49%.
+
+### Withholding changes for Illinois
+
+- The Dependent Exemptions is $2,775 from $2,425.
+- The Flat tax rate remains at 4.95% and allowances at 1,000.
+
+### Withholding changes for Indiana
+
+The Flat tax rate is reduced to 3.05% from 3.15%.
+
+### Withholding changes for Massachusetts
+
+- Flat tax rate of 5% for all filing status.
+- The Millionaires Tax (Surtax of 4% on employees that make over 1,000,000), which begin in January 1, 2023, is not supported by the Microsoft Dynamics GP tables.  
+
+### Withholding changes for Minnesota
+
+The Personal Exemption amount is \$5,050 for all Filing Status.
+
+Withholding rates for taxpayers filing as *MAR*:
+
+| If Over  | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 14,000           | 0              | 0%           | 0                  |
+| 14,000      | 60,330           | 0              | 5.35         | 14,000             |
+| 60,330      | 198,040          | 2,478.66       | 6.80%        | 60,330             |
+| 198,040     | 335,450          | 11,842.94      | 7.85%        | 198,040            |
+| 335,450     | And Over         | 22,629.63      | 9.85%        | 297,260            |
+
+Withholding rates for taxpayers filing as *SINGLE*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|---------|--------------|------------|----------|----------------|
+| 0       | 4,475        | 0          | 0%       | 0              |
+| 4,475   | 36,165       | 0          | 5.35%    | 4,475          |
+| 36,165  | 108,565      | 1,502.28   | 6.80%    | 36,165         |
+| 108,565 | 197,715      | 5,864.48   | 7.85%    | 108,565        |
+| 197,715 | And Over     | 12,065.20  | 9.85%    | 197,715        |
+
+
+### Withholding changes for Mississippi
+
+Withholding rates for all Filing Status:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 10,000           | 0              | 0            | 0                  |
+| 10,000      | And over         | 0              | 4.7%         | 0                  |
+
+
+### Withholding changes for North Dakota
+
+The Personal Exemption amount is \$4,300 for Filing Status MAR and SINGLE. 
+
+> [!NOTE]
+> Per the state of North Dakota, there is no HOH filing status with exemptions. If an employee on the W4 chooses filing status of HOH and does not mark step 2, you still choose HOH as the filing status in Dynamics GP.
+>
+> The state relies on the federal form W-4 to calculate the amount to withhold. Per the state, step 3 for dependent claim amount is not used for ND state tax withholding.
+
+Withholding rates for taxpayers filing as *MAR*:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over    |
+|-------------|------------------|----------------|--------------|-------------------|
+| 0           | 53,988           | 0               | 0%          | 0                 |
+| 53,988      | 159,588          | 0               | 1.95%       | 53,988            |
+| 159,588     | And Over         | 2,059.20        | 2.50%       | 159,588           |
+
+Withholding rates for taxpayers filing as *MARHR*:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over    |
+|-------------|------------------|----------------|--------------|-------------------|
+| 0           | 51,975           | 0               | 0%          | 0                 |
+| 51,975      | 152,150          | 0               | 1.95%       | 51,975            |
+| 152,150     | And Over         | 1,953.41        | 2.50%       | 152,150           |
+
+Withholding rates for taxpayers filing as *SINGLE*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|---------|--------------|------------|----------|----------------|
+| 0       | 54,450       | 0          | 0%       | 0              |
+| 54,450  | 245,500      | 0          | 1.95%    | 54,450         |
+| 245,500 | And Over     | 3,725.48   | 2.50%    | 245,500        |
+
+Withholding rates for taxpayers filing as *SINGHR*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|---------|--------------|------------|----------|----------------|
+| 0       | 52,025       | 0          | 0%       | 0              |
+| 52,025  | 233,275      | 0          | 1.95%    | 52,025         |
+| 233,275 | And Over     | 3,534.38   | 2.50%    | 233,275        |
+
+Withholding rates for taxpayers filing as *HOHHR*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|---------|--------------|------------|----------|----------------|
+| 0       | 70,900       | 0          | 0%       | 0              |
+| 70,900  | 261,500      | 0          | 1.95%    | 70,900         |
+| 261,500 | And Over     | 3,716.70   | 2.50%    | 261,500        |
+
+### Withholding changes for Vermont
+
+The Personal Exemption amount is $5,100
+
+Withholding rates for taxpayers filing as *MAR*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 11,138           | 0              | 0%           | 0                  |
+| 11,138      | 91,088           | 0              | 3.35%        | 11,138             |
+| 91,088      | 204,488          | 2,678.33       | 6.60%        | 91,088             |
+| 204,488     | 305,788          | 10,162.73      | 7.60%        | 204,488            |
+| 305,788     | And Over         | 17,861.53      | 8.75%        | 305,788            |
+
+Withholding rates for taxpayers filing as *SINGLE*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 3,700            | 0              | 0%           | 0                  |
+| 3,700       | 51,600           | 0              | 3.35%        | 3,700              |
+| 51,600      | 119,700          | 1,604.65       | 6.60%        | 51,600             |
+| 119,700     | 245,700          | 6,099.25       | 7.60%        | 119,700            |
+| 245,700     | And Over         | 15,675.25      | 8.75%        | 245,700            |
+
 
 ## Changes in January Round 1 update (Released 12/20/2023)
 
@@ -176,6 +311,9 @@ Withholding rates for taxpayers filing as *HOHHR*:
 | 132,800     | 315,625          | 26,988.50      | 35%      | 132,800            |
 | 315,625     | And Over         | 90,977.25      | 37%      | 315,625            |
 
+
+### Withholding changes for Alabama
+Effective 1/1/2024 the state of Alabama has temporarily exempted all overtime wages from state tax. This will not be part of the Dynamics GP 2024 payroll tax tables. If you need this functionality in the product, you could set up a new pay code not subject to state tax, more manually tracked, or reach out to Greenshades for a more automated solution.
 
 ### Withholding changes for Arkansas
 
@@ -532,7 +670,7 @@ Low Income Tax Type rates for *B* Filing Status:
 Iowa withholding calculations, federal withholding is no longer subtracted from taxable wages.  
 
 > [!NOTE]
-> Iowa W4 changed in the year 2023 and the tax tables support the amounts, they are held in the Personal Exemption table below.
+> Iowa W4 changed in the year 2024 and the tax tables support the amounts, they are held in the Personal Exemption table below.
 
 - Standard Deduction for EXP1 is $14,600 previously \$13,850
 - Standard Deduction for EXP2 is $29,200 previously \$27,700

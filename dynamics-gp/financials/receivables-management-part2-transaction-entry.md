@@ -3,7 +3,6 @@ title: "Receivables Management Part 2: Transaction entry"
 description: Learn about creating batches and entering various types of transactions, distributions, commissions, and cash receipts.
 keywords: "receivables"
 author: theley502
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

@@ -7,7 +7,6 @@ ms.author: jswymer
 manager: jswymer
 applies_to: 
 ms.date: 03/20/2019
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: 
 ---

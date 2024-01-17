@@ -3,7 +3,6 @@ title: "Payables Management in Dynamics GP"
 description: "Managing payables in Dynamics GP."
 keywords: "payables"
 author: theley502
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

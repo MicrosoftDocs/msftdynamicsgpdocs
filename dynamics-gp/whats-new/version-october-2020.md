@@ -6,7 +6,6 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 manager: annbe
-ms.prod: dynamics-gp
 ms.topic: article
 ms.date: 10/01/2020
 ---

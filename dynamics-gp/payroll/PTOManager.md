@@ -4,7 +4,6 @@ description: "Examine how Paid Time Off Manager works with Microsoft Dynamics GP
 keywords: "payroll"
 author: theley502
 manager: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley

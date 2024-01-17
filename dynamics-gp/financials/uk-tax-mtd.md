@@ -3,7 +3,6 @@ title: "VAT and Make Tax Digital"
 description: "The British version of Dynamics GP supports the Make Tax Digital service."
 keywords: "tax"
 author: jswymer
-ms.prod: dynamics-gp
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: jchrist
