@@ -7,7 +7,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: jswymer
-ms.date: 12/22/2023
+ms.date: 1/18/2024
 
 ---
 
@@ -46,6 +46,10 @@ Install
 
 5. Once the Microsoft Dynamics GP Add-in for Microsoft Word is installed, click Finish.
 6. Open Microsoft Word, select the Developer Tab, verify that the Microsoft Dynamics GP Templates group shows.
+
+ > [!NOTE]
+>The Microsoft Dynamics GP Add-in for Microsoft Word is User Profile specific.  
+>Therefore, this add-in needs to be installed for each user that is going to be creating new Word templates and/or adding data sources and fields to existing Word templates.
 
 #### Developer Tab missing?
 If you are missing the Developer tab, right click in the black space within the ribbon > click "Customize the Ribbon"
@@ -454,6 +458,10 @@ We released this fixed in both GP 2016 and 18.3 on the 2020 Year End Update.
 If you are not on versions 16.00.0814 and higher, OR 18.3.1200 and higher, you will continue to receive these errors when printing Word Templates and there is no workaround other than to upgrade to a version with the fix that is compatible with Microsoft Office’s security updates. 
  
 If you on a version higher than that that already has the fix, then I would make sure that your Office is up to date, and test changing your user security for the report and template to our default reports to verify whether it is an environmental  issue or if it’s an issue with your modified reports/templates. 
+
+It is best practice to have back-up's created anytime you have a modified word template (just like we do with customized forms and reports) in case it may get corrupted during an update.
+Once modifications have been completed, save the Word document. The default location where the file gets saved is C:\Users\(current user)\AppData\Local\Temp.
+[Modified Templates won’t print or email after upgrade to Microsoft Dynamics GP 18.6 - Stuck in Template Processing](https://community.dynamics.com/blogs/post/?postid=a2b1d4e8-27af-ee11-92bd-000d3ae48dd4)
 
 ## If the issue is isolated to a specific Report Word Template and not ALL word Template Reports:
 
