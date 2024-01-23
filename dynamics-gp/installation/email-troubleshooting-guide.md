@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/2/2024
+ms.date: 1/22/2024
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -272,8 +272,9 @@ This issue can occur with all reports, and these can be caused by MessageID issu
 >  
 >  6. Antivirus/Malware could also cause the problem to not authenticate, try to rule it out as the cause of the problem.
 >  
->  7. Dynamics GP support [Multi-tenant authentication](/dynamics-gp/whats-new/multi-factor-authentication) in the Microsoft Entra app Registration. (not Single). If you set this up incorrectly, you'll see the message *Unknown Error*.
->   
+>  7. Dynamics GP support [Multi-tenant authentication](/dynamics-gp/whats-new/multi-factor-authentication) in the Microsoft Entra app Registration. If you set this up incorrectly, you'll see the message *Unknown Error*.
+>  [Single Tenant App Registration supported with 18.6 release](https://community.dynamics.com/blogs/post/?postid=18194a5d-4b7f-ee11-a81c-6045bdbe566c).
+>        
 >  8. If the Application ID is not saving or has issues, test by launching GP as Administrator, right-click your GP icon and choose Run as Administrator.
 >  
 >  9. Rule out [3rd party authentication providers](/dynamics-gp/installation/email-troubleshooting-guide#dynamics-gp-modern-authentication-and-third-party-authentication)
@@ -698,13 +699,13 @@ Workflow email issues usually fall into two possible causes: SMTP issues and Set
 ### My SMTP Test Failed
 
 If you never received the Test E-mail, then you are likely having an issue with SMTP.
+(Doing a test email vs actual workflow email are 2 different processes and thus 1 may work where the other does not)
 
 First, confirm that you are not using MFA on the account used in the SMTP setup.
 
 Next, make sure that TLS 1.0 is enabled on the SQL server and on the SMTP server.
 
-Then walk through the following articles:
-[Workflow Notification Email Troubleshooting – Microsoft Dynamics GP Community](https://community.dynamics.com/gp/b/markpolino/posts/workflow-notification-email-troubleshooting-microsoft-dynamics-gp-community)
+Then walk through the following article:
 
 [Workflow Notification Email Troubleshooting](https://community.dynamics.com/gp/b/dynamicsgp/posts/workflow-notification-email-troubleshooting)
 
@@ -726,7 +727,6 @@ There are also notification options under the main Workflow tab called ‘Send n
 Then, check Active Directory and make sure that the Email field on the front of every Approver’s card is filled out with the correct value. 
 
 If it is grayed out, then you are tied to Exchange Online, so these should be correct.
-
 
 ![Form 6](media/emailjohn6.jpg)
 
@@ -757,6 +757,9 @@ If an email is failing from the email links this could indicate a problem with w
 Test approving the email from within Dynamics GP, then we know workflow and emails are working, just not the web services links.
 
 4. [What is the email flow of workflow and what user is the email coming from?](https://community.dynamics.com/gp/b/dynamicsgp/posts/how-does-gp-behave-when-modern-authentication-is-enabled)
+   
+6. Make sure you have VALID users in AD as Workflow Managers.  If you do not have valid AD users as Workflow Managers this may cause performance in your workflow our undesired results.  
+Many times, customers have employees that leave the company but their users are still part of the workflow and may cause issues.
 
 [How to verify if Microsoft Dynamics GP Web Services is functioning correctly](/troubleshoot/dynamics/gp/verify-if-web-service-is-correct)
 
@@ -771,7 +774,7 @@ Test approving the email from within Dynamics GP, then we know workflow and emai
 > [!NOTE]
 > When Basic Authentication is deprecated, you will need to be on a version of Dynamics GP where you can use Modern Authentication (18.3 or later).
 >
-> You do not actually need MFA turned on for your account to use the MFA window in Microsoft Dyanmics GP, but it does use Modern Authentication.
+> You do not actually need MFA turned on for your Azure account to use the Modern Auth window window in Microsoft Dyanmics GP.
 
 There have been many quality issues fixed within Dynamics GP around Multi-Factor Authentication, so it is recommended to be on 18.5 or later to not run into an issue that is already fixed in the product.
 
