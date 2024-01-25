@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/18/2024
+ms.date: 1/25/2024
 ---
 # U.S. 2024 Payroll Tax Update
 
@@ -205,9 +205,9 @@ Withholding rates for taxpayers filing as *SINGLE*:
 |---------|--------------|------------|----------|----------------|
 | 0       | 4,475        | 0          | 0%       | 0              |
 | 4,475   | 36,165       | 0          | 5.35%    | 4,475          |
-| 36,165  | 108,565      | 1,502.28   | 6.80%    | 36,165         |
-| 108,565 | 197,715      | 5,864.48   | 7.85%    | 108,565        |
-| 197,715 | And Over     | 12,065.20  | 9.85%    | 197,715        |
+| 36,165  | 108,565      | 1,695.42   | 6.80%    | 36,165         |
+| 108,565 | 197,715      | 6,618.62   | 7.85%    | 108,565        |
+| 197,715 | And Over     | 13,616.90  | 9.85%    | 197,715        |
 
 
 ### Withholding changes for Mississippi
@@ -217,7 +217,7 @@ Withholding rates for all Filing Status:
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 10,000           | 0              | 0            | 0                  |
-| 10,000      | And over         | 0              | 4.7%         | 0                  |
+| 10,000      | And over         | 0              | 4.7%         | 10,000             |
 
 
 ### Withholding changes for North Dakota
