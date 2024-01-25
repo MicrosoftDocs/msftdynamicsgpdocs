@@ -47,9 +47,9 @@ Install
 5. Once the Microsoft Dynamics GP Add-in for Microsoft Word is installed, click Finish.
 6. Open Microsoft Word, select the Developer Tab, verify that the Microsoft Dynamics GP Templates group shows.
 
- > [!NOTE]
->The Microsoft Dynamics GP Add-in for Microsoft Word is User Profile specific.  
->Therefore, this add-in needs to be installed for each user that is going to be creating new Word templates and/or adding data sources and fields to existing Word templates.
+  > [!NOTE]
+  > The Microsoft Dynamics GP Add-in for Microsoft Word is User Profile specific.  
+  > Therefore, this add-in needs to be installed for each user that is going to be creating new Word templates and/or adding data sources and fields to existing Word templates.
 
 #### Developer Tab missing?
 If you are missing the Developer tab, right click in the black space within the ribbon > click "Customize the Ribbon"
