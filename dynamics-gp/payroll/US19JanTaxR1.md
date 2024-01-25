@@ -62,10 +62,11 @@ The Flat tax rate is reduced to 3.05% from 3.15%.
 
 ### Withholding changes for Maryland
 
-For each Filing Status of Maryland
-Standard Deduction Minimum is $1,800 from $1,700
-Standard Deduction Maximum is $2,700 from $2,550
-The Standard Deduction Percent remains at 15 percent.
+For each Filing Status of Maryland:
+
+- Standard Deduction Minimum is $1,800 from $1,700
+- Standard Deduction Maximum is $2,700 from $2,550
+- The Standard Deduction Percent remains at 15 percent.
 
 For Filing Status of AAMAR (Anne Arundel MFJ/HOH).
 
