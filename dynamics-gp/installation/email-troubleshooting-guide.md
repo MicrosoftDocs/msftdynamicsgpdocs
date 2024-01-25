@@ -758,7 +758,7 @@ Test approving the email from within Dynamics GP, then we know workflow and emai
 
 4. [What is the email flow of workflow and what user is the email coming from?](https://community.dynamics.com/gp/b/dynamicsgp/posts/how-does-gp-behave-when-modern-authentication-is-enabled)
    
-6. Make sure you have VALID users in AD as Workflow Managers.  If you do not have valid AD users as Workflow Managers this may cause performance in your workflow our undesired results.  
+6. Make sure you have VALID users in AD as Workflow Managers.  If you do not have valid AD users as Workflow Managers, it may cause performance issues in your workflow and undesired results.  
 Many times, customers have employees that leave the company but their users are still part of the workflow and may cause issues.
 
 [How to verify if Microsoft Dynamics GP Web Services is functioning correctly](/troubleshoot/dynamics/gp/verify-if-web-service-is-correct)
@@ -774,7 +774,7 @@ Many times, customers have employees that leave the company but their users are 
 > [!NOTE]
 > When Basic Authentication is deprecated, you will need to be on a version of Dynamics GP where you can use Modern Authentication (18.3 or later).
 >
-> You do not actually need MFA turned on for your Azure account to use the Modern Auth window window in Microsoft Dyanmics GP.
+> You do not actually need MFA turned on for your Azure account to use the Modern Auth window in Microsoft Dyanmics GP.
 
 There have been many quality issues fixed within Dynamics GP around Multi-Factor Authentication, so it is recommended to be on 18.5 or later to not run into an issue that is already fixed in the product.
 
