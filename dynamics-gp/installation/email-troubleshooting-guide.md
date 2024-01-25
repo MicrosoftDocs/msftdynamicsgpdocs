@@ -698,6 +698,7 @@ Workflow email issues usually fall into two possible causes: SMTP issues and Set
 ### My SMTP Test Failed
 
 If you never received the Test E-mail, then you are likely having an issue with SMTP.
+
 (Doing a test email vs actual workflow email are 2 different processes and thus 1 may work where the other does not)
 
 First, confirm that you are not using MFA on the account used in the SMTP setup.
