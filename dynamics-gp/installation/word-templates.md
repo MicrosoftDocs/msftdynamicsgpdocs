@@ -459,7 +459,7 @@ If you are not on versions 16.00.0814 and higher, OR 18.3.1200 and higher, you w
  
 If you on a version higher than that that already has the fix, then I would make sure that your Office is up to date, and test changing your user security for the report and template to our default reports to verify whether it is an environmental  issue or if it’s an issue with your modified reports/templates. 
 
-It is best practice to have back-up's created anytime you have a modified word template (just like we do with customized forms and reports) in case it may get corrupted during an update.
+It is best practice to have back-up's created anytime you have a modified Word template (just like we do with customized forms and reports) in case it might get corrupted during an update.
 Once modifications have been completed, save the Word document. The default location where the file gets saved is C:\Users\(current user)\AppData\Local\Temp.
 [Modified Templates won’t print or email after upgrade to Microsoft Dynamics GP 18.6 - Stuck in Template Processing](https://community.dynamics.com/blogs/post/?postid=a2b1d4e8-27af-ee11-92bd-000d3ae48dd4)
 
