@@ -1128,7 +1128,7 @@ To modify or delete a termination checklist:
 
 ## Training Classes and Courses
 
-To help your employees improve their skills and acquire new skills, your company will probably offer a variety of training classes. Training classes can be one-time classes or part of a more comprehensive course. For instance, your company might offer a cardiopulmonary resuscitation (CPR) class and an injury class as parts of a first aid course. Or, your company might offer a course on the telephone system and set up various times for each class.
+To help your employees improve their skills and acquire new skills, your company will probably offer a variety of training classes. Training classes can be one-time classes or part of a more comprehensive course. For instance, your company might offer a cardiopulmonary resuscitation (CPR) class and an injury class as parts of a [first aid course](https://hurak.com/course/online-level-3-first-aid-course-advanced-first-aid). Or, your company might offer a course on the telephone system and set up various times for each class.
 Setting up a training course
 
 Use the Training Course and Class Definition window to set up a training course. 
