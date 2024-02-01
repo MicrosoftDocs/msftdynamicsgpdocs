@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 11/16/2023
+ms.date: 2/1/2024
 ---
 
 # U.S. Year-end Update in Dynamics GP
@@ -203,7 +203,7 @@ Telephone: (888) 255-3815
 E-mail: *sales\@greenshades.com*  
 Web site: [www.greenshades.com](https://www.greenshades.com/)
 
-> [!IMPORTANT
+> [!IMPORTANT]
 > For the 2023 year, it is imperative you file electronically. The Taxpayer First Act mandates electronic filing of IRS forms including W-2s.
 Beginning in 2022, if you send 100 or more W-2s/1099's, you must send them electronically. In 2023, the limit is lowered to 10. The IRS is pushing for businesses to file electronically, W-2, 1099, and so on. Dynamics GP does not file Payables 1099's electronically. 
 Review this blog to help you prepare for 2023 year-end and electronic filing: [1099 Changes to expect -Get ready for Year-end 2023](https://community.dynamics.com/blogs/post/?postid=2246f6af-3f2a-4faf-9da5-544613326c20).
@@ -363,8 +363,8 @@ Next, print the W-2 statements and W-3 Transmittal form. You should print a W-2 
 
 2. Create an EFW2 transmission file, if required. If your company has more than 100 employees, the Social Security Administration requires you to create and submit federal W-2 wage reports electronically. For information, see [Chapter 5: Submitting W-2 reports electronically](#chapter-5-submitting-w-2-reports-electronically).
 
-3. Archive inactive employee Human Resources information (optional). If you're using Human Resources with Payroll and you want to save inactive employee information while removing Payroll history records, you can archive the information. Archiving information is beneficial if you need to provide information for references, re-hiring, or other reporting purposes. For more information, see [Archiving Human Resources information for inactive employees](#archiving-human-resources-information-for-inactive-employees
-).
+3. Archive inactive employee Human Resources information (optional). If you're using Human Resources with Payroll and you want to save inactive employee information while removing Payroll history records, you can archive the information. Archiving information is beneficial if you need to provide information for references, re-hiring, or other reporting purposes. For more information, see [Archiving Human Resources information for inactive employees](#archiving-human-resources-information-for-inactive-employees).
+It is always best practice when you go to run payroll or an HR accrual for the new year that the Dynamics GP user date is also in the new year, so the system knows what year you are running the payroll process for.
 
 4. Set up fiscal periods for 2024. Enter the number and length of each company's open fiscal periods in the Fiscal Periods Setup window. For more information, see [Setting up fiscal periods](#setting-up-fiscal-periods).
 
@@ -665,6 +665,8 @@ Use the Attendance Setup window to specify if your company accrues time using Pa
 11. Choose OK to save your changes and return to the Attendance Setup window.
 
 12. Choose OK again to save the settings in the Attendance Setup window.
+
+It is always best practice when you go to run payroll or an HR accrual for the new year that the Dynamics GP user date is also in the new year, so the system knows what year you are running the payroll process for.
 
 ### Deleting information for inactive employees
 
