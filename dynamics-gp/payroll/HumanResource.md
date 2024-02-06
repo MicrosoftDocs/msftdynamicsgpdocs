@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 3/16/2022
+ms.date: 02/06/2024
 ---
 # Human Resources in Microsoft Dynamics GP
 
