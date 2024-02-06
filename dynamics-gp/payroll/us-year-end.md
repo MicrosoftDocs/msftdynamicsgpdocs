@@ -364,7 +364,8 @@ Next, print the W-2 statements and W-3 Transmittal form. You should print a W-2 
 2. Create an EFW2 transmission file, if required. If your company has more than 100 employees, the Social Security Administration requires you to create and submit federal W-2 wage reports electronically. For information, see [Chapter 5: Submitting W-2 reports electronically](#chapter-5-submitting-w-2-reports-electronically).
 
 3. Archive inactive employee Human Resources information (optional). If you're using Human Resources with Payroll and you want to save inactive employee information while removing Payroll history records, you can archive the information. Archiving information is beneficial if you need to provide information for references, re-hiring, or other reporting purposes. For more information, see [Archiving Human Resources information for inactive employees](#archiving-human-resources-information-for-inactive-employees).
-It is always best practice when you go to run payroll or an HR accrual for the new year that the Dynamics GP user date is also in the new year, so the system knows what year you are running the payroll process for.
+
+   It is always best practice when you run payroll or an HR accrual for the new year that the Dynamics GP user date is also in the new year, so the system knows what year you are running the payroll process for.
 
 4. Set up fiscal periods for 2024. Enter the number and length of each company's open fiscal periods in the Fiscal Periods Setup window. For more information, see [Setting up fiscal periods](#setting-up-fiscal-periods).
 
