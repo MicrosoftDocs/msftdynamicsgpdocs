@@ -667,7 +667,7 @@ Use the Attendance Setup window to specify if your company accrues time using Pa
 
 12. Choose OK again to save the settings in the Attendance Setup window.
 
-It is always best practice when you go to run payroll or an HR accrual for the new year that the Dynamics GP user date is also in the new year, so the system knows what year you are running the payroll process for.
+It is always best practice when you run payroll or an HR accrual for the new year that the Dynamics GP user date is also in the new year, so the system knows what year you are running the payroll process for.
 
 ### Deleting information for inactive employees
 
