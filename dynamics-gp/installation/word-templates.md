@@ -68,7 +68,7 @@ Check the following options under the Advanced category:
 * Show text boundaries
 
 ## Overview of Word Templates
-Added in Microsoft Dynanmics GP 2010
+Added in Microsoft Dynamics GP 2010
 
 ### Template-enabled reports
 Administration >> Reports >> Template Maintenance >> choose the Report Name drop-down list and select More Reports.
@@ -182,7 +182,7 @@ In Microsoft Dynamics GP there are 5 default bookmarks. These bookmarks are used
 
 First, you will want to make sure that Bookmarks are visible on the document you are viewing.  
 
-1. In Microsoft Word, File menu, Advanced tab, Show document content section.  
+1. In Microsoft Word, File menu, Options, Advanced tab, Show document content section.  
 2. Check the box next to option **Show bookmarks**.  
 
     Now that we know bookmarks icon is enabled and you can see them on the word template, you can use the following direction to see which bookmarks on your document.
