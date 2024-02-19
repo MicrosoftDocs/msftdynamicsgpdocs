@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 2/1/2024
+ms.date: 2/9/2024
 ---
 
 # U.S. Year-end Update in Dynamics GP
@@ -184,7 +184,7 @@ This is the contact information for two Microsoft Dynamics partners:
 
 Aatrix
 
-2100 Library Cir
+2617 S Columbia Rd
 
 Grand Forks, ND  58201
 
