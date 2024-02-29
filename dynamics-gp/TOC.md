@@ -223,4 +223,5 @@
 ### [After you upgrade](upgrade/after-you-upgrade.md)
 #### [Company data conversion](upgrade/company-data-conversion.md)
 ### Migrate to Dynamics 365 Business Central online
+#### [Introduction](upgrade/migrate-gp-bc-intro.md)
 #### [Compare Work in Dynamics GP to Business Central](upgrade/migrate-gp-bc.md)
