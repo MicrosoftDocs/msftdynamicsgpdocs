@@ -11,7 +11,7 @@ ms.custom: bap-template
 ---
 ## Migrate Dynamics GP to Dynamics Business Central online
 
-Organizations that run their workloads on-premises but are looking to move to the cloud can easily migrate to Dynamics Business Central online. Moving to the cloud gives users the benefits of cloud scenarios such as Machine Learning, Power BI, Power Automate, and others to drive suggested actions.  
+Organizations that run their workloads on-premises but are looking to move to the cloud can migrate to Dynamics Business Central online. Moving to the cloud gives users the benefits of cloud scenarios such as Machine Learning, Power BI, Power Automate, and others to drive suggested actions.  
 
 ## What is Business Central?
 
