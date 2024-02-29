@@ -15,17 +15,22 @@ Organizations that run their workloads on-premises but are looking to move to th
 
 ## What is Business Central?
 
-Business Central is a business management solution for small and mid-sized organizations that automates and streamlines business processes and helps you manage your business. Highly adaptable and rich with features, Business Central enables companies to manage their business, including finance, manufacturing, sales, shipping, project management, services, and more. Companies can easily add functionality that is relevant to the region of operation, and that is customized to support even highly specialized industries. Business Central is fast to implement, easy to configure, and simplicity guides innovations in product design, development, implementation, and usability.
+Business Central is a business management solution for small and mid-sized organizations. It streamlines business processes, automates tasks, and provides comprehensive management capabilities. Here are some key features:
+
+- **Adaptability:** Business Central is highly adaptable, allowing companies to tailor it to their specific needs.
+- **Functionality:** It covers various aspects of business, including finance, manufacturing, sales, shipping, project management, and services.
+- **Customization:** Companies can easily add functionality relevant to their region and industry.
+- **Ease of Implementation:** Business Central is fast to implement and easy to configure.
 
 To get familiar with Business Central online, go [here](/dynamics365/business-central/across-preview?toc=/dynamics365/business-central/dev-itpro/toc.json).
 
 ## How to make the move to Business Central
 
-Both Dynamics GP and Business Central online provide tools designed to that help you through migration process, from start to finish.
+Both Dynamics GP and Business Central online provide tools that help you through the entire migration process, from start to finish.
 
-Before migrating your on-premises deployment to the cloud, it's essential to evaluate its readiness. So for starters, Dynamics GP offers the migration assessment tool that delivers valuable insight into your overall readiness to migrate. It provides migration options based on your needs, and detects potential migration issues based on your Dynamics GP system structure. To learn more about the migration assessment, watch the video [Are You Ready for Business Central](https://www.youtube.com/watch?v=r2gNgQrCgoo&list=PLcakwueIHoT9yVFOV6_BXMVeodPq3lt3o&index=15).
+- **Assess readiness:** Before migrating your on-premises deployment to the cloud, it's essential to evaluate its readiness. So for starters, Dynamics GP offers a migration assessment tool that provides insights into your readiness. It suggests migration options based on your needs and detects potential issues related to your GP system structure. To learn more about the migration assessment, watch the video [Are You Ready for Business Central](https://www.youtube.com/watch?v=r2gNgQrCgoo&list=PLcakwueIHoT9yVFOV6_BXMVeodPq3lt3o&index=15).
 
-Once you've ready to migrate, Dynamics Business Central online includes a comprehensive set of tools specifically designed to migrate data from companies in Dynamics GP. To learn more about the tools and the end-toend process, go to [Migrate On-Premises Data to Business Central Online](/dynamics365/business-central/dev-itpro/administration/migrate-gp-overview) in the Business Central documentation on Microsoft Learn.
+- **Data Migration Process:** When you're ready to migrate, Business Central online offers a comprehensive set of tools to migrate company data from Dynamics GP. To learn more about the tools and the end-toend process, go to [Migrate On-Premises Data to Business Central Online](/dynamics365/business-central/dev-itpro/administration/migrate-gp-overview) in the Business Central documentation on Microsoft Learn.
 
 ## See also
 
