@@ -187,7 +187,7 @@ Before reconciling quantities, back up all accounting data for your company. You
 
 You can re-create missing information in a database table. Some of the information in table groups is stored in two or more tables. If information in one table is missing or damaged, the check links program examines other tables where the same information is stored and re-creates the damaged record in the first table.
 
-1. Open the PA Check Links window.
+1. Open the PA Check Links window
 
     File \> Maintenance \> PA Check Links
 
@@ -225,6 +225,7 @@ When you installed Microsoft Dynamics GP, you might have selected to install som
 ## Chapter 3: Project Time and Expense (PTE) Timesheet
 
 **Employee Setup**
+
 A new field was added to the Employee Additional Information Maintenance window (HR & Payroll | Cards | Payroll | Employee | Additional Information) to allow you to associate a GP User to a specific Employee ID.  
 
 ![Project Employee Maintenance.](media/PTE1.jpg)
@@ -237,24 +238,28 @@ A new Timesheets button was added to the PA Employee Options window (HR & Payrol
 ![Project Employee Maintenance.](media/PTE2.jpg)
 
 **Security**
+
 A new security Role was created called ESS PTE Employee, which will give the user access to the necessary windows to enter their timesheets.
 
 The goal of the PTE Timesheet feature is to provide an alternative option for customers that are currently using the Business Portal Project Time and Expense functionality to enter and approve Timesheets.  The idea is that customers can utilize the Limited user types in GP for the PTE Timesheet users; however, it will work with Full Users as well.
 
 **Workflow**
+
 The PTE Timesheet featured requires that a Workflow is created and marked as Active.  The ability to create a Workflow is available by navigating to Workflow Maintenance (Administration | Setup | Company | Workflow | Workflow Maintenance).
 
 **PTE Timesheet Entry**
+
 The window allows you to enter a timesheet for the Employee ID that is assigned to the GP User that is logged in, or for an Employee ID that the user is a delegate for.  If there are multiple weeks in the pay period, you can cycle through them by using the buttons for the Week.
 
 You can also create a new Timesheet from a template by clicking the New From Template button.  You will be prompted with options to determine whether you want to include the hours or copy the Billing Notes.
 
 ![Project Employee Maintenance.](media/PTE3.jpg)
 
-New tables were added to store the information for the PTE Timesheets Setup and Entry
-PTE00300 - PTE Timesheet Template Header
-PTE00301 - PTE Timesheet Template Line
-PTE00601 - PTE Employee Master
-PTE00602 - PTE Timesheet Delegates
-PTE10000 - PTE Timesheet Header
-PTE10001 - PTE Timesheet Line
+New tables were added to store the information for the PTE Timesheets Setup and Entry:
+
+- PTE00300 - PTE Timesheet Template Header
+- PTE00301 - PTE Timesheet Template Line
+- PTE00601 - PTE Employee Master
+- PTE00602 - PTE Timesheet Delegates
+- PTE10000 - PTE Timesheet Header
+- PTE10001 - PTE Timesheet Line
