@@ -22,9 +22,9 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 - [Microsoft Dynamics GP Product Ideas](https://experience.dynamics.com/ideas/categories/?forum=771cc5ac-c117-e811-8105-3863bb2e0320&forumName=Dynamics%20GP)
 
-- [Microsoft Dynamics GP (Documentation)](index.md
+- [Microsoft Dynamics GP (Documentation)](index.md)
 
-- [Microsoft Dynamics GP Technical Troubleshooting (KB's)](https://learn.microsoft.com/en-us/troubleshoot/dynamics/gp/welcome-gp)
+- [Microsoft Dynamics GP Technical Troubleshooting (KB's)](/troubleshoot/dynamics/gp/welcome-gp)
 
 - [Microsoft Dynamics GP YouTube Playlist](https://www.youtube.com/playlist?list=PLFSag4twLTk_9TB90pvujqkFmp7uc1UAt) 
 
