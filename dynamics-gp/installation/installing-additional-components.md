@@ -155,7 +155,7 @@ To install an additional component:
 
 1. Deploying Dynamics GP OData Service:
 
-    - [Install Dynamics GP OData Service from the Dynamics GP Installation Media](https://learn.microsoft.com/en-us/dynamics/s-e/gp/MDGP2018_Release_Download_378).
+    - [Install Dynamics GP OData Service from the Dynamics GP Installation Media](/dynamics/s-e/gp/MDGP2018_Release_Download_378).
     - When launching the Installation Media, you see an option for ‘GP OData Service’.
     - This service creates a URL endpoint for building reports and authenticating users with the correct permissions.
 
@@ -171,7 +171,7 @@ To install an additional component:
 1. Setting up OData Service and Data Sources:
 
     - Go to Tools > Setup > System > OData.
-    - In the Reporting Tools Setup window, go to the OData tab and enter the endpoint URL in the format https://machineName.domain.com/ (trailing slash is required).
+    - In the Reporting Tools Setup window, go to the OData tab and enter the endpoint URL in the format `https://machineName.domain.com/` (trailing slash is required).
     - In the Data Sources section, select which SQL objects you want to make available for OData reporting.
     - Use the Add Objects button to add custom tables and views. Make sure the user has security access to the objects.
     - In the Publish OData section, check the Publish button for the objects you want to publish for OData reporting.
