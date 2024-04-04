@@ -230,7 +230,7 @@ A new field was added to the Employee Additional Information Maintenance window 
 
 ![Project Employee Maintenance.](media/PTE1.jpg)
 
-A new Timesheets button was added to the PA Employee Options window (HR & Payroll | Cards | Payroll | Employee | Project) that takes you to the PTE Timesheet Setup window.  This is where you set up the different options for the employee and designate delegates for a user.  Delegates are users who are authorized to enter timesheets on behalf of the employee selected.
+A new Timesheets button was added to the PA Employee Options window (HR & Payroll | Cards | Payroll | Employee | Project) that takes you to the PTE Timesheet Setup window. This window is where you set up the different options for the employee and designate delegates for a user. Delegates are users who are authorized to enter timesheets on behalf of the employee selected.
 
 > [!NOTE]
 > The employees you select as delegates must be assigned a GP user ID in the Employee Additional Information Maintenance window.
@@ -239,19 +239,19 @@ A new Timesheets button was added to the PA Employee Options window (HR & Payrol
 
 **Security**
 
-A new security Role was created called ESS PTE Employee, which will give the user access to the necessary windows to enter their timesheets.
+A new security Role was created called ESS PTE Employee, which gives the user access to the necessary windows to enter their timesheets.
 
-The goal of the PTE Timesheet feature is to provide an alternative option for customers that are currently using the Business Portal Project Time and Expense functionality to enter and approve Timesheets.  The idea is that customers can utilize the Limited user types in GP for the PTE Timesheet users; however, it will work with Full Users as well.
+The goal of the PTE Timesheet feature is to provide an alternative option for customers that are currently using the Business Portal Project Time and Expense functionality to enter and approve Timesheets. The idea is that customers can utilize the Limited user types in GP for the PTE Timesheet users; however, it works with Full Users as well.
 
 **Workflow**
 
-The PTE Timesheet featured requires that a Workflow is created and marked as Active.  The ability to create a Workflow is available by navigating to Workflow Maintenance (Administration | Setup | Company | Workflow | Workflow Maintenance).
+The PTE Timesheet featured requires that a Workflow is created and marked as Active. The ability to create a Workflow is available by navigating to Workflow Maintenance (Administration | Setup | Company | Workflow | Workflow Maintenance).
 
 **PTE Timesheet Entry**
 
-The window allows you to enter a timesheet for the Employee ID that is assigned to the GP User that is logged in, or for an Employee ID that the user is a delegate for.  If there are multiple weeks in the pay period, you can cycle through them by using the buttons for the Week.
+The window allows you to enter a timesheet for the Employee ID that is assigned to the GP User that is logged in, or for an Employee ID that the user is a delegate for. If there are multiple weeks in the pay period, you can cycle through them by using the buttons for the Week.
 
-You can also create a new Timesheet from a template by clicking the New From Template button.  You will be prompted with options to determine whether you want to include the hours or copy the Billing Notes.
+You can also create a new Timesheet from a template by clicking the New From Template button. You will be prompted with options to determine whether you want to include the hours or copy the Billing Notes.
 
 ![Project Employee Maintenance.](media/PTE3.jpg)
 
