@@ -228,14 +228,14 @@ When you installed Microsoft Dynamics GP, you might have selected to install som
 
 A new field was added to the Employee Additional Information Maintenance window (HR & Payroll | Cards | Payroll | Employee | Additional Information) to allow you to associate a GP User to a specific Employee ID.  
 
-![Project Employee Maintenance.](media/PTE1.jpg)
+![Shows the PTE employee addiiontal maintenance page](media/PTE1.jpg)
 
 A new Timesheets button was added to the PA Employee Options window (HR & Payroll | Cards | Payroll | Employee | Project) that takes you to the PTE Timesheet Setup window. This window is where you set up the different options for the employee and designate delegates for a user. Delegates are users who are authorized to enter timesheets on behalf of the employee selected.
 
 > [!NOTE]
 > The employees you select as delegates must be assigned a GP user ID in the Employee Additional Information Maintenance window.
 
-![Project Employee Maintenance.](media/PTE2.jpg)
+![Shows the PTE timesheet setup page](media/PTE2.jpg)
 
 **Security**
 
@@ -253,7 +253,7 @@ The window allows you to enter a timesheet for the Employee ID that is assigned 
 
 You can also create a new Timesheet from a template by clicking the New From Template button. You will be prompted with options to determine whether you want to include the hours or copy the Billing Notes.
 
-![Project Employee Maintenance.](media/PTE3.jpg)
+![Shows the PTE timesheet entry page](media/PTE3.jpg)
 
 New tables were added to store the information for the PTE Timesheets Setup and Entry:
 
