@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 04/09/2019
+ms.date: 04/2/2024
 ---
 
 # Project Accounting Administrator's Guide
@@ -187,7 +187,7 @@ Before reconciling quantities, back up all accounting data for your company. You
 
 You can re-create missing information in a database table. Some of the information in table groups is stored in two or more tables. If information in one table is missing or damaged, the check links program examines other tables where the same information is stored and re-creates the damaged record in the first table.
 
-1. Open the PA Check Links window.
+1. Open the PA Check Links window
 
     File \> Maintenance \> PA Check Links
 
@@ -221,3 +221,45 @@ When you installed Microsoft Dynamics GP, you might have selected to install som
 5. Complete the check links process, reconcile, or do both.
 
 6. Reenter data, if possible. If you can’t reenter the data that you’ve cleared, data in other tables can become inaccurate or unusable. For instance, if you were to clear data from the Account Master table in General Ledger, all financial information would become unusable until the accounting information is reentered.
+
+## Chapter 3: Project Time and Expense (PTE) Timesheet
+
+**Employee Setup**
+
+A new field was added to the Employee Additional Information Maintenance window (HR & Payroll | Cards | Payroll | Employee | Additional Information) to allow you to associate a GP User to a specific Employee ID.  
+
+![Shows the PTE employee addiiontal maintenance page](media/PTE1.jpg)
+
+A new Timesheets button was added to the PA Employee Options window (HR & Payroll | Cards | Payroll | Employee | Project) that takes you to the PTE Timesheet Setup window. This window is where you set up the different options for the employee and designate delegates for a user. Delegates are users who are authorized to enter timesheets on behalf of the employee selected.
+
+> [!NOTE]
+> The employees you select as delegates must be assigned a GP user ID in the Employee Additional Information Maintenance window.
+
+![Shows the PTE timesheet setup page](media/PTE2.jpg)
+
+**Security**
+
+A new security Role was created called ESS PTE Employee, which gives the user access to the necessary windows to enter their timesheets.
+
+The goal of the PTE Timesheet feature is to provide an alternative option for customers that are currently using the Business Portal Project Time and Expense functionality to enter and approve Timesheets. The idea is that customers can utilize the Limited user types in GP for the PTE Timesheet users; however, it works with Full Users as well.
+
+**Workflow**
+
+The PTE Timesheet featured requires that a Workflow is created and marked as Active. The ability to create a Workflow is available by navigating to Workflow Maintenance (Administration | Setup | Company | Workflow | Workflow Maintenance).
+
+**PTE Timesheet Entry**
+
+The window allows you to enter a timesheet for the Employee ID that is assigned to the GP User that is logged in, or for an Employee ID that the user is a delegate for. If there are multiple weeks in the pay period, you can cycle through them by using the buttons for the Week.
+
+You can also create a new Timesheet from a template by clicking the New From Template button. You will be prompted with options to determine whether you want to include the hours or copy the Billing Notes.
+
+![Shows the PTE timesheet entry page](media/PTE3.jpg)
+
+New tables were added to store the information for the PTE Timesheets Setup and Entry:
+
+- PTE00300 - PTE Timesheet Template Header
+- PTE00301 - PTE Timesheet Template Line
+- PTE00601 - PTE Employee Master
+- PTE00602 - PTE Timesheet Delegates
+- PTE10000 - PTE Timesheet Header
+- PTE10001 - PTE Timesheet Line

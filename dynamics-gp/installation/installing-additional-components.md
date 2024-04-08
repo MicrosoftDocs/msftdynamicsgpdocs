@@ -6,7 +6,7 @@ author: jswymer
 ms.author: jswymer
 manager: annbe
 applies_to: 
-ms.date: 08/23/2018
+ms.date: 03/21/2024
 ms.topic: article
 ms.assetid: 3f1d0bb8-4967-4a30-814b-b07c5ea58959
 ms.reviewer: jswymer
@@ -150,6 +150,50 @@ To install an additional component:
 4. Depending on the component you installed, you may be instructed to restart your computer.
 
 5. When installation of the additional component is complete, you can either install another component or close the main Dynamics GP installation window.
+
+## OData Installation and Troubleshooting Guide
+
+1. Deploying Dynamics GP OData Service:
+
+    - [Install Dynamics GP OData Service from the Dynamics GP Installation Media](/dynamics/s-e/gp/MDGP2018_Release_Download_378).
+    - When launching the Installation Media, you see an option for ‘GP OData Service’.
+    - This service creates a URL endpoint for building reports and authenticating users with the correct permissions.
+
+1. Configuring GP Logins and Security Roles:
+
+    - In Dynamics GP, verify that GP logins are tied to Windows AActive Directory (AD) accounts in the User Setup window.
+    - Assign users to security roles beginning with OD.
+    - To create custom security tasks and roles, use the SQL Objects for OData reporting purposes in the Microsoft Dynamics GP database.
+    - You will see security roles that begin with OD_ for OData, which then give access to RPT security tasks that allow OData to pull the data from the GP databases.
+
+    [If you recently upgraded and don't see those roles, you must run the scripts to add the new security objects into Dynamics GP.](https://community.dynamics.com/blogs/post/?postid=7539b330-654e-ee11-a81c-6045bd86143b)
+
+1. Setting up OData Service and Data Sources:
+
+    - Go to Tools > Setup > System > OData.
+    - In the Reporting Tools Setup window, go to the OData tab and enter the endpoint URL in the format `https://machineName.domain.com/` (trailing slash is required).
+    - In the Data Sources section, select which SQL objects you want to make available for OData reporting.
+    - Use the Add Objects button to add custom tables and views. Make sure the user has security access to the objects.
+    - In the Publish OData section, check the Publish button for the objects you want to publish for OData reporting.
+    - Each object has its own URL, but you only need to specify the URL up to the company level. The URL pulls all objects for the company.
+
+1. Using OData Data Feed in Excel:
+
+    - In Excel, go to the Data tab and select Data from Other Sources > OData Data Feed.
+    - In the Data Connection Wizard, enter the OData URL up to the company name.
+    - Provide credentials to access the data.
+    - The wizard brings up all objects tied to the URL that you can use for reporting.
+    - Select the desired object(s) and use them for reporting purposes.
+
+1. Using OData Data Feed in Power BI:
+
+    - In the Power BI desktop app, select on Get Data > OData Feed.
+    - Enter the OData URL up to the company name and provide credentials to access the data.
+    - Select the desired object(s) and use them for reporting purposes.
+
+1. Troubleshooting OData Access Issues:
+
+    - Make sure the user's Windows account is added to the GP login and has access to OData security roles. Otherwise, they'll receive an unauthorized/forbidden message in Excel.
 
 ## See Also
 
