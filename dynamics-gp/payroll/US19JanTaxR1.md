@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/25/2024
+ms.date: 4/9/2024
 ---
 # U.S. 2024 Payroll Tax Update
 
@@ -16,7 +16,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2024 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the second tax update for 2024 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2024. 
+This is the third tax update for 2024 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2024. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -27,6 +27,16 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly)
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/gp/b/dynamicsgp/posts/tips-to-install-the-u-s-payroll-tax-update)
+
+## Changes in April Round 3 update (Released 4/9/2024)
+
+- Virginia
+
+### Withholding changes for Virginia
+
+The tables include increases in the standard deduction from $8,000 to $8,500 for single filers and $17,000 
+for married filers filing jointly.
+
 
 ## Changes in January Round 2 update (Released 1/19/2024)
 
@@ -1145,7 +1155,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *1/25/2024*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *4/8/2024*.
 
 ## What's next
 
