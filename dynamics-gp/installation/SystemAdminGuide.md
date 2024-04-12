@@ -3391,27 +3391,31 @@ It is recommended you use the template to capture the correct information that i
 To use a SQL Trace template, follow these steps:
 
 1. Determine what version of SQL Server you have and click the link below to download the zip file of SQL templates.  
-2. In the zip file, click on the TRACETMPL folder and click on the .tdf file for your version and SQL Profiler will automatically open.  
+1. In the zip file, click on the TRACETMPL folder and click on the .tdf file for your version and SQL Profiler will automatically open.  
 (Take note of the file name as this is the name for the template you will look for in SQL profiler.) 
-3. Click Yes if prompted to overwrite.
-Then you should get a message that the tdf file was imported successfully.  Click OK.  (Or you can do a Save|Save As and go to that location on click on the tdf file.)
+1. Click Yes if prompted to overwrite. 
 
-[SQL templates for versions 2008, 2008 R2, 2012, 2014, 2016, 2017, 2019, 2022](https://mbs2.microsoft.com/fileexchange/downloadfile.aspx?fileid=4a32fa62-ac9a-4149-aac6-96d740bb4810)
+   Then you should get a message that the tdf file was imported successfully.  Click OK.  (Or you can do a Save|Save As and go to that location on click on the tdf file.)
 
-4. Within SQL Profiler, click on File | New Trace.   (Connect or log in as prompted.)
-    1. In the Trace Properties window, enter a name for Trace Name as desired. 
-    1.  Click the drop-down icon next to the USE THE TEMPLATE field, and scroll down to the end of the list and select the SQL trace template you imported in.  (Should beging with 'MSGP' prefix.)
-    1. Click to mark the SAVE TO FILE checkbox and browse to a location you would like to save the trace file to.  Save. 
-    1.  Also uncheck Enable File Rollover option (Under SAVE TO FILE section). 
-    1.  In the Events Selection tab, mark the SHOW ALL EVENTS checkbox and SHOW ALL COLUMNS in the lower right corner.
+   [SQL templates for versions 2008, 2008 R2, 2012, 2014, 2016, 2017, 2019, 2022](https://mbs2.microsoft.com/fileexchange/downloadfile.aspx?fileid=4a32fa62-ac9a-4149-aac6-96d740bb4810)
 
-    > [!NOTE]
-    > All the fields in Method 2 will automatically be selected in the Events Selection tab. 
+1. Within SQL Profiler, click on File > New Trace. (Connect or log in as prompted.)
 
-5.  Click RUN to start the trace and the SQL Profiler window will open and the trace is now running.   Use the icons listed below to help you capture the trace.  Be sure to keep the trace file as small as possible and only capture the steps in Dynamics GP to reproduce the problem.  Traces too large are often not efficient or helpful.   
+   1. In the Trace Properties window, enter a name for Trace Name as desired. 
+   1. Click the drop-down icon next to the USE THE TEMPLATE field, and scroll down to the end of the list and select the SQL trace template you imported in.  (Should beging with 'MSGP' prefix.)
+   1. Click to mark the SAVE TO FILE checkbox and browse to a location you would like to save the trace file to.  Save. 
+   1. Also uncheck Enable File Rollover option (Under SAVE TO FILE section). 
+   1. In the Events Selection tab, mark the SHOW ALL EVENTS checkbox and SHOW ALL COLUMNS in the lower right corner.
 
-    - Use the Red Square icon at the top to stop the trace. 
-    - Use the Green Arrow icon at the top to restart the trace.  (This is enabled if the trace is stopped.)
+   > [!NOTE]
+   > All the fields in Method 2 will automatically be selected in the Events Selection tab. 
+
+1. Click RUN to start the trace and the SQL Profiler window will open and the trace is now running.
+
+   Use the icons listed below to help you capture the trace. Be sure to keep the trace file as small as possible and only capture the steps in Dynamics GP to reproduce the problem. Large traces are often not efficient or helpful.
+
+    - Use the Red Square icon at the top to stop the trace.
+    - Use the Green Arrow icon at the top to restart the trace. (This is enabled if the trace is stopped.)
     - Use the White Eraser icon (looks like a piece of chalk) to clear out the trace at any time needed.
 
 > [!NOTE]
@@ -3438,37 +3442,39 @@ To create a Dexsql.log file, follow these steps:
 
 1. Start Microsoft Dynamics GP. If Microsoft Dynamics GP is already started, exit Microsoft Dynamics GP, and then restart it.
 
-Re-create the scenario in which you received the error message. Get to the area of Dynamics GP you need, but before you do the steps to generate the error message, you should go clear/delete the dexsql.log that has run to this point (as you only want it to capture generating the error message only, and don't need anything captured up to this point). 
+1. Re-create the scenario in which you received the error message. Get to the area of Dynamics GP you need, but before you do the steps to generate the error message, you should go clear/delete the dexsql.log that has run to this point (as you only want it to capture generating the error message only, and don't need anything captured up to this point). 
 
-To do it, go to the next step.
+   1. To clear/delete the dexsql.log, go to Windows Explorer, open the Microsoft Dynamics GP application folder that you opened in step 1. Locate the Dexsql.log file. Delete or rename this file, as you don't need anything it captured up to this point.
 
-In Windows Explorer, open the Microsoft Dynamics GP application folder that you opened in step 1. Locate the Dexsql.log file. Delete or rename this file, as you don't need anything it captured up to this point.
+      (If you don't see the Dexsql.log file listed, select View, and then select Refresh so that you can see the new file. Or check your path.)
 
-(If you don't see the Dexsql.log file listed, select View, and then select Refresh so that you can see the new file. Or check your path.)
+   1. Now back in Microsoft Dynamics GP, continue to do the final steps to re-create the error message.
 
-Now back in Microsoft Dynamics GP, continue to do the final steps to re-create the error message. A new Dexsql.log file will be generated in the Microsoft Dynamics GP application folder again, that contains only the syntax of generating the error message.
+      A new Dexsql.log file will be generated in the Microsoft Dynamics GP application folder again, that contains only the syntax of generating the error message.
 
-Turn off the dexsql.log: To do it, open the Dex.ini file, and then reset the statements to FALSE or to the original settings.
+   1. When done, turn off the dexsql.log by opening the Dex.ini file, and then resetting the statements to FALSE or to the original settings.
 
-Note:
-It will continue to run until the user signs out of Microsoft Dynamics GP and back in again. It doesn't hurt to leave it run either, but may result in the log getting large and causing performance issues down the road.
+   > [!NOTE]
+   > The log continues to run until the user signs out of Microsoft Dynamics GP and back in again. It doesn't hurt to leave it running either, but it may result in the log getting large and causing performance issues down the road.
 
 ##### Fiddler Trace
 
 A Fiddler trace can help with a network issue or a way to capture all HTTP and HTTPS web requests made from an application or web browser.
 
-To run Fiddler
-1.	[Download Classic Fiddler](https://www.telerik.com/download/fiddler)
-2.	Open Fiddler.
-3.	In Tools->Fiddler Options->HTTPS, **choose the Decrypt HTTPS traffic field**.
-4.	Choose Yes on the prompt for trust Fiddler Root Certificate.
-5.	Choose Yes to install the certificate.
-6.	Choose Yes to confirm.
-7.	Choose OK, and then choose OK to go back.
-8.	Reproduce the issue.
-9.	Stop the Fiddler trace:
-a.	File->Capture Traffic F12, Save trace: File->Save>All Sessions.
-b.	Save the trace out as .saz file.
+To run Fiddler, do the follwoing steps:
+
+1. [Download Classic Fiddler](https://www.telerik.com/download/fiddler).
+1. Open Fiddler.
+1. In Tools->Fiddler Options->HTTPS, **choose the Decrypt HTTPS traffic field**.
+1. Choose Yes on the prompt for trust Fiddler Root Certificate.
+1. Choose Yes to install the certificate.
+1. Choose Yes to confirm.
+1. Choose OK, and then choose OK to go back.
+1. Reproduce the issue.
+1. Stop the Fiddler trace:
+
+   1. File->Capture Traffic F12, Save trace: File->Save>All Sessions.
+   1. ave the trace out as .saz file.
 
 [For more information, see this blog post](https://learn.microsoft.com/en-us/archive/blogs/maheshk/easy-way-to-collect-fiddler-log-fiddlercap).
 
@@ -3479,42 +3485,44 @@ Dexterity Scriptlogs are often helpful to give insight into what dexterity code 
 To create a log file, follow these steps:
 
 1. Exit out of Microsoft Dynamics GP.
+1. Navigate to the GP code folder (default location is C:\Program Files (x86)\Microsoft Dynamics\GP\Data) and right-click on the Dex.ini file and open it with Notepad.
 
-2. Navigate to the GP code folder (default location is C:\Program Files (x86)\Microsoft Dynamics\GP\Data) and right-click on the Dex.ini file and open it with Notepad.
+   Review if the ScriptDebugger=TRUE trigger exists, and then set it to TRUE, or if it doesn't exist, add the below trigger to the end of the file.
 
-Review if the ScriptDebugger=TRUE trigger exists, and then set it to TRUE, or if it doesn't exist, add the below trigger to the end of the file.
+   Close the file and save your changes.
 
-Close the file and save your changes.
+1. Relaunch Microsoft Dynamics GP.
 
-3. Relaunch Microsoft Dynamics GP.
+   Now you will see a DEBUG item listed in the top menubar of all windows. Open the window you need to recreate the issue in. (Or get to the point you need to be at, right before the issue happens and you want to start the scriptlog at this point.)
 
-Now you will see a DEBUG item listed in the top menubar of all windows. Open the window you need to recreate the issue in. (Or get to the point you need to be at, right before the issue happens and you want to start the scriptlog at this point.)
+1. Click on DEBUG in the top menubar and click on LOG SCRIPTS to start the script log. Enter a filename and path of where you want to save the scriptlog to and click Save. (This puts a checkmark next to LOG SCRIPTS under the DEBUG menu and the scriptlog is now running.)
 
-4. Click on DEBUG in the top menubar and click on LOG SCRIPTS to start the script log. Enter a filename and path of where you want to save the scriptlog to and click Save. (This puts a checkmark next to LOG SCRIPTS under the DEBUG menu and the scriptlog is now running.)
+1. Perform the action you want captured in the log. Cancel out of any posting reports (if prompted) and then STOP!
 
-5. Perform the action you want captured in the log. Cancel out of any posting reports (if prompted) and then STOP!
+   Now click on DEBUG again and click on LOG SCRIPTS again to stop the log. (This removes the checkmark next to LOG SCRIPTS under the DEBUG menu item).
 
-Now click on DEBUG again and click on LOG SCRIPTS again to stop the log. (This removes the checkmark next to LOG SCRIPTS under the DEBUG menu item).
+   > [!NOTE]
+   > You can stop and start the script log by clicking on DEBUG > LOG SCRIPTS to have the checkmark next to LOG SCRIPTS or not. The checkmark means it is running, and no checkmark means it is not. Clicking on LOG SCRIPTS will add/remove the checkmark to start/stop the scriptlog from running. Each time you start it, it should prompt you for a new filename and path to save the new log to.
 
-Note
-You can stop and start the script log by clicking on DEBUG > LOG SCRIPTS to have the checkmark next to LOG SCRIPTS or not. The checkmark means it is running, and no checkmark means it is not. Clicking on LOG SCRIPTS will add/remove the checkmark to start/stop the scriptlog from running. Each time you start it, it should prompt you for a new filename and path to save the new log to.
+   Locate the Script.log file in the path you generated it to, and open it with Notepad to ensure it captured the process.
 
-Locate the Script.log file in the path you generated it to, and open it with Notepad to ensure it captured the process.
+##### Dynamics GP Workflow specific issue/logs
 
-##### Dynamics GP Workflow specific issue / logs
+DynamicsGP_WorkflowGP.log:
 
-DynamicsGP_WorkflowGP.log
-In the local workstation temp directory of the user who is logged into GP (e.g. C:\Users\<USER>\AppData\Local\Temp)
+In the local workstation temp directory of the user who is logged into GP (for example, C:\Users\<USER>\AppData\Local\Temp).
 
-DynamicsGP_WorkflowGP.WorkflowEngine.log 
-In the SQL Server machine’s temp directory of the user who is running the SQL Server service (e.g. C:\Users\MSSQLSERVER\AppData\Local\Temp)
+DynamicsGP_WorkflowGP.WorkflowEngine.log:
+
+In the SQL Server machine's temp directory of the user who is running the SQL Server service (for example, C:\Users\MSSQLSERVER\AppData\Local\Temp)
 
 ##### Process Monitor log
 
-A Process Monitor can help track down where there is a security/permission issue. 
+A Process Monitor can help track down where there is a security/permission issue.
 
 To create a process monitor you can follow these steps:
-1. [Download the Process Monitor](http://www.microsoft.com/technet/sysinternals/processesandthreads/processmonitor.mspx)
+
+1. [Download the Process Monitor](http://www.microsoft.com/technet/sysinternals/processesandthreads/processmonitor.mspx).
 2. Extract Procmon.exe, but do not click on the exe at this time.
 3. Get to the point right before the user receives the error message.
 4. Double-click Procmon.exe to start the application, do not filter anything out if asked.
