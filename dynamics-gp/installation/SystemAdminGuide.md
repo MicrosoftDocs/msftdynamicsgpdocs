@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 05/14/2019
+ms.date: 04/10/2024
 ---
 
 # System Administration Guide
@@ -3179,59 +3179,26 @@ resources.
 
 **Microsoft Dynamics GP documentation**
 
-If you've installed Microsoft Dynamics GP, you can use the help to access
-contextsensitive assistance about windows. You can choose Help \>\> About
-This Window or press F1 to access help for the window you're currently
-viewing. Use the Search tab to find more information on alert messages and
+If you've installed Microsoft Dynamics GP, you can use the help to access context-sensitive assistance about windows. You can choose Help \>\> About
+This Window or press F1 to access help for the window you're currently viewing. Use the Search tab to find more information on alert messages and
 procedures.
 
-You can use the manuals (Help \>\> Printable Manuals) to find a printable
-version of procedural or overview information for a specific module.
+You can use the manuals (Help \>\> Printable Manuals) to find a printable version of procedural or overview information for a specific module.
 
 **Resource descriptions**
 
-Resource descriptions provide detailed technical information about Microsoft
-Dynamics GP fields, tables, and windows. This utility allows you to learn
-more about how data is stored in Microsoft Dynamics GP, including the fields
-that are stored in each table, and the reports containing data from each
+Resource descriptions provide detailed technical information about Microsoft Dynamics GP fields, tables, and windows. This utility allows you to learn
+more about how data is stored in Microsoft Dynamics GP, including the fields that are stored in each table, and the reports containing data from each
 table.
 
-To open the Table Descriptions window, choose Microsoft Dynamics GP menu
-\>\> Tools \>\> Resource Descriptions \>\> Tables. Use the Table
-Descriptions window to find information about a table, such as its names,
-keys, key segments, and the fields it contains.
+To open the Table Descriptions window, choose Microsoft Dynamics GP menu \>\> Tools \>\> Resource Descriptions \>\> Tables. Use the Table
+Descriptions window to find information about a table, such as its names, keys, key segments, and the fields it contains.
 
-To open the Field Descriptions window, choose Microsoft Dynamics GP menu
-\>\> Tools \>\> Resource Descriptions \>\> Fields. Use the Field
+To open the Field Descriptions window, choose Microsoft Dynamics GP menu \>\> Tools \>\> Resource Descriptions \>\> Fields. Use the Field
 Descriptions window to find out which tables contain a particular field.
 
-To open the Window Descriptions window, choose Microsoft Dynamics GP menu
-\>\> Tools \>\> Resource Descriptions \>\> Windows. Use the Window
-Descriptions window to find out which windows are contained in a specific
-product and series,
-
-the names assigned to each window, the fields each window contains, and the
-tables linked to each window.
-
-<!--**CustomerSource**
-
-CustomerSource is a Web site for registered Microsoft Dynamics GP customers.
-CustomerSource is available 24 hours a day. You must have a user name and
-password to enter the site. You can access CustomerSource by navigating to
-[https:/
-/mbs.microsoft.com/customersource](https://www.microsoft.com/dynamics/customer/en-us/access-customersource/default.aspx)
-with your Internet browser.
-
-From the CustomerSource start page, select the Support option. From the Support
-page, you can look for information on your own or you can use e-mail to send a
-question to the Microsoft Dynamics GP Technical Support team.
-
-You'll find links to Support Hot Topics and Knowledge Base—the best source of
-information for error messages, troubleshooting guides, work-arounds, and
-answers to common Report Writer questions. You'll also find links for automated
-fixes, hardware compatibility, and downloads. Use the New Support Request link
-to contact Microsoft Dynamics GP Technical Support electronically. You also can
-view recent support requests for yourself and your company.-->
+To open the Window Descriptions window, choose Microsoft Dynamics GP menu \>\> Tools \>\> Resource Descriptions \>\> Windows. Use the Window
+Descriptions window to find out which windows are contained in a specific product and series, the names assigned to each window, the fields each window contains, and the tables linked to each window.
 
 **Microsoft SQL Server troubleshooting resources**
 
@@ -3266,150 +3233,104 @@ problem.
 
 **Does the error occur for a system administrator user?**
 
-If a **system administrator user** does not receive the same error as other
-users, a permission problem may exist.
+If a **system administrator user** does not receive the same error as other users, a permission problem may exist.
 
-A script called Grant.sql is included on the Microsoft Dynamics GP installation
-media and is installed automatically during the Microsoft Dynamics GP client/
-server installation process. Run this script against the database that produces
-the error. For more information on running scripts, see the SQL Server
+A script called Grant.sql is included on the Microsoft Dynamics GP installation media and is installed automatically during the Microsoft Dynamics GP client/
+server installation process. Run this script against the database that produces the error. For more information on running scripts, see the SQL Server
 documentation.
 
 **Does the error occur for all users?**
 
-If the error does not occur for all users, a security problem may exist. You
-should also check customizations, such as modified reports and forms.
+If the error does not occur for all users, a security problem may exist. You should also check customizations, such as modified reports and forms.
 
 <!--![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
-*Remember that you have security options within SQL Server and within
-Microsoft Dynamics GP.*
+*Remember that you have security options within SQL Server and within Microsoft Dynamics GP.*
 
 **Does the error occur in all companies?**
 
-If the error occurs in more than one company and is data-related, the
-problem is likely in the system database. The problem could also exist in
-one of your dictionaries, such as Dynamics.dic or Reports.dic. If an error
-occurs in only one company, the problem likely exists in the company
+If the error occurs in more than one company and is data-related, the problem is likely in the system database. The problem could also exist in
+one of your dictionaries, such as Dynamics.dic or Reports.dic. If an error occurs in only one company, the problem likely exists in the company
 database.
 
 **Does the error occur on all workstations?**
 
-To determine if a problem is data-related or dictionary-related, verify
-whether the error happens on all workstations. If all workstations produce
-the same error, the problem is likely on the server rather than on the
-individual client. The problem could be related to database tables or to
-shared files. To determine where maintenance is needed, see *Finding which
-tables require maintenance* on page 92.
+To determine if a problem is data-related or dictionary-related, verify whether the error happens on all workstations. If all workstations produce
+the same error, the problem is likely on the server rather than on the individual client. The problem could be related to database tables or to
+shared files. To determine where maintenance is needed, see *Finding which tables require maintenance* on page 92.
 
 **Does the error happen consistently?**
 
-If an error occurs consistently, you probably need data maintenance. To
-determine if a table is corrupt, try isolating records within the tables
-you're working with. For more information on determining where the
-maintenance is needed, see *Finding which tables require maintenance* on
-page 92.
+If an error occurs consistently, you probably need data maintenance. To determine if a table is corrupt, try isolating records within the tables
+you're working with.
 
 **Is the window or report modified?**
 
-If the non-modified version of a window or report does not receive the
-error, the problem is related to the modifications to the dictionary. If
-recent modifications have been done, check the modifications for errors. If
-the modifications have worked in the past, rename the dictionary and restore
+If the non-modified version of a window or report does not receive the error, the problem is related to the modifications to the dictionary. If
+recent modifications have been done, check the modifications for errors. If the modifications have worked in the past, rename the dictionary and restore
 it from a backup.
 
 <!--![Screenshot showing a renamed dictionary.](media/37e9f1c83cd5cae0000d5c22328baf07.gif)-->
 
-*Do not delete dictionaries. Renaming files allows you to restore these files
-later, if necessary.*
+*Do not delete dictionaries. Renaming files allows you to restore these files later, if necessary.*
 
 **Are there integrating products or customizations?**
 
-If there are customizations or integrating applications, try removing them
-to see if errors still occur. If integrating applications are present,
-remove the dictionaries from the Dynamics.set file and rename the associated
-file extensions in Windows Explorer.
+If there are customizations or integrating applications, try removing them to see if errors still occur. If integrating applications are present,
+remove the dictionaries from the Dynamics.set file and rename the associated file extensions in Windows Explorer.
 
 <!--![A Screenshot](media/37e9f1c83cd5cae0000d5c22328baf07.gif)-->
 
-*Do not delete these files. Renaming file extensions allows you to restore
-these files later, if necessary.*
+*Do not delete these files. Renaming file extensions allows you to restore these files later, if necessary.*
 
-If customizations exist on your system, contact the person who made the
-customizations for troubleshooting assistance.
+If customizations exist on your system, contact the person who made the customizations for troubleshooting assistance.
 
-**If you're having printing problems, are you able to print to the screen, a
-file, or another printer?**
+**If you're having printing problems, are you able to print to the screen, a file, or another printer?**
 
-When you notice a problem on a report or inquiry window, verify whether the
-error occurs when you view the information using a different medium, such as
-printed to the screen or to a different printer. If a report and its
-associated inquiry window produce the same results, data maintenance is
-needed. If only the report is incorrect, the problem could be related to a
-modified report.
+When you notice a problem on a report or inquiry window, verify whether the error occurs when you view the information using a different medium, such as
+printed to the screen or to a different printer. If a report and its associated inquiry window produce the same results, data maintenance is
+needed. If only the report is incorrect, the problem could be related to a modified report.
 
 **Were the transactions imported or keyed?**
 
-If imported transactions produce errors, verify whether manually keyed
-transactions produce the same results. Because some methods of importing data do
-not require the data to be verified for accuracy, imported data may be corrupt
-or incomplete. To determine where maintenance is needed, see *Finding which
-tables require maintenance* on page 92.
+If imported transactions produce errors, verify whether manually keyed transactions produce the same results. Because some methods of importing data do
+not require the data to be verified for accuracy, imported data may be corrupt or incomplete. 
 
 **Does the problem exist if processing is done at the database server?**
 
-If the problem does not exist when all processing is performed at the server,
-the problem may be related to your network, ODBC drivers, or ODBC data sources
-or a result of differing MDAC versions.
+If the problem does not exist when all processing is performed at the server, the problem may be related to your network, ODBC drivers, or ODBC data sources
+or a result of differing versions.
 
 #### Finding which tables require maintenance
 
-Once you've established that a table requires maintenance in Microsoft Dynamics
-GP, the next step is to find out which table or tables are affected. Once you've
-determined which tables need to be repaired, see the data recovery checklist in
-*Recovering data* on page 95.
+Once you've established that a table requires maintenance in Microsoft Dynamics GP, the next step is to find out which table or tables are affected. 
 
-- If an alert message has appeared stating the name of the table, you can
-    begin the data recovery checklist immediately.
+- If an alert message has appeared stating the name of the table, you can begin the data recovery checklist immediately.
 
-- If unusual results on a report indicate a table that a table requires
-    maintenance, refer to the sample reports provided with the module to see
+- If unusual results on a report indicate that a table requires maintenance, refer to the sample reports provided with the module to see
     which table groups' data is printed in that report.
 
-- If you're having trouble opening a window, use the Window Descriptions
-    window (Microsoft Dynamics GP menu \>\> Tools \>\> Resource Descriptions
-    \>\> Windows) to determine the physical and table groups accessed by a
-    window.
+- If you're having trouble opening a window, use the Window Descriptions window (Microsoft Dynamics GP menu \>\> Tools \>\> Resource Descriptions
+    \>\> Windows) to determine the physical and table groups accessed by a window.
 
-- If you still can't determine which table is causing the problem, try to
-    isolate the problem. For example, if you're working in Sales Order
-    Processing, try entering different types of transactions with various items
-    for various customers. If the error occurs only for a specific customer
-    record, you can conclude that the data in the RM Customer MSTR table is
-    corrupt.
+- If you still can't determine which table is causing the problem, try to isolate the problem. For example, if you're working in Sales Order
+    Processing, try entering different types of transactions with various items for various customers. If the error occurs only for a specific customer
+    record, you can conclude that the data in the RM Customer MSTR table is corrupt.
 
 <!--![A Screenshot](media/fd6d021a22dcaf4de997ea2a5d15efea.gif)-->
 
-*Each Microsoft Dynamics GP table has three names: a display name, a
-technical name, and a physical name. Display names are displayed in the
-Check Links window and other windows. The table names that appear in alert
-messages are typically technical names, the names that the system uses to
-identify tables. For example, a message may state that an error occurred in
-the GL_Account_MSTR table, but the display name for that table is Account
+*Each Microsoft Dynamics GP table has three names: a display name, a technical name, and a physical name. Display names are displayed in the
+Check Links window and other windows. The table names that appear in alert messages are typically technical names, the names that the system uses to
+identify tables. For example, a message may state that an error occurred in the GL_Account_MSTR table, but the display name for that table is Account
 Master.*
 
-You may need to use the Table Descriptions window (Microsoft Dynamics GP menu
-\>\>Tools \>\> Resource Descriptions \>\> Tables) to determine the table group
-to which a table in an alert message belongs. Some data recovery procedures can
-be performed only on table groups, while others can be performed on table groups
-or tables.
+You may need to use the Table Descriptions window (Microsoft Dynamics GP menu \>\>Tools \>\> Resource Descriptions \>\> Tables) to determine the table group
+to which a table in an alert message belongs. Some data recovery procedures can be performed only on table groups, while others can be performed on table groups or tables.
 
 #### Alert message troubleshooting
 
-If you receive an error message that indicates a problem you can't explain, use
-the following resources for more information. If you are unable to resolve the
-problem yourself, contact Microsoft Dynamics GP Technical Support for other
-options.
+If you receive an error message that indicates a problem you can't explain, use the following resources for more information. If you are unable to resolve the
+problem yourself, contact Microsoft Dynamics GP Technical Support for other options.
 
 **Microsoft Dynamics GP messages**
 
@@ -3417,27 +3338,22 @@ The best source of information for troubleshooting Microsoft Dynamics GP alert m
 
 **DBMS messages**
 
-Microsoft SQL-related error messages appear as DBMS errors in Microsoft
-Dynamics GP. Always use the SQL Server Books Online to troubleshoot DBMS
+Microsoft SQL-related error messages appear as DBMS errors in Microsoft Dynamics GP. Always use the SQL Server Books Online to troubleshoot DBMS
 errors (Start \>\> Programs \>\> Microsoft SQL Server \>\> Books Online).
 Select the Search tab and enter the error number, then choose List Topics.
-Either highlight and select Display or double-click an entry to open the
-topic. In the description column of the error message table, you'll see more
-information about the error. You can also use the SQL Query Analyzer to find
-the same information.
+Either highlight and select Display or double-click an entry to open the topic. In the description column of the error message table, you'll see more
+information about the error. You can also use the SQL Query Analyzer to fin the same information.
 
 #### Before you call support
 
-Have the answers ready to the following questions to help your support
-specialist quickly narrow down the source of the problem you've
+Have the answers ready to the following questions to help your support specialist quickly narrow down the source of the problem you've
 experiencing.
 
 - What is the exact error message?
 
 - When did the error first occur?
 
-- What task were you attempting to perform at the time you received the error
-    message?
+- What task were you attempting to perform at the time you received the error message?
 
 - Has the task been completed successfully in the past?
 
@@ -3445,11 +3361,9 @@ experiencing.
 
 - What have you done so far to attempt to fix the problem?
 
-- Have you performed any of the table maintenance procedures such as check
-    links?
+- Have you performed any of the table maintenance procedures such as check links?
 
-- If have performed table maintenance procedures and received error messages,
-    what kind of messages?
+- If have performed table maintenance procedures and received error messages, what kind of messages?
 
 - Does the problem occur in another company?
 
@@ -3459,12 +3373,165 @@ experiencing.
 
 - What versions of software are you using?
 
-Verify the version numbers for Microsoft Dynamics GP, your database
-software, and Windows. Also note service packs.
+Verify the version numbers for Microsoft Dynamics GP, your database software, and Windows. Also note service packs.
 
 - Are you using an integrating product with Microsoft Dynamics GP?
 
 - Have you imported any data?
+
+#### How to capture a log or trace 
+
+There are many different types of logs and traces that can be gathered to help you resolve the problem in Dynamics GP.
+
+##### How to use SQL Profiler to create a SQL trace in Microsoft SQL Server
+
+The templates have already been mapped to the fields, which spare you the effort of doing the mapping manually.
+It is recommended you use the template to capture the correct information that is needed to help resolve the issue.
+
+To use a SQL Trace template, follow these steps:
+
+1. Determine what version of SQL Server you have and click the link below to download the zip file of SQL templates.  
+1. In the zip file, click on the TRACETMPL folder and click on the .tdf file for your version and SQL Profiler will automatically open.  
+(Take note of the file name as this is the name for the template you will look for in SQL profiler.) 
+1. Click Yes if prompted to overwrite. 
+
+   Then you should get a message that the tdf file was imported successfully.  Click OK.  (Or you can do a Save|Save As and go to that location on click on the tdf file.)
+
+   [SQL templates for versions 2008, 2008 R2, 2012, 2014, 2016, 2017, 2019, 2022](https://mbs2.microsoft.com/fileexchange/downloadfile.aspx?fileid=4a32fa62-ac9a-4149-aac6-96d740bb4810)
+
+1. Within SQL Profiler, click on File > New Trace. (Connect or log in as prompted.)
+
+   1. In the Trace Properties window, enter a name for Trace Name as desired. 
+   1. Click the drop-down icon next to the USE THE TEMPLATE field, and scroll down to the end of the list and select the SQL trace template you imported in.  (Should beging with 'MSGP' prefix.)
+   1. Click to mark the SAVE TO FILE checkbox and browse to a location you would like to save the trace file to.  Save. 
+   1. Also uncheck Enable File Rollover option (Under SAVE TO FILE section). 
+   1. In the Events Selection tab, mark the SHOW ALL EVENTS checkbox and SHOW ALL COLUMNS in the lower right corner.
+
+   > [!NOTE]
+   > All the fields in Method 2 will automatically be selected in the Events Selection tab. 
+
+1. Click RUN to start the trace and the SQL Profiler window will open and the trace is now running.
+
+   Use the icons listed below to help you capture the trace. Be sure to keep the trace file as small as possible and only capture the steps in Dynamics GP to reproduce the problem. Large traces are often not efficient or helpful.
+
+    - Use the Red Square icon at the top to stop the trace.
+    - Use the Green Arrow icon at the top to restart the trace. (This is enabled if the trace is stopped.)
+    - Use the White Eraser icon (looks like a piece of chalk) to clear out the trace at any time needed.
+
+> [!NOTE]
+> The trace file should be created at the location selected above. You can then attach the trace to a support case, along with the information of what version of SQL you are using, and the user ID you used when performing the steps in Dynamics GP.
+
+##### Dex.sql log
+
+This type of log can me used for an upgrade error message or any time you are getting an error message in Dynamics GP.
+When you receive an error message in Microsoft Dynamics GP, a Dexsql.log file is a helpful tool that can frequently provide more information to troubleshoot issues. If you can re-create the error message, the Dexsql.log file can capture this information.
+
+To create a Dexsql.log file, follow these steps:
+
+1. Open the Dex.ini file. By default, this file is in the following location:
+
+    C:\Program Files\Microsoft Dynamics\GP\Data
+
+1. Locate the following statements in the Dex.ini file:
+
+    SQLLogSQLStmt=FALSE SQLLogODBCMessages=FALSE SQLLogAllODBCMessages=FALSE
+
+1. If the statements are currently set to FALSE, change the statements to TRUE, as follows:
+
+    SQLLogSQLStmt=TRUE SQLLogODBCMessages=TRUE SQLLogAllODBCMessages=TRUE
+
+1. Start Microsoft Dynamics GP. If Microsoft Dynamics GP is already started, exit Microsoft Dynamics GP, and then restart it.
+
+1. Re-create the scenario in which you received the error message. Get to the area of Dynamics GP you need, but before you do the steps to generate the error message, you should go clear/delete the dexsql.log that has run to this point (as you only want it to capture generating the error message only, and don't need anything captured up to this point). 
+
+   1. To clear/delete the dexsql.log, go to Windows Explorer, open the Microsoft Dynamics GP application folder that you opened in step 1. Locate the Dexsql.log file. Delete or rename this file, as you don't need anything it captured up to this point.
+
+      (If you don't see the Dexsql.log file listed, select View, and then select Refresh so that you can see the new file. Or check your path.)
+
+   1. Now back in Microsoft Dynamics GP, continue to do the final steps to re-create the error message.
+
+      A new Dexsql.log file will be generated in the Microsoft Dynamics GP application folder again, that contains only the syntax of generating the error message.
+
+   1. When done, turn off the dexsql.log by opening the Dex.ini file, and then resetting the statements to FALSE or to the original settings.
+
+   > [!NOTE]
+   > The log continues to run until the user signs out of Microsoft Dynamics GP and back in again. It doesn't hurt to leave it running either, but it may result in the log getting large and causing performance issues down the road.
+
+##### Fiddler Trace
+
+A Fiddler trace can help with a network issue or a way to capture all HTTP and HTTPS web requests made from an application or web browser.
+
+To run Fiddler, do the follwoing steps:
+
+1. [Download Classic Fiddler](https://www.telerik.com/download/fiddler).
+1. Open Fiddler.
+1. In Tools->Fiddler Options->HTTPS, **choose the Decrypt HTTPS traffic field**.
+1. Choose Yes on the prompt for trust Fiddler Root Certificate.
+1. Choose Yes to install the certificate.
+1. Choose Yes to confirm.
+1. Choose OK, and then choose OK to go back.
+1. Reproduce the issue.
+1. Stop the Fiddler trace:
+
+   1. File->Capture Traffic F12, Save trace: File->Save>All Sessions.
+   1. ave the trace out as .saz file.
+
+[For more information, see this blog post](https://learn.microsoft.com/en-us/archive/blogs/maheshk/easy-way-to-collect-fiddler-log-fiddlercap).
+
+##### Dexterity Script Log
+
+Dexterity Scriptlogs are often helpful to give insight into what dexterity code is being called, and helpful to verify if any third-party products are being called during the process that's captured in the log. The default dictionary ID for Microsoft Dynamics GP is (0), so you can review if any other dictionary ID's are listed.
+
+To create a log file, follow these steps:
+
+1. Exit out of Microsoft Dynamics GP.
+1. Navigate to the GP code folder (default location is C:\Program Files (x86)\Microsoft Dynamics\GP\Data) and right-click on the Dex.ini file and open it with Notepad.
+
+   Review if the ScriptDebugger=TRUE trigger exists, and then set it to TRUE, or if it doesn't exist, add the below trigger to the end of the file.
+
+   Close the file and save your changes.
+
+1. Relaunch Microsoft Dynamics GP.
+
+   Now you will see a DEBUG item listed in the top menubar of all windows. Open the window you need to recreate the issue in. (Or get to the point you need to be at, right before the issue happens and you want to start the scriptlog at this point.)
+
+1. Click on DEBUG in the top menubar and click on LOG SCRIPTS to start the script log. Enter a filename and path of where you want to save the scriptlog to and click Save. (This puts a checkmark next to LOG SCRIPTS under the DEBUG menu and the scriptlog is now running.)
+
+1. Perform the action you want captured in the log. Cancel out of any posting reports (if prompted) and then STOP!
+
+   Now click on DEBUG again and click on LOG SCRIPTS again to stop the log. (This removes the checkmark next to LOG SCRIPTS under the DEBUG menu item).
+
+   > [!NOTE]
+   > You can stop and start the script log by clicking on DEBUG > LOG SCRIPTS to have the checkmark next to LOG SCRIPTS or not. The checkmark means it is running, and no checkmark means it is not. Clicking on LOG SCRIPTS will add/remove the checkmark to start/stop the scriptlog from running. Each time you start it, it should prompt you for a new filename and path to save the new log to.
+
+   Locate the Script.log file in the path you generated it to, and open it with Notepad to ensure it captured the process.
+
+##### Dynamics GP Workflow specific issue/logs
+
+DynamicsGP_WorkflowGP.log:
+
+In the local workstation temp directory of the user who is logged into GP (for example, C:\Users\<USER>\AppData\Local\Temp).
+
+DynamicsGP_WorkflowGP.WorkflowEngine.log:
+
+In the SQL Server machine's temp directory of the user who is running the SQL Server service (for example, C:\Users\MSSQLSERVER\AppData\Local\Temp)
+
+##### Process Monitor log
+
+A Process Monitor can help track down where there is a security/permission issue.
+
+To create a process monitor you can follow these steps:
+
+1. [Download the Process Monitor](http://www.microsoft.com/technet/sysinternals/processesandthreads/processmonitor.mspx).
+2. Extract Procmon.exe, but do not click on the exe at this time.
+3. Get to the point right before the user receives the error message.
+4. Double-click Procmon.exe to start the application; do not filter anything out if asked.
+5. Process Monitor will start recording by default.
+6. Recreate the error message by trying to launch Integration Manager as an example or run an integration through Dynamics GP.
+7. Once the error occurs then in Process Monitor click File > Capture Events to stop the capture of data.
+8. Click File > Save to save the output.
+9. When saving, for "Events to save" leave the defaults and for the "Format" choose Comma-Separated Values (CSV).
+10. Send the CSV to me when you have a chance (you may need to zip it, they tend to be a bit large).
 
 ### Chapter 16: Data recovery
 
