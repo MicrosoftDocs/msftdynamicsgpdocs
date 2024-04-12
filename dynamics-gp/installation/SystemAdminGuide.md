@@ -3385,13 +3385,13 @@ There are many different types of logs and traces that can be gathered to help y
 
 ##### How to use SQL Profiler to create a SQL trace in Microsoft SQL Server
 
-The templates have already been mapped to the fields, which will spare you the effort of doing the mapping manually.
+The templates have already been mapped to the fields, which spare you the effort of doing the mapping manually.
 It is recommended you use the template to capture the correct information that is needed to help resolve the issue.
 
 To use a SQL Trace template, follow these steps:
 
-1.  Determine what version of SQL Server you have and click the link below to download the zip file of SQL templates.  
-2.  In the zip file, click on the TRACETMPL folder and click on the .tdf file for your version and SQL Profiler will automatically open.  
+1. Determine what version of SQL Server you have and click the link below to download the zip file of SQL templates.  
+2. In the zip file, click on the TRACETMPL folder and click on the .tdf file for your version and SQL Profiler will automatically open.  
 (Take note of the file name as this is the name for the template you will look for in SQL profiler.) 
 3. Click Yes if prompted to overwrite.
 Then you should get a message that the tdf file was imported successfully.  Click OK.  (Or you can do a Save|Save As and go to that location on click on the tdf file.)
