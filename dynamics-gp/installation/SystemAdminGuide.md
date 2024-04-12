@@ -3307,7 +3307,7 @@ Once you've established that a table requires maintenance in Microsoft Dynamics 
 
 - If an alert message has appeared stating the name of the table, you can begin the data recovery checklist immediately.
 
-- If unusual results on a report indicate a table that a table requires maintenance, refer to the sample reports provided with the module to see
+- If unusual results on a report indicate that a table requires maintenance, refer to the sample reports provided with the module to see
     which table groups' data is printed in that report.
 
 - If you're having trouble opening a window, use the Window Descriptions window (Microsoft Dynamics GP menu \>\> Tools \>\> Resource Descriptions
