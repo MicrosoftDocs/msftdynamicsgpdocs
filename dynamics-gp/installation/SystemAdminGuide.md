@@ -3179,7 +3179,7 @@ resources.
 
 **Microsoft Dynamics GP documentation**
 
-If you've installed Microsoft Dynamics GP, you can use the help to access contextsensitive assistance about windows. You can choose Help \>\> About
+If you've installed Microsoft Dynamics GP, you can use the help to access context-sensitive assistance about windows. You can choose Help \>\> About
 This Window or press F1 to access help for the window you're currently viewing. Use the Search tab to find more information on alert messages and
 procedures.
 
@@ -3198,7 +3198,7 @@ To open the Field Descriptions window, choose Microsoft Dynamics GP menu \>\> To
 Descriptions window to find out which tables contain a particular field.
 
 To open the Window Descriptions window, choose Microsoft Dynamics GP menu \>\> Tools \>\> Resource Descriptions \>\> Windows. Use the Window
-Descriptions window to find out which windows are contained in a specific product and series,the names assigned to each window, the fields each window contains, and the tables linked to each window.
+Descriptions window to find out which windows are contained in a specific product and series, the names assigned to each window, the fields each window contains, and the tables linked to each window.
 
 **Microsoft SQL Server troubleshooting resources**
 
