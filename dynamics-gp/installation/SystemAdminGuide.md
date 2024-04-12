@@ -3399,24 +3399,23 @@ Then you should get a message that the tdf file was imported successfully.  Clic
 [SQL templates for versions 2008, 2008 R2, 2012, 2014, 2016, 2017, 2019, 2022](https://mbs2.microsoft.com/fileexchange/downloadfile.aspx?fileid=4a32fa62-ac9a-4149-aac6-96d740bb4810)
 
 4. Within SQL Profiler, click on File | New Trace.   (Connect or log in as prompted.)
-a.  In the Trace Properties window, enter a name for Trace Name as desired. 
-b.  Click the drop-down icon next to the USE THE TEMPLATE field, and scroll down to the end of the list and select the SQL trace template you imported in.  (Should beging with 'MSGP' prefix.)
-c. Click to mark the SAVE TO FILE checkbox and browse to a location you would like to save the trace file to.  Save. 
-d.  Also uncheck Enable File Rollover option (Under SAVE TO FILE section). 
-e.  In the Events Selection tab, mark the SHOW ALL EVENTS checkbox and SHOW ALL COLUMNS in the lower right corner.
+    1. In the Trace Properties window, enter a name for Trace Name as desired. 
+    1.  Click the drop-down icon next to the USE THE TEMPLATE field, and scroll down to the end of the list and select the SQL trace template you imported in.  (Should beging with 'MSGP' prefix.)
+    1. Click to mark the SAVE TO FILE checkbox and browse to a location you would like to save the trace file to.  Save. 
+    1.  Also uncheck Enable File Rollover option (Under SAVE TO FILE section). 
+    1.  In the Events Selection tab, mark the SHOW ALL EVENTS checkbox and SHOW ALL COLUMNS in the lower right corner.
 
-Note:  All the fields in Method 2 will automatically be selected in the Events Selection tab. 
+    > [!NOTE]
+    > All the fields in Method 2 will automatically be selected in the Events Selection tab. 
 
 5.  Click RUN to start the trace and the SQL Profiler window will open and the trace is now running.   Use the icons listed below to help you capture the trace.  Be sure to keep the trace file as small as possible and only capture the steps in Dynamics GP to reproduce the problem.  Traces too large are often not efficient or helpful.   
 
-- use the Red Square icon at the top to stop the trace. 
+    - Use the Red Square icon at the top to stop the trace. 
+    - Use the Green Arrow icon at the top to restart the trace.  (This is enabled if the trace is stopped.)
+    - Use the White Eraser icon (looks like a piece of chalk) to clear out the trace at any time needed.
 
-- Use the Green Arrow icon at the top to restart the trace.  (This is enabled if the trace is stopped.)
-
-- Use the White Eraser icon (looks like a piece of chalk) to clear out the trace at any time needed.
-
-Note:  The trace file should be created at the location selected above.   
-You can then attach the trace to a support case, along with the information of what version of SQL you are using, and the user ID you used when performing the steps in Dynamics GP.
+> [!NOTE]
+> The trace file should be created at the location selected above. You can then attach the trace to a support case, along with the information of what version of SQL you are using, and the user ID you used when performing the steps in Dynamics GP.
 
 ##### Dex.sql log
 
@@ -3426,16 +3425,18 @@ When you receive an error message in Microsoft Dynamics GP, a Dexsql.log file is
 To create a Dexsql.log file, follow these steps:
 
 1. Open the Dex.ini file. By default, this file is in the following location:
-C:\Program Files\Microsoft Dynamics\GP\Data
 
-2. Locate the following statements in the Dex.ini file:
-SQLLogSQLStmt=FALSE SQLLogODBCMessages=FALSE SQLLogAllODBCMessages=FALSE
+    C:\Program Files\Microsoft Dynamics\GP\Data
 
-3. If the statements are currently set to FALSE, change the statements to TRUE, as follows:
+1. Locate the following statements in the Dex.ini file:
 
-SQLLogSQLStmt=TRUE SQLLogODBCMessages=TRUE SQLLogAllODBCMessages=TRUE
+    SQLLogSQLStmt=FALSE SQLLogODBCMessages=FALSE SQLLogAllODBCMessages=FALSE
 
-4. Start Microsoft Dynamics GP. If Microsoft Dynamics GP is already started, exit Microsoft Dynamics GP, and then restart it.
+1. If the statements are currently set to FALSE, change the statements to TRUE, as follows:
+
+    SQLLogSQLStmt=TRUE SQLLogODBCMessages=TRUE SQLLogAllODBCMessages=TRUE
+
+1. Start Microsoft Dynamics GP. If Microsoft Dynamics GP is already started, exit Microsoft Dynamics GP, and then restart it.
 
 Re-create the scenario in which you received the error message. Get to the area of Dynamics GP you need, but before you do the steps to generate the error message, you should go clear/delete the dexsql.log that has run to this point (as you only want it to capture generating the error message only, and don't need anything captured up to this point). 
 
