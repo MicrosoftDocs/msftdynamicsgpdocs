@@ -3525,7 +3525,7 @@ To create a process monitor you can follow these steps:
 1. [Download the Process Monitor](http://www.microsoft.com/technet/sysinternals/processesandthreads/processmonitor.mspx).
 2. Extract Procmon.exe, but do not click on the exe at this time.
 3. Get to the point right before the user receives the error message.
-4. Double-click Procmon.exe to start the application, do not filter anything out if asked.
+4. Double-click Procmon.exe to start the application; do not filter anything out if asked.
 5. Process Monitor will start recording by default.
 6. Recreate the error message by trying to launch Integration Manager as an example or run an integration through Dynamics GP.
 7. Once the error occurs then in Process Monitor click File > Capture Events to stop the capture of data.
