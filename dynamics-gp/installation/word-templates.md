@@ -7,7 +7,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: jswymer
-ms.date: 1/18/2024
+ms.date: 4/10/2024
 
 ---
 
@@ -68,7 +68,6 @@ Check the following options under the Advanced category:
 * Show text boundaries
 
 ## Overview of Word Templates
-Added in Microsoft Dynamics GP 2010
 
 ### Template-enabled reports
 Administration >> Reports >> Template Maintenance >> choose the Report Name drop-down list and select More Reports.
@@ -76,6 +75,9 @@ Administration >> Reports >> Template Maintenance >> choose the Report Name drop
 Template-enabled reports are Report Writer reports that have a Microsoft Word Template document associated with them. When enabled the option to print becomes available in the Report Destination window.
 
 ![Form](media/enabledtemplates01.png)
+
+> [!NOTE]
+> If you receive an error message `You must activate Word template functionality to send document when you try to email in Microsoft Dynamics GP`, make sure Word template functionality is enabled in the E-mail setup of the module you are trying to email from. For example, to enable Word template functionality for Sales, go to Tools > Setup > Sales > E-mails Settings for a Sales > SOP Word template.
 
 ### Report definition
 
