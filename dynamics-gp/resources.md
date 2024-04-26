@@ -7,7 +7,7 @@ manager: annbe
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 3/20/2024
+ms.date: 4/26/2024
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -15,7 +15,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 ## Microsoft sites that you should follow
 
-- [Dynamics GP Support and Services Blog](https://community.dynamics.com/gp/b/dynamicsgp)  
+- [Dynamics GP Support and Services Blog](https://community.dynamics.com/blogs/?blogid=2acf33ca-57f3-4260-80c9-8f12f9f60e65&groupid=0f766bd8-8536-4f68-be4a-0b7feabe2675)
 
 <!-- [Dynamics GP Developer Blog](https://msdn.microsoft.com/library/aa496082.aspx)
 - [Dynamics Financial Reporting - Management Reporter](https://blogs.msdn.com/b/dynamics_financial_reporting/)-->
