@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 4/9/2024
+ms.date: 5/28/2024
 ---
 # U.S. 2024 Payroll Tax Update
 
@@ -27,6 +27,16 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly)
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/gp/b/dynamicsgp/posts/tips-to-install-the-u-s-payroll-tax-update)
+
+
+## Changes in June Round 4 update (Target release 6/10/2024)
+
+- Idaho
+
+### Withholding changes for Idaho
+
+The tables include increases in the standard deduction from $8,000 to $8,500 for single filers and $17,000 
+for married filers filing jointly
 
 ## Changes in April Round 3 update (Released 4/9/2024)
 
@@ -309,6 +319,7 @@ Withholding rates for taxpayers filing as *SINGLE*
 
 - FICA Social Security Limit 168,600 (Previously $160,200)
 - Federal tax
+- Alabama
 - Arkansas
 - California
 - Colorado
@@ -444,7 +455,7 @@ Withholding rates for taxpayers filing as *HOHHR*:
 
 
 ### Withholding changes for Alabama
-Effective 1/1/2024 the state of Alabama has temporarily exempted all overtime wages from state tax. This will not be part of the Dynamics GP 2024 payroll tax tables. If you need this functionality in the product, you could set up a new pay code not subject to state tax, more manually tracked, or reach out to Greenshades for a more automated solution.
+Effective 1/1/2024 the [state of Alabama has temporarily exempted all overtime wages from state tax](https://www.revenue.alabama.gov/individual-corporate/overtime-exemption/). This will not be part of the Dynamics GP 2024 payroll tax tables. If you need this functionality in the product, you could set up a new pay code not subject to state tax, more manually tracked, or reach out to [Greenshades](https://go.greenshades.com/support) for a more automated solution.
 
 ### Withholding changes for Arkansas
 
