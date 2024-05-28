@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 07/12/2022
+ms.date: 05/28/2024
 ---
 
 # Microsoft Dynamics GP on Microsoft Azure
@@ -358,7 +358,7 @@ In order to further protect the SQL Server from unauthorized access, you may wan
 In order to further protect the SQL Server from unauthorized access, you may want to consider removing the endpoint on the host virtual machine for the remote desktop connection. Removing this public endpoint will require that all virtual machine administration for the SQL Server is done from another machine within the virtual network.
 
 **Installing Microsoft Dynamics GP Desktop Client and Creating Databases**
-When you create the Microsoft Dynamics Dynamics GP databases will depend on whether you are in a single tenant or multitenant deployment environment. In a single tenant deployment, the databases are typically created after Microsoft SQL Server and Microsoft SQL Server Reporting Services have been installed and configured. In a multi-tenant model, the databases are typically created as part of provisioning each new customer. A program called Microsoft Dynamics GP Utilities, which is installed with the Microsoft Dynamics GP Desktop Client, is used to create the databases.
+When you create the Microsoft Dynamics GP databases will depend on whether you are in a single tenant or multitenant deployment environment. In a single tenant deployment, the databases are typically created after Microsoft SQL Server and Microsoft SQL Server Reporting Services have been installed and configured. In a multi-tenant model, the databases are typically created as part of provisioning each new customer. A program called Microsoft Dynamics GP Utilities, which is installed with the Microsoft Dynamics GP Desktop Client, is used to create the databases.
   
 The installation of the Microsoft Dynamics GP desktop client used to create the databases can be on the SQL Server virtual machine or another virtual machine depending on your configuration. Use the following steps to install the Microsoft Dynamics GP desktop client, create the databases, and deploy the Business Intelligence Reports.
 
@@ -645,7 +645,7 @@ You may also want to change the virtual machine instance size as usage patterns 
 
 [Updating Microsoft Dynamics GP](/dynamics-gp/upgrade/upgrade-checklist) provides information about updating the Microsoft Dynamics GP components to the latest release.
 
-Updating Microsoft Dynamics GP on Microsoft Azure uses the same process as on-premises deployments. The Microsoft Dynamics GP product documentation and download site provides stepby-step instructions for performing the update. The following is a high-level checklist of the update process for Microsoft Dynamics GP.
+Updating Microsoft Dynamics GP on Microsoft Azure uses the same process as on-premises deployments. The Microsoft Dynamics GP product documentation and download site provides step-by-step instructions for performing the update. The following is a high-level checklist of the update process for Microsoft Dynamics GP.
 
 1. Review the latest upgrade documentation and plan your upgrade.  
 2. Download the update from [Product Release Downloads for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_release_download_378).
