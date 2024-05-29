@@ -36,7 +36,7 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 ### Withholding changes for Idaho
 
 The tables include increases in the standard deduction from $8,000 to $8,500 for single filers and $17,000 
-for married filers filing jointly
+for married filers filing jointly.
 
 ## Changes in April Round 3 update (Released 4/9/2024)
 
