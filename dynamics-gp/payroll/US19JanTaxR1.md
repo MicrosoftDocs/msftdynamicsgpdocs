@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 6/5/2024
+ms.date: 6/6/2024
 ---
 # U.S. 2024 Payroll Tax Update
 
@@ -29,11 +29,25 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/gp/b/dynamicsgp/posts/tips-to-install-the-u-s-payroll-tax-update)
 
 
-## Changes in June Round 4 update (Target release 6/10/2024)
+## Changes in June Round 4 update (Release 6/10/2024)
 
+- Georgia
 - Idaho
 - Ohio
 - Utah
+  
+### Withholding changes for Georgia
+
+The Standard Deduction Amount for Filing Status:
+
+- HOH, SINGLE, MFJ2I and MFS        is \$12,000
+- MFJ1I                             is \$24,000
+
+Subtract Personal Exemptions was removed from the calculation.
+
+Dependent Allowance $4,000
+
+All filing status have a fixed flat tax of 5.39%.
 
 ### Withholding changes for Idaho
 
