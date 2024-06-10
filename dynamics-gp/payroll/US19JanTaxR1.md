@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 5/28/2024
+ms.date: 6/7/2024
 ---
 # U.S. 2024 Payroll Tax Update
 
@@ -16,27 +16,97 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2024 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the third tax update for 2024 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2024. 
+This is the fourth tax update for 2024 and replaces all previous tax updates. It includes State tax table changes that take effect June/July 1, 2024. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
 Check out these blogs for detailed documentation on how you calculate payroll taxes in Microsoft Dynamics GP:
 
-[How to calculate Federal Tax with Dependent Claim Amount Field](https://community.dynamics.com/gp/b/dynamicsgp/posts/how-to-calculate-federal-tax-with-dependent-claim-amount)
+[How to calculate Federal Tax with Dependent Claim Amount Field](https://community.dynamics.com/blogs/post/?postid=f65a8b3b-ef87-432c-a3c4-80ed7077a79d)
 
-[Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/gp/b/dynamicsgp/posts/is-microsoft-dynamics-gp-calculating-payroll-taxes-correctly)
+[Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/blogs/post/?postid=c9a75bcc-8f50-411f-a364-95a5121f6335)
 
-[Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/gp/b/dynamicsgp/posts/tips-to-install-the-u-s-payroll-tax-update)
+[Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/blogs/post/?postid=dbc1295b-297f-4441-aa2f-7c2502bffc97)
 
 
-## Changes in June Round 4 update (Target release 6/10/2024)
+## Changes in June Round 4 update (Release 6/10/2024)
 
+- Georgia
 - Idaho
+- Ohio
+- Utah
+  
+### Withholding changes for Georgia
+
+The Standard Deduction Amount for Filing Status:
+
+- HOH, SINGLE, MFJ2I and MFS        is \$12,000
+- MFJ1I                             is \$24,000
+
+Subtract Personal Exemptions was removed from the calculation.
+
+Dependent Allowance $4,000
+
+All filing status have a fixed flat tax of 5.39%.
 
 ### Withholding changes for Idaho
 
-The tables include increases in the standard deduction from $8,000 to $8,500 for single filers and $17,000 
-for married filers filing jointly.
+The Personal Exemption amount is \$3,600 for all Filing Status.
+
+Withholding rates for taxpayers filing as *MAR*:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 29 ,200          | 0              | 0%           | 0                  |
+| 29,200      | And Over         | 0              | 5.695%       | 29,200             |
+
+Withholding rates for taxpayers filing as *SINGLE*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|---------|--------------|------------|----------|----------------|
+| 0       | 14,600       | 0          | 0%       | 0              |
+| 14,600  | And Over     | 0          | 5.695%   | 14,600         |
+
+### Withholding changes for Utah
+
+Exemption amount changed. All filing statuses have the same fixed flat tax of 4.55%
+
+Personal Exemption table type filing as *MAR*:
+
+| If Over     | But Not Over | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|--------------|----------------|----------|--------------------|
+| 0           | 0            | 1.00           | 0        | 880.00             |
+
+Personal Exemption table type filing as *SINGLE*:
+
+| If Over     | But Not Over | Tax Amount  | Tax Rate | On Excess Over     |
+|-------------|--------------|-------------|----------|--------------------|
+| 0           | 0            | 1.00        | 0        | 440.00             |
+
+Special table type filing as *MAR*:
+
+| If Over     | But Not Over | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|--------------|----------------|----------|--------------------|
+| 0           | 0            | 0.00           | 1.30%    | 17,652             |
+
+Special table type filing as *SINGLE*:
+
+| If Over     | But Not Over | Tax Amount  | Tax Rate | On Excess Over     |
+|-------------|--------------|-------------|----------|--------------------|
+| 0           | 0            | 0.00        | 1.30%    | 8,826              |
+
+### Withholding changes for Ohio
+Withholding rates for taxpayers filing as *NA*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | .501%        | 0                  |
+| 5,000       | 10,000           | 25.05          | 1.001%       | 5,000              |
+| 10,000      | 15,000           | 75.10          | 2.005%       | 10,000             |
+| 15,000      | 20,000           | 175.35         | 2.505%       | 15,000             |
+| 20,000      | 100,000          | 300.60         | 2.99%        | 20,000             |
+| 100,000     | And over         | 2692.60        | 3.80%        | 100,000            |
+
 
 ## Changes in April Round 3 update (Released 4/9/2024)
 
@@ -1166,7 +1236,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *4/8/2024*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *6/10/2024*.
 
 ## What's next
 
