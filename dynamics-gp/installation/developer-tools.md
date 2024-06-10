@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/8/2024
+ms.date: 5/30/2024
 ---
 
 # Developer Tools
@@ -31,7 +31,8 @@ These modified procedures are use at your own risk and should be tested by your 
 - [taPOPCreateDistributions](https://mbs2.microsoft.com/fileexchange/?fileID=e004756e-9413-4fed-9b4a-82306d2763b2) - December 2023
 - [taCalcDueDatePM](https://mbs2.microsoft.com/fileexchange/?fileID=400b0ad2-3452-470f-bc99-e690c12dab60) - December 2023
 - [taCalcDueDateRM](https://mbs2.microsoft.com/fileexchange/?fileID=6f1f21fb-8eec-4527-b163-578e4e55b06f) - December 2023
-- taSOPLot - May 2021
+- [taSOPLot](https://mbs2.microsoft.com/fileexchange/?fileID=57c819dc-2a7b-44e8-91ab-ee23c0edb054) - May 2021
+- [taPopRcptLineInsert](https://mbs2.microsoft.com/fileexchange/?fileID=1a5851ef-d68f-4cfc-af66-fa1ab70302e7) -	May 2022
 
 ## Web Services
 
