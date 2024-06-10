@@ -51,8 +51,10 @@ Install
 
 > [!NOTE]
 > If you receive the following when you attempt to install the Add-in:
-> Setup has detected that the file 'C:\Users\AJRN-~1\AppData\Local\Temp\VSD23A2.tmp\VSTOR30\vstor30.exe' has changed since it was initially published
-> See the setup log file located at 'C:\Users\AJRN-~1\AppData\Local\Temp\VSD23A2.tmp\install.log' for more information.
+> 
+> `Setup has detected that the file 'C:\Users\AJRN-~1\AppData\Local\Temp\VSD23A2.tmp\VSTOR30\vstor30.exe' has changed since it was initially published
+> See the setup log file located at 'C:\Users\AJRN-~1\AppData\Local\Temp\VSD23A2.tmp\install.log' for more information.`
+> 
 > A quick tip to get around this type of error message is to install the referenced .exe files from the GP installation media, vstor30.exe.
 
 #### Developer Tab missing?
