@@ -5,9 +5,9 @@ keywords: "Word Template"
 author: theley502
 
 ms.topic: article
-ms.reviewer: jswymer
-ms.author: jswymer
-ms.date: 4/10/2024
+ms.reviewer: theley
+ms.author: theley
+ms.date: 6/9/2024
 
 ---
 
@@ -50,6 +50,12 @@ Install
   > [!NOTE]
   > The Microsoft Dynamics GP Add-in for Microsoft Word is User Profile specific.  
   > Therefore, this add-in needs to be installed for each user that is going to be creating new Word templates and/or adding data sources and fields to existing Word templates.
+
+> [!NOTE]
+  > If you receive the following when you attempt to install the Add-in:
+> Setup has detected that the file 'C:\Users\AJRN-~1\AppData\Local\Temp\VSD23A2.tmp\VSTOR30\vstor30.exe' has changed since it was initially published.
+> See the setup log file located at 'C:\Users\AJRN-~1\AppData\Local\Temp\VSD23A2.tmp\install.log' for more information.
+> A quick tip to get around this type of error message is to install the referenced .exe files from the GP installation media, vstor30.exe.
 
 #### Developer Tab missing?
 If you are missing the Developer tab, right click in the black space within the ribbon > click "Customize the Ribbon"
