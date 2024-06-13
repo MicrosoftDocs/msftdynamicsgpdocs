@@ -762,6 +762,9 @@ Many times, customers have employees that leave the company but their users are 
 
 [How to verify if Microsoft Dynamics GP Web Services is functioning correctly](/troubleshoot/dynamics/gp/verify-if-web-service-is-correct)
 
+> [!NOTE]
+> If you notice that workflow was working fine and now workflow seems to hang and is very slow in look up's to Active Directory with users, it could be caused >by changes to your Anti-virus.  Test to temporarily disable the AV or create an exception for Dynamics GP.  You may also notice it hang when you login to >Dynamics GP with an error message 'Initializing Microsoft Dynamics GP'.
+> 
 
 ## <a name=mfa></a>MFA - Multi-Factor Authentication (Modern Authentication)
 
@@ -832,6 +835,47 @@ Some items to watch out for:
 1. The new modern authentication functionality in Dynamics GP MUST be setup for DUO to work. It blocks Basic Auth, and the new functionality is needed to bypass this block
 2. A single user MUST be setup with OAuth MFA to complete the initial modern authentication setup within Azure and GP (the Email Settings window) This user can be swapped back to DUO after the setup.
 3. We cannot guarantee this will work in all environments since it hasn't really been fully tested.
+
+### Dynamics GP Error Message: There were one or more issues when processing email, please review the DynamicsGP_MSGraphEmail.log file in the temp directory
+
+Please review each of the items below to determine the cause of this error message.
+
+1. Did you have MFA working on a prior version?  If you did, when you upgrade, if you had MFA on prior, you need to follow the steps:
+[Modern Authentication and upgrading to Microsoft Dynamics GP](https://community.dynamics.com/blogs/post/?postid=b571b4d4-1d58-41f4-b4a3-3c8ee1c4602c)
+ 
+2.  Tools | Setup | Company | Email Setup, unless you are using web client, only the Desktop Client properties need to be populated with your application ID.  The Tenant ID field should be left blank, [unless you are using the new feature in 18.6 that allows Single tenant in Azure](https://community.dynamics.com/blogs/post/?postid=18194a5d-4b7f-ee11-a81c-6045bdbe566c). 
+ 
+3.  You are getting a message about the Dynamics_MSGraphEmail.log file. Review this file to see if there is a different error message.  To get this file you need to go to the workstation/machine where you got that error and go to Start > Run, type %temp% and click OK to open your local temp file. The log file should be found there.
+
+4.  Did you try this on another machine and with another user such as user SA on SQL server just to rule out machine specific and .NET issues, etc.
+MFA needs .net 4.7.2 to be installed on GP Client server.
+[Determine which .NET Framework versions are installed - .NET Framework | Microsoft Docs](https://learn.microsoft.com/en-us/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed)
+[Download .NET Framework 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
+
+5. Confirm that TLS 1.2 is turned on
+[Transport Layer Security (TLS) best practices with .NET Framework](https://learn.microsoft.com/en-us/dotnet/framework/network-programming/tls#configure-schannel-protocols-in-the-windows-registry)
+
+6.  Are you getting the old "exchange" window prompt?  Review your Dynamics.set file for a [3rd party that maybe causing this issue](https://www.accountable.com/Downloads/FormsPrinter/V19.00/Forms-Printer-Version-186171-HF1).
+ 
+7.  The easiest way to test email authentication with MFA is to email through a report option window to see if email works and sends.
+You only need to authenticate 1x per GP login.
+ 
+Example
+Reports | Financial Trail Balance create a new report option and setup the email options.  Do a small sub set of data, if too big it will not email.
+Then try to email from here to see if you are prompted for MFA login and report emails.
+ 
+If this works, while still logged in, now go try to do your other process to see if it works.  We only prompt to authenticate once per day while staying logged in as the GP user.
+
+8. If the report options report email is successful, then you will want to review this blog for application process items to rule out, such as templates, messages, etc.
+[EFT Check Remittances are not e-mailing](https://community.dynamics.com/blogs/post/?postid=5acf230c-9fcd-4f9f-99ca-f88d2718c151)
+ 
+9. If you find your emails are working and this error is sporadic in nature, it could be related to the file size of an attachment.  Try this process with no attachments and see if it works.
+ 
+10. If you are emailing from within the NAV List and selecting multiple items at a time for email (such as 60 – 200) and some could contain attachments or not, you could also exceed a maximum which will cause this error. 
+Try to select and send 20 or 30 at a time to rule out the above case.
+[Microsoft 365 limits - Service Descriptions](https://learn.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
+
+11.  You can run a [Fiddler trace](https://learn.microsoft.com/en-us/dynamics-gp/installation/email-troubleshooting-guide#to-run-fiddler) to see if it shows anything further about the error message.
 
 
 ## Emailing Setup Guide by Module
