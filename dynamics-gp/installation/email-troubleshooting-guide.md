@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/22/2024
+ms.date: 6/13/2024
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -23,7 +23,7 @@ This document can be leveraged to aid in troubleshooting all areas of emailing o
 > [!NOTE]
 > Before Microsoft Dynamics GP's October 2020 (18.3 and later) release, Dynamics GP required that both TLS 1.0 and Basic Authentication (no Modern Authentication) be enabled for Exchange and Workflow emailing in Dynamics GP.
 >
-> After Microsoft Dynamics GP's October 2020 (18.3 or later) release, Dynamics GP has added the functionality to use both  [TLS 1.2](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---tls-1-2) and/or [[Multi-Factor Authentication](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---multi-factor-authentication) (MFA).
+> After Microsoft Dynamics GP's October 2020 (18.3 or later) release, Dynamics GP has added the functionality to use both  [TLS 1.2](https://community.dynamics.com/blogs/post/?postid=43ed28eb-bddf-4aee-b1ff-b65513d412b1) and/or [[Multi-Factor Authentication](https://community.dynamics.com/blogs/post/?postid=bce65f37-eb08-4531-b62b-32a8af728f58) (MFA).
 > You do not actually need MFA turned on for your account to use the Modern Auth window in Microsoft Dynamics GP, but it does use Modern Authentication vs Basic Authentication.
 > 
 > If you are still on an older version of Microsoft Dynamics GP, you must enable TLS on your local Exchange server. For more information, see [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth).
@@ -32,9 +32,9 @@ This document can be leveraged to aid in troubleshooting all areas of emailing o
 
 Review the below blogs for workarounds if you are on an older version of Microsoft Dyanmics GP:
 
-[**WORKFLOW emails intermittently fail**](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-workflow-intermittent-emails-failing)
+[**WORKFLOW emails intermittently fail**](https://community.dynamics.com/blogs/post/?postid=7aaa9918-06a0-4e88-adac-fc30853b97dc)
 
-[**Other emails intermittently fail**](https://community.dynamics.com/gp/b/dynamicsgp/posts/emails-intermittent-failing-when-sending-out-of-dynamics-gp-not-workflow-emails)
+[**Other emails intermittently fail**](https://community.dynamics.com/blogs/post/?postid=91c7ad35-9529-423a-859d-1f9db094f1f7)
 
 
 All email issues can be safely split up into the following set of categories:
@@ -106,7 +106,7 @@ The Microsoft Dynamics GP solution does have side effects which are mentioned in
 
 2. Dynamics GP Workaround (Has side-effect of the emailed document containing the file path that it was sent from)  
 
-    1. [Force Outlook to use a different version of MAPI](https://community.dynamics.com/gp/b/dynamicsgp/posts/draft-a-program-is-trying-to-send-an-e-mail-message-on-your-behalf-when-trying-to-send-a-template-via-e-mail)
+    1. [Force Outlook to use a different version of MAPI](https://learn.microsoft.com/en-us/troubleshoot/dynamics/gp/a-program-is-trying-to-send-an-e-mail-program-on-your-behalf)
     
         This has many side effects which are mentioned in the above article.
 
@@ -127,8 +127,8 @@ The solution is to remove VBA, stay on a version of Office prior to 1810, or to 
 
 For more information regarding the cause of this issue, see the following blog posts:
 
-- [Dynamics GP crashes closes when emailing after Office update](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-crashes-closes-when-emailing-after-office-update)  
-- [Microsoft’s stance on the solutions](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-and-vba-future-considerations)
+- [Dynamics GP crashes closes when emailing after Office update](https://community.dynamics.com/blogs/post/?postid=ea4193b7-f9ac-4ece-85db-377b0515cdd0)  
+- [Microsoft’s stance on the solutions](https://community.dynamics.com/blogs/post/?postid=a89717ca-bbd4-4473-b9f6-ba6662c32a80)
 
 ## <a name=exchangespecificerrors></a>Exchange Specific Errors
 
@@ -155,7 +155,7 @@ The following path is the best route for generic login issues:
 
 3. Confirm that Autodiscover is working  
 
-    You can do this by removing the user from the SY04920 table (Dynamics/System database) and attempting to login again. If this table does not repopulate, then there are Autodiscover issues in the system (or the user doesn’t work). For insights into how this all works, along with other tests, see [this blog post](https://community.dynamics.com/gp/b/dynamicsgp/posts/exchange-emailing-inside-dynamics-gp)  
+    You can do this by removing the user from the SY04920 table (Dynamics/System database) and attempting to login again. If this table does not repopulate, then there are Autodiscover issues in the system (or the user doesn’t work). For insights into how this all works, along with other tests, see [this blog post](https://community.dynamics.com/blogs/post/?postid=d0838b3e-8943-42a3-9d46-3004f02aa9b8)  
 
 >[!NOTE]
 > With *Login Failed* type of error messages, we have seen some cases where TLS 1.0 was disabled, due to the looming end date and vulnerabilities. If you are still on an older version of Microsoft Dyanmics GP, you must enable TLS on your local Exchange server. For more information, see [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth).
@@ -202,7 +202,7 @@ Cause: This error has many causes, usually comes down to customizations on the T
 **Solution**
 Try the following:
 
-Error messages when you email RM Statements in Microsoft Dynamics GP: [Unknown Error or Insufficient Memory](https://community.dynamics.com/gp/b/dynamicsgp/posts/error-messages-when-you-email-rm-statements-in-microsoft-dynamics-gp-unknown-error-or-insufficient-memory)
+Error messages when you email RM Statements in Microsoft Dynamics GP: [Unknown Error or Insufficient Memory](https://community.dynamics.com/blogs/post/?postid=10780b81-2921-4d91-8f7b-cf763112d4f3#:~:text=This%20is%20a%20known%20issue,June%202022%20update%20%5BGP%2018.4.)
 
 Use default report and Template and make sure the Template is the one marked with an asterisk (`*`).
 If default emails, review modified template for [bookmarks](https://community.dynamics.com/gp/b/dynamicsgp/posts/what-are-bookmarks-and-how-are-they-used-in-microsoft-dynamics-gp-s-word-templates) hyperlinks, anchors, and even the size of the document example. RM Statement to show line item detail for all invoices would a very large statement for some customers.
