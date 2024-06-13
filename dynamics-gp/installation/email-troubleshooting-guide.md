@@ -258,7 +258,6 @@ This issue can occur with all reports, and these can be caused by MessageID issu
 > **Items to Rule out and test with Unknown error occurred and Modern Auth**
 > 
 > 1. If you are using Modern Authentication (MFA) in Dynamics GP and receive this error message when you enter the APP ID in the Modern Auth setup window this could be related to a TLS registry issue.  
-> [Dynamics GP TLS Blog](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-and-tls-1-0?pifragment-99718=2)
 > [How to change the TLS registry](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
 >
 > 2. Verify this error **Unknown Error Occurred** is happening for all users that are trying to send emails.  If this error only happens for example on two users, and you are using RDS Server, we have seen where deleting the User Profile on the RDS server and recreating it has fixed this error message and issue for those couple of users.
@@ -272,7 +271,7 @@ This issue can occur with all reports, and these can be caused by MessageID issu
 >  
 >  6. Antivirus/Malware could also cause the problem to not authenticate, try to rule it out as the cause of the problem.
 >  
->  7. Dynamics GP supports [Multi-tenant authentication](/dynamics-gp/whats-new/multi-factor-authentication) in the Microsoft Entra app Registration. If you set this up incorrectly, you'll see the message *Unknown Error*. [Single Tenant App Registration supported with 18.6 release](https://community.dynamics.com/blogs/post/?postid=18194a5d-4b7f-ee11-a81c-6045bdbe566c).
+>  7. Dynamics GP supports [Multi-tenant authentication](https://community.dynamics.com/blogs/post/?postid=bce65f37-eb08-4531-b62b-32a8af728f58) in the Microsoft Entra app Registration. If you set this up incorrectly, you'll see the message *Unknown Error*. [Single Tenant App Registration supported with 18.6 release](https://community.dynamics.com/blogs/post/?postid=18194a5d-4b7f-ee11-a81c-6045bdbe566c).
 >        
 >  8. If the Application ID is not saving or has issues, test by launching GP as Administrator, right-click your GP icon and choose Run as Administrator.
 >  
@@ -387,7 +386,7 @@ Set Template to Default Original/Canned Report.
 If the default email sends out successfully, then we can deduce that the issue lies within the modification to either the RW report or directly on the template. The following are possible modifications that have caused this issue:
 * Check Section Options in RW for the modified report and make sure they mimic what is setup in our default report. Further details on this can be found in the problem section of [this blog](https://blogs.msdn.microsoft.com/developingfordynamicsgp/2013/02/25/copying-report-formats-between-reports-and-a-warning-about-word-templates/)
 * Check the Font sizes in RW (keep all fonts over size 5).
-* Missing Bookmarks [Verify all bookmarks are present](https://community.dynamics.com/gp/b/dynamicsgp/posts/what-are-bookmarks-and-how-are-they-used-in-microsoft-dynamics-gp-s-word-templates)
+* Missing Bookmarks [Verify all bookmarks are present](https://community.dynamics.com/blogs/post/?postid=ca4e2050-fb97-42c0-93d8-1481374ec473)
 * Text Boxes will cause the template to fail; text boxes should not be used as it can cause an error that is not seen within Microsoft Dynamics GP.
 * Remove Have Replies Sent to on both the Message ID and E-mail setup. The Message Setup window can be found using either path: 
 
@@ -422,7 +421,7 @@ Test a default report in GP, we recommend the User Report:
 > [!NOTE]
 > **Items to Rule out and test with EFT Check Remittance**
 > 
->There are several items to check when EFT Check Remittance does not email.  In each of these cases the cause could be different.  Please review the [complete list of why the EFT Check Remittance emails are not sending out](https://community.dynamics.com/gp/b/dynamicsgp/posts/eft-check-remittances-are-not-e-mailing-1316703384).
+>There are several items to check when EFT Check Remittance does not email.  In each of these cases the cause could be different.  Please review the [complete list of why the EFT Check Remittance emails are not sending out](https://community.dynamics.com/blogs/post/?postid=5acf230c-9fcd-4f9f-99ca-f88d2718c151).
       
 ### Send Documents in email check box is grayed out when trying to send a Remittance
 
@@ -620,7 +619,7 @@ The Email Address Based on Doc Type window can be found using either of the foll
 - Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email address based on document type >> Email Address
 - Sales >> Cards >> Customer >> select a customer >> E-mail >> enable email address based on document type >> Email Address
 
-For further information on the Email Address based on Doc Type feature, check out Andrea’s [blog](https://community.dynamics.com/gp/b/dynamicsgp/posts/draft-microsoft-dynamics-gp-2013-r2-email-document-new-features#:~:text=When%20you%20click%20on%20an%20ellipsis%20button%20next,to%20assign%20them%20to%20a%20specific%20document%20type.)
+For further information on the Email Address based on Doc Type feature, check out [blog](https://community.dynamics.com/blogs/post/?postid=f3603488-0ed1-4e86-8722-332f9199361c)
 
 
 ###  You must have the Microsoft Save as PDF or XPS add-in for 2007 Microsoft Office
@@ -707,7 +706,7 @@ Next, make sure that TLS 1.0 is enabled on the SQL server and on the SMTP server
 
 Then walk through the following article:
 
-[Workflow Notification Email Troubleshooting](https://community.dynamics.com/gp/b/dynamicsgp/posts/workflow-notification-email-troubleshooting)
+[Workflow Notification Email Troubleshooting](https://community.dynamics.com/blogs/post/?postid=aa22fada-1bda-4f29-ab7b-1d7be6355e22)
 
 
 ### My SMTP Test Passed
@@ -752,11 +751,11 @@ c. The SY04920 table is not used for workflow emails or Modern Auth once setup a
 2. If we are using templates, we should try a workflow email with no attachments, just to see if the email works.
 
 3. When a user 1st submits for approval in workflow, that will go through Exchange, usually submitted within Dynamics GP.
-From there on out, when a user approves through the workflow email links, to approve what was submitted, that will use [SMTP](https://community.dynamics.com/gp/b/dynamicsgp/posts/dynamics-gp-workflow-intermittent-emails-failing) for all other approvals from Web Services workflow emails.
+From there on out, when a user approves through the workflow email links, to approve what was submitted, that will use [SMTP](https://community.dynamics.com/blogs/post/?postid=7aaa9918-06a0-4e88-adac-fc30853b97dc) for all other approvals from Web Services workflow emails.
 If an email is failing from the email links this could indicate a problem with web services.
 Test approving the email from within Dynamics GP, then we know workflow and emails are working, just not the web services links.
 
-4. [What is the email flow of workflow and what user is the email coming from?](https://community.dynamics.com/gp/b/dynamicsgp/posts/how-does-gp-behave-when-modern-authentication-is-enabled)
+4. [What is the email flow of workflow and what user is the email coming from?](https://community.dynamics.com/blogs/post/?postid=33c8f2f3-2794-4bf7-ac60-f3a00588ce42#:~:text=There%20are%20three%20different%20processes,behalf%20of%20the%20GP%20user.)
    
 6. Make sure you have VALID users in AD as Workflow Managers.  If you do not have valid AD users as Workflow Managers, it may cause performance issues in your workflow and undesired results.  
 Many times, customers have employees that leave the company but their users are still part of the workflow and may cause issues.
@@ -766,9 +765,9 @@ Many times, customers have employees that leave the company but their users are 
 
 ## <a name=mfa></a>MFA - Multi-Factor Authentication (Modern Authentication)
 
-- [Set up the application in the Azure Portal](/dynamics-gp/whats-new/multi-factor-authentication)  
-- [Configure Modern Authentication in Dynamics GP](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-fall-2020---multi-factor-authentication)
-- [Configure Modern Authentication in Web Client](https://community.dynamics.com/gp/b/dynamicsgp/posts/modern-authentication-in-web-client)
+- [Set up the application in the Azure Portal](https://learn.microsoft.com/en-us/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)  
+- [Configure Modern Authentication in Dynamics GP](https://community.dynamics.com/blogs/post/?postid=bce65f37-eb08-4531-b62b-32a8af728f58)
+- [Configure Modern Authentication in Web Client](https://community.dynamics.com/blogs/post/?postid=7a9575dc-6d56-4f3e-86a9-9fd4e23cbfd9)
 - [MFA VIDEO LEARNING](https://www.youtube.com/watch?v=81YZ8B6bHPk&t=7s)
 
 > [!NOTE]
@@ -782,11 +781,9 @@ To use modern authentication with Dynamics GP, the Application (Client ID) is re
 
 By turning modern authentication on in Dynamics GP (Application Client ID populated), you are then telling the system to use Modern Authentication vs Basic Authentication (depreciated as of October 2022). If you recently upgraded and set up modern authentication, we recommend to be on the latest version if you can of Dynamics GP to encompass all the fixes released around modern authentication.
 
-Modern Authentication is only supported with Exchange.
-
 > [!NOTE]
-> **If you recently upgraded to 18.5/18.6 and had Modern Authentication working in a prior release, but now emails are not sending**
-> With the upgrade we are seeing where emails are no longer sending with Modern Authentication enabled.  The finding is your [Microsoft Entra ID needs to be upgraded](https://community.dynamics.com/gp/b/dynamicsgp/posts/modern-authentication-and-upgrading-to-microsoft-dynamics-gp-18-5)
+> **If you recently upgraded to 18.5/18.6/18.7 and had Modern Authentication working in a prior release, but now emails are not sending**
+> With the upgrade we are seeing where emails are no longer sending with Modern Authentication enabled.  The finding is your [Microsoft Entra ID needs to be upgraded](https://community.dynamics.com/blogs/post/?postid=b571b4d4-1d58-41f4-b4a3-3c8ee1c4602c)
 
 
 > [!NOTE]
