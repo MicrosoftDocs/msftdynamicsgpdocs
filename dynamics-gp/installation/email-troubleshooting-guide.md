@@ -768,7 +768,7 @@ Many times, customers have employees that leave the company but their users are 
 
 ## <a name=mfa></a>MFA - Multi-Factor Authentication (Modern Authentication)
 
-- [Set up the application in the Azure Portal](https://learn.microsoft.com/en-us/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)  
+- [Set up the application in the Azure Portal](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)  
 - [Configure Modern Authentication in Dynamics GP](https://community.dynamics.com/blogs/post/?postid=bce65f37-eb08-4531-b62b-32a8af728f58)
 - [Configure Modern Authentication in Web Client](https://community.dynamics.com/blogs/post/?postid=7a9575dc-6d56-4f3e-86a9-9fd4e23cbfd9)
 - [MFA VIDEO LEARNING](https://www.youtube.com/watch?v=81YZ8B6bHPk&t=7s)
@@ -849,11 +849,11 @@ Please review each of the items below to determine the cause of this error messa
 
 4.  Did you try this on another machine and with another user such as user SA on SQL server just to rule out machine specific and .NET issues, etc.
 MFA needs .net 4.7.2 to be installed on GP Client server.
-[Determine which .NET Framework versions are installed - .NET Framework | Microsoft Docs](https://learn.microsoft.com/en-us/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed)
+[Determine which .NET Framework versions are installed - .NET Framework | Microsoft Docs](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed)
 [Download .NET Framework 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
 
 5. Confirm that TLS 1.2 is turned on
-[Transport Layer Security (TLS) best practices with .NET Framework](https://learn.microsoft.com/en-us/dotnet/framework/network-programming/tls#configure-schannel-protocols-in-the-windows-registry)
+[Transport Layer Security (TLS) best practices with .NET Framework](/dotnet/framework/network-programming/tls#configure-schannel-protocols-in-the-windows-registry)
 
 6.  Are you getting the old "exchange" window prompt?  Review your Dynamics.set file for a [3rd party that maybe causing this issue](https://www.accountable.com/Downloads/FormsPrinter/V19.00/Forms-Printer-Version-186171-HF1).
  
@@ -873,9 +873,9 @@ If this works, while still logged in, now go try to do your other process to see
  
 10. If you are emailing from within the NAV List and selecting multiple items at a time for email (such as 60 – 200) and some could contain attachments or not, you could also exceed a maximum which will cause this error. 
 Try to select and send 20 or 30 at a time to rule out the above case.
-[Microsoft 365 limits - Service Descriptions](https://learn.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
+[Microsoft 365 limits - Service Descriptions](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
 
-11.  You can run a [Fiddler trace](https://learn.microsoft.com/en-us/dynamics-gp/installation/email-troubleshooting-guide#to-run-fiddler) to see if it shows anything further about the error message.
+11.  You can run a [Fiddler trace](/dynamics-gp/installation/email-troubleshooting-guide#to-run-fiddler) to see if it shows anything further about the error message.
 
 
 ## Emailing Setup Guide by Module
