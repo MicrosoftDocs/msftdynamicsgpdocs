@@ -106,7 +106,7 @@ The Microsoft Dynamics GP solution does have side effects which are mentioned in
 
 2. Dynamics GP Workaround (Has side-effect of the emailed document containing the file path that it was sent from)  
 
-    1. [Force Outlook to use a different version of MAPI](https://learn.microsoft.com/en-us/troubleshoot/dynamics/gp/a-program-is-trying-to-send-an-e-mail-program-on-your-behalf)
+    1. [Force Outlook to use a different version of MAPI](/troubleshoot/dynamics/gp/a-program-is-trying-to-send-an-e-mail-program-on-your-behalf)
     
         This has many side effects which are mentioned in the above article.
 
