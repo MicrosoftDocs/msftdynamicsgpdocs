@@ -37,8 +37,7 @@
     "externalReference": [],
     "globalMetadata": {
       "ms.service": "dynamics-gp",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/msftdynamicsgpdocs",
+      "feedback_system": "Standard",
       "feedback_product_url": "https://experience.dynamics.com/ideas/categories/?forum=771cc5ac-c117-e811-8105-3863bb2e0320&forumName=Dynamics%20GP",
       "ms.author": "jswymer",
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
