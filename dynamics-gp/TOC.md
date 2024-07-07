@@ -71,6 +71,7 @@
 
 <!--- distribution -->
 ## Distribution
+### [Encumbrance Management](distribution/Encumbrance.md)
 ### [Field Service Returns Management](distribution/ReturnsManagement.md)
 ### [Concur Expense](distribution/ConcurExpense.md)
 ### [Sales Order Processing](distribution/sales-order-processing.md)
