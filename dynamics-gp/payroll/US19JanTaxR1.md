@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 6/7/2024
+ms.date: 7/11/2024
 ---
 # U.S. 2024 Payroll Tax Update
 
@@ -16,7 +16,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2024 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the fourth tax update for 2024 and replaces all previous tax updates. It includes State tax table changes that take effect June/July 1, 2024. 
+This is the fifth tax update for 2024 and replaces all previous tax updates. It includes State tax table changes that take effect July 15, 2024. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -27,6 +27,61 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/blogs/post/?postid=c9a75bcc-8f50-411f-a364-95a5121f6335)
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/blogs/post/?postid=dbc1295b-297f-4441-aa2f-7c2502bffc97)
+
+## Changes in July Round 5 update (Release 7/17/2024)
+
+- Arkansas
+  
+### Withholding changes for Arkansas
+
+> [!NOTE]
+> If you have employees set up to withhold Arkansas state tax, you need to be on version 18.5.1635 or later, for taxes to be correct for the year 2024. This change is for the Midrange Income look up part of the tax calculation.
+
+- Standard Deduction Amount is $2,340
+- Personal Exemption remains at $29.00
+
+Tax Type rates for Filing Status NA:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,299            | 0              | 0.0%         | 0                  |
+| 5,299       | 10,599           | -105.98        | 2.0%         | 0                  |
+| 10,599      | 15,099           | -211.97        | 3.0%         | 0                  |
+| 15,099      | 24,999           | -272.37        | 3.4%         | 0                  |
+| 24,999      | 89,600           | -397.36        | 3.9%         | 0                  |
+| 89,600      | 89,700           | -395.50        | 3.9%         | 0                  |
+| 89,700      | 89,800           | -385.50        | 3.9%         | 0                  |
+| 89,800      | 89,900           | -375.50        | 3.9%         | 0                  |
+| 89,900      | 90,000           | -365.50        | 3.9%         | 0                  |
+| 90,000      | 90,100           | -355.50        | 3.9%         | 0                  |
+| 90,100      | 90,200           | -345.50        | 3.9%         | 0                  |
+| 90,200      | 90,300           | -335.50        | 3.9%         | 0                  |
+| 90,300      | 90,400           | -325.50        | 3.9%         | 0                  |
+| 90,400      | 90,500           | -315.50        | 3.9%         | 0                  |
+| 90,500      | 90,600           | -305.50        | 3.9%         | 0                  |
+| 90,600      | 90,700           | -295.50        | 3.9%         | 0                  |
+| 90,700      | 90,800           | -285.50        | 3.9%         | 0                  |
+| 90,800      | 90,900           | -275.50        | 3.9%         | 0                  |
+| 90,900      | 91,000           | -265.50        | 3.9%         | 0                  |
+| 91,000      | 91,100           | -255.50        | 3.9%         | 0                  |
+| 91,100      | 91,200           | -245.50        | 3.9%         | 0                  |
+| 91,200      | 91,300           | -235.50        | 3.9%         | 0                  |
+| 91,300      | 91,400           | -225.50        | 3.9%         | 0                  |
+| 91,400      | 91,500           | -215.50        | 3.9%         | 0                  |
+| 91,500      | 91,600           | -205.50        | 3.9%         | 0                  |
+| 91,600      | 91,700           | -195.50        | 3.9%         | 0                  |
+| 91,700      | 91,800           | -185.50        | 3.9%         | 0                  |
+| 91,800      | 91,900           | -175.50        | 3.9%         | 0                  |
+| 91,900      | 92,000           | -165.50        | 3.9%         | 0                  |
+| 92,000      | 92,100           | -155.50        | 3.9%         | 0                  |
+| 92,100      | 92,200           | -145.50        | 3.9%         | 0                  |
+| 92,200      | 92,300           | -135.50        | 3.9%         | 0                  |
+| 92,300      | 92,400           | -125.50        | 3.9%         | 0                  |
+| 92,400      | 92,500           | -115.50        | 3.9%         | 0                  |
+| 92,500      | 92,600           | -105.50        | 3.9%         | 0                  |
+| 92,600      | 92,700           | -95.50         | 3.9%         | 0                  |
+| 92,700      | 100,000          | -85.50         | 3.9%         | 0                  |
+| 100,000     | And Over         | -85.50         | 3.9%         | 0                  |
 
 
 ## Changes in June Round 4 update (Release 6/10/2024)
@@ -1236,7 +1291,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *6/10/2024*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *7/12/2024*.
 
 ## What's next
 
