@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 6/13/2024
+ms.date: 7/11/2024
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -877,7 +877,40 @@ Try to select and send 20 or 30 at a time to rule out the above case.
 
 11.  You can run a [Fiddler trace](/dynamics-gp/installation/email-troubleshooting-guide#to-run-fiddler) to see if it shows anything further about the error message.
 
+### Dynamics GP Error Message: An error occurred authenticating with Azure Graph, check your configuration and try again
 
+Please review each of the items below to determine the possible solution / cause of this error message.
+
+1. Tools | Setup | Company | Email Setup, unless you are using web client, only the Desktop Client properties need to be populated with your application ID.  The Tenant ID field should be left blank, [unless you are using the new feature in 18.6 that allows Single tenant in Azure](https://community.dynamics.com/blogs/post/?postid=18194a5d-4b7f-ee11-a81c-6045bdbe566c). 
+Sometimes it is easier to get the Desktop Client working then go onto other fields if needed in this window, based on what you are deploying in Dynamics GP.
+
+2. Did you try this on another machine and with another user such as user SA on SQL server just to rule out machine specific and .NET issues, etc.
+MFA needs .net 4.7.2 to be installed on GP Client server.
+[Determine which .NET Framework versions are installed - .NET Framework | Microsoft Docs](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed)
+[Download .NET Framework 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
+
+3. If we find this is machine specific, example the error only happens for a new user / new machine install of Dynamics GP in the environment (other users use MFA and email fine).  
+What you can review is go to the user’s folder path, example: C:\Users\(userid)\AppData\Roaming\, manually create a folder named ‘Microsoft Business Solutions’.
+Usually Dynamics GP will create this folder.  Within this folder is the ‘Microsoft Dynamics GP’ folder which holds the auto-complete files for each company, but it appears at times this folder is not created, maybe because an attempt to email is being done before the user does anything with the auto-complete process.  Once the folder is created for the user, have them log back into Dynamics GP and test email.
+
+4. If the Application ID is not saving or has issues, test by launching GP as Administrator, right-click your GP icon and choose Run as Administrator.
+
+5. This error can be caused by using an App Registration that was setup as "Single Tenant" instead of "Multitenant" and then entering it in the wrong field in Dynamics GP.  
+If you go to a workstation where they get this error, go to Start > Run, type %temp% and click OK it will open the local temp folder. They may have a MSGraph log file being created there that will provide more information.
+
+6. As a test, temporarily, fully disabling the Public, Private, and Domain firewalls. Then log into the server with an O365 account (Global Admin) to enter the AppID. If the application ID saves, you can re-enabled the firewalls and continue to email from Dynamics GP.
+
+7. Anti-virus can also cause issues with saving the application ID.  Test to temporarily disable the AV or create an exception for Dynamics GP code folder. Reboot may be required once added.
+
+8. If all else fails, we can enter the application ID in Microsoft SQL Server Management Studio.
+select MSGraphClientID, * from SY04900
+This table needs to be populated with an application ID in each company you want to email out of.
+Once the field is populated, log back into Microsoft Dynamics GP and do a test email.
+
+The easiest way to test email authentication with MFA is to email through a report option window to see if email works and sends. You only need to authenticate 1x per GP login.
+Example Reports | Financial Trail Balance create a new report option and setup the email options. Do a small sub set of data, if too big it will not email. Then try to email from here to see if you are prompted for MFA login and report emails.  If this works, while still logged in, now go try to do your other process to see if it works. 
+
+   
 ## Emailing Setup Guide by Module
 
 The document below covers setup of email starting with System Wide Setup, Purchasing, Sales, and Workflow setup.
