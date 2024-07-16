@@ -34,7 +34,8 @@ General Ledger, Analytical Accounting, or Grant budgets.
 You can enter a budget tolerance to limit the acceptable variance when a purchase transaction exceeds the available budget. You can set up a password to require 
 authorization before the purchase order is sent to the vendor. Also, you can select what actions occur when a purchase order is approved.
 
-**Prerequisites for using General Ledger budgets**
+## Prerequisites for using General Ledger budgets
+
 To use General Ledger budgets with Encumbrance Management, you must set up budgets in General Ledger for each period of each open year.
 Prerequisites for using Analytical Accounting budgets.
 
@@ -44,84 +45,82 @@ To use Analytical Accounting budgets with Encumbrance Management, you must compl
 - Set up dimension codes and assign a dimension code tree to a budget tree.
 - Create a budget and assign a budget tree to that budget (you can assign the same budget tree to multiple budgets)
 
-**Prerequisites for using Grant budgets**
-Grant Budgets are actually Analytical Accounting budgets that are linked to a grant. 
-The steps for using Grant budgets for Encumbrance Management are similar to the steps for using Analytical Accounting budgets, with the following exception. You must use Grant Management to associate a grant with a dimension code in an Analytical Accounting budget.
+## Prerequisites for using Grant budgets
 
-After you save your changes in the Encumbrance Setup window, all existing purchase order line items are evaluated. An encumbrance amount is created using the required date on the purchase order line item, and receipts posted against that purchase order line item will have a liquidation that’s created using the posting 
-date of the receipt. 
+Grant Budgets are actually Analytical Accounting budgets that are linked to a grant. The steps for using Grant budgets for Encumbrance Management are similar to the steps for using Analytical Accounting budgets, with the following exception. You must use Grant Management to associate a grant with a dimension code in an Analytical Accounting budget.
 
-**To set up Encumbrance Management:**
+After you save your changes in the Encumbrance Setup window, all existing purchase order line items are evaluated. An encumbrance amount is created using the required date on the purchase order line item, and receipts posted against that purchase order line item will have a liquidation that’s created using the posting date of the receipt. 
+
+## To set up Encumbrance Management
+
 1. Open the Encumbrance Setup window.
 (Microsoft Dynamics GP menu >> Tools >> Setup >> Purchasing >>Encumbrance Management)
 
 2. Mark Enable Encumbrance Management.
 
-  This option must be marked to use Encumbrance Management, and to make the other fields in the window available.
+    This option must be marked to use Encumbrance Management, and to make the other fields in the window available.
 
 3. Select a budget type.
 
-  Available budget types include General Ledger, Analytical Accounting, or Grant budgets. You can specify a budget tree when Analytical Accounting Budgets is the selected budget type. 
+    Available budget types include General Ledger, Analytical Accounting, or Grant budgets. You can specify a budget tree when Analytical Accounting Budgets is the selected budget type. 
 
-  If you’re using Fiscal Year as the tracking method, you must specify a budget tree.
+    If you’re using Fiscal Year as the tracking method, you must specify a budget tree.
 
-  If the selected budget type is Grant Budgets, purchase order line items will be encumbered when you enter transactions for the grant that’s assigned to the corresponding budget in Grant Management. 
+    If the selected budget type is Grant Budgets, purchase order line items will be encumbered when you enter transactions for the grant that’s assigned to the corresponding budget in Grant Management. 
 
 4. Mark a tracking method for your encumbrances.
 
-  The tracking method determines how the budget amounts and the purchase order amounts (plus actual amounts) are compared to each other.
+    The tracking method determines how the budget amounts and the purchase order amounts (plus actual amounts) are compared to each other.
 
-  - *Total Budget*
+    - *Total Budget*
 
-    Purchases are compared to the total budget and total actual amounts for that budget.
+      Purchases are compared to the total budget and total actual amounts for that budget.
 
-  - *Period*
+    - *Period*
 
-    Purchases are compared to the budget and actual amounts for the period of the purchase.
+      Purchases are compared to the budget and actual amounts for the period of the purchase.
 
-- *Budget-To-Date*
+    - *Budget-To-Date*
 
-    Purchases are compared to the budget and actual amounts in the range from the starting date for the budget to the end of the period of the required date on the purchase order. 
+      Purchases are compared to the budget and actual amounts in the range from the starting date for the budget to the end of the period of the required date on the purchase order. 
 
-  - *Fiscal Year*
+    - *Fiscal Year*
 
-    Purchases are compared to the total budget and total actual amounts for the fiscal year specified in the required date on the purchase order. 
+      Purchases are compared to the total budget and total actual amounts for the fiscal year specified in the required date on the purchase order. 
 
-  If you are using Analytical Budgets and you select Fiscal Year as the tracking method, you must specify a budget tree to use in validating purchases. 
+    If you are using Analytical Budgets and you select Fiscal Year as the tracking method, you must specify a budget tree to use in validating purchases. 
 
-  If you use blanket purchase orders, we recommend that you use the Total Budget tracking method to help ensure that budgets are not unexpectedly exceeded.
+    If you use blanket purchase orders, we recommend that you use the Total Budget tracking method to help ensure that budgets are not unexpectedly exceeded.
 
 5. To set up a password for authorizations of purchase order amounts that exceed the budget limits, choose Enter/Change Password to open the Encumbrance 
 Password Setup window. 
 
 6. Select a tolerance level type and enter an acceptable amount or percentage that a purchase may vary from the available budget before authorization is required.
 
-  You can enter either a positive or negative budget tolerance level—an amount or percentage that a purchase is allowed to deviate from a budget without requiring authorization. 
+    You can enter either a positive or negative budget tolerance level—an amount or percentage that a purchase is allowed to deviate from a budget without requiring authorization. 
 
 7. If you’re using General Ledger or Analytical Accounting budgets, in the scrolling window, enter or select the budget IDs that purchases should be compared to.
 
-  None of the periods within any of the budgets that you select may overlap. For example, if Budget A spans June 2016 through May 2017 and Budget B spans May 2017 through May 2018, you won’t be able to select both budget A and B because they contain overlapping periods. 
+    None of the periods within any of the budgets that you select may overlap. For example, if Budget A spans June 2016 through May 2017 and Budget B spans May 2017 through May 2018, you won’t be able to select both budget A and B because they contain overlapping periods. 
 
 8. If you’re using Analytical Accounting budgets, choose to validate budgets by account or node in a budget tree.
 
-  Choosing **Node** causes the budgets to be validated by a combination of dimension codes from Analytical Accounting. Choosing **Account** causes the budgets to be validated by a combination of 
-accounts and dimension codes. 
+    Choosing **Node** causes the budgets to be validated by a combination of dimension codes from Analytical Accounting. Choosing **Account** causes the budgets to be validated by a combination of accounts and dimension codes. 
 
 9. If you are using Workflow or purchase order approvals in Purchase Order Enhancements, select an option for how approved purchase orders are 
 encumbered.
 
-- *Ask when over budget*
+  - *Ask when over budget*
 
-  Encumbers any purchase order lines that are under budget. Displays a message for lines that are over budget with the option to encumber those lines or leave them pre-encumbered. Choose this option when If you enter a positive value If you enter a negative value Amount Purchases can exceed the budget amount by the currency amount you specify.
+    Encumbers any purchase order lines that are under budget. Displays a message for lines that are over budget with the option to encumber those lines or leave them pre-encumbered. Choose this option when If you enter a positive value If you enter a negative value Amount Purchases can exceed the budget amount by the currency amount you specify.
 
-- *Always pre-encumber*
+  - *Always pre-encumber*
 
-  Pre-encumbers all purchase order lines, regardless of their budget status. With this option, the Mass Encumbrance window is used to do all validations against the budget.
+    Pre-encumbers all purchase order lines, regardless of their budget status. With this option, the Mass Encumbrance window is used to do all validations against the budget.
 
-- *Pre-encumber*
+  - *Pre-encumber*
 
-  When over budget Encumbers any purchase order lines that are under budget and pre-encumbers lines that are over budget. Choose this option when different people have authority to approve the purchase order 
-and over-expenditures to the budget. In this scenario, the Mass Encumbrance window is used to approve the over-expenditures to the budget.
+    When over budget Encumbers any purchase order lines that are under budget and pre-encumbers lines that are over budget. Choose this option when different people have authority to approve the purchase order and over-expenditures to the budget. In this scenario, the Mass Encumbrance window is used to approve the over-expenditures to the budget.
 
 10. Choose OK to save your changes and close the Encumbrance Setup window.
 
