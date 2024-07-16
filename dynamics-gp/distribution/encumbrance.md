@@ -16,12 +16,12 @@ Encumbrance Management enables you to reserve funds from a budget when purchase 
 
 - [Encumbrance Year-End Transfer or the Encumbrance reconcile routine data issues](https://community.dynamics.com/blogs/post/?postid=70bb2e70-82e6-4049-a3aa-b5a1b8a9afc0)
 - [Encumbrance Management and Blanket Purchase Orders](https://community.dynamics.com/blogs/post/?postid=3b463b0a-ce74-4663-9fdd-ab8956d69c7f)
-- [Error: You can’t transfer encumbrances for XXXX when there are outstanding encumbrance amounts for a prior fiscal year.](https://community.dynamics.com/blogs/post/?postid=a59bf1e9-7e94-4fbe-8b96-4e4508fcc715
-- [Error: You can’t transfer encumbrances for XXXX when there are outstanding encumbrance amounts for a prior fiscal year.](https://github.com/theley502/msftdynamicsgpdocs/assets/43243051/59b7022d-e846-4144-8f34-72d9bb2ae8fd)
+- [Error: You can’t transfer encumbrances for XXXX when there are outstanding encumbrance amounts for a prior fiscal year](https://community.dynamics.com/blogs/post/?postid=a59bf1e9-7e94-4fbe-8b96-4e4508fcc715)
+- [Error: You can’t transfer encumbrances for XXXX when there are outstanding encumbrance amounts for a prior fiscal year](https://github.com/theley502/msftdynamicsgpdocs/assets/43243051/59b7022d-e846-4144-8f34-72d9bb2ae8fd)
 - [Encumbrance Summary Inquiry Amounts Do Not Match Detail in Microsoft Dynamics GP](https://community.dynamics.com/blogs/post/?postid=ee1f1afc-6c4b-48eb-b242-24ba8577698f)
 - [How to use Encumbrance and Approvals together successfully](https://community.dynamics.com/blogs/post/?postid=a5e474e8-bc64-4316-924f-b3f98dad023a)
 - [Microsoft Dynamics- Purchase Order Processing/Encumbrance](https://community.dynamics.com/blogs/post/?postid=faefd3c7-0068-4e5e-a5d6-4a168221ee51)
-- [Information regarding Encumbrance and Blanket Purchase orders]https://community.dynamics.com/blogs/post/?postid=85ee2dfc-bd4c-4c06-8798-00cb58160210)
+- [Information regarding Encumbrance and Blanket Purchase orders](https://community.dynamics.com/blogs/post/?postid=85ee2dfc-bd4c-4c06-8798-00cb58160210)
 - [Microsoft Dynamics GP Encumbrance Year End Transfer Error](https://community.dynamics.com/blogs/post/?postid=3e311f09-b974-4b1a-8e9e-ec03ced203a8)
 - [Errors seen in Purchase Order Processing when Encumbrance Management and Requisition Management are installed](https://community.dynamics.com/blogs/post/?postid=e16c0e9d-cd66-4ccb-8b31-985b3c83f7b2)
 
