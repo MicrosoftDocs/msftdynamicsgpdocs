@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 5/30/2024
+ms.date: 7/17/2024
 ---
 
 # Developer Tools
@@ -40,6 +40,46 @@ This documentation describes [Web Services for Microsoft Dynamics GP](/previous-
 The programmer's guide contains information about how to use the services. 
 The web service reference contains detailed information about the operations, classes, enumerations, and policies available in the Dynamics GP service. 
 
+## Integration Manager
+
+Integration Manager for Microsoft Dynamics GP is a tool designed to help you move data quickly and easily between applications, without the need for custom programming or extensive knowledge of application databases. 
+Regardless of which combinations of sources and destinations you eventually use, the steps to building and running integrations are basically the same.
+
+### Common Error Messages
+
+**The destination could not be initialized due to the following problem: Cannot create ActiveX component**
+Normally this issue is caused by either a permissions issue or something with the IM client install.  
+Can other user log onto this machine and see the issue?  If so,  that would suggest it is related to permissions in your case.
+The Dynamics GP and IM client need to be running under the same context.  
+You may see this error when you don't launch both GP and IM as administrator since they are not running as the same user.  
+If you right-click on GP and select Run as Administrator, then launch IM in the same way can you reproduce the issue? 
+Another option for this error message is even though it doesn't seem like an install it may be worthwhile to repair or reinstall IM on this workstation.  
+It would not hurt to repair Dynamics GP either since IM relies on making a connection to that application.
+Usually by doing this just once seems to tie things together at the OS level and allows IM to work without running as Administrator going forward.
+
+**Integration Manager progress bar disappears**
+Usually when you see this issue arise, it is user specific in nature.
+Typically, this is an environmental issue. 
+
+The Cause of this:
+Windows Fonts DPI setting set to 125%
+
+Resolution
+To resolve this, navigate to Control Panel > Display. What is the DPI setting, sometimes you will see it at 125%. Set it to 100% and then log off and log back in to the computer. 
+After launching GP and IM again, you should find the progress bar appeared.
+ 
+Once you know more based on user, you can look at other items too such as
+--You could enable the draw window so then it is flashing in front of you all the time so you know exactly when it is done.
+In the Microsoft.Dynamics.GP.IntegrationManager.ini file
+   ShowDynamics=TRUE
+   DoUIRedraw=TRUE
+ 
+--Rename the main IM .ini file mentioned above, then run a Repair against Integration Manager, which will re-create the .ini file in the same location, then launch Integration Manager and see if that resolves this issue.
+ 
+--Rename the entire IM directory and run a Repair against Integration Manager, which will re-create the entire IM directory, folders and files under the original name. Launch Integration Manager from this ‘new’ IM directory and you may need to point it at your IM database to test whether the progress window now shows or not.
+ 
+--Last would be a complete uninstall and reinstall of Integration Manager, which shouldn’t affect anything as the integrations themselves are all held in the IM database.  It would be good to verify where the source files for IM are all stored, just so they’re not in a folder for Integration Manager that an uninstall would remove.
+ 
 ## Visual Studio Tools
 
 This documentation contains detailed information about using [Visual Studio Tools for Microsoft Dynamics GP](/previous-versions/dynamicsgp/developer/cc543538(v=msdn.10)) to develop integrating applications. 
