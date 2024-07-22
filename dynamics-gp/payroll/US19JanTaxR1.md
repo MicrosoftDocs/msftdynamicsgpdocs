@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 7/11/2024
+ms.date: 7/22/2024
 ---
 # U.S. 2024 Payroll Tax Update
 
@@ -16,7 +16,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2024 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the fifth tax update for 2024 and replaces all previous tax updates. It includes State tax table changes that take effect July 15, 2024. 
+This is the sixth tax update for 2024 and replaces all previous tax updates. It includes State tax table changes that take effect July 1, 2024. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -27,6 +27,35 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/blogs/post/?postid=c9a75bcc-8f50-411f-a364-95a5121f6335)
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/blogs/post/?postid=dbc1295b-297f-4441-aa2f-7c2502bffc97)
+
+## Changes in July Round 6 update (Release 7/25/2024)
+
+- Kansas
+  
+### Withholding changes for Kansas
+
+The Personal Exemption amount is \$2,320 for all Filing Status.
+
+New Standard Deduction Amount for Filing Status:
+
+- SINGLE        is \$9,160
+- MAR           is \$18,320
+
+Withholding rates for taxpayers filing as *MAR*:
+
+| If Over  | But Not Over | Tax Amount | Tax Rate | On Excess Over                    |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 8,240            | 0              | 0%           | 0                  |
+| 8,240       | 54,240           | 0              | 5.2%         | 8,240              |
+| 54,240      | And Over         | 2,392          | 5.58%        | 54,240             |
+
+Withholding rates for taxpayers filing as *SINGLE*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|---------|--------------|------------|----------|----------------|
+| 0       | 3,605        | 0          | 0%       | 0              |
+| 3,605   | 26,605       | 0          | 5.2%     | 3,605          |
+| 26,605  | And Over     | 1,196      | 5.58%    | 26,605         |
 
 ## Changes in July Round 5 update (Release 7/17/2024)
 
