@@ -42,7 +42,7 @@ The web service reference contains detailed information about the operations, cl
 
 ## Integration Manager
 
-Integration Manager for Microsoft Dynamics GP is a tool designed to help you move data quickly and easily between applications, without the need for custom programming or extensive knowledge of application databases. 
+Integration Manager for Microsoft Dynamics GP is a tool designed to help you move data quickly and easily between applications without the need for custom programming or extensive knowledge of application databases. 
 Regardless of which combinations of sources and destinations you eventually use, the steps to building and running integrations are basically the same.
 
 ### Common Error Messages
