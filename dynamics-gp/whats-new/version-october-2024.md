@@ -7,7 +7,7 @@ ms.reviewer: jswymer
 ms.topic: article
 ms.date: 07/22/2024
 ---
-# What's New in Dynamics GP in October 2023
+# What's New in Dynamics GP in October 2024
 
 This page lists enhancements to Dynamics GP in the October 2024 release. The Dynamics GP October 2024 release enhances different areas of the product.
 
