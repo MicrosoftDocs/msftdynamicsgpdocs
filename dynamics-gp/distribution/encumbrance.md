@@ -6,7 +6,7 @@ author: theley502
 ms.reviewer: jswymer
 ms.topic: article
 ms.author: theley
-ms.date: 07/22/2024
+ms.date: 07/23/2024
 ---
 
 # Encumbrance Management
@@ -264,6 +264,198 @@ value of the control blanket line item. The calculation of the reduction of the 
 Quantity - The reduction is for the quantity of the blanket line item, using the unit cost of the control blanket line item.
 Value  - The reduction is for the value of the blanket line item.
 
+## Creating an encumbrance for a standard or drop-ship purchase order
+
+Use the Purchase Order Entry window to create and authorize encumbrances for standard and drop-ship purchase orders. A standard purchase order lists items that 
+will be shipped to your business to be received into your inventory. A drop-ship purchase order lists items that will be shipped directly to the customer.
+
+1. Open the Purchase Order Entry window. (Transactions >> Purchasing >> Purchase Order Entry)
+2. Select Standard or Drop-Ship as the purchase order type.
+3. Enter the purchase order. See the Purchase Order Processing documentation for more information. 
+If any line items exceed the available budgeted amount, a message will be displayed asking if you want to encumber the purchase. You must enter a 
+password, if one was set up.
+
+If you change the information in the Quantity Ordered, Quantity Canceled, or Unit Cost fields for a line item, the line is validated again. 
+
+5. Choose Save and close the window. You will have the option to print an edit list. 
+You can choose File >> Print or the Print icon, or use the Print Purchasing Documents window, to print the purchase order if all lines have a status of 
+Encumbered.
+
+## Creating an encumbrance for a blanket or drop-ship blanket purchase order
+Use the Purchase Order Entry window to create and authorize encumbrances for blanket and drop-ship blanket purchase orders. A blanket purchase order lists a 
+single item and the quantities that will be delivered in a series of shipments, usually on a specific date. A drop-ship blanket purchase order lists a single item and the 
+quantities that will be delivered directly to the customer in a series of shipments, usually on multiple dates that are specified in advance.
+
+1. Open the Purchase Order Entry window. (Transactions >> Purchasing >> Purchase Order Entry)
+2. Select Blanket or Drop-Ship Blanket as the purchase order type.
+3. Enter the purchase order. See the Purchase Order Processing documentation for more information.
+If any line items exceed the available budgeted amount, a message will be displayed asking if you want to encumber the purchase. 
+You must enter a password, if one was set up.
+
+If you change the information in the Quantity Ordered, Quantity Canceled, or Unit Cost fields for a line item, the line is validated. You can’t add item 
+information to a purchase order if the control blanket line item has a status of Invalid. 
+
+You can’t change the unit of measure for the control blanket line item if you’ve already entered a blanket line item in the scrolling window. You must delete the line item before 
+changing the unit of measure. However, you can change the unit of measure on the blanket line items.
+
+4. You can choose Blanket to open the Purchasing Blanket Detail Entry window, where you can enter several blanket line items at once.
+5. Mark a Control Blanket By option. This option affects how the control blanket line item is liquidated.
+   
+You can’t change the Control Blanket By option if you’ve already entered a blanket line item in the scrolling window. You must delete the line item before changing the option.
+
+7. Enter the blanket line item information.
+8. Choose OK to return to the Purchase Order Entry window.
+9. Choose Save and close the window. You will have the option to print an edit list. 
+You can choose File >> Print or the Print icon, or use the Print Purchasing Documents window, to print the purchase order for all lines that have been 
+released using the Purchasing Blanket Detail Entry window and have a status of Encumbered.
+
+## How purchase order changes affect encumbrance amounts
+The following describes how encumbrance amounts are affected when you modify, delete, or void purchase orders, or change the status of a purchase order.
+
+*Modify a purchase order*
+The encumbrance amount is recalculated and re-evaluated against the budget.
+
+*Delete a line item/ blanket line item*
+The current encumbrance information for that line item is removed.
+For the control blanket line item in blanket and drop ship blanket purchase orders, the encumbrance amount for the control blanket line item is increased.
+
+*Delete a purchase order*
+The current encumbrance amount for all items is removed.
+
+*Void a purchase order*
+The current encumbrance amount for all items is removed.
+
+*Change the purchase order status to Closed, Received, or Canceled*
+Any pre-encumbered or encumbered amounts are removed.
+
+*Change the purchase order status from Canceled to Change Order, New or Released*
+The encumbrance amount is recalculated and re-evaluated against the budget.
+
+*Change the purchase order status from New to Released*
+The encumbrance amount does not change.
+
+## Encumbrance liquidations
+
+Some actions reduce, or liquidate, encumbrances. A liquidation is a reduction in the encumbered amount due to posting a receipt, closing or canceling a purchase order 
+or line item, or reducing the quantity ordered or unit cost of the purchase order line item.
+
+*Closed or canceled purchase orders*
+When you close or cancel a purchase order, encumbrance amounts for that purchase order also are updated:
+• If you close a purchase order, the remaining encumbrance amount for all line items in the purchase order will be reduced to zero.
+• If you cancel a purchase order line item, the encumbrance amount will be reduced by the amount canceled.
+
+*Receivings transactions*
+For standard and blanket purchase orders, when you post a shipment receipt or shipment/invoice receipt, the encumbered amount for the received goods is 
+reduced by the quantity received using the posting date of the receipt. The posting date must be within a period of a budget selected in the Encumbrance Setup 
+window. The liquidation uses the unit cost of the purchase order line item.
+
+For drop-ship and drop-ship blanket purchase orders, when you post an invoice receipt, the encumbered amount for the invoiced goods is reduced by the quantity 
+invoiced using the posting date of the invoice. The liquidation uses the unit cost of the purchase order line item
+
+When a shipment is posted, the actual amount is increased for the purchase orders for the general ledger account, the dimension code, or both. For this reason, the encumbrance on the 
+general ledger account is liquidated when the goods are shipped, and not when the payment is made to the vendor.
+
+If the quantity received is equal to or greater than the quantity encumbered for that line item, the encumbered amount will be reduced to zero.
+If you’re using blanket or drop-ship blanket purchase orders, the liquidation works the same except for the control blanket line item, which is reduced by entering 
+blanket line items.
+
+When you save a receivings transaction to a batch, encumbrances are not liquidated until the batch is posted.
+
+*Authorizing pre-encumbrances for multiple purchase orders*
+Use the Mass Encumbrance window to authorize pre-encumbrances for multiple purchases at one time. For example, suppose you supervise a user who doesn’t have 
+the authority to approve purchases that exceed the budget. You might use this window to review those pre-encumbrances and authorize them.
+
+If you’re using blanket or drop-ship blanket purchase orders, the control blanket line item won’t be displayed with the pre-encumbered purchase orders because you 
+can’t encumber the control blanket line item. 
+
+You also can use the Mass Encumbrance window to view invalid purchase order line items, which must be modified before they can become encumbered.
+
+To authorize pre-encumbrances for multiple purchase orders:
+1. Open the Mass Encumbrance window. (Transactions >> Purchasing >> Encumbrance Management >> Mass Encumbrance)
+2. Select Pre-Encumbered as the encumber status.
+3. Select a range of pre-encumbrances.
+
+• To encumber all available pre-encumbrances, set the range to All Available.
+• To restrict the range of pre-encumbrances, select a range restriction based on PO Number, Vendor ID, or Created By, and enter a range of purchase 
+order numbers, vendors, or users in the From and To fields. Choose Redisplay. The applicable purchase order line items will be displayed in the 
+scrolling window.
+
+4. In the Encumber column, mark the purchase order line items to authorize. You can mark individual lines, or choose Mark All to mark all the lines displayed in 
+the window.
+
+If you change the Ranges field in this window after marking any purchase order line items, those lines will remain marked even though they are no longer visible in the 
+window. You must redisplay your previous range to view those lines.
+
+5. You can print an edit list by choosing File >> Print or the Print icon. An edit list itemizes the purchase order line items that will be encumbered.
+6. Choose Encumber. A message is displayed asking if you want to continue. Choose Yes. You’ll need to enter a password if one was set up.
+7. Close the window. You will have the option to print the Encumbrance Audit Report showing the purchase order line items that have been encumbered
+
+*Transferring encumbrance amounts at year end*
+Use the Year End Encumbrance Transfer window to transfer encumbrance amounts from a fiscal year that’s ending to the next fiscal year. 
+
+1. Open the Year End Encumbrance Transfer window: (Microsoft Dynamics GP menu >> Tools >> Routines >> Purchasing >> Year End Encumbrance Transfer)
+2. Enter or select the year that you’re transferring encumbrance amounts from. 
+3. Enter a range of purchase order numbers to transfer encumbrance information for.
+4. Select to increase budget amounts for the encumbrances that you’re transferring. If the budget for the fiscal year that you’re transferring 
+encumbrance information to doesn’t include the funding for items that were ordered and encumbered in the previous year, you can increase those budgets 
+by the amount being transferred. If you choose to increase budget amounts, you also can increase budget amounts for pre-encumbered items. 
+
+When the budget ID is the same for both years (the year that you’re transferring amounts from and the year that you’re transferring amounts to) and the 
+Increase corresponding budget amounts option is marked, increasing an amount for the new fiscal year results in an equal decrease for the year you’re 
+transferring from.
+
+5. Choose Preview to view a report that shows transfer information without actually changing budgets or account balances. 
+The encumbrance transfer updates the required date on each purchase order line item to the first day of the new fiscal year. 
+6. Choose Transfer to transfer encumbrance information to a new fiscal year.
+
+## Encumbrance Management maintenance
+This part of the documentation describes the data tables that are included with Encumbrance Management and explains how to verify and repair Encumbrance 
+Management data inconsistencies.
+
+You can use the Encumbrance Routine Maintenance window to verify and repair Encumbrance Management data inconsistencies.
+1. Open the Encumbrance Routine Maintenance window. (Microsoft Dynamics GP menu >> Maintenance >> Encumbrance Management >> Routine Maintenance)
+2. Select an operation to complete.
+
+Verify: Detail versus purchase order
+Compares the encumbrance totals in the Encumbrance Purchase Order Line and Encumbrance Purchase Order 
+Line Changes tables to the encumbrance totals calculated using the purchase order table and posted receipts.
+
+Verify: Summary versus Detail 
+Compares the encumbrance totals in the Encumbrance Purchase Order Line Changes table to the encumbrances totals in 
+the budget table (GL002001).
+
+Repair: Detail based on Purchase Order 
+If purchase orders in the Encumbrance Purchase Order Line and Encumbrance Purchase Order Line Changes tables do not equal the encumbrance totals calculated using the 
+purchase order table and posting receipts, any existing records are deleted and recreated using the required date on the purchase order line and the posting 
+date on the receipts.
+
+Repair: 
+Summary based on Detail If the encumbrance budget totals for an account where the encumbrance totals in the Encumbrance Purchase Order 
+Line Changes encumbrance table does not match the encumbrances totals in the budget table (GL002001), the encumbrance budget record for that account is 
+deleted and recalculated using the total for that account in the Encumbrance Purchase Order Line Changes table.
+3. Choose Process. A message will be displayed when the verification or repair has been completed.
+4. Choose OK to close the message window.
+5. Choose OK to close the Encumbrance Routine Maintenance window
+
+**Data Tables**
+
+ENC_POLine  / ENC10110 -Encumbrance Purchase Order Line
+Holds current purchase order line information, including encumbrance status, amount, and purchase order line status.
+
+ENC_POLineChg / ENC10111 -Encumbrance Purchase Order Line Changes
+Holds any changes made to current purchase order line items, such as quantity, unit cost, and inventory amount.
+
+ENC_POLineEntry / ENC10115 -Encumbrance Management PO Line Entry
+Activity tables hold information about encumbered purchase order line items for each user; used primarily for printing the Audit Report 
+upon closing of the Purchase Order Entry window.
+
+ENC_PORcptApply / ENC10500 -Encumbrance Received Transactions
+Tracks posted receipts (liquidations).
+
+ENC_Setup / ENC40000 -Encumbrance Setup Holds encumbrance activation status, variance amount, type of validation (Annual, Period, Year-To-Date), and password.
+
+ENC_SetupLine / ENC40100 -Encumbrance Budget Setup
+Holds budgets that have been set up in Encumbrance Management
 
 # Control Account Management
 Control Account Management allows you to redistribute payables and receivables control account balances automatically based on the segment ID of each account. 
