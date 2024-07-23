@@ -187,6 +187,84 @@ item required date.
 • The account on the receipt line item is an allocation account. 
 • The receipt line item required date is missing.
 
+## Transactions
+This part of the documentation describes how to work with encumbrances, including how to create them and how they’re affected by purchase order changes. 
+This information also explains how to authorize groups of pre-encumbrances, which are encumbrances that exceed the budget limits and haven’t been authorized.
+
+When you create purchase orders using the Purchase Order Entry window, encumbrances automatically are created. They’re authorized automatically if the 
+purchase order line items fit the budget requirements, and can be authorized manually if they’re outside budget requirements. To meet the budget requirements, 
+the result of the following formula must be positive:
+
+Budget Amount - Actual Amount - Encumbrance Amount
+
+Purchases are associated with a budget based on the posting account on the purchase order line item, and the fiscal period that the required date on the 
+purchase order falls within.
+
+For example, if an annual budget is set at $10,000 and a purchase order line item is created for $2,000, the available budget amount would be reduced to $8,000. 
+A new purchase order line item for $8,500 would exceed the budget and require authorization. (This assumes that no budget tolerances have been set up.)
+
+The amount that is encumbered is calculated using the following formula:
+(Quantity Ordered - Quantity Canceled - Quantity Shipped) * Unit Cost in the Functional Currency
+
+When you receive a shipment, the encumbrance amount is reduced, or liquidated. However, the Actual amount is increased at the same time so that the available 
+budget amount remains the same. If the quantity received is the same as or more than the quantity encumbered, the encumbered amount is liquidated to zero. 
+Encumbrances are liquidated in the period of the posting date of the receipt.
+
+Encumbrance amounts also are liquidated if you cancel a purchase order line item or close a purchase order. 
+
+## Calculating available budget amounts for dimension codes using budget trees
+Budget trees are used in Analytical Accounting; the calculations for available budget amounts described in this section do not apply if you’re tracking 
+encumbrance amounts against General Ledger budgets. 
+
+When a purchase order is posted, budget amounts are verified for each branch in the budget tree structure, for each purchase order line. If there are multiple branches 
+on a purchase order line and one of the branches is over budget, the status for all the branches for that line will be set to Pre-encumbered. You must either approve the 
+over-budget amount or adjust the budget. Items cannot be received against a purchase order unless it is encumbered.
+
+Budget amounts for the top level of the budget tree are not validated because no dimension codes are associated with this level of the tree. 
+
+Purchase order line items are not validated against the budget and are instead given the special Encumbrance status Limbo. For the Analytical Account entry for the 
+purchase order: 
+• You do not enter dimension codes.
+• When using Grant budget validation, the dimension code that you enter is not linked to a grant
+
+## Purchase order types and liquidation
+
+In addition to creating encumbrances for standard purchase orders, you also can create encumbrances for drop-ship, blanket, and drop-ship blanket purchase orders. 
+The following briefly describes each purchase order type and explains when the purchase orders are liquidated.
+
+| Type      | Description                                        | When liquidated                                                    |
+|--------------------------------------------------------------- |--------------------------------------------------------------------|
+| Standard  | Lists items that will be shipped to your business  |The purchase is liquidated when a shipment/invoice receipt is posted|
+|              to be received into your inventory                |                                                                    |
+| Drop-Ship | Used for items you purchase on behalf of a customer|The purchase is liquidated when an invoice is posted                |
+|              The items are shipped to the customer without     |                                                                    |   
+|              being physically received into your inventory     |                                                                    |
+| Blanket   | Lists a single item and its quantities that will   |The control blanket line itemm is liquidated by creating blanket    |
+|              be delivered in a series of shipments. The item   |Line items.  These items are liquidated when a shipment/invoice     |
+|              will be received into your inventory              |receipt is posted.                                                  |   
+| Drop-Ship | Is a combination of drop-ship & blanket purchase   |The cotrol blanket line item is liequidated by creating blanket line|
+|  Blanket     orders; lists a single item & the quantities      |items. The blanket line items are liquidated when an invoice receipt|
+|               that will be delivered to the customer in series |is posted.                                                          |
+
+## Control blanket line items and encumbrances
+
+The first line item entered for a blanket or drop-ship blanket purchase order is called the control blanket line item. This line item has a line number of 0 (zero) and 
+is the line item that the blanket line items are based on. The control blanket line item is not affected by creating or posting receipts.
+
+For example, you might enter a quantity of 5,000 for the control blanket line item and then enter five blanket line items with a quantity of 1,000 each. The control 
+blanket line item isn’t included in tax amounts or the purchase order’s subtotal, nor is it printed on purchase orders. 
+
+When you use Encumbrance Management with blanket and drop-ship blanket purchase orders, the control blanket line item is always pre-encumbered, even if it 
+doesn’t exceed the budgeted amount. A message is displayed if this line item amount exceeds the budgeted amount. The line item amount is included in the 
+budget validation calculations, and the funds for this line item are reserved in the budget.
+
+The control blanket line item amount is reduced only when blanket line items are created. Blanket purchase orders can be controlled by either the quantity or the
+value of the control blanket line item. The calculation of the reduction of the control blanket line item depends on this setting.
+
+Quantity - The reduction is for the quantity of the blanket line item, using the unit cost of the control blanket line item.
+Value  - The reduction is for the value of the blanket line item.
+
+
 # Control Account Management
 Control Account Management allows you to redistribute payables and receivables control account balances automatically based on the segment ID of each account. 
 You can create reports that display the balances for each segment, as well as printing a summary report that shows payables and receivables information for 
@@ -244,18 +322,78 @@ The Segment ID column displays the segment ID that corresponds to the  account s
 window. The Account Description column displays that segment’s description.  If no description exists, you can enter one.
 
 7. To generate reversing journal entries, set up default batch information.
-8. 
-Batch ID This is the default batch ID for all your Control Account Management transactions.
+
+Batch ID 
+This is the default batch ID for all your Control Account Management transactions.
 You can save only one Control Account Management batch at a time. That batch must be posted using the batch entry or series posting windows before you can enter another 
 Control Account Management batch.
 
-Batch Comment This comment is included on the Control Account Management batch.
+Batch Comment 
+This comment is included on the Control Account Management batch.
 
-Reference The reference is included in the Control Account Management 
-transactions.
+Reference 
+The reference is included in the Control Account Management transactions.
 
-9. Choose Save to save your changes. Close the Control Account Management Account Types window.
-10. Choose Save   
+8. Choose Save to save your changes. Close the Control Account Management Account Types window.
+
+## Transactions and reports
+
+After you’ve set up Control Account Management by specifying your main account segment and the control account to be used for each account within that segment, 
+you must create reports and generate reversing transactions to create your control account distributions for both receivables and payables.
+
+Before you run your month-end reports, you must create your report using the Generate Control Account Management Transactions window and then generate 
+the reversing journal entry to redistribute the total amount to the control accounts specified in the setup window. You have full control of the dates of both the journal 
+entry and the reversing journal entry. This process generates a batch that you will need to post, just as other Microsoft Dynamics GP journal entries are posted
+
+**Printing a Control Account Management report**
+
+Use the Generate Control Account Management Transactions window to print summary or detail reports.
+You also can use the window to generate reversing journal entries.  
+
+To a print a Control Account Management report:
+1. Open the Generate Control Account Management Transactions window.
+(Transactions >> Financial >> Control Account Management)
+2. Choose Payables or Receivables.
+3. Choose Report to generate a Control Account Management report.
+4. To see more information that is included on the report, choose the Show Details button.
+5. To print the report, choose Save, and then choose the Print icon. (You can’t print reports that haven’t been saved.)
+6. When you’ve finished, close the window
+
+**Batches for Control Account Management**
+
+Batches that are generated when you use Control Account Management must be posted, just as other Microsoft Dynamics GP journal entries are posted.
+
+When you set up Control Account Management, you specify a batch ID for Control Account Management. You can use that default batch ID each time you generate a 
+Control Account Management journal entry, or you can use the Batch tab in the Generate Control Account Management Transactions window to modify the default 
+information. Any information that you enter in the Batch tab will override the default batch information you entered during the setup procedure.
+
+After a batch of transactions has been created, you can post it using batch entry or series posting windows.
+
+> [!NOTE]
+> We recommend that you use the default batch ID each time you post, so only one Control Account Management batch is in use at any time. If you prefer, you can enter a new batch 
+> ID in the Batch tab for each report, and Control Account Management will create an additional batch for each report. However, if you enter multiple batch IDs, you must keep 
+> track of your Control Account Management batches to ensure that you do not post a batch containing the same information twice.
+> 
+
+**Generating reversing journal entries**
+
+The Generate Control Account Management Transactions window generates  reversing journal entries for your transactions. You have full control of the dates of 
+both the journal entry and the reversing journal entry. This process generates a batch that you will need to post.
+
+1. Open the Generate Control Account Management Transactions window. (Transactions >> Financial >> Control Account Management)
+2. Choose Payables or Receivables.
+3. Choose Report to generate a Control Account Management report.
+4. Choose the Show Details button. Supporting information for the report is displayed in each of the three tabs in the window. 
+5. Before you generate the journal entry, be sure to verify or change the transaction date and revision date, and other journal entry information.
+6. Choose Generate to create a journal entry that redistributes the total default control account balance to the predetermined segments.
+
+A reversing journal entry automatically will be created using the default batch ID from the Control Account Management Setup window, or from the Batch tab 
+if you made modifications to the default information.
+
+When you generate a journal entry, the report is saved automatically.
+
+7. After the reversing journal entry is created, you must post it using the batch entry or series posting windows before you can save another Control Account 
+Management batch.  When you’ve finished, close the window
 
 
 <!--## See also-->
