@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 7/17/2024
+ms.date: 7/25/2024
 ---
 
 # Developer Tools
@@ -53,7 +53,7 @@ Normally this issue is caused by either a permissions issue or something with th
 Can other user log onto this machine and see the issue?  If so,  that would suggest it is related to permissions in your case.
 The Dynamics GP and IM client need to be running under the same context.  
 You may see this error when you don't launch both GP and IM as administrator since they are not running as the same user.  
-If you right-click on GP and select Run as Administrator, then launch IM in the same way can you reproduce the issue? 
+Right-click on GP and select Run as Administrator, then launch IM in the same way can you reproduce the issue? 
 Another option for this error message is even though it doesn't seem like an install it may be worthwhile to repair or reinstall IM on this workstation.  
 It would not hurt to repair Dynamics GP either since IM relies on making a connection to that application.
 Usually by doing this just once seems to tie things together at the OS level and allows IM to work without running as Administrator going forward.
@@ -62,12 +62,9 @@ Usually by doing this just once seems to tie things together at the OS level and
 
 Usually when you see this issue arise, it is user specific in nature. Typically, this is an environmental issue. 
 
-Cause:
-
-Windows Fonts DPI setting set to 125%
+Cause:  Windows Fonts DPI setting set to 125%
 
 Resolution:
-
 To resolve this, navigate to **Control Panel** > **Display**. Check the DPI setting. Sometimes, you will see it at 125%. Set it to 100% and then sign out and in to the computer. After launching GP and IM again, you should find the progress bar appeared.
  
 Once you know more based on user, you can look at other items too such as:
@@ -81,7 +78,37 @@ Once you know more based on user, you can look at other items too such as:
 - Rename the entire IM directory and run a repair against Integration Manager, which will re-create the entire IM directory, folders and files under the original name. Launch Integration Manager from this ‘new’ IM directory. You may need to point it at your IM database to test whether the progress window now shows.
  
 - Lastly, complete an uninstall and reinstall of Integration Manager, which shouldn't affect anything as the integrations themselves are all held in the IM database. It is good practice to verify where the source files for IM are all stored, just so they’re not in a folder for Integration Manager that an uninstall would remove.
+
+#### Unable to open source queries because Query 'XXXX' is not found in the database. - ADO Field is nothing.
+
+Does it work if you right click and launch IM as administrator? 
+What if you view the file does it seem to view or error out there too? 
+Is it just this IMD or does maybe the Sample IMD work for you?
  
+If you haven’t already done so, please try the steps in the [following article](https://community.dynamics.com/gp/b/dynamicsgp/archive/2012/02/07/ado-field-is-nothing-error-message-in-integration-manager)
+
+Other causes:
+1. If the source file is on a mapped drive or other network location, try moving it to the local server where IM is installed, then point IM to that local copy to rule out intermittent network issues or just general issues with accessing the shared file.  You can also try copying the contents of the source file into a new source file, then point IM to that and continue testing.
+ 
+2. This can also occur if the data type of a column was changed that is used in the Query Relationship window. Open the properties for each source and then click the Refresh Columns button on the Columns tab. After you refresh the columns, verify the mapping of the integration and the Query Relationship window are still correct.
+ 
+3. Verify the query in the source was referencing a SQL view that did not exist in the company database that was being integrated.  
+Also make sure the view does not reference a table that does not exist in the non-working company/ database.
+ 
+4. This error will also surface if there is a period in the (.) in the Source filename.
+Example the user was saving the file as FILE.11.23.23 - if you change the period to underscores or remove it, then the integration works.
+Make sure you have the VIEW for file extensions on in file explorer so this is easy to identify.
+
+#### Error when reviewing log files for Integration Manager - The Microsoft.ACE.OLEDB.12.0 Provider is not registered on the local machine
+
+This error usually occurs when the incorrect version of the Report Viewer Redistributable is installed on the machine where Integration Manager is running.
+
+1. Uninstall the 2013 redistributable files.  [Install the 2010 redistributable files.](https://www.microsoft.com/en-us/download/details.aspx?id=20884)
+2. Launch both Integration Manager and Dynamics GP using 'Run As Administrator' (right click) and now, while in an integration, click View > Integration Logs and verify the log comes up without any errors.
+Also, in the integration progress window, click the 'View Log' button and have the report show up
+
+If the above steps don't resolve this error, you can try a Repair of both Integration Manager and Microsoft Dynamics GP, if not uninstall and reinstall or try to install this to another machine, example server, just to see if it works there, then you know it is machine specific.
+
 ## Visual Studio Tools
 
 This documentation contains detailed information about using [Visual Studio Tools for Microsoft Dynamics GP](/previous-versions/dynamicsgp/developer/cc543538(v=msdn.10)) to develop integrating applications. 
