@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 08/30/2022
+ms.date: 07/30/2024
 ---
 
 # Workflow Administrator's Guide
@@ -408,6 +408,10 @@ In Microsoft Dynamics GP, approvers can act on documents, master records, and ba
 Approvers can use entry windows to act on a specific document, master record, or batch. For example, an approver can approve a specific purchase order using the Purchase Order Entry window.
 
 Approvers can use lists to act on several documents, master records, or batches at one time. For example, an approver can approve multiple purchase orders at one time using the All Purchasing Transactions list.
+
+> [!NOTE]
+> To help you streamline your processes and increase efficiency, review this [article and video](https://preview.community.dynamics.com/blogs/post/?postid=d847301a-a499-439c-bd68-d46173504e2f) on tips for setup of >your workflows to make sure for optimized performance.
+> 
 
 ## Workflow Tasks
 
