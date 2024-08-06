@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 11/30/2022
+ms.date: 8/6/2024
 ---
 
 # W-2 Wage and tax statement data source guide
