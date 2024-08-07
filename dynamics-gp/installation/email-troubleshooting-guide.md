@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 7/11/2024
+ms.date: 8/7/2024
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -732,26 +732,24 @@ If it is grayed out, then you are tied to Exchange Online, so these should be co
 
 ### Troubleshooting tips for Workflow E-mail
 
+#### Execution Timeout Expired. The timeout period elapsed prior to the completion of the operation or the server is not responding.
+
 When approving Requestions as an example thru Workflow email links (which uses web services), notifications may not go to the approver. If you look at the exception errors for System you will see 
 
-**Execution Timeout Expired.  The timeout period elapsed prior to the completion of the operation or the server is not responding.**
-
 When reviewing a SQL Profile trace, you can see calls (qdCreateSQL procedure) that happen for each E-Mail being sent.  There is about a 30 second window for this to complete.  If you have a larger data set and maybe joined more tables to the workflow message, this may not complete and cause the above error and then notifications appear to stop.  To resolve this problem, you may need to look at the workflow, tables that are joined, comments that are printing and see if there is an index that can be put on a specific table to better  sort through the data.  The SQL Display Estimated Execution Plan can be used to help identify your specific data issue.
-
 
 1. If no workflow emails are sent, verify if it is all workflow or just one specific workflow where this is not working.
 
 a. For the user you are testing with, verify in *Active Directory under the General tab* that the E-mail field is populated, if it is blank emails will not send.
          This needs to be done for all users that are GP Approvers in workflow
-
 b. Try to send a Test E-Mail in Workflow Setup does it work?  This process will use the user listed in the SMTP Authentication area of the window.
-
 c. The SY04920 table is not used for workflow emails or Modern Auth once setup and becomes non-relevant.            
       
 2. If we are using templates, we should try a workflow email with no attachments, just to see if the email works.
 
 3. When a user 1st submits for approval in workflow, that will go through Exchange, usually submitted within Dynamics GP.
 From there on out, when a user approves through the workflow email links, to approve what was submitted, that will use [SMTP](https://community.dynamics.com/blogs/post/?postid=7aaa9918-06a0-4e88-adac-fc30853b97dc) for all other approvals from Web Services workflow emails.
+
 If an email is failing from the email links this could indicate a problem with web services.
 Test approving the email from within Dynamics GP, then we know workflow and emails are working, just not the web services links.
 
@@ -759,6 +757,16 @@ Test approving the email from within Dynamics GP, then we know workflow and emai
    
 6. Make sure you have VALID users in AD as Workflow Managers.  If you do not have valid AD users as Workflow Managers, it may cause performance issues in your workflow and undesired results.  
 Many times, customers have employees that leave the company but their users are still part of the workflow and may cause issues.
+To help streamline your processes and increase efficiency, {review this article and video](https://community.dynamics.com/blogs/post/?postid=d847301a-a499-439c-bd68-d46173504e2f) for tips about setting up your workflows for optimized performance.
+
+#### The file you have selected does not exist
+
+You may notice this error message when sending email with attachments in workflow.
+
+1. Does the error seem intermittent?  Does it only happen when you are trying to attach something to the email?
+2. If it works with some attachments and not others what is the difference?
+3. This error can happen when the attachment file name is very long.
+4. You may also see this error message if the Batch ID you submit the workflow on has special characters, test with a simple Batch ID and see if it works.
 
 [How to verify if Microsoft Dynamics GP Web Services is functioning correctly](/troubleshoot/dynamics/gp/verify-if-web-service-is-correct)
 
