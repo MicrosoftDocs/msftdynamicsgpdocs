@@ -132,7 +132,7 @@ You can use the Encumbrance Password Setup window to set up or modify the passwo
 limits. If you set up a password, and the purchase amount exceeds the specified limits, users will need to enter a password before the purchase can be encumbered.
 
 To set up or modify the encumbrance password:
-1. Open the Encumbrance Setup window. (Microsoft Dynamics GP menu >> Tools >> Setup >> Purchasing >> Encumbrance Management)
+1. Open the Encumbrance Setup window by selecting Microsoft Dynamics GP menu >> Tools >> Setup >> Purchasing >> Encumbrance Management. 
 2. Choose the Enter/Change Password button to open the Encumbrance Password Setup window.
 3. If you’re setting up the password for the first time, enter and confirm the password. 
 4. If you’re modifying the password, enter the existing password, and then enter and confirm the new password.
