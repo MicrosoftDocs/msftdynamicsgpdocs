@@ -457,13 +457,13 @@ ENC_Setup / ENC40000 -Encumbrance Setup Holds encumbrance activation status, var
 ENC_SetupLine / ENC40100 -Encumbrance Budget Setup
 Holds budgets that have been set up in Encumbrance Management
 
-# Control Account Management
+## Control Account Management
 Control Account Management allows you to redistribute payables and receivables control account balances automatically based on the segment ID of each account. 
 You can create reports that display the balances for each segment, as well as printing a summary report that shows payables and receivables information for 
 respective cost centers. In addition, payables and receivables reports can be more accurate because receiving journals are generated that redistribute the control 
 account balances to predetermined segments, thereby reflecting the activity of specific areas of your business
 
-## Control Account Setup
+### Control Account Setup
 Use the information in this part of the documentation to learn more about installing and setting up Control Account Management. Control Account Management 
 automatically is registered if Payables Management or Receivables Management are registered for your company.
 
@@ -493,7 +493,7 @@ amount will be tracked by Control Account Management in the segment that relates
 We recommend that you verify distributions before entering payments if you’re using manual payments or entering and paying invoices at the same time. 
 Accounting anomalies can occur if transactions are recorded without the proper distributions.
 
-## Setting up Control Account Management
+### Setting up Control Account Management
 You can use the Control Account Management Setup window to set up Control Account Management after you’ve installed it.
 
 To set up Control Account Management:
