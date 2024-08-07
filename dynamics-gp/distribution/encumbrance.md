@@ -211,8 +211,8 @@ In addition to creating encumbrances for standard purchase orders, you also can 
 |-----------|---------------------------------------------------- |--------------------------------------------------------------------|
 | Standard  | Lists items that will be shipped to your business to be received into your inventory |The purchase is liquidated when a shipment/invoice receipt is posted|
 | Drop-Ship | Used for items you purchase on behalf of a customer. The items are shipped to the customer without being physically received into your inventory|The purchase is liquidated when an invoice is posted|
-| Blanket   | Lists a single item and its quantities that will be delivered in a series of shipments. The item will be received into your inventory |The control blanket line itemm is liquidated by creating blanket Line items.  These items are liquidated when a shipment/invoice receipt is posted.  |
-| Drop-Ship Blanket| Is a combination of drop-ship & blanket purchase  orders; lists a single item & the quantities that will be delivered to the customer in series  |The cotrol blanket line item is liequidated by creating blanket line items. The blanket line items are liquidated when an invoice receipt is posted.|
+| Blanket   | Lists a single item and its quantities that will be delivered in a series of shipments. The item will be received into your inventory |The control blanket line item is liquidated by creating blanket Line items.  These items are liquidated when a shipment/invoice receipt is posted.  |
+| Drop-Ship Blanket| Is a combination of drop-ship & blanket purchase  orders; lists a single item & the quantities that will be delivered to the customer in series  |The control blanket line item is liquidated by creating blanket line items. The blanket line items are liquidated when an invoice receipt is posted.|
 
 ## Control blanket line items and encumbrances
 
@@ -232,14 +232,14 @@ Value  - The reduction is for the value of the blanket line item.
 
 Use the Purchase Order Entry window to create and authorize encumbrances for standard and drop-ship purchase orders. A standard purchase order lists items that will be shipped to your business to be received into your inventory. A drop-ship purchase order lists items that will be shipped directly to the customer.
 
-1. Open the Purchase Order Entry window. (Transactions >> Purchasing >> Purchase Order Entry)
+1. Open the Purchase Order Entry window (Transactions >> Purchasing >> Purchase Order Entry).
 2. Select Standard or Drop-Ship as the purchase order type.
 3. Enter the purchase order. See the Purchase Order Processing documentation for more information.
 
    If any line items exceed the available budgeted amount, a message will be displayed asking if you want to encumber the purchase. You must enter a password, if one was set up.
 
    If you change the information in the Quantity Ordered, Quantity Canceled, or Unit Cost fields for a line item, the line is validated again.
-4. Choose Save and close the window. You will have the option to print an edit list. 
+4. Choose Save and close the window. You will have the option to print an edit list.
 
    You can choose File >> Print or the Print icon, or use the Print Purchasing Documents window, to print the purchase order if all lines have a status of Encumbered.
 
@@ -303,7 +303,7 @@ The following describes how encumbrance amounts are affected when you modify, de
 
 ## Encumbrance liquidations
 
-Some actions reduce, or liquidate, encumbrances. A liquidation is a reduction in the encumbered amount due to posting a receipt, closing or canceling a purchase order or line item, or reducing the quantity ordered or unit cost of the purchase order line item.
+Some actions reduce, or liquidate, encumbrances. A liquidation is a reduction in the encumbered amount due to posting a receipt, closing or cancelling a purchase order or line item, or reducing the quantity ordered or unit cost of the purchase order line item.
 
 - Closed or canceled purchase orders
 
