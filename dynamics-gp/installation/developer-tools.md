@@ -105,10 +105,12 @@ Also make sure the view does not reference a table that does not exist in the no
 This error usually occurs when the incorrect version of the Report Viewer Redistributable is installed on the machine where Integration Manager is running.
 
 1. Uninstall the 2013 redistributable files.  [Install the 2010 redistributable files.](https://www.microsoft.com/en-us/download/details.aspx?id=20884)
-2. Launch both Integration Manager and Dynamics GP using 'Run As Administrator' (right click) and now, while in an integration, click View > Integration Logs and verify the log comes up without any errors.
-Also, in the integration progress window, click the 'View Log' button and have the report show up
+2. Launch both Integration Manager and Dynamics GP using 'Run As Administrator' (right-click).
+3. While in an integration, select View > Integration Logs and verify the log comes up without any errors.
 
-If the above steps don't resolve this error, you can try a Repair of both Integration Manager and Microsoft Dynamics GP, if not uninstall and reinstall or try to install this to another machine, example server, just to see if it works there, then you know it is machine specific.
+   Also, in the integration progress window, select the 'View Log' button and to show the report.
+
+If the above steps don't resolve this error, you can try a Repair of both Integration Manager and Microsoft Dynamics GP. If not, uninstall and reinstall or try to install this to another machine or example server, just to see if it works there. Then you know it is machine specific.
 
 ## Visual Studio Tools
 
