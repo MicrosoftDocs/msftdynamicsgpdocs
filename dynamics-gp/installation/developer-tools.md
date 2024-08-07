@@ -81,13 +81,14 @@ Once you know more based on user, you can look at other items too such as:
 
 #### Unable to open source queries because Query 'XXXX' is not found in the database. - ADO Field is nothing.
 
-Does it work if you right click and launch IM as administrator? 
-What if you view the file does it seem to view or error out there too? 
-Is it just this IMD or does maybe the Sample IMD work for you?
+- Does it work if you right click and launch IM as administrator? 
+- What if you view the file does it seem to view or error out there too? 
+- Is it just this IMD or does maybe the Sample IMD work for you?
  
-If you haven’t already done so, please try the steps in the [following article](https://community.dynamics.com/gp/b/dynamicsgp/archive/2012/02/07/ado-field-is-nothing-error-message-in-integration-manager)
+If you haven’t already done so, try the steps in the [following article](https://community.dynamics.com/gp/b/dynamicsgp/archive/2012/02/07/ado-field-is-nothing-error-message-in-integration-manager)
 
 Other causes:
+
 1. If the source file is on a mapped drive or other network location, try moving it to the local server where IM is installed, then point IM to that local copy to rule out intermittent network issues or just general issues with accessing the shared file.  You can also try copying the contents of the source file into a new source file, then point IM to that and continue testing.
  
 2. This can also occur if the data type of a column was changed that is used in the Query Relationship window. Open the properties for each source and then click the Refresh Columns button on the Columns tab. After you refresh the columns, verify the mapping of the integration and the Query Relationship window are still correct.
@@ -96,8 +97,8 @@ Other causes:
 Also make sure the view does not reference a table that does not exist in the non-working company/ database.
  
 4. This error will also surface if there is a period in the (.) in the Source filename.
-Example the user was saving the file as FILE.11.23.23 - if you change the period to underscores or remove it, then the integration works.
-Make sure you have the VIEW for file extensions on in file explorer so this is easy to identify.
+
+   Example: The user was saving the file as FILE.11.23.23 - if you change the period to underscores or remove it, then the integration works. Make sure you have the VIEW for file extensions on in file explorer so this is easy to identify.
 
 #### Error when reviewing log files for Integration Manager - The Microsoft.ACE.OLEDB.12.0 Provider is not registered on the local machine
 
