@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 8/7/2024
+ms.date: 8/21/2024
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -389,6 +389,39 @@ If the default email sends out successfully, then we can deduce that the issue l
 * Missing Bookmarks [Verify all bookmarks are present](https://community.dynamics.com/blogs/post/?postid=ca4e2050-fb97-42c0-93d8-1481374ec473)
 * Text Boxes will cause the template to fail; text boxes should not be used as it can cause an error that is not seen within Microsoft Dynamics GP.
 * Remove Have Replies Sent to on both the Message ID and E-mail setup. The Message Setup window can be found using either path: 
+
+### Body of email missing when emailing to customer or vendor
+
+Below are some items to check of why this may happen:
+
+1. In the Message ID, delete any unnecessary blank lines prior to the greeting line in the email body or other areas.
+1. Create and test emailing with a new Message ID by using just the word TEST in the Subject. In the body, make three lines labeled as line1, line2, line 3. Don't copy from an existing email.  
+
+   When testing make sure you test with a new document. 
+
+   **Existing documents will still pull the old message body and subject that is saved within the tables so they are not a valid test.**
+
+1. Does the MessageID look valid for other document types emailed from GP or is it specific to this document type?
+1. Do you have any third party products that are installed for this company that may come into play with e-mail?  It's good to test without 3rd parties installed.
+1. It's advisable to use the **New Outlook client** as it appears to manage message formatting more effectively.
+1. Does the email have a signature or disclaimer added to the bottom of it?  
+   1. Verify this in the INBOX of the user who received the email from Dynamics GP. 
+   1. Verify this on the from SENT folder of the user who emailed to document out of Dynamics GP.
+   1. It's normal to see the signature/disclaimer on the receiving INBOX, but not in the SENT mailbox. 
+
+   If there's a disclaimer or signature that appears on the received email, obtain confirmation from your IT group whether they have any add-ons for Exchange Online or Email handling related to signatures or disclaimers. Keep in mind you will usually see no signature on the SENT folder of the user sending the email. You will only see it on the user who received it.  
+ 
+   Microsoft Dynamics GP will function properly with the default Exchange Online organization-wide signatures and disclaimers setup, which is Text only.  Please see the [limitations posted by Exchange Online](/microsoft-365/admin/setup/create-signatures-and-disclaimers?view=o365-worldwide#limitations-of-organization-wide-signatures) for their default organization wide signatures.
+
+   If you have third party add-ons in Exchange Online to add logos or do any formatting to these signatures/disclaimers, it can break Microsoft Dynamics GP's formatting on emails. Test again with the add-ons disabled. If this test works, then you can add an exception to exclude emails from Microsoft Dynamics GP. Or, you can contact your third party to see if there's any way for the add-on to function without changing the email's formatting, as this is out of Microsoft Dynamics GP's control.   
+   
+1. How does the message id look like in the SY04915 table if you execute the following Query to Text? Do the results show the line breaks?
+
+   select EmailBody from SY04915 where DOCNUMBR = 'DOCNUMBR '
+
+   Replace the DOCNUMBR field with the remittance payment number. 
+
+   If the SQL Query displays the data with the proper format in this table when executing to Text, then that tells us that GP is storing it properly in the tables and issue is not related to Dynamics GP.
 
 ### System wide 
 * Administration >> Setup >> Company >> E-mail Message Setup
