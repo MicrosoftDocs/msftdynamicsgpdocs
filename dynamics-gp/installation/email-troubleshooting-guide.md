@@ -405,9 +405,9 @@ Below are some items to check of why this may happen:
 1. Do you have any third party products that are installed for this company that may come into play with e-mail?  It's good to test without 3rd parties installed.
 1. It's advisable to use the **New Outlook client** as it appears to manage message formatting more effectively.
 1. Does the email have a signature or disclaimer added to the bottom of it?  
-	a. Verify this in the INBOX of the user who received the email from Dynamics GP. 
-	b. Verify this on the from SENT folder of the user who emailed to document out of Dynamics GP.
-	c. It's normal to see the signature/disclaimer on the receiving INBOX, but not in the SENT mailbox. 
+   1. Verify this in the INBOX of the user who received the email from Dynamics GP. 
+   1. Verify this on the from SENT folder of the user who emailed to document out of Dynamics GP.
+   1. It's normal to see the signature/disclaimer on the receiving INBOX, but not in the SENT mailbox. 
 
    If there's a disclaimer or signature that appears on the received email, obtain confirmation from your IT group whether they have any add-ons for Exchange Online or Email handling related to signatures or disclaimers. Keep in mind you will usually see no signature on the SENT folder of the user sending the email. You will only see it on the user who received it.  
  
