@@ -16,7 +16,7 @@ As Microsoft continues focusing on innovation and investments in cloud solutions
 As we expand investment in Dynamics 365 cloud solutions, customers and partners are encouraged to upgrade systems and software to work with Dynamics 365 cloud offerings, which provide superior security and business management features.
 
 - If you are a customer, visit [aka.ms/customerGP-EOL](https://aka.ms/customerGP-EOL) for more information.
-- If you are a partner, visit [aka.ms/partnerGP-EOL](aka.ms/partnerGP-EOL) for more information.
+- If you are a partner, visit [aka.ms/partnerGP-EOL](https://aka.ms/partnerGP-EOL) for more information.
 
 We are encouraging customers to transition to Dynamics 365 Business Central, which offers advanced AI tools and robust security features to help businesses thrive in the new era of cloud and AI computing.  We understand migrating systems can sound daunting – please reach out to your partner or [leverage this list of expert partners](https://mbs2.microsoft.com/fileexchange/?fileID=dee0b471-6dfa-4539-a73b-879c68a209af) to get started on your journey!
 
