@@ -275,7 +275,7 @@ This issue can occur with all reports, and these can be caused by MessageID issu
 >        
 >  8. If the Application ID is not saving or has issues, test by launching GP as Administrator, right-click your GP icon and choose Run as Administrator.
 >  
->  9. Rule out [3rd party authentication providers](/dynamics-gp/installation/email-troubleshooting-guide#dynamics-gp-modern-authentication-and-third-party-authentication).
+>  9. Rule out [3rd party authentication providers](/dynamics-gp/installation/email-troubleshooting-guide#dynamics-gp-modern-authentication-and-third-party-authentication)
 
 * If you still have issues, you may want to create a Fiddler trace that will be more specific of the problem.
 
@@ -884,7 +884,7 @@ Please review each of the items below to determine the cause of this error messa
 1. Did you have MFA working on a prior version?  If you did, when you upgrade, if you had MFA on prior, you need to follow the steps:
 [Modern Authentication and upgrading to Microsoft Dynamics GP](https://community.dynamics.com/blogs/post/?postid=b571b4d4-1d58-41f4-b4a3-3c8ee1c4602c)
  
-2.  Tools | Setup | Company | Email Setup, unless you are using web client, only the Desktop Client properties need to be populated with your application ID.  The Tenant ID field should be left blank, [unless you are using the new feature in 18.6 that allows Single tenant in Azure](https://community.dynamics.com/blogs/post/?postid=18194a5d-4b7f-ee11-a81c-6045bdbe566c). 
+2.  Tools | Setup | Company | Email Setup, unless you are using web client, only the Desktop Client properties need to be populated with your application ID.  The Tenant ID field should be left blank, [unless you are using the new feature in 18.6 that allows Single tenant in Azure](https://go.microsoft.com/fwlink/?linkid=2288531). 
  
 3.  You are getting a message about the Dynamics_MSGraphEmail.log file. Review this file to see if there is a different error message.  To get this file you need to go to the workstation/machine where you got that error and go to Start > Run, type %temp% and click OK to open your local temp file. The log file should be found there.
 
@@ -922,7 +922,7 @@ Try to select and send 20 or 30 at a time to rule out the above case.
 
 Please review each of the items below to determine the possible solution / cause of this error message.
 
-1. Tools | Setup | Company | Email Setup, unless you are using web client, only the Desktop Client properties need to be populated with your application ID.  The Tenant ID field should be left blank, [unless you are using the new feature in 18.6 that allows Single tenant in Azure](https://community.dynamics.com/blogs/post/?postid=18194a5d-4b7f-ee11-a81c-6045bdbe566c). 
+1. Tools | Setup | Company | Email Setup, unless you are using web client, only the Desktop Client properties need to be populated with your application ID.  The Tenant ID field should be left blank, [unless you are using the new feature in 18.6 that allows Single tenant in Azure](https://go.microsoft.com/fwlink/?linkid=2288531). 
 Sometimes it is easier to get the Desktop Client working then go onto other fields if needed in this window, based on what you are deploying in Dynamics GP.
 
 2. Did you try this on another machine and with another user such as user SA on SQL server just to rule out machine specific and .NET issues, etc.
