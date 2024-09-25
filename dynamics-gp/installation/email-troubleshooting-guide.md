@@ -271,7 +271,7 @@ This issue can occur with all reports, and these can be caused by MessageID issu
 >  
 >  6. Antivirus/Malware could also cause the problem to not authenticate, try to rule it out as the cause of the problem.
 >  
->  7. Dynamics GP supports [Multi-tenant authentication](https://community.dynamics.com/blogs/post/?postid=bce65f37-eb08-4531-b62b-32a8af728f58) in the Microsoft Entra app Registration. If you set this up incorrectly, you'll see the message *Unknown Error*. [Single Tenant App Registration supported with 18.6 release](https://community.dynamics.com/blogs/post/?postid=18194a5d-4b7f-ee11-a81c-6045bdbe566c).
+>  7. Dynamics GP supports [Multi-tenant authentication](https://community.dynamics.com/blogs/post/?postid=bce65f37-eb08-4531-b62b-32a8af728f58) in the Microsoft Entra app Registration. If you set this up incorrectly, you'll see the message *Unknown Error*. [Single Tenant App Registration supported with 18.6 release](https://go.microsoft.com/fwlink/?linkid=2288531).
 >        
 >  8. If the Application ID is not saving or has issues, test by launching GP as Administrator, right-click your GP icon and choose Run as Administrator.
 >  
@@ -884,7 +884,7 @@ Please review each of the items below to determine the cause of this error messa
 1. Did you have MFA working on a prior version?  If you did, when you upgrade, if you had MFA on prior, you need to follow the steps:
 [Modern Authentication and upgrading to Microsoft Dynamics GP](https://community.dynamics.com/blogs/post/?postid=b571b4d4-1d58-41f4-b4a3-3c8ee1c4602c)
  
-2.  Tools | Setup | Company | Email Setup, unless you are using web client, only the Desktop Client properties need to be populated with your application ID.  The Tenant ID field should be left blank, [unless you are using the new feature in 18.6 that allows Single tenant in Azure](https://community.dynamics.com/blogs/post/?postid=18194a5d-4b7f-ee11-a81c-6045bdbe566c). 
+2.  Tools | Setup | Company | Email Setup, unless you are using web client, only the Desktop Client properties need to be populated with your application ID.  The Tenant ID field should be left blank, [unless you are using the new feature in 18.6 that allows Single tenant in Azure](https://go.microsoft.com/fwlink/?linkid=2288531). 
  
 3.  You are getting a message about the Dynamics_MSGraphEmail.log file. Review this file to see if there is a different error message.  To get this file you need to go to the workstation/machine where you got that error and go to Start > Run, type %temp% and click OK to open your local temp file. The log file should be found there.
 
@@ -922,7 +922,7 @@ Try to select and send 20 or 30 at a time to rule out the above case.
 
 Please review each of the items below to determine the possible solution / cause of this error message.
 
-1. Tools | Setup | Company | Email Setup, unless you are using web client, only the Desktop Client properties need to be populated with your application ID.  The Tenant ID field should be left blank, [unless you are using the new feature in 18.6 that allows Single tenant in Azure](https://community.dynamics.com/blogs/post/?postid=18194a5d-4b7f-ee11-a81c-6045bdbe566c). 
+1. Tools | Setup | Company | Email Setup, unless you are using web client, only the Desktop Client properties need to be populated with your application ID.  The Tenant ID field should be left blank, [unless you are using the new feature in 18.6 that allows Single tenant in Azure](https://go.microsoft.com/fwlink/?linkid=2288531). 
 Sometimes it is easier to get the Desktop Client working then go onto other fields if needed in this window, based on what you are deploying in Dynamics GP.
 
 2. Did you try this on another machine and with another user such as user SA on SQL server just to rule out machine specific and .NET issues, etc.
@@ -939,7 +939,7 @@ Usually Dynamics GP will create this folder.  Within this folder is the ‘Micro
 5. This error can be caused by using an App Registration that was setup as "Single Tenant" instead of "Multitenant" and then entering it in the wrong field in Dynamics GP.  
 If you go to a workstation where they get this error, go to Start > Run, type %temp% and click OK it will open the local temp folder. They may have a MSGraph log file being created there that will provide more information.
 
-6. As a test, temporarily, fully disabling the Public, Private, and Domain firewalls. Then log into the server with an O365 account (Global Admin) to enter the AppID. If the application ID saves, you can re-enabled the firewalls and continue to email from Dynamics GP.
+6. As a test, temporarily, fully disabling the Public, Private, and Domain firewalls. Then log into the server with an O365 account to enter the AppID. If the application ID saves, you can re-enabled the firewalls and continue to email from Dynamics GP.
 
 7. Anti-virus can also cause issues with saving the application ID.  Test to temporarily disable the AV or create an exception for Dynamics GP code folder. Reboot may be required once added.
 
