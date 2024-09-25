@@ -939,7 +939,7 @@ Usually Dynamics GP will create this folder.  Within this folder is the ‘Micro
 5. This error can be caused by using an App Registration that was setup as "Single Tenant" instead of "Multitenant" and then entering it in the wrong field in Dynamics GP.  
 If you go to a workstation where they get this error, go to Start > Run, type %temp% and click OK it will open the local temp folder. They may have a MSGraph log file being created there that will provide more information.
 
-6. As a test, temporarily, fully disabling the Public, Private, and Domain firewalls. Then log into the server with an O365 account (Global Admin) to enter the AppID. If the application ID saves, you can re-enabled the firewalls and continue to email from Dynamics GP.
+6. As a test, temporarily, fully disabling the Public, Private, and Domain firewalls. Then log into the server with an O365 account to enter the AppID. If the application ID saves, you can re-enabled the firewalls and continue to email from Dynamics GP.
 
 7. Anti-virus can also cause issues with saving the application ID.  Test to temporarily disable the AV or create an exception for Dynamics GP code folder. Reboot may be required once added.
 
