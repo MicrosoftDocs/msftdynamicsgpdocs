@@ -271,11 +271,11 @@ This issue can occur with all reports, and these can be caused by MessageID issu
 >  
 >  6. Antivirus/Malware could also cause the problem to not authenticate, try to rule it out as the cause of the problem.
 >  
->  7. Dynamics GP supports [Multi-tenant authentication](https://community.dynamics.com/blogs/post/?postid=bce65f37-eb08-4531-b62b-32a8af728f58) in the Microsoft Entra app Registration. If you set this up incorrectly, you'll see the message *Unknown Error*. [Single Tenant App Registration supported with 18.6 release](https://community.dynamics.com/blogs/post/?postid=18194a5d-4b7f-ee11-a81c-6045bdbe566c).
+>  7. Dynamics GP supports [Multi-tenant authentication](https://community.dynamics.com/blogs/post/?postid=bce65f37-eb08-4531-b62b-32a8af728f58) in the Microsoft Entra app Registration. If you set this up incorrectly, you'll see the message *Unknown Error*. [Single Tenant App Registration supported with 18.6 release](https://go.microsoft.com/fwlink/?linkid=2288531).
 >        
 >  8. If the Application ID is not saving or has issues, test by launching GP as Administrator, right-click your GP icon and choose Run as Administrator.
 >  
->  9. Rule out [3rd party authentication providers](/dynamics-gp/installation/email-troubleshooting-guide#dynamics-gp-modern-authentication-and-third-party-authentication)
+>  9. Rule out [3rd party authentication providers](/dynamics-gp/installation/email-troubleshooting-guide#dynamics-gp-modern-authentication-and-third-party-authentication).
 
 * If you still have issues, you may want to create a Fiddler trace that will be more specific of the problem.
 
