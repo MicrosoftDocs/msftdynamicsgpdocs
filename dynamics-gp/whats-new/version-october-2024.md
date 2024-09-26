@@ -5,13 +5,13 @@ author: theley502
 ms.author: theley
 ms.reviewer: jswymer
 ms.topic: article
-ms.date: 09/25/2024
+ms.date: 09/26/2024
 ---
 # What's New in Dynamics GP in October 2024
 
 This page lists enhancements to Dynamics GP in the October 2024 release. The Dynamics GP October 2024 release enhances different areas of the product.
 
-For an overview and additional details for key enhancements, see the [Dynamics GP Blog](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-october-2024---feature-blog-series-schedule).
+For an overview and additional details for key enhancements, see the [Dynamics GP Blog](https://community.dynamics.com/blogs/post/?postid=da2b849a-e349-ef11-a317-6045bda6fe6a).
 
 ## Core Features
 
@@ -87,10 +87,9 @@ For example:
 * You enter a Purchase Order and you view the email information to verify or edit.
 * The system will display email addresses how they are assigned in the email setup
 
-![Shows vendor email options](media/vendor-email-options.png)
+![Shows vendor email options](media/VENDORFETEMAIL.png)
 
-![Shows purchasing email detail entry](media/purchasing-email-detail-entry.png)
- 
+
 ### Sales Document Inquiry Changes
 
 There is now a drill down to Sales Document Detail Inquiry Zoom on Document Number and Orig Number fields on the Sales Document Inquiry window. When you drill down, it will display that selected document in the Sales Transaction Inquiry window.
