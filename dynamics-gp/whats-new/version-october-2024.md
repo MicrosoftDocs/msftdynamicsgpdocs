@@ -144,4 +144,4 @@ Similar to the Payables 1099 change, there is now an option available on Print 1
 
 With the October 2024 release, we're continuing to improve the workflow emails. Now, in addition to using the item detail decimals for formatting, the workflow emails will trim trailing zeroes.
 
-![Shows card](media/task.png)
+![Shows task](media/task.png)
