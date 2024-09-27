@@ -7,7 +7,7 @@ manager: annbe
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 5/2/2024
+ms.date: 9/13/2024
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -26,11 +26,15 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 - [Microsoft Dynamics GP Technical Troubleshooting (KB's)](/troubleshoot/dynamics/gp/welcome-gp)
 
+- [Microsoft Dynamics GP Forums](https://community.dynamics.com/forums/thread/?partialUrl=gp)
+
 - [Microsoft Dynamics GP YouTube Playlist](https://www.youtube.com/playlist?list=PLFSag4twLTk_9TB90pvujqkFmp7uc1UAt) 
 
 ## Microsoft Dynamics GP
 
   Includes What's New and documentation of all features for this release. 
+  
+- [Dynamics GP October 2024 - Feature Blog Series - 18.7](https://community.dynamics.com/blogs/post/?postid=da2b849a-e349-ef11-a317-6045bda6fe6a)
 
 - [Dynamics GP October 2023 - Feature Blog Series - 18.6](https://community.dynamics.com/blogs/post/?postid=50cc4ae5-d25e-ee11-a81c-00224852432e)
   
@@ -40,8 +44,6 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
 - [Dynamics GP October 2020- Feature Blog Series - 18.3](https://community.dynamics.com/blogs/post/?postid=0052524e-26f1-4471-80cf-91c294eb3bf5)
  
-- [Dynamics GP October 2019 - Feature Blog Series - 18.2](https://community.dynamics.com/blogs/post/?postid=ef7a7133-bbd0-4bc2-bae8-73cbd133795e)
-
  
 - [Product Release Downloads for Microsoft Dynamics GP](/dynamics/s-e/gp/MDGP2018_Release_Download_378)
 

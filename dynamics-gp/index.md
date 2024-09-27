@@ -4,11 +4,22 @@ description: Dynamics GP is a business management solution for small and mid-siz
 author: jswymer
 
 ms.topic: get-started
-ms.date: 07/13/2020
+ms.date: 09/25/2024
 ms.author: jswymer
 
 ---
 # Welcome to Dynamics GP!
+
+## Discontinuing support for Dynamics GP
+
+As Microsoft continues focusing on innovation and investments in cloud solutions and technologies, we will end Dynamics GP support on September 30, 2029, for product enhancements, regulatory (tax) updates, and technical support. Security updates/patches, if needed, will be made available until April 30, 2031.
+As we expand investment in Dynamics 365 cloud solutions, customers and partners are encouraged to upgrade systems and software to work with Dynamics 365 cloud offerings, which provide superior security and business management features.
+
+- If you are a customer, visit [aka.ms/customerGP-EOL](https://aka.ms/customerGP-EOL) for more information.
+- If you are a partner, visit [aka.ms/partnerGP-EOL](https://aka.ms/partnerGP-EOL) for more information.
+- [Customer FAQ](https://mbs2.microsoft.com/fileexchange/?fileID=fba514de-c6c0-4307-aa5d-7225fe372e99)
+
+We are encouraging customers to transition to Dynamics 365 Business Central, which offers advanced AI tools and robust security features to help businesses thrive in the new era of cloud and AI computing.  We understand migrating systems can sound daunting – please reach out to your partner or [leverage this list of expert partners](https://mbs2.microsoft.com/fileexchange/?fileID=dee0b471-6dfa-4539-a73b-879c68a209af) to get started on your journey!
 
 Dynamics GP is a business management solution for small and mid-sized organizations that automates and streamlines business processes and helps you manage your business. Dynamics GP has a long history, and you can find information about functionality here on learn.microsoft.com, on the installation media for your version of Dynamics GP, and on the [Dynamics GP Support and Services Blog](https://community.dynamics.com/gp/b/dynamicsgp).  
 

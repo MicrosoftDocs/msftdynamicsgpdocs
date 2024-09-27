@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 7/11/2024
+ms.date: 8/21/2024
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -271,7 +271,7 @@ This issue can occur with all reports, and these can be caused by MessageID issu
 >  
 >  6. Antivirus/Malware could also cause the problem to not authenticate, try to rule it out as the cause of the problem.
 >  
->  7. Dynamics GP supports [Multi-tenant authentication](https://community.dynamics.com/blogs/post/?postid=bce65f37-eb08-4531-b62b-32a8af728f58) in the Microsoft Entra app Registration. If you set this up incorrectly, you'll see the message *Unknown Error*. [Single Tenant App Registration supported with 18.6 release](https://community.dynamics.com/blogs/post/?postid=18194a5d-4b7f-ee11-a81c-6045bdbe566c).
+>  7. Dynamics GP supports [Multi-tenant authentication](https://community.dynamics.com/blogs/post/?postid=bce65f37-eb08-4531-b62b-32a8af728f58) in the Microsoft Entra app Registration. If you set this up incorrectly, you'll see the message *Unknown Error*. [Single Tenant App Registration supported with 18.6 release](https://go.microsoft.com/fwlink/?linkid=2288531).
 >        
 >  8. If the Application ID is not saving or has issues, test by launching GP as Administrator, right-click your GP icon and choose Run as Administrator.
 >  
@@ -389,6 +389,39 @@ If the default email sends out successfully, then we can deduce that the issue l
 * Missing Bookmarks [Verify all bookmarks are present](https://community.dynamics.com/blogs/post/?postid=ca4e2050-fb97-42c0-93d8-1481374ec473)
 * Text Boxes will cause the template to fail; text boxes should not be used as it can cause an error that is not seen within Microsoft Dynamics GP.
 * Remove Have Replies Sent to on both the Message ID and E-mail setup. The Message Setup window can be found using either path: 
+
+### Body of email missing when emailing to customer or vendor
+
+Below are some items to check of why this may happen:
+
+1. In the Message ID, delete any unnecessary blank lines prior to the greeting line in the email body or other areas.
+1. Create and test emailing with a new Message ID by using just the word TEST in the Subject. In the body, make three lines labeled as line1, line2, line 3. Don't copy from an existing email.  
+
+   When testing make sure you test with a new document. 
+
+   **Existing documents will still pull the old message body and subject that is saved within the tables so they are not a valid test.**
+
+1. Does the MessageID look valid for other document types emailed from GP or is it specific to this document type?
+1. Do you have any third party products that are installed for this company that may come into play with e-mail?  It's good to test without 3rd parties installed.
+1. It's advisable to use the **New Outlook client** as it appears to manage message formatting more effectively.
+1. Does the email have a signature or disclaimer added to the bottom of it?  
+   1. Verify this in the INBOX of the user who received the email from Dynamics GP. 
+   1. Verify this on the from SENT folder of the user who emailed to document out of Dynamics GP.
+   1. It's normal to see the signature/disclaimer on the receiving INBOX, but not in the SENT mailbox. 
+
+   If there's a disclaimer or signature that appears on the received email, obtain confirmation from your IT group whether they have any add-ons for Exchange Online or Email handling related to signatures or disclaimers. Keep in mind you will usually see no signature on the SENT folder of the user sending the email. You will only see it on the user who received it.  
+ 
+   Microsoft Dynamics GP will function properly with the default Exchange Online organization-wide signatures and disclaimers setup, which is Text only.  Please see the [limitations posted by Exchange Online](/microsoft-365/admin/setup/create-signatures-and-disclaimers?view=o365-worldwide#limitations-of-organization-wide-signatures) for their default organization wide signatures.
+
+   If you have third party add-ons in Exchange Online to add logos or do any formatting to these signatures/disclaimers, it can break Microsoft Dynamics GP's formatting on emails. Test again with the add-ons disabled. If this test works, then you can add an exception to exclude emails from Microsoft Dynamics GP. Or, you can contact your third party to see if there's any way for the add-on to function without changing the email's formatting, as this is out of Microsoft Dynamics GP's control.   
+   
+1. How does the message id look like in the SY04915 table if you execute the following Query to Text? Do the results show the line breaks?
+
+   select EmailBody from SY04915 where DOCNUMBR = 'DOCNUMBR '
+
+   Replace the DOCNUMBR field with the remittance payment number. 
+
+   If the SQL Query displays the data with the proper format in this table when executing to Text, then that tells us that GP is storing it properly in the tables and issue is not related to Dynamics GP.
 
 ### System wide 
 * Administration >> Setup >> Company >> E-mail Message Setup
@@ -732,26 +765,24 @@ If it is grayed out, then you are tied to Exchange Online, so these should be co
 
 ### Troubleshooting tips for Workflow E-mail
 
+#### Execution Timeout Expired. The timeout period elapsed prior to the completion of the operation or the server is not responding.
+
 When approving Requestions as an example thru Workflow email links (which uses web services), notifications may not go to the approver. If you look at the exception errors for System you will see 
 
-**Execution Timeout Expired.  The timeout period elapsed prior to the completion of the operation or the server is not responding.**
-
 When reviewing a SQL Profile trace, you can see calls (qdCreateSQL procedure) that happen for each E-Mail being sent.  There is about a 30 second window for this to complete.  If you have a larger data set and maybe joined more tables to the workflow message, this may not complete and cause the above error and then notifications appear to stop.  To resolve this problem, you may need to look at the workflow, tables that are joined, comments that are printing and see if there is an index that can be put on a specific table to better  sort through the data.  The SQL Display Estimated Execution Plan can be used to help identify your specific data issue.
-
 
 1. If no workflow emails are sent, verify if it is all workflow or just one specific workflow where this is not working.
 
 a. For the user you are testing with, verify in *Active Directory under the General tab* that the E-mail field is populated, if it is blank emails will not send.
          This needs to be done for all users that are GP Approvers in workflow
-
 b. Try to send a Test E-Mail in Workflow Setup does it work?  This process will use the user listed in the SMTP Authentication area of the window.
-
 c. The SY04920 table is not used for workflow emails or Modern Auth once setup and becomes non-relevant.            
       
 2. If we are using templates, we should try a workflow email with no attachments, just to see if the email works.
 
 3. When a user 1st submits for approval in workflow, that will go through Exchange, usually submitted within Dynamics GP.
 From there on out, when a user approves through the workflow email links, to approve what was submitted, that will use [SMTP](https://community.dynamics.com/blogs/post/?postid=7aaa9918-06a0-4e88-adac-fc30853b97dc) for all other approvals from Web Services workflow emails.
+
 If an email is failing from the email links this could indicate a problem with web services.
 Test approving the email from within Dynamics GP, then we know workflow and emails are working, just not the web services links.
 
@@ -759,6 +790,16 @@ Test approving the email from within Dynamics GP, then we know workflow and emai
    
 6. Make sure you have VALID users in AD as Workflow Managers.  If you do not have valid AD users as Workflow Managers, it may cause performance issues in your workflow and undesired results.  
 Many times, customers have employees that leave the company but their users are still part of the workflow and may cause issues.
+To help streamline your processes and increase efficiency, {review this article and video](https://community.dynamics.com/blogs/post/?postid=d847301a-a499-439c-bd68-d46173504e2f) for tips about setting up your workflows for optimized performance.
+
+#### The file you have selected does not exist
+
+You may notice this error message when sending email with attachments in workflow.
+
+1. Does the error seem intermittent?  Does it only happen when you are trying to attach something to the email?
+2. If it works with some attachments and not others what is the difference?
+3. This error can happen when the attachment file name is very long.
+4. You may also see this error message if the Batch ID you submit the workflow on has special characters, test with a simple Batch ID and see if it works.
 
 [How to verify if Microsoft Dynamics GP Web Services is functioning correctly](/troubleshoot/dynamics/gp/verify-if-web-service-is-correct)
 
@@ -843,7 +884,7 @@ Please review each of the items below to determine the cause of this error messa
 1. Did you have MFA working on a prior version?  If you did, when you upgrade, if you had MFA on prior, you need to follow the steps:
 [Modern Authentication and upgrading to Microsoft Dynamics GP](https://community.dynamics.com/blogs/post/?postid=b571b4d4-1d58-41f4-b4a3-3c8ee1c4602c)
  
-2.  Tools | Setup | Company | Email Setup, unless you are using web client, only the Desktop Client properties need to be populated with your application ID.  The Tenant ID field should be left blank, [unless you are using the new feature in 18.6 that allows Single tenant in Azure](https://community.dynamics.com/blogs/post/?postid=18194a5d-4b7f-ee11-a81c-6045bdbe566c). 
+2.  Tools | Setup | Company | Email Setup, unless you are using web client, only the Desktop Client properties need to be populated with your application ID.  The Tenant ID field should be left blank, [unless you are using the new feature in 18.6 that allows Single tenant in Azure](https://go.microsoft.com/fwlink/?linkid=2288531). 
  
 3.  You are getting a message about the Dynamics_MSGraphEmail.log file. Review this file to see if there is a different error message.  To get this file you need to go to the workstation/machine where you got that error and go to Start > Run, type %temp% and click OK to open your local temp file. The log file should be found there.
 
@@ -881,7 +922,7 @@ Try to select and send 20 or 30 at a time to rule out the above case.
 
 Please review each of the items below to determine the possible solution / cause of this error message.
 
-1. Tools | Setup | Company | Email Setup, unless you are using web client, only the Desktop Client properties need to be populated with your application ID.  The Tenant ID field should be left blank, [unless you are using the new feature in 18.6 that allows Single tenant in Azure](https://community.dynamics.com/blogs/post/?postid=18194a5d-4b7f-ee11-a81c-6045bdbe566c). 
+1. Tools | Setup | Company | Email Setup, unless you are using web client, only the Desktop Client properties need to be populated with your application ID.  The Tenant ID field should be left blank, [unless you are using the new feature in 18.6 that allows Single tenant in Azure](https://go.microsoft.com/fwlink/?linkid=2288531). 
 Sometimes it is easier to get the Desktop Client working then go onto other fields if needed in this window, based on what you are deploying in Dynamics GP.
 
 2. Did you try this on another machine and with another user such as user SA on SQL server just to rule out machine specific and .NET issues, etc.
@@ -898,7 +939,7 @@ Usually Dynamics GP will create this folder.  Within this folder is the ‘Micro
 5. This error can be caused by using an App Registration that was setup as "Single Tenant" instead of "Multitenant" and then entering it in the wrong field in Dynamics GP.  
 If you go to a workstation where they get this error, go to Start > Run, type %temp% and click OK it will open the local temp folder. They may have a MSGraph log file being created there that will provide more information.
 
-6. As a test, temporarily, fully disabling the Public, Private, and Domain firewalls. Then log into the server with an O365 account (Global Admin) to enter the AppID. If the application ID saves, you can re-enabled the firewalls and continue to email from Dynamics GP.
+6. As a test, temporarily, fully disabling the Public, Private, and Domain firewalls. Then log into the server with an O365 account to enter the AppID. If the application ID saves, you can re-enabled the firewalls and continue to email from Dynamics GP.
 
 7. Anti-virus can also cause issues with saving the application ID.  Test to temporarily disable the AV or create an exception for Dynamics GP code folder. Reboot may be required once added.
 
