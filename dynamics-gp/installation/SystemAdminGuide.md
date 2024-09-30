@@ -3476,7 +3476,7 @@ To run Fiddler, do the follwoing steps:
    1. File->Capture Traffic F12, Save trace: File->Save>All Sessions.
    1. ave the trace out as .saz file.
 
-[For more information, see this blog post](https://learn.microsoft.com/en-us/archive/blogs/maheshk/easy-way-to-collect-fiddler-log-fiddlercap).
+[For more information, see this blog post](/archive/blogs/maheshk/easy-way-to-collect-fiddler-log-fiddlercap).
 
 ##### Dexterity Script Log
 
@@ -3522,7 +3522,7 @@ A Process Monitor can help track down where there is a security/permission issue
 
 To create a process monitor you can follow these steps:
 
-1. [Download the Process Monitor](http://www.microsoft.com/technet/sysinternals/processesandthreads/processmonitor.mspx).
+1. [Download the Process Monitor](https://www.microsoft.com/technet/sysinternals/processesandthreads/processmonitor.mspx).
 2. Extract Procmon.exe, but do not click on the exe at this time.
 3. Get to the point right before the user receives the error message.
 4. Double-click Procmon.exe to start the application; do not filter anything out if asked.
