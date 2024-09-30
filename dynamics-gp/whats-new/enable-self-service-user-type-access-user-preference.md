@@ -16,8 +16,6 @@ This feature is pretty self-explanatory and was a long-time request by our custo
 
 In the user setup, I have a user setup as a self-service user type. You can access this by choosing Tools, then Setup, click System and then choose User.
 
-<img src="media/image82.png" alt="User Setup" width="624" height="415" />
-
 The access to this window is under Dynamics GP, click User Preferences then choose the Workflow Delegation option.
 
 <img src="media/image83.png" alt="User Preferences" width="377" height="389" />

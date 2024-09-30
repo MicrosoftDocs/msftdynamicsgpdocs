@@ -10188,7 +10188,7 @@ Use the Report Schedule window to define the publish location and frequency for 
 To schedule a report:
 1.	Open the Report Schedule window. (Microsoft Dynamics GP menu >> Tools >> Routines >> Company >> Report Schedule)
 
-![Form](media/RPTSCH0001.PNG)
+![Form](media/RPTSCH0001.jpg)
 
 2.	Mark the box next to the report(s) to schedule in the scrolling window.
 
