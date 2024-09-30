@@ -396,9 +396,9 @@ Use the Committed Detail Inquiry window to view committed detail information. No
 1. Open the Committed Detail Inquiry window. 
 (Inquiry \>\> Purchasing \>\> Committed Detail)
 
-![Screenshot of the Committed Detail Inquiry window.](media/POEge034.jpg)
+   ![Screenshot of the Committed Detail Inquiry window.](media/POEge034.jpg)
 
-    You also can open this window by clicking on the Committed heading link in the Budget vs Actual & Committed Inquiry window.
+   You also can open this window by clicking on the Committed heading link in the Budget vs Actual & Committed Inquiry window.
 
 2. Select an account.
 
@@ -775,7 +775,7 @@ You can obtain detailed item information for purchasing documents using the Purc
 1. Open the Purchase Order Processing Item Inquiry window. 
 (Inquiry \>\> Purchasing \>\> Purchase Order Items)
 
-![Screenshot of the Purchase Order Processing Item Inquiry window.](media/POEge054.jpg)
+   ![Screenshot of the Purchase Order Processing Item Inquiry window.](media/POEge054.jpg)
 
 2. Select the applicable fields to complete your inquiry. For information on Purchase Order Inquiry, refer to the Purchase Order Processing documentation.
 
@@ -785,9 +785,9 @@ You can obtain detailed item information for purchasing documents using the Purc
 
 5. To view more detailed information, highlight a record and click on the PO Number heading link—the Purchase Order Inquiry Zoom window will open. The Approvals Status field displays the purchase order approval status.
 
-![Screenshot of the Purchase Order Inquiry Zoom window.](media/POEge056.jpg)
+   ![Screenshot of the Purchase Order Inquiry Zoom window.](media/POEge056.jpg)
 
-6.  When you are finished viewing the information, choose OK.
+6. When you are finished viewing the information, choose OK.
 
 #### Printing purchasing documents
 
@@ -798,12 +798,12 @@ Use the Print Purchasing Documents window to print purchasing documents.
 
 **To print purchasing documents:**
 
-1.  Open the Print Purchasing Documents window. 
+1. Open the Print Purchasing Documents window. 
 (Transactions \>\> Purchasing \>\> Print Purchasing Documents)
 
-![Screenshot of the Print Purchasing Documents window.](media/POEge059.jpg)
+   ![Screenshot of the Print Purchasing Documents window.](media/POEge059.jpg)
 
-    Select your printing preferences. For more information on printing preferences, refer to the Purchase Order Processing documentation.
+   Select your printing preferences. For more information on printing preferences, refer to the Purchase Order Processing documentation.
 
 2. Choose Print. The Purchasing Document and Exception report, which includes only approved purchase orders, will be printed.
 
