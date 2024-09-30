@@ -160,7 +160,7 @@ The update must be installed on each client workstation where Microsoft Dynamics
 
 #### To install the update
 
-1. Download the update from [Dynamics GP Downloads](https://learn.microsoft.com/en-us/dynamics/s-e/gp/cagptuye2018_285).
+1. Download the update from [Dynamics GP Downloads](/dynamics/s-e/gp/cagptuye2018_285).
 
     | **Language** | **Microsoft Dynamics GP**                  | 
     |--------------|--------------------------------------------|
