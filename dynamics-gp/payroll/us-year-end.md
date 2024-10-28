@@ -90,7 +90,7 @@ This chapter contains checklists that you can use for year-end. Use the checklis
 
 - [Processing 2025 pay runs before printing 2024 statements](#printnewbeforeold)
 
-### <a name=printoldbeforenew></a>Printing 2023 statements before processing 2024 pay runs
+### <a name=printoldbeforenew></a>Printing 2024 statements before processing 2025 pay runs
 
 Use this checklist to install the year-end maintenance and update, to close the payroll year, to update your Payroll system with the 2024 Payroll tax changes, and to print 2023 wage statements before performing 2024 pay runs.
 
