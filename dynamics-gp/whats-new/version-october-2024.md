@@ -5,7 +5,7 @@ author: theley502
 ms.author: theley
 ms.reviewer: jswymer
 ms.topic: article
-ms.date: 09/26/2024
+ms.date: 10/28/2024
 ---
 # What's New in Dynamics GP in October 2024
 
@@ -17,13 +17,13 @@ For an overview and additional details for key enhancements, see the [Dynamics G
 
 Functionality has been added across the core modules of Microsoft Dynamics GP.
 
-### Email RM Statement with Multicurrency Blank Form
+### [Email RM Statement with Multicurrency Blank Form](https://community.dynamics.com/blogs/post/?postid=2c9db82f-e392-ef11-ac21-6045bdd6e4e4)
 
 In the October 2024 release, we have updated the Print RM Statement functionality to enable emails with forms other than the Blank Form. Now, if you select any form type, the Email Options and the Email ribbon action will both be enabled. Two additional statement templates are added as well: RM Statement Long form and MC Statement Long Form.
 
 ![Shows payment receivables statements](media/print-receivables-statements.png)
 
-### Mask ID on Payables 1099’s
+### [Mask ID on Payables 1099’s](https://community.dynamics.com/blogs/post/?postid=5db16425-a985-ef11-ac21-6045bdff8c1d)
 
 There is now an option available on the Print 1099 window to mask the vendor's Tax identification number. When you mark the checkbox and print a 1099, the Tax ID number will print with the first 5 numbers as an X.
 
@@ -31,25 +31,25 @@ There is now an option available on the Print 1099 window to mask the vendor's T
 
 ![Shows 1099 misc](media/1099-misc.png)
 
-### Reprint EFT payment Register
+### [Reprint EFT payment Register](https://community.dynamics.com/blogs/post/?postid=3e051c5c-aa81-ef11-ac20-7c1e521b8a6e)
 
 In the Purchasing Posting Journal Options Report selection, the EFT Payment Register has been added in order to reprint the report after posting a Payables batch.  
 
 ![Shows purchasing posting journal options](media\purchasing-posting-journal-options.png)
 
-### Print Historical Aged Trial Balance when voucher number has special characters
+### [Print Historical Aged Trial Balance when voucher number has special characters](https://community.dynamics.com/blogs/post/?postid=c8902719-4087-ef11-ac21-00224828b1f8)
 
 The Print Historical Aged Trial Balance report will show the posted information when a voucher number or a payment number is posted with special characters.
 
 ![Shows payables detailed historical aged trial balance](media/payables-detailed-hist-aged-trial-balance.png)
 
-### Default Vendor Class Update Option to No
+### [Default Vendor Class Update Option to No](https://community.dynamics.com/blogs/post/?postid=884b6c34-4281-ef11-ac21-7c1e520da679)
 
 If you edit a vendor record and modify the vendor class ID, the default option when changing the vendor class ID on a vendor will be to not roll down changes.
 
 ![Shows vendor classes](media/vendor-classes.png)
 
-### Restrict Edit 1099 Transaction Information by Calendar Year
+### [Restrict Edit 1099 Transaction Information by Calendar Year](https://community.dynamics.com/blogs/post/?postid=eb6d31ec-1c8b-ef11-ac21-7c1e520a09df)
 
 With this October release, we have added changes for the edit 1099 information.  Now, there is an option in the Documents drop down for Calendar Year Paid. When selected, there is a Year ddl to select. This will show you a filtered list of 1099 transactions that were paid in the calendar year selected.
 
@@ -59,13 +59,13 @@ There is a new zoom on the 1099 Details window or the 1099 Inquiry window to ope
 
 ![Shows 1099 details](media/1099-details.png)
 
-### Payables Transaction Remit to Address Display
+### [Payables Transaction Remit to Address Display](https://community.dynamics.com/blogs/post/?postid=8b53391d-268c-ef11-ac21-7c1e5214cdcc)
 
 There is now an expansion selection in Payables Transaction Entry to view the Remit to Address details for the selected address ID.
 
 ![Shows payables transaction entry](media/payables-transaction-entry.png)
 
-### Save Remit to Address Details to History
+### [Save Remit to Address Details to History](https://community.dynamics.com/blogs/post/?postid=6a45c6ac-8091-ef11-ac20-7c1e525a7593)
 
 Payables transaction Remit to Address Transaction Details will be saved when a payables transaction is posted. These details will be saved in a new table PM80810. You can now view the saved Remit to Address on PM Transaction once posted from PM Transaction Entry Zoom. In addition, Payment processing will verify actual remit to address details when combining transactions to a single payment.
 
@@ -77,7 +77,7 @@ When you set up a credit card from a checkbook in a non-functional currency, the
 
 ![Shows checkbook registration inquiry](media/checkbook-registration-inquiry.png)
 
-### Email address on Doc Type display emails from cust/vend when open email detail
+### [Email address on Doc Type display emails from cust/vend when open email detail](https://community.dynamics.com/blogs/post/?postid=f19303c9-e892-ef11-ac21-6045bdd6e4e4)
 
 A vendor or customer transaction will display the email address information on the transaction as to how they are assigned in the customer or vendor email setup.
 
@@ -98,7 +98,7 @@ There is now a drill down to Sales Document Detail Inquiry Zoom on Document Numb
 
 ![Shows sales transaction inquiry zoom.](media/sales-transaction-inquiry-zoom.png)
 
-### Link SOP Print Options to SOP Document Type
+### [Link SOP Print Options to SOP Document Type](https://community.dynamics.com/blogs/post/?postid=33422288-6f95-ef11-8a69-7c1e52170f9d)
 
 When you enter a certain transaction type in Sales Transaction Entry, and then you select to print, the system will default the SOP Print options based on the document type. If you are entering a SOP Quote and choose print, the settings for Quote will automatically be marked in the Print Options window. The format will default from the Document ID Setup.
 
@@ -110,13 +110,13 @@ Now when you are working on a Reports Navigation list, you will be able to mark 
 
 ![Shows report list](media/report-list.png)
 
-### PO Delete Lines action available in PO Entry drop down
+### [PO Delete Lines action available in PO Entry drop down](https://community.dynamics.com/blogs/post/?postid=aa36b13f-6d95-ef11-8a69-7c1e52687320)
 
 On Purchase Order Entry, there are different ways to delete a line that is on the PO. Now, the PO Delete Line action is also available in the PO entry drop down.
 
 ![Shows purchase order entry](media/purchase-order-entry.png)
 
-### Payroll Monthly Deduction Maximum
+### [Payroll Monthly Deduction Maximum](https://community.dynamics.com/blogs/post/?postid=5851c245-eb92-ef11-ac21-6045bdd6e4e4)
 
 With the October 2024 release, there is another deduction maximum limit available in U.S. Payroll. You can now add a Monthly maximum field for Payroll deduction Setup. Or add a Monthly maximum for Payroll deduction entry at the employee level. When you are processing payroll, the limit hierarchy will be as follows: 1 - Pay Period 2 - Monthly 3 - Shared Deduction 4 - Calendar 5 - Fiscal 6 - Lifetime.
 
@@ -124,7 +124,7 @@ The maximum will be considered during Computer check calculation using user date
 
 ![Shows deduction setup](media/deduction-setup.png)
 
-### Payroll Monthly Benefit Maximum
+### [Payroll Monthly Benefit Maximum](https://community.dynamics.com/blogs/post/?postid=5851c245-eb92-ef11-ac21-6045bdd6e4e4)
 
 There is also another benefit maximum limit available in U.S. Payroll. You can now add a Monthly maximum field for Payroll benefit Setup. Or add a Monthly maximum for Payroll benefit entry at the employee level. When you are processing payroll, the limit hierarchy will be as follows: 1 - Pay Period 2 - Monthly 3 - Shared Benefit 4 - Calendar 5 - Fiscal 6 - Lifetime.
 
@@ -132,7 +132,7 @@ The maximum will be considered during Computer check calculation using user date
 
 ![Shows employee benefit maintenance](media/employee-benefit-maintenance.png)
 
-### Mask ID on Payroll 1099-R
+### [Mask ID on Payroll 1099-R](https://community.dynamics.com/blogs/post/?postid=0262fe91-3886-ef11-ac20-6045bded115c)
 
 Similar to the Payables 1099 change, there is now an option available on Print 1099-R window to mask the employee's Social Security number. When you mark the checkbox and print a 1099, the Social Security number will print with the first 5 numbers as an X.
 
