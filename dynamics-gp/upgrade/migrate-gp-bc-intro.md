@@ -32,7 +32,7 @@ Both Dynamics GP and Business Central online provide tools that help you through
 
 - **Data migration:** When you're ready to migrate, Business Central online offers a comprehensive set of tools to migrate company data from Dynamics GP. To learn more about the tools and the end-to end process, go to [Migrate on-premises Data to Business Central Online](/dynamics365/business-central/dev-itpro/administration/migrate-gp-overview) in the Business Central documentation on Microsoft Learn.
 
-- **New tool and product updates:** Make sure to explore the how-to videos [comparing business processes you are used to in Dynamics GP and how it works in Business Central](https://www.youtube.com/playlist?list=PL1FESh9FqyhQIVH-Tu2RdAAG13gcZ-a9B).
+- **New tool and product updates:** Explore the how-to videos comparing business processes you are used to in Dynamics GP and how they work in Business Central at [Move from Dynamics GP to Business Central (on YouTube)](https://www.youtube.com/playlist?list=PL1FESh9FqyhQIVH-Tu2RdAAG13gcZ-a9B).
 
 ## See also
 
