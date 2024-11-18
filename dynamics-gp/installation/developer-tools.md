@@ -112,30 +112,31 @@ This error usually occurs when the incorrect version of the Report Viewer Redist
 
 If the above steps don't resolve this error, you can try a Repair of both Integration Manager and Microsoft Dynamics GP. If not, uninstall and reinstall or try to install this to another machine or example server, just to see if it works there. Then you know it is machine specific.
 
-#### The destination could not be initialized due to the following problem: Unable to cast COM object of type 'System._ComObject' to interface type 'Dynamics Application'. This operation failed because the QueryInterface call on the COM component for the interface with IID '{6D016642-CA35-11CD-8273-00001B271213}'
+#### The destination could not be initialized due to the following problem: Unable to cast COM object of type 'System._ComObject' to interface type 'Dynamics Application'.
+
+The full error message is similar to the following:
+
+'The destination could not be initialized due to the following problem: Unable to cast COM object of type 'System._ComObject' to interface type 'Dynamics Application'. This operation failed because the QueryInterface call on the COM component for the interface with IID '{a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1}'
 
 Usually this error is specific to a machine or user.
 
 There are a couple things that can cause this error, but in most cases this occurs when the Dynamics.exe is not properly registered in the system registry.
 
-1. Try to manually reregister the Dynamics.exe by navigating to the directory where Dynamics GP is installed and locate the Dynamics.exe. Then go to Start > Run and clear out any text that is present, then drag the Dynamics.exe onto the Run dialog and let go. This will fill in the exact path wrapped in double quotes. Then after the ending double quote add the text /REGSERVER
+1. Try to manually reregister the Dynamics.exe by navigating to the directory where Dynamics GP is installed and locate the Dynamics.exe. Go to Start > Run and clear out any text that is present, then drag the Dynamics.exe onto the Run dialog and let go. This fills in the exact path wrapped in double quotes. Then after the ending double quote, add the text '/REGSERVER'.
 
-You should end up with a command resembling the following (don't copy the example as the path is likely different):
-"C:\Program Files\Microsoft Dynamics\GP$GP\Dynamics.exe" /REGSERVER
+   You should end up with a command resembling the following (don't copy the example as the path is likely different): 'C:\Program Files\Microsoft Dynamics\GP$GP\Dynamics.exe" /REGSERVER'.
 
-Then click OK. If all goes well you will only see the cursor change for a second or two. Then try your integration again.
+1. Select OK. If all goes well you  only see the cursor change for a second or two. Then try your integration again.
+1. The next option we'd want to try, in order to resolve this issue, if registering Dynamics GP does not, is the following:
 
-2. The next option we'd want to try, in order to resolve this issue, if registering Dynamics GP does not, is the following:
+   - If on a x64 bit machine or server:  Select Start > Run, type in: 'regsvr32 C:\Windows\sysWOW64\MSScript.ocx'.
+   - If on a x86 bit machine or server:  Select Start > Run, type in: 'regsvr32 C:\Windows\System32\MSScript.ocx'.
 
-If on a x64 bit machine or server:  Click Start > Run, type in: regsvr32 C:\Windows\sysWOW64\MSScript.ocx
-If on a x86 bit machine or server:  Click Start > Run, type in: regsvr32 C:\Windows\System32\MSScript.ocx
+   Once you do this, run an integration logged on as the domain administrator, to verify it goes through without any error messages. If it does, then try with other user accounts. You cn also try to right-click and launch as Admin and see whether you have the same problem.
 
-Once you do this, run an integration logged on as the domain administrator, to verify it goes through without any error messages. If it does, then try with other user accounts.
-I would also try to right click and launch as Admin and see if we have the same problem.
+1. Rename the entire IM directory and run a repair against Integration Manager, which will re-create the entire IM directory, folders and files under the original name. Launch Integration Manager from this ‘new’ IM directory. You may need to point it at your IM database to test whether the progress window now shows.
 
-3. Rename the entire IM directory and run a repair against Integration Manager, which will re-create the entire IM directory, folders and files under the original name. Launch Integration Manager from this ‘new’ IM directory. You may need to point it at your IM database to test whether the progress window now shows.
-
-4. Lastly, complete an uninstall and reinstall of Integration Manager and Dynamics GP, which shouldn't affect anything as the integrations themselves are all held in the IM database. It is good practice to verify where the source files for IM are all stored, just so they’re not in a folder for Integration Manager that an uninstall would remove.
+1. Uninstall and reinstall the Integration Manager and Dynamics GP, which shouldn't affect anything as the integrations themselves are all held in the IM database. It is good practice to verify where the source files for IM are all stored, just so they're not in a folder for Integration Manager that an uninstall would remove.
 
 ## Visual Studio Tools
 
