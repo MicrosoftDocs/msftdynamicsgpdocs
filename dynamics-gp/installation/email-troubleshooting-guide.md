@@ -407,7 +407,7 @@ Below are some items to check of why this may happen:
 
    If there's a disclaimer or signature that appears on the received email, obtain confirmation from your IT group whether they have any add-ons for Exchange Online or Email handling related to signatures or disclaimers. Keep in mind you will usually see no signature on the SENT folder of the user sending the email. You will only see it on the user who received it.  
  
-   Microsoft Dynamics GP will function properly with the default Exchange Online organization-wide signatures and disclaimers setup, which is Text only.  Please see the [limitations posted by Exchange Online](/microsoft-365/admin/setup/create-signatures-and-disclaimers?view=o365-worldwide#limitations-of-organization-wide-signatures) for their default organization wide signatures.
+   Microsoft Dynamics GP will function properly with the default Exchange Online organization-wide signatures and disclaimers setup, which is Text only.  Please see the [limitations posted by Exchange Online](/microsoft-365/admin/setup/create-signatures-and-disclaimers#limitations-of-organization-wide-signatures) for their default organization wide signatures.
 
    If you have third party add-ons in Exchange Online to add logos or do any formatting to these signatures/disclaimers, it can break Microsoft Dynamics GP's formatting on emails. Test again with the add-ons disabled. If this test works, then you can add an exception to exclude emails from Microsoft Dynamics GP. Or, you can contact your third party to see if there's any way for the add-on to function without changing the email's formatting, as this is out of Microsoft Dynamics GP's control.   
    
@@ -805,7 +805,7 @@ You may notice this error message when sending email with attachments in workflo
 
 ## <a name=mfa></a>MFA - Multi-Factor Authentication (Modern Authentication)
 
-- [Set up the application in the Azure Portal](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)  
+- [Set up the application in the Azure Portal](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)  
 - [Configure Modern Authentication in Dynamics GP](https://community.dynamics.com/blogs/post/?postid=bce65f37-eb08-4531-b62b-32a8af728f58)
 - [Configure Modern Authentication in Web Client](https://community.dynamics.com/blogs/post/?postid=7a9575dc-6d56-4f3e-86a9-9fd4e23cbfd9)
 - [MFA VIDEO LEARNING](https://www.youtube.com/watch?v=81YZ8B6bHPk&t=7s)
