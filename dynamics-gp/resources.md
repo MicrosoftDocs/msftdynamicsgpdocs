@@ -7,7 +7,7 @@ manager: annbe
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 9/13/2024
+ms.date: 11/11/2024
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -41,9 +41,6 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 - [Dynamics GP October 2022- Feature Blog Series - 18.5](https://community.dynamics.com/blogs/post/?postid=8a7160d3-5050-4b3d-9c7c-ed9e1434365b)
 
 - [Dynamics GP October 2021- Feature Blog Series - 18.4](https://community.dynamics.com/blogs/post/?postid=2d7ec694-30e4-41d9-97f1-fc8752291965)
-
-- [Dynamics GP October 2020- Feature Blog Series - 18.3](https://community.dynamics.com/blogs/post/?postid=0052524e-26f1-4471-80cf-91c294eb3bf5)
- 
  
 - [Product Release Downloads for Microsoft Dynamics GP](/dynamics/s-e/gp/MDGP2018_Release_Download_378)
 

@@ -7,16 +7,14 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 8/21/2024
+ms.date: 10/29/2024
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-This document is meant to walk through most of the errors you may run into when emailing out of Microsoft Dynamics GP.  
-
-The goal is to make everyone an emailing expert!  
+This document is meant to walk through most of the errors you may run into when emailing out of Microsoft Dynamics GP.  The goal is to make everyone an emailing expert!  
 
 This document can be leveraged to aid in troubleshooting all areas of emailing out of Microsoft Dynamics GP from the legacy Standard Report Writer Statements to Word Templates, Workflow or Modern Authentication.
 
@@ -28,8 +26,6 @@ This document can be leveraged to aid in troubleshooting all areas of emailing o
 > 
 > If you are still on an older version of Microsoft Dynamics GP, you must enable TLS on your local Exchange server. For more information, see [TLS completely disabled in 2022](/exchange/clients-and-mobile-in-exchange-online/opt-in-exchange-online-endpoint-for-legacy-tls-using-smtp-auth).
 >
-> When Basic Authentication is deprecated (October 1, 2022), you will need to be on a version of Dynamics GP where you can use Modern Authentication (18.3 or later). There have been many quality issues fixed with Dynamics GP and Multi-Factor Authentication, so it is recommended to be on 18.5.1635 or later.
-
 Review the below blogs for workarounds if you are on an older version of Microsoft Dyanmics GP:
 
 [**WORKFLOW emails intermittently fail**](https://community.dynamics.com/blogs/post/?postid=7aaa9918-06a0-4e88-adac-fc30853b97dc)
@@ -47,7 +43,7 @@ All email issues can be safely split up into the following set of categories:
 To determine whether MAPI or Exchange is being used check the System Preference window. (Administration >> Setup >> System >> System Preferences)
 
 > [!IMPORTANT]
-> This setting is stored in the DYNAMICS database and is system-wide, so changing this setting will affect all users.  
+> This setting is stored in the DYNAMICS (system) database and is system-wide, so changing this setting will affect all users and companies. 
 
 ![Form](media/syspref.jpg)
 
@@ -411,7 +407,7 @@ Below are some items to check of why this may happen:
 
    If there's a disclaimer or signature that appears on the received email, obtain confirmation from your IT group whether they have any add-ons for Exchange Online or Email handling related to signatures or disclaimers. Keep in mind you will usually see no signature on the SENT folder of the user sending the email. You will only see it on the user who received it.  
  
-   Microsoft Dynamics GP will function properly with the default Exchange Online organization-wide signatures and disclaimers setup, which is Text only.  Please see the [limitations posted by Exchange Online](/microsoft-365/admin/setup/create-signatures-and-disclaimers?view=o365-worldwide#limitations-of-organization-wide-signatures) for their default organization wide signatures.
+   Microsoft Dynamics GP will function properly with the default Exchange Online organization-wide signatures and disclaimers setup, which is Text only.  Please see the [limitations posted by Exchange Online](/microsoft-365/admin/setup/create-signatures-and-disclaimers#limitations-of-organization-wide-signatures) for their default organization wide signatures.
 
    If you have third party add-ons in Exchange Online to add logos or do any formatting to these signatures/disclaimers, it can break Microsoft Dynamics GP's formatting on emails. Test again with the add-ons disabled. If this test works, then you can add an exception to exclude emails from Microsoft Dynamics GP. Or, you can contact your third party to see if there's any way for the add-on to function without changing the email's formatting, as this is out of Microsoft Dynamics GP's control.   
    
@@ -809,17 +805,14 @@ You may notice this error message when sending email with attachments in workflo
 
 ## <a name=mfa></a>MFA - Multi-Factor Authentication (Modern Authentication)
 
-- [Set up the application in the Azure Portal](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)  
+- [Set up the application in the Azure Portal](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)  
 - [Configure Modern Authentication in Dynamics GP](https://community.dynamics.com/blogs/post/?postid=bce65f37-eb08-4531-b62b-32a8af728f58)
 - [Configure Modern Authentication in Web Client](https://community.dynamics.com/blogs/post/?postid=7a9575dc-6d56-4f3e-86a9-9fd4e23cbfd9)
 - [MFA VIDEO LEARNING](https://www.youtube.com/watch?v=81YZ8B6bHPk&t=7s)
 
 > [!NOTE]
-> When Basic Authentication is deprecated, you will need to be on a version of Dynamics GP where you can use Modern Authentication (18.3 or later).
->
 > You do not actually need MFA turned on for your Azure account to use the Modern Auth window in Microsoft Dyanmics GP.
-
-There have been many quality issues fixed within Dynamics GP around Multi-Factor Authentication, so it is recommended to be on 18.5 or later to not run into an issue that is already fixed in the product.
+> There have been many quality issues fixed within Dynamics GP around Multi-Factor Authentication, so it is recommended to be on 18.5 or later to not run into an issue that is already fixed in the product.
 
 To use modern authentication with Dynamics GP, the Application (Client ID) is required to be entered in the **Company E-Mail Setup** window in Dynamics GP. Get this ID from Azure, where it is located under Tools, Setup, Company, and the choose **Company E-mail Setup**. MFA enabled on each user's Office 365 account is an additional layer of security for an organization but not required by Dynamics GP.
 
@@ -876,6 +869,7 @@ Some items to watch out for:
 1. The new modern authentication functionality in Dynamics GP MUST be setup for DUO to work. It blocks Basic Auth, and the new functionality is needed to bypass this block
 2. A single user MUST be setup with OAuth MFA to complete the initial modern authentication setup within Azure and GP (the Email Settings window) This user can be swapped back to DUO after the setup.
 3. We cannot guarantee this will work in all environments since it hasn't really been fully tested.
+4. If the Third Party Authenticator is having issues with IE dependencies, there were changes made in [Microsoft Dynamics GP 18.7](https://community.dynamics.com/blogs/post/?postid=da2b849a-e349-ef11-a317-6045bda6fe6a) around this area.
 
 ### Dynamics GP Error Message: There were one or more issues when processing email, please review the DynamicsGP_MSGraphEmail.log file in the temp directory
 
@@ -888,17 +882,21 @@ Please review each of the items below to determine the cause of this error messa
  
 3.  You are getting a message about the Dynamics_MSGraphEmail.log file. Review this file to see if there is a different error message.  To get this file you need to go to the workstation/machine where you got that error and go to Start > Run, type %temp% and click OK to open your local temp file. The log file should be found there.
 
-4.  Did you try this on another machine and with another user such as user SA on SQL server just to rule out machine specific and .NET issues, etc.
+4.  If you OK thru this message multiple times, this usually means an email is not setup for the customer or vendor and you have to click OK through each one in your batch.
+If the log is reviewed in #3, this message will appear: At least one recipient is not valid.  A message can't be sent because it contains no recipients.
+If there is no email address setup for the Customer or Vendor, then they should not be amrked to receive emails.  A common area to check would be the E-mail Options window, verify under Send forms as E-mail is unmarked for customers or vendors that do not have an email address setup and will then receive printed forms.
+
+5.  Did you try this on another machine and with another user such as user SA on SQL server just to rule out machine specific and .NET issues, etc.
 MFA needs .net 4.7.2 to be installed on GP Client server.
 [Determine which .NET Framework versions are installed - .NET Framework | Microsoft Docs](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed)
 [Download .NET Framework 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
 
-5. Confirm that TLS 1.2 is turned on
+6. Confirm that TLS 1.2 is turned on
 [Transport Layer Security (TLS) best practices with .NET Framework](/dotnet/framework/network-programming/tls#configure-schannel-protocols-in-the-windows-registry)
 
-6.  Are you getting the old "exchange" window prompt?  Review your Dynamics.set file for a [3rd party that maybe causing this issue](https://www.accountable.com/Downloads/FormsPrinter/V19.00/Forms-Printer-Version-186171-HF1).
+7.  Are you getting the old "exchange" window prompt?  Review your Dynamics.set file for a [3rd party that maybe causing this issue](https://www.accountable.com/Downloads/FormsPrinter/V19.00/Forms-Printer-Version-186171-HF1).
  
-7.  The easiest way to test email authentication with MFA is to email through a report option window to see if email works and sends.
+8.  The easiest way to test email authentication with MFA is to email through a report option window to see if email works and sends.
 You only need to authenticate 1x per GP login.
  
 Example
@@ -907,16 +905,16 @@ Then try to email from here to see if you are prompted for MFA login and report 
  
 If this works, while still logged in, now go try to do your other process to see if it works.  We only prompt to authenticate once per day while staying logged in as the GP user.
 
-8. If the report options report email is successful, then you will want to review this blog for application process items to rule out, such as templates, messages, etc.
+9. If the report options report email is successful, then you will want to review this blog for application process items to rule out, such as templates, messages, etc.
 [EFT Check Remittances are not e-mailing](https://community.dynamics.com/blogs/post/?postid=5acf230c-9fcd-4f9f-99ca-f88d2718c151)
  
-9. If you find your emails are working and this error is sporadic in nature, it could be related to the file size of an attachment.  Try this process with no attachments and see if it works.
+10. If you find your emails are working and this error is sporadic in nature, it could be related to the file size of an attachment.  Try this process with no attachments and see if it works.
  
-10. If you are emailing from within the NAV List and selecting multiple items at a time for email (such as 60 – 200) and some could contain attachments or not, you could also exceed a maximum which will cause this error. 
+11. If you are emailing from within the NAV List and selecting multiple items at a time for email (such as 60 – 200) and some could contain attachments or not, you could also exceed a maximum which will cause this error. 
 Try to select and send 20 or 30 at a time to rule out the above case.
 [Microsoft 365 limits - Service Descriptions](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
 
-11.  You can run a [Fiddler trace](/dynamics-gp/installation/email-troubleshooting-guide#to-run-fiddler) to see if it shows anything further about the error message.
+12.  You can run a [Fiddler trace](/dynamics-gp/installation/email-troubleshooting-guide#to-run-fiddler) to see if it shows anything further about the error message.
 
 ### Dynamics GP Error Message: An error occurred authenticating with Azure Graph, check your configuration and try again
 
