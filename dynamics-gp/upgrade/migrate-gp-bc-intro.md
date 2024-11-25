@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: overview 
 ms.collection: get-started 
-ms.date: 02/29/2024
+ms.date: 11/12/2024
 ms.custom: bap-template 
 ---
 # Migrate Dynamics GP to Dynamics Business Central online
@@ -31,6 +31,8 @@ Both Dynamics GP and Business Central online provide tools that help you through
 - **Readiness assessment:** Before migrating your on-premises deployment to the cloud, it's essential to evaluate its readiness. So for starters, Dynamics GP offers a migration assessment tool that provides insights into your readiness. It suggests migration options based on your needs and detects potential issues related to your GP system structure. To learn more about the migration assessment, watch the video [Are You Ready for Business Central](https://www.youtube.com/watch?v=r2gNgQrCgoo&list=PLcakwueIHoT9yVFOV6_BXMVeodPq3lt3o&index=15).
 
 - **Data migration:** When you're ready to migrate, Business Central online offers a comprehensive set of tools to migrate company data from Dynamics GP. To learn more about the tools and the end-to end process, go to [Migrate on-premises Data to Business Central Online](/dynamics365/business-central/dev-itpro/administration/migrate-gp-overview) in the Business Central documentation on Microsoft Learn.
+
+- **New tool and product updates:** Explore the how-to videos comparing business processes you are used to in Dynamics GP and how they work in Business Central at [Move from Dynamics GP to Business Central (on YouTube)](https://www.youtube.com/playlist?list=PL1FESh9FqyhQIVH-Tu2RdAAG13gcZ-a9B).
 
 ## See also
 

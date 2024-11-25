@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 11/11/2024
+ms.date: 11/20/2024
 ---
 
 # Developer Tools
@@ -104,8 +104,16 @@ Also make sure the view does not reference a table that does not exist in the no
 
 This error usually occurs when the incorrect version of the Report Viewer Redistributable is installed on the machine where Integration Manager is running.
 
-1. Uninstall the 2013 redistributable files.  [Install the 2010 redistributable files.](https://www.microsoft.com/en-us/download/details.aspx?id=20884)
+There are a couple Office redistributables that can be installed to address this error. Sometimes you need to install one, sometimes more than one. It seems to depend on the environment conditions.
+
+1. Usually, you can uninstall the 2013 redistributable files. Install one or both of the following:
+   - Microsoft Report Viewer Redistributable 2012
+   - Microsoft Access Database Engine 2016 Redistributable
+
+   [Download both Redistributable install files](https://mbs2.microsoft.com/fileexchange/?fileID=07fe2ceb-a580-419f-b4d4-45a028260637)
+
 2. Launch both Integration Manager and Dynamics GP using 'Run As Administrator' (right-click).
+
 3. While in an integration, select View > Integration Logs and verify the log comes up without any errors.
 
    Also, in the integration progress window, select the 'View Log' button and to show the report.
