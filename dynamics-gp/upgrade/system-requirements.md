@@ -6,7 +6,7 @@ author: jswymer
 ms.author: jswymer
 manager: jswymer
 applies_to: 
-ms.date: 03/1/2023
+ms.date: 11/27/2024
 ms.topic: article
 ms.assetid: 3509e92e-d825-4947-8ea2-7e57b7c2a9e0
 ms.reviewer: 
@@ -22,11 +22,9 @@ This chapter contains a list of prerequisites and system requirement changes for
 
 You can upgrade to Dynamics GP from selected previous releases. To review whether or not you can upgrade your release, see [Upgrade Hot Topic](/dynamics/s-e/gp/hot_topic_mdgpupgrade_415).
 
-If you are upgrading to Dynamics GP, you must install the latest update or hotfix for Dynamics GP before starting Dynamics GP Utilities. See the [Microsoft Dynamics GP Resource Directory](../resources.md) article for the latest update information.
-
 ## System requirement changes
 
-[System Requirements for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_system_requirements).
+[System Requirements for Microsoft Dynamics GP](https://learn.microsoft.com/en-us/dynamics/s-e/gp/mdgp2018_system_requirements).
 
 ## Home page prerequisites
 
@@ -60,8 +58,6 @@ Review the following requirements:
 
     | File format | Word 2013 | Word templates | Web Client |
     |--|--|--|--|
-    | XPS | Required for MAPI | Enabled | Not available |
-    | PDF | Required for MAPI | Enabled | Not available |
     | DOCX | Not required | Enabled | Available\* |
     | HTML | Not required | Not required | Available\* |
 
@@ -120,8 +116,6 @@ To modify the Report Server Web config file:
 You can use Windows Server 2012 Remote Desktop Services, Windows Server 2012 R2 Remote Desktop Services, and Windows Server 2016 Remote Desktop Services. Citrix Xenapps can also be used with most database configurations to provide remote access to Dynamics GP in a Wide Area Network (WAN) environment.
 
 A Windows Server 2008 Terminal Server is supported only as a client. You also can use Remote Desktop Services.
-
-You also should refer to the documentation provided by Citrix for more information.
 
 ## Determine disk space for the upgrade process
 
