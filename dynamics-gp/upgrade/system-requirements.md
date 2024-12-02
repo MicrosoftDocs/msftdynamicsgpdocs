@@ -24,7 +24,7 @@ You can upgrade to Dynamics GP from selected previous releases. To review whethe
 
 ## System requirement changes
 
-[System Requirements for Microsoft Dynamics GP](https://learn.microsoft.com/en-us/dynamics/s-e/gp/mdgp2018_system_requirements).
+[System Requirements for Microsoft Dynamics GP](https://learn.microsoft.com/dynamics/s-e/gp/mdgp2018_system_requirements).
 
 ## Home page prerequisites
 
