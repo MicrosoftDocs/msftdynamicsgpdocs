@@ -8,7 +8,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 12/5/2024
+ms.date: 12/9/2024
 ---
 
 # Canadian Payroll 2024 Year-end Update & 2025 Tax Update
@@ -58,7 +58,7 @@ T4  - XML changes
 T4A - XML changes 
 
 - Software Development Number for XML - RQ-24-01-129
-- RL-1 Slip Authorization number -  COMING SOON (enter this in the Payroll T4/R1 Print window)  
+- RL-1 Slip Authorization number - FS2401129 (enter this in the Payroll T4/R1 Print window)  
 
 #### Installation notes
 
@@ -364,9 +364,9 @@ The explanation of the Cumulative Averaging convention is the best resource.
 
 ### Federal tax rates and income thresholds
 
-Effective January 1, 2025 the federal tax rate noted below. The federal index factor is 1.047. The income thresholds are revised as follows.
+Effective January 1, 2025 the federal tax rate noted below. The federal index factor is 1.027. The income thresholds are revised as follows.
 
-![income thresholds](media/FED2024.JPG)
+![income thresholds](media/FED2025.JPG)
 
 ### Federal personal amounts
 
@@ -387,105 +387,105 @@ The following provinces and territories have tax changes for 2025.
 
 #### Alberta 
 
-- The Alberta basic personal amount is \$21,885 (formerly \$21,003).  
+- The Alberta basic personal amount is \$22,323 (formerly \$21,885).  
 
-- The Alberta spouse or common-law partner amount is \$21,885 (formerly \$21,003).
+- The Alberta spouse or common-law partner amount is \$22,323 (formerly \$21,885).
 
-![Alberta tax changes](media/AB2024.JPG)
+![Alberta tax changes](media/AB2025.JPG)
 
 #### British Columbia
 
-- The British Columbia basic personal amount increases by the index factor to  \$12,580 (formerly \$11,981).
+- The British Columbia basic personal amount increases by the index factor to  \$12,932 (formerly \$12,580).
 
-- The British Columbia spouse or common-law partner amount (and eligible dependent) increases by the index factor and is revised to \$12,580  (formerly \$11,981).
+- The British Columbia spouse or common-law partner amount (and eligible dependent) increases by the index factor and is revised to \$12,932  (formerly \$12,580).
 
-![British Columbia tax changes](media/BC2024.JPG)
+![British Columbia tax changes](media/BC2025.JPG)
 
 #### Manitoba
 
-- The Manitoba Basic Personal amount increases by the index factor to \$15,780 (formerly \$15,000).
+- The Manitoba Basic Personal amount increases by the index factor to \$15,969 (formerly \$15,780).
 
-- The Manitoba spouse or common-law partner amount shall increase to \$15,780 (formerly \$15,000).
+- The Manitoba spouse or common-law partner amount shall increase to \$15,969 (formerly \$15,780).
 
-![Manitoba tax changes](media/MB2024.JPG)
+![Manitoba tax changes](media/MB2025.JPG)
 
 #### New Brunswick
 
-- The New Brunswick Basic Personal amount increases by the index factor and is usually revised to \$13,044 (formerly \$12,458).
+- The New Brunswick Basic Personal amount increases by the index factor and is usually revised to \$13,396 (formerly \$13,044).
 
-- The spouse or common-law partner amount increases by the index factor and is revised to \$13,044 (formerly \$12,458),
+- The spouse or common-law partner amount increases by the index factor and is revised to \$13,396 (formerly \$13,044).
 
-![New Brunswick tax changes](media/NB2024.JPG)
+![New Brunswick tax changes](media/NB2025.JPG)
 
 #### Newfoundland and Labrador
 
-- The Newfoundland Basic Personal amount increases by the index factor and is updated to \$10,818 (formerly \$10,382).
+- The Newfoundland Basic Personal amount increases by the index factor and is updated to \$11,067 (formerly \$10,818).
 
-- The spouse or common-law partner amount increases by the index factor and is revised to \$10,818 (formerly \$10,382), if the original amount wasn't zero.
+- The spouse or common-law partner amount increases by the index factor and is revised to \$11,067 (formerly \$10,818), if the original amount wasn't zero.
 
-![Newfoundland tax changes](media/NL2024.JPG)
+![Newfoundland tax changes](media/NL2025.JPG)
 
 #### Northwest Territories
 
-- The Northwest Territories basic personal amount increases by the index factor, and is revised to \$17,373 (formerly \$16,593).
+- The Northwest Territories basic personal amount increases by the index factor, and is revised to \$17,842 (formerly \$17,373).
 
-- The spouse or common-law partner amount increases by the index factor and is revised to \$17,373 (formerly \$16,593), if the original amount wasn't zero.
+- The spouse or common-law partner amount increases by the index factor and is revised to \$17,842 (formerly \$17,373), if the original amount wasn't zero.
 
-![Northwest tax changes](media/NT2024.JPG)
+![Northwest tax changes](media/NT2025.JPG)
 
-#### Nova Scotia - no change
+#### Nova Scotia
 
-- The Nova Scotia basic personal BPANS Formula \$11,481.
+- The Nova Scotia basic personal BPANS Formula \$11,744.
 
-- The spouse or common-law partner amount is also BPANS Formula \$11,481.
+- The spouse or common-law partner amount is also BPANS Formula \$11,744.
 
-![Nova Scotia tax changes](media/NS2020.JPG)
+![Nova Scotia tax changes](media/NS2025.JPG)
 
 #### Nunavut
 
-- The Nunavut basic personal amount increases by the index factor and is usually revised to \$18,767 (formerly \$17,925).
+- The Nunavut basic personal amount increases by the index factor and is usually revised to \$19,274 (formerly \$18,767).
 
-- The spouse or common-law partner amount increases by the index factor and is usually revised to \$18,767 (formerly \$17,925, if the original amount was not zero.
+- The spouse or common-law partner amount increases by the index factor and is usually revised to \$19,274 (formerly \$18,767, if the original amount was not zero.
 
-![Nunavut tax changes](media/NU2024.JPG)
+![Nunavut tax changes](media/NU2025.JPG)
 
 #### Ontario
 
-- The Ontario Basic Personal amount increases by the index factor and is usually revised to \$12,399 (formerly \$11,865).
+- The Ontario Basic Personal amount increases by the index factor and is usually revised to \$12,747 (formerly \$12,399).
 
-- The Ontario Spouse or Common-law Partner amount increases by the index factor and is usually revised to \$12,399 (formerly \$11,865).
+- The Ontario Spouse or Common-law Partner amount increases by the index factor and is usually revised to \$12,747 (formerly \$12,399).
 
-![Ontario tax changes](media/ON2024.JPG)
+![Ontario tax changes](media/ON2025.JPG)
 
 #### Prince Edward Island 
 
-- The legislated Prince Edward Island basic personal amount increased from \$12,750 to \$13,500 
+- The legislated Prince Edward Island basic personal amount increased from \$14,250 to \$13,500 
 
-![Prince Edward island tax changes](media/PE2024.JPG)
+![Prince Edward island tax changes](media/PE2025.JPG)
 
 #### Quebec
 
-The TP-1015.3-V Basic amount increases by the index factor and is usually revised to \$18,056 (formerly \$17,183). The system rounds this calculation to the nearest \$5.00
+The TP-1015.3-V Basic amount increases by the index factor and is usually revised to \$18,571 (formerly \$18,056). The system rounds this calculation to the nearest \$5.00
 
 #### Variable H – Deduction for employment income
 
-The deduction for Employment income has been increased to \$1,380 formerly \$1,315. 
+The deduction for Employment income has been increased to \$1,420 formerly \$1,380. 
 
 #### Saskatchewan 
 
-- The Saskatchewan Basic Personal amount increases by the index factor, so it is usually revised to \$18,491 (formerly \$17,661).
+- The Saskatchewan Basic Personal amount increases by the index factor, so it is usually revised to \$18,991 (formerly \$18,491).
 
-- The Spouse Common Law Partner amount increases by the index factor, so it is  usually revised to \$18,491 (formerly \$17,661).
+- The Spouse Common Law Partner amount increases by the index factor, so it is  usually revised to \$18,991 (formerly \$18,491).
 
-![Saskatchewan tax changes](media/SK2024.JPG)
+![Saskatchewan tax changes](media/SK2025.JPG)
 
 #### Yukon
 
-- The Yukon basic personal amount increases by the index factor and is usually revised to BPAYT formula \$15,705 (formerly \$15,000).
+- The Yukon basic personal amount increases by the index factor and is usually revised to BPAYT formula \$16,129 (formerly \$15,705).
 
-- The spouse or common-law partner amount increases by the index factor and is usually revised to BPAYT formula \$15,705 (formerly \$15,000), provided the original amount was not zero.
+- The spouse or common-law partner amount increases by the index factor and is usually revised to BPAYT formula \$16,129 (formerly \$15,705), provided the original amount was not zero.
 
-![Yukon tax changes](media/YT2024.JPG)
+![Yukon tax changes](media/YT2025.JPG)
 
 ### Updating basic personal amounts
 
@@ -497,33 +497,33 @@ To update the Basic Personal amounts go to: Tools\>\> Routines\>\> PayrollCanada
 
 The personal tax credit amounts specified in the P_CPY_Control table will be updated to:
 
-- The federal Basic Personal amount = \$15,705
+- The federal Basic Personal amount = \$16,129
 
-- Quebec TP-105.3-V Base amount = \$18,056
+- Quebec TP-105.3-V Base amount = \$18,571
 
-- Alberta basic personal amount = \$21,885
+- Alberta basic personal amount = \$22,323
 
-- British Columbia basic personal amount = \$12,580
+- British Columbia basic personal amount = \$12,932
 
-- Manitoba Basic Personal amount =  \$15,780
+- Manitoba Basic Personal amount =  \$15,969
 
-- New Brunswick Basic Personal amount = \$13,044
+- New Brunswick Basic Personal amount = \$13,396
 
-- Newfoundland Basic Personal amount = \$10,818
+- Newfoundland Basic Personal amount = \$11,067
 
-- Northwest Territories basic personal amount = \$17,373
+- Northwest Territories basic personal amount = \$17,842
 
-- Nova Scotia basic personal amount BPANS formula  \$11,481
+- Nova Scotia basic personal amount BPANS formula  \$11,744
 
-- Nunavut basic personal amount = \$18,767
+- Nunavut basic personal amount = \$19,274
 
-- Ontario Basic Personal amount = \$12,399
+- Ontario Basic Personal amount = \$12,747
 
-- Prince Edward Island basic personal amount = \$13,500
+- Prince Edward Island basic personal amount = \$14,250
 
-- Saskatchewan Basic Personal amount = \$18,491
+- Saskatchewan Basic Personal amount = \$18,991
 
-- Yukon basic personal amount = \$15,705 BPAYT formula
+- Yukon basic personal amount = \$16,129 BPAYT formula
 
 You can view these amounts in the Tax Credits window by going to: Tools \>\> Setup \>\> Payroll-Canada \>\> Control \>\> Tax Credits
 
@@ -531,18 +531,18 @@ You can view these amounts in the Tax Credits window by going to: Tools \>\> Set
 
 The following table shows how Index Factors as specified in the Tax Credit Indexation Factors window (Payroll Reset Files window (Tools\>\>Routines\>\>PayrollCanada\>\>Year End File Reset\>\>Tax Credit Indexation Factors) have been updated.
 
-| **Taxing authority**      | **2024 index factor** | **2023 index factor** |
+| **Taxing authority**      | **2024 index factor** | **2025 index factor** |
 |---------------------------|-----------------------|-----------------------|
-| Federal                   | 1.047                 | 1.063                 |
-| Alberta                   | 1.042                 | 1.060                 |
-| British Columbia          | 1.050                 | 1.060                 |
-| Manitoba                  | 1.052                 | 1.070                 |
-| New Brunswick             | 1.047                 | 1.063                 |
-| Newfoundland and Labrador | 1.042                 | 1.059                 |
-| Northwest Territories     | 1.047                 | 1.063                 |
-| Nova Scotia               | 1.000                 | 1.000                 |
-| Nunavut                   | 1.047                 | 1.063                 |
-| Ontario                   | 1.045                 | 1.065                 |
+| Federal                   | 1.047                 | 1.027                 |
+| Alberta                   | 1.042                 | 1.020                 |
+| British Columbia          | 1.050                 | 1.028                 |
+| Manitoba                  | 1.052                 | 1.012                 |
+| New Brunswick             | 1.047                 | 1.027                 |
+| Newfoundland and Labrador | 1.042                 | 1.023                 |
+| Northwest Territories     | 1.047                 | 1.027                 |
+| Nova Scotia               | 1.000                 | 1.031                 |
+| Nunavut                   | 1.047                 | 1.027                 |
+| Ontario                   | 1.045                 | 1.028                 |
 | Prince Edward Island      | 1.000                 | 1.000                 |
-| Saskatchewan              | 1.047                 | 1.063                 |
-| Yukon                     | 1.047                 | 1.063                 |
+| Saskatchewan              | 1.047                 | 1.027                 |
+| Yukon                     | 1.047                 | 1.027                 |
