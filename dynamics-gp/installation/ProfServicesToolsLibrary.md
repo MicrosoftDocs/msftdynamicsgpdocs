@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 3/1/2024
+ms.date: 12/11/2024
 ---
 
 # Professional Services Tools Library
@@ -1071,6 +1071,10 @@ This tool allows you to add a vendor and vendor address master record and replic
 > If you are using Integration Manager to import account, customer, or vendor master records to the main company database and the integration fails for any reason, any records imported to the main company database will be deleted (rolled back). However, if you have enabled master record triggers, the records will be replicated to company databases that you specify in the Replicate To DB field, and will not be rolled back. You must delete such replicated records manually.
 
 If you use the RM and PM Master triggers in the Professional Service Tools Library and a customer or vendor has an address with more than 31 characters in the field, the system will truncate any characters after 31.
+
+You may receive an error message: A save operation on table ‘PM_Vendor_MSTR’ (45)
+When PSTL Master Triggers is turned on for two companies between each other, a 1099 vendor cannot have a 1099 Address ID of 13 characters or greater.  
+The workaround is to create shorter 1099 Address ID's for the vendors.
 
 #### To create and update vendor and vendor address records
 
