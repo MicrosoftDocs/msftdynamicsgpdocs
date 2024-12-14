@@ -134,7 +134,7 @@ If you plan to use the Internet to submit T4 records, you need to obtain a Web A
 
 The Web Access Code consists of six characters: two letters, and four numbers. The code is case sensitive which means that you must enter it exactly as it appears on your personalized T4 Summary form. If you do not enter the code correctly, you will not be able to access the secure areas of the CRA's T4 Internet File Transfer site.
 
-For more information, see the [CRA website](https://www.cra-arc.gc.ca/eservices/rf/cd-eng.html).
+For more information, see the [CRA website](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4127-payroll-deductions-formulas.html).
 
 Canadian Payroll for Microsoft Dynamics GP has the ability to generate the XML file required for T4 Internet File Transfer, but you are responsible for obtaining the access code and actually submitting the file to the CRA.
 
