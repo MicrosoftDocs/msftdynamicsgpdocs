@@ -18,7 +18,7 @@ Before you can install the Dynamics GP web components, you must install other so
 
 ## Server operating system
 
-To install the Dynamics GP web components, the web server and the session host servers must be running [one of the following operating systems from Microsoft Dynamics GP System Requirements](https://learn.microsoft.com/en-us/dynamics/s-e/gp/mdgp2018_system_requirements). 
+To install the Dynamics GP web components, the web server and the session host servers must be running [one of the following operating systems from Microsoft Dynamics GP System Requirements](/dynamics/s-e/gp/mdgp2018_system_requirements). 
 
 You cannot install any of the Dynamics GP web client components on a server that is also being used as a domain controller.
 
