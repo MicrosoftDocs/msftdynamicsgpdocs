@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 12/19/2024
+ms.date: 12/27/2024
 ---
 # U.S. 2025 Payroll Tax Update
 
@@ -145,7 +145,7 @@ Withholding rates for taxpayers filing as *HOH*:
 | 78,750      | 117,250          | 7,442.00       | 22%      | 78,750            |
 | 117,250     | 211,200          | 15,912.00      | 24%      | 117,250           |
 | 211,200     | 264,400          | 38,460.00      | 32%      | 211,200           |
-| 264,400     | 640,250          | 53,484.00      | 35%      | 264,400           |
+| 264,400     | 640,250          | 55,484.00      | 35%      | 264,400           |
 | 640,250     | And Over         | 187,031.50     | 37%      | 640,250           |
 
 Withholding rates for taxpayers filing as *HOHHR*:
