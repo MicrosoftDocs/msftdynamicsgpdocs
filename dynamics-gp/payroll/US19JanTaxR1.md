@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 12/27/2024
+ms.date: 12/28/2024
 ---
 # U.S. 2025 Payroll Tax Update
 
@@ -248,8 +248,8 @@ Another example, I put 5500 on the form. Again, it does not match the other fili
 ### Withholding changes for Hawaii
 
 - The Standard Deduction Amount is $1,650 (New 2025)
-- Personal Exemption is $5,000 was $1,144
-- 
+- Personal Exemption is $1,144
+  
 Withholding rates for taxpayers filing as *MAR*:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
