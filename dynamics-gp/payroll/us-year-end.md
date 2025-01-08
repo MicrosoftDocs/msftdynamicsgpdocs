@@ -312,22 +312,30 @@ The Last Year-end Update date is read from the LastYearEndUpdate= line in the De
 
 For more information about how the Year-end Update date is changed, search the [Microsoft Dynamics Knowledge Base](https://support.microsoft.com/help/981312/the-date-in-the-last-year-end-update-field-is-not-updated-after-you-in) and view article number 981312.
 
-- I receive this error message when you try to calculate checks in Payroll in Microsoft Dynamics GP: "Checks cannot be calculated while the year-end closing is in process"
-To resolve this problem, follow these steps:
-1. Make sure you enter a date that is in the upcoming NEW year in the User Date window.  Otherwise the system things you are still in the pior year when the year end wage file has been created.
+- I receive this error message when I try to calculate checks in Payroll in Microsoft Dynamics GP: "Checks cannot be calculated while the year-end closing is in process"
 
-Note After you change the date in the User Date window, you must remove the build in the Build Payroll Checks window, and then build the payroll checks again in the Build Payroll Check window.
+  To resolve this problem, follow these steps:
 
-2. Change the value in the YENDCRTD field in the UPR10100 table. 
-To do this, follow these steps:
-Start SQL Server Management Studio. To do this,  click Start, point to All Programs, point to Microsoft SQL Server, and then click SQL Server Management Studio.
-Run the following statement against the company database.
-select YENDCRTD, * from UPR10100 WHERE RPTNGYR ='2024'
-Note the value in the YENDCRTD field. If the value in the field is 1, change the value in the YENDCRTD field to 0, just for the 1 year.
+  1. Make sure you enter a date that is in the upcoming NEW year in the User Date window.  Otherwise the system things you are still in the pior year when the year end wage file has been created.
 
-Note If you must create the W-2 Electronic File or print W-2s, you must change the value in the YENDCRTD field back to 1 after you complete the pay run.
+     > [!NOTE]
+     > After you change the date in the User Date window, you must remove the build in the Build Payroll Checks window, and then build the payroll checks again in the Build Payroll Check window.
 
-3. If you have a Wennsoft product, verify that the Rate Class setting is unmarked in the Posting Options window.
+  1. Change the value in the YENDCRTD field in the UPR10100 table. To do this, follow these steps:
+
+     1. Start SQL Server Management Studio. To do this, click Start, point to All Programs, point to Microsoft SQL Server, and then click SQL Server Management Studio.
+     1. Run the following statement against the company database.
+
+        ```sql
+        select YENDCRTD, * from UPR10100 WHERE RPTNGYR ='2024'
+        ```
+
+       Note the value in the YENDCRTD field. If the value in the field is 1, change the value in the YENDCRTD field to 0, just for the 1 year.
+
+       > [!NOTE]
+       > If you must create the W-2 Electronic File or print W-2s, you must change the value in the YENDCRTD field back to 1 after you complete the pay run.
+
+  1. If you have a Wennsoft product, verify that the Rate Class setting is unmarked in the Posting Options window.
 
 ## Chapter 4: Payroll year-end procedures
 
