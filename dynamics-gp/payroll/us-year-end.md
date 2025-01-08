@@ -287,30 +287,30 @@ As you complete year-end tasks, refer to the answers in this section.
   
   - Where should I report the cost of coverage of an employer-sponsored group health plan on the W-2?
 
-Applicable employer-sponsored group health plan values should be reported in Box 12 DD on the W-2. 
-To add a W-2 box and label to a specific Employee:
-Navigate to Cards >> Payroll >> Deduction or Benefit
-Pull up the appropriate Employee ID, and the appropriate Code.
-Next to W-2 Box: Use arrows to navigate to desired W-2 box space, and enter the appropriate W-2 box.
-Next to W-2 Label: Enter appropriate W-2 label.
-Remember: There are 4 possible labels available for every deduction, so verify the label is assigned only once to avoid duplication of values – See FAQ 2. It would be recommended to keep the codes consistent at the setup level, versus changing them at the employee level, just roll it down from setup.
+    Applicable employer-sponsored group health plan values should be reported in Box 12 DD on the W-2. To add a W-2 box and label to a specific Employee:
+
+    1. Navigate to Cards >> Payroll >> Deduction or Benefit
+    1. Pull up the appropriate Employee ID, and the appropriate Code.
+    1. Next to W-2 Box: Use arrows to navigate to desired W-2 box space, and enter the appropriate W-2 box.
+    1. Next to W-2 Label: Enter appropriate W-2 label.
+
+    Remember: There are 4 possible labels available for every deduction, so verify the label is assigned only once to avoid duplication of values – See FAQ 2. It would be recommended to keep the codes consistent at the setup level, versus changing them at the employee level, just roll it down from setup.
 
 - Should box 12DD print on the W-3 it seems to be missing?
 
-Not every box and label that prints on the W-2 is summed on the W-3.  Review the instructions for details but examples that do not print on the W-3 are codes A-C, J-R, T-W, Z, DD, FF, GG, and HH are not reported on the form W-3.
+  Not every box and label that prints on the W-2 is summed on the W-3.  Review the instructions for details but examples that do not print on the W-3 are codes A-C, J-R, T-W, Z, DD, FF, GG, and HH are not reported on the form W-3.
 
 - How does the Retirement Plan checkbox get marked on the W-2, when I do not have it marked  under Cards | Payroll | Tax?
 
-Per the W-2 instructions this box should be marked if the employee was an "active participant" for any part of the year. 
-Example 401K, 403B, SEP, 457B, 501C,etc.  
-For example if you have a $100.00 on the employee W2 in Box 12 D, the retirement plan box will be marked when you create the year end wage file, even if it is not marked under Cards | Payroll | Tax.
-Also on the validation report it will warn you when you have labels for retirement plans and the box is not marked.  Special Codes are deferred comp, but W-2 Retirement Plan is not checked.
+  Per the W-2 instructions this box should be marked if the employee was an "active participant" for any part of the year, such as, 401K, 403B, SEP, 457B, 501C. For example, if you have a $100.00 on the employee W2 in Box 12 D, the retirement plan box will be marked when you create the year end wage file, even if it is not marked under Cards | Payroll | Tax.
+
+  Also on the validation report it will warn you when you have labels for retirement plans and the box is not marked.  Special Codes are deferred comp, but W-2 Retirement Plan is not checked.
 
 - The correct Last Year-end Update date doesn't appear in the Payroll Setup window, even though I installed the 2024 year-end update and see the changes included in the update. Is there something I need to do?
 
-The Last Year-end Update date is read from the LastYearEndUpdate= line in the Dex.ini file. When you install a year-end update on a computer, the Dex.ini file on that computer is updated. However, in some Windows Terminal Server deployments, there is only a single installation of Dynamics GP, which many users access. Each user typically has a Dex.ini file in their home Windows folder. Installing the year-end update on the server doesn't update each user's Dex.ini file. In these situations, you should manually update each user's Dex.ini file so that the appropriate line reads LastYearEndUpdate=11/21/2024.
+  The Last Year-end Update date is read from the LastYearEndUpdate= line in the Dex.ini file. When you install a year-end update on a computer, the Dex.ini file on that computer is updated. However, in some Windows Terminal Server deployments, there is only a single installation of Dynamics GP, which many users access. Each user typically has a Dex.ini file in their home Windows folder. Installing the year-end update on the server doesn't update each user's Dex.ini file. In these situations, you should manually update each user's Dex.ini file so that the appropriate line reads LastYearEndUpdate=11/21/2024.
 
-For more information about how the Year-end Update date is changed, search the [Microsoft Dynamics Knowledge Base](https://support.microsoft.com/help/981312/the-date-in-the-last-year-end-update-field-is-not-updated-after-you-in) and view article number 981312.
+  For more information about how the Year-end Update date is changed, search the [Microsoft Dynamics Knowledge Base](https://support.microsoft.com/help/981312/the-date-in-the-last-year-end-update-field-is-not-updated-after-you-in) and view article number 981312.
 
 ## Chapter 4: Payroll year-end procedures
 
