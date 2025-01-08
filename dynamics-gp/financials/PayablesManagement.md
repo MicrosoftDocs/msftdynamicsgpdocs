@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 11/30/2022
+ms.date: 1/2/2025
 ---
 
 # Microsoft Dynamics GP Payables Management
@@ -430,7 +430,7 @@ Making a vendor inactive isn’t the same thing as placing a vendor on hold. You
 
 Your company can use the vendor approval workflow feature as part of its business controls. If you use this feature, you can define an approval process for new vendor records or modifications to an existing vendor record.
 
-When a vendor record is ready to be approved, approvers can be notified and the vendor records can be approved, using Microsoft Outlook, Microsoft Dynamics GP, or SharePoint®. After a vendor has been approved, you can perform the following tasks for the vendor.
+When a vendor record is ready to be approved, approvers can be notified and the vendor records can be approved, using Microsoft Outlook or Microsoft Dynamics GP. After a vendor has been approved, you can perform the following tasks for the vendor.
 
 - Post payables transactions
 
@@ -450,7 +450,7 @@ When a vendor record is ready to be approved, approvers can be notified and the 
 
 - Post Purchase Order Processing invoices
 
-For more information about Workflow, see the System Setup Guide (Help \>\> Printable Manuals \>\> select System \>\> select System Setup Guide) or the Workflow Administrator’s Guide (Help \>\> Printable Manuals \>\> select System \>\> select Workflow Administrator’s Guide).
+For more information about Workflow, see the [System Setup Guide](/dynamics-gp/installation/workflow).
 
 #### Adding vendor cards
 
