@@ -450,7 +450,7 @@ When a vendor record is ready to be approved, approvers can be notified and the 
 
 - Post Purchase Order Processing invoices
 
-[For more information about Workflow, see the System Setup Guide](https://learn.microsoft.com/en-us/dynamics-gp/installation/workflow).
+For more information about Workflow, see the [System Setup Guide](/dynamics-gp/installation/workflow).
 
 #### Adding vendor cards
 
