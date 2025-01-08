@@ -285,16 +285,16 @@ As you complete year-end tasks, refer to the answers in this section.
 
   It will print this information on the additional W-2.
   
-  - Where should I report the cost of coverage of an employer-sponsored group health plan on the W-2?
+- Where should I report the cost of coverage of an employer-sponsored group health plan on the W-2?
 
-    Applicable employer-sponsored group health plan values should be reported in Box 12 DD on the W-2. To add a W-2 box and label to a specific Employee:
+  Applicable employer-sponsored group health plan values should be reported in Box 12 DD on the W-2. To add a W-2 box and label to a specific Employee:
 
-    1. Navigate to Cards >> Payroll >> Deduction or Benefit
-    1. Pull up the appropriate Employee ID, and the appropriate Code.
-    1. Next to W-2 Box: Use arrows to navigate to desired W-2 box space, and enter the appropriate W-2 box.
-    1. Next to W-2 Label: Enter appropriate W-2 label.
+  1. Navigate to Cards >> Payroll >> Deduction or Benefit
+  1. Pull up the appropriate Employee ID, and the appropriate Code.
+  1. Next to W-2 Box: Use arrows to navigate to desired W-2 box space, and enter the appropriate W-2 box.
+  1. Next to W-2 Label: Enter appropriate W-2 label.
 
-    Remember: There are 4 possible labels available for every deduction, so verify the label is assigned only once to avoid duplication of values – See FAQ 2. It would be recommended to keep the codes consistent at the setup level, versus changing them at the employee level, just roll it down from setup.
+  Remember: There are 4 possible labels available for every deduction, so verify the label is assigned only once to avoid duplication of values – See FAQ 2. It would be recommended to keep the codes consistent at the setup level, versus changing them at the employee level, just roll it down from setup.
 
 - Should box 12DD print on the W-3 it seems to be missing?
 
