@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/8/2025
+ms.date: 1/9/2025
 ---
 # U.S. 2025 Payroll Tax Update
 
@@ -169,8 +169,9 @@ The Personal Exemption amount is \$5,050 for Filing Status MAR and SINGLE.
 > Per the state of North Dakota, there is no HOH filing status with exemptions. If an employee on the W4 chooses filing status of HOH and does not mark step 2, you still choose HOH as the filing status in Dynamics GP.
 >
 > The state relies on the federal form W-4 to calculate the amount to withhold. Per the state, step 3 for dependent claim amount is not used for ND state tax withholding.
+> For the 2025 year, Section 2 Withholding Methods for Forms W-4 for 2020 and After has the same wage brackets as (Forms W-4 Before 2020). 
 
-Withholding rates for taxpayers filing as *MAR*:
+Withholding rates for taxpayers filing as *MAR* & *MARHR*:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over    |
 |-------------|------------------|----------------|--------------|-------------------|
@@ -178,29 +179,13 @@ Withholding rates for taxpayers filing as *MAR*:
 | 55,488      | 164,038          | 0               | 1.95%       | 55,488            |
 | 164,038     | And Over         | 2,116.73        | 2.50%       | 164,038           |
 
-Withholding rates for taxpayers filing as *MARHR*:
+Withholding rates for taxpayers filing as *SINGLE* & *SINGHR*:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over    |
 |-------------|------------------|----------------|--------------|-------------------|
 | 0           | 55,975           | 0               | 0%          | 0                 |
 | 55,975      | 252,325          | 0               | 1.95%       | 55,975            |
 | 252,325     | And Over         | 3,828.83        | 2.50%       | 252,325           |
-
-Withholding rates for taxpayers filing as *SINGLE*:
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over    |
-|-------------|------------------|----------------|--------------|-------------------|
-| 0           | 55,975           | 0               | 0%          | 0                 |
-| 55,975      | 252,325          | 0               | 1.95%       | 55,975            |
-| 252,325     | And Over         | 3,828.83        | 2.50%       | 252,325           |
-
-Withholding rates for taxpayers filing as *SINGHR*:
-
-| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
-|---------|--------------|------------|----------|----------------|
-| 0       | 52,025       | 0          | 0%       | 0              |
-| 52,025  | 233,275      | 0          | 1.95%    | 52,025         |
-| 233,275 | And Over     | 3,534.38   | 2.50%    | 233,275        |
 
 Withholding rates for taxpayers filing as *HOHHR*:
 
