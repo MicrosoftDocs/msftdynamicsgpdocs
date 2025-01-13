@@ -94,13 +94,11 @@ Tax Type rates for Filing Status NA:
 
 ### Withholding changes for Louisiana
 
-The Flat tax rate for all filing status 3.09 from 1.85 
-
-Special Type rates & Dependent Exemption for all filing status removed.
-
-Standard Deduction for EXEMPT $0.00 
-Standard Deduction for SM1 $12,500
-Standard Deduction for M2 $25,000
+- The flat tax rate for all filing status 3.09 from 1.85 
+- Special Type rates & Dependent Exemption for all filing status removed.
+- Standard Deduction for EXEMPT $0.00 
+- Standard Deduction for SM1 $12,500
+- Standard Deduction for M2 $25,000
 
 ### Withholding changes for Minnesota
 
@@ -128,7 +126,7 @@ Withholding rates for taxpayers filing as *SINGLE*:
 
 ### Withholding changes for Montana
 
-The Personal Exemption amount is $0 formerly $2,070 (2023) 
+The Personal Exemption amount is $0 formerly $2,070 (2023). 
 
 Tax Type rates for MAR Filing Status:
 
