@@ -24,7 +24,7 @@ This video compares the work process of entering receivables transactions in Dyn
 
 <br><br>  
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4R23y]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=034e818f-3210-4bac-9e1b-03a1eb4018f9]
 
 ## Pay vendors
 
@@ -32,7 +32,7 @@ This video compares the work process of paying vendors in Dynamics GP and Dynami
 
 <br><br>  
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4R23z]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=af103215-68f8-4a48-9b37-b989a5be50eb]
 
 ## Enter payables transactions
 
@@ -40,7 +40,7 @@ This video compares the work process of entering payables transactions in Dynami
 
 <br><br>  
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4S1BE]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=639cd7be-dbeb-461b-a685-61b1fd8a06a9]
 
 ## Enter customer cash receipts
 
@@ -48,13 +48,13 @@ This video compares the work process of entering customer cash receipts in Dynam
 
 <br><br>  
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Sh9n]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8786fb85-e70a-4507-99f0-84a379b1bb1d]
 
 ## Finding Pages and Information with Tell Me  
 
 This video talks about the in-product search capability in Business Central.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2ORaj]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1a4b06fc-92f9-4530-b5e9-901d364cac71]
 
 ## See also
 
