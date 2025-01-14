@@ -51,7 +51,7 @@ This change is for the Midrange Income look up part of the tax calculation.
 
 Tax Type rates for Filing Status NA:
 
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+| If Over | But Not Over  | Tax Amount  | Tax Rate| On Excess Over|
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 5,499            | 0              | 0.0%         | 0                  |
 | 5,499       | 10,899           | -109.98        | 2.0%         | 0                  |
@@ -94,8 +94,8 @@ Tax Type rates for Filing Status NA:
 
 ### Withholding changes for Louisiana
 
-- The flat tax rate for all filing status 3.09 from 1.85 
-- Special Type rates & Dependent Exemption for all filing status removed.
+- The flat tax rate for all filing status 3.09 from 1.85
+- Special Type rates & Dependent Exemption for all filing status removed
 - Standard Deduction for EXEMPT $0.00 
 - Standard Deduction for SM1 $12,500
 - Standard Deduction for M2 $25,000
@@ -199,7 +199,7 @@ Withholding rates for taxpayers filing as *HOHHR*:
 - The Standard Deduction Amount is \$5,670 for MS3 and S3 Filing Status.
 - The Standard Deduction Amount is \$2,835 for S2 Filing Status.
 - The Personal Exemption amount is \$256 for all Filing Status.
-- New Filing status for 2020 *NOWH* (No Withholding Provided) Flat tax rate of 8% (remains for 2025 year)
+- New Filing status for 2020 *NOWH* (No Withholding Provided) Flat tax rate of 8% (remains for 2025 year).
 - HB2119 requires employers to withhold income tax at a rate of 8 percent of employee wages if they employee has not provided a withholding statement or exemption certificate. Continue withholding at the 8 percent rate until the employee submits a withholding statement and exemption certificate.
 
 Special Tax Type rates for MS3 Filing Status:
@@ -266,7 +266,7 @@ For all Filing Status the Personal Exemption ($1,000) wage limit increased to $2
 
 Withholding rates for taxpayers filing as *MAR* and *SINGLE*:
 
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+| If Over | But Not Over | Tax Amount | Tax Rate| On Excess Over|
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 79,900           | 0              | 3.75%        | 0                  |
 | 79,900      | 181,650          | 2,996.25       | 4.75%        | 79,900             |
@@ -279,7 +279,7 @@ The Personal Exemption amount is $5,300
 
 Withholding rates for taxpayers filing as *MAR*
 
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+| If Over | But Not Over | Tax Amount| Tax Rate | On Excess Over  |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 11,475           | 0              | 0%           | 0                  |
 | 11,475      | 93,975           | 0              | 3.35%        | 11,475             |
@@ -289,7 +289,7 @@ Withholding rates for taxpayers filing as *MAR*
 
 Withholding rates for taxpayers filing as *SINGLE*
 
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+| If Over  | But Not Over  | Tax Amount| Tax Rate | On Excess Over  |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 3,825            | 0              | 0%           | 0                  |
 | 3,825       | 53,225           | 0              | 3.35%        | 3,825              |
