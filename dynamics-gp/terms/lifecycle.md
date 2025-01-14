@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: jswymer
 ms.topic: article
 ms.author: jswymer
-ms.date: 10/13/2022
+ms.date: 01/14/2024
 
 ---
 
@@ -16,7 +16,7 @@ In October 2019, Microsoft introduced the Modern Lifecycle Policy for Microsoft 
 
 The following illustration shows the lifecycle of the various versions of Dynamics GP:
 
-[![Overview of lifecycles across GP versions.](media/gp_versions_lifecycle_new.png)](media/gp_versions_lifecycle_new.png#lightbox)  
+[![Overview of lifecycles across GP versions.](media/gp_versions_lifecycle_new-2.png)](media/gp_versions_lifecycle_new-2.png#lightbox)  
 
 The [Lifecycle](/lifecycle/products/?terms=Dynamics%20GP) site shows key information about each version of Dynamics GP. The following sections provide direct links for each listed version.  
 
@@ -24,7 +24,7 @@ The [Lifecycle](/lifecycle/products/?terms=Dynamics%20GP) site shows key informa
 
 The current version of Dynamics GP, version 18.x, is governed by the Modern Lifecycle Policy. The [Modern Lifecycle Policy](/lifecycle/policies/modern) offers support and servicing, including bug fixes, and latest tax updates. Under this policy, Dynamics GP customers stay current by taking at least one of the three all-inclusive Dynamics GP updates, typically released in June, October, and December each year. The updates will typically consist of hotfixes, tax updates, and any relevant regulatory updates. The updates can also include changes in usability or reliability to address top customer issues, and other areas that are critical in making sure that businesses run successfully on Dynamics GP.  
 
-As Microsoft continues focusing on innovation and investments in cloud solutions and technologies, we will end Dynamics GP support on September 30, 2029, for product enhancements, regulatory (tax) updates, and technical support. Security updates/patches, if needed, will be made available until April 30, 2031. Learn more at [https://aka.ms/GPblog](https://aka.ms/GPblog).
+As Microsoft continues focusing on innovation and investments in cloud solutions and technologies, we will end Dynamics GP support on December 31, 2029 (previously announced end date was September 30, 2029), for product enhancements, regulatory (tax) updates, and technical support. Security updates/patches, if needed, will be made available until April 30, 2031. Learn more at [https://aka.ms/GPblog](https://aka.ms/GPblog).
 
 The following table outlines the release schedule for the three committed all-inclusive updates of Dynamics GP each year.
 
