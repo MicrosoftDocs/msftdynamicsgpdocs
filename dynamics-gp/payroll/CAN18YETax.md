@@ -8,7 +8,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 12/9/2024
+ms.date: 1/16/2024
 ---
 
 # Canadian Payroll 2024 Year-end Update & 2025 Tax Update
@@ -327,9 +327,10 @@ Contribution rates for both employers and employees for 2025 is 5.95%. The follo
 > Example:
 > Constant 1 2024 Maximum
 > Constant 2 2025 Maximum
+> To determine when you run a 2025 payroll what maximum to use, the system looks to the Federal Basic Personal Amount in the Tax Credit Control window (Tools > Setup > Payroll Canada > Control > Tax Credits).
+> The system expects the amount of $16,129 for Federal Basic personal Amount in the control and then it will pull the 2025 maximum.
 
-To determine when you run a 2025 payroll what maximum to use, the system looks to the Federal Basic Personal Amount in the Tax Credit Control window (Tools > Setup > Payroll Canada > Control > Tax Credits).
-The system expects the amount of $16,129 for Federal Basic personal Amount in the control and then it will pull the 2025 maximum.
+#### Canadian Payroll Tax Calculations
 
 [The CRA accepts different tax calculation methods, and these are outlined on their website](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/t4127-payroll-deductions-formulas-computer-programs.html)
 
