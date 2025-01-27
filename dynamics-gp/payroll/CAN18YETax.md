@@ -8,7 +8,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 12/9/2024
+ms.date: 1/16/2024
 ---
 
 # Canadian Payroll 2024 Year-end Update & 2025 Tax Update
@@ -105,8 +105,9 @@ Use the following checklist for Canadian Payroll year-end processing. For detail
 To make it easier to determine CPP and EI maximums between running a payroll in a new year (2025 maximums) and printing T4's from prior years (2024 maximum), two constants are created each with the year maximum in place.
 
 Example:
-Constant 1 2024 Maximum
-Constant 2 2025 Maximum
+
+- Constant 1 2024 Maximum
+- Constant 2 2025 Maximum
 
 To determine when you run a 2024 payroll what maximum to use, the system looks to the **Federal Basic Personal Amount** in the Tax Credit Control window.
 Tools | Setup | Payroll Canada | Control | Tax Credits.
@@ -140,7 +141,7 @@ Canadian Payroll for Microsoft Dynamics GP has the ability to generate the XML f
 
 ### Finding the Software Developer Number and RL-1 Authorization number
 
-If you plan to use the Internet to submit RL-1 records, you need to obtain the [Software Developer Number and the RL-1 Slip authorization number](https://learn.microsoft.com/dynamics/s-e/gp/cagptuye2018_285). Both numbers change every year.
+If you plan to use the Internet to submit RL-1 records, you need to obtain the [Software Developer Number and the RL-1 Slip authorization number](/dynamics/s-e/gp/cagptuye2018_285). Both numbers change every year.
 
 You also can see [XML and form changes](#xml-and-form-changes) for the RL-1 authorization number and the steps for entering it.
 
@@ -325,11 +326,13 @@ Contribution rates for both employers and employees for 2025 is 5.95%. The follo
 > To make it easier to determine CPP and EI maximums between running a payroll in a new year (2025 maximums) and printing T4's from prior years (2024 maximum), two constants are created each with the year maximum in place.
 >
 > Example:
-> Constant 1 2024 Maximum
-> Constant 2 2025 Maximum
+> - Constant 1 2024 Maximum
+> - Constant 2 2025 Maximum
+> 
+> To determine when you run a 2025 payroll what maximum to use, the system looks to the Federal Basic Personal Amount in the Tax Credit Control window (Tools > Setup > Payroll Canada > Control > Tax Credits).
+> The system expects the amount of $16,129 for Federal Basic personal Amount in the control and then it will pull the 2025 maximum.
 
-To determine when you run a 2025 payroll what maximum to use, the system looks to the Federal Basic Personal Amount in the Tax Credit Control window (Tools > Setup > Payroll Canada > Control > Tax Credits).
-The system expects the amount of $16,129 for Federal Basic personal Amount in the control and then it will pull the 2025 maximum.
+#### Canadian Payroll Tax Calculations
 
 [The CRA accepts different tax calculation methods, and these are outlined on their website](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/t4127-payroll-deductions-formulas-computer-programs.html)
 
