@@ -100,7 +100,8 @@ Tax Type rates for Filing Status NA:
 - Standard Deduction for SM1 $12,500
 - Standard Deduction for M2 $25,000
 
-> If you have employees set up to withhold Louisiana state tax, then, when you apply this update, you must also apply the [January 2025 Hotfix (code) for the Louisiana state](/dynamics/s-e/gp/mdgp2018_patchreleases_377) > taxes to be correct for the year 2025. 
+> [!NOTE]
+> If you have employees set up to withhold Louisiana state tax, when you apply this update, you must also apply the [January 2025 Hotfix (code) for the Louisiana state](/dynamics/s-e/gp/mdgp2018_patchreleases_377) > taxes to be correct for the year 2025. 
 
 ### Withholding changes for Minnesota
 
