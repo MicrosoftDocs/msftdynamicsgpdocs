@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/17/2025
+ms.date: 1/27/2025
 ---
 # U.S. 2025 Payroll Tax Update
 
@@ -28,10 +28,15 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/blogs/post/?postid=dbc1295b-297f-4441-aa2f-7c2502bffc97)
 
-## Changes in January Round 2 update (Target Release 1/21/2025)
+## Changes in January Round 3 update (Target Release 1/23/2025)
+- Illinois
+- Maryland
+- Mississippi
+  
+## Changes in January Round 2 update (Released 1/23/2025)
 
 - Arkansas
-- Louisiana - code change required
+- Louisiana - [code change required](https://community.dynamics.com/blogs/post/?postid=fdba817d-a7d9-ef11-a730-7c1e527e6b0e)
 - Minnesota
 - Montana
 - North Carolina
@@ -242,7 +247,7 @@ Tax Type rates for S2 Filing Status:
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 38,665           | 0              | 0%           | 0                  |
-| 38,665      | 125,000          | 661            | 8.75%        | 38,665             |
+| 38,665      | 125,000          | 661            | 8.75%        | 11,100             |
 | 125,000     | And Over         | 10,627         | 9.9%         | 125,000            |
 
 Low Income Type rates for MS3 and S3 Filing Status:
