@@ -328,6 +328,7 @@ Contribution rates for both employers and employees for 2025 is 5.95%. The follo
 > Example:
 > - Constant 1 2024 Maximum
 > - Constant 2 2025 Maximum
+> 
 > To determine when you run a 2025 payroll what maximum to use, the system looks to the Federal Basic Personal Amount in the Tax Credit Control window (Tools > Setup > Payroll Canada > Control > Tax Credits).
 > The system expects the amount of $16,129 for Federal Basic personal Amount in the control and then it will pull the 2025 maximum.
 
