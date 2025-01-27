@@ -108,6 +108,7 @@ Tax Type rates for Filing Status NA:
 The Personal Exemption amount is \$5,200 for all Filing Status.
 
 Withholding rates for taxpayers filing as *MAR*:
+
 | If Over  | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 14,300           | 0              | 0%           | 0                  |
@@ -117,6 +118,7 @@ Withholding rates for taxpayers filing as *MAR*:
 | 344,710     | And Over         | 23,260.31      | 9.85%        | 344,710            |
 
 Withholding rates for taxpayers filing as *SINGLE*:
+
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |---------|--------------|------------|----------|----------------|
 | 0       | 4,550        | 0          | 0%       | 0              |
@@ -130,6 +132,7 @@ Withholding rates for taxpayers filing as *SINGLE*:
 The Personal Exemption amount is $0 formerly $2,070 (2023). 
 
 Tax Type rates for MAR Filing Status:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 30,000           | 0              | 0%           | 0                  |
@@ -137,6 +140,7 @@ Tax Type rates for MAR Filing Status:
 | 72,200      | And Over         | 1,983          | 5.9%         | 72,200             |
 
 Tax Type rates for SINGLE Filing Status:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 15,000           | 0              | 0%           | 0                  |
@@ -144,6 +148,7 @@ Tax Type rates for SINGLE Filing Status:
 | 36,100      | And Over         | 992            | 5.9%         | 36,100             |
 
 Tax Type rates for HOH Filing Status:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 22,500           | 0              | 0%           | 0                  |
@@ -168,6 +173,7 @@ The Personal Exemption amount is \$5,050 for Filing Status MAR and SINGLE.
 > For the 2025 year, Section 2 Withholding Methods for Forms W-4 for 2020 and After has the same wage brackets as (Forms W-4 Before 2020). 
 
 Withholding rates for taxpayers filing as *MAR* & *MARHR*:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over    |
 |-------------|------------------|----------------|--------------|-------------------|
 | 0           | 55,488           | 0               | 0%          | 0                 |
@@ -175,6 +181,7 @@ Withholding rates for taxpayers filing as *MAR* & *MARHR*:
 | 164,038     | And Over         | 2,116.73        | 2.50%       | 164,038           |
 
 Withholding rates for taxpayers filing as *SINGLE* & *SINGHR*:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over    |
 |-------------|------------------|----------------|--------------|-------------------|
 | 0           | 55,975           | 0               | 0%          | 0                 |
@@ -182,6 +189,7 @@ Withholding rates for taxpayers filing as *SINGLE* & *SINGHR*:
 | 252,325     | And Over         | 3,828.83        | 2.50%       | 252,325           |
 
 Withholding rates for taxpayers filing as *HOHHR*:
+
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |---------|--------------|------------|----------|----------------|
 | 0       | 76,200       | 0          | 0%       | 0              |
@@ -198,6 +206,7 @@ Withholding rates for taxpayers filing as *HOHHR*:
 - HB2119 requires employers to withhold income tax at a rate of 8 percent of employee wages if they employee has not provided a withholding statement or exemption certificate. Continue withholding at the 8 percent rate until the employee submits a withholding statement and exemption certificate.
 
 Special Tax Type rates for MS3 Filing Status:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 49,999           | 8,500          | 0%           | 0                  |
@@ -209,6 +218,7 @@ Special Tax Type rates for MS3 Filing Status:
 | 289,999     | And over         | 0              | 0%           | 0                  |
 
 Special Tax Type rates for S2 and S3 Filing Status:
+
 | If Over     |     But Not Over | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 49,999           | 8,500          | 0%           | 0                  |
@@ -220,6 +230,7 @@ Special Tax Type rates for S2 and S3 Filing Status:
 | 144,999     | And over         | 0              | 0%           | 0                  |
 
 Tax Type rates for MS3 and S3 Filing Status:
+
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 35,830           | 0              | 0%           | 0                  |
@@ -227,6 +238,7 @@ Tax Type rates for MS3 and S3 Filing Status:
 | 250,000     | And over         | 21,256         | 9.9%         | 250,000            |
 
 Tax Type rates for S2 Filing Status:
+
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 38,665           | 0              | 0%           | 0                  |
@@ -234,6 +246,7 @@ Tax Type rates for S2 Filing Status:
 | 125,000     | And Over         | 10,627         | 9.9%         | 125,000            |
 
 Low Income Type rates for MS3 and S3 Filing Status:
+
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 8,800            | 256            | 4.75%        | 0                  |
@@ -241,6 +254,7 @@ Low Income Type rates for MS3 and S3 Filing Status:
 | 22,200      | 50,000           | 1,579          | 8.75%        | 22,200             |
 
 Low Income Type rates for S2 Filing Status:
+
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 4,400            | 256            | 4.75%        | 0                  |
@@ -253,6 +267,7 @@ Low Income Type rates for S2 Filing Status:
 For all Filing Status the Personal Exemption ($1,000) wage limit increased to $283,250
 
 Withholding rates for taxpayers filing as *MAR* and *SINGLE*:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 79,900           | 0              | 3.75%        | 0                  |
@@ -264,7 +279,8 @@ Withholding rates for taxpayers filing as *MAR* and *SINGLE*:
 
 The Personal Exemption amount is $5,300
 
-Withholding rates for taxpayers filing as *MAR*
+Withholding rates for taxpayers filing as *MAR*:
+
 | If Over | But Not Over | Tax Amount| Tax Rate | On Excess Over  |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 11,475           | 0              | 0%           | 0                  |
@@ -273,7 +289,8 @@ Withholding rates for taxpayers filing as *MAR*
 | 210,925     | 315,475          | 10,482.45      | 7.60%        | 210,925            |
 | 315,475     | And Over         | 18,428.25      | 8.75%        | 315,475            |
 
-Withholding rates for taxpayers filing as *SINGLE*
+Withholding rates for taxpayers filing as *SINGLE*:
+
 | If Over  | But Not Over  | Tax Amount| Tax Rate | On Excess Over  |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 3,825            | 0              | 0%           | 0                  |
@@ -326,6 +343,7 @@ Withholding rates for taxpayers filing as *NRA*:
 | 643,450    | And Over        | 188,769.75    | 37%         | 643,450           |
 
 Withholding rates for taxpayers filing as *NRAHR*:
+
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
 |             | 22,500           | 0              | 0%           | 0                  |
@@ -338,6 +356,7 @@ Withholding rates for taxpayers filing as *NRAHR*:
 | 335,675     | And Over         | 94,384.88      | 37%          | 335,675            |
 
 Withholding rates for taxpayers filing as *MAR*:
+
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over|
 |------------|-----------------|---------------|-------------|-------------------|
 | 0          | 17,100          | 0             | 0%          | 0                 |
@@ -350,6 +369,7 @@ Withholding rates for taxpayers filing as *MAR*:
 | 768,700    | And Over        | 202,154.50    | 37%         | 768,700           |
 
 Withholding rates for taxpayers filing as *MARHR*:
+
 | If Over  | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 15,000           | 0              | 0%           | 0                  |
@@ -362,6 +382,7 @@ Withholding rates for taxpayers filing as *MARHR*:
 | 390,800     | And Over         | 101,077.25     | 37%          | 390,800            |
 
 Withholding rates for taxpayers filing as *SINGLE*:
+
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |---------|--------------|------------|----------|----------------|
 | 0       | 6,400        | 0          | 0%       | 0              |
@@ -374,6 +395,7 @@ Withholding rates for taxpayers filing as *SINGLE*:
 | 632,750 | And Over     | 188,769.75 | 37%      | 632,750        |
 
 Withholding rates for taxpayers filing as *SGLHHR*:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|----------|----------------|
 | 0           | 7,500            | 0              | 0%       | 0              |
@@ -386,6 +408,7 @@ Withholding rates for taxpayers filing as *SGLHHR*:
 | 320,675     | And Over         | 94,384.88      | 37%      | 320,675        |
 
 Withholding rates for taxpayers filing as *HOH*:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate | On Excess Over    |
 |-------------|------------------|----------------|----------|-------------------|
 | 0           | 13,900           | 0              | 0%       | 0                 |
@@ -398,6 +421,7 @@ Withholding rates for taxpayers filing as *HOH*:
 | 640,250     | And Over         | 187,031.50     | 37%      | 640,250           |
 
 Withholding rates for taxpayers filing as *HOHHR*:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate | On Excess Over     |
 |-------------|------------------|----------------|----------|--------------------|
 | 0           | 11,250           | 0              | 0%       | 0                  |
@@ -424,6 +448,7 @@ For Filing Status of MAR1 and SINGLE:
 - Low Income Limit is $18,368 from $17,769
 
 Withholding rates for taxpayers filing as *HOH*:
+
 | If Over | But Not Over  | Tax Amount  | Tax Rate  | On Excess Over                  |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 21,527           | 0              | 1.1%         | 0                  |
@@ -438,6 +463,7 @@ Withholding rates for taxpayers filing as *HOH*:
 | 1,000,000   | And Over         | 106,669.70     | 14.63%       | 1,000,000          |
 
 Withholding rates for taxpayers filing as *MAR1* and *MAR2*:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 21,512           | 0              | 1.1%         | 0                  |
@@ -452,6 +478,7 @@ Withholding rates for taxpayers filing as *MAR1* and *MAR2*:
 | 1,442,628   | And Over         | 159,124.94     | 14.63%       | 1,442,628          |
 
 Withholding rates for taxpayers filing as *SINGLE*:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 10,756           | 0              | 1.1%         | 0                  |
@@ -496,6 +523,7 @@ Another example, I put 5500 on the form. Again, it does not match the other fili
 - Personal Exemption is $1,144
   
 Withholding rates for taxpayers filing as *MAR*:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 19,200           | 0              | 1.4%         | 0                  |
@@ -508,6 +536,7 @@ Withholding rates for taxpayers filing as *MAR*:
 | 250,000     | And Over         | 16,782.00      | 7.9%         | 250,000            |
 
 Withholding rates for taxpayers filing as *SHOH*:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 9,600            | 0              | 0%           | 0                  |
@@ -538,6 +567,7 @@ New filing status as of January 1, 2025
 All filing statuses have the same fixed flat tax of 3.80%
 
 Personal Exemption Tax Type rates for ALL filling Status:
+
 | If Over  |But Not Over | Tax Amoun   | Tax Rate     | On Excess Over     |
 |----------|-------------|-------------|--------------|--------------------|
 | 0        | 1           | 40          | 0%           | 0                  |
@@ -575,6 +605,7 @@ Personal Exemption Tax Type rates for ALL filling Status:
 - Personal Exemption is $5,150 was $5,000
 
 Withholding rates for taxpayers filing as *SINGLE*, Tax table type:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 |  0          | 26,800           | 0              | 5.8%         | 0                  |
@@ -582,12 +613,14 @@ Withholding rates for taxpayers filing as *SINGLE*, Tax table type:
 | 63,450      | And over         | 4,028          | 7.15%        | 63,450             |
 
 Special table type:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 100,000          | 0              | 0            | 12,150             |
 | 100,000     | 175,000          | 75,000         | 0            | 0                  |
 
 Withholding rates for taxpayers filing as MAR, Tax table type:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 53,600           |                | 5.80%        | 0                  |
@@ -595,6 +628,7 @@ Withholding rates for taxpayers filing as MAR, Tax table type:
 | 126,900     | And Over         | 8,057          | 7.15%        | 126,900            |
 
 Special table type:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |               
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 200,050          | 0              | 0            | 27,150             |
@@ -612,6 +646,7 @@ Special table type:
 - The Standard Deduction is $15,000 prior \$14,600 for filing status MAR2 and SINGLE
 
 Withholding rates for all filing status:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 1,313            | 0              | 0%           | 0                  |
@@ -629,6 +664,7 @@ Withholding rates for all filing status:
 The Personal Exemption amount is $2,360 formerly \$2,250 for Filing Status MAR and SINGLE.
 
 Withholding rates for taxpayers filing as *MAR*:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 7,910            | 0              | 0            | 0                  |
@@ -640,6 +676,7 @@ Withholding rates for taxpayers filing as *MAR*:
 | 80,040      | And over         | 3,183.87       | 5.37%        | 80,040             |
 
 Withholding rates for taxpayers filing as *SINGLE*:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 3,310            | 0              | 0            | 0                  |
@@ -653,6 +690,7 @@ Withholding rates for taxpayers filing as *SINGLE*:
 ### Withholding changes for New Mexico
 
 Withholding rates for taxpayers filing as *MAR*:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 15,000           | 0              | 0%           | 0                  |
@@ -667,6 +705,7 @@ Withholding rates for taxpayers filing as *MAR*:
 | 330,000     | And Over         | 14,624         | 5.9%         | 330,000            |
 
 Withholding rates for taxpayers filing as *SINGLE*:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 7,500            | 0              | 0%           | 0                  |
@@ -681,6 +720,7 @@ Withholding rates for taxpayers filing as *SINGLE*:
 | 217,500     | And Over         | 9,748.00       | 5.9%         | 217,500            |
 
 Withholding rates for taxpayers filing as *HOH*:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 11,250           | 0              | 0%           | 0                  |
@@ -697,6 +737,7 @@ Withholding rates for taxpayers filing as *HOH*:
 ### Withholding changes for Oklahoma
 
 Withholding rates for taxpayers filing as *MARH*:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 12,700           | 0              | 0%           | 0                  |
@@ -708,6 +749,7 @@ Withholding rates for taxpayers filing as *MARH*:
 | 27,100      | And Over         | 307.00         | 4.75%        | 27,100             |
 
 Withholding rates for taxpayers filing as *SINGLE*, *MFS*, *MAR2*:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 6,350            | 0              | 0%           | 0                  |
@@ -724,6 +766,7 @@ Withholding rates for taxpayers filing as *SINGLE*, *MFS*, *MAR2*:
 - The Standard Deduction Maximum is $7,300 for ONE Filing Status.
 
 Tax Type rates for all Filing Status:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 3,560            | 0              | 0.0%         | 0                  |
@@ -735,6 +778,7 @@ Tax Type rates for all Filing Status:
 The Personal Exemption amount is $2,000 For all filing status.
 
 Withholding rates for taxpayers filing as PM (Percentage Method) are as follows:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate | On Excess Over     |
 |-------------|------------------|----------------|----------|--------------------|
 | 0           | 10,000           | 0              | 2.22%    | 0                  |
@@ -744,6 +788,7 @@ Withholding rates for taxpayers filing as PM (Percentage Method) are as follows:
 | 60,000      | and over         | 2,053.50       | 4.82%    | 60,000             |
 
 Withholding rates for taxpayers filing as TE (Two Earner Option) are as follows:
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate | On Excess Over     |
 |-------------|------------------|----------------|----------|--------------------|
 | 0           | 7,500            | 0              | 2.22%    | 0                  |
