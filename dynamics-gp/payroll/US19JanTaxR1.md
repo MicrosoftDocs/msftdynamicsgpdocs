@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/31/2025
+ms.date: 2/3/2025
 ---
 # U.S. 2025 Payroll Tax Update
 
@@ -16,7 +16,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2025 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the second tax update for 2025 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2025. 
+This is the third tax update for 2025 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2025. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -28,7 +28,7 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/blogs/post/?postid=dbc1295b-297f-4441-aa2f-7c2502bffc97)
 
-## Changes in January Round 3 update (Target Release 2/10/2025)
+## Changes in January Round 3 update (Target Release 2/6/2025)
 - Illinois
 - Maryland
 - Mississippi
