@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/17/2025
+ms.date: 2/3/2025
 ---
 # U.S. 2025 Payroll Tax Update
 
@@ -16,7 +16,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2025 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the second tax update for 2025 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2025. 
+This is the third tax update for 2025 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2025. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -28,10 +28,118 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/blogs/post/?postid=dbc1295b-297f-4441-aa2f-7c2502bffc97)
 
-## Changes in January Round 2 update (Target Release 1/21/2025)
+## Changes in January Round 3 update (Target Release 2/6/2025)
+- Illinois
+- Maryland
+- Mississippi
+
+### Withholding changes for Illinois
+
+- The Dependent Exemptions is $2,850 from $2,775.
+- The Flat tax rate remains at 4.95% and allowances at 1,000.
+
+### Withholding changes for Maryland
+
+For each Filing Status of Maryland:
+
+- Standard Deduction Minimum is $1,850 from $1,800
+- Standard Deduction Maximum is $2,800 from $2,700
+- The Standard Deduction Percent remains at 15 percent.
+
+For Filing Status of AAMAR (Anne Arundel MFJ/HOH).
+Withholding rates for taxpayer:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |    
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | 0%           | 0                  |
+| 5,000       | 75,000           | 0              | 7.50%        | 0                  |
+| 75,000      | 150,000          | 0              | 7.75%        | 0                  |
+| 150,000     | 175,000          | 11,625         | 8.00%        | 150,000            |
+| 175,000     | 225,000          | 13,625         | 8.25%        | 175,000            |
+| 225,000     | 300,000          | 17,750         | 8.50%        | 225,000            |
+| 300,000     | 480,000          | 24,125         | 8.75%        | 300,000            |
+| 480,000     | And over         | 24,725         | 8.95%        | 480,000            |
+
+For Filing Status of ARNDEL (Anne Arundel SGL/DEP/MFS).
+Withholding rates for taxpayer:
+
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | 0%           | 0                  |
+| 5,000       | 50,000           | 0              | 7.50%        | 0                  |
+| 50,000      | 100,000          | 0              | 7.75%        | 0                  |
+| 100,000     | 125,000          | 7,750          | 8.00%        | 100,000            |
+| 125,000     | 150,000          | 9,750          | 8.25%        | 125,000            |
+| 150,000     | 250,000          | 11,812.50      | 8.50%        | 150,000            |
+| 250,000     | 400,000          | 20,312.50      | 8.75%        | 250,000            |
+| 400,000     | And over         | 20,812.50      | 8.95%        | 400,000            |
+
+For Filing Status of CALVRT (Calvert SGL/DEP/MFS).
+Withholding rates for taxpayer:
+
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | 0%           | 0                  |
+| 5,000       | 100,000          | 0              | 7.95%        | 0                  |
+| 100,000     | 125,000          | 7,950          | 8.20%        | 100,000            |
+| 125,000     | 150,000          | 10,000         | 8.45%        | 125,000            |
+| 150,000     | 250,000          | 12,112.50      | 8.70%        | 150,000            |
+| 250,000     | And over         | 20,812.50      | 8.95%        | 250,000            |
+
+For Filing Status of CVMAR (Calvert MFJ/HOH).
+Withholding rates for taxpayer:
+
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | 0%           | 0                  |
+| 5,000       | 150,000          | 0              | 7.95%        | 0                  |
+| 150,000     | 175,000          | 11,925         | 8.20%        | 150,000            |
+| 175,000     | 225,000          | 13,975         | 8.45%        | 175,000            |
+| 225,000     | 300,000          | 18,200         | 8.70%        | 225,000            |
+| 300,000     | And over         | 24,725         | 8.95%        | 300,000            |
+
+For Filing Status of SMMAR (St.Mary MFJ/HOH).
+Withholding rates for taxpayer:
+
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | 0%           | 0                  |
+| 5,000       | 150,000          | 0              | 7.95%        | 0                  |
+| 150,000     | 175,000          | 11,925         | 8.20%        | 150,000            |
+| 175,000     | 225,000          | 13,975         | 8.45%        | 175,000            |
+| 225,000     | 300,000          | 18,200         | 8.70%        | 225,000            |
+| 300,000     | And over         | 24,725         | 8.95%        | 300,000            |
+
+For Filing Status of STMARY (St.Mary SGL/DEP/MFS).
+Withholding rates for taxpayer:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,000            | 0              | 0%           | 0                  |
+| 5,000       | 100,000          | 0              | 7.95%        | 0                  |
+| 100,000     | 125,000          | 7,950          | 8.20%        | 100,000            |
+| 125,000     | 150,000          | 10,000         | 8.45%        | 125,000            |
+| 150,000     | 250,000          | 12,112.50      | 8.70%        | 150,000            |
+| 250,000     | And over         | 20,812.50      | 8.95%        | 250,000            |
+
+### Withholding changes for Mississippi
+
+Withholding rates for all Filing Status:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 10,000           | 0              | 0            | 0                  |
+| 10,000      | And over         | 0              | 4.4%         | 10,000             |
+
+
+## Changes in January Round 2 update (Released 1/23/2025)
 
 - Arkansas
-- Louisiana - code change required
+- Louisiana - [code change required](https://community.dynamics.com/blogs/post/?postid=fdba817d-a7d9-ef11-a730-7c1e527e6b0e)
 - Minnesota
 - Montana
 - North Carolina
@@ -242,7 +350,7 @@ Tax Type rates for S2 Filing Status:
 | If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 38,665           | 0              | 0%           | 0                  |
-| 38,665      | 125,000          | 661            | 8.75%        | 38,665             |
+| 38,665      | 125,000          | 661            | 8.75%        | 11,100             |
 | 125,000     | And Over         | 10,627         | 9.9%         | 125,000            |
 
 Low Income Type rates for MS3 and S3 Filing Status:
@@ -854,7 +962,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *1/22/2025*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *2/6/2025*.
 
 ## What's next
 
