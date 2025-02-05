@@ -63,6 +63,7 @@ Withholding rates for taxpayer:
 For Filing Status of ARNDEL (Anne Arundel SGL/DEP/MFS).
 Withholding rates for taxpayer:
 
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 5,000            | 0              | 0%           | 0                  |
@@ -77,6 +78,7 @@ Withholding rates for taxpayer:
 For Filing Status of CALVRT (Calvert SGL/DEP/MFS).
 Withholding rates for taxpayer:
 
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 5,000            | 0              | 0%           | 0                  |
@@ -89,6 +91,7 @@ Withholding rates for taxpayer:
 For Filing Status of CVMAR (Calvert MFJ/HOH).
 Withholding rates for taxpayer:
 
+
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 5,000            | 0              | 0%           | 0                  |
@@ -100,6 +103,7 @@ Withholding rates for taxpayer:
 
 For Filing Status of SMMAR (St.Mary MFJ/HOH).
 Withholding rates for taxpayer:
+
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
@@ -125,7 +129,8 @@ Withholding rates for taxpayer:
 ### Withholding changes for Mississippi
 
 Withholding rates for all Filing Status:
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 10,000           | 0              | 0            | 0                  |
 | 10,000      | And over         | 0              | 4.4%         | 10,000             |
