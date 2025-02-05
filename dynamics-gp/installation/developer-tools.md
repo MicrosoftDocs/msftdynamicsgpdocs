@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 11/20/2024
+ms.date: 2/4/2025
 ---
 
 # Developer Tools
@@ -33,6 +33,7 @@ These modified procedures are use at your own risk and should be tested by your 
 - [taCalcDueDateRM](https://mbs2.microsoft.com/fileexchange/?fileID=6f1f21fb-8eec-4527-b163-578e4e55b06f) - December 2023
 - [taSOPLot](https://mbs2.microsoft.com/fileexchange/?fileID=57c819dc-2a7b-44e8-91ab-ee23c0edb054) - May 2021
 - [taPopRcptLineInsert](https://mbs2.microsoft.com/fileexchange/?fileID=1a5851ef-d68f-4cfc-af66-fa1ab70302e7) -	May 2022
+- [taRMApply](https://mbs2.microsoft.com/fileexchange/?fileID=665f3fe9-3316-458e-b5df-96573b873bd1) - December 2024
 
 ## Web Services
 
