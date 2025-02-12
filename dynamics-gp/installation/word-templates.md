@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: theley
 ms.author: theley
-ms.date: 6/9/2024
+ms.date: 2/12/2025
 ---
 
 # Word Templates in Dynamics GP
@@ -421,6 +421,32 @@ The Microsoft Dynamics GP Word Template Generator is a utility that can be used 
 Use the Design Mode which can be activated from the Developer tab to see quickly which sections the items in the word template comes from.
 
 Make regular backup of your word template as you are working, in case you make a change that you’d like to revert.
+
+## Error message The template you selected cannot be added to this report
+
+1. Can you modify a pre-existing template and import without the error?  If yes, it could be something with the file you are trying to import, see #7 below.
+
+2. Open up the xml file that you generated with notepad.  Look at the top of the xml.  
+In the dictionary node, if you see a line like this:   <Main Path="C:\GP2018\">Dynamics.dic</Main>
+Then the xml has been generated on the original, not modified report.  
+If you see something like this:   <Main Path="C:\GP2018\">Dynamics.dic</Main>
+                                  <Report Path="C:\GP2018\Data\">REPORTS.DIC</Report>
+Then that means that you generated the xml on a modified (in report writer) report.
+The versions also have to match and if this is an alternate report then that could also cause a problem. 
+You will also want to check the xml name.  It should be something like this:  XMLNAME="SOP Blank Picking Ticket Order Entered" (example report)
+Now you know the report name and whether it's modified or original, go into the Template Maintenance window and be sure to choose the report that matches the XMLNAME and either original/modified.
+
+3. Rule out the Logo on the report and if that is causing an issue.
+
+4. Make sure the form is set to compatibility. Always check the box to Maintain compatibility with previous versions of Word before saving. Only available the first time the document is saved.
+
+5. Make sure the file is unlocked.
+   
+6. Verify the XML file is connected to the correct report format.
+
+7. If you received this template package from an email, there is a chance the email security systems can potentially remove or block XML resources.  
+Many email security filters scan attachments for potentially harmful content, including XML files, which can be flagged or removed if they are deemed suspicious or contain malicious code.
+Open the file and check the XML resource connected to the template, if it is missing, that will cause the error.  
 
 ## Create and Assign Word Templates
 
