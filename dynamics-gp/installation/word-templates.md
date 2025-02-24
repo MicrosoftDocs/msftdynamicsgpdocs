@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: theley
 ms.author: theley
-ms.date: 6/9/2024
+ms.date: 2/12/2025
 ---
 
 # Word Templates in Dynamics GP
@@ -336,27 +336,28 @@ Administration >> Setup >> System >> Alternate/Modified Forms and Reports
 
 #### To update the data source for a report template
 
-1.	Update the modified report.
-Update the Report Writer report in Report Writer.
-2.	Run the report for which you made modifications to.
-3.	Export the report in XML format.
+1. Update the modified report.
 
-  	In the Report Destination Window, export the report as a file in XML format, click OK. 
-5.	Open the report template document.
+   Update the Report Writer report in Report Writer.
+1. Run the report for which you made modifications to.
+1. Export the report in XML format.
 
-  	This can be done via the clicking Modify in the Report Template Maintenance window (Administration >> Reports >> Template Maintenance) or opening the report template document .docx file directly.
-7.	In the Developer pane, select Field List from Microsoft Dynamics GP Templates group. 
-8.	Select the XML Resource containing the report definition in the Custom XML Mapping pane. 
-9.	In the Developer pane, select Remove Source from the Microsoft Dynamics GP templates group.
-10. Click OK to Removing a data source may cause missing data on the template. 
-11. In the Developer pane, select Add Source from the Microsoft Dynamics GP Templates group. 
-12. Locate the XML Document file saved in Step 3, click Open. 
-13. In the Custom XML Mapping pane, you should now see a new XML Resource listed.
+   In the Report Destination Window, export the report as a file in XML format, click OK. 
+1. Open the report template document.
+
+   This can be done by clicking Modify in the Report Template Maintenance window (Administration >> Reports >> Template Maintenance) or opening the report template document .docx file directly.
+1. In the Developer pane, select Field List from Microsoft Dynamics GP Templates group. 
+1. Select the XML Resource containing the report definition in the Custom XML Mapping pane. 
+1. In the Developer pane, select Remove Source from the Microsoft Dynamics GP templates group.
+1. Click OK to removing a data source may cause missing data on the template. 
+1. In the Developer pane, select Add Source from the Microsoft Dynamics GP Templates group. 
+1. Locate the XML Document file saved in Step 3 and click Open. 
+1. In the Custom XML Mapping pane, you should see a new XML Resource listed.
 
     > [!NOTE]
     > The naming convention should be the same as before. 
-14. Modify the word template as needed and Save As.
-15. Re-Import the word template document into Microsoft Dynamics GP.
+1. Modify the word template as needed and Save As.
+1. Re-import the word template document into Microsoft Dynamics GP.
 
 ## Word Template Generator
 
@@ -421,6 +422,34 @@ The Microsoft Dynamics GP Word Template Generator is a utility that can be used 
 Use the Design Mode which can be activated from the Developer tab to see quickly which sections the items in the word template comes from.
 
 Make regular backup of your word template as you are working, in case you make a change that you’d like to revert.
+
+## Error message The template you selected cannot be added to this report
+
+1. Can you modify a pre-existing template and import without the error?  If yes, it could be something with the file you are trying to import, see #7 below.
+1. Open up the xml file that you generated with notepad.  Look at the top of the xml.  
+
+   If you see a line like the following in the dictionary node, then the xml has been generated on the original, not modified report:
+   
+   `<Main Path="C:\GP2018\">Dynamics.dic</Main>`
+
+   If you see something like the following lines, it means that you generated the xml on a modified (in report writer) report.
+   
+   `<Main Path="C:\GP2018\">Dynamics.dic</Main>`
+
+   `<Report Path="C:\GP2018\Data\">REPORTS.DIC</Report>`
+
+   The versions also have to match and if this is an alternate report then that could also cause a problem. 
+
+   You will also want to check the xml name.  It should be something like this: `XMLNAME="SOP Blank Picking Ticket Order Entered" (example report)`
+
+   Now you know the report name and whether it's modified or original, go into the Template Maintenance window and be sure to choose the report that matches the XMLNAME and either original/modified.
+
+1. Rule out the Logo on the report and if that is causing an issue.
+1. Make sure the form is set to compatibility. Always check the box to Maintain compatibility with previous versions of Word before saving. Only available the first time the document is saved.
+1. Make sure the file is unlocked.
+1. Verify the XML file is connected to the correct report format.
+1. If you received this template package from an email, there is a chance the email security systems can potentially remove or block XML resources. Many email security filters scan attachments for potentially harmful content, including XML files, which can be flagged or removed if they are deemed suspicious or contain malicious code. 
+Open the file and check the XML resource connected to the template, if it is missing, that will cause the error.  
 
 ## Create and Assign Word Templates
 
