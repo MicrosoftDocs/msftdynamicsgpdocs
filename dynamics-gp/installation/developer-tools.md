@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 2/4/2025
+ms.date: 3/5/2025
 ---
 
 # Developer Tools
@@ -113,9 +113,12 @@ There are a couple Office redistributables that can be installed to address this
 
    [Download both Redistributable install files](https://mbs2.microsoft.com/fileexchange/?fileID=07fe2ceb-a580-419f-b4d4-45a028260637)
 
-2. Launch both Integration Manager and Dynamics GP using 'Run As Administrator' (right-click).
+  If the above link does not work, this download may also work.
+  [Report Viewer Redistributable 2008 Service Pack](https://www.microsoft.com/en-us/download/details.aspx?id=3203) 
+  
+3. Launch both Integration Manager and Dynamics GP using 'Run As Administrator' (right-click).
 
-3. While in an integration, select View > Integration Logs and verify the log comes up without any errors.
+4. While in an integration, select View > Integration Logs and verify the log comes up without any errors.
 
    Also, in the integration progress window, select the 'View Log' button and to show the report.
 
