@@ -114,8 +114,7 @@ There are a couple Office redistributables that can be installed to address this
 
    [Download both Redistributable install files](https://mbs2.microsoft.com/fileexchange/?fileID=07fe2ceb-a580-419f-b4d4-45a028260637)
 
-  If the above link does not work, try this download link: 
-  [Report Viewer Redistributable 2008 Service Pack](https://www.microsoft.com/en-us/download/details.aspx?id=3203) 
+   If the above link does not work, try this download link: [Report Viewer Redistributable 2008 Service Pack](https://www.microsoft.com/en-us/download/details.aspx?id=3203) 
   
 1. Launch both Integration Manager and Dynamics GP using 'Run As Administrator' (right-click).
 
