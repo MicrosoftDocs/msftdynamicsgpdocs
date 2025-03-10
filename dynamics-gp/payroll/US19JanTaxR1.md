@@ -29,6 +29,7 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/blogs/post/?postid=dbc1295b-297f-4441-aa2f-7c2502bffc97)
 
 ## Changes in March Round 4 update (Released 3/7/2025)
+
 - Indiana
 
 ### Withholding changes for Indiana
@@ -36,6 +37,7 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 The Flat tax rate is reduced to 3.00% from 3.05%.
 
 ## Changes in February Round 3 update (Released 2/4/2025)
+
 - Illinois
 - Maryland
 - Mississippi
