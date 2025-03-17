@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 10/29/2024
+ms.date: 3/17/2025
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -301,7 +301,8 @@ For more information, see [this blog post](https://blogs.msdn.microsoft.com/mahe
 System wide Administration >> Setup >> Company >> E-mail Message Setup Administration >> Setup >> Company >> Workflow >> E-mail Message Setup
 Module specific Sales >> Setup >> E-mail Settings Purchasing >> Setup E-mail Settings
 2. Remove and re-enter all associated email addresses. Make sure that there are no odd characters such as ^ or a Tab. Email Addresses can be found using either pathing: Administration >> Setup >> Company >> Internet Information
-**NOTE** If Email Addresses based on Doc Type is enabled: (Sales >> Cards >> Customer >> select a customer >> E-mail >> enable email address based on document type >> Email Address) (Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email address based on document type >> Email Address) This issue can occur with all reports, and these can be caused by MessageID issues or Reply To issues. Make sure to remove all MessageIDs and Reply To emails.  
+**NOTE** If Email Addresses based on Doc Type is enabled: (Sales >> Cards >> Customer >> select a customer >> E-mail >> enable email address based on document type >> Email Address) (Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email address based on document type >> Email Address) This issue can occur with all reports, and these can be caused by Message ID issues or Reply To issues. Make sure to remove all MessageIDs and Reply To emails.
+3. Strange values in the Have Replies Sent To field in the Email Message Setup can also cause an error like "The following errors were found while attempting to send the document in e-mail"  *An employee's hire date must be before the adjusted hire date.
 
 The following SQL can be used to view the listed Have Replies Sent To email address.
 
