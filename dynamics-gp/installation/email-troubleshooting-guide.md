@@ -295,6 +295,7 @@ For more information, see [this blog post](https://blogs.msdn.microsoft.com/mahe
 
 
 ### Insufficient Memory
+
 **Solution**
 
 1. Remove Have Replies Sent to on both the Message ID and E-mail setup. The Message Setup window can be found using the either pathing:
