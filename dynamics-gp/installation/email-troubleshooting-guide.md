@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 10/29/2024
+ms.date: 4/10/2025
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -324,10 +324,10 @@ EmailSeriesID =
 EmailDocumentID – This is a unique integer indicating each type of document displayed in the window
 
 
-### Invalid Recipients
+### Invalid Recipients or Invalid Email Address
 
-Invalid Recipients
 This error can be cause by multiple things. Check the following:
+
 Make sure that there is a valid email address entered on the customer/vendor 
 Microsoft Dynamics GP will determine what email will be used when emailing differently depending on whether the Email Address based on Doc Type setting is enabled or not. This is found in the following path:
 Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email address based on document type 
@@ -335,6 +335,7 @@ Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email addre
 Sales >> Cards >> Customer >> select a customer >> E-mail >> enable email address based on document type 
 
 If Email Address based on Doc Type is disabled:
+
 When this feature is disabled, Microsoft Dynamics GP determines the email address based on what is listed in the Internet Information widow for the Address ID on the Customer or Vendor card.
 The Internet Information window can be found using either of the following paths:
 Administration >> Setup >> Company >> Internet Information >> select vendor/customer >> select address ID
@@ -342,12 +343,25 @@ Purchasing >> Cards>> Vendor >> click Internet Information button next to the Ad
 Sales >> Cards>> Customer >> click Internet Information button next to the Address lookup (looks like a little planet earth). 
 
 If Email Address based on Doc Type is enabled:
+
 When this feature is enabled, Microsoft Dynamics GP determines the email address based on what is listed in the Email Address Based on Doc Type window for the vendor/customer.
 The Email Address Based on Doc Type window can be found using either of the following paths:
  
 Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email address based on document type >> Email Address
 
 Sales >> Cards >> Customer >> select a customer >> E-mail >> enable email address based on document type >> Email Address
+
+Verify email address in the Message ID and Message setup for the field Have Replies Sent to. It has to be the full email address listed such as payables@company.com not just payables.
+You could also test by removing the Have Replies Sent too email and see if it works or create a new message ID.
+If you recently upgraded, don't assume all the emails are now good with the upgrade, version, or domain changes that might have happened.
+
+The Message Setup window can be found using the either pathing: 
+
+System wide Administration >> Setup >> Company >> E-mail Message Setup Administration >> Setup >> Company >> Workflow >> E-mail Message Setup 
+Module specific Sales >> Setup >> E-mail Settings Purchasing >> Setup E-mail Settings. Remove and re-enter all associated email addresses. 
+Make sure that there are no odd characters such as ^ or a Tab. 
+
+Email Addresses can be found using either pathing: Administration >> Setup >> Company >> Internet Information
 
 ### No Error, but no emails are sent (0 Documents Sent)
 
