@@ -351,14 +351,14 @@ Purchasing >> Cards >> Vendor >> select a vendor >> E-mail >> enable email addre
 
 Sales >> Cards >> Customer >> select a customer >> E-mail >> enable email address based on document type >> Email Address
 
-Verify email address in the Message ID and Message setup for the field Have Replies Sent to.  It has to be the full email address listed such as payables@company.com not just payables.
+Verify email address in the Message ID and Message setup for the field Have Replies Sent to. It has to be the full email address listed such as payables@company.com not just payables.
 You could also test by removing the Have Replies Sent too email and see if it works or create a new message ID.
-If you recently upgraded don't assume all the emails are now good with the upgrade, version or domain changes that may have happened.
+If you recently upgraded, don't assume all the emails are now good with the upgrade, version, or domain changes that might have happened.
 
 The Message Setup window can be found using the either pathing: 
 
 System wide Administration >> Setup >> Company >> E-mail Message Setup Administration >> Setup >> Company >> Workflow >> E-mail Message Setup 
-Module specific Sales >> Setup >> E-mail Settings Purchasing >> Setup E-mail Settings Remove and re-enter all associated email addresses. 
+Module specific Sales >> Setup >> E-mail Settings Purchasing >> Setup E-mail Settings. Remove and re-enter all associated email addresses. 
 Make sure that there are no odd characters such as ^ or a Tab. 
 
 Email Addresses can be found using either pathing: Administration >> Setup >> Company >> Internet Information
