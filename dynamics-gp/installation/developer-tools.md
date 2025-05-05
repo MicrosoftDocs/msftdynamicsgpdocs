@@ -7,15 +7,43 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 3/5/2025
+ms.date: 4/15/2025
 ---
 
 # Developer Tools
 
 This documentation supports developers who work with Microsoft Dynamics GP.
 
-## eConnect 
+## Components of the Developer Toolkit for Microsoft Dynamics GP
 
+Microsoft Dynamics GP includes the Developer Toolkit for Microsoft Dynamics GP. This toolkit consists of three components that developers can use to build Microsoft .NET-based solutions, customizations, and extensions. The three components are: 
+
+- Web Services for Microsoft Dynamics GP
+- Visual Studio Tools for Microsoft Dynamics GP
+- eConnect
+
+### Web Services for Microsoft Dynamics GP
+
+By using the new, extensible Web Services for Microsoft Dynamics GP, you can connect applications to your financial management data and support many different models for data access. The Web Services component of the toolkit includes several service layers that allow for extensive Microsoft Dynamics GP module objects, security, policy validations, and defaulting and exception management.
+
+### Visual Studio Tools for Microsoft Dynamics GP
+
+By using Visual Studio Tools for Microsoft Dynamics GP, you can use Microsoft Visual Studio .NET and .NET languages to build an integration add-in to the Microsoft Dynamics GP application. The architecture lets you use industry standard tools such as Microsoft Visual Studio to perform the following tasks:
+
+- Respond to Microsoft Dynamics GP events
+- Programmatically reference Microsoft Dynamics GP forms, windows, scrolling windows, fields, global variables, and global scripts.
+
+### eConnect
+
+Although the Web Services component of the toolkit is the preferred tool for integrating data, some objects may not be available. In this case, you can call the eConnect API directly. eConnect is a tool that gives you fast access to the back office of transactions in Microsoft Dynamic GP by calling COM-based or .NET-based API adapters. eConnect combines the use of business logic in the following areas to integrate your data into Microsoft Dynamics GP:
+
+Stored procedures
+Triggers
+Custom tables
+XML documentation
+Optional Windows EAI services
+
+## eConnect 
 This documentation contains detailed information about the operations, classes, XML schemas and nodes available in Microsoft [Dynamics GP eConnect](/previous-versions/dynamicsgp/developer/bb219081(v=msdn.10)). 
 
 The Microsoft eConnect procedures are encrypted to preserve the Microsoft intellectual property.
