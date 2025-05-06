@@ -3,7 +3,7 @@ title: "General Ledger"
 description: "The general ledger in Dynamics GP"
 keywords: "GL"
 author: tnistler
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 12/20/2022

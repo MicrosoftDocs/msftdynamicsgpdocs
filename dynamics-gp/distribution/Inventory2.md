@@ -5,7 +5,7 @@ keywords: "items"
 author: tnistler
 manager: jswymer
 
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 3/1/2023
