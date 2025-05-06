@@ -7,7 +7,7 @@ ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018
-ms.topic: article
+ms.topic: how-to
 ms.assetid: eccedeff-60ab-47b6-8216-c73f6bf06430
 ms.reviewer: 
 ---

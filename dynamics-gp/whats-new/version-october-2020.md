@@ -6,7 +6,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 manager: annbe
-ms.topic: article
+ms.topic: whats-new
 ms.date: 10/01/2020
 ---
 

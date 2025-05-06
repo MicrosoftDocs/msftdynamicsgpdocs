@@ -6,7 +6,7 @@ author: jswymer
 ms.author: jswymer
 manager: annbe
 applies_to: 
-ms.topic: article
+ms.topic: whats-new
 ms.reviewer: 
 ms.date: 10/12/2018
 ---
