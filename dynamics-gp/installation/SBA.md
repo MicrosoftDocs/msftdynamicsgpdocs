@@ -4,7 +4,7 @@ description: This provides an introduction for Service Based Architecture in Mic
 keywords: "SBA"
 author: theley502
 manager: jswymer
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 10/14/2021

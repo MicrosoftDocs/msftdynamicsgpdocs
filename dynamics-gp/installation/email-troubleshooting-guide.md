@@ -4,7 +4,7 @@ description: Get tips and tricks about some of the errors you may run into when 
 keywords: "email"
 author: theley502
 manager: jswymer
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 4/10/2025

@@ -4,7 +4,7 @@ description: "Learn how to set up Microsoft Dynamics GP."
 keywords: "payroll"
 author: theley502
 manager: jswymer
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 07/28/2022

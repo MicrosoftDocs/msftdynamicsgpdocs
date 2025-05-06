@@ -4,7 +4,7 @@ description: "Learn about setting up the company information for the Human Resou
 keywords: "payroll"
 author: theley502
 manager: jswymer
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 03/10/2021

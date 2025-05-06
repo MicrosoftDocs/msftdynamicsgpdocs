@@ -4,7 +4,7 @@ description: "Words used in analytical accounting in Dynamics GP."
 keywords: "accounting"
 author: theley502
 manager: jswymer
-ms.topic: article
+ms.topic: glossary
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 07/05/2019

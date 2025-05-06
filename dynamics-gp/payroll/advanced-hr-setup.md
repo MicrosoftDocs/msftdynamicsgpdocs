@@ -4,7 +4,7 @@ description: "Examine how to set up advanced human resources in Dynamics GP."
 keywords: "HR"
 author: theley502
 manager: jswymer
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 04/23/2019

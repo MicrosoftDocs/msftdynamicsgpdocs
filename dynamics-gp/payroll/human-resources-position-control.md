@@ -4,7 +4,7 @@ description: "Learn about setting up the position control for the Human Resource
 keywords: "payroll"
 author: theley502
 manager: jswymer
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 10/31/2021

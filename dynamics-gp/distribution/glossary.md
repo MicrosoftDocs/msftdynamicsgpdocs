@@ -3,7 +3,7 @@ title: "Glossary Terms in the Distribution Area"
 description: "Terminology used in the Distribution area in Dynamics GP."
 keywords: "banking, bank reconciliation"
 author: theley502
-ms.topic: article
+ms.topic: glossary
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 01/25/2019

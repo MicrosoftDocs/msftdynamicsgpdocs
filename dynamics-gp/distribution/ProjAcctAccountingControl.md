@@ -5,7 +5,7 @@ keywords: "year-end"
 author: theley502
 manager: jswymer
 
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 12/1/2019
