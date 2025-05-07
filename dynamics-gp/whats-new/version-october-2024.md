@@ -4,7 +4,7 @@ description: Learn about enhancements that were added to the product in the Octo
 author: theley502
 ms.author: theley
 ms.reviewer: jswymer
-ms.topic: article
+ms.topic: whats-new
 ms.date: 10/28/2024
 ---
 # What's New in Dynamics GP in October 2024

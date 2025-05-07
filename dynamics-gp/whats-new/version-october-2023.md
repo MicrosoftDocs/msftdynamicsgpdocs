@@ -5,7 +5,7 @@ author: theley502
 ms.author: theley
 ms.reviewer: jswymer
 manager: tfehr
-ms.topic: article
+ms.topic: whats-new
 ms.date: 11/10/2023
 ---
 # What's New in Dynamics GP in October 2023

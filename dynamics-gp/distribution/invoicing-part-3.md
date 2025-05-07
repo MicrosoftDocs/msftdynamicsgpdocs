@@ -4,7 +4,7 @@ description: "Learn how the Invoicing module works in Microsoft Dynamics GP with
 keywords: "invoicing"
 author: theley502
 manager: jswymer
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 07/13/2020

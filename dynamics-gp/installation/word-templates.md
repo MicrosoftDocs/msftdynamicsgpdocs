@@ -3,7 +3,7 @@ title: Word Templates in Dynamics GP
 description: Learn how to customize your customer-facing documents with Word templates in Dynamics GP."
 keywords: "Word Template"
 author: theley502
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: theley
 ms.author: theley
 ms.date: 2/12/2025

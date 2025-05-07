@@ -3,7 +3,7 @@ title: "Bank reconciliation in Dynamics GP"
 description: "Bank reconcillation in Dynamics GP."
 keywords: "banking, bank reconciliation"
 author: theley502
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 01/16/2019
