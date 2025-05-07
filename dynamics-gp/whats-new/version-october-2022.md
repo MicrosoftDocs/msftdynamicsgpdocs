@@ -7,7 +7,7 @@ ms.author: theley
 ms.reviewer: jswymer
 manager: tfehr
 ms.topic: whats-new
-ms.date: 5/18/2023
+ms.date: 5/7/2025
 ---
 
 # What's New in Dynamics GP in October 2022
@@ -19,7 +19,7 @@ For an overview and additional details for key enhancements, see the [Dynamics G
 
 Functionality has been added across the core modules of Microsoft Dynamics GP.
 
-### Print Cash Receipts
+### [Print Cash Receipts](https://community.dynamics.com/blogs/post/?postid=d53bfa6c-ea68-4968-8d8b-52bc72c0606d)
 
 A highly requested item for Dynamics GP October, we have added the ability to print a Cash Receipt document. 
 
@@ -29,7 +29,7 @@ The Cash Receipt can be printed from Cash Receipts Entry or the Receivables Tran
 
 ![image 1](https://user-images.githubusercontent.com/28811495/197573350-927bf6ad-9c34-4b42-98ad-c9b1a7a12b1b.png)
 
-### Inactivate Vendor Address ID
+### [Inactivate Vendor Address ID](https://community.dynamics.com/blogs/post/?postid=8a16c93e-4ec8-458e-843e-b1b691802cc8)
 
 Previously, there was no way to mark a vendor address record as not needed or do not use.  Now you can set the status of a vendor address record as Inactive.  
 
@@ -37,14 +37,14 @@ In Vendor Address Maintenance a report can be printed which will list all the tr
 
 ![image 2](https://user-images.githubusercontent.com/28811495/197573885-2868d71c-5667-4bd9-945b-00a60cf5bc3d.png)
 
-### 1099-NEC Form with Lines
+### [1099-NEC Form with Lines](https://community.dynamics.com/blogs/post/?postid=ce2df310-546b-483e-b403-6827aff2f00f)
 
 A core feature of Microsoft Dynamics GP is the ability to print Payables 1099 statements for vendors.  Continuing that functionality, we have added a built in format with boxes and lines for the 1099-NEC form.  
 Now, when you select to print the 1099-NEC form, you have the option of printing the form type one-wide with boxes. When this option is selected, the form will print on blank paper.
 
 ![image 3](https://user-images.githubusercontent.com/28811495/197574361-7c1be975-6a7a-451b-aff4-4664a64c619b.png)
 
-###Summary Display Bank Reconciliation for Payables EFT
+### [Summary Display Bank Reconciliation for Payables EFT](https://community.dynamics.com/blogs/post/?postid=7faabf27-5d70-472b-af3b-ec5ee42faaf8)
 
 Now you can choose to have the system post an EFT batch in summary to Bank Reconciliation.  Once, the option is set in Payables Setup, the drop down will display for the batch in Payables Batch Entry for an EFT computer check payment.  
 
@@ -54,7 +54,7 @@ On the upgrade, the option in Payables Setup is not marked and all batches are s
 
 ![image 4](https://user-images.githubusercontent.com/28811495/197575872-34b63b8a-cd01-4223-a544-b9aa9679e38f.png)
  
-### Summary Display Bank Reconciliation for Payables Credit Card Payment
+### [Summary Display Bank Reconciliation for Payables Credit Card Payment](https://community.dynamics.com/blogs/post/?postid=11e39666-5dd4-42e6-8bf6-75a42563b92e)
 
 Now you can choose to have the system post a Credit Card batch in summary to Bank Reconciliation.  Once, the option is set in Payables Setup, the drop down will display for the batch in Payables Batch Entry for a Credit Card payment.  
 
@@ -68,7 +68,7 @@ On the upgrade, the option in Payables Setup is not marked and all batches are s
 
 We consistently review customer suggestions.  These are highly voted on and discussed feature asks that are included in the October 2022 Dynamics GP release.
 
-### Checkbook Balance Inquiry Enhancements
+### [Checkbook Balance Inquiry Enhancements](https://community.dynamics.com/blogs/post/?postid=c1b02a24-f84f-43b3-b9ea-af6ad3b6f74a)
 
 We have enhanced the usability of the Checkbook Balance Inquiry window in Bank Reconciliation.  Previously, you selected the checkbook and the window filled in.  
 
@@ -76,7 +76,7 @@ Now, you complete all the heading type information on the window and then select
 
 ![image 6](https://user-images.githubusercontent.com/28811495/197577077-dfb41d28-2ca1-4fd2-95af-8a112504f851.png)
 
-### Checkbook Register Inquiry Enhancements
+### [Checkbook Register Inquiry Enhancements](https://community.dynamics.com/blogs/post/?postid=c1b02a24-f84f-43b3-b9ea-af6ad3b6f74a)
 
 Similar changes have been made to the Checkbook Register Inquiry window to enhance the usability of the window.    
 
@@ -84,19 +84,19 @@ Now, you complete all the heading type information on the window and then select
 
 ![image 7](https://user-images.githubusercontent.com/28811495/197577524-c14836e1-ef0a-4127-8651-41a9f587106d.png)
 
-### Account Category Lookup Enhancement
+### [Account Category Lookup Enhancement](https://community.dynamics.com/blogs/post/?postid=809c6b4b-2d41-44ed-80cd-6719306fce78)
 
 You now can change the sort for the Account Category Lookup. And you can search within the lookup itself to more quickly and easily find the Account Category you want to use. 
 
 ![image 8](https://user-images.githubusercontent.com/28811495/197577911-c4bf14fa-deef-433e-a49d-61624e5b1a71.png)
 
-### Account Segment Lookup
+### [Account Segment Lookup](https://community.dynamics.com/blogs/post/?postid=809c6b4b-2d41-44ed-80cd-6719306fce78)
 
 Similar to the Account Category lookup, there is additional functionality for the Account Segment Lookup. You can change the sort to description for the Account Segment Number Lookup. And you can search within the lookup itself to more quickly and easily find the Account Segment number you want to use. 
 
 ![image 9](https://user-images.githubusercontent.com/28811495/197578086-ca8bf66c-a512-450b-8bc8-822e8631d27c.png)
 
-### Journal Entry Inquiry View Workflow History
+### [Journal Entry Inquiry View Workflow History](https://community.dynamics.com/blogs/post/?postid=2663eaf9-7d9a-41f7-93d8-a3601e543503)
 
 We have added the ability to view workflow history in Journal Entry Inquiry when the transaction type is a Reversing Journal Entry.  Previously if the user selected a reversing journal entry, the workflow history button was disabled.  
 
@@ -104,7 +104,7 @@ It will now be enabled if Workflow is being used and a reversing journal entry i
 
 ![image 10 11](https://user-images.githubusercontent.com/28811495/197578348-bb9a7563-7cd6-444a-bc0e-f9699dc7938a.png)
 
-### Transaction Level Post through GL without Printing GL Posting Journal
+### [Transaction Level Post through GL without Printing GL Posting Journal](https://community.dynamics.com/blogs/post/?postid=0cc50190-8ea2-41bf-944f-6c3adfdd3777)
 
 Previously, there was the ability to setup Payables Transaction Entry posting to Post Through GL, this required the GL Posting Journal to be marked in the Posting Setup for General Journal Entry.  With the October 2022 release of Microsoft Dynamics GP, we have removed this requirement. 
 
@@ -112,7 +112,7 @@ Now for both Payables Transaction Entry and Payables Manual Payment Entry, you c
 
 ![image](https://user-images.githubusercontent.com/28811495/197579230-965334dc-aea2-4073-9b6b-98ab4f605c5f.png)
 
-### Reprint Bank Journals
+### [Reprint Bank Journals](https://community.dynamics.com/blogs/post/?postid=a92b2a8e-e784-4943-92c8-01f0d88e83d6)
 
 There are now additional options available when reprinting the Bank Journals.  For the Bank Deposit Journal, Multicurrency Bank Deposit Journal, Cleared Transactions Journal and Outstanding Transactions Report you can now restrict by a range of Audit Trail to more easily identify data you want to include on the reprint report.
 
@@ -120,7 +120,7 @@ For the Bank Adjustments Journal and Multicurrency Bank Adjustments Journal, you
 
 ![image 12](https://user-images.githubusercontent.com/28811495/197579512-4ebf4c0e-2cd6-44b5-bcfe-c61a3821dfd4.png)
 
-### Print Bank History Reports
+### [Print Bank History Reports](https://community.dynamics.com/blogs/post/?postid=43fb4bef-61ce-4c24-b7b8-e1649db3f908)
 
 Now, when setting up the report options for the Bank History reports, you can use a date range restriction to further filter your reports.  This will give you the ability to find the information you are looking for quickly and easily.  The date range will print on the header of the report so you can see how you restricted the report information.  
 
@@ -128,7 +128,7 @@ The report option range is available for the Bank Adjustments Reprint Journal, B
 
 ![image 13](https://user-images.githubusercontent.com/28811495/197579777-b9feb4bf-5732-47c9-b41e-2822622b9c10.png)
 
-### Print and Email POP and SOP Documents at the same time
+### [Print and Email POP and SOP Documents at the same time](https://community.dynamics.com/blogs/post/?postid=84c033fe-1b04-47b3-aa68-7bafb0aada10)
 
 The ability to e-mail a Sales or Purchasing document such as a Purchase Order and to print a copy of it at the same time has been made consistent across the system.  The Purchasing Navigation List, Sales Navigation List, Purchase Order Entry.
 
@@ -138,7 +138,7 @@ Marking Print a Copy will print all the documents selected for the process but w
 
 ![image 14](https://user-images.githubusercontent.com/28811495/197580359-60eeb414-9f8d-42b8-bca9-928f33bfa17c.png)
 
-### Workflow History Option for No Approval Needed Steps
+### [Workflow History Option for No Approval Needed Steps](https://community.dynamics.com/blogs/post/?postid=11a6ca91-3a14-4ef4-8841-b5ad439c97f1)
 
 You can choose whether to save history when a Workflow Step has no approval needed.  
 
@@ -150,7 +150,7 @@ This is a per workflow setting where you can mark to save or not save the no app
 
 We also welcome feedback on existent features in Dynamics GP that we can improve. These features are adding functionality to existing features within Dynamics GP. 
 
-### Filter Navigation Lists by Batch ID or Batch Source
+### [Filter Navigation Lists by Batch ID or Batch Source](https://community.dynamics.com/blogs/post/?postid=2a2a214e-1d40-4e80-b8ea-d9d05141e335)
 
 Now you can choose to filter selected Navigation Lists by Batch ID or Batch Source as well as add the display to the navigation list information.  
 
@@ -160,7 +160,7 @@ To add the column to the navigation list, you will be able to create a saved lis
 
 ![image 16](https://user-images.githubusercontent.com/28811495/197581233-662a6d55-04f9-48c6-b682-ac13ac5be3ec.png)
 
-### Add Time option to Report Scheduler
+### [Add Time option to Report Scheduler](https://community.dynamics.com/blogs/post/?postid=b55429ef-d42d-4374-81b4-3124b85017da)
 
 In the Report Scheduler functionality, you have the option to print report or to schedule checklinks.  Previously, this would run automatically on the date that was selected.  
 
@@ -168,7 +168,7 @@ We have extended the functionality to allow the user to set a time for the repor
 
 ![image 17](https://user-images.githubusercontent.com/28811495/197581666-bbb7a63f-7379-417b-88a7-eff7a68d45e0.png)
 
-### E-mail Approve Automatically Post Workflow Batches
+### [E-mail Approve Automatically Post Workflow Batches](https://community.dynamics.com/blogs/post/?postid=e40134df-933d-4633-a074-9ddb339f5658)
 
 In October 2021, we released functionality to allow the user to mark to Auto Post a batch that was approved when the Workflow for the batch was completed.  One of the requests after this release came out was that we extend the capability for the Auto Post when a Workflow task is approved from an e-mail.  
 
@@ -178,7 +178,7 @@ Now, when the Workflow task is approved from an e-mail and it completes the Work
 
 ![image 18](https://user-images.githubusercontent.com/28811495/197581878-b8dd2678-b73e-4d75-a5d6-1c530fa9daa5.png)
 
-### MultiFactor Authentication in Dynamics GP Web Client
+### [MultiFactor Authentication in Dynamics GP Web Client](https://community.dynamics.com/blogs/post/?postid=7a9575dc-6d56-4f3e-86a9-9fd4e23cbfd9)
 
 We have enabled multifactor authentication (MFA) in Dynamics GP Web Client. Included with this is the capability of using the reply to e-mail address when MFA is set up.
 [Detailed setup for MFA in Web Client](https://community.dynamics.com/gp/b/dynamicsgp/posts/modern-authentication-in-web-client)
