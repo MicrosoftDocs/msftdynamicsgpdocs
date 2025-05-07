@@ -125,8 +125,6 @@ For information about Microsoft’s License Mobility program see:
 
 **Microsoft Dynamics GP**
 Use the Microsoft Dynamics GP Pricing and Licensing to learn more about the Perpetual Licensing and Service Provider License agreement (SPLA) licensing programs – both of which are supported for on-Azure deployments.  
-  
-Consult the [Licensing Guide](https://download.microsoft.com/download/E/6/8/E685081D-647F-432A-AFF3-20AA95353798/GP) (English.pdf) to improve your understanding of how to license Microsoft Dynamics GP .  
 
 **Remote Desktop Services (RDS)**
 There are two ways to license Remote Desktop Services (RDS), formerly known as Terminal Services in Microsoft Azure Virtual Machines.

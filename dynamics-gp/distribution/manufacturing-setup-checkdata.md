@@ -4,7 +4,7 @@ description: "Learn how to identify problems with the se4tup of the Manufacturin
 keywords: "manufaturing"
 author: theley502
 manager: jswymer
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 03/03/2021

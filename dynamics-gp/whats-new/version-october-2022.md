@@ -6,7 +6,7 @@ author: theley502
 ms.author: theley
 ms.reviewer: jswymer
 manager: tfehr
-ms.topic: article
+ms.topic: whats-new
 ms.date: 5/18/2023
 ---
 

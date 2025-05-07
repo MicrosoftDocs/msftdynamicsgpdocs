@@ -7,7 +7,7 @@ ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/05/2018
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.assetid: e9b7fc59-b6af-49c8-b009-62ae19cb5026
 ms.reviewer: 
 ---

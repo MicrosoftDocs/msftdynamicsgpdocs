@@ -7,7 +7,7 @@ ms.author: dapelt
 manager: rbucholz
 applies_to: 
 ms.date: 10/14/2019
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 
 ms.reviewer: 
 ---

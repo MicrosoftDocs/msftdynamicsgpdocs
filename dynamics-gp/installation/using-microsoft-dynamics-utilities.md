@@ -7,7 +7,7 @@ ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 09/07/2018
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: jswymer
 ---
 # Using Microsoft Dynamics Utilities

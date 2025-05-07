@@ -4,7 +4,7 @@ description: "Learn about terminology in the Invoicing module in Microsoft Dynam
 keywords: "invoicing"
 author: theley502
 manager: jswymer
-ms.topic: article
+ms.topic: glossary
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 07/13/2020

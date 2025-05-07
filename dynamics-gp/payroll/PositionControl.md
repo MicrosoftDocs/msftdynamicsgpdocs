@@ -4,7 +4,7 @@ description: "Learn about position control in Microsoft Dynamics GP."
 keywords: "payroll"
 author: theley502
 manager: jswymer
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 07/17/2020

@@ -4,7 +4,7 @@ description: "Get an overview of terms used in the Manufacturing module in Dynam
 keywords: "manufaturing"
 author: theley502
 manager: jswymer
-ms.topic: article
+ms.topic: glossary
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 06/18/2020

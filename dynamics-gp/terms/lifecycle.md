@@ -4,7 +4,7 @@ description: "Learn about the lifecycle and product life of Microsoft Dynamics G
 author: jswymer
 ms.custom: na
 ms.reviewer: jswymer
-ms.topic: article
+ms.topic: concept-article
 ms.author: jswymer
 ms.date: 01/14/2024
 

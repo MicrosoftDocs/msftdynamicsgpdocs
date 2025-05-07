@@ -5,7 +5,7 @@ keywords: "purchase order"
 author: tnistler
 manager: jswymer
 
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 11/22/2021

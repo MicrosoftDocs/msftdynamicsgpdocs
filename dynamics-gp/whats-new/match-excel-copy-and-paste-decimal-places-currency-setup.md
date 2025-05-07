@@ -2,7 +2,7 @@
 title: Match Excel Copy and Paste Decimal Places to Currency Setup 
 description: New in October 2020 - Match Excel Copy and Paste Decimal Places to Currency Setup
 ms.date: 10/01/2020
-ms.topic: article
+ms.topic: install-set-up-deploy
 author: theley502
 ms.author: theley
 manager: jswymer

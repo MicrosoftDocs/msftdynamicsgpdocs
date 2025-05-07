@@ -4,7 +4,7 @@ description: "Learn how to manage project accounting in Microsoft Dynamics GP."
 keywords: "accounting"
 author: theley502
 manager: jswymer
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 04/2/2024
