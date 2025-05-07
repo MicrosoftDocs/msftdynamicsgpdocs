@@ -7,7 +7,7 @@ ms.author: jswymer
 manager: jswymer
 applies_to: 
 ms.date: 08/24/2018
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.assetid: fa4dc1b1-bff3-453b-b5c0-0761098a23c5
 ms.reviewer: 
 ---

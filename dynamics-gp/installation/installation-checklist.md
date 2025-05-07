@@ -7,7 +7,7 @@ ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 08/23/2018
-ms.topic: article
+ms.topic: checklist
 ms.assetid: 46580577-d8e4-4b25-ab9f-8538bcbb84f7
 ms.reviewer: jswymer
 ---

@@ -7,7 +7,7 @@ ms.author: jswymer
 manager: annbe
 applies_to: 
 ms.date: 10/14/2019
-ms.topic: article
+ms.topic: concept-article
 ms.assetid: 3d258f3c-e6d6-4d63-a362-2b33db528ae1
 ms.reviewer: 
 ---
