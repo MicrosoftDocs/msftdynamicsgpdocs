@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 3/5/2025
+ms.date: 5/6/2025
 ---
 # U.S. 2025 Payroll Tax Update
 
@@ -16,7 +16,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2025 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the fourth tax update for 2025 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2025. 
+This is the fifth tax update for 2025 and replaces all previous tax updates. It includes State tax table changes that take effect May 1, 2025. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -27,6 +27,29 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/blogs/post/?postid=c9a75bcc-8f50-411f-a364-95a5121f6335)
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/blogs/post/?postid=dbc1295b-297f-4441-aa2f-7c2502bffc97)
+
+## Changes in May Round 5 update (Released 5/12/2025)
+
+- Idaho
+
+### Withholding changes for Idaho
+
+The Personal Exemption amount is \$3,868 for all Filing Status.
+
+Withholding rates for taxpayers filing as *MAR*:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 30,000           | 0              | 0%           | 0                  |
+| 30,000      | And Over         | 0              | 5.3%         | 30,000             |
+
+Withholding rates for taxpayers filing as *SINGLE*:
+
+| If Over | But Not Over | Tax Amount | Tax Rate | On Excess Over |
+|---------|--------------|------------|----------|----------------|
+| 0       | 15,000       | 0          | 0%       | 0              |
+| 15,000  | And Over     | 0          | 5.3%     | 15,000         |
+
 
 ## Changes in March Round 4 update (Released 3/7/2025)
 
@@ -971,7 +994,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *3/8/2025*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *5/12/2025*.
 
 ## What's next
 
