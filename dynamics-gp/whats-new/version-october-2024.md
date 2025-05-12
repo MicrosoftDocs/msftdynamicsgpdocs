@@ -5,7 +5,7 @@ author: theley502
 ms.author: theley
 ms.reviewer: jswymer
 ms.topic: whats-new
-ms.date: 10/28/2024
+ms.date: 5/7/2025
 ---
 # What's New in Dynamics GP in October 2024
 
@@ -71,7 +71,7 @@ Payables transaction Remit to Address Transaction Details will be saved when a p
 
 ![Show payables transaction entry zoom](media/payables-transaction-entry-zoom.png)
 
-### Credit Card Payments setup as Check Cards in PM Missing Originating information in Bank Rec
+### [Credit Card Payments setup as Check Cards in PM Missing Originating information in Bank Rec](https://community.dynamics.com/blogs/post/?postid=225aa350-e29a-ef11-8a69-6045bda803cc)
 
 When you set up a credit card from a checkbook in a non-functional currency, the originating amounts will be displayed correctly on the Checkbook Register.
 
@@ -90,7 +90,7 @@ For example:
 ![Shows vendor email options](media/VENDORFETEMAIL.png)
 
 
-### Sales Document Inquiry Changes
+### [Sales Document Inquiry Changes](https://community.dynamics.com/blogs/post/?postid=99a3c63f-5e96-ef11-8a69-6045bda882c8)
 
 There is now a drill down to Sales Document Detail Inquiry Zoom on Document Number and Orig Number fields on the Sales Document Inquiry window. When you drill down, it will display that selected document in the Sales Transaction Inquiry window.
 
@@ -104,7 +104,7 @@ When you enter a certain transaction type in Sales Transaction Entry, and then y
 
 ![Shows sales transaction entry](media/sales-transaction-entry.png)
 
-### Mass email reports from Report Navigation lists
+### [Mass email reports from Report Navigation lists](https://community.dynamics.com/blogs/post/?postid=916d3d21-e19a-ef11-8a69-6045bda803cc)
 
 Now when you are working on a Reports Navigation list, you will be able to mark multiple reports that are set to email and by using the Send action on the ribbon, you can email more than one report at a time.
 
@@ -140,7 +140,7 @@ Similar to the Payables 1099 change, there is now an option available on Print 1
 
 ![Shows card](media/card.png)
 
-### Workflow emails trim trailing zeroes
+### [Workflow emails trim trailing zeroes](https://community.dynamics.com/blogs/post/?postid=79ae6be1-e29a-ef11-8a69-000d3a140b3a)
 
 With the October 2024 release, we're continuing to improve the workflow emails. Now, in addition to using the item detail decimals for formatting, the workflow emails will trim trailing zeroes.
 
