@@ -4,7 +4,7 @@ description: Dynamics GP is a business management solution for small and mid-siz
 author: jswymer
 
 ms.topic: get-started
-ms.date: 01/13/2025
+ms.date: 06/5/2025
 ms.author: jswymer
 
 ---
@@ -18,6 +18,8 @@ As we expand investment in Dynamics 365 cloud solutions, customers and partners 
 - If you are a customer, visit [aka.ms/customerGP-EOL](https://aka.ms/customerGP-EOL) for more information.
 - If you are a partner, visit [aka.ms/partnerGP-EOL](https://aka.ms/partnerGP-EOL) for more information.
 - [Customer FAQ](https://mbs2.microsoft.com/fileexchange/?fileID=fba514de-c6c0-4307-aa5d-7225fe372e99)
+- [Subscription licenses and Subscription use of Dynamics GP via Services Provider License Agreement (SPLA) end dates announced](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/06/05/explore-migration-options-for-microsoft-dynamics-gp-and-microsoft-dynamics-sl-customers/)
+- [GP and SL Customer FAQ June 2025](https://mbs2.microsoft.com/fileexchange/?fileID=9d178e91-00ab-4790-897b-c4bf8f0d55f9)
 
 We are encouraging customers to transition to Dynamics 365 Business Central, which offers advanced AI tools and robust security features to help businesses thrive in the new era of cloud and AI computing.  We understand migrating systems can sound daunting – please reach out to your partner or [leverage this list of expert partners](https://mbs2.microsoft.com/fileexchange/?fileID=dee0b471-6dfa-4539-a73b-879c68a209af) to get started on your journey!
 
