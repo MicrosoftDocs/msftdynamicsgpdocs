@@ -1,4 +1,4 @@
----
+vi  ---
 title: "US payroll tax update"
 description: "US 2023 Payroll Tax update for Microsoft Dynamics GP."
 keywords: "payroll"
@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 6/11/2025
+ms.date: 6/16/2025
 ---
 # U.S. 2025 Payroll Tax Update
 
@@ -31,6 +31,7 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 ## Changes in June Round 7 update (Released 6/16/2025)
 
 - Georgia
+- Virginia
 
 ### Withholding changes for Georgia
 
@@ -43,6 +44,12 @@ The Standard Deduction Amount for Filing Status:
 - MFJ1I                             is \$24,000
 
 Dependent Allowance $4,000
+
+### Withholding changes for Virginia
+
+The tables include increases in the standard deduction from $8,500 to $8,750 for single filers and $17,000 to  $17,500 
+for married filers filing jointly.
+
 
 ## Changes in May Round 6 update (Released 5/29/2025)
 
