@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 5/28/2025
+ms.date: 6/11/2025
 ---
 # U.S. 2025 Payroll Tax Update
 
@@ -16,7 +16,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2025 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the sixth tax update for 2025 and replaces all previous tax updates. It includes State tax table changes that take effect June 1, 2025. 
+This is the seventh tax update for 2025 and replaces all previous tax updates. It includes State tax table changes that take effect July 1, 2025. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -28,7 +28,23 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/blogs/post/?postid=dbc1295b-297f-4441-aa2f-7c2502bffc97)
 
-## Changes in May Round 6 update (Released 5/30/2025)
+## Changes in June Round 7 update (Released 6/16/2025)
+
+- Georgia
+
+### Withholding changes for Georgia
+
+All filing status have a lower fixed flat tax of 5.19% from 5.39%.
+
+The below remains unchanged for the 2025 year.
+The Standard Deduction Amount for Filing Status:
+
+- HOH, SINGLE, MFJ2I and MFS        is \$12,000
+- MFJ1I                             is \$24,000
+
+Dependent Allowance $4,000
+
+## Changes in May Round 6 update (Released 5/29/2025)
 
 - Utah
 
@@ -1027,7 +1043,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *5/27/2025*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *6/17/2025*.
 
 ## What's next
 
