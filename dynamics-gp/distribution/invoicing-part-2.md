@@ -8,6 +8,7 @@ ms.topic: how-to
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 07/13/2020
+ms.custom: sfi-image-nochange
 ---
 
 # Invoicing in Microsoft Dynamics GP - Part 2: Transaction Entry

@@ -10,6 +10,7 @@ ms.date: 09/05/2018
 ms.topic: how-to
 ms.assetid: b962aa1e-8900-4b47-936f-731caf43f5f2
 ms.reviewer: 
+ms.custom: sfi-image-nochange
 ---
 
 # Repairing the web client

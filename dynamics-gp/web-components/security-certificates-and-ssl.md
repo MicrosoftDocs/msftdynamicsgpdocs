@@ -10,6 +10,7 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.assetid: bd90d3c1-2593-454a-97a0-316f70f38cff
 ms.reviewer: 
+ms.custom: sfi-image-nochange
 ---
 
 # Security certificates and SSL

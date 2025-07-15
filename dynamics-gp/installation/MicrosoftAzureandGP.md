@@ -8,6 +8,7 @@ ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 05/28/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Microsoft Dynamics GP on Microsoft Azure

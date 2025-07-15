@@ -9,6 +9,7 @@ ms.topic: how-to
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 02/10/2019
+ms.custom: sfi-image-nochange
 
 ---
 # Inventory Control in Dynamics GP - Parts 1-3

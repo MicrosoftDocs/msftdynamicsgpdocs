@@ -10,6 +10,7 @@ ms.date: 09/05/2018
 ms.topic: concept-article
 ms.assetid: aa6e26de-b312-4a56-b877-4cf2fd0393fe
 ms.reviewer: 
+ms.custom: sfi-image-nochange
 ---
 
 # Working with the web client

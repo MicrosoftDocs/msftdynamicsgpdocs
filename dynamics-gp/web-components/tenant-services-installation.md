@@ -10,6 +10,7 @@ ms.date: 10/14/2019
 ms.topic: how-to
 ms.assetid: 
 ms.reviewer: 
+ms.custom: sfi-image-nochange
 ---
 
 # Tenant Services Installation
