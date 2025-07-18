@@ -10,6 +10,7 @@ ms.date: 09/05/2018
 ms.topic: how-to
 ms.assetid: 6844e057-ca52-4320-a8bc-dba383feb349
 ms.reviewer: 
+ms.custom: sfi-image-nochange
 ---
 
 # Connecting to the web client

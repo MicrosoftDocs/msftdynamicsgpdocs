@@ -8,6 +8,7 @@ ms.topic: how-to
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 04/2/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Project Accounting Administrator's Guide

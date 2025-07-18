@@ -7,6 +7,7 @@ ms.topic: article
 ms.reviewer: jswymer
 ms.author: jchrist
 ms.date: 11/27/2023
+ms.custom: sfi-image-nochange
 ---
 
 # VAT in the UK Version of Microsoft Dynamics GP

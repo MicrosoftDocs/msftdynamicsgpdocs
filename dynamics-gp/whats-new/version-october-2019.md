@@ -10,6 +10,7 @@ manager: annbe
 applies_to: 
 ms.topic: whats-new
 ms.date: 10/01/2019
+ms.custom: sfi-image-nochange
 ---
 
 # What's New in Dynamics GP in October 2019

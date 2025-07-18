@@ -10,6 +10,7 @@ ms.date: 10/14/2019
 ms.topic: how-to
 ms.assetid: 
 ms.reviewer: jswymer
+ms.custom: sfi-image-nochange
 ---
 
 # Multitenant Applications
