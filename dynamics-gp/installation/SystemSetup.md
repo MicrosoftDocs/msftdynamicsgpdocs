@@ -8,6 +8,7 @@ ms.topic: install-set-up-deploy
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 07/28/2022
+ms.custom: sfi-image-nochange
 ---
 
 # Microsoft Dynamics GP System Setup Guide

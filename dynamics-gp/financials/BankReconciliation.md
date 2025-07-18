@@ -7,6 +7,7 @@ ms.topic: how-to
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 01/16/2019
+ms.custom: sfi-image-nochange
 ---
 
 # Microsoft Dynamics GP Bank Reconciliation

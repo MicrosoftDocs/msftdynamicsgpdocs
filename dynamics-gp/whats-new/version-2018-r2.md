@@ -9,6 +9,7 @@ applies_to:
 ms.date: 10/12/2018
 ms.topic: whats-new
 ms.reviewer: jswymer
+ms.custom: sfi-image-nochange
 ---
 
 # What’s New in Dynamics GP 2018 R2

@@ -7,6 +7,9 @@ ms.topic: how-to
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 12/20/2022
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 
 ---
 # Dynamics GP General Ledger

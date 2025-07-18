@@ -7,6 +7,7 @@ ms.topic: article
 ms.reviewer: jswymer
 ms.date: 01/22/2019
 ms.author: theley
+ms.custom: sfi-image-nochange
 
 ---
 # Sales Order Processing in Dynamics GP

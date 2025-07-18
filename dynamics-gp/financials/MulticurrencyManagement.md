@@ -8,6 +8,7 @@ ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 04/23/2019
+ms.custom: sfi-image-nochange
 ---
 
 # Multicurrency Management in Microsoft Dynamics GP

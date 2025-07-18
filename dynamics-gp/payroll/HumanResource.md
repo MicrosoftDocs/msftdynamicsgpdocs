@@ -8,6 +8,7 @@ ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 3/16/2022
+ms.custom: sfi-image-nochange
 ---
 # Human Resources in Microsoft Dynamics GP
 

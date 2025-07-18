@@ -10,6 +10,7 @@ ms.date: 11/11/2019
 ms.topic: how-to
 ms.assetid: 220c0681-465b-4887-a41a-597769a786ae
 ms.reviewer: 
+ms.custom: sfi-image-nochange
 ---
 
 # Importing a Self-signed Security Certificate

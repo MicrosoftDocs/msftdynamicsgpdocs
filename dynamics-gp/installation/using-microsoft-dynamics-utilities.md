@@ -9,6 +9,7 @@ applies_to:
 ms.date: 09/07/2018
 ms.topic: how-to
 ms.reviewer: jswymer
+ms.custom: sfi-image-nochange
 ---
 # Using Microsoft Dynamics Utilities
 

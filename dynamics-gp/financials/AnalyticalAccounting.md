@@ -8,6 +8,7 @@ ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
 ms.date: 05/14/2019
+ms.custom: sfi-image-nochange
 ---
 
 # Microsoft Dynamics GP Analytical Accounting
