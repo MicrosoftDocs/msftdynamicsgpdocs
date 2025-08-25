@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 4/15/2025
+ms.date: 8/20/2025
 ---
 
 # Developer Tools
@@ -54,7 +54,10 @@ Therefore, keeping Dynamics eConnect procedures encrypted is essential for data 
 
 However, over the years, we have found some issues with a few of the eConnect procedures based on business practices for a specific company. Microsoft is not actively fixing these issues in the eConnect shipping product, due to the life cycle of the product. The below published procedures are modified eConnect procedures with fixes around areas a large majority of customers have run into.
 
-These modified procedures are use at your own risk and should be tested by your company before using in your production system.  When you upgrade Microsoft Dynamics GP, these modified procedures may be lost.
+These modified procedures are provided as-is and should be thoroughly tested by your organization before being implemented in a production environment.
+
+> [!NOTE]
+> Custom procedures might be lost during an upgrade of Microsoft Dynamics GP.
 
 - [taPOPCreateDistributions](https://mbs2.microsoft.com/fileexchange/?fileID=e004756e-9413-4fed-9b4a-82306d2763b2) - December 2023
 - [taCalcDueDatePM](https://mbs2.microsoft.com/fileexchange/?fileID=400b0ad2-3452-470f-bc99-e690c12dab60) - December 2023
@@ -62,6 +65,10 @@ These modified procedures are use at your own risk and should be tested by your 
 - [taSOPLot](https://mbs2.microsoft.com/fileexchange/?fileID=57c819dc-2a7b-44e8-91ab-ee23c0edb054) - May 2021
 - [taPopRcptLineInsert](https://mbs2.microsoft.com/fileexchange/?fileID=1a5851ef-d68f-4cfc-af66-fa1ab70302e7) -	May 2022
 - [taRMApply](https://mbs2.microsoft.com/fileexchange/?fileID=665f3fe9-3316-458e-b5df-96573b873bd1) - December 2024
+- Integration Manager eConnect adaptor does not map Zip Code, Phone 1 or Phone 2 fields for the Vendor import. The standard adapter for Integration Manager does map these fields.
+  A workaround option is to [write an after document script to update this information](https://community.dynamics.com/forums/thread/details/?threadid=5281e0a0-e34c-4f30-b062-e8c6074bb26f)
+  When you use this sample, make sure to change the name of the specific column in the script to the column name you are using in your integration.  
+  
 
 ## Web Services
 
