@@ -54,8 +54,10 @@ Therefore, keeping Dynamics eConnect procedures encrypted is essential for data 
 
 However, over the years, we have found some issues with a few of the eConnect procedures based on business practices for a specific company. Microsoft is not actively fixing these issues in the eConnect shipping product, due to the life cycle of the product. The below published procedures are modified eConnect procedures with fixes around areas a large majority of customers have run into.
 
-These modified procedures are provided as-is and should be thoroughly tested by your organization before being implemented in a production environment. 
-Please note that custom procedures may be lost during an upgrade of Microsoft Dynamics GP.
+These modified procedures are provided as-is and should be thoroughly tested by your organization before being implemented in a production environment.
+
+> [!NOTE]
+> Custom procedures might be lost during an upgrade of Microsoft Dynamics GP.
 
 - [taPOPCreateDistributions](https://mbs2.microsoft.com/fileexchange/?fileID=e004756e-9413-4fed-9b4a-82306d2763b2) - December 2023
 - [taCalcDueDatePM](https://mbs2.microsoft.com/fileexchange/?fileID=400b0ad2-3452-470f-bc99-e690c12dab60) - December 2023
