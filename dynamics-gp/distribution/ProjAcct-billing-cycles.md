@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: how-to
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 03/05/2021
+ms.date: 08/19/2025
 ---
 
 # Project Accounting Billing Guide
@@ -665,6 +665,74 @@ You can suspend billing for a project. When you close a project to billing, bill
 2.	Select a project number.
 3.	Select Closed to Billings.
 4.	Click Save and close the window.
+
+## Multicurrency billing feature in Project Accounting
+
+In Project Accounting in Microsoft Dynamics GP, you can enter budget amounts in a currency other than the functional currency. This multicurrency billing feature lets you create a budget and then create a billing invoice by using the customer's originating currency. For example, a customer negotiates a billing rate in the originating currency for a project. In this situation, the billing rate doesn't change even if the exchange rate is different at the time of billing. The functional amount is adjusted to reflect the exchange rate at the time of billing. So the project budget bears the risk of any changes in the exchange rate.
+
+
+More information
+Consider the following behavior that occurs when you use the multicurrency billing feature:
+
+You can enter an originating currency in the Billing Currency ID field in the Contract Maintenance window and then create a multicurrency billing project. However, this feature is available only for Time and Materials and for Fixed Price projects that have a fee.
+The currency that's entered on the contract in the Contract Maintenance window is automatically rolled down to the projects. All projects under the contract must be assigned the same currency. This currency cannot be changed.
+The Change Orders button may be disabled in the Contract Maintenance window and in the Project Maintenance window. The button is disabled if an originating currency is entered in the Billing Currency ID field. This behavior occurs because the change order functionality is unavailable on multicurrency billing projects.
+
+**Profit Types**
+-Only Billing Rate and None profit types can be used on multicurrency billing projects.
+-Purchase/Material - Inventory cost categories cannot be used.
+
+**Fees**
+Only fees that use Fee Amount as their calculation method can be added to multicurrency billing projects.
+
+**Exchange Rate Entry**
+In the Project Maintenance window:
+The Billing Currency ID field has a lookup button.
+If the project status is Estimate, clicking the button opens the PA Baseline Exchange Rate Entry window.
+If the status is Open, it opens the PA Forecast Exchange Rate Entry window.
+The exchange rate entered here is used only for budgeting, not for actual transactions.
+
+**Currency Viewing Options**
+A Change Currency Viewed list is available in:
+Contract Maintenance window
+Project Maintenance window
+Budget Maintenance window
+
+**Budget Restrictions**
+If the originating currency is displayed in the Budget Maintenance or Budget Detail Entry window:
+Unit cost cannot be changed.
+
+If the functional currency is displayed:
+Billing rate cannot be changed in the Budget Detail Entry window.
+
+**Profit Source**
+If the functional currency is not entered in the Billing Currency ID field:
+Profit always comes from the budget.
+The profit type used is the one entered in the Profit Type field.
+
+**Cost Transactions**
+When entering a cost transaction:
+The lookup button next to the Date field is enabled.
+Clicking it opens the PA Billing Exchange Rate Entry window.
+The exchange rate entered here is used to calculate total accrued revenues.
+
+**Billing Currency**
+Projects can only be billed using the billing currency entered in the Project Maintenance window.
+
+**Exchange Rate Variations**
+If the exchange rate changes between cost entry and billing:
+The difference is posted to:
+Adjusted Unbilled Revenue
+Adjusted Unbilled Receivable
+
+These use the same account numbers as:
+Unbilled Project Revenue
+Unbilled Accounts Receivable
+
+**Rate Tables**
+You can add an Employee or Position Rate Table via the Project Billing Settings window.
+Only cost information comes from the rate table.
+Profit information always comes from the budget.
 
 ## See also
 
