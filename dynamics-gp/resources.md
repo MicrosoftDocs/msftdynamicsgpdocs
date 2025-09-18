@@ -7,7 +7,7 @@ manager: annbe
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 5/16/2025
+ms.date: 9/18/2025
 ---
 # Microsoft Dynamics GP Resource Directory
 
@@ -34,7 +34,7 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
   Includes What's New and documentation of all features for this release. 
 
-- Dynamics GP October 2025 - Feature Blog Series - 18.8 (Releasing October 1, 2025)
+- [Dynamics GP October 2025 - Feature Blog Series - 18.8](https://community.dynamics.com/blogs/post/?postid=55633d38-a994-f011-b4cc-000d3a1f9859)
   
 - [Dynamics GP October 2024 - Feature Blog Series - 18.7](https://community.dynamics.com/blogs/post/?postid=da2b849a-e349-ef11-a317-6045bda6fe6a)
 
