@@ -5,7 +5,7 @@ author: theley502
 ms.author: theley
 ms.reviewer: jswymer
 ms.topic: whats-new
-ms.date: 09/08/2025
+ms.date: 10/06/2025
 ---
 # What's New in Dynamics GP in October 2025
 
@@ -20,6 +20,7 @@ Functionality has been added across the core modules of Microsoft Dynamics GP.
 In the October 2025 release, we have updated some foundational items to reduce vulnerabilities and impact system performance. The system enhancements are not visible to users and they play a critical role in ensuring Dynamics GP will remain secure and compatible with modern technologies. 
 
 These items are tested and compatible with release 18.8 Of Dynamics GP.
+
 - TLS 1.3
 - .Net Framework 4.7.2
 - Visual Studio 2019
@@ -34,11 +35,13 @@ In Dynamics GP as you enter transactions you are prompted to enter all the requi
 
 The new message will tell the user to expand the scrolling window to verify the item detail fields. "Not all required fields have been entered. Expand the scrolling window to view additional required fields. Required fields appear in bold & italic red type." The required fields display settings are found in the User Preferences --> Display window. 
 
-<img width="974" height="722" alt="image" src="https://github.com/user-attachments/assets/2706b242-cf67-49d8-b43b-db1a63206f04" />
+:::image type="content" source="../distribution/media/gp-sales-transaction-entry.png" alt-text="Shows the sales transation entry page":::
 
 ### [Payables Setup vendor Class Roll Dpwn](https://community.dynamics.com/blogs/post/?postid=5db16425-a985-ef11-ac21-6045bdff8c1d)
 
 The Dynamics GP release 18.8 includes a change to the Vendor Class Setup window roll down message.  This is similar to a feature releases in october 2024 which modified the message in Vendor Maintenance. Now the message "Do you want to roll down these changes" will default to the No answer.  
+
+:::image type="content" source="../distribution/media/gp-vendor-class-setup.png" alt-text="Shows the vendor class setup page":::
 
 <img width="813" height="716" alt="image" src="https://github.com/user-attachments/assets/26eeee34-dedf-488f-b2b4-a2b8a8d6ca36" />
 
@@ -56,9 +59,9 @@ As requested by you, the users, there is a new navigation list added for Sales O
 
 You can modify the list, add columns or filter the list to restrict the information you are viewing. 
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3914c281-e632-498f-b96c-ec956dc5fcc2" />
+:::image type="content" source="../distribution/media/gp-sales-order-patches.png" alt-text="Shows the sales order batches page in read only.":::
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a6bbefcd-ca5f-4f2d-a2a2-33116842991f" />
+:::image type="content" source="../distribution/media/gp-sales-order-patches-1.png" alt-text="Shows the sales order batches page.":::
 
 ### [VAT Enhancements to Submission process](https://community.dynamics.com/blogs/post/?postid=5db16425-a985-ef11-ac21-6045bdff8c1d)
 
