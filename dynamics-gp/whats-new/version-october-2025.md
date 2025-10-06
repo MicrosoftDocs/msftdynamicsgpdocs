@@ -47,7 +47,6 @@ This window will be populated with the luxury depreciation limits by year giving
 
 :::image type="content" source="../distribution/media/gp-fixed-assets-luxury-deprecation.png" alt-text="Shows the fixed assets luxury deprecation page.":::
 
-
 ## [Sales Order Batches Navigation List](https://community.dynamics.com/blogs/post/?postid=5db16425-a985-ef11-ac21-6045bdff8c1d)
 
 As requested by you, the users, there is a new navigation list added for Sales Order Batches. This list will display the Sales Order Processing batches that have been created and let you take action with those batches. 
