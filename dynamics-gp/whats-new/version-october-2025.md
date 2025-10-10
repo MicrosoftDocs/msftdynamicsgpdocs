@@ -5,7 +5,7 @@ author: theley502
 ms.author: theley
 ms.reviewer: jswymer
 ms.topic: whats-new
-ms.date: 10/06/2025
+ms.date: 10/7/2025
 ---
 # What's New in Dynamics GP in October 2025
 
@@ -27,7 +27,7 @@ With Dynamics GP 18.8 we have updated the system so that any sensitive data is a
 
 ## [Sales Order Processing Required Field Message](https://community.dynamics.com/blogs/post/?postid=5db16425-a985-ef11-ac21-6045bdff8c1d)
 
-In Dynamics GP as you enter transactions you are prompted to enter all the required fields.  The required fields message in Sales Order Processing Transaction Entry includes item fields that aren't always displayed. By default the Sa;es Transaction Entry scrolling window is collapsed.  
+In Dynamics GP as you enter transactions you are prompted to enter all the required fields.  The required fields message in Sales Order Processing Transaction Entry includes item fields that aren't always displayed. By default the Sales Transaction Entry scrolling window is collapsed.  
 
 The new message will tell the user to expand the scrolling window to verify the item detail fields. "Not all required fields have been entered. Expand the scrolling window to view additional required fields. Required fields appear in bold & italic red type." The required fields display settings are found in the User Preferences --> Display window. 
 
@@ -35,13 +35,13 @@ The new message will tell the user to expand the scrolling window to verify the 
 
 ## [Payables Setup vendor Class Roll Down](https://community.dynamics.com/blogs/post/?postid=5db16425-a985-ef11-ac21-6045bdff8c1d)
 
-The Dynamics GP release 18.8 includes a change to the Vendor Class Setup window roll down message.  This is similar to a feature releases in october 2024 which modified the message in Vendor Maintenance. Now the message "Do you want to roll down these changes" will default to the No answer.  
+The Dynamics GP release 18.8 includes a change to the Vendor Class Setup window roll down message.  This is similar to a feature releases in October 2024 which modified the message in Vendor Maintenance. Now the message "Do you want to roll down these changes" will default to the No answer.  
 
 :::image type="content" source="../distribution/media/gp-vendor-class-setup.png" alt-text="Shows the vendor class setup page":::
 
 ## [Luxury Auto Depreciation Display and Edit](https://community.dynamics.com/blogs/post/?postid=5db16425-a985-ef11-ac21-6045bdff8c1d)
 
-Dynamics GP Fixed Assets includes the amount for luxury depreciation.  These values are generally updated every year by the government. Previously, in order to maintain the updated values, the user would need to load the Dynamics GP Year End release.  Now, in Dynamics GP 18.8, we have added a window in Tools --> Setup --> Fized Assets --> Luxury Depreciation - Fixed Assets Luxury Depreciation that will display the annual Luxury Depreciation Lmits for automobiles or trucks. 
+Dynamics GP Fixed Assets includes the amount for luxury depreciation.  These values are generally updated every year by the government. Previously, in order to maintain the updated values, the user would need to load the Dynamics GP Year End release.  Now, in Dynamics GP 18.8, we have added a window in Tools --> Setup --> Fixed Assets --> Luxury Depreciation - Fixed Assets Luxury Depreciation that will display the annual Luxury Depreciation Lmits for automobiles or trucks. 
 
 This window will be populated with the luxury depreciation limits by year giving you the ability to view, manage and edit them as needed. A new table is added which will store the depreciation values by year.
 
