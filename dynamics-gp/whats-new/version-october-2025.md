@@ -33,7 +33,7 @@ The new message will tell the user to expand the scrolling window to verify the 
 
 :::image type="content" source="../distribution/media/gp-sales-transaction-entry.png" alt-text="Shows the sales transation entry page":::
 
-## [Payables Setup vendor Class Roll Dpwn](https://community.dynamics.com/blogs/post/?postid=5db16425-a985-ef11-ac21-6045bdff8c1d)
+## [Payables Setup vendor Class Roll Down](https://community.dynamics.com/blogs/post/?postid=5db16425-a985-ef11-ac21-6045bdff8c1d)
 
 The Dynamics GP release 18.8 includes a change to the Vendor Class Setup window roll down message.  This is similar to a feature releases in october 2024 which modified the message in Vendor Maintenance. Now the message "Do you want to roll down these changes" will default to the No answer.  
 
