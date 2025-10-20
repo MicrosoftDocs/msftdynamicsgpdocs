@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 7/24/2025
+ms.date: 9/17/2025
 ---
 # U.S. 2025 Payroll Tax Update
 
@@ -16,7 +16,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2025 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the eighth tax update for 2025 and replaces all previous tax updates. It includes State tax table changes that take effect July 1, 2025. 
+This is the ninth tax update for 2025 and replaces all previous tax updates. It includes State tax table changes that take effect October 1, 2025. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -27,6 +27,21 @@ Check out these blogs for detailed documentation on how you calculate payroll ta
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/blogs/post/?postid=c9a75bcc-8f50-411f-a364-95a5121f6335)
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/blogs/post/?postid=dbc1295b-297f-4441-aa2f-7c2502bffc97)
+
+## Changes in October Round 9 update (Released 9/30/2025)
+
+- Ohio
+
+### Withholding changes for Ohio
+
+Withholding rates for taxpayers filing as *NA*
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 26,050           | 0              | 1.775%       | 0                  |
+| 26,0505     | 100,000          | 462.39         | 2.99%        | 26,050             |
+| 100,000     | And over         | 2673.50        | 3.640%       | 100,000            |
+
 
 ## Changes in July Round 8 update (Released 7/29/2025)
 
@@ -1059,7 +1074,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *7/29/2025*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *9/18/2025*.
 
 ## What's next
 
