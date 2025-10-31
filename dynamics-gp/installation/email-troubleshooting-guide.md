@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: troubleshooting-general
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 4/10/2025
+ms.date: 10/20/2025
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -902,7 +902,7 @@ Please review each of the items below to determine the cause of this error messa
 
 4.  If you OK thru this message multiple times, this usually means an email is not setup for the customer or vendor and you have to click OK through each one in your batch.
 If the log is reviewed in #3, this message will appear: At least one recipient is not valid.  A message can't be sent because it contains no recipients.
-If there is no email address setup for the Customer or Vendor, then they should not be amrked to receive emails.  A common area to check would be the E-mail Options window, verify under Send forms as E-mail is unmarked for customers or vendors that do not have an email address setup and will then receive printed forms.
+If there is no email address setup for the Customer or Vendor, then they should not be marked to receive emails.  A common area to check would be the E-mail Options window, verify under Send forms as E-mail is unmarked for customers or vendors that do not have an email address setup and will then receive printed forms.
 
 5.  Did you try this on another machine and with another user such as user SA on SQL server just to rule out machine specific and .NET issues, etc.
 MFA needs .net 4.7.2 to be installed on GP Client server.
