@@ -4,7 +4,7 @@ description: Dynamics GP is a business management solution for small and mid-siz
 author: jswymer
 
 ms.topic: get-started
-ms.date: 06/5/2025
+ms.date: 11/5/2025
 ms.author: jswymer
 
 ---
@@ -15,6 +15,8 @@ ms.author: jswymer
 As Microsoft continues to focus on innovation and investments in cloud solutions and technologies, we will end Dynamics GP support on December 31, 2029 (previously announced end date was September 30, 2029), for product enhancements, regulatory (tax) updates, and technical support. Security updates and patches, if needed, will be available until April 30, 2031. 
 As we expand investment in Dynamics 365 cloud solutions, customers and partners are encouraged to upgrade systems and software to work with Dynamics 365 cloud offerings, which provide superior security and business management features.
 
+With the end-of-life announcement for Microsoft Dynamics GP, ongoing support will be provided to the best of our ability.  While we will continue to do everything possible to assist, the level of support we can offer may no longer match the standards you've come to expect, as resources and updates for Dynamics GP become increasingly limited. Please know that your needs are important to us, and we are here to help guide you through this period of change with care and attention.
+​​​​​​​
 - If you are a customer, visit [aka.ms/customerGP-EOL](https://aka.ms/customerGP-EOL) for more information.
 - If you are a partner, visit [aka.ms/partnerGP-EOL](https://aka.ms/partnerGP-EOL) for more information.
 - [Customer FAQ](https://mbs2.microsoft.com/fileexchange/?fileID=fba514de-c6c0-4307-aa5d-7225fe372e99)
