@@ -742,9 +742,8 @@ With modern authentication, changes were made in 18.6 to allow [Shared Mailbox w
 Workflow email issues usually fall into two possible causes: SMTP issues and Setup issues, overall you can figure out which is which by using the ‘Test E-mail’ button on the Workflow Setup window (GP -> Tools -> Setup -> System -> Workflow Setup). The following steps are split depending on if the test email is received or not.
 
 > [!NOTE]
-> When you setup workflow and approve the workflow through email notifications it is sent from the account that is setup in Workflow Setup.  This account uses SMTP Basic Authentication.
->SMTP Basic Authentication will by disabled by Microsoft in the near future.  If you need this fuctionality in Dynamics GP Workflow, [review this blog of options and to set up HVE](https://community.dynamics.com/blogs/post/?postid=ce340764-0204-f011-bae3-7c1e52472896).
-> 
+> When you set up workflow and approve the workflow through email notifications, it is sent from the account that is setup in Workflow Setup. This account uses SMTP Basic Authentication.
+> SMTP Basic Authentication will be disabled by Microsoft in the near future. If you need this fuctionality in Dynamics GP Workflow, [review this blog of options and to set up HVE](https://community.dynamics.com/blogs/post/?postid=ce340764-0204-f011-bae3-7c1e52472896).
 
 ### My SMTP Test Failed
 
@@ -756,7 +755,7 @@ First, confirm that you are not using MFA on the account used in the SMTP setup.
 
 Next, make sure that TLS 1.0 is enabled on the SQL server and on the SMTP server.
 
-Then walk through the following article:   
+Then, walk through the following article:   
 [Workflow Notification Email Troubleshooting](https://community.dynamics.com/blogs/post/?postid=aa22fada-1bda-4f29-ab7b-1d7be6355e22)
 
 
