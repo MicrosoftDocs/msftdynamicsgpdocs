@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 8/6/2024
+ms.date: 11/21/2025
 ---
 
 # W-2 Wage and tax statement data source guide
@@ -67,7 +67,8 @@ Employee Wage Report or your W-2 statements. We recommend that you print the Yea
 | ||**Note:** Edit this amount only if the employee is qualified. Entering amounts for non-qualified employees will cause inaccurate reporting on your W-3.|
 |         | Code DD     | Employer sponsored health coverage   |
 |         | Code EE      | Designated Roth contributions under a governmental section 457(b) plan.   |
-|         | Code FF     | A new box 12 Code FF has been added to the W-2 statement to report the total amount of permitted benefits under a qualified small employer health reimbursement arrangement (QSEHRA). These new QSEHRAs allow eligible employers to pay or reimburse medical care expenses of eligible employees after the employees provide proof of coverage. 
+|         | Code FF     | A box 12 Code FF has been added to the W-2 statement to report the total amount of permitted benefits under a qualified small employer health reimbursement arrangement (QSEHRA). These new QSEHRAs allow eligible employers to pay or reimburse medical care expenses of eligible employees after the employees provide proof of coverage. 
+|         | Code II     | Medicaid waiver payment  |
 | Box 13  | Statutory employee    | This box will be marked if the employee is identified as a statutory employee in the Employee Tax Information window. A statutory employee is an employee who is subject to FICA withholding but not federal withholding.    |
 |         | Retirement plan     | This box will be marked if the employee is identified as having a retirement plan in the Employee Tax Information window. This box should be marked if an employee was an active participant in a retirement plan, such as a 401(k) plan.   |
 |         | Third-party sick pay     | This box will be marked if the employee is identified as having received third-party sick pay in the Edit W-2 Information window. This box should be marked if Form W-2 will be filed by a third-party sick pay payer.      |
