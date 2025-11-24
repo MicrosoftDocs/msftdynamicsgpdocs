@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 12/30/2024
+ms.date: 11/21/2025
 ---
 
 # U.S. Year-end Update in Dynamics GP
@@ -20,7 +20,7 @@ This document contains instructions for updating the U.S. Payroll module for Dyn
 
 Also included in this document are instructions for completing payroll year-end procedures. These instructions assume that you are already familiar with U.S. Payroll for Dynamics GP.
 
-You can find information about year-end payroll procedures in the [Payroll Company Routines (U.S. 2024 Year-end Update in Dynamics GP)](PayrollUS.md#payrollcompanyroutine) and [Government Form and Report Routines](PayrollUS.md#govformreportroutines) sections in the [U.S. Payroll](PayrollUS.md) documentation for Dynamics GP.
+You can find information about year-end payroll procedures in the [Payroll Company Routines (U.S. 2025 Year-end Update in Dynamics GP)](PayrollUS.md#payrollcompanyroutine) and [Government Form and Report Routines](PayrollUS.md#govformreportroutines) sections in the [U.S. Payroll](PayrollUS.md) documentation for Dynamics GP.
 
 > [!NOTE]
 > The instructions in this article expand on the instructions in your Payroll documentation, and in some cases, supersede them.
@@ -60,46 +60,45 @@ Start a year-end discussion with other members of the Microsoft customer communi
 
 ## Chapter 1: Changes in the year-end update
 
-The U.S. 2024 Year-end Update contains software changes to allow you to comply with 2024 filing requirements as well as the most recent fixes for Dynamics GP and other quality report fixes related to the payroll year-end.
+The U.S. 2025 Year-end Update contains software changes to allow you to comply with 2025 filing requirements as well as the most recent fixes for Dynamics GP and other quality report fixes related to the payroll year-end.
 
 ### Payroll form changes
 
-- There are no form changes for payroll for the 2024 reporting year.
+- There are no form changes for payroll for the 2025 reporting year.
 
-Blog post with details of year-end: [Dynamics GP-2024 Year-End Blog Series Schedule](https://community.dynamics.com/blogs/post/?postid=f30372ff-bf84-ef11-ac21-7c1e520c9c1).
+Blog post with details of year-end: [Dynamics GP-2025 Year-End Blog Series Schedule](https://community.dynamics.com/blogs/post/?postid=bbd44c8e-33b4-f011-bbd3-000d3a16f3f9).
 
 ### Updates for ACA reporting, form 1095-C
 
-Only the instructions on the back page have been updated. All other information on the form remains the same.
+There are no ACA form changes for the 2025 reporting year.
 
-### Forms whose format is not changing for 2024
+### Forms whose format is not changing for 2025
 
-The formats of a number of forms are not changing for the 2024 tax year. The forms that are not changing include:
+The formats of a number of forms are not changing for the 2025 tax year. The forms that are not changing include:
 
 - W-3 statement
 - W-4 statement
 - W-2 statement
 
-If you choose not to install the 2024 year-end update, you can still apply the 2025 Payroll Tax Update.
+If you choose not to install the 2025 year-end update, you can still apply the 2026 Payroll Tax Update.
+There are No updates related to Payroll Secure Act or W-2 overtime premium, [see year-end blogs for details](https://community.dynamics.com/blogs/post/?postid=bbd44c8e-33b4-f011-bbd3-000d3a16f3f9).
 
 ## Chapter 2: Payroll year-end checklists
 
 This chapter contains checklists that you can use for year-end. Use the checklist that most suits the way your company handles Payroll year-end activities. The following checklists are provided:
 
-- [Printing 2024 statements before processing 2025 pay runs](#printoldbeforenew)
+- [Printing 2025 statements before processing 2026 pay runs](#printoldbeforenew)
 
-- [Processing 2025 pay runs before printing 2024 statements](#printnewbeforeold)
+- [Processing 2026 pay runs before printing 2025 statements](#printnewbeforeold)
 
-### <a name=printoldbeforenew></a>Printing 2024 statements before processing 2025 pay runs
-
-Use this checklist to install the year-end maintenance and update, to close the payroll year, to update your Payroll system with the 2024 Payroll tax changes, and to print 2023 wage statements before performing 2024 pay runs.
+### <a name=printoldbeforenew></a>Printing 2025 statements before processing 2026 pay runs
 
 Detailed instructions for completing each step are found in the chapters and sections indicated.
 
 | **Step** | **Description**|
 |----------|----------------|
-| 1        | Verify that you have installed a 2024 Payroll tax update. The first tax update for the year was 12/20/2023 or a later date is fine.   |
-| 2        | Complete all 2024 pay runs.    |
+| 1        | Verify that you have installed a 2025 Payroll tax update. The first tax update for the year was 12/19/2024 or a later date is fine.   |
+| 2        | Complete all 2025 pay runs.    |
 | 3        | Complete all payroll month-end, period-end, or quarter-end procedures. Note: You can install the year-end update (step 5) before this step, as long as you create a backup before installing.  |
 | 4        | Make a backup of your company database(s). Label the backup "Pre Year-end Wage file".  |
 | 5        | Install the U.S. Year-end Update. See [Installing the year-end update](#installing-the-year-end-update). Note: Do not restart Dynamics GP on any workstation until the update has been installed on all workstations that run the application. |
@@ -110,21 +109,17 @@ Detailed instructions for completing each step are found in the chapters and sec
 | 10       | Print the 1099-R Validation Report, 1099-R forms, and 1096 Transmittal Form. See [Chapter 6 Report procedures](#chapter-6-report-procedures).    |
 | 11       | Prepare and submit W-2 information in the federal EFW2 format, if required. See [Chapter 5 Submitting W-2 reports electronically](#chapter-5-submitting-w-2-reports-electronically). |
 | 12       | Archive Human Resources information for inactive employees (optional).   |
-| 13       | Set up fiscal periods for 2025.  |
+| 13       | Set up fiscal periods for 2026. |
 | 14       | Delete Human Resources information for inactive employees (optional).   |
 | 15       | Close the fiscal periods for the Payroll series for the 2024 year (optional).  |
-| 16       | Install the 2025 Payroll tax update.  |
+| 16       | Install the 2026 Payroll tax update.  |
 
-### <a name=printnewbeforeold></a>Processing 2025 pay runs before printing 2024 statements
-
-Use this checklist if you need to process 2025 pay runs before printing 2024 wage statements.
-
-Detailed instructions for completing each step are found in the chapters and sections indicated
+### <a name=printnewbeforeold></a>Processing 2026 pay runs before printing 2025 statements
 
 | **Step** | **Description**  |
 |----------|---------------------|
-| 1        | Verify that you have installed a 2024 Payroll tax update. The first tax update for the year was 12/20/2023 or a later date is fine.|
-| 2        | Complete all 2023 pay runs.   |
+| 1        | Verify that you have installed a 2025 Payroll tax update. The first tax update for the year was 12/19/2024 or a later date is fine.|
+| 2        | Complete all 2025 pay runs.   |
 | 3        | Complete all payroll month-end, period-end, or quarter-end procedures. Note: You can install the year-end update (step 5) before this step, as long as you create a backup before installing. |
 | 4        | Make a backup of your company database(s). Label the backup "Pre Year-end Wage file".   |
 | 5        | Install the U.S. Year-end Update. See [Installing the year-end update](#installing-the-year-end-update). Note: Do not restart Dynamics GP on any workstation until the update has been installed on all workstations that run Dynamics GP. |
@@ -132,11 +127,11 @@ Detailed instructions for completing each step are found in the chapters and sec
 | 7        | Make a backup of your company database(s). Label the backup *Post Year-end Wage file*. |
 | 8        | Verify W-2 and 1099-R statement information. Note: If you make changes to the information, we recommend that you make another backup. |
 | 9        | Archive Human Resources information for inactive employees (optional). |
-| 10       | Set up fiscal periods for 2025.|
+| 10       | Set up fiscal periods for 2026.|
 | 11       | Clear Human Resources information for inactive employees (optional).  |
-| 12       | Close the fiscal periods for the Payroll series of the 2024 year (optional).   |
-| 13       | Install the 2025 Payroll tax update.|
-| 14       | Process 2025 pay runs.              |
+| 12       | Close the fiscal periods for the Payroll series of the 2025 year (optional).   |
+| 13       | Install the 2026 Payroll tax update.|
+| 14       | Process 2026 pay runs.              |
 | 15       | Print the W-2 Validation Report, W-2 statements, and W-3 Transmittal forms. See [Chapter 6 Report procedures](#chapter-6-report-procedures). |
 | 16       | Print the 1099-R Validation Report, 1099-R forms, and 1096 Transmittal Form. See [Chapter 6 Report procedures](#chapter-6-report-procedures).   |
 | 17       | Prepare and submit W-2 information in the federal EFW2 format, if required. See [Chapter 5 Submitting W-2 reports electronically](#chapter-5-submitting-w-2-reports-electronically).|
@@ -147,11 +142,9 @@ Use the instructions in this chapter to prepare for the U.S. Year-end Update.
 
 ### Supported releases
 
-The U.S. 2024 Year-end Update supports Dynamics GP (18.7 or higher)
+The U.S. 2025 Year-end Update supports Dynamics GP (18.8 or higher)
 
 To identify the release that you're using, start Dynamics GP. Choose Help \>\> About Dynamics GP.
-
-If you're not using one of the supported releases, upgrade to a supported version before installing this update.
 
 For more information about product discontinuation dates, see [Software Lifecycle Policy for Microsoft Dynamics GP](../terms/lifecycle.md).
 
@@ -199,7 +192,9 @@ Web site: [www.greenshades.com](https://www.greenshades.com/)
 
 > [!IMPORTANT]
 > It is imperative you file electronically. The Taxpayer First Act mandates electronic filing of IRS forms including W-2s.
-Beginning in 2022, if you send 100 or more W-2s/1099's, you must send them electronically. In 2023, the limit is lowered to 10. The IRS is pushing for businesses to file electronically, W-2, 1099, and so on. Dynamics GP does not file Payables 1099's electronically. 
+Beginning in 2022, if you send 100 or more W-2s/1099's, you must send them electronically. 
+In 2023 and on, the limit is lowered to 10. The IRS is pushing for businesses to file electronically, W-2, Payables 1099 and ACA forms, and so on. 
+Dynamics GP does not file Payables 1099's electronically. 
 Review this blog to help you prepare for year-end and electronic filing: [1099 Changes to expect -Get ready for Year-end](https://community.dynamics.com/blogs/post/?postid=2246f6af-3f2a-4faf-9da5-544613326c20).
 
 
@@ -207,17 +202,13 @@ Review this blog to help you prepare for year-end and electronic filing: [1099 C
 
 As you complete year-end tasks, refer to the answers in this section.
 
-- What will happen if I've already closed the 2024 Payroll tax year and don't install the 2025 tax update right away?
+- What will happen if I've already closed the 2025 Payroll tax year and don't install the 2026 tax update right away?
 
     Until you install the tax update containing FICA, federal, and state tax changes, the tax calculations for your 2025 pay runs may be incorrect.
 
 - If I use multiple companies with my accounting system, do I have to install the year-end tax update for each company?
 
     No. The update will be reflected in all companies. However, you do need to install the update on each workstation using Dynamics GP.
-
-- I need to print my 2025 checks before I can print W-2s. What should I do?
-
-    After you create the Year-end Wage file, close the year. Install the 2024 tax update, and you can print checks. Follow the checklist for [Processing 2025 pay runs before printing 2024 statements](#printnewbeforeold).
 
 - How do I print multiple W-2 statements for each employee?
 
@@ -277,17 +268,13 @@ As you complete year-end tasks, refer to the answers in this section.
 
   The number is the federal or state ID entered in the Unemployment Tax Setup window (Dynamics GP menu \>\> Setup \>\> Payroll \>\>Unemployment Tax) in the Unemployment Tax ID field.
 
-- In both the Edit W-2 Information and the Print W-2 Forms windows, there is a list used to select the year. Is there a limit to the number of years available? Also, is each year added to the year-end wage file, or does each year have separate year-end wage files created during the year-end closing process?
-
-  During the Payroll year-end closing process, the Year-end Wage File is created. Multiple years of history can be saved. If you choose the same year twice when performing the process, the previous file will be replaced by the new file. As long as the correct year is entered each time, the new year's information will be added to the file. This information can be cleared using the Remove Payroll Year-end Information window.
-
 - If I add information in the Edit W-2 Special Information window (Special button in the Edit W-2 Information window) without entering information in the Edit W-2 Information window, where will that information appear?
 
   It will print this information on the additional W-2.
   
 - Where should I report the cost of coverage of an employer-sponsored group health plan on the W-2?
 
-  Applicable employer-sponsored group health plan values should be reported in Box 12 DD on the W-2. To add a W-2 box and label to a specific Employee:
+  Applicable employer-sponsored group health plan values should be reported in Box 12DD on the W-2. To add a W-2 box and label to a specific Employee:
 
   1. Navigate to Cards >> Payroll >> Deduction or Benefit
   1. Pull up the appropriate Employee ID, and the appropriate Code.
@@ -306,7 +293,7 @@ As you complete year-end tasks, refer to the answers in this section.
 
   Also on the validation report it will warn you when you have labels for retirement plans and the box is not marked.  Special Codes are deferred comp, but W-2 Retirement Plan is not checked.
 
-- The correct Last Year-end Update date doesn't appear in the Payroll Setup window, even though I installed the 2024 year-end update and see the changes included in the update. Is there something I need to do?
+- The correct Last Year-end Update date doesn't appear in the Payroll Setup window, even though I installed the 2025 year-end update and see the changes included in the update. Is there something I need to do?
 
   The Last Year-end Update date is read from the LastYearEndUpdate= line in the Dex.ini file. When you install a year-end update on a computer, the Dex.ini file on that computer is updated. However, in some Windows Terminal Server deployments, there is only a single installation of Dynamics GP, which many users access. Each user typically has a Dex.ini file in their home Windows folder. Installing the year-end update on the server doesn't update each user's Dex.ini file. In these situations, you should manually update each user's Dex.ini file so that the appropriate line reads LastYearEndUpdate=11/21/2024.
 
@@ -316,7 +303,7 @@ As you complete year-end tasks, refer to the answers in this section.
 
   To resolve this problem, follow these steps:
 
-  1. Make sure you enter a date that is in the upcoming NEW year in the User Date window.  Otherwise the system things you are still in the pior year when the year end wage file has been created.
+  1. Make sure you enter a date that is in the upcoming NEW year in the User Date window.  Otherwise the system thinks you are still in the pior year when the year end wage file has been created.
 
      > [!NOTE]
      > After you change the date in the User Date window, you must remove the build in the Build Payroll Checks window, and then build the payroll checks again in the Build Payroll Check window.
@@ -327,7 +314,7 @@ As you complete year-end tasks, refer to the answers in this section.
      1. Run the following statement against the company database.
 
         ```sql
-        select YENDCRTD, * from UPR10100 WHERE RPTNGYR ='2024'
+        select YENDCRTD, * from UPR10100 WHERE RPTNGYR ='2025'
         ```
 
        Note the value in the YENDCRTD field. If the value in the field is 1, change the value in the YENDCRTD field to 0, just for the 1 year.
@@ -343,32 +330,32 @@ Use the instructions in this chapter to start your Payroll year-end closing task
 
 ### Payroll year-end closing
 
-Use this procedure to close the Payroll year. After closing the year, you need to install the Payroll tax update before processing 2024 pay runs. There are two year-end checklists you can use to close the year for payroll. The steps in this section correspond most closely to [Printing 2024 statements before processing 2025 pay runs](#printing-2024-statements-before-processing-2025-pay-runs) section. For more information, see the checklists in [Chapter 2, "Payroll year-end checklists](#chapter-2-payroll-year-end-checklists).
+Use this procedure to close the Payroll year. After closing the year, you need to install the Payroll tax update before processing 2024 pay runs. There are two year-end checklists you can use to close the year for payroll. The steps in this section correspond most closely to [Printing 2025 statements before processing 2026 pay runs](#printing-2025-statements-before-processing-2026-pay-runs) section. For more information, see the checklists in [Chapter 2, "Payroll year-end checklists](#chapter-2-payroll-year-end-checklists).
 
 To complete payroll year-end closing:
 
 1. You already should have completed the tasks in [Chapter 3, "Preparation and FAQs](#chapter-3-preparation-and-faqs).
-2. Complete all 2024 pay runs. The information created during the pay runs is used for month-end or period-end, quarter-end, and any additional year-end reports that you print. You can reprint period-end, quarter-end, or additional reports and re-create the Year-end Wage file at any time.
+2. Complete all 2025 pay runs. The information created during the pay runs is used for month-end or period-end, quarter-end, and any additional year-end reports that you print. You can reprint period-end, quarter-end, or additional reports and re-create the Year-end Wage file at any time.
 
     > [!IMPORTANT]
-    > It's important that you complete all pay runs for 2024 before you install a 2025 Payroll tax update. If you install a 2025 Payroll tax update before completing your pay runs, taxes will be calculated at 2025 rates for the remainder of the 2024 pay runs.
+    > It's important that you complete all pay runs for 2025 before you install a 2026 Payroll tax update. If you install a 2026 Payroll tax update before completing your pay runs, taxes will be calculated at 2026 rates.
     > When you run the first payroll for the new year, make sure your Dynamics GP user date is also in that year, if your user date is in a prior year, Social Security Maximums could be wrong and no tax withheld.
 
 3. Complete your company's standard payroll month-end or period-end, and quarter-end procedures (optional). These procedures might include printing several month-end or period-end and quarter-end reports. You can reprint these reports at any time.
 4. Back up your Dynamics GP data. Label the backup "Pre Year-end Wage file." If you encounter a problem while creating the Year-end Wage file, you can restore information from this backup. The Internal Revenue Service requires you to keep these records for at least four years.
-5. Install the U.S. 2024 Year-end Update on each client workstation that will use Dynamics GP. Before installing the update, ask all Dynamics GP users to exit the application until the update is complete on every workstation. For more information, see [Installing the year-end update](#installing-the-year-end-update).
+5. Install the U.S. 2025 Year-end Update on each client workstation that will use Dynamics GP. Before installing the update, ask all Dynamics GP users to exit the application until the update is complete on every workstation. For more information, see [Installing the year-end update](#installing-the-year-end-update).
 
     > [!NOTE]
-    > This step can be done any time, even if you haven't completed all your 2024 pay runs. This step must be done before you create the Year-end wage file.
+    > This step can be done any time, even if you haven't completed all your 2025 pay runs. This step must be done before you create the Year-end wage file.
 
 6. Create the Year-end Wage file. For information, see [Creating the Year-end Wage file](#creating-the-year-end-wage-file).
 
     > [!NOTE]
-    > 2025 Payroll tax updates can be installed any time after the Year-end Wage file has been created. However, if you create the Year-end Wage file, then install 2025 updates and re-create the 2024 year-end file, your FICA limits may be incorrect.
+    > 2026 Payroll tax updates can be installed any time after the Year-end Wage file has been created. However, if you re-create the Year-end Wage file with 2026 tax tables installed, your FICA limits may be incorrect on the W-2.
 
 7. Back up your Dynamics GP. This backup must be separate from the "Pre Year-end Wage file" backup. Label the backup "Post Year-end Wage file." You can use this backup if you encounter problems while printing W-2 statements. The Internal Revenue Service requires you to keep these records for at least four years.
 
-8. Verify W-2 and 1099-R statement information. If you're printing W-2 statements before closing the year 2024 or after processing a 2025 pay run, we suggest that you verify that the W-2 and 1099-R statement information is correct before you close the payroll year. For information, see [Printing the Year-end Wage Report](#printing-the-year-end-wage-report). You also might want to make changes to Your W-2 records. For information, see [Editing W-2 records](#editing-w-2-records).
+8. Verify W-2 and 1099-R statement information. If you're printing W-2 statements before closing the year 2025 or after processing a 2026 pay run, we suggest that you verify that the W-2 and 1099-R statement information is correct before you close the payroll year. For information, see [Printing the Year-end Wage Report](#printing-the-year-end-wage-report). You also might want to make changes to Your W-2 records. For information, see [Editing W-2 records](#editing-w-2-records).
 
 9. To verify 1099-R statement information, you can print 1099-R statements using the Print 1099-R Forms window. If you make changes to your 1099-R records, we recommend that you make another backup. For information, see [Editing 1099-R statement information](#editing-1099-r-statement-information).
 
@@ -385,21 +372,19 @@ Next, print the W-2 statements and W-3 Transmittal form. You should print a W-2 
 
    It is always best practice when you run payroll or an HR accrual for the new year that the Dynamics GP user date is also in the new year, so the system knows what year you are running the payroll process for.
 
-4. Set up fiscal periods for 2025. Enter the number and length of each company's open fiscal periods in the Fiscal Periods Setup window. For more information, see [Setting up fiscal periods](#setting-up-fiscal-periods).
+4. Set up fiscal periods for 2026. Enter the number and length of each company's open fiscal periods in the Fiscal Periods Setup window. For more information, see [Setting up fiscal periods](#setting-up-fiscal-periods).
 
 5. Delete inactive employee Human Resources information (optional).
     Deleting Human Resources information saves hard disk space and ensures that unused data is not available in lookup lists. For information, see [Deleting information for inactive employees](#deleting-information-for-inactive-employees).
 
     To accrue time using the Human Resources attendance system, see [Setting up attendance](#setting-up-attendance).
 
-6. Close the fiscal periods for the year 2024 (optional).
-    Closing any Payroll periods that are still open for the year 2021 keeps transactions from being accidentally posted to the wrong period. For information, see [Setting up fiscal periods](#setting-up-fiscal-periods).
+6. Close the fiscal periods for the year 2025 (optional).
+    Closing any Payroll periods that are still open for the year keeps transactions from being accidentally posted to the wrong period. For information, see [Setting up fiscal periods](#setting-up-fiscal-periods).
 
     If you need to post Payroll transactions to a fiscal period you've already closed, use the Fiscal Periods Setup window to reopen the period before posting the transaction.
 
-7. Install the 2025 Payroll tax update.  
-
-You also can print W-2 statements and 1099-R forms and create an EFW2 transmission file after you've installed the 2024 Tax Update and performed pay runs for the year 2024. To view the checklist, see [Processing 2024 pay runs before printing 2023 statements](#printoldbeforenew).
+7. Install the 2026 Payroll tax update.  
 
 ### Installing the year-end update
 
@@ -415,7 +400,7 @@ You will need to install the year-end update on every workstation that runs Dyna
     Save the relevant file to a folder on the local disk drive of the server workstation that runs Dynamics GP.
 
     > [!NOTE]
-    > The year-end update file also includes all prior Microsoft Dynamics updates, such as Dynamics GP October release 18.4.1361, 18.5.1556, 18.6 and 18.7.
+    > The year-end update file also includes all prior Microsoft Dynamics updates, such as Dynamics GP October release 18.5.1556, 18.6 18.7 and 18.8.
 
 2. Double-click the file that you just downloaded. Progress windows appear as space requirements are verified and files are installed.
 
@@ -466,7 +451,7 @@ You will need to install the year-end update on every workstation that runs Dyna
     > [!NOTE]
     > To install the update on an operating system with User Account Control (UAC) activated, a user must be running Dynamics GP with administrative privileges. (From the Start menu, select and right-click the Dynamics GP shortcut, and then select Run as Administrator.) For other ways to install the update on Windows clients with UAC activated, see Installing with UAC activated.
 
-18. To confirm the update is installed, check your Dynamics GP Version under Help | About Microsoft Dynamics GP.  The version should be 18.6.1695 or later.
+18. To confirm the update is installed, check your Dynamics GP Version under Help | About Microsoft Dynamics GP.
 
 #### Installing with UAC activated
 
@@ -506,13 +491,13 @@ Use the Payroll Year-end Closing window to create a table of annual wage informa
 
     ![Payroll year-End Closing window](media/e90a4bb19ddde66e966913bc656d2781.png)
 
-2. Enter 2024 for the reporting year.
+2. Enter 2025 for the reporting year.
 
 3. Choose Process to create the Year-end Wage file that will be used for printing W-2 statements and 1099-R forms. You can store multiple years of year-end wage information in Dynamics GP. To clear previous year-end wage information, use the Remove Payroll Year-end Information window (Dynamics GP menu \>\> Tools \>\> Utilities \>\> Payroll\>\> Remove Year-end Information).
 
     ![Remove Inactive Records window](media/a4d9e20a94bd7bdf275d5a701f20fbdb.jpg)
 
-You can install 2025 tax tables any time after you've created the Year-end Wage file. You also may need to process 2024 pay runs before printing 2023 wage statements. For more information, see the checklist [Processing 2024 pay runs before printing 2023 statements](#printnewbeforeold).
+You can install 2026 tax tables any time after you've created the Year-end Wage file. You also may need to process 2026 pay runs before printing 2025 wage statements. For more information, see the checklist [Processing 2026 pay runs before printing 2025 statements](#printnewbeforeold).
 
 ### Editing W-2 records
 
@@ -526,7 +511,7 @@ However, when you make changes in this window, only the information in the Year-
 
     ![Edit W-2 information window](media/d82a0116f4c6685328ad23e68fa36619.jpg)
 
-2. Select 2024 and select an employee. The employee's Social Security number and address are displayed in editable fields.
+2. Select 2025 and select an employee. The employee's Social Security number and address are displayed in editable fields.
 
     > [!NOTE]
     > Social Security numbers that aren't valid are listed in the W-2 Validation Report. For more information, see [Printing W-2 forms and reports](#printing-w-2-forms-and-reports).
@@ -565,7 +550,7 @@ When you make changes in the Edit 1099-R window, only the information in the Yea
 
     ![Edit 1099-R Information window](media/d3210406076487f1b0554484e04b57f0.jpg)
 
-2. Select 2024 for the calendar year and select an employee. The employee's Social Security number and address are displayed in editable fields.
+2. Select 2025 for the calendar year and select an employee. The employee's Social Security number and address are displayed in editable fields.
 
 3. Edit miscellaneous information. If necessary, you can change the gross distribution amount or the current-year total amount of the pension that the employee received. If you know the amount of the distribution that is taxable, enter that amount. Otherwise, leave the Taxable Amount Not Determined field marked and the taxable amount at 0.
 
@@ -595,7 +580,7 @@ It's important to archive inactive employee Human Resources information before d
 
 ### Setting up fiscal periods
 
-Setting up periods for the future fiscal year allows you to enter transactions into the 2025 fiscal year before closing the 2024 fiscal year. Enter the number and length of each company's open fiscal periods for 2025 in the Fiscal Periods Setup window.
+Setting up periods for the future fiscal year allows you to enter transactions into the 2026 fiscal year before closing the 2025 fiscal year. 
 
 After clearing financial information, you also can use the Fiscal Periods Setup window to:
 
@@ -618,8 +603,7 @@ After clearing financial information, you also can use the Fiscal Periods Setup 
 5. Choose Calculate to calculate first and last days for each period. The beginning date of each period appears in the scrolling window.
 
     > [!NOTE]
-    > You can reenter information and recalculate periods as many times as
-necessary.
+    > You can reenter information and recalculate periods as many times as necessary.
 
 6. Review the beginning dates of each period in the Date column. Make changes as needed.
 
@@ -794,7 +778,7 @@ To print the Year-end Wage Report:
 
     ![Print form](media/2c2296ebb02f986dbb208027f0a103de.jpg)
 
-2. Enter 2022 as the year.
+2. Enter 2025 as the year.
 
 3. Select a sorting option for displaying information: Employee ID, Employee Name, Department/Employee, or Social Security Number.
 
@@ -825,7 +809,7 @@ If you're submitting W-2 wage reports electronically, you can also use AccuWage 
 
     ![Print W-2 forms](media/9e6e4bda64b079f0be50f366b9f8c9d1.jpg)
 
-2. Enter 2024 as the reporting year.
+2. Enter 2025 as the reporting year.
 
 3. Select a printing option. Mark Normal Year-end to print W-2 statements for all employees at the end of the year, including inactive employees and employees who've already had W-2 statements printed.
 
@@ -880,7 +864,7 @@ Use the Print 1099-R Forms window to print the following forms and reports.
 
     ![Print 1099-R Forms](media/95196f36cdb4dbdcce5d37dbc9552912.jpg)
 
-2. Enter 2024 for the calendar year. The default year is the current system year.
+2. Enter 2025 for the calendar year. The default year is the current system year.
 
 3. Mark All to print 1099-R statements for every employee or enter a starting and ending employee ID to print statements for a select group of employees.
 
