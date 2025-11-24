@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: troubleshooting-general
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 10/20/2025
+ms.date: 11/22/2025
 ---
 
 # Microsoft Dynamics GP Email Troubleshooting Guide
@@ -741,6 +741,10 @@ With modern authentication, changes were made in 18.6 to allow [Shared Mailbox w
 
 Workflow email issues usually fall into two possible causes: SMTP issues and Setup issues, overall you can figure out which is which by using the ‘Test E-mail’ button on the Workflow Setup window (GP -> Tools -> Setup -> System -> Workflow Setup). The following steps are split depending on if the test email is received or not.
 
+> [!NOTE]
+> When you set up workflow and approve the workflow through email notifications, it is sent from the account that is setup in Workflow Setup. This account uses SMTP Basic Authentication.
+> SMTP Basic Authentication will be disabled by Microsoft in the near future. If you need this fuctionality in Dynamics GP Workflow, [review this blog of options and to set up HVE](https://community.dynamics.com/blogs/post/?postid=ce340764-0204-f011-bae3-7c1e52472896).
+
 ### My SMTP Test Failed
 
 If you never received the Test E-mail, then you are likely having an issue with SMTP.
@@ -751,8 +755,7 @@ First, confirm that you are not using MFA on the account used in the SMTP setup.
 
 Next, make sure that TLS 1.0 is enabled on the SQL server and on the SMTP server.
 
-Then walk through the following article:
-
+Then, walk through the following article:   
 [Workflow Notification Email Troubleshooting](https://community.dynamics.com/blogs/post/?postid=aa22fada-1bda-4f29-ab7b-1d7be6355e22)
 
 
@@ -777,34 +780,39 @@ If it is grayed out, then you are tied to Exchange Online, so these should be co
 ![Form 6](media/emailjohn6.jpg)
 
 
-### Troubleshooting tips for Workflow E-mail
+### Troubleshooting Workflow Email Issues and Best Practices in Dynamics GP
 
-#### Execution Timeout Expired. The timeout period elapsed prior to the completion of the operation or the server is not responding.
+[How Workflow email works in Dynamics GP](https://community.dynamics.com/blogs/post/?postid=5063e389-45ae-ee11-92bd-6045bdb56f43)
 
-When approving Requestions as an example thru Workflow email links (which uses web services), notifications may not go to the approver. If you look at the exception errors for System you will see 
+1. If no workflow emails are sent, verify if it is all workflow or just one specific workflow where it is not working.
 
-When reviewing a SQL Profile trace, you can see calls (qdCreateSQL procedure) that happen for each E-Mail being sent.  There is about a 30 second window for this to complete.  If you have a larger data set and maybe joined more tables to the workflow message, this may not complete and cause the above error and then notifications appear to stop.  To resolve this problem, you may need to look at the workflow, tables that are joined, comments that are printing and see if there is an index that can be put on a specific table to better  sort through the data.  The SQL Display Estimated Execution Plan can be used to help identify your specific data issue.
+   1. For the user you are testing with, verify in *Active Directory under the General tab* that the E-mail field is populated, if it is blank emails will not send. This needs to be done for all users that are GP Approvers in workflow
+   1. Try to send a Test E-Mail in Workflow Setup does it work?  This process will use the user listed in the SMTP Authentication area of the window.
+   1. The SY04920 table is not used for workflow emails or Modern Auth once setup and becomes non-relevant.            
 
-1. If no workflow emails are sent, verify if it is all workflow or just one specific workflow where this is not working.
+2. If you are using templates, try a workflow email with no attachments, just to see if the email works.
 
-a. For the user you are testing with, verify in *Active Directory under the General tab* that the E-mail field is populated, if it is blank emails will not send.
-         This needs to be done for all users that are GP Approvers in workflow
-b. Try to send a Test E-Mail in Workflow Setup does it work?  This process will use the user listed in the SMTP Authentication area of the window.
-c. The SY04920 table is not used for workflow emails or Modern Auth once setup and becomes non-relevant.            
-      
-2. If we are using templates, we should try a workflow email with no attachments, just to see if the email works.
+3. When a user 1st submits for approval in workflow, this will go through Exchange, usually submitted within Dynamics GP.
 
-3. When a user 1st submits for approval in workflow, that will go through Exchange, usually submitted within Dynamics GP.
-From there on out, when a user approves through the workflow email links, to approve what was submitted, that will use [SMTP](https://community.dynamics.com/blogs/post/?postid=7aaa9918-06a0-4e88-adac-fc30853b97dc) for all other approvals from Web Services workflow emails.
+   From there on out, when a user approves through the workflow email links, to approve what was submitted, that will use [SMTP](https://community.dynamics.com/blogs/post/?postid=7aaa9918-06a0-4e88-adac-fc30853b97dc) for all other approvals from Web Services workflow emails.
 
-If an email is failing from the email links this could indicate a problem with web services.
-Test approving the email from within Dynamics GP, then we know workflow and emails are working, just not the web services links.
+   If an email is failing from the email links this could indicate a problem with web services.Test approving the email from within Dynamics GP, then we know workflow and emails are working, just not the web services links.
+
+   If you need to verify Web Services is working use the below information: [How to verify if Microsoft Dynamics GP Web Services is functioning correctly](/troubleshoot/dynamics/gp/verify-if-web-service-is-correct)
 
 4. [What is the email flow of workflow and what user is the email coming from?](https://community.dynamics.com/blogs/post/?postid=33c8f2f3-2794-4bf7-ac60-f3a00588ce42#:~:text=There%20are%20three%20different%20processes,behalf%20of%20the%20GP%20user.)
    
-6. Make sure you have VALID users in AD as Workflow Managers.  If you do not have valid AD users as Workflow Managers, it may cause performance issues in your workflow and undesired results.  
-Many times, customers have employees that leave the company but their users are still part of the workflow and may cause issues.
+5. Make sure you have VALID users in AD as Workflow Managers.  If you do not have valid AD users as Workflow Managers, it may cause **performance issues** in your workflow and undesired results.  
+Often, former employees remain assigned in workflows after leaving the company, which can lead to errors and performance issues.
 To help streamline your processes and increase efficiency, {review this article and video](https://community.dynamics.com/blogs/post/?postid=d847301a-a499-439c-bd68-d46173504e2f) for tips about setting up your workflows for optimized performance.
+
+#### Execution Timeout Expired. The timeout period elapsed prior to the completion of the operation or the server is not responding.
+
+When approving Requestions as an example thru Workflow email links (which uses web services), notifications may not go to the approver. 
+If you look at the exception errors for System you will see 
+
+When reviewing a SQL Profile trace, you can see calls (qdCreateSQL procedure) that happen for each E-Mail being sent.  There is about a 30 second window for this to complete.  If you have a larger data set and maybe joined more tables to the workflow message, this may not complete and cause the above error and then notifications appear to stop.  To resolve this problem, you may need to look at the workflow, tables that are joined, comments that are printing and see if there is an index that can be put on a specific table to better  sort through the data.  The SQL Display Estimated Execution Plan can be used to help identify your specific data issue.
+
 
 #### The file you have selected does not exist
 
@@ -815,10 +823,9 @@ You may notice this error message when sending email with attachments in workflo
 3. This error can happen when the attachment file name is very long.
 4. You may also see this error message if the Batch ID you submit the workflow on has special characters, test with a simple Batch ID and see if it works.
 
-[How to verify if Microsoft Dynamics GP Web Services is functioning correctly](/troubleshoot/dynamics/gp/verify-if-web-service-is-correct)
-
 > [!NOTE]
-> If you notice that workflow was working fine and now workflow seems to hang and is very slow in look up's to Active Directory with users, it could be caused >by changes to your Anti-virus.  Test to temporarily disable the AV or create an exception for Dynamics GP.  You may also notice it hang when you login to >Dynamics GP with an error message 'Initializing Microsoft Dynamics GP'.
+> If you notice that workflow was working fine and now workflow seems to hang and is very slow in look up's to Active Directory with users, it could be caused by changes to your Anti-virus.
+> Test to temporarily disable the AV or create an exception for Dynamics GP.  You may also notice it hang when you login to Dynamics GP with an error message 'Initializing Microsoft Dynamics GP'.
 > 
 
 ## <a name=mfa></a>MFA - Multi-Factor Authentication (Modern Authentication)
