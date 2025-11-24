@@ -786,21 +786,19 @@ If it is grayed out, then you are tied to Exchange Online, so these should be co
 
 1. If no workflow emails are sent, verify if it is all workflow or just one specific workflow where it is not working.
 
-a. For the user you are testing with, verify in *Active Directory under the General tab* that the E-mail field is populated, if it is blank emails will not send.
-         This needs to be done for all users that are GP Approvers in workflow
-b. Try to send a Test E-Mail in Workflow Setup does it work?  This process will use the user listed in the SMTP Authentication area of the window.
-c. The SY04920 table is not used for workflow emails or Modern Auth once setup and becomes non-relevant.            
+   1. For the user you are testing with, verify in *Active Directory under the General tab* that the E-mail field is populated, if it is blank emails will not send. This needs to be done for all users that are GP Approvers in workflow
+   1. Try to send a Test E-Mail in Workflow Setup does it work?  This process will use the user listed in the SMTP Authentication area of the window.
+   1. The SY04920 table is not used for workflow emails or Modern Auth once setup and becomes non-relevant.            
 
 2. If you are using templates, try a workflow email with no attachments, just to see if the email works.
 
 3. When a user 1st submits for approval in workflow, this will go through Exchange, usually submitted within Dynamics GP.
-From there on out, when a user approves through the workflow email links, to approve what was submitted, that will use [SMTP](https://community.dynamics.com/blogs/post/?postid=7aaa9918-06a0-4e88-adac-fc30853b97dc) for all other approvals from Web Services workflow emails.
 
-If an email is failing from the email links this could indicate a problem with web services.
-Test approving the email from within Dynamics GP, then we know workflow and emails are working, just not the web services links.
+   From there on out, when a user approves through the workflow email links, to approve what was submitted, that will use [SMTP](https://community.dynamics.com/blogs/post/?postid=7aaa9918-06a0-4e88-adac-fc30853b97dc) for all other approvals from Web Services workflow emails.
 
-If you need to verify Web Services is working use the below information:
-[How to verify if Microsoft Dynamics GP Web Services is functioning correctly](/troubleshoot/dynamics/gp/verify-if-web-service-is-correct)
+   If an email is failing from the email links this could indicate a problem with web services.Test approving the email from within Dynamics GP, then we know workflow and emails are working, just not the web services links.
+
+   If you need to verify Web Services is working use the below information: [How to verify if Microsoft Dynamics GP Web Services is functioning correctly](/troubleshoot/dynamics/gp/verify-if-web-service-is-correct)
 
 4. [What is the email flow of workflow and what user is the email coming from?](https://community.dynamics.com/blogs/post/?postid=33c8f2f3-2794-4bf7-ac60-f3a00588ce42#:~:text=There%20are%20three%20different%20processes,behalf%20of%20the%20GP%20user.)
    
