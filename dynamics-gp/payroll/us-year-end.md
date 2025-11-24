@@ -193,7 +193,7 @@ Web site: [www.greenshades.com](https://www.greenshades.com/)
 > [!IMPORTANT]
 > It is imperative you file electronically. The Taxpayer First Act mandates electronic filing of IRS forms including W-2s.
 Beginning in 2022, if you send 100 or more W-2s/1099's, you must send them electronically. 
-In 2023 and on, the limit is lowered to 10. The IRS is pushing for businesses to file electronically, W-2, Payables 1099 and ACA forms, etc. 
+In 2023 and on, the limit is lowered to 10. The IRS is pushing for businesses to file electronically, W-2, Payables 1099 and ACA forms, and so on. 
 Dynamics GP does not file Payables 1099's electronically. 
 Review this blog to help you prepare for year-end and electronic filing: [1099 Changes to expect -Get ready for Year-end](https://community.dynamics.com/blogs/post/?postid=2246f6af-3f2a-4faf-9da5-544613326c20).
 
