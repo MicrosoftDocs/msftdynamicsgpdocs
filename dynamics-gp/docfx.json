@@ -56,7 +56,8 @@
         "terms/*.md": "3650-days",
         "upgrade/*.md": "3650-days",
         "web-components/*.md": "3650-days",
-        "whats-new/*.md": "3650-days"      
+        "whats-new/*.md": "3650-days"
+        }     
       },
     "template": [],
     "dest": "dynamics-gp",
