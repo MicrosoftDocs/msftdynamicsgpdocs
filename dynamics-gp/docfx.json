@@ -46,7 +46,19 @@
       "breadcrumb_path": "/dynamics-gp/breadcrumb/toc.json",
       "extendBreadcrumb": true
 },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "ms.update-cycle": {
+        "distribution/*.md": "3650-days",
+        "financials/*.md": "3650-days",
+        "includes/*.md": "3650-days", 
+        "installation/*.md": "3650-days",
+        "payroll/*.md": "3650-days",
+        "terms/*.md": "3650-days",
+        "upgrade/*.md": "3650-days",
+        "web-components/*.md": "3650-days",
+        "whats-new/*.md": "3650-days"
+        }     
+      },
     "template": [],
     "dest": "dynamics-gp",
     "markdownEngineName": "markdig"
