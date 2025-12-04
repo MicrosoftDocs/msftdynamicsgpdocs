@@ -451,9 +451,9 @@ You will need to install the year-end update on every workstation that runs Dyna
     > [!NOTE]
     > To install the update on an operating system with User Account Control (UAC) activated, a user must be running Dynamics GP with administrative privileges. (From the Start menu, select and right-click the Dynamics GP shortcut, and then select Run as Administrator.) For other ways to install the update on Windows clients with UAC activated, see Installing with UAC activated.
 
-18. To confirm the update is installed, check your Dynamics GP Version under Help | About Microsoft Dynamics GP, it should be version 18.8.1919 or later.  
-Also under Tools | Setup | Payroll | Payroll the Last Year-End Update is 12/04/2025.
-If you date is not updated, review the following article [The date in the Last Year-End Update field isn't updated after you install the Payroll Year-End Update for Microsoft Dynamics GP](https://learn.microsoft.com/en-us/troubleshoot/dynamics/gp/last-year-end-update-field-is-not-updated).
+18. To confirm the update is installed, check your Dynamics GP Version under Help | About Microsoft Dynamics GP. It should be version 18.8.1919 or later.  
+Also under Tools | Setup | Payroll | Payroll, the Last Year-End Update is 12/04/2025.
+If you date is not updated, review the following article [The date in the Last Year-End Update field isn't updated after you install the Payroll Year-End Update for Microsoft Dynamics GP](/troubleshoot/dynamics/gp/last-year-end-update-field-is-not-updated).
 
 #### Installing with UAC activated
 
