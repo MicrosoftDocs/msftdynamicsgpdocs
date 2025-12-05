@@ -8,12 +8,12 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/16/2024
+ms.date: 12/5/2025
 ---
 
-# Canadian Payroll 2024 Year-end Update & 2025 Tax Update
+# Canadian Payroll 2025 Year-end Update & 2026 Tax Update
 
-This document contains instructions for updating the Canadian Payroll module for Microsoft Dynamics GP for 2024 filing requirements. This update also includes Round 1 tax updates for 2025 federal, provincial, and territorial taxes.
+This document contains instructions for updating the Canadian Payroll module for Microsoft Dynamics GP for 2025 filing requirements. This update also includes Round 1 tax updates for 2026 federal, provincial, and territorial taxes.
 
 These instructions assume that you are already familiar with Microsoft Dynamics GP Canadian Payroll.
 
@@ -33,18 +33,18 @@ This document contains the following chapters:
 
 *Chapter 3, "Electronic filing in XML format,"* contains information that you can use to prepare T4/T4A slips and RL-1 forms with Canadian Payroll for magnetic media filing in XML format.
 
-*Chapter 4, "Tax updates,"* describes the federal and provincial or territorial tax changes for 2020.
+*Chapter 4, "Tax updates,"* describes the federal and provincial or territorial tax changes.
 
 ### What's changed
 
-The 2024 Year-End Update/2025 Tax Update contains changes in the information that's submitted to the Canada Revenue Agency (CRA) and Ministère du Revenu du Québec.
+The 2025 Year-End Update/2026 Tax Update contains changes in the information that's submitted to the Canada Revenue Agency (CRA) and Ministère du Revenu du Québec.
 
 > [!NOTE]
-> For more information, see the [updated blog of recent changes for Canadian Payroll](https://community.dynamics.com/blogs/post/?postid=34c5b11b-0db1-ef11-b8e8-7c1e5246cd7c).
+> For more information, see the [updated blog of recent changes for Canadian Payroll](https://community.dynamics.com/blogs/post/?postid=4f9a4403-fbd1-f011-bbd3-7c1e527f8bbe).
 
 #### Tax changes
 
-See [Chapter 4: Tax updates](#chapter-4-tax-updates) for a description of the 2025 federal, provincial, and territorial tax changes.
+See [Chapter 4: Tax updates](#chapter-4-tax-updates) for a description of the 2026 federal, provincial, and territorial tax changes.
 
 
 #### General application changes
@@ -54,15 +54,15 @@ The 2024 Year-End Update/2025 Tax Update contains application bug fixes and func
 #### XML and form changes
 
 RL-1 -XML and form changes
-T4  - XML changes
+T4  - XML and form changes
 T4A - XML changes 
 
-- Software Development Number for XML - RQ-24-01-129
-- RL-1 Slip Authorization number - FS2401129 (enter this in the Payroll T4/R1 Print window)  
+- Software Development Number for XML - RQ-25-01-120
+- RL-1 Slip Authorization number - FS2501061 (enter this in the Payroll T4/R1 Print window)  
 
 #### Installation notes
 
-The 2024 Canadian Payroll Tax Update must be installed on the server and on each client workstation where Microsoft Dynamics GP is used. Before installing the update, be sure to complete the following tasks:
+The Canadian Payroll Tax Update must be installed on the server and on each client workstation where Microsoft Dynamics GP is used. Before installing the update, be sure to complete the following tasks:
 
 All users should exit Microsoft Dynamics GP until the update has been installed on all workstations.
 
@@ -74,7 +74,7 @@ Save backup copies of your Reports.dic, R7131.dic, F7131.dic, Forms.dic, and Dyn
 
 If you have questions about Canadian Payroll year-end closing procedures and your Microsoft Business Solutions Partner isn't available, there are several resources, in addition to this document, to assist in answering your year-end questions.
 
-#### 2024 year-end information
+#### 2025 year-end information
 
 Look at [Dynamics GP Downloads](/dynamics/s-e/gp/cagptuye2018_285) to find out what year-end maintenance and tax changes are included in each update and to download the update. All instructions for downloading and installing the tax updates also will be provided there.
 
@@ -86,10 +86,10 @@ Use the following checklist for Canadian Payroll year-end processing. For detail
 
 |**Step**|**Description** |
 |----------|--------------|
-| 1.       | Complete all 2024 pay runs. |
-| 2.       | Note: Any batch with a cheque date of 2025 should be processed after the Year End File Reset. For example, if the cheque date of your final pay period for 2024 is January 1, 2025, the 2025 tax tables must be used for that pay run. |
-| 3.       | Complete any necessary 2024 payroll reports.        |
-| 4.       | Install the 2024 Canadian Payroll Year-End Update. See [Installing the update](#installing-the-update).      |
+| 1.       | Complete all 2025 pay runs. |
+| 2.       | Note: Any batch with a cheque date of 2026 should be processed after the Year End File Reset. For example, if the cheque date of your final pay period for 2025 is January 1, 2026, the 2026 tax tables must be used for that pay run. |
+| 3.       | Complete any necessary payroll reports for current year.        |
+| 4.       | Install the 2025 Canadian Payroll Year-End Update. See [Installing the update](#installing-the-update).      |
 | 5.       | Note: Do not restart Microsoft Dynamics GP on any workstation until the update has been installed on all workstations that run the application.       |
 | 6.       | Complete the Year End File Reset.                                       |
 | 7.       | Note: To ensure that all tables are available for resetting, make sure that the Year End File Reset window is the only window open in Microsoft Dynamics GP.|
@@ -102,29 +102,29 @@ Use the following checklist for Canadian Payroll year-end processing. For detail
 > [!NOTE]
 > By law, you must be able to reproduce original or amended T4, T4A, and RL-1 slips for a predefined (agency assigned) number of years after the original filing. To meet this requirement, be sure to keep backups of all your Canadian Payroll data files, as well as copies of reports, tax forms, and filings. Canadian Payroll will only allow you to re-create a prior year filing if you save backup copies of the prior reporting year data.  
 
-To make it easier to determine CPP and EI maximums between running a payroll in a new year (2025 maximums) and printing T4's from prior years (2024 maximum), two constants are created each with the year maximum in place.
+To make it easier to determine CPP and EI maximums between running a payroll in a new year (2026 maximums) and printing T4's from prior years (2025 maximum), two constants are created each with the year maximum in place.
 
 Example:
 
-- Constant 1 2024 Maximum
-- Constant 2 2025 Maximum
+- Constant 1 2025 Maximum
+- Constant 2 2026 Maximum
 
-To determine when you run a 2024 payroll what maximum to use, the system looks to the **Federal Basic Personal Amount** in the Tax Credit Control window.
+To determine when you run a payroll what maximum to use, the system looks to the **Federal Basic Personal Amount** in the Tax Credit Control window.
 Tools | Setup | Payroll Canada | Control | Tax Credits.
-The system expects the amount of $16,129 for Federal Basic personal Amount in the control and then it will pull the 2025 maximum.
+The system expects the amount of $16,452 for Federal Basic personal Amount in the control and then it will pull the 2026 maximum.
 
 
 ## Chapter 2: Preparation and installation
 
-This portion of the documentation specifies the requirements for installing the 2024 Year-End Update / 2025 Tax Update.
+This portion of the documentation specifies the requirements for installing the Year-End Update.
 
 ### Supported versions
 
-The 2024 Year-End Update / 2025 Tax Update supports Microsoft Dynamics GP (18.7). To identify the Microsoft Dynamics GP release you're using, start the application and choose Help \>\> About Microsoft Dynamics GP.
+The 2025 Year-End Update / 2026 Tax Update supports Microsoft Dynamics GP (18.8). To identify the Microsoft Dynamics GP release you're using, start the application and choose Help \>\> About Microsoft Dynamics GP.
 
 To identify the Canadian Payroll release you're using, start Microsoft Dynamics GP, then open the Payroll Control Setup – Canada window (Microsoft Dynamics GP menu \>\>Tools \>\> Setup \>\> Payroll – Canada \>\> Control). You should see the release number in the upper left corner of the window.
 
-If you are using an unsupported release of Microsoft Dynamics GP, you won't receive all of the necessary information to complete year-end closing and payroll tax procedures. This information includes personal amounts, Employment Insurance (EI), Canadian Pension Plan (CPP), and Quebec Pension Plan (QPP) amounts. To update the information, install Microsoft Dynamics GP 2015 or higher before installing this update.
+If you are using an unsupported release of Microsoft Dynamics GP, you won't receive all of the necessary information to complete year-end closing and payroll tax procedures. This information includes personal amounts, Employment Insurance (EI), Canadian Pension Plan (CPP), and Quebec Pension Plan (QPP) amounts. 
 
 > [!TIP]
 > To view a list of product discontinuation dates, see the [Dynamics GP Lifecycle](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20Gp) site. The link is also available from the [Lifecycle and Upgrade Services blog](https://community.dynamics.com/gp/b/dynamicsgp/posts/microsoft-dynamics-gp-upgrade-blog-series-schedule).
@@ -162,7 +162,7 @@ The update must be installed on each client workstation where Microsoft Dynamics
     Save the .msp file to a folder on the local disk drive of the server  workstation that runs Microsoft Dynamics GP.
 
     > [!NOTE]
-    > The year-end update file also includes all prior Microsoft Dynamics GP updates. See also [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_patchreleases_377). This update is inclusive of the October 2024 release for Microsoft Dynamics GP.
+    > The year-end update file also includes all prior Microsoft Dynamics GP updates. See also [Service Pack, Hotfix, and Compliance Update Patch Releases for Microsoft Dynamics GP](/dynamics/s-e/gp/mdgp2018_patchreleases_377). This update is inclusive of the October 2025 release for Microsoft Dynamics GP.
 
 2. Double-click the file that you just downloaded. Progress windows appear as space requirements are verified and files are installed.
 
@@ -226,7 +226,7 @@ User Account Control (UAC) is an enhanced security feature in Windows. UAC is ac
 Example, for Microsoft Dynamics GP (English), enter the following command.
 
 ```cmd
-Msiexec /p MicrosoftDynamicsGP18-KB4602612-ENU.msp /l\*v C:\\MSPErrorlog.txt
+Msiexec /p MicrosoftDynamicsGP18-KB5054790-ENU.msp /l\*v C:\\MSPErrorlog.txt
 ```
 
 If you want the user to install updates and service packs without having administrative privileges on the local computer, you can change permissions for the folder where Microsoft Dynamics GP is installed. Be aware that doing this makes your computer less secure.
@@ -290,16 +290,16 @@ This chapter lists changes to federal, provincial, and territorial tax rates for
 
 #### CPP
 
-Contribution rates for both employers and employees for 2025 is 5.95%. The following changes are in effect for CPP for 2025:
+Contribution rates for both employers and employees for 2026 is 5.95%. The following changes are in effect for CPP:
 
-- The maximum pensionable earnings amount will be updated to \$71,300, from \$68,500.
+- The maximum pensionable earnings amount will be updated to \$74,600, from \$71,300
 
 - The basic exemption remains unchanged at \$3,500.
 
-- The maximum contribution amount for the year increases to \$4,034.10, from \$3,867.50.
+- The maximum contribution amount for the year increases to \$4,230.45, from \$4,034.10.
 
 > [!NOTE]
-> - Changes to CPP/QPP effective Jan 1, 2024, remains for the 2025 year.
+> - Changes to CPP/QPP effective Jan 1, 2024, remains for the 2026 year.
 > - Effectively, there is an additional CPP/QPP tax calculation (CPP2/QPP2 is an additional calculation once the initial Annual maximum is reached. It then has a separate maximum to end any CPP/QPP calculation)  
 > - As part of this, we need to track the additional tax withholding and display it in the same places as the original CPP/QPP.
 > - **No new codes need to be set up for this**
@@ -307,30 +307,30 @@ Contribution rates for both employers and employees for 2025 is 5.95%. The follo
 
 #### EI for non-Quebec employees
 
-- The EI Maximum Annual Insurable Earnings amount increases to \$65,700, from \$63,200
+- The EI Maximum Annual Insurable Earnings amount increases to \$68,900, from \$65,700
 
-- The EI premium amount is 1.64%. The EI maximum annual premium amount will be \$1,077.48 from \$1,049.12 
+- The EI premium amount is 1.63%. The EI maximum annual premium amount will be \$1,123.07 from \$1,077.48 
 
-- The EI Employer Premium Rate amount is 2.296%. The employer EI premium is set using the Employer EI Factor field in the Payroll Employer Number Setup – Canada window (Tools \>\> Setup \>\> Payroll-Canada \>\> Employer). This factor must be set to 1.4 to meet the official EI Employer Premium.
+- The EI Employer Premium Rate amount is 2.282%. The employer EI premium is set using the Employer EI Factor field in the Payroll Employer Number Setup – Canada window (Tools \>\> Setup \>\> Payroll-Canada \>\> Employer). This factor must be set to 1.4 to meet the official EI Employer Premium.
 
 #### EI for Quebec employees
 
-- The EI maximum annual insurable earnings amount increases to \$65,700, from \$63,200.
+- The EI maximum annual insurable earnings amount increases to \$68,900, from \$65,700.
 
-- The EI (Quebec) Premium Rate is 1.31%.
+- The EI (Quebec) Premium Rate is 1.30%.
 
-- The maximum annual premium amount is \$860.67, from \$834.24.
+- The maximum annual premium amount is \$895.70, from \$860.67.
 
 
 > [!NOTE]
-> To make it easier to determine CPP and EI maximums between running a payroll in a new year (2025 maximums) and printing T4's from prior years (2024 maximum), two constants are created each with the year maximum in place.
+> To make it easier to determine CPP and EI maximums between running a payroll in a new year (2026 maximums) and printing T4's from prior years (2025 maximum), two constants are created each with the year maximum in place.
 >
 > Example:
-> - Constant 1 2024 Maximum
-> - Constant 2 2025 Maximum
+> - Constant 1 2025 Maximum
+> - Constant 2 2026 Maximum
 > 
-> To determine when you run a 2025 payroll what maximum to use, the system looks to the Federal Basic Personal Amount in the Tax Credit Control window (Tools > Setup > Payroll Canada > Control > Tax Credits).
-> The system expects the amount of $16,129 for Federal Basic personal Amount in the control and then it will pull the 2025 maximum.
+> To determine when you run a 2026 payroll what maximum to use, the system looks to the Federal Basic Personal Amount in the Tax Credit Control window (Tools > Setup > Payroll Canada > Control > Tax Credits).
+> The system expects the amount of $16,452 for Federal Basic personal Amount in the control and then it will pull the 2026 maximum.
 
 #### Canadian Payroll Tax Calculations
 
@@ -357,138 +357,138 @@ The explanation of the Cumulative Averaging convention is the best resource.
 
 #### QPIP
 
-- The QPIP Maximum Annual Insurable Earnings amount increases to \$98,000 from \$94,000.
+- The QPIP Maximum Annual Insurable Earnings amount increases to \$103,000 from \$98,000.
 
-- The Premium Rate amount remains at 0.494%.
+- The Premium Rate amount is 0.430%.
 
-- The Max Premium is \$484.12 from \$464.36.
+- The Max Premium is \$442.90 from \$484.12.
 
-- The Employer Premium Rate remains at 0.692%. The maximum employer amount will change to \$678.16 from \$650.48.
+- The Employer Premium Rate is 0.602%. The maximum employer amount is \$620.06 from \$678.16.
 
 ### Federal tax rates and income thresholds
 
-Effective January 1, 2025 the federal tax rate noted below. The federal index factor is 1.027. The income thresholds are revised as follows.
+Effective January 1, 2026 the federal tax rate noted below. The federal index factor is 1.020. The income thresholds are revised as follows.
 
-![income thresholds](media/FED2025.JPG)
+![income thresholds](media/FED2026.JPG)
 
 ### Federal personal amounts
 
 Federal personal amounts have been increased by fixed amounts as shown in the following table.
 
-The Basic Personal amount is updated to \$16,129 (formerly \$15,705).
+The Basic Personal amount is updated to \$16,452 (formerly \$16,129).
 
-The Spouse Common Law Partner amount increases by the index factor to \$16,129  (formerly \$15,705), if the original amount was not zero.
+The Spouse Common Law Partner amount increases by the index factor to \$16,452  (formerly \$16,129), if the original amount was not zero.
 
-The Eligible Dependent amount increases by the index factor to \$16,129 (formerly \$15,705), if the original amount was not zero.
+The Eligible Dependent amount increases by the index factor to \$16,452 (formerly \$16,129), if the original amount was not zero.
 
 ### Provincial and territorial tax changes
 
-The following provinces and territories have tax changes for 2025.
+The following provinces and territories have tax changes for 2026.
 
 > [!NOTE]
 > The figures in the following tables are those supplied by the relevant revenue agencies. The actual figures calculated by Canadian Payroll may differ slightly due to rounding. This issue is recognized by the CRA and the  differences will not subject you to penalties for over- or under-withholding.
 
 #### Alberta 
 
-- The Alberta basic personal amount is \$22,323 (formerly \$21,885).  
+- The Alberta basic personal amount is \$22,769 (formerly \$22,323).  
 
-- The Alberta spouse or common-law partner amount is \$22,323 (formerly \$21,885).
+- The Alberta spouse or common-law partner amount is \$22,769 (formerly \$22,323).
 
-![Alberta tax changes](media/AB2025.JPG)
+![Alberta tax changes](media/AB2026.JPG)
 
 #### British Columbia
 
-- The British Columbia basic personal amount increases by the index factor to  \$12,932 (formerly \$12,580).
+- The British Columbia basic personal amount increases by the index factor to  \$13,216 (formerly \$12,932).
 
-- The British Columbia spouse or common-law partner amount (and eligible dependent) increases by the index factor and is revised to \$12,932  (formerly \$12,580).
+- The British Columbia spouse or common-law partner amount (and eligible dependent) increases by the index factor and is revised to \$13,216  (formerly \$12,932).
 
-![British Columbia tax changes](media/BC2025.JPG)
+![British Columbia tax changes](media/BC2026.JPG)
 
 #### Manitoba
 
-- The Manitoba Basic Personal amount increases by the index factor to \$15,969 (formerly \$15,780).
+- The Manitoba Basic Personal amount is  \$15,780 (formerly \$15,969).
 
-- The Manitoba spouse or common-law partner amount shall increase to \$15,969 (formerly \$15,780).
+- The Manitoba spouse or common-law partner amount is \$15,780 (formerly \$15,969).
 
-![Manitoba tax changes](media/MB2025.JPG)
+![Manitoba tax changes](media/MB2026.JPG)
 
 #### New Brunswick
 
-- The New Brunswick Basic Personal amount increases by the index factor and is usually revised to \$13,396 (formerly \$13,044).
+- The New Brunswick Basic Personal amount increases by the index factor and is revised to \$13,664 (formerly \$13,396).
 
-- The spouse or common-law partner amount increases by the index factor and is revised to \$13,396 (formerly \$13,044).
+- The spouse or common-law partner amount increases by the index factor and is revised to \$13,664 (formerly \$13,396).
 
-![New Brunswick tax changes](media/NB2025.JPG)
+![New Brunswick tax changes](media/NB2026.JPG)
 
 #### Newfoundland and Labrador
 
-- The Newfoundland Basic Personal amount increases by the index factor and is updated to \$11,067 (formerly \$10,818).
+- The Newfoundland Basic Personal amount increases by the index factor and is updated to \$11,188 (formerly \$11,067).
 
-- The spouse or common-law partner amount increases by the index factor and is revised to \$11,067 (formerly \$10,818), if the original amount wasn't zero.
+- The spouse or common-law partner amount increases by the index factor and is revised to \$11,188 (formerly \$11,067), if the original amount wasn't zero.
 
-![Newfoundland tax changes](media/NL2025.JPG)
+![Newfoundland tax changes](media/NL2026.JPG)
 
 #### Northwest Territories
 
-- The Northwest Territories basic personal amount increases by the index factor, and is revised to \$17,842 (formerly \$17,373).
+- The Northwest Territories basic personal amount increases by the index factor, and is revised to \$18,198 (formerly \$17,842).
 
-- The spouse or common-law partner amount increases by the index factor and is revised to \$17,842 (formerly \$17,373), if the original amount wasn't zero.
+- The spouse or common-law partner amount increases by the index factor and is revised to \$18,198 (formerly \$17,842), if the original amount wasn't zero.
 
-![Northwest tax changes](media/NT2025.JPG)
+![Northwest tax changes](media/NT2026.JPG)
 
 #### Nova Scotia
 
-- The Nova Scotia basic personal BPANS Formula \$11,744.
+- The Nova Scotia basic personal BPANS Formula \$11,932 (formerly \$11,744).
 
-- The spouse or common-law partner amount is also BPANS Formula \$11,744.
+- The spouse or common-law partner amount is also BPANS Formula \$11,932.
 
-![Nova Scotia tax changes](media/NS2025.JPG)
+![Nova Scotia tax changes](media/NS2026.JPG)
 
 #### Nunavut
 
-- The Nunavut basic personal amount increases by the index factor and is usually revised to \$19,274 (formerly \$18,767).
+- The Nunavut basic personal amount increases by the index factor and is usually revised to \$19,659 (formerly \$19,274).
 
-- The spouse or common-law partner amount increases by the index factor and is usually revised to \$19,274 (formerly \$18,767, if the original amount was not zero.
+- The spouse or common-law partner amount increases by the index factor and is usually revised to \$19,659 (formerly \$19,274, if the original amount was not zero.
 
-![Nunavut tax changes](media/NU2025.JPG)
+![Nunavut tax changes](media/NU2026.JPG)
 
 #### Ontario
 
-- The Ontario Basic Personal amount increases by the index factor and is usually revised to \$12,747 (formerly \$12,399).
+- The Ontario Basic Personal amount increases by the index factor and is usually revised to \$12,989 (formerly \$12,747).
 
-- The Ontario Spouse or Common-law Partner amount increases by the index factor and is usually revised to \$12,747 (formerly \$12,399).
+- The Ontario Spouse or Common-law Partner amount increases by the index factor and is usually revised to \$12,989 (formerly \$12,747).
 
-![Ontario tax changes](media/ON2025.JPG)
+![Ontario tax changes](media/ON2026.JPG)
 
 #### Prince Edward Island 
 
-- The legislated Prince Edward Island basic personal amount increased from \$14,250 to \$13,500 
+- The legislated Prince Edward Island basic personal amount increased from \$15,000 to \$14,250 
 
-![Prince Edward island tax changes](media/PE2025.JPG)
+![Prince Edward island tax changes](media/PE2026.JPG)
 
 #### Quebec
 
-The TP-1015.3-V Basic amount increases by the index factor and is usually revised to \$18,571 (formerly \$18,056). The system rounds this calculation to the nearest \$5.00
+The TP-1015.3-V Basic amount increases by the index factor and is usually revised to \$18,952 (formerly \$18,571). The system rounds this calculation to the nearest \$5.00
 
 #### Variable H – Deduction for employment income
 
-The deduction for Employment income has been increased to \$1,420 formerly \$1,380. 
+The deduction for Employment income has been increased to \$1,450 formerly \$1,420. 
 
 #### Saskatchewan 
 
-- The Saskatchewan Basic Personal amount increases by the index factor, so it is usually revised to \$18,991 (formerly \$18,491).
+- The Saskatchewan Basic Personal amount increases by the index factor, so it is usually revised to \$20,381 (formerly \$18,991).
 
-- The Spouse Common Law Partner amount increases by the index factor, so it is  usually revised to \$18,991 (formerly \$18,491).
+- The Spouse Common Law Partner amount increases by the index factor, so it is  usually revised to \$20,381 (formerly \$18,991.
 
-![Saskatchewan tax changes](media/SK2025.JPG)
+![Saskatchewan tax changes](media/SK2026.JPG)
 
 #### Yukon
 
-- The Yukon basic personal amount increases by the index factor and is usually revised to BPAYT formula \$16,129 (formerly \$15,705).
+- The Yukon basic personal amount increases by the index factor and is usually revised to BPAYT formula \$16,452 (formerly \$16,129).
 
-- The spouse or common-law partner amount increases by the index factor and is usually revised to BPAYT formula \$16,129 (formerly \$15,705), provided the original amount was not zero.
+- The spouse or common-law partner amount increases by the index factor and is usually revised to BPAYT formula \$16,452 (formerly \$16,129), provided the original amount was not zero.
 
-![Yukon tax changes](media/YT2025.JPG)
+![Yukon tax changes](media/YT2026.JPG)
 
 ### Updating basic personal amounts
 
@@ -500,33 +500,33 @@ To update the Basic Personal amounts go to: Tools\>\> Routines\>\> PayrollCanada
 
 The personal tax credit amounts specified in the P_CPY_Control table will be updated to:
 
-- The federal Basic Personal amount = \$16,129
+- The federal Basic Personal amount = \$16,452
 
-- Quebec TP-105.3-V Base amount = \$18,571
+- Quebec TP-105.3-V Base amount = \$18,952
 
-- Alberta basic personal amount = \$22,323
+- Alberta basic personal amount = \$22,769
 
-- British Columbia basic personal amount = \$12,932
+- British Columbia basic personal amount = \$13,216
 
-- Manitoba Basic Personal amount =  \$15,969
+- Manitoba Basic Personal amount =  \$15,780
 
-- New Brunswick Basic Personal amount = \$13,396
+- New Brunswick Basic Personal amount = \$13,664
 
-- Newfoundland Basic Personal amount = \$11,067
+- Newfoundland Basic Personal amount = \$11,188
 
-- Northwest Territories basic personal amount = \$17,842
+- Northwest Territories basic personal amount = \$18,198
 
-- Nova Scotia basic personal amount BPANS formula  \$11,744
+- Nova Scotia basic personal amount BPANS formula  \$11,932
 
-- Nunavut basic personal amount = \$19,274
+- Nunavut basic personal amount = \$19,659
 
-- Ontario Basic Personal amount = \$12,747
+- Ontario Basic Personal amount = \$12,989
 
-- Prince Edward Island basic personal amount = \$14,250
+- Prince Edward Island basic personal amount = \$15,000
 
-- Saskatchewan Basic Personal amount = \$18,991
+- Saskatchewan Basic Personal amount = \$20,381
 
-- Yukon basic personal amount = \$16,129 BPAYT formula
+- Yukon basic personal amount = \$16,452 BPAYT formula
 
 You can view these amounts in the Tax Credits window by going to: Tools \>\> Setup \>\> Payroll-Canada \>\> Control \>\> Tax Credits
 
@@ -534,18 +534,18 @@ You can view these amounts in the Tax Credits window by going to: Tools \>\> Set
 
 The following table shows how Index Factors as specified in the Tax Credit Indexation Factors window (Payroll Reset Files window (Tools\>\>Routines\>\>PayrollCanada\>\>Year End File Reset\>\>Tax Credit Indexation Factors) have been updated.
 
-| **Taxing authority**      | **2024 index factor** | **2025 index factor** |
+| **Taxing authority**      | **2026 index factor** | **2025 index factor** |
 |---------------------------|-----------------------|-----------------------|
-| Federal                   | 1.047                 | 1.027                 |
-| Alberta                   | 1.042                 | 1.020                 |
-| British Columbia          | 1.050                 | 1.028                 |
-| Manitoba                  | 1.052                 | 1.012                 |
-| New Brunswick             | 1.047                 | 1.027                 |
-| Newfoundland and Labrador | 1.042                 | 1.023                 |
-| Northwest Territories     | 1.047                 | 1.027                 |
-| Nova Scotia               | 1.000                 | 1.031                 |
-| Nunavut                   | 1.047                 | 1.027                 |
-| Ontario                   | 1.045                 | 1.028                 |
+| Federal                   | 1.020                 | 1.027                 |
+| Alberta                   | 1.020                 | 1.020                 |
+| British Columbia          | 1.022                 | 1.028                 |
+| Manitoba                  | 1.021                 | 1.012                 |
+| New Brunswick             | 1.020                 | 1.027                 |
+| Newfoundland and Labrador | 1.011                 | 1.023                 |
+| Northwest Territories     | 1.020                 | 1.027                 |
+| Nova Scotia               | 1.016                 | 1.031                 |
+| Nunavut                   | 1.020                 | 1.027                 |
+| Ontario                   | 1.019                 | 1.028                 |
 | Prince Edward Island      | 1.000                 | 1.000                 |
-| Saskatchewan              | 1.047                 | 1.027                 |
-| Yukon                     | 1.047                 | 1.027                 |
+| Saskatchewan              | 1.020                 | 1.027                 |
+| Yukon                     | 1.020                 | 1.027                 |
