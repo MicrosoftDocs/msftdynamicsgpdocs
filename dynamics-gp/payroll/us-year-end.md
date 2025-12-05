@@ -7,7 +7,7 @@ manager: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 12/3/2025
+ms.date: 12/5/2025
 ---
 
 # U.S. Year-end Update in Dynamics GP
@@ -295,7 +295,7 @@ As you complete year-end tasks, refer to the answers in this section.
 
 - The correct Last Year-end Update date doesn't appear in the Payroll Setup window, even though I installed the 2025 year-end update and see the changes included in the update. Is there something I need to do?
 
-  The Last Year-end Update date is read from the LastYearEndUpdate= line in the Dex.ini file. When you install a year-end update on a computer, the Dex.ini file on that computer is updated. However, in some Windows Terminal Server deployments, there is only a single installation of Dynamics GP, which many users access. Each user typically has a Dex.ini file in their home Windows folder. Installing the year-end update on the server doesn't update each user's Dex.ini file. In these situations, you should manually update each user's Dex.ini file so that the appropriate line reads LastYearEndUpdate=11/21/2024.
+  The Last Year-end Update date is read from the LastYearEndUpdate= line in the Dex.ini file. When you install a year-end update on a computer, the Dex.ini file on that computer is updated. However, in some Windows Terminal Server deployments, there is only a single installation of Dynamics GP, which many users access. Each user typically has a Dex.ini file in their home Windows folder. Installing the year-end update on the server doesn't update each user's Dex.ini file. In these situations, you should manually update each user's Dex.ini file so that the appropriate line reads LastYearEndUpdate=12/4/2025.
 
   For more information about how the Year-end Update date is changed, search the [Microsoft Dynamics Knowledge Base](https://support.microsoft.com/help/981312/the-date-in-the-last-year-end-update-field-is-not-updated-after-you-in) and view article number 981312.
 
