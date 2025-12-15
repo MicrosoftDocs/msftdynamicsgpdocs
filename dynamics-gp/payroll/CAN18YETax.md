@@ -351,8 +351,8 @@ Taxes are an ‘estimate’, as employees typically overpay or underpay, and hav
 
 The explanation of the Cumulative Averaging convention is the best resource.
 
-[The above information is published in this article](https://support.microsoft.com/en-us/help/2773319/income-tax-calculations-or-discrepancies-with-the-cra-in-canadian-payr)
- 
+[The above information is published in this article](/troubleshoot/dynamics/gp/income-tax-calculations-discrepancies-with-cra).
+
 **Only the 1st payroll of the year will tie with the calculator as we use the average method**
 
 #### QPIP
