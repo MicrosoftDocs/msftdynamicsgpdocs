@@ -4,7 +4,6 @@ description: "Learn about the Canadian payroll year-end updates & tax updates. T
 keywords: "year-end"
 author: theley502
 manager: jswymer
-
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
@@ -422,7 +421,7 @@ The following provinces and territories have tax changes for 2026.
 
 #### Newfoundland and Labrador
 
-- The Newfoundland Basic Personal amount increases by the index factor and is updated to \$11,188 (formerly \$11,067).
+- The Newfoundland and Labrador Basic Personal amount increases by the index factor and is updated to \$11,188 (formerly \$11,067).
 
 - The spouse or common-law partner amount increases by the index factor and is revised to \$11,188 (formerly \$11,067), if the original amount wasn't zero.
 
@@ -512,7 +511,7 @@ The personal tax credit amounts specified in the P_CPY_Control table will be upd
 
 - New Brunswick Basic Personal amount = \$13,664
 
-- Newfoundland Basic Personal amount = \$11,188
+- Newfoundland and Labrador Basic Personal amount = \$11,188
 
 - Northwest Territories basic personal amount = \$18,198
 
