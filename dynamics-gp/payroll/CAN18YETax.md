@@ -426,7 +426,7 @@ The following provinces and territories have tax changes for 2026.
 
 - The spouse or common-law partner amount increases by the index factor and is revised to \$11,188 (formerly \$11,067), if the original amount wasn't zero.
 
-![Newfoundland tax changes](media/NL2026.JPG)
+![Newfoundland and Labrador tax changes](media/NL2026.JPG)
 
 #### Northwest Territories
 
