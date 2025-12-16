@@ -8,7 +8,7 @@ ms.reviewer: jswymer
 ms.author: theley
 ms.date: 12/16/2025
 ---
-# U.S. 2025 Payroll Tax Update
+# U.S. 2026 Payroll Tax Update
 
 This tax update applies to:
 
@@ -621,40 +621,6 @@ Withholding rates for taxpayers filing as *SINGLE*:
 | 253,525     | And Over         | 16,174.70      | 8.75%        | 253,525            |
 
 
-## Changes in January Round 1 update (Released 12/20/2024)
-
-- FICA Social Security Limit 176,100 (Previously $168,600)
-- Federal tax
-- California
-- Colorado
-- Hawaii
-- Iowa
-- Kentucky
-- Maine
-- Michigan
-- Missouri
-- Nebraska
-- New Mexico
-- Oklahoma
-- South Carolina
-- West Virginia
-
-- - Arkansas
-- Louisiana - [code change required](https://community.dynamics.com/blogs/post/?postid=fdba817d-a7d9-ef11-a730-7c1e527e6b0e)
-- Minnesota
-- Montana
-- North Carolina
-- North Dakota
-- Oregon
-- Rhode Island
-- Vermont
-
-
-### Withholding changes for Michigan
-
-- The Personal Exemption Amount is $5,800 from $5,600
-- The Tax Rate remains at 4.25%
-
 ### Withholding changes for Missouri
 
 - The Standard Deduction is $22,500 prior \$21,900 for filing status HOH
@@ -789,29 +755,6 @@ Tax Type rates for all Filing Status:
 | 3,560       | 17,830           | -106.80        | 3.0%         | 0                  |
 | 17,830      | And over         | -677.36        | 6.2%         | 0                  |
 
-### Withholding changes for West Virginia
-
-The Personal Exemption amount is $2,000 For all filing status.
-
-Withholding rates for taxpayers filing as PM (Percentage Method) are as follows:
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate | On Excess Over     |
-|-------------|------------------|----------------|----------|--------------------|
-| 0           | 10,000           | 0              | 2.22%    | 0                  |
-| 10,000      | 25,000           | 222.00         | 2.96%    | 10,000             |
-| 25,000      | 40,000           | 666.00         | 3.33%    | 25,000             |
-| 40,000      | 60,000           | 1,165.50       | 4.44%    | 40,000             |
-| 60,000      | and over         | 2,053.50       | 4.82%    | 60,000             |
-
-Withholding rates for taxpayers filing as TE (Two Earner Option) are as follows:
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate | On Excess Over     |
-|-------------|------------------|----------------|----------|--------------------|
-| 0           | 7,500            | 0              | 2.22%    | 0                  |
-| 7,500       | 18,750           | 166.50         | 2.96%    | 7,500              |
-| 18,750      | 30,000           | 499.50         | 3.33%    | 18,700             |
-| 30,000      | 45,000           | 874.13         | 4.44%    | 30,000             |
-| 45,000      | and over         | 1,540.13       | 4.82%    | 45,000             |
 
 ## Resources to assist you
 
@@ -870,7 +813,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *9/18/2025*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *12/18/2025*.
 
 ## What's next
 
