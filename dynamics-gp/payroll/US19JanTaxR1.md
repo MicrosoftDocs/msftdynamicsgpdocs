@@ -181,58 +181,58 @@ Withholding rates for taxpayers filing as *HOH*:
 | If Over | But Not Over  | Tax Amount  | Tax Rate  | On Excess Over                  |
 |-------------|------------------|----------------|--------------|--------------------|
 | 0           | 22,173           | 0              | 1.1%         | 0                  |
-| 21,527      | 52,530           | 236.80         | 2.2%         | 21,527             |
-| 51,000      | 65,744           | 885.21         | 4.4%         | 51,000             |
-| 65,744      | 81,364           | 1,533.95       | 6.6%         | 65,744             |
-| 81,364      | 96,107           | 2,564.87       | 8.8%         | 81,364             |
-| 96,107      | 490,493          | 3,862.25       | 10.23%       | 96,107             |
-| 490,493     | 588,593          | 44,207.94      | 11.33%       | 490,493            |
-| 588,593     | 980,987          | 55,322.67      | 12.43%       | 588,593            |
-| 980,987     | 1,000,000        | 104,097.24     | 13.53%       | 980,987            |
-| 1,000,000   | And Over         | 106,669.70     | 14.63%       | 1,000,000          |
+| 22,173      | 52,530           | 243.90         | 2.2%         | 22,173             |
+| 52,530      | 67,716           | 911.75         | 4.4%         | 52,530             |
+| 67,716      | 83,805           | 1,579.93       | 6.6%         | 67,716             |
+| 83,805      | 98,990           | 2,641.80       | 8.8%         | 83,805             |
+| 98,990      | 505,208          | 3,978.08       | 10.23%       | 98,990             |
+| 505,208     | 606,251          | 45,534.18      | 11.33%       | 505,208            |
+| 606,251     | 1,000,000        | 56,982.35      | 12.43%       | 606,251            |
+| 1,000,000   | 1,010,417        | 105,925.35     | 13.53%       | 1,000,000          |
+| 1,010,417   | And Over         | 107,334.77     | 14.63%       | 1,010,417          |
 
 Withholding rates for taxpayers filing as *MAR1* and *MAR2*:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 21,512           | 0              | 1.1%         | 0                  |
-| 21,512      | 50,998           | 236.63         | 2.2%         | 21,512             |
-| 50,998      | 80,490           | 885.32         | 4.4%         | 50,998             |
-| 80,490      | 111,732          | 2,182.97       | 6.6%         | 80,490             |
-| 111,732     | 141,212          | 4,244.94       | 8.8%         | 111,732            |
-| 141,212     | 721,318          | 6,839.18       | 10.23%       | 141,212            |
-| 721,318     | 865,574          | 66,184.02      | 11.33%       | 721,318            |
-| 865,574     | 1,000,000        | 82,528.22      | 12.43%       | 865,574            |
-| 1,000,000   | 1,442,628        | 99,237.37      | 13.53%       | 1,000,000          |
-| 1,442,628   | And Over         | 159,124.94     | 14.63%       | 1,442,628          |
+| 0           | 22,158           | 0              | 1.1%         | 0                  |
+| 22,158      | 52,528           | 243.74         | 2.2%         | 22,158             |
+| 50,998      | 82,904           | 911.88         | 4.4%         | 52,528             |
+| 80,490      | 115,084          | 2,248.42       | 6.6%         | 82,904             |
+| 111,732     | 145,448          | 4,372.30       | 8.8%         | 115,084            |
+| 141,212     | 742,958          | 7,044.33       | 10.23%       | 145,448            |
+| 721,318     | 891,542          | 68,169.60      | 11.33%       | 742,958            |
+| 891,542     | 1,000,000        | 85,004.17      | 12.43%       | 891,542            |
+| 1,000,000   | 1,485,906        | 98,485.50      | 13.53%       | 1,000,000          |
+| 1,485,906   | And Over         | 164,228.58     | 14.63%       | 1,485,906          |
 
 Withholding rates for taxpayers filing as *SINGLE*:
 
 | If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
 |-------------|------------------|----------------|--------------|--------------------|
-| 0           | 10,756           | 0              | 1.1%         | 0                  |
-| 10,756      | 25,499           | 118.32         | 2.2%         | 10,756             |
-| 25,499      | 40,245           | 442.67         | 4.4%         | 25,499             |
-| 40,245      | 55,866           | 1,091.49       | 6.6%         | 40,245             |
-| 55,866      | 70,606           | 2,122.48       | 8.8%         | 55,866             |
-| 70,606      | 360,659          | 3,419.60       | 10.23%       | 70,606             |
-| 360,659     | 432,787          | 33,092.02      | 11.33%       | 360,659            |
-| 432,787     | 721,314          | 41,264.12      | 12.43%       | 432,787            |
-| 721,314     | 1,000,000        | 77,128.03      | 13.53%       | 721,314            |
-| 1,000,000   | And Over         | 114,834.25     | 14.63%       | 1,000,000          |
+| 0           | 11,079           | 0              | 1.1%         | 0                  |
+| 11,079      | 26,264           | 121.87         | 2.2%         | 11,079             |
+| 26,264      | 41,452           | 455.94         | 4.4%         | 26,264             |
+| 41,452      | 57,542           | 1,124.21       | 6.6%         | 41,452             |
+| 57,542      | 72,724           | 2,186.15       | 8.8%         | 57,542             |
+| 72,724      | 371,479          | 3,522.17       | 10.23%       | 72,724             |
+| 371,479     | 445,771          | 34,084.81      | 11.33%       | 371,479            |
+| 445,771     | 742,953          | 42,502.09      | 12.43%       | 445,771            |
+| 742,953     | 1,000,000        | 79,441.81      | 13.53%       | 742,953            |
+| 1,000,000   | And Over         | 114,220.27     | 14.63%       | 1,000,000          |
 
 ### Withholding changes for Colorado
 
 All filing status have the same fixed flat tax of 4.40% was 4.55% (2022).
 
-- The Personal Exemption amount is $10,000 for MAR
-- The Personal Exemption amount is $5,000 For SINGLE
+- The Personal Exemption amount is $11,000 for MAR
+- The Personal Exemption amount is $5,500 For SINGLE
 
 **The following new filing status were added January 2022:**
 
-- HOH1J - Head of Household 1 Job - Exemption amount  $20,000  
-- MAR1J - Married Filing Jointly 1 Job - Exemption amount  $27,500  
-- SIN1J - Single/Mar filing Single 1 Job - Exemption amount  $12,500  
+- HOH1J - Head of Household 1 Job - Exemption amount  $22,000  
+- MAR1J - Married Filing Jointly 1 Job - Exemption amount  $30,000  
+- SIN1J - Single/Mar filing Single 1 Job - Exemption amount  $14,000  
 
 In January 2022 the state of Colorado released a new form called [DR-0004](https://tax.colorado.gov/withholding-forms) this is optional for an employee to complete.  
 
@@ -244,11 +244,9 @@ OTH1J - OTH, +1 Jobs or Child Cr Allow - Exemption amount of $500
 
 As an example, lets say I fill out the form and choose an amount of 2500. It does not match any of the above filing status so I would pick the OTHER status and put a 5 under Cards | Payroll | State Tax in the Number of Dependents field OR Additional Allowances. Which is 2500/500 = 5.
 
-Another example, I put 5500 on the form. Again, it does not match the other filing status, so I choose *Other* and put *11*.
-
 ### Withholding changes for Hawaii
 
-- The Standard Deduction Amount is $1,650 (New 2025)
+- The Standard Deduction Amount is $4,350 (New 2025)
 - Personal Exemption is $1,144
   
 Withholding rates for taxpayers filing as *MAR*:
@@ -285,13 +283,13 @@ Iowa withholding calculations, federal withholding is no longer subtracted from 
 > [!NOTE]
 > Iowa W4 changed in the year 2024 and the tax tables support the amounts, they are held in the Personal Exemption table below.
 
-- Standard Deduction for EXP1 is $12,000 previously \$14,600
-- Standard Deduction for EXP2 is $24,050 previously \$29,200
+- Standard Deduction for EXP1 is $13,000 previously \$12,000
+- Standard Deduction for EXP2 is $26,000 previously \$24,050
 
 New filing status as of January 1, 2025
-- Standard Deduction for HOH is $18,050 Head of Household
-- Standard Deduction for MAR is $24,050 Married Joint No Earned Inc
-- Standard Deduction for OTHER is $12,000 Other, Mar Joint with Earn Inc
+- Standard Deduction for HOH is $19,500 Head of Household
+- Standard Deduction for MAR is $26,000 Married Joint No Earned Inc
+- Standard Deduction for OTHER is $13,000 Other, Mar Joint with Earn Inc
 
 All filing statuses have the same fixed flat tax of 3.80%
 
@@ -326,8 +324,8 @@ Personal Exemption Tax Type rates for ALL filling Status:
 
 ### Withholding changes for Kentucky
 
-- The Standard Deduction Amount is $3,270 from $3,160
-- The Tax Rate remains at 4.0%
+- The Standard Deduction Amount is $3,360 from $3,270
+- The Tax Rate reduced to 3.5%
 
 ### Withholding changes for Maine
 
