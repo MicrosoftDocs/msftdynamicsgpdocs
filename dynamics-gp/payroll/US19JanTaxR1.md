@@ -1,6 +1,6 @@
 ---
 title: "US payroll tax update"
-description: "US 2023 Payroll Tax update for Microsoft Dynamics GP."
+description: "US 2026 Payroll Tax update for Microsoft Dynamics GP."
 keywords: "payroll"
 author: theley502
 ms.topic: article
