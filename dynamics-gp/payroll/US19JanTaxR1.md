@@ -20,7 +20,7 @@ This is the first tax update for 2026 and replaces all previous tax updates. It 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
-Check out these blogs for detailed documentation on how you calculate payroll taxes in Microsoft Dynamics GP:
+Check out these blogs for documentation on how you calculate payroll taxes in Microsoft Dynamics GP:
 
 [How to calculate Federal Tax with Dependent Claim Amount Field](https://community.dynamics.com/blogs/post/?postid=f65a8b3b-ef87-432c-a3c4-80ed7077a79d)
 
