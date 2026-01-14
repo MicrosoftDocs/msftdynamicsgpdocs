@@ -47,7 +47,8 @@ Check out these blogs for documentation on how you calculate payroll taxes in Mi
 ### Withholding changes for Arkansas
 
 > [!NOTE]
-> If you have employees set up to withhold Arkansas state tax, you need to be on version 18.5.1635 or later, for taxes to be correct for the year 2024 or later. 
+> If you have employees set up to withhold Arkansas state tax, you need to be on version 18.5.1635 or later, for taxes to be correct for the year 2024 or later.
+
 This change is for the Midrange Income look up part of the tax calculation.
 
 - Standard Deduction Amount is $2,410
