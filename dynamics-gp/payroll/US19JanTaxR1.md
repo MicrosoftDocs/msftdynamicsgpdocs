@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 12/17/2025
+ms.date: 12/18/2025
 ---
 # U.S. 2026 Payroll Tax Update
 
@@ -41,7 +41,7 @@ Check out these blogs for documentation on how you calculate payroll taxes in Mi
 - Missouri
 - Nebraska
 - New Mexico
-  New York
+- New York
 - Oklahoma
 - Rhode Island
 - South Carolina
@@ -375,7 +375,7 @@ Withholding rates for all filing status:
 | 4,044       | 5,392            | 61             | 3.0%         | 4,044              |
 | 5,392       | 6,740            | 101            | 3.5%         | 5,392              |
 | 6,740       | 8,088            | 148            | 4.0%         | 6,740              |
-| 8,088       | 9,436            | 205            | 4.5%         | 8,088              |
+| 8,088       | 9,436            | 202            | 4.5%         | 8,088              |
 | 9,436       | And over         | 263            | 4.7%         | 9,436              |
 
 ### Withholding changes for Nebraska
