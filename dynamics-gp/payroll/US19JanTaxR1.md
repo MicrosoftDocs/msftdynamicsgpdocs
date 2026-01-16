@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/14/2026
+ms.date: 1/16/2026
 ---
 # U.S. 2026 Payroll Tax Update
 
@@ -41,7 +41,6 @@ Check out these blogs for documentation on how you calculate payroll taxes in Mi
 - North Carolina
 - North Dakota
 - Oregon
-- Rhode Island
 - Vermont
 
 ### Withholding changes for Arkansas
@@ -286,18 +285,6 @@ Low Income Type rates for S2 Filing Status:
 | 0           | 4,550            | 263            | 4.75%        | 0                  |
 | 4,550       | 11,400           | 479            | 6.75%        | 4,550              |
 | 11,400      | 50,000           | 941            | 8.75%        | 11,400             |
-
-### Withholding changes for Rhode Island
-
-For all Filing Status the Personal Exemption ($1,000) wage limit increased to $290,800
-
-Withholding rates for taxpayers filing as *MAR* and *SINGLE*:
-
-| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
-|-------------|------------------|----------------|--------------|--------------------|
-| 0           | 82,050           | 0              | 3.75%        | 0                  |
-| 82,050      | 186,450          | 3,076.88       | 4.75%        | 82,050             |
-| 186,450     | And Over         | 8,035.88       | 5.99%        | 186,450            |
 
 ### Withholding changes for Vermont
 
