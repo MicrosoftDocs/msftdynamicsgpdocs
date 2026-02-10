@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/20/2026
+ms.date: 1/28/2026
 ---
 # U.S. 2026 Payroll Tax Update
 
@@ -50,7 +50,7 @@ Check out these blogs for documentation on how you calculate payroll taxes in Mi
 
 This change is for the Midrange Income look up part of the tax calculation.
 
-- Standard Deduction Amount is $2,410
+- Standard Deduction Amount is $2,470
 - Personal Exemption remains at $29.00
 
 Tax Type rates for Filing Status NA:
