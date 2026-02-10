@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 1/28/2026
+ms.date: 2/10/2026
 ---
 # U.S. 2026 Payroll Tax Update
 
@@ -16,7 +16,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2026 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the second tax update for 2026 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2026. 
+This is the third tax update for 2026 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2026. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -27,6 +27,30 @@ Check out these blogs for documentation on how you calculate payroll taxes in Mi
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/blogs/post/?postid=c9a75bcc-8f50-411f-a364-95a5121f6335)
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/blogs/post/?postid=dbc1295b-297f-4441-aa2f-7c2502bffc97)
+
+## Changes in February Round 3 update (Target Release 2/27/2026)
+
+- Maryland
+
+### Withholding changes for Maryland
+
+For each Filing Status of Maryland:
+The state of Maryland changed its payroll tax standard deduction from a percentage-based calculation to a flat amount of $3,400 for all filing status.
+
+For Filing Status of ALGENY (Allegany).
+Withholding rates for taxpayer:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate     | On Excess Over     |
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 100,000          | 0              | 7.95%        | 0                  |
+| 100,000     | 125,000          | 7,950          | 8.20%        | 100,000            |
+| 125,000     | 150,000          | 10,000         | 8.45%        | 125,000            |
+| 150,000     | 250,000          | 12,112.50      | 8.70%        | 150,000            |
+| 250,000     | 500,000          | 20,812.50      | 8.95%        | 250,000            |
+| 500,000     | 1,000,000        | 43,187.50      | 9.45%        | 500,000            |
+| 1,000,000   | And over         | 90,437.50      | 9.70%        | 1,000,000          |
+
+
 
 ## Changes in January Round 2 update (Released 1/22/2026)
 
