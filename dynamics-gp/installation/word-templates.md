@@ -6,7 +6,7 @@ author: theley502
 ms.topic: how-to
 ms.reviewer: theley
 ms.author: theley
-ms.date: 2/12/2025
+ms.date: 3/30/2026
 ---
 
 # Word Templates in Dynamics GP
@@ -483,7 +483,10 @@ In Dynamics GP, the configuration window allows you to enable a specific form(s)
 
 ## If the issue is happening for ALL Word Template Reports:
 
-In 2020 there was an Office security update that changed how XML files are read in Microsoft Word.  Since Word Templates in Microsoft Dynamics GP rely on passing Report Writer fields to Microsoft Word via XML, this caused Word Templates to fail when printing with Unreadable Content errors.  There is a history recorded on this issue in the following post. 
+> [!NOTE]
+> There have been a few cases where you upgrade to 18.8 and you may notice with word templates that the XML source for the report and field selections are all blank.
+> If your environment is still running SQL Server 2016, that is likely the cause of the issue. To make changes to templates, upgrading to SQL Server 2022 or later is recommended.
+> 
  
 [Word Templates will not Email/Print after Office Update](https://community.dynamics.com/blogs/post/?postid=1981a7ea-2d02-4ec9-be17-02620c23d6d9)
 
