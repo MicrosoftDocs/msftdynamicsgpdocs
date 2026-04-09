@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 2/12/2026
+ms.date: 4/1/2026
 ---
 # U.S. 2026 Payroll Tax Update
 
@@ -16,7 +16,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2026 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the third tax update for 2026 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2026. 
+This is the fourth tax update for 2026 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2026. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -28,7 +28,35 @@ Check out these blogs for documentation on how you calculate payroll taxes in Mi
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/blogs/post/?postid=dbc1295b-297f-4441-aa2f-7c2502bffc97)
 
-## Changes in February Round 3 update (Target Release 2/27/2026)
+## Changes in April Round 4 update (Released 4/7/2026)
+
+- West Virginia
+
+### Withholding changes for West Virginia
+
+The Personal Exemption amount is $2,000 For all filing status.
+
+Withholding rates for taxpayers filing as PM (Percentage Method) are as follows:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|------------------|----------------|----------|--------------------|
+| 0           | 10,000           | 0              | 2.11%    | 0                  |
+| 10,000      | 25,000           | 211.00         | 2.81%    | 10,000             |
+| 25,000      | 40,000           | 632.50         | 3.16%    | 25,000             |
+| 40,000      | 60,000           | 1,106.50       | 4.22%    | 40,000             |
+| 60,000      | and over         | 1,950.50       | 4.58%    | 60,000             |
+
+Withholding rates for taxpayers filing as TE (Two Earner Option) are as follows:
+
+| If Over     | But Not Over     | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|------------------|----------------|----------|--------------------|
+| 0           | 7,500            | 0              | 2.11%    | 0                  |
+| 7,500       | 18,750           | 158.25         | 2.81%    | 7,500              |
+| 18,750      | 30,000           | 474.38         | 3.16%    | 18,750             |
+| 30,000      | 45,000           | 829.88         | 4.22%    | 30,000             |
+| 45,000      | and over         | 1,462.88       | 4.58%    | 45,000             |
+
+## Changes in February Round 3 update (Released 2/27/2026)
 
 - Maryland
 
@@ -944,7 +972,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *1/20/2026*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *4/7/2026*.
 
 ## What's next
 
