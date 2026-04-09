@@ -486,7 +486,6 @@ In Dynamics GP, the configuration window allows you to enable a specific form(s)
 > [!NOTE]
 > There have been a few cases where you upgrade to 18.8 and you may notice with word templates that the XML source for the report and field selections are all blank.
 > If your environment is still running SQL Server 2016, that is likely the cause of the issue. To make changes to templates, upgrading to SQL Server 2022 or later is recommended.
-> 
  
 [Word Templates will not Email/Print after Office Update](https://community.dynamics.com/blogs/post/?postid=1981a7ea-2d02-4ec9-be17-02620c23d6d9)
 
