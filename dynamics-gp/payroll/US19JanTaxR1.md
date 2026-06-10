@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 6/9/2026
+ms.date: 6/10/2026
 ---
 # U.S. 2026 Payroll Tax Update
 
@@ -111,7 +111,7 @@ Special table type filing as *SINGLE*:
 
 | If Over     | But Not Over | Tax Amount  | Tax Rate | On Excess Over     |
 |-------------|--------------|-------------|----------|--------------------|
-| 0           | 0            | 0.00        | 1.30%    | 8,826              |
+| 0           | 0            | 0.00        | 1.30%    | 9,348              |
 
 
 ## Changes in April Round 4 update (Released 4/7/2026)
