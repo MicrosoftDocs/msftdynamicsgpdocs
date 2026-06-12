@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 6/10/2026
+ms.date: 6/12/2026
 ---
 # U.S. 2026 Payroll Tax Update
 
@@ -32,8 +32,6 @@ Check out these blogs for documentation on how you calculate payroll taxes in Mi
 
 - Arkansas
 - Utah
-
-### Withholding changes for Arkansas
 
 ### Withholding changes for Arkansas
 
