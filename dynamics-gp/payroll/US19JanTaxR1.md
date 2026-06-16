@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: theley
-ms.date: 4/1/2026
+ms.date: 6/12/2026
 ---
 # U.S. 2026 Payroll Tax Update
 
@@ -16,7 +16,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2026 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the fourth tax update for 2026 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2026. 
+This is the fifth tax update for 2026 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2026. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -27,6 +27,90 @@ Check out these blogs for documentation on how you calculate payroll taxes in Mi
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/blogs/post/?postid=c9a75bcc-8f50-411f-a364-95a5121f6335)
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/blogs/post/?postid=dbc1295b-297f-4441-aa2f-7c2502bffc97)
+
+## Changes in April Round 5 update (Released 6/15/2026)
+
+- Arkansas
+- Utah
+
+### Withholding changes for Arkansas
+
+> [!NOTE]
+> If you have employees set up to withhold Arkansas state tax, you need to using version 18.5.1635 or later for taxes to be correct for the year 2024 or later.
+
+This change is for the Midrange Income look up part of the tax calculation.
+
+- Standard Deduction Amount is $2,470
+- Personal Exemption remains at $29.00
+
+Tax Type rates for Filing Status NA:
+
+| If Over | But Not Over  | Tax Amount  | Tax Rate| On Excess Over|
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 5,599            | 0              | 0.0%         | 0                  |
+| 5,599       | 11,199           | -111.98        | 2.0%         | 0                  |
+| 11,199      | 15,999           | -223.97        | 3.0%         | 0                  |
+| 15,999      | 26,399           | -287.97        | 3.4%         | 0                  |
+| 26,399      | 94,700           | -367.16        | 3.7%         | 0                  |
+| 94,700      | 94,800           | -369.90        | 3.7%         | 0                  |
+| 94,800      | 94,900           | -359.90        | 3.7%         | 0                  |
+| 94,900      | 95,000           | -349.90        | 3.7%         | 0                  |
+| 95,000      | 95,100           | -339.90        | 3.7%         | 0                  |
+| 95,100      | 95,200           | -329.90        | 3.7%         | 0                  |
+| 95,200      | 95,300           | -319.90        | 3.7%         | 0                  |
+| 95,300      | 95,400           | -309.90        | 3.7%         | 0                  |
+| 95,400      | 95,500           | -299.90        | 3.7%         | 0                  |
+| 95,500      | 95,600           | -289.90        | 3.7%         | 0                  |
+| 95,600      | 95,700           | -279.90        | 3.7%         | 0                  |
+| 95,700      | 95,800           | -269.90        | 3.7%         | 0                  |
+| 95,800      | 95,900           | -259.90        | 3.7%         | 0                  |
+| 95,900      | 96,000           | -249.90        | 3.7%         | 0                  |
+| 96,000      | 96,100           | -239.90        | 3.7%         | 0                  |
+| 96,100      | 96,200           | -229.90        | 3.7%         | 0                  |
+| 96,200      | 96,300           | -219.90        | 3.7%         | 0                  |
+| 96,300      | 96,400           | -209.90        | 3.7%         | 0                  |
+| 96,400      | 96,500           | -199.90        | 3.7%         | 0                  |
+| 96,500      | 96,600           | -189.90        | 3.7%         | 0                  |
+| 96,600      | 96,700           | -179.90        | 3.7%         | 0                  |
+| 96,700      | 96,800           | -169.90        | 3.7%         | 0                  |
+| 96,800      | 96,900           | -159.90        | 3.7%         | 0                  |
+| 96,900      | 97,000           | -149.90        | 3.7%         | 0                  |
+| 97,000      | 97,100           | -139.90        | 3.7%         | 0                  |
+| 97,100      | 97,200           | -129.90        | 3.7%         | 0                  |
+| 97,200      | 97,300           | -119.90        | 3.7%         | 0                  |
+| 97,300      | 97,400           | -109.90        | 3.7%         | 0                  |
+| 97,400      | 97,500           | -99.90         | 3.7%         | 0                  |
+| 97,500      | 97,600           | -89.90         | 3.7%         | 0                  |
+| 97,600      | and over         | -79.90         | 3.7%         | 0                  |
+
+### Withholding changes for Utah
+
+All filing statuses have the same fixed flat tax of 4.45%, previously 4.50%.
+
+Personal Exemption table type filing as *MAR*:
+
+| If Over     | But Not Over | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|--------------|----------------|----------|--------------------|
+| 0           | 0            | 1.00           | 0        | 970.00             |
+
+Personal Exemption table type filing as *SINGLE*:
+
+| If Over     | But Not Over | Tax Amount  | Tax Rate | On Excess Over     |
+|-------------|--------------|-------------|----------|--------------------|
+| 0           | 0            | 1.00        | 0        | 485.00             |
+
+Special table type filing as *MAR*:
+
+| If Over     | But Not Over | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|--------------|----------------|----------|--------------------|
+| 0           | 0            | 0.00           | 1.30%    | 18,696             |
+
+Special table type filing as *SINGLE*:
+
+| If Over     | But Not Over | Tax Amount  | Tax Rate | On Excess Over     |
+|-------------|--------------|-------------|----------|--------------------|
+| 0           | 0            | 0.00        | 1.30%    | 9,348              |
+
 
 ## Changes in April Round 4 update (Released 4/7/2026)
 
@@ -972,7 +1056,7 @@ Before you begin, ask all Microsoft Dynamics GP users to exit the application un
 
 4. Choose Process to start the update.
 
-5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *4/7/2026*.
+5. Verify that the latest Payroll tax table update has been installed. Choose Microsoft Dynamics GP menu \>\> Tools \>\> Setup \>\> System \>\> Payroll Tax. The Last Tax Update value should be *6/12/2026*.
 
 ## What's next
 
