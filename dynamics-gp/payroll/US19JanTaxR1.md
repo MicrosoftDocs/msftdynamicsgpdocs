@@ -16,7 +16,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2026 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the sixth tax update for 2026 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2026. 
+This update is the sixth tax update for 2026 and replaces all previous tax updates. It includes state tax table changes that take effect January 1, 2026. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
