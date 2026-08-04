@@ -28,7 +28,7 @@ Check out these blogs for documentation on how you calculate payroll taxes in Mi
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/blogs/post/?postid=dbc1295b-297f-4441-aa2f-7c2502bffc97)
 
-## Changes in July Round 6 update (Released 7/22/2026)
+## Changes in July Round 6 update (Released 7/29/2026)
 
 - Ohio
 - Georgia
