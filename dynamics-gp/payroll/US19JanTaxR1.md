@@ -5,8 +5,8 @@ keywords: "payroll"
 author: theley502
 ms.topic: article
 ms.reviewer: jswymer
-ms.author: theley
-ms.date: 6/12/2026
+ms.author: aeckman
+ms.date: 8/03/2026
 ---
 # U.S. 2026 Payroll Tax Update
 
@@ -16,7 +16,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2026 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This is the fifth tax update for 2026 and replaces all previous tax updates. It includes State tax table changes that take effect January 1, 2026. 
+This update is the sixth tax update for 2026 and replaces all previous tax updates. It includes state tax table changes that take effect January 1, 2026. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -27,6 +27,64 @@ Check out these blogs for documentation on how you calculate payroll taxes in Mi
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/blogs/post/?postid=c9a75bcc-8f50-411f-a364-95a5121f6335)
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/blogs/post/?postid=dbc1295b-297f-4441-aa2f-7c2502bffc97)
+
+## Changes in July Round 6 update (Released 7/29/2026)
+
+- Ohio
+- Georgia
+
+### Withholding changes for Ohio
+
+- Personal Exemption: $650.00
+
+Tax Type rates for Filing Status NA:
+
+| If Over | But Not Over  | Tax Amount  | Tax Rate| On Excess Over|
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 26,050           | 0              | 1.6%         | 0                  |
+| 26,060      | 100,000          | 416.80         | 2.990%       | 26,050             |
+| 100,000     | And Over         | 2627.91        | 3.400%       | 100,000            |
+
+
+### Withholding changes for Georgia
+
+- Dependent allowance is $5000.00
+
+Tax Type rates for Filing Status HOH - Head of Household:
+Standard Deduction:  $15,000.00
+
+| If Over     | But Not Over | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|--------------|----------------|----------|--------------------|
+| 0           | And Over     | 0              | 4.99%    | 0                  |
+
+Tax Type rates for Filing Status MFJ1I - Married Filing Joint/1 Income:
+Standard Deduction:  $30,000.00
+
+| If Over     | But Not Over | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|--------------|----------------|----------|--------------------|
+| 0           | And Over     | 0              | 4.99%    | 0                  |
+
+Tax Type rates for Filing Status MFJ2I - Married Filing Joint/2 Income:
+Standard Deduction:  $15,000.00
+
+| If Over     | But Not Over | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|--------------|----------------|----------|--------------------|
+| 0           | And Over     | 0              | 4.99%    | 0                  |
+
+Tax Type rates for Filing Status MFJ2I - Married Filing Separate:
+Standard Deduction:  $15,000.00
+
+| If Over     | But Not Over | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|--------------|----------------|----------|--------------------|
+| 0           | And Over     | 0              | 4.99%    | 0                  |
+
+Tax Type rates for Filing Status Single:
+Standard Deduction:  $15,000.00
+
+| If Over     | But Not Over | Tax Amount     | Tax Rate | On Excess Over     |
+|-------------|--------------|----------------|----------|--------------------|
+| 0           | And Over     | 0              | 4.99%    | 0                  |
+
 
 ## Changes in April Round 5 update (Released 6/15/2026)
 
