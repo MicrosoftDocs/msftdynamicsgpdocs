@@ -34,6 +34,8 @@ This page offers easy access to Microsoft Dynamics GP resources. This page is in
 
   Includes What's New and documentation of all features for this release. 
 
+- [Dynamics GP October 2026 - Feature Blog Series - 18.9](https://community.dynamics.com/blogs/post/?postid=2b78864e-a0be-f111-aaaf-3833c5e86054)
+
 - [Dynamics GP October 2025 - Feature Blog Series - 18.8](https://community.dynamics.com/blogs/post/?postid=55633d38-a994-f011-b4cc-000d3a1f9859)
   
 - [Dynamics GP October 2024 - Feature Blog Series - 18.7](https://community.dynamics.com/blogs/post/?postid=da2b849a-e349-ef11-a317-6045bda6fe6a)
