@@ -11,7 +11,7 @@ ms.date: 10/21/2026
 
 This article highlights the improvements introduced in the October 2026 release of Dynamics GP, which includes enhancements across various areas of the product.
 
-For an overview and additional details for key enhancements, see the [Microsoft Dynamics GP October 2026 Feature Blog Series Schedule!](https://community.dynamics.com/blogs/post/?postid=2b78864e-a0be-f111-aaaf-3833c5e86054).
+For an overview and more details about key enhancements, see the [Microsoft Dynamics GP October 2026 Feature Blog Series Schedule!](https://community.dynamics.com/blogs/post/?postid=2b78864e-a0be-f111-aaaf-3833c5e86054)
 
 ## Core Features
 
