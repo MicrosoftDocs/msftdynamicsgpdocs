@@ -59,7 +59,7 @@ After login: the bottom status bar identifies the active company and database
 
 ## [Manage existing purchase links for kit components](https://community.dynamics.com/blogs/post/?postid=f3c4b79f-e2c1-f111-aaad-3833c5e8605a)
 
-You can now view and break an existing sales order/purchase order link for a kit component even when additional inventory has become available. Previously, sufficient current inventory could block access to that purchase commitment. This change applies to existing links, not to creating new links when stock is sufficient.
+You can now view and break an existing sales order or purchase order link for a kit component even when additional inventory becomes available. Previously, sufficient current inventory blocked access to that purchase commitment. This change applies to existing links, not to creating new links when stock is sufficient.
 
 IMAGE HERE
 Kit component purchase connection: review the accessible purchase order in PO Assignment for Document.
