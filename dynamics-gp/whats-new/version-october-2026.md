@@ -66,7 +66,7 @@ Kit component purchase connection: review the accessible purchase order in PO As
 
 ## [Notify approvers when another approver takes action](https://community.dynamics.com/blogs/post/?postid=4727dbd0-6ac2-f111-aaaf-000d3a54b64a)
 
-Configured completed-action emails can notify assigned workflow users when another approver acts, especially when only one approval is required. Enable completed-action notifications in Workflow Maintenance and choose actions and messages in Workflow Assigned User Email Maintenance. These notifications are separate from originator emails and do not change all-approver requirements.
+Configured completed-action emails can notify assigned workflow users when another approver acts, especially when only one approval is required. Enable completed-action notifications in Workflow Maintenance and choose actions and messages in Workflow Assigned User Email Maintenance. These notifications are separate from originator emails and don't change all-approver requirements.
 
 IMAGE HERE 
 Workflow Maintenance: enable notifications for completed actions.
