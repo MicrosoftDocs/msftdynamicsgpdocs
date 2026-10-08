@@ -14,7 +14,7 @@ This article highlights the improvements introduced in the October 2026 release 
 
 **Core features**
 
-## [See who last saved a SmartList](https://community.dynamics.com/blogs/post/?postid=e357fd3a-a692-f111-8076-000d3a54bc5d)-->
+## [See who last saved a SmartList](https://community.dynamics.com/blogs/post/?postid=e357fd3a-a692-f111-8076-000d3a54bc5d)
 
 SmartList shows the user and date of the last saved change for built-in lists, SmartList Builder lists, and favorites. Existing records remain blank until saved after upgrading; running a list or making unsaved changes isn't tracked. Optional Activity Tracking can also record create, modify, and delete activity when enabled.
 
