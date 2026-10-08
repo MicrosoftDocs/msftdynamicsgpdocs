@@ -49,7 +49,7 @@ Workflow History records completion when the purchase order status changes to Ca
 
 ## [Identify companies by name and database](https://community.dynamics.com/blogs/post/?postid=f038c714-a492-f111-8076-000d3a54bc5d)
 
-The company database identifier (INTERID) now appears alongside the company name in company selection and in the bottom status bar after login. This makes similarly named companies easier to distinguish and helps you confirm which company is active, without changing security or company setup.
+The company database identifier (INTERID) now appears alongside the company name in company selection and in the bottom status bar after authentication. This feature makes similarly named companies easier to distinguish and helps you confirm which company is active, without changing security or company setup.
 
 IMAGE HERE
 Company selection: confirm the company name and INTERID before signing in.
