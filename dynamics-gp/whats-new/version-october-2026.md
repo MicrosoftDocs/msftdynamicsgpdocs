@@ -55,7 +55,7 @@ IMAGE HERE
 Company selection: confirm the company name and INTERID before signing in.
 
 IMAGE HERE
-After login: the bottom status bar identifies the active company and database
+After authentication: the bottom status bar identifies the active company and database.
 
 ## [Manage existing purchase links for kit components](https://community.dynamics.com/blogs/post/?postid=f3c4b79f-e2c1-f111-aaad-3833c5e8605a)
 
