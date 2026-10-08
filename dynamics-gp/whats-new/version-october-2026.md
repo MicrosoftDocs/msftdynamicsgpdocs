@@ -41,7 +41,7 @@ Payables Transaction Entry Zoom displays the reason saved with the voided transa
 
 ## [Complete workflow when a purchase order is canceled](https://community.dynamics.com/blogs/post/?postid=4a9ebe30-c4c1-f111-aaad-3833c5e8605a)
 
-When all applicable remaining lines of a submitted purchase order are canceled through Edit Purchase Order Status and the header reaches Canceled, workflow automatically becomes Completed. Workflow history records the completion. Canceling only some lines does not complete workflow unless the header becomes Canceled.
+When you cancel all applicable remaining lines of a submitted purchase order through Edit Purchase Order Status and the header reaches Canceled, workflow automatically becomes Completed. Workflow history records the completion. Canceling only some lines doesn't complete workflow unless the header becomes Canceled.
 
 IMAGE HERE
 Workflow History records completion when the purchase order status changes to Canceled.
