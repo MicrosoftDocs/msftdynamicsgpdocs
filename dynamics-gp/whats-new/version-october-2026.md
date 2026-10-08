@@ -9,7 +9,7 @@ ms.date: 10/21/2026
 ---
 # What's New in Dynamics GP in October 2026
 
-This page highlights the improvements introduced in the October 2026 release of Dynamics GP, which includes enhancements across various areas of the product.
+This article highlights the improvements introduced in the October 2026 release of Dynamics GP, which includes enhancements across various areas of the product.
 
 
 **Core features**
