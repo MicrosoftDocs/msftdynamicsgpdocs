@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: aeckman
-ms.date: 8/03/2026
+ms.date: 11/06/2026
 ---
 # U.S. 2026 Payroll Tax Update
 
@@ -16,7 +16,7 @@ This tax update applies to:
 
 This article provides guidance for how to install the 2026 U.S. Payroll Tax Update for Microsoft Dynamics GP and describes changes.
 
-This update is the sixth tax update for 2026 and replaces all previous tax updates. It includes state tax table changes that take effect January 1, 2026. 
+This update is the seventh tax update for 2026 and replaces all previous tax updates. It includes state tax table changes that take effect January 1, 2026. 
 
 This document assumes that you are familiar with the Microsoft Dynamics GP U.S. Payroll module.
 
@@ -27,6 +27,61 @@ Check out these blogs for documentation on how you calculate payroll taxes in Mi
 [Does Microsoft Dynamics GP calculate tax correctly?](https://community.dynamics.com/blogs/post/?postid=c9a75bcc-8f50-411f-a364-95a5121f6335)
 
 [Tips to install the U.S. Payroll Tax Update](https://community.dynamics.com/blogs/post/?postid=dbc1295b-297f-4441-aa2f-7c2502bffc97)
+
+## Changes in November Round 7 update (Released 11/04/2026)
+
+- Idaho
+- Maine
+
+
+### Withholding changes for Idaho
+
+Tax Code: ID
+Filing Status: SINGLE
+Personal Exemption: $0
+Type: Tax
+
+| If Over | But Not Over  | Tax Amount  | Tax Rate| On Excess Over|
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 16,100           | 0              | 0 %          | 0                  |
+| 16,100      | And Over         | 0              | 5.3 %        | 16,100             |
+
+
+Filing Status: MAR
+Personal Exemption: $0
+Type: Tax
+
+| If Over | But Not Over  | Tax Amount  | Tax Rate| On Excess Over|
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 32,200           | 0              | 0 %          | 0                  |
+| 32,200      | And Over         | 0              | 5.3 %        | 32,200             |
+
+
+
+### Withholding changes for Maine
+
+Tax Code: ME
+Filing Status: Single
+Personal Exemption: $5,300
+Type: Special 
+
+| If Over | But Not Over  | Tax Amount  | Tax Rate| On Excess Over|
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 102,250          | 0              | 0 %          | 12,800             |
+| 102,250     | 177,250          | 75,000         | 0 %          | 0                  |
+
+
+Filing Status:  MAR 
+Personal Exemption: 5,300  
+Type: Special 
+
+| If Over | But Not Over  | Tax Amount  | Tax Rate| On Excess Over|
+|-------------|------------------|----------------|--------------|--------------------|
+| 0           | 204,500          | 0              | 0 %          | 28,550             |
+| 204,500     | 354,550          | 0              | 0 %          | 0                  |
+
+
+
 
 ## Changes in July Round 6 update (Released 7/29/2026)
 
