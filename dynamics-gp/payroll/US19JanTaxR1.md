@@ -6,7 +6,7 @@ author: theley502
 ms.topic: article
 ms.reviewer: jswymer
 ms.author: aeckman
-ms.date: 11/2/2026
+ms.date: 11/02/2026
 ---
 # U.S. 2026 Payroll Tax Update
 
